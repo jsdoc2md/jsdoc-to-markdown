@@ -1,0 +1,16 @@
+{
+  "name": "jsdoc-to-markdown",
+  "version": "0.0.0",
+  "description": "Partials for rendering JSdoc data as markdown",
+  "main": "lib/jsdoc-to-markdown.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+      "handlebars", "jsdoc", "markdown", "generator"
+  ],
+  "author": "Lloyd Brookes",
+  "dependencies": {
+    "more-fs": "~0.3.0"
+  }
+}
