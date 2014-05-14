@@ -1,7 +1,8 @@
-###{{../namePrefix}}.{{{name}}}({{join (pluck params "name") ", "}})
+###{{namePrefix}}.{{{name}}}({{join (pluck params "name") ", "}})
 {{{description}}}
 
 {{>params}}
 
-###Examples
-{{#each examples}}{{{this}}}{{/each}}
+{{>returns}}
+
+{{>examples}}
