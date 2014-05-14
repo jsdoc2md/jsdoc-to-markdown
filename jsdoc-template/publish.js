@@ -19,6 +19,7 @@ exports.publish = function(data, opts) {
         if (record.scope) output.scope = record.scope;
         if (record.params) output.params = record.params;
         if (record.returns) output.returns = record.returns;
+        if (record.examples) output.examples = record.examples;
         return output;
     });
     console.log(JSON.stringify(json, null, "  "));

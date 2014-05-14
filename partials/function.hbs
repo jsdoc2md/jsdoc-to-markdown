@@ -1,18 +1,7 @@
-##{{{name}}}
-{{#if description}}{{{description}}}
+###{{../namePrefix}}.{{{name}}}({{join (pluck params "name") ", "}})
+{{{description}}}
 
-{{/if~}}
+{{>params}}
 
-{{#if parameters}}###Parameters
-{{#each parameters}}{{>param}}{{/each}}
-{{/if~}}
-
-{{#if returns}}**Returns** {{returns.type}} {{{returns.description}}}
-
-{{#if examples}}###Example
-{{#each examples}}```js
-{{{this}}}
-```
-{{/each}}{{/if~}}
-
-{{/if~}}
+###Examples
+{{#each examples}}{{{this}}}{{/each}}
