@@ -1,2 +1,3 @@
-{{#each params}}**{{{name}}}** { {{~{join type.names " | "}~}} } - {{{description}}}  
-{{/each}}
+{{#if params}}
+{{#each params}}- {{{name}}} `{{{join type.names " | "}}}` {{{description}}}  
+{{/each}}{{/if}}
