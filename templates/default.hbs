@@ -1,12 +1,14 @@
 #API Documentation
-{{>module name="handbrake-js" jsdocdata=this}}
+{{#findWhere (where this kind="module")}}{{{description}}}
 
-{{>methods of="module:handbrake-js" namePrefix="hbjs" jsdocdata=this}}
+{{>properties of=(concat "module:" name) namePrefix=name jsdocdata=..}}
+{{>methods of=(concat "module:" name) namePrefix=name jsdocdata=..}}
 
-{{>class name="Handbrake" jsdocdata=this}}
+{{#where .. kind="class"}}
+{{>class name=name jsdocdata=..}}
+{{>properties of=name namePrefix=name jsdocdata=..}}
+{{>methods of=name namePrefix=name jsdocdata=..}}
+{{>events of=name jsdocdata=..}}
+{{/where}}
 
-{{>properties of="Handbrake" namePrefix="handbrake" jsdocdata=this}}
-
-{{>methods of="Handbrake" namePrefix="handbrake" jsdocdata=this}}
-
-{{>events of="Handbrake" jsdocdata=this}}
+{{/findWhere}}

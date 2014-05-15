@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 "use strict";
 
-// $ jsdoc2md --template README.hbs --src lib/* 
-
 var Model = require("nature").Model,
     cp = require("child_process"),
     path = require("path"),
@@ -20,7 +18,7 @@ var argv = new Model()
     .set(process.argv);
 
 var templatePath = path.resolve(__dirname, "..", "jsdoc-template"),
-    cmd = util.format("jsdoc -t %s %s", templatePath, argv.src);
+    cmd = util.format("jsdoc -t %s %s", templatePath, argv.src.join(" "));
 
 function render(data){
     var template = argv.template
