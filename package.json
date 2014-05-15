@@ -2,7 +2,7 @@
   "name": "jsdoc-to-markdown",
   "author": "Lloyd Brookes",
   "version": "0.0.0",
-  "description": "render JSdoc data as markdown",
+  "description": "Render JSdoc documentation as markdown",
   "repository": "https://github.com/75lb/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {
