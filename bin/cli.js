@@ -10,17 +10,17 @@ var Model = require("nature").Model,
     boil = require("boil-js"),
     mfs = require("more-fs");
 
+require("../")(boil);
+require("handlebars-array")(boil);
+
 var argv = new Model()
-    .define({ name: "template", type: "string" })
+    .define({ name: "template", alias: "t", type: "string" })
+    .define({ name: "json", alias: "j", type: "boolean" })
     .define({ name: "src", type: Array, defaultOption: true })
     .set(process.argv);
 
 var templatePath = path.resolve(__dirname, "..", "jsdoc-template"),
     cmd = util.format("jsdoc -t %s %s", templatePath, argv.src);
-
-boil.registerHelpers(path.resolve(__dirname, "..", "helpers", "*.js"));
-boil.registerHelpers(path.resolve(__dirname, "..", "node_modules", "handlebars-array", "lib", "*.js"));
-boil.registerPartials(path.resolve(__dirname, "..", "partials", "*.hbs"));
 
 function render(data){
     var template = argv.template
@@ -34,6 +34,9 @@ cp.exec(cmd, function(err, stdout, stderr){
         console.error(err)
         throw err;
     }
-    console.log(stdout);
-    render(JSON.parse(stdout));
+    if (argv.json){
+        console.log(stdout);
+    } else {
+        render(JSON.parse(stdout));
+    }
 });
