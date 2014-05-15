@@ -1,10 +1,15 @@
 {
   "name": "jsdoc-to-markdown",
+  "author": "Lloyd Brookes",
   "version": "0.0.0",
-  "description": "Partials for rendering JSdoc data as markdown",
+  "description": "render JSdoc data as markdown",
+  "repository": "https://github.com/75lb/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {
     "test": ""
+  },
+  "bin": {
+    "jsdoc2md": "bin/cli.js"
   },
   "keywords": [
     "handlebars",
@@ -12,9 +17,12 @@
     "markdown",
     "generator"
   ],
-  "author": "Lloyd Brookes",
   "dependencies": {
-    "more-fs": "~0.3.0",
-    "wodge": "^0.6.6"
+    "boil-js": "~0.0.0",
+    "console-dope": "^0.3.3",
+    "more-fs": "^0.3.0",
+    "nature": "~0.4.3",
+    "wodge": "~0.6.6",
+    "handlebars-array": "~0.0"
   }
 }
