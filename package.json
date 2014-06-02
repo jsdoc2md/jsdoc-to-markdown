@@ -18,11 +18,10 @@
     "generator"
   ],
   "dependencies": {
-    "boil-js": "~0.0.0",
+    "boil-js": "^0.1.0",
+    "command-line-args": "^0.2.0",
     "console-dope": "^0.3.3",
     "more-fs": "^0.3.0",
-    "nature": "~0.4.3",
-    "wodge": "~0.6.6",
-    "handlebars-array": "~0.0"
+    "wodge": "^0.7.0"
   }
 }

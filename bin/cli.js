@@ -1,21 +1,26 @@
 #!/usr/bin/env node
 "use strict";
 
-var Model = require("nature").Model,
+var cliArgs = require("command-line-args"),
     cp = require("child_process"),
     path = require("path"),
     util = require("util"),
     boil = require("boil-js"),
-    mfs = require("more-fs");
+    mfs = require("more-fs"),
+    dope = require("console-dope");
 
 require("../")(boil);
-require("handlebars-array")(boil);
 
-var argv = new Model()
-    .define({ name: "template", alias: "t", type: "string" })
-    .define({ name: "json", alias: "j", type: "boolean" })
-    .define({ name: "src", type: Array, defaultOption: true })
-    .set(process.argv);
+var argv = cliArgs([
+    { name: "template", alias: "t", type: String },
+    { name: "json", alias: "j", type: Boolean },
+    { name: "src", type: Array, defaultOption: true },
+]).parse();
+
+if (!argv.src){
+    dope.red.error("specify at least one source file");
+    process.exit(1);
+}
 
 var templatePath = path.resolve(__dirname, "..", "jsdoc-template"),
     cmd = util.format("jsdoc -t %s %s", templatePath, argv.src.join(" "));
