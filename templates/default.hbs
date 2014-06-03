@@ -12,15 +12,43 @@
 {{>function parentName=../name}}
 {{/each}}
 
-{{! Classes}}
-{{#each (where .. kind="class")}}
+{{! Module Classes}}
+{{#each (where .. kind="class" memberof=(concat "module:" ../name))}}
 {{>class}}
+
+{{! Module Class properties}}
 {{#each (where ../.. kind="member" memberof=(concat "module:" ../name "~" name))}}
 {{>properties parentName=../name}}
 {{/each}}
 
-{{!>methods of=name namePrefix=name jsdocdata=../..}}
-{{!>events of=name jsdocdata=../..}}
+{{! Module Class methods}}
+{{#each (where ../.. kind="function" memberof=(concat "module:" ../name "~" name))}}
+{{>function parentName=../name}}
 {{/each}}
 
+{{! Module Class events}}
+{{#each (where ../.. kind="event" memberof=(concat "module:" ../name "~" name))}}
+{{>event}}
+{{/each}}
+
+{{/each}}
 {{/findWhere}}
+
+{{! Classes}}
+{{#each (where this kind="class")}}
+{{>class}}
+
+{{! Module Class properties}}
+{{#each (where ../.. kind="member" memberof=(concat "module:" ../name "~" name))}}
+{{>properties parentName=../name}}
+{{/each}}
+
+{{! Module Class methods}}
+{{#each (where ../.. kind="function" memberof=(concat "module:" ../name "~" name))}}
+{{>function parentName=../name}}
+{{/each}}
+
+{{! Module Class events}}
+{{#each (where ../.. kind="event" memberof=(concat "module:" ../name "~" name))}}
+{{>event}}
+{{/each}}
