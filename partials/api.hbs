@@ -1,0 +1,34 @@
+{{! Module}}
+{{#each (where this kind="module")}}{{>module}}
+
+{{! Module properties}}
+{{#each (where .. kind="member" memberof=(string-concat "module:" name))}}
+{{>properties parentName=../alias}}
+{{/each}}
+
+{{! Module Methods}}
+{{#each (where .. kind="function" memberof=(string-concat "module:" name))}}
+{{>function parentName=../alias}}
+{{/each}}
+
+{{! Module Classes}}
+{{#each (where .. kind="class" memberof=(string-concat "module:" name))}}
+{{>class}}
+
+{{! Module Class properties}}
+{{#each (where ../.. kind="member" memberof=(string-concat "module:" ../name "~" name))}}
+{{>properties parentName=(instantiate ../name)}}
+{{/each}}
+
+{{! Module Class methods}}
+{{#each (where ../.. kind="function" memberof=(string-concat "module:" ../name "~" name))}}
+{{>function parentName=(instantiate ../name)}}
+{{/each}}
+
+{{! Module Class events}}
+{{#each (where ../.. kind="event" memberof=(string-concat "module:" ../name "~" name))}}
+{{>event}}
+{{/each}}
+
+{{/each}}
+{{/each}}

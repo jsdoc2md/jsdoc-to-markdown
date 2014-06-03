@@ -1,9 +1,7 @@
 var w = require("wodge");
 
 module.exports = function(handlebars){
-    handlebars.registerHelper("paramList", function(params){
-        return w.arrayify(params).map(function(param){
-            return param.optional ? "[" + param.name + "]" : param.name;
-        }).join(", ");
+    handlebars.registerHelper("instantiate", function(input){
+        return input.charAt(0).toLowerCase() + input.slice(1);
     });
 };
