@@ -1,6 +1,11 @@
 {{! Module}}
 {{#each (where this kind="module")}}{{>module}}
 
+{{! Module class alias}}
+{{#with (findWhere .. kind="class" name=(string-concat "module:" name))}}
+{{>class}}
+{{/with}}
+
 {{! Module properties}}
 {{#each (where .. kind="member" memberof=(string-concat "module:" name))}}
 {{>properties parentName=../alias}}

@@ -1,5 +1,7 @@
-##class: {{name}}
+##class: {{string-replace name "module:" ""}}
 {{{classdesc}}}
 {{#if augments}}
 **Extends**: `{{{join augments ", "}}}`
 {{/if}}
+{{>params}}
+{{>examples}}
