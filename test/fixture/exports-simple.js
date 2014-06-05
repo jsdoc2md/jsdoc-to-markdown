@@ -23,20 +23,24 @@ exports._propertyThree = "propertyThree";
 
 /**
 Method one desc
-@param {...Object} object - a sequence of Object instances
-@return {Thing} the return description
+@param {...Object} sequence - a sequence of Object instances
+@return {Thing} a return with one type
 @example
+```js
 var blah = 1;
+```
 */
 exports.methodOne = function(){};
 
 /**
 Method two desc
-@param {Object|Array} input - the input to clone
+@param {Object|Array} arg - an arg with multiple types
 @param [optional] {Object} - an optional arg
-@returns {Object|Array} the return description
+@returns {Object|Array} a return with multiple types
 @example
+```js
 var blah = 2;
+```
 */
 exports.methodTwo = function(){};
 

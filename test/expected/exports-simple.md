@@ -4,8 +4,8 @@
   * [propertyOne](#module_exports-simple.propertyOne)
   * [propertyTwo](#module_exports-simple.propertyTwo)
   * [_propertyThree](#module_exports-simple._propertyThree)
-  * [methodOne(object)](#module_exports-simple.methodOne)
-  * [methodTwo(input, [optional])](#module_exports-simple.methodTwo)
+  * [methodOne(sequence)](#module_exports-simple.methodOne)
+  * [methodTwo(arg, [optional])](#module_exports-simple.methodTwo)
   * [Class: Thing](#module_exports-simple.Thing)
   
 
@@ -44,35 +44,39 @@ property three desc
 
 
 <a name="module_exports-simple.methodOne"></a>
-###exports-simple.methodOne(object)
+###exports-simple.methodOne(sequence)
 Method one desc
 
 
-- object `Object` a sequence of Object instances  
+- sequence `Object` a sequence of Object instances  
 
 
-**Returns**: `Thing` - the return description
+**Returns**: `Thing` - a return with one type
 
 
 ####Example
+```js
 var blah = 1;
+```
 
 
 
 <a name="module_exports-simple.methodTwo"></a>
-###exports-simple.methodTwo(input, [optional])
+###exports-simple.methodTwo(arg, [optional])
 Method two desc
 
 
-- input `Object | Array` the input to clone  
-- optional `Object` an optional arg  
+- arg `Object | Array` an arg with multiple types  
+- [optional] `Object` an optional arg  
 
 
-**Returns**: `Object | Array` - the return description
+**Returns**: `Object | Array` - a return with multiple types
 
 
 ####Example
+```js
 var blah = 2;
+```
 
 
 
@@ -84,7 +88,7 @@ var blah = 2;
 a thing class
 
 
-- optional `Object` an optional arg  
+- [optional] `Object` an optional arg  
 
 
 
@@ -109,7 +113,7 @@ instance property one
 protoOne desc
 
 
-- optional `Object` an optional arg  
+- [optional] `Object` an optional arg  
 
 
 
