@@ -43,4 +43,17 @@ exports.methodTwo = function(){};
 @class
 @classdesc a thing class
 */
-function Thing(){}
+function Thing(){
+	/** instance property one	*/
+	this.one = 1;
+	/** instance property one	*/
+	this.two = 2;
+}
+/**
+protoOne desc
+*/
+Thing.prototype.protoOne = function(){}
+/**
+protoTwo desc
+*/
+Thing.prototype.protoTwo = function(){}

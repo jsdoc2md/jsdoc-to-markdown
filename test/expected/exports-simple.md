@@ -12,9 +12,6 @@ A module exporting stuff
 
 
 
-
-
-
 ###exports-simple.propertyOne
 property one desc
 
@@ -41,10 +38,9 @@ Method one desc
 **Returns**: `Thing` - the return description
 
 
-####Examples
-```js
+####Example
 var blah = 1;
-```
+
 
 
 ###exports-simple.methodTwo(input)
@@ -57,10 +53,9 @@ Method two desc
 **Returns**: `Object | Array` - the return description
 
 
-####Examples
-```js
+####Example
 var blah = 2;
-```
+
 
 
 
@@ -69,6 +64,35 @@ var blah = 2;
 ##class: Thing
 a thing class
 
+
+
+
+
+
+
+###thing.one
+instance property one
+
+
+###thing.two
+instance property one
+
+
+
+
+
+###thing.protoOne()
+protoOne desc
+
+
+
+
+
+
+
+
+###thing.protoTwo()
+protoTwo desc
 
 
 
