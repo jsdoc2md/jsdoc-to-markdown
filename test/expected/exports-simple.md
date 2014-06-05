@@ -1,9 +1,9 @@
 #API Reference
 
 * exports-simple
-  * [propertyOne](#module:exports-simple.propertyOne)
-  * [propertyTwo](#module:exports-simple.propertyTwo)
-  * [_propertyThree](#module:exports-simple._propertyThree)
+  * [propertyOne](#module_exports-simple.propertyOne)
+  * [propertyTwo](#module_exports-simple.propertyTwo)
+  * [_propertyThree](#module_exports-simple._propertyThree)
   * methodOne(object)
   * methodTwo(input, [optional])
   * Class: Thing
@@ -24,17 +24,17 @@ A module exporting stuff
 
 
 
-<span id="module:exports-simple.propertyOne"></span>
+<a name="module_exports-simple.propertyOne"></a>
 ###exports-simple.propertyOne
 property one desc
 
 
-<span id="module:exports-simple.propertyTwo"></span>
+<a name="module_exports-simple.propertyTwo"></a>
 ###exports-simple.propertyTwo
 property two desc
 
 
-<span id="module:exports-simple._propertyThree"></span>
+<a name="module_exports-simple._propertyThree"></a>
 ###exports-simple._propertyThree
 *protected*  
 property three desc
@@ -88,12 +88,12 @@ a thing class
 
 
 
-<span id="module:exports-simple~Thing#one"></span>
+<a name="module_exports-simple~Thing#one"></a>
 ###thing.one
 instance property one
 
 
-<span id="module:exports-simple~Thing#two"></span>
+<a name="module_exports-simple~Thing#two"></a>
 ###thing.two
 instance property one
 
