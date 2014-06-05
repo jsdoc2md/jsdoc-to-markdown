@@ -1,2 +1,2 @@
-{{#if returns}}{{#each returns}}**Returns**: {{type.names}}{{{description}}}
+{{#if returns}}**Returns**: {{#each returns}}`{{join type.names " | "}}`{{#if description}} - {{{description}}}{{/if}}
 {{/each}}{{/if}}

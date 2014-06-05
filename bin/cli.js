@@ -29,7 +29,6 @@ var templatePath = path.resolve(__dirname, "..", "jsdoc-template"),
 		templatePath, 
 		argv.src.join(" ")
 	);
-	console.log("CMD", cmd)
 
 function render(data){
     var template = argv.template
