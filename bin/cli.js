@@ -23,7 +23,13 @@ if (!argv.src){
 }
 
 var templatePath = path.resolve(__dirname, "..", "jsdoc-template"),
-    cmd = util.format("jsdoc -t %s %s", templatePath, argv.src.join(" "));
+    cmd = util.format(
+		"%s -t %s %s", 
+		path.resolve(__dirname, "..", "node_modules", ".bin", "jsdoc"),
+		templatePath, 
+		argv.src.join(" ")
+	);
+	console.log("CMD", cmd)
 
 function render(data){
     var template = argv.template
