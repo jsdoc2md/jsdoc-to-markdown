@@ -1,0 +1,14 @@
+{{! module -> members}}
+{{#each (where @root kind="member" memberof=longname)}}
+{{#if ../alias}}{{>member parentName=../../alias}}{{else}}{{>member parentName=../../name}}{{/if}}
+{{/each}}
+
+{{! module -> methods}}
+{{#each (where @root kind="function" memberof=longname)}}
+{{#if ../alias}}{{>function parentName=../../alias}}{{else}}{{>function parentName=../../name}}{{/if}}
+{{/each}}
+
+{{! module -> inner classes}}
+{{#each (where @root kind="class" scope="inner" memberof=longname)}}
+{{>class}}
+{{/each}}

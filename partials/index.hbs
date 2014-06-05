@@ -1,7 +1,0 @@
-{{#each (where @root kind="module")}}
-* {{name}}
-  {{#each (where @root kind="member" memberof=longname)}}* [{{name}}](#{{{anchorName longname}}})
-  {{/each}}{{#each (where @root kind="function" memberof=longname)}}* [{{name}}({{methodSig params}})](#{{{anchorName longname}}})
-  {{/each}}{{#each (where @root kind="class" scope="inner" memberof=longname)}}* [Class: {{name}}](#{{{anchorName longname}}})
-  {{/each}}
-{{/each}}

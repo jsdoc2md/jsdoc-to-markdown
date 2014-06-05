@@ -1,21 +1,5 @@
 {{! module}}
-{{#each (where this kind="module")}}{{>module}}
-
-{{>index}}
-
-{{! module -> members}}
-{{#each (where .. kind="member" memberof=longname)}}
-{{#if ../alias}}{{>member parentName=../../alias}}{{else}}{{>member parentName=../../name}}{{/if}}
-{{/each}}
-
-{{! module -> methods}}
-{{#each (where .. kind="function" memberof=longname)}}
-{{#if ../alias}}{{>function parentName=../../alias}}{{else}}{{>function parentName=../../name}}{{/if}}
-{{/each}}
-
-{{! module -> inner classes}}
-{{#each (where .. kind="class" scope="inner" memberof=longname)}}
-{{>class jsdocdata=../..}}
-{{/each}}
-
+{{#each (where @root kind="module")}}{{>module}}
+{{>module-index}}
+{{>module-members}}
 {{/each}}

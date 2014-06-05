@@ -8,16 +8,16 @@
 {{>examples}}
 
 {{! module -> inner class -> members }}
-{{#each (where jsdocdata kind="member" memberof=longname)}}
+{{#each (where @root kind="member" memberof=longname)}}
 {{>member parentName=(instantiate ../name)}}
 {{/each}}
 
 {{! module -> inner class -> methods }}
-{{#each (where jsdocdata kind="function" memberof=longname)}}
+{{#each (where @root kind="function" memberof=longname)}}
 {{>function parentName=(instantiate ../name)}}
 {{/each}}
 
 {{! module -> inner class -> methods }}
-{{#each (where jsdocdata kind="event" memberof=longname)}}
+{{#each (where @root kind="event" memberof=longname)}}
 {{>event}}
 {{/each}}
