@@ -2,6 +2,6 @@
 * {{name}}
   {{#each (where .. kind="member" memberof=longname)}}* [{{name}}](#{{{anchorName longname}}})
   {{/each}}{{#each (where .. kind="function" memberof=longname)}}* [{{name}}({{methodSig params}})](#{{{anchorName longname}}})
-  {{/each}}{{#each (where .. kind="class" scope="inner" memberof=longname)}}* [Class: {{name}}]((#{{{anchorName longname}}}))
+  {{/each}}{{#each (where .. kind="class" scope="inner" memberof=longname)}}* [Class: {{name}}](#{{{anchorName longname}}})
   {{/each}}
 {{/each}}

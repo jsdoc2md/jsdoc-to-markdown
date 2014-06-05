@@ -6,7 +6,7 @@
   * [_propertyThree](#module_exports-simple._propertyThree)
   * [methodOne(object)](#module_exports-simple.methodOne)
   * [methodTwo(input, [optional])](#module_exports-simple.methodTwo)
-  * [Class: Thing]((#module_exports-simple.Thing))
+  * [Class: Thing](#module_exports-simple.Thing)
   
 
 
