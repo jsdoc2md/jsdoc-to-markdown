@@ -4,14 +4,14 @@
   * [propertyOne](#module_exports-simple.propertyOne)
   * [propertyTwo](#module_exports-simple.propertyTwo)
   * [_propertyThree](#module_exports-simple._propertyThree)
-  * methodOne(object)
-  * methodTwo(input, [optional])
-  * Class: Thing
+  * [methodOne(object)](#module_exports-simple.methodOne)
+  * [methodTwo(input, [optional])](#module_exports-simple.methodTwo)
+  * [Class: Thing]((#module_exports-simple.Thing))
   
 
 
 
-#exports-simple API
+#exports-simple
 A module exporting stuff
 
 ###Authors
@@ -43,6 +43,7 @@ property three desc
 
 
 
+<a name="module_exports-simple.methodOne"></a>
 ###exports-simple.methodOne(object)
 Method one desc
 
@@ -58,6 +59,7 @@ var blah = 1;
 
 
 
+<a name="module_exports-simple.methodTwo"></a>
 ###exports-simple.methodTwo(input, [optional])
 Method two desc
 
@@ -77,6 +79,7 @@ var blah = 2;
 
 
 
+<a name="module_exports-simple.Thing"></a>
 ##class: Thing
 a thing class
 
@@ -88,12 +91,12 @@ a thing class
 
 
 
-<a name="module_exports-simple~Thing#one"></a>
+<a name="module_exports-simple.Thing#one"></a>
 ###thing.one
 instance property one
 
 
-<a name="module_exports-simple~Thing#two"></a>
+<a name="module_exports-simple.Thing#two"></a>
 ###thing.two
 instance property one
 
@@ -101,6 +104,7 @@ instance property one
 
 
 
+<a name="module_exports-simple.Thing#protoOne"></a>
 ###thing.protoOne([optional])
 protoOne desc
 
@@ -113,6 +117,7 @@ protoOne desc
 
 
 
+<a name="module_exports-simple.Thing#protoTwo"></a>
 ###thing.protoTwo()
 protoTwo desc
 

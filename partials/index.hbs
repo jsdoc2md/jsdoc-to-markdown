@@ -1,7 +1,7 @@
 {{#each (where this kind="module")}}
 * {{name}}
-  {{#each (where .. kind="member" memberof=longname)}}* [{{name}}](#{{{string-replace longname ":" "_"}}})
-  {{/each}}{{#each (where .. kind="function" memberof=longname)}}* {{name}}({{methodSig params}})
-  {{/each}}{{#each (where .. kind="class" scope="inner" memberof=longname)}}* Class: {{name}}
+  {{#each (where .. kind="member" memberof=longname)}}* [{{name}}](#{{{anchorName longname}}})
+  {{/each}}{{#each (where .. kind="function" memberof=longname)}}* [{{name}}({{methodSig params}})](#{{{anchorName longname}}})
+  {{/each}}{{#each (where .. kind="class" scope="inner" memberof=longname)}}* [Class: {{name}}]((#{{{anchorName longname}}}))
   {{/each}}
 {{/each}}
