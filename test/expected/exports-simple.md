@@ -43,11 +43,12 @@ var blah = 1;
 
 
 
-###exports-simple.methodTwo(input)
+###exports-simple.methodTwo(input, [optional])
 Method two desc
 
 
 - input `Object | Array` the input to clone  
+- optional `Object` an optional arg  
 
 
 **Returns**: `Object | Array` - the return description
@@ -65,6 +66,8 @@ var blah = 2;
 a thing class
 
 
+- optional `Object` an optional arg  
+
 
 
 
@@ -81,9 +84,11 @@ instance property one
 
 
 
-###thing.protoOne()
+###thing.protoOne([optional])
 protoOne desc
 
+
+- optional `Object` an optional arg  
 
 
 
