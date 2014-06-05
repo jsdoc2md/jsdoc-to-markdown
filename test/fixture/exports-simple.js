@@ -63,5 +63,6 @@ protoOne desc
 Thing.prototype.protoOne = function(){}
 /**
 protoTwo desc
+@returns {String}
 */
 Thing.prototype.protoTwo = function(){}
