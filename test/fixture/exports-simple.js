@@ -33,6 +33,7 @@ exports.methodOne = function(){};
 /**
 Method two desc
 @param {Object|Array} input - the input to clone
+@param [optional] {Object} - an optional arg
 @returns {Object|Array} the return description
 @example
 var blah = 2;
@@ -42,6 +43,7 @@ exports.methodTwo = function(){};
 /**
 @class
 @classdesc a thing class
+@param [optional] {Object} - an optional arg
 */
 function Thing(){
 	/** instance property one	*/
@@ -51,6 +53,7 @@ function Thing(){
 }
 /**
 protoOne desc
+@param [optional] {Object} - an optional arg
 */
 Thing.prototype.protoOne = function(){}
 /**
