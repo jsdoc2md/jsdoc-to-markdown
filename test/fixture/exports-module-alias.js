@@ -4,6 +4,10 @@ A module exporting stuff
 @author 75lb <75pound@gmail.com>
 @author Clive <clive@gmail.com>
 @alias simple
+@example
+```js
+var simple = require("exports-simple");
+```
 */
 
 /**

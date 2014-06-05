@@ -58,6 +58,7 @@ function Thing(){
 /**
 protoOne desc
 @param [optional] {Object} - an optional arg
+@returns a return with no type
 */
 Thing.prototype.protoOne = function(){}
 /**
