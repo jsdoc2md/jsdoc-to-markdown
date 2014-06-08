@@ -43,7 +43,7 @@ function render(data){
     console.log(boil.render(template, data));
 }
 
-cp.exec(cmd, function(err, stdout, stderr){
+cp.exec(cmd, { maxBuffer: 1000 * 1024 }, function(err, stdout, stderr){
     if (err){
         console.error(err)
         throw err;
