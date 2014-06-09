@@ -1,8 +1,8 @@
-var w = require("wodge");
+var w = require("array-ting");
 
 module.exports = function(handlebars){
     handlebars.registerHelper("methodSig", function(params){
-        return w.arrayify(params).map(function(param){
+        return a.arrayify(params).map(function(param){
             if (param.variable){
                 return param.optional ? "[..." + param.name + "]" : "..." + param.name;
             } else {

@@ -1,5 +1,5 @@
 var util = require("util"),
-	w = require("wodge");
+	o = require("object-ting");
 
 /**
  * Generate documentation output.
@@ -10,7 +10,7 @@ var util = require("util"),
  */
 exports.publish = function(data, opts) {
     var json = data({ undocumented: { "!is": true }}).map(function(record){
-        return w.without(record, [ "comment", "meta", "undocumented", "___id", "___s" ]);
+        return o.without(record, [ "comment", "meta", "undocumented", "___id", "___s" ]);
     });
     console.log(JSON.stringify(json, null, "  "));
 };
