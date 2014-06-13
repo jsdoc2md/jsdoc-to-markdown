@@ -1,4 +1,4 @@
-var a = require("array-ting");
+var a = require("array-tools");
 
 module.exports = function(handlebars){
     handlebars.registerHelper("methodSig", function(params){

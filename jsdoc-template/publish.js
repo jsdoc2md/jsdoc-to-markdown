@@ -1,5 +1,5 @@
 var util = require("util"),
-	o = require("object-ting");
+	o = require("object-tools");
 
 /**
  * Generate documentation output.
