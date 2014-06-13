@@ -18,12 +18,12 @@
     "generator"
   ],
   "dependencies": {
-    "array-ting": "^1.0.2",
+    "array-tools": "^1.0.2",
     "boil-js": "^0.1.0",
     "command-line-args": "^0.2.0",
     "console-dope": "^0.3.3",
     "jsdoc": "^3.3.0-alpha5",
-    "more-fs": "^0.3.0",
-    "object-ting": "^0.1.1"
+    "more-fs": "^0.4.0",
+    "object-tools": "^1.0.0"
   }
 }
