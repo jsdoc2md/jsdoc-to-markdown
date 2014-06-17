@@ -1,4 +1,6 @@
 <a name="{{{anchorName longname}}}"></a>
-###{{parentName}}.{{{name}}}{{#if access}}
-*{{{access}}}*  {{/if}}
+###{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}{{#if type}} :{{join type.names ", "}}{{/if}}{{#if access}}
+*{{{access}}}*  {{/if}}{{#if description}}
 {{{description}}}
+
+{{/if}}

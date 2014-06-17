@@ -11,16 +11,36 @@ var cliArgs = require("command-line-args"),
 
 require("../")(boil);
 
-var argv = cliArgs([
-    { name: "template", alias: "t", type: String },
-    { name: "preset", alias: "p", type: String },
-    { name: "json", alias: "j", type: Boolean },
-    { name: "src", type: Array, defaultOption: true },
-]).parse();
+var cli = cliArgs([
+    { name: "template", alias: "t", type: String, 
+      description: "A custom handlebars template to insert the rendered documentation into" },
+    { name: "preset", alias: "p", type: String, value: "modules", 
+      description: "Use a preset template" },
+    { name: "json", alias: "j", type: Boolean, 
+      description: "Output the template data only" },
+    { name: "help", alias: "h", type: Boolean, 
+      description: "Print usage information" },
+    { name: "src", type: Array, defaultOption: true, 
+      description: "The javascript source files. The default option." }
+]);
+var usage = cli.usage({
+    forms: [ "$ jsdoc2md <options> <source_files>" ]
+});
+
+try{
+    var argv = cli.parse();
+} catch(err){
+    halt(err.message);
+}
+// console.dir(argv)
+
+if (argv.help){
+    dope.log(usage);
+    process.exit(0);
+}
 
 if (!argv.src){
-    dope.red.error("specify at least one source file");
-    process.exit(1);
+    halt("specify at least one source file");
 }
 
 var jsdocTemplatePath = path.resolve(__dirname, "..", "jsdoc-template"),
@@ -35,10 +55,8 @@ function render(data){
 	var template = "";
 	if (argv.template){
 		template = mfs.read(argv.template);
-	} else if (argv.preset){
-		template = mfs.read(path.resolve(__dirname, "..", "templates", argv.preset + ".hbs"));
 	} else {
-		template = mfs.read(path.resolve(__dirname, "..", "templates", "default.hbs"));
+		template = mfs.read(path.resolve(__dirname, "..", "templates", argv.preset + ".hbs"));
 	}
     console.log(boil.render(template, data));
 }
@@ -54,3 +72,9 @@ cp.exec(cmd, { maxBuffer: 1000 * 1024 }, function(err, stdout, stderr){
         render(JSON.parse(stdout));
     }
 });
+
+function halt(msg){
+    dope.red.error("Error: " + msg);
+    dope.log(usage);
+    process.exit(1);
+}

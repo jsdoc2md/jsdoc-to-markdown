@@ -1,9 +1,3 @@
 <a name="{{{anchorName longname}}}"></a>
 ###{{#if (equal scope "static")}}{{parentName}}.{{/if}}{{{name}}}({{methodSig params}})
-{{{description}}}
-
-{{>params}}
-
-{{>returns}}
-
-{{>examples}}
+{{{description}}}{{>params~}}{{>returns~}}{{>examples}}
