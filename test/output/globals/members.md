@@ -32,13 +32,13 @@ Access: private
 ###withAuthor
 Author: Clive Jones <clive@jones.com>  
 ###hasDefault
-Default value: `23`  
+Default: `23`  
 ###allTogether :boolean
-Access: private  
-Author: Lloyd Brookes <lloyd@brookes.com>  
-Default value: `false`  
 This variable has all tags set
 
+Access: private  
+Default: `false`  
+Author: Lloyd Brookes <lloyd@brookes.com>  
 ####Example
 ```js
 var allTogether = true;
