@@ -37,7 +37,7 @@ Default: `{"one":1,"two":2}`
 Read only: true  
 ###hasSince
 Since: v0.10.28  
-###~~allTogether~~ :boolean
+###~~allTogether :boolean~~
 This variable has all tags set
 
 ***Deprecated***  
