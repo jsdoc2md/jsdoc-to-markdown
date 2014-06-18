@@ -74,6 +74,7 @@ This variable has all tags set
 @type {boolean}
 @private
 @default
+@readonly
 @author Lloyd Brookes <lloyd@brookes.com>
 @example
 ```js
@@ -86,3 +87,8 @@ var allTogether = false;
 @deprecated
 */
 var deprecated = true;
+
+/**
+@readonly
+*/
+var readOnly = true;

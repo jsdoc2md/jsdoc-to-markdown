@@ -41,6 +41,7 @@ This variable has all tags set
 **deprecated**  
 Access: private  
 Default: `false`  
+Read only: true  
 Author: Lloyd Brookes <lloyd@brookes.com>  
 ####Example
 ```js
@@ -49,3 +50,5 @@ var allTogether = true;
 
 ###~~deprecated~~
 **deprecated**  
+###readOnly
+Read only: true  
