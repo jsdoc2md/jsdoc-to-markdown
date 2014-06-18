@@ -101,7 +101,7 @@ This function has all tags set
 @param {string} - The input string
 @param {object} - a second input
 @private
-@author Lloyd Brookes <lloyd@brookes.com>
+@author Lloyd <75pound@gmail.com>
 @since v0.10.28
 @returns {object | string} this return has several types
 @example

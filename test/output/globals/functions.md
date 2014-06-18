@@ -87,7 +87,7 @@ This function has all tags set
 ***Deprecated***  
 Access: private  
 Since: v0.10.28  
-Author: Lloyd Brookes <lloyd@brookes.com>  
+Author: Lloyd <75pound@gmail.com>  
 Returns: `object | string` - this return has several types  
 ####Example
 ```js
