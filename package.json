@@ -6,7 +6,8 @@
   "repository": "https://github.com/75lb/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "output": "sh output.sh"
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"
