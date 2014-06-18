@@ -69,22 +69,6 @@ var hasDefaultObject = {
 };
 
 /**
-This variable has all tags set
-@deprecated
-@type {boolean}
-@private
-@default
-@readonly
-@author Lloyd Brookes <lloyd@brookes.com>
-@since v0.10.28
-@example
-```js
-var allTogether = true;
-```
-*/
-var allTogether = false;
-
-/**
 @deprecated
 */
 var deprecated = true;
@@ -99,3 +83,18 @@ var readOnly = true;
 */
 var hasSince = true;
 
+/**
+This variable has all tags set
+@deprecated
+@type {boolean}
+@private
+@default
+@readonly
+@author Lloyd Brookes <lloyd@brookes.com>
+@since v0.10.28
+@example
+```js
+var allTogether = true;
+```
+*/
+var allTogether = false;

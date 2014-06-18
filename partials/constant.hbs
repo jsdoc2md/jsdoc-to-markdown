@@ -1,13 +1,13 @@
 {{#if @root.argv.index}}<a name="{{{anchorName longname}}}"></a>
 {{/if~}}
 
-{{#if name}}###{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}{{#if type}} :{{join type.names " | "}}{{/if}}
+{{#if name}}###{{#if parentName}}{{parentName}}.{{/if}}{{#if deprecated}}~~{{{name}}}~~{{else}}{{{name}}}{{/if}}{{#if type}} :{{join type.names " | "}}{{/if}}
 {{/if~}}
-
-{{>access~}}
-
-{{>authors~}}
-
 {{>description~}}
-
+{{>deprecated~}}
+{{>access~}}
+{{>default~}}
+{{>readOnly~}}
+{{>since~}}
+{{>authors~}}
 {{>examples~}}
