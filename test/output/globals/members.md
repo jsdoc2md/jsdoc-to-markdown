@@ -36,7 +36,8 @@ Default value: `23`
 ###allTogether :boolean
 Access: private  
 Author: Lloyd Brookes <lloyd@brookes.com>  
-Default value: `false`  
+Default value: `false`
+
 This variable has all tags set
 
 ####Example
