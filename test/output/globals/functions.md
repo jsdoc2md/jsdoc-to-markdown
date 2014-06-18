@@ -32,7 +32,7 @@ Access: private
 ###withAuthor()
 Author: Clive Jones <clive@jones.com>  
 
-###~~oldFunction~~()
+###~~oldFunction()~~
 ***Deprecated***  
 
 ###newFunction()
@@ -77,7 +77,7 @@ Returns: `object` - this return has a description
 ###returnsSeveral()
 Returns: `object | string` - this return has several types  
 
-###~~allTogether~~(one, two)
+###~~allTogether(one, two)~~
 This function has all tags set
 
 

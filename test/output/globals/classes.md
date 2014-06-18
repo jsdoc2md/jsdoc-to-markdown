@@ -18,7 +18,7 @@ a constructor with args
 ##class: Everything
 a class with all trimmings
 
-###new ~~Everything~~(input, [options])
+###~~new Everything(input, [options])~~
 the constructor description
 
 
