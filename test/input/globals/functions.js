@@ -51,19 +51,6 @@ function oldFunction(){}
 function newFunction(){}
 
 /**
-This function has all tags set
-@deprecated
-@private
-@author Lloyd Brookes <lloyd@brookes.com>
-@since v0.10.28
-@example
-```js
-allTogether(true);
-```
-*/
-function allTogether(){}
-
-/**
 @param {string} - The input string
 */
 function withParam(one, two){}
@@ -88,3 +75,19 @@ function returnsSomethingDesc(one, two){}
 @returns {object | string} this return has several types
 */
 function returnsSeveral(one, two){}
+
+/**
+This function has all tags set
+@deprecated
+@param {string} - The input string
+@param {object} - a second input
+@private
+@author Lloyd Brookes <lloyd@brookes.com>
+@since v0.10.28
+@returns {object | string} this return has several types
+@example
+```js
+allTogether(true);
+```
+*/
+function allTogether(one, two){}

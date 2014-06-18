@@ -46,19 +46,6 @@ Author: Clive Jones <clive@jones.com>
 Since: v0.10.28  
   
 
-###~~allTogether~~()
-This function has all tags set
-
-**Deprecated**  
-Access: private  
-Since: v0.10.28  
-Author: Lloyd Brookes <lloyd@brookes.com>  
-  
-####Example
-```js
-allTogether(true);
-```
-
 ###withParam(one)
  - one `string` - The input string
   
@@ -76,3 +63,18 @@ Returns: `object` - this return has a description
 
 ###returnsSeveral()
 Returns: `object | string` - this return has several types  
+
+###~~allTogether~~(one, two)
+This function has all tags set
+
+**Deprecated**  
+Access: private  
+Since: v0.10.28  
+Author: Lloyd Brookes <lloyd@brookes.com>  
+ - one `string` - The input string
+ - two `object` - a second input
+Returns: `object | string` - this return has several types  
+####Example
+```js
+allTogether(true);
+```
