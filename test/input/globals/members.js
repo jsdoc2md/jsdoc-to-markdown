@@ -76,6 +76,7 @@ This variable has all tags set
 @default
 @readonly
 @author Lloyd Brookes <lloyd@brookes.com>
+@since v0.10.28
 @example
 ```js
 var allTogether = true;
@@ -92,3 +93,9 @@ var deprecated = true;
 @readonly
 */
 var readOnly = true;
+
+/**
+@since v0.10.28
+*/
+var hasSince = true;
+
