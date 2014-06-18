@@ -1,4 +1,4 @@
-{{~>anchor}}
+{{>anchor}}
 {{#if name}}###{{#if parentName}}{{parentName}}.{{/if}}{{#if deprecated}}~~{{{name}}}~~{{else}}{{{name}}}{{/if}}({{methodSig params}})
 {{/if~}}
 {{>description~}}
@@ -7,4 +7,5 @@
 {{>since~}}
 {{>authors~}}
 {{>params~}}
+{{>returns~}}
 {{>examples~}}

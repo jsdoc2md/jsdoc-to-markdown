@@ -73,3 +73,18 @@ function withParam(one, two){}
 @param {object} - a second input
 */
 function withParams(one, two){}
+
+/**
+@returns {string}
+*/
+function returnsSomething(one, two){}
+
+/**
+@returns {object} this return has a description
+*/
+function returnsSomethingDesc(one, two){}
+
+/**
+@returns {object | string} this return has several types
+*/
+function returnsSeveral(one, two){}
