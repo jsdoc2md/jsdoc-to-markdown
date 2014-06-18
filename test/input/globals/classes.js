@@ -4,6 +4,8 @@ a constructor description
 @classdesc simple class description
 */
 function Person(){}
+Person.prototype.methodOne = function(){};
+
 
 /**
 a constructor with args
