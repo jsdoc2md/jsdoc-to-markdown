@@ -33,7 +33,7 @@ Access: private
 Author: Clive Jones <clive@jones.com>  
 
 ###~~oldFunction~~()
-**Deprecated**  
+***Deprecated***  
 
 ###newFunction()
 Since: v0.10.28  
@@ -44,6 +44,17 @@ Since: v0.10.28
 
 
 ###withParams(one, two)
+
+ - one `string` - The input string
+ - two `object` - a second input
+
+
+###withBullets(one, two)
+this description has 
+
+- bullet
+- points
+
 
  - one `string` - The input string
  - two `object` - a second input
@@ -65,7 +76,7 @@ This function has all tags set
  - one `string` - The input string
  - two `object` - a second input
 
-**Deprecated**  
+***Deprecated***  
 Access: private  
 Since: v0.10.28  
 Author: Lloyd Brookes <lloyd@brookes.com>  

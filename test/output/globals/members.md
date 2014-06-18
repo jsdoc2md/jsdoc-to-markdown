@@ -32,7 +32,7 @@ Default: `23`
 ###hasDefaultObject
 Default: `{"one":1,"two":2}`  
 ###~~deprecated~~
-**Deprecated**  
+***Deprecated***  
 ###readOnly
 Read only: true  
 ###hasSince
@@ -40,7 +40,7 @@ Since: v0.10.28
 ###~~allTogether~~ :boolean
 This variable has all tags set
 
-**Deprecated**  
+***Deprecated***  
 Access: private  
 Default: `false`  
 Read only: true  

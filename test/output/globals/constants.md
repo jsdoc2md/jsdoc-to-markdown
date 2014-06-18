@@ -4,7 +4,7 @@ the first important constant
 ###~~CONST_TWO~~ :boolean
 This variable has all tags set
 
-**Deprecated**  
+***Deprecated***  
 Access: private  
 Read only: true  
 Since: v0.10.28  

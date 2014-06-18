@@ -62,6 +62,17 @@ function withParam(one, two){}
 function withParams(one, two){}
 
 /**
+this description has 
+
+- bullet
+- points
+
+@param {string} - The input string
+@param {object} - a second input
+*/
+function withBullets(one, two){}
+
+/**
 @returns {string}
 */
 function returnsSomething(one, two){}
