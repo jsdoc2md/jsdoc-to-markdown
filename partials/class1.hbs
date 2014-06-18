@@ -1,0 +1,23 @@
+<a name="{{{anchorName longname}}}"></a>
+##class: {{string-replace name "module:" ""}}
+{{{classdesc}}}
+{{#if augments}}
+**Extends**: `{{{join augments ", "}}}`
+{{/if}}
+{{>params}}
+{{>examples}}
+
+{{! module -> inner class -> members }}
+{{#each (where @root kind="member" memberof=longname)}}
+{{>member parentName=(instantiate ../name)}}
+{{/each}}
+
+{{! module -> inner class -> methods }}
+{{#each (where @root kind="function" memberof=longname)}}
+{{>function parentName=(instantiate ../name)}}
+{{/each}}
+
+{{! module -> inner class -> methods }}
+{{#each (where @root kind="event" memberof=longname)}}
+{{>event}}
+{{/each}}
