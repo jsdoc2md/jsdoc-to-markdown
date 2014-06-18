@@ -55,6 +55,8 @@ this description has
 - bullet
 - points
 
+pow
+
 
  - one `string` - The input string
  - two `object` - a second input

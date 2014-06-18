@@ -67,6 +67,8 @@ this description has
 - bullet
 - points
 
+pow
+
 @param {string} - The input string
 @param {object} - a second input
 */
