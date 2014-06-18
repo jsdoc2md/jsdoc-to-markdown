@@ -62,3 +62,14 @@ allTogether(true);
 ```
 */
 function allTogether(){}
+
+/**
+@param {string} - The input string
+*/
+function withParam(one, two){}
+
+/**
+@param {string} - The input string
+@param {object} - a second input
+*/
+function withParams(one, two){}
