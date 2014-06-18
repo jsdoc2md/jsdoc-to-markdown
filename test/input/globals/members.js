@@ -61,6 +61,14 @@ var withAuthor = true;
 var hasDefault = 23;
 
 /**
+@default
+*/
+var hasDefaultObject = { 
+    one: 1, 
+    two: 2 
+};
+
+/**
 This variable has all tags set
 @deprecated
 @type {boolean}

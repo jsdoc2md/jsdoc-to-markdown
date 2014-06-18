@@ -33,6 +33,8 @@ Access: private
 Author: Clive Jones <clive@jones.com>  
 ###hasDefault
 Default: `23`  
+###hasDefaultObject
+Default: `{"one":1,"two":2}`  
 ###~~allTogether~~ :boolean
 This variable has all tags set
 
