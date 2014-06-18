@@ -72,3 +72,8 @@ var allTogether = true;
 ```
 */
 var allTogether = false;
+
+/**
+@deprecated
+*/
+var deprecated = true;

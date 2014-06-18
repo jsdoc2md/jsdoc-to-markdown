@@ -44,3 +44,5 @@ Author: Lloyd Brookes <lloyd@brookes.com>
 var allTogether = true;
 ```
 
+###~~deprecated~~
+**deprecated**  
