@@ -1,11 +1,14 @@
 {{#if @root.argv.index}}<a name="{{{anchorName longname}}}"></a>
 {{/if~}}
 
-{{#if name}}###{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}{{#if type}} :{{join type.names ", "}}{{/if}}
+{{#if name}}###{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}{{#if type}} :{{join type.names "|"}}{{/if}}
 {{/if~}}
 
-{{#if access}}*{{{access}}}*  
+{{#if access}}Access: {{{access}}}  
 {{/if~}}
+
+{{#if author}}{{#each author}}Author: {{{this}}}  
+{{/each}}{{/if~}}
 
 {{>description~}}
 
