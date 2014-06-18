@@ -54,5 +54,5 @@ allTogether(true);
 - one `string` - The input string
 
 ###withParams(one, two)
-- one `string` - The input string
-- two `object` - a second input
+> - one `string` - The input string
+> - two `object` - a second input
