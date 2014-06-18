@@ -49,6 +49,12 @@ Since: v0.10.28
  - two `object`
 
 
+###withOptional(one, [two])
+
+ - one `string` - The input string
+ - [two] `object` - this one is optional
+
+
 ###withBullets(one, two)
 this description has 
 

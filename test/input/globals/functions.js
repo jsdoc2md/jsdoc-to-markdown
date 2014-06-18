@@ -62,6 +62,12 @@ function withParam(one, two){}
 function withParams(one, two){}
 
 /**
+@param {string} - The input string
+@param [two]{object} - this one is optional
+*/
+function withOptional(one, two){}
+
+/**
 this description has 
 
 - bullet
