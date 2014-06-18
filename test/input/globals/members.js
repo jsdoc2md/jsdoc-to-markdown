@@ -41,11 +41,6 @@ var examples = 1;
 var _protected = true;
 
 /**
-@public
-*/
-var _public = true;
-
-/**
 @private
 */
 var _private = true;

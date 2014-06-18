@@ -1,5 +1,4 @@
-{{#if @root.argv.index}}<a name="{{{anchorName longname}}}"></a>
-{{/if~}}
+{{>anchor~}}
 
 {{#if name}}###{{#if parentName}}{{parentName}}.{{/if}}{{#if deprecated}}~~{{{name}}}~~{{else}}{{{name}}}{{/if}}{{#if type}} :{{join type.names " | "}}{{/if}}
 {{/if~}}

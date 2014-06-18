@@ -23,7 +23,6 @@ var next = "p";
 ```
 ###_protected
 Access: protected  
-###_public
 ###_private
 Access: private  
 ###withAuthor
