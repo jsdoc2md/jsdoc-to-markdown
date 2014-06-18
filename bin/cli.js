@@ -63,7 +63,7 @@ function render(data){
 	}
     var template = mfs.read(templateFile);
     if (template){
-        console.log(boil.render(template, data));
+        process.stdout.write(boil.render(template, data));
     } else {
         halt(template === null ? "Template file doesn't exist" : "Template file is empty");
     }
