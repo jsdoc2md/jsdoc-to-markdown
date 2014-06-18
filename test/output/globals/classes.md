@@ -26,7 +26,6 @@ the constructor description
  - [options] `object` - optional shit
 
 ***Deprecated***  
-Access: private  
 Since: v0.10.28  
 Author: 75lb <75pound@gmail.com>  
 ####Example

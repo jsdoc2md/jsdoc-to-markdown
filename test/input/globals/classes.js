@@ -20,7 +20,6 @@ the constructor description
 @param [options] {object} - optional shit
 @author 75lb <75pound@gmail.com>
 @deprecated
-@private
 @since v0.10.28
 @example
 ```js
