@@ -1,6 +1,12 @@
-<a name="{{{anchorName longname}}}"></a>
-###{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}{{#if type}} :{{join type.names ", "}}{{/if}}{{#if access}}
-*{{{access}}}*  {{/if}}{{#if description}}
-{{{description}}}
+{{#if @root.argv.index}}<a name="{{{anchorName longname}}}"></a>
+{{/if~}}
 
-{{/if}}
+{{#if name}}###{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}{{#if type}} :{{join type.names ", "}}{{/if}}
+{{/if~}}
+
+{{#if access}}*{{{access}}}*  
+{{/if~}}
+
+{{#if description}}{{{description}}}
+
+{{/if~}}

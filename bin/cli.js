@@ -21,7 +21,9 @@ var cli = cliArgs([
     { name: "help", alias: "h", type: Boolean,
       description: "Print usage information" },
     { name: "src", type: Array, defaultOption: true,
-      description: "The javascript source files. The default option." }
+      description: "The javascript source files. The default option." },
+    { name: "index", type: Boolean,
+      description: "Print usage information" },
 ]);
 var usage = cli.usage({
     forms: [ "$ jsdoc2md <options> <source_files>" ]
@@ -52,6 +54,7 @@ var jsdocTemplatePath = path.resolve(__dirname, "..", "jsdoc-template"),
 	);
 
 function render(data){
+    data.argv = argv;
 	var templateFile;
 	if (argv.template){
 		templateFile = argv.template;

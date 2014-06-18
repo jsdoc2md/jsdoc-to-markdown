@@ -6,4 +6,11 @@ var variable = 1;
 /**
 @type {string}
 */
-var another = 1;
+var typed = 1;
+
+/**
+a var with an example
+@example
+var another = 100;
+*/
+var exampled = 1;

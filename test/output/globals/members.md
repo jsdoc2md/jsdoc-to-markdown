@@ -1,6 +1,8 @@
-<a name="variable"></a>
 ###variable
 a global variable
 
-<a name="another"></a>
-###another :string
+###typed :string
+###exampled
+a var with an example
+
+
