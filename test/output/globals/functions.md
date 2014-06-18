@@ -2,12 +2,10 @@
 ###globalFunc()
 a global function
 
-  
 
 ###exampled()
 a function with an example
 
-  
 ####Example
 ```js
 var result = exampled();
@@ -16,7 +14,6 @@ var result = exampled();
 ###multiExampled()
 a function with multiple examples
 
-  
 ####Example
 ```js
 var another = 100;
@@ -28,32 +25,29 @@ var next = "p";
 
 ###_protected()
 Access: protected  
-  
 
 ###_private()
 Access: private  
-  
 
 ###withAuthor()
 Author: Clive Jones <clive@jones.com>  
-  
 
 ###~~oldFunction~~()
 **Deprecated**  
-  
 
 ###newFunction()
 Since: v0.10.28  
-  
 
 ###withParam(one)
+
  - one `string` - The input string
-  
+
 
 ###withParams(one, two)
+
  - one `string` - The input string
  - two `object` - a second input
-  
+
 
 ###returnsSomething()
 Returns: `string`  
@@ -67,12 +61,14 @@ Returns: `object | string` - this return has several types
 ###~~allTogether~~(one, two)
 This function has all tags set
 
+
+ - one `string` - The input string
+ - two `object` - a second input
+
 **Deprecated**  
 Access: private  
 Since: v0.10.28  
 Author: Lloyd Brookes <lloyd@brookes.com>  
- - one `string` - The input string
- - two `object` - a second input
 Returns: `object | string` - this return has several types  
 ####Example
 ```js
