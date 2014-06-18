@@ -60,19 +60,19 @@ allTogether(true);
 ```
 
 ###withParam(one)
-> - one `string` - The input string
+ - one `string` - The input string
   
 
 ###withParams(one, two)
-> - one `string` - The input string
-> - two `object` - a second input
+ - one `string` - The input string
+ - two `object` - a second input
   
 
 ###returnsSomething()
-**Returns**: `string`  
+Returns: `string`  
 
 ###returnsSomethingDesc()
-**Returns**: `object` - this return has a description  
+Returns: `object` - this return has a description  
 
 ###returnsSeveral()
-**Returns**: `object | string` - this return has several types  
+Returns: `object | string` - this return has several types  
