@@ -54,3 +54,21 @@ var _private = true;
 @author Clive Jones <clive@jones.com>
 */
 var withAuthor = true;
+
+/**
+@default
+*/
+var hasDefault = 23;
+
+/**
+This variable has all tags set
+@type {boolean}
+@private
+@default
+@author Lloyd Brookes <lloyd@brookes.com>
+@example
+```js
+var allTogether = true;
+```
+*/
+var allTogether = false;
