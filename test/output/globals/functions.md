@@ -46,7 +46,7 @@ Since: v0.10.28
 ###withParams(one, two)
 
  - one `string` - The input string
- - two `object` - a second input
+ - two `object`
 
 
 ###withBullets(one, two)
@@ -55,7 +55,7 @@ this description has
 - bullet
 - points
 
-pow
+and needs this line to separate the above list from the below
 
 
  - one `string` - The input string

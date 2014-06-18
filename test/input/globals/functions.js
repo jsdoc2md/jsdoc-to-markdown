@@ -57,7 +57,7 @@ function withParam(one, two){}
 
 /**
 @param {string} - The input string
-@param {object} - a second input
+@param {object}
 */
 function withParams(one, two){}
 
@@ -67,7 +67,7 @@ this description has
 - bullet
 - points
 
-pow
+and needs this line to separate the above list from the below
 
 @param {string} - The input string
 @param {object} - a second input
