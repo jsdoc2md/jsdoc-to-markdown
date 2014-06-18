@@ -33,9 +33,10 @@ Access: private
 Author: Clive Jones <clive@jones.com>  
 ###hasDefault
 Default: `23`  
-###allTogether :boolean
+###~~allTogether~~ :boolean
 This variable has all tags set
 
+**deprecated**  
 Access: private  
 Default: `false`  
 Author: Lloyd Brookes <lloyd@brookes.com>  

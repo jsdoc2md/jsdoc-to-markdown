@@ -62,6 +62,7 @@ var hasDefault = 23;
 
 /**
 This variable has all tags set
+@deprecated
 @type {boolean}
 @private
 @default
