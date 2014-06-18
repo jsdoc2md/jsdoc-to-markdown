@@ -32,11 +32,11 @@ Access: private
 ###withAuthor
 Author: Clive Jones <clive@jones.com>  
 ###hasDefault
-Default value: 23  
+Default value: `23`  
 ###allTogether :boolean
 Access: private  
 Author: Lloyd Brookes <lloyd@brookes.com>  
-Default value: false  
+Default value: `false`  
 This variable has all tags set
 
 ####Example
