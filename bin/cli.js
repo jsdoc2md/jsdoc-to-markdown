@@ -45,7 +45,7 @@ if (!argv.src){
     halt("specify at least one source file");
 }
 
-var jsdocTemplatePath = path.resolve(__dirname, "..", "jsdoc-template"),
+var jsdocTemplatePath = path.resolve(__dirname, "..", "lib"),
     cmd = util.format(
 		"%s -t %s %s",
 		path.resolve(__dirname, "..", "node_modules", ".bin", "jsdoc"),
@@ -59,7 +59,7 @@ function render(data){
 	if (argv.template){
 		templateFile = argv.template;
 	} else {
-		templateFile = path.resolve(__dirname, "..", "templates", argv.preset + ".hbs");
+		templateFile = path.resolve(__dirname, "..", "presets", argv.preset + ".hbs");
 	}
     var template = mfs.read(templateFile);
     if (template){

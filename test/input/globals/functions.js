@@ -1,5 +1,5 @@
 /**
-a global function
+a global function 
 */
 function globalFunc(){}
 
