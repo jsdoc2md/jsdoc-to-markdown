@@ -1,4 +1,4 @@
-#module
+#module:module
 module description
 
 
@@ -15,3 +15,4 @@ Returns: `object | string` - this return has several types
 ```js
 allTogether(true);
 ```
+

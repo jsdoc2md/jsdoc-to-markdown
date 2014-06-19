@@ -6,5 +6,5 @@ jsdoc2md test/input/globals/class-methods.js -p globals > test/output/globals/cl
 jsdoc2md test/input/globals/class-properties.js -p globals > test/output/globals/class-properties.md &&
 jsdoc2md test/input/globals/class-all.js -p globals > test/output/globals/class-all.md &&
 jsdoc2md test/input/globals/*.js -p globals > test/output/globals/all.md &&
-jsdoc2md test/input/commonjs/export-object.js -p modules > test/output/commonjs/export-object.md &&
+jsdoc2md test/input/commonjs/object.js -p modules > test/output/commonjs/object.md &&
 jsdoc2md test/input/commonjs/module.js -p modules > test/output/commonjs/module.md
