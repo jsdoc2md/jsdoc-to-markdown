@@ -11,8 +11,8 @@ Something.prototype.methodOne = function(){};
 /**
 This function has all tags set
 @deprecated
-@param one {string} - The input string
-@param two {object} - a second input
+@param {string} - The input string
+@param {object} - a second input
 @author Lloyd <75pound@gmail.com>
 @since v0.10.28
 @returns {object | string} this return has several types

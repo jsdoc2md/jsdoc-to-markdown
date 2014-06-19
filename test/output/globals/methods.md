@@ -7,12 +7,12 @@
 method description
 
 
-###~~something.allTogether(one, two)~~
+###~~something.allTogether(, )~~
 This function has all tags set
 
 
- - one `string` - The input string
- - two `object` - a second input
+ -  `string` - The input string
+ -  `object` - a second input
 
 ***Deprecated***  
 Since: v0.10.28  
