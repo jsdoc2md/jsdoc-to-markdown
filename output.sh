@@ -7,5 +7,6 @@ jsdoc2md test/input/globals/class-properties.js -p globals > test/output/globals
 jsdoc2md test/input/globals/class-all.js -p globals > test/output/globals/class-all.md &&
 jsdoc2md test/input/globals/*.js -p globals > test/output/globals/all.md &&
 jsdoc2md test/input/commonjs/object.js -p modules > test/output/commonjs/object.md &&
+jsdoc2md test/input/commonjs/object.js -p modules --index > test/output/commonjs/object-with-index.md &&
 jsdoc2md test/input/commonjs/module.js -p modules > test/output/commonjs/module.md &&
 jsdoc2md test/input/commonjs/object-with-alias.js -p modules > test/output/commonjs/object-with-alias.md 
