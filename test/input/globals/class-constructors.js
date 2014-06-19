@@ -15,8 +15,8 @@ a constructor with args
 function Car(options){}
 
 /**
-a constructor with extends
 @class
+@classdesc a class which extends
 @extends Pipe
 */
 function Pipe(){}

@@ -1,12 +1,14 @@
-###CONST_ONE :number
+###CONST_ONE
 the first important constant
 
-###~~CONST_TWO~~ :boolean
+Type: `number`  
+###~~CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  
 Access: private  
 Read only: true  
+Type: `boolean`  
 Since: v0.10.28  
 Author: Lloyd Brookes <lloyd@brookes.com>  
 ####Example
@@ -79,10 +81,8 @@ Author: 75lb <75pound@gmail.com>
 ```js
 var allTogether = true;
 ```
-
 ###globalFunc()
 a global function
-
 
 ###exampled()
 a function with an example
@@ -91,7 +91,6 @@ a function with an example
 ```js
 var result = exampled();
 ```
-
 ###multiExampled()
 a function with multiple examples
 
@@ -103,38 +102,28 @@ var another = 100;
 ```js
 var next = "p";
 ```
-
 ###_protected()
 Access: protected  
-
 ###_private()
 Access: private  
-
 ###withAuthor()
 Author: Clive Jones <clive@jones.com>  
-
 ###~~oldFunction()~~
-***Deprecated***  
-
 ###newFunction()
 Since: v0.10.28  
-
 ###withParam(one)
 
  - one `string` - The input string
-
 
 ###withParams(one, two)
 
  - one `string` - The input string
  - two `object`
 
-
 ###withOptional(one, [two])
 
  - one `string` - The input string
  - [two] `object` - this one is optional
-
 
 ###withBullets(one, two)
 this description has 
@@ -148,16 +137,12 @@ and needs this line to separate the above list from the below
  - one `string` - The input string
  - two `object` - a second input
 
-
 ###returnsSomething()
 Returns: `string`  
-
 ###returnsSomethingDesc()
 Returns: `object` - this return has a description  
-
 ###returnsSeveral()
 Returns: `object | string` - this return has several types  
-
 ###~~allTogether(one, two)~~
 This function has all tags set
 
@@ -165,7 +150,6 @@ This function has all tags set
  - one `string` - The input string
  - two `object` - a second input
 
-***Deprecated***  
 Access: private  
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
@@ -177,7 +161,6 @@ allTogether(true);
 
 ##class: All
 a class with all of the things
-
 ###~~new All(input, [options])~~
 the constructor description
 
@@ -185,7 +168,6 @@ the constructor description
  - input `object` - an input
  - [options] `object` - optional shit
 
-***Deprecated***  
 Since: v0.10.28  
 Author: 75lb <75pound@gmail.com>  
 ####Example
@@ -201,7 +183,6 @@ Since: v1.0.0
 the general size
 
   
-
 ###~~all.allThings(, )~~
 This function has all tags set
 
@@ -209,7 +190,6 @@ This function has all tags set
  -  `string` - The input string
  -  `object` - a second input
 
-***Deprecated***  
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
 Returns: `object | string` - this return has several types  
@@ -220,13 +200,11 @@ all.allTogether(true);
 
 ##class: Person
 simple class description
-
 ###new Person()
 a constructor description
 
 
 ##class: Car
-
 ###new Car([options])
 a constructor with args
 
@@ -235,16 +213,13 @@ a constructor with args
 
 
 ##class: Pipe
+a class which extends
 Extends: `Pipe`
-
 ###new Pipe()
-a constructor with extends
-
 
 ##class: Everything
 a class with all trimmings
 Extends: `Pipe`
-
 ###~~new Everything(input, [options])~~
 the constructor description
 
@@ -252,7 +227,6 @@ the constructor description
  - input `object` - an input
  - [options] `object` - optional shit
 
-***Deprecated***  
 Since: v0.10.28  
 Author: 75lb <75pound@gmail.com>  
 ####Example
@@ -261,12 +235,9 @@ var yeah = new Everything(true);
 ```
 
 ##class: Something
-
 ###new Something()
-
 ###something.methodOne()
 method description
-
 
 ###~~something.allTogether(, )~~
 This function has all tags set
@@ -275,7 +246,6 @@ This function has all tags set
  -  `string` - The input string
  -  `object` - a second input
 
-***Deprecated***  
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
 Returns: `object | string` - this return has several types  
@@ -285,7 +255,6 @@ something.allTogether(true);
 ```
 
 ##class: Pizza
-
 ###new Pizza()
 ###pizza.topping
 the ingredients on top

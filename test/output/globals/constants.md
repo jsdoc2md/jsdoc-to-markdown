@@ -1,12 +1,14 @@
-###CONST_ONE :number
+###CONST_ONE
 the first important constant
 
-###~~CONST_TWO~~ :boolean
+Type: `number`  
+###~~CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  
 Access: private  
 Read only: true  
+Type: `boolean`  
 Since: v0.10.28  
 Author: Lloyd Brookes <lloyd@brookes.com>  
 ####Example

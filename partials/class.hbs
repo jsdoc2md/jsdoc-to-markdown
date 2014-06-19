@@ -1,7 +1,7 @@
 {{>anchor}}
-{{#if name}}##class: {{{name}}}
-{{/if~}}
+{{>class-name~}}
 {{>classdesc~}}
+
 {{>augments~}}
 {{>function~}}
 {{#each (where @root kind="member" memberof=longname)}}{{>member}}{{/each~}}

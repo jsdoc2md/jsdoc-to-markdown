@@ -21,7 +21,6 @@ Author: 75lb <75pound@gmail.com>
 var allTogether = true;
 ```
 
-
 ###object.three()
 a function
 

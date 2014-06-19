@@ -1,6 +1,5 @@
 
 ##class: Pizza
-
 ###new Pizza()
 ###pizza.topping
 the ingredients on top
