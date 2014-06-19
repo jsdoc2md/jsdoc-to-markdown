@@ -19,7 +19,7 @@
     "generator"
   ],
   "dependencies": {
-    "array-tools": "^1.0.2",
+    "array-tools": "^1.1.0",
     "boil-js": "^0.1.0",
     "command-line-args": "^0.3.0",
     "console-dope": "^0.3.3",

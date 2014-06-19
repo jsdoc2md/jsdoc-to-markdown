@@ -9,4 +9,5 @@ jsdoc2md test/input/globals/*.js -p globals > test/output/globals/all.md &&
 jsdoc2md test/input/commonjs/object.js -p modules > test/output/commonjs/object.md &&
 jsdoc2md test/input/commonjs/object.js -p modules --index > test/output/commonjs/object-with-index.md &&
 jsdoc2md test/input/commonjs/module.js -p modules > test/output/commonjs/module.md &&
+jsdoc2md test/input/commonjs/class.js -p modules > test/output/commonjs/class.md &&
 jsdoc2md test/input/commonjs/object-with-alias.js -p modules > test/output/commonjs/object-with-alias.md 

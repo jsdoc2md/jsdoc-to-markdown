@@ -2,15 +2,9 @@
 "use strict";
 
 var cliArgs = require("command-line-args"),
-    cp = require("child_process"),
-    path = require("path"),
-    util = require("util"),
-    boil = require("boil-js"),
-    mfs = require("more-fs"),
-    dope = require("console-dope");
-
-require("../")(boil);
-
+    dope = require("console-dope"),
+    jsdoc2md = require("../lib/jsdoc-to-markdown");
+    
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
       description: "A custom handlebars template to insert the rendered documentation into" },
@@ -32,57 +26,21 @@ var usage = cli.usage({
 try{
     var argv = cli.parse();
 } catch(err){
-    halt(err.message);
+    halt(err);
 }
-// console.dir(argv)
 
 if (argv.help){
     dope.log(usage);
     process.exit(0);
 }
 
-if (!argv.src){
-    halt("specify at least one source file");
-}
-
-var jsdocTemplatePath = path.resolve(__dirname, "..", "lib"),
-    cmd = util.format(
-		"%s -t %s %s",
-		path.resolve(__dirname, "..", "node_modules", ".bin", "jsdoc"),
-		jsdocTemplatePath,
-		argv.src.join(" ")
-	);
-
-function render(data){
-    data.argv = argv;
-	var templateFile;
-	if (argv.template){
-		templateFile = argv.template;
-	} else {
-		templateFile = path.resolve(__dirname, "..", "presets", argv.preset + ".hbs");
-	}
-    var template = mfs.read(templateFile);
-    if (template){
-        process.stdout.write(boil.render(template, data));
-    } else {
-        halt(template === null ? "Template file doesn't exist" : "Template file is empty");
-    }
-}
-
-cp.exec(cmd, { maxBuffer: 1000 * 1024 }, function(err, stdout, stderr){
-    if (err){
-        console.error(err)
-        throw err;
-    }
-    if (argv.json){
-        console.log(stdout);
-    } else {
-        render(JSON.parse(stdout));
-    }
+jsdoc2md.render(argv, function(err, result){
+    if (err) halt(err);
+    process.stdout.write(result);
 });
 
-function halt(msg){
-    dope.red.error("Error: " + msg);
+function halt(err){
+    dope.red.error("Error: " + err.msg);
     dope.log(usage);
     process.exit(1);
 }
