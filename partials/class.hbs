@@ -2,6 +2,7 @@
 {{#if name}}##class: {{{name}}}
 {{/if~}}
 {{>classdesc~}}
+{{>augments~}}
 {{>function~}}
 {{#each (where @root kind="member" memberof=longname)}}{{>member}}{{/each~}}
 {{#each (where @root kind="function" memberof=longname)}}{{>function}}{{/each~}}

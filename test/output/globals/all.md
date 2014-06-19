@@ -234,8 +234,16 @@ a constructor with args
  - [options] `object` - optional shit
 
 
+##class: Pipe
+Extends: `Pipe`
+
+###new Pipe()
+a constructor with extends
+
+
 ##class: Everything
 a class with all trimmings
+Extends: `Pipe`
 
 ###~~new Everything(input, [options])~~
 the constructor description

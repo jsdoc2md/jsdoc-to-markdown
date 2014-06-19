@@ -15,9 +15,17 @@ a constructor with args
 function Car(options){}
 
 /**
+a constructor with extends
+@class
+@extends Pipe
+*/
+function Pipe(){}
+
+/**
 the constructor description
 @class
 @classdesc a class with all trimmings
+@extends Pipe
 @param {object} - an input
 @param [options] {object} - optional shit
 @author 75lb <75pound@gmail.com>
