@@ -2,10 +2,10 @@
 ##class: Pizza
 
 ###new Pizza()
-###topping :string
+###pizza.topping :string
 the ingredients on top
 
 Since: v1.0.0  
-###size
+###pizza.size
 the general size
 
