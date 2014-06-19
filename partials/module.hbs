@@ -10,3 +10,5 @@
 {{>type~}}
 {{>returns~}}
 {{>examples~}}
+
+{{#with (where @root memberof=longname)}}{{#each (where this kind="member")}}{{>member}}{{/each}}{{/with}}

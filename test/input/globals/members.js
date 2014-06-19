@@ -85,7 +85,7 @@ This variable has all tags set
 @private
 @default
 @readonly
-@author Lloyd Brookes <lloyd@brookes.com>
+@author 75lb <75pound@gmail.com>
 @since v0.10.28
 @example
 ```js

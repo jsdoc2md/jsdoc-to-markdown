@@ -59,7 +59,7 @@ Default: `false`
 Read only: true  
 Type: `boolean`  
 Since: v0.10.28  
-Author: Lloyd Brookes <lloyd@brookes.com>  
+Author: 75lb <75pound@gmail.com>  
 ####Example
 ```js
 var allTogether = true;
