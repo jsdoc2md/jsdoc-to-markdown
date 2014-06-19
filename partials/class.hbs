@@ -3,4 +3,5 @@
 {{/if~}}
 {{>classdesc~}}
 {{>function~}}
-{{#each (where @root kind="function" memberof=longname)}}{{>function}}{{/each}}
+{{#each (where @root kind="function" memberof=longname)}}{{>function}}{{/each~}}
+{{#each (where @root kind="member" memberof=longname)}}{{>member}}{{/each~}}

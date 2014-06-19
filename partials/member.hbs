@@ -1,7 +1,6 @@
 {{>anchor~}}
 
-{{#if name}}###{{#if deprecated}}~~{{/if}}{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}{{#if type}} :{{join type.names " | "}}{{/if}}{{#if deprecated}}~~{{/if}}
-{{/if~}}
+{{>member-name~}}
 {{>description~}}
 {{>deprecated~}}
 {{>access~}}
