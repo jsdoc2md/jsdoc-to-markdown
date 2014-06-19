@@ -2,10 +2,10 @@
 a global variable
 
   
-###typed :string
-Type: string  
-###types :string | number
-Type: string | number  
+###typed
+Type: `string`  
+###types
+Type: `string | number`  
 ###exampled
 a var with an example
 
@@ -50,14 +50,14 @@ Read only: true
 ###hasSince
   
 Since: v0.10.28  
-###~~allTogether :boolean~~
+###~~allTogether~~
 This variable has all tags set
 
 ***Deprecated***  
 Access: private  
 Default: `false`  
 Read only: true  
-Type: boolean  
+Type: `boolean`  
 Since: v0.10.28  
 Author: Lloyd Brookes <lloyd@brookes.com>  
 ####Example

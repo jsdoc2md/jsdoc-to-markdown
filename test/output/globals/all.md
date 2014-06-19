@@ -17,10 +17,10 @@ var CONST_TWO = true;
 a global variable
 
   
-###typed :string
-Type: string  
-###types :string | number
-Type: string | number  
+###typed
+Type: `string`  
+###types
+Type: `string | number`  
 ###exampled
 a var with an example
 
@@ -65,14 +65,14 @@ Read only: true
 ###hasSince
   
 Since: v0.10.28  
-###~~allTogether :boolean~~
+###~~allTogether~~
 This variable has all tags set
 
 ***Deprecated***  
 Access: private  
 Default: `false`  
 Read only: true  
-Type: boolean  
+Type: `boolean`  
 Since: v0.10.28  
 Author: Lloyd Brookes <lloyd@brookes.com>  
 ####Example
@@ -192,10 +192,10 @@ Author: 75lb <75pound@gmail.com>
 ```js
 var yeah = new Everything(true);
 ```
-###all.topping :string
+###all.topping
 the ingredients on top
 
-Type: string  
+Type: `string`  
 Since: v1.0.0  
 ###all.size
 the general size
@@ -279,10 +279,10 @@ something.allTogether(true);
 ##class: Pizza
 
 ###new Pizza()
-###pizza.topping :string
+###pizza.topping
 the ingredients on top
 
-Type: string  
+Type: `string`  
 Since: v1.0.0  
 ###pizza.size
 the general size

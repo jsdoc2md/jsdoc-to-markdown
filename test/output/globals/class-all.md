@@ -16,10 +16,10 @@ Author: 75lb <75pound@gmail.com>
 ```js
 var yeah = new Everything(true);
 ```
-###all.topping :string
+###all.topping
 the ingredients on top
 
-Type: string  
+Type: `string`  
 Since: v1.0.0  
 ###all.size
 the general size
