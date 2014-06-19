@@ -7,8 +7,8 @@ function halt(err){
     process.exit(1);
 }
 
-function render(input, output, preset){
-    yuidoc2md.render({ preset: preset, src: "test/input/" + input}, function(err, result){
+function render(input, output, preset, index){
+    yuidoc2md.render({ preset: preset, src: "test/input/" + input, index: index }, function(err, result){
         if (err) halt(err);
         mfs.write("test/output/" + output, result);
     });
@@ -23,9 +23,8 @@ render("globals/class-properties.js", "globals/class-properties.md", "globals");
 render("globals/class-all.js", "globals/class-all.md", "globals");
 render("globals/*.js", "globals/all.md", "globals");
 
-// jsdoc2md test/input/globals/*.js -p globals > test/output/globals/all.md &&
-// jsdoc2md test/input/commonjs/object.js -p modules > test/output/commonjs/object.md &&
-// jsdoc2md test/input/commonjs/object.js -p modules --index > test/output/commonjs/object-with-index.md &&
-// jsdoc2md test/input/commonjs/module.js -p modules > test/output/commonjs/module.md &&
-// jsdoc2md test/input/commonjs/class.js -p modules > test/output/commonjs/class.md &&
-// jsdoc2md test/input/commonjs/object-with-alias.js -p modules > test/output/commonjs/object-with-alias.md
+render("commonjs/object.js", "commonjs/object.md", "modules");
+render("commonjs/object.js", "commonjs/object-with-index.md", "modules", true);
+render("commonjs/module.js", "commonjs/module.md", "modules");
+render("commonjs/class.js", "commonjs/class.md", "modules");
+render("commonjs/object-with-alias.js", "commonjs/object-with-alias.md", "modules");
