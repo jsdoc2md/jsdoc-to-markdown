@@ -1,0 +1,8 @@
+{{#if name}}###
+  {{~#if deprecated}}~~{{/if}}
+  {{~#if (equal kind "class")}}new {{/if}}
+  {{~#if parentName}}{{parentName}}.{{/if}}
+  {{~#if memberof}}{{instantiate memberof}}.{{/if}}
+  {{~{name}}}({{methodSig params}})
+  {{~#if deprecated}}~~{{/if}}
+{{~/if}}

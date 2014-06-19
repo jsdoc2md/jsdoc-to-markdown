@@ -1,6 +1,5 @@
 {{>anchor}}
-{{#if name}}###{{#if deprecated}}~~{{/if}}{{#if (equal kind "class")}}new {{/if}}{{#if parentName}}{{parentName}}.{{/if}}{{{name}}}({{methodSig params}}){{#if deprecated}}~~{{/if}}
-{{/if~}}
+{{>functionName~}}
 {{>description~}}
 {{>params~}}
 {{>deprecated~}}
