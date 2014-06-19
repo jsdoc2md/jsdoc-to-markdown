@@ -19,10 +19,12 @@ var yeah = new Everything(true);
 ###all.topping :string
 the ingredients on top
 
+Type: string  
 Since: v1.0.0  
 ###all.size
 the general size
 
+  
 
 ###~~all.allThings(, )~~
 This function has all tags set
