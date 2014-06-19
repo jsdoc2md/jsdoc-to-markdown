@@ -14,5 +14,5 @@
 {{>returns~}}
 {{>examples~}}
 
-{{#with (where @root memberof=longname)}}{{#each (where this kind="member")}}{{>member}}{{/each}}{{/with}}
-{{#with (where @root memberof=longname)}}{{#each (where this kind="function")}}{{>function}}{{/each}}{{/with}}
+{{#with (where @root memberof=longname)}}{{#each (where this kind="member")}}{{>member parentName=../../alias}}{{/each}}{{/with}}
+{{#with (where @root memberof=longname)}}{{#each (where this kind="function")}}{{>function parentName=../../alias}}{{/each}}{{/with}}

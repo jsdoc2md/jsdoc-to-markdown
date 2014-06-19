@@ -26,5 +26,14 @@ exports.two = 2;
 
 /**
 a function
+@param {string} - The input string
+@param {object} - a second input
+@author Lloyd <75pound@gmail.com>
+@since v0.10.28
+@returns {object | string} this return has several types
+@example
+```js
+allTogether(true);
+```
 */
-exports.three = function(){};
+exports.three = function(four, five){};
