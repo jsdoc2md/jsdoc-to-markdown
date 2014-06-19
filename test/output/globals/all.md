@@ -161,6 +161,34 @@ Returns: `object | string` - this return has several types
 allTogether(true);
 ```
 
+##class: Something
+
+###new Something()
+
+###something.methodOne()
+method description
+
+
+###~~something.allTogether(, )~~
+This function has all tags set
+
+
+ -  `string` - The input string
+ -  `object` - a second input
+
+***Deprecated***  
+Since: v0.10.28  
+Author: Lloyd <75pound@gmail.com>  
+Returns: `object | string` - this return has several types  
+####Example
+```js
+something.allTogether(true);
+```
+
+##class: Pizza
+
+###new Pizza()
+
 ##class: Person
 simple class description
 
@@ -193,28 +221,4 @@ Author: 75lb <75pound@gmail.com>
 ####Example
 ```js
 var yeah = new Everything(true);
-```
-
-##class: Something
-
-###new Something()
-
-###something.methodOne()
-method description
-
-
-###~~something.allTogether(, )~~
-This function has all tags set
-
-
- -  `string` - The input string
- -  `object` - a second input
-
-***Deprecated***  
-Since: v0.10.28  
-Author: Lloyd <75pound@gmail.com>  
-Returns: `object | string` - this return has several types  
-####Example
-```js
-something.allTogether(true);
 ```
