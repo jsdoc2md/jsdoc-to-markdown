@@ -1,4 +1,4 @@
-#module: FileSet
+#module: Pie
 this module exports the class FileSet
 
 
@@ -7,25 +7,8 @@ this module exports the class FileSet
   
 ####Example
 ```js
-var FileSet = require("file-set");
+var Pie = require("file-set");
 
-var fileSet = new FileSet();
+var fileSet = new Pie();
 ```
-###FileSet.staticProperty
-the static property
-
-  
-###FileSet.methyMeth()
-the static methy meth
-
-
-##class: module:FileSet
-###module:FileSet()
-###FileSet.staticProperty
-the static property
-
-  
-###FileSet.methyMeth()
-the static methy meth
-
 

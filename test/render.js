@@ -1,5 +1,7 @@
 "use strict";
 var yuidoc2md = require("../"),
+    fs = require("fs"),
+    path = require("path"),
     mfs = require("more-fs");
 
 function halt(err){
@@ -8,24 +10,27 @@ function halt(err){
 }
 
 function render(input, output, preset, index){
-    yuidoc2md.render({ preset: preset, src: "test/input/" + input, index: index }, function(err, result){
+    yuidoc2md.render({ preset: preset, src: input, index: index }, function(err, result){
         if (err) halt(err);
-        mfs.write("test/output/" + output, result);
+        mfs.write(output, result);
     });
 }
 
-render("globals/members.js", "globals/members.md", "globals");
-render("globals/functions.js", "globals/functions.md", "globals");
-render("globals/constants.js", "globals/constants.md", "globals");
-render("globals/class-constructors.js", "globals/class-constructors.md", "globals");
-render("globals/class-methods.js", "globals/class-methods.md", "globals");
-render("globals/class-properties.js", "globals/class-properties.md", "globals");
-render("globals/class-all.js", "globals/class-all.md", "globals");
-render("globals/*.js", "globals/all.md", "globals");
+fs.readdirSync("test/input/commonjs").forEach(function(file){
+    render(
+        path.join("test/input/commonjs", file), 
+        path.join("test/output/commonjs", path.basename(file, ".js") + ".md"), 
+        "modules"
+    );
+});
 
-render("commonjs/object.js", "commonjs/object.md", "modules");
-render("commonjs/object.js", "commonjs/object-with-index.md", "modules", true);
-render("commonjs/module.js", "commonjs/module.md", "modules");
-render("commonjs/class.js", "commonjs/class.md", "modules");
-render("commonjs/class-docs-in-module.js", "commonjs/class-docs-in-module.md", "modules");
-render("commonjs/object-with-alias.js", "commonjs/object-with-alias.md", "modules");
+fs.readdirSync("test/input/globals").forEach(function(file){
+    render(
+        path.join("test/input/globals", file), 
+        path.join("test/output/globals", path.basename(file, ".js") + ".md"), 
+        "globals"
+    );
+});
+
+// render("globals/*.js", "globals/all.md", "globals");
+// render("commonjs/object.js", "commonjs/object-with-index.md", "modules", true);
