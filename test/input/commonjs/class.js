@@ -1,6 +1,6 @@
 /**
 this module exports the class FileSet
-@module FileSet
+@module file-set
 @example
 ```js
 var FileSet = require("file-set");
@@ -12,10 +12,10 @@ var fileSet = new FileSet();
 module.exports = FileSet;
 
 /**
-@class FileSet
+@class
 @classdesc the exported class
 @param {number} - the input number
-@alias module:FileSet
+@alias module:file-set
 */
 function FileSet(num){};
 
