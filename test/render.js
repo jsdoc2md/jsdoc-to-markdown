@@ -27,4 +27,5 @@ render("commonjs/object.js", "commonjs/object.md", "modules");
 render("commonjs/object.js", "commonjs/object-with-index.md", "modules", true);
 render("commonjs/module.js", "commonjs/module.md", "modules");
 render("commonjs/class.js", "commonjs/class.md", "modules");
+render("commonjs/class-docs-in-module.js", "commonjs/class-docs-in-module.md", "modules");
 render("commonjs/object-with-alias.js", "commonjs/object-with-alias.md", "modules");

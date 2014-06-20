@@ -2,6 +2,12 @@
 this module exports the class FileSet
 
   
+####Example
+```js
+var FileSet = require("file-set");
+
+var fileSet = new FileSet();
+```
 
 ##class: FileSet
 the exported class
