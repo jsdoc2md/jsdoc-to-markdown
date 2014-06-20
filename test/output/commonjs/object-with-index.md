@@ -28,7 +28,6 @@ Author: 75lb <75pound@gmail.com>
 ```js
 var allTogether = true;
 ```
-
 <a name="module_object.three"></a>
 ###object.three(, )
 a function
