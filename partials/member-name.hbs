@@ -1,7 +1,7 @@
 {{#if name}}###
   {{~#if deprecated}}~~{{/if}}
   {{~#if parentName}}{{parentName}}.
-    {{~else}}{{#if memberof}}{{instantiate memberof}}.{{/if}}
+    {{~else}}{{#if memberof}}{{instantiate (memberofName)}}.{{/if}}
   {{~/if}}
   {{~{name}}}
   {{~#if deprecated}}~~{{/if}}

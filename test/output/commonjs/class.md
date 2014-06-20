@@ -11,13 +11,3 @@ var fileSet = require("file-set");
 
 var cowFiles = fileSet("cow/*");
 ```
-###fileSet.files
-the static property
-
-  
-###fileSet.delete()
-A static methy meth
-
-
- -  `array` - the paths to delete
-

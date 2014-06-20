@@ -5,4 +5,4 @@
 
 jsdoc-to-markdown
 =================
-coming soon.. 
+coming soon..  not yet stable enough to document.. 

@@ -17,7 +17,7 @@
 {{>examples~}}
 
 {{#with (where @root memberof=longname)~}}
-{{#each (where this kind="member")}}{{>member parentName=../../alias}}{{/each~}}
-{{#each (where this kind="function")}}{{>function parentName=../../alias}}{{/each~}}
+{{#each (where this kind="member" scope="static")}}{{>member parentName=../../alias}}{{/each~}}
+{{#each (where this kind="function" scope="static")}}{{>function parentName=../../alias}}{{/each~}}
 {{#each (where this kind="class")}}{{>class}}{{/each~}}
 {{/with}}

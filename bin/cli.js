@@ -8,7 +8,7 @@ var cliArgs = require("command-line-args"),
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
       description: "A custom handlebars template to insert the rendered documentation into" },
-    { name: "preset", alias: "p", type: String, value: "globals",
+    { name: "preset", alias: "p", type: String, value: "default",
       description: "Use a preset template" },
     { name: "json", alias: "j", type: Boolean,
       description: "Output the template data only" },

@@ -2,7 +2,7 @@
   {{~#if deprecated}}~~{{/if}}
   {{~#if (equal kind "class")}}new {{/if}}
   {{~#if parentName}}{{parentName}}.
-    {{~else}}{{#if memberof}}{{instantiate memberof}}.{{/if}}
+    {{~else}}{{#if memberof}}{{instantiate (memberofName)}}.{{/if}}
   {{~/if}}
   {{~{name}}}({{methodSig params}})
   {{~#if deprecated}}~~{{/if}}
