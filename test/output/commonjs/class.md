@@ -1,11 +1,19 @@
-#module: class
-export a class
+#module: FileSet
+this module exports the class FileSet
 
   
-###class.staticProperty
+
+##class: FileSet
+the exported class
+###new FileSet.FileSet()
+
+ -  `number` - the input number
+
+###FileSet~FileSet.staticProperty
 the static property
 
   
-###class.methyMeth()
+###FileSet~FileSet.methyMeth()
 the static methy meth
+
 

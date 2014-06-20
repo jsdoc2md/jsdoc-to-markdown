@@ -1,24 +1,24 @@
 /**
-export a class
-@module
+this module exports the class FileSet
+@module FileSet
 */
 
-module.exports = Exported;
+module.exports = FileSet;
 
 /**
-@class
+@class FileSet
 @classdesc the exported class
 @param {number} - the input number
-@alias module:class
+@alias module:FileSet
 */
-function Exported(num){};
+function FileSet(num){};
 
 /**
 the static property
 */
-Exported.prototype.staticProperty = true;
+FileSet.prototype.staticProperty = true;
 
 /**
 the static methy meth
 */
-Exported.prototype.methyMeth = function(){};
+FileSet.prototype.methyMeth = function(){};
