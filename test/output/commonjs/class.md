@@ -1,4 +1,4 @@
-#module: FileSet
+#FileSet
 this module exports the class FileSet
 
   

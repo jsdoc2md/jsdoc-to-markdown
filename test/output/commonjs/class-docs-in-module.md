@@ -1,4 +1,4 @@
-#module: Pie
+#Pie
 this module exports the class FileSet
 
 

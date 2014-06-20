@@ -1,4 +1,4 @@
-#module: object-with-alias
+#object-with-alias
 simple object export
 
   

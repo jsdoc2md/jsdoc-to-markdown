@@ -1,4 +1,4 @@
-#module: object
+#object
 simple object export
 
   

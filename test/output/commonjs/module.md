@@ -1,4 +1,4 @@
-#module: module
+#module
 module description
 
 
