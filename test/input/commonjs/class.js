@@ -1,20 +1,19 @@
 /**
 this module exports the class FileSet
 @module file-set
+@param {number} - the input number
+@alias fileSet
 @example
 ```js
-var FileSet = require("file-set");
+var fileSet = require("file-set");
 
-var fileSet = new FileSet();
+var cowFiles = fileSet("cow/*");
 ```
 */
 
 module.exports = FileSet;
 
 /**
-@class
-@classdesc the exported class
-@param {number} - the input number
 @alias module:file-set
 */
 function FileSet(num){};

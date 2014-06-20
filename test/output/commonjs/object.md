@@ -35,3 +35,4 @@ Returns: `object | string` - this return has several types
 allTogether(true);
 ```
 
+
