@@ -21,4 +21,3 @@ A static methy meth
 
  -  `array` - the paths to delete
 
-
