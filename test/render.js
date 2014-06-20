@@ -32,5 +32,6 @@ fs.readdirSync("test/input/globals").forEach(function(file){
     );
 });
 
-// render("globals/*.js", "globals/all.md", "globals");
-// render("commonjs/object.js", "commonjs/object-with-index.md", "modules", true);
+render("test/input/globals/*.js", "test/output/globals/all.md", "globals");
+render("test/input/commonjs/object.js", "test/output/commonjs/object-with-index.md", "modules", true);
+render("test/input/commonjs/class.js", "test/output/commonjs/class-with-index.md", "modules", true);

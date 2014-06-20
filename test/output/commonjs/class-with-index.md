@@ -1,5 +1,10 @@
+<a name="module_file-set"></a>
 #file-set
 this module returns a set of files
+
+**Contents**
+* [files](#module_file-set#files)
+* [delete()](#module_file-set#delete)
 
 
  -  `array` - a list of file patterns
@@ -11,10 +16,12 @@ var fileSet = require("file-set");
 
 var cowFiles = fileSet("cow/*");
 ```
+<a name="module_file-set#files"></a>
 ###fileSet.files
 the static property
 
   
+<a name="module_file-set#delete"></a>
 ###fileSet.delete()
 A static methy meth
 

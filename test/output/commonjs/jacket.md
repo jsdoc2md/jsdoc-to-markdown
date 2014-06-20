@@ -6,4 +6,3 @@ A module representing a jacket.
 Open and close your Jacket.
 
 
-

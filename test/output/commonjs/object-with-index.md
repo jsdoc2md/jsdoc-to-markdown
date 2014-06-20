@@ -1,11 +1,19 @@
+<a name="module_object"></a>
 #object
 simple object export
 
+**Contents**
+* [one](#module_object.one)
+* [two](#module_object.two)
+* [three(, )](#module_object.three)
+
   
+<a name="module_object.one"></a>
 ###object.one
 first property
 
   
+<a name="module_object.two"></a>
 ###~~object.two~~
 This property has all tags set
 
@@ -20,6 +28,7 @@ Author: 75lb <75pound@gmail.com>
 ```js
 var allTogether = true;
 ```
+<a name="module_object.three"></a>
 ###object.three(, )
 a function
 
