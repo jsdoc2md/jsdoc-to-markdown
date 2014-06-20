@@ -1,8 +1,8 @@
 #file-set
-this module exports the class FileSet
+this module returns a set of files
 
 
- -  `number` - the input number
+ -  `array` - a list of file patterns
 
   
 ####Example
@@ -11,12 +11,15 @@ var fileSet = require("file-set");
 
 var cowFiles = fileSet("cow/*");
 ```
-###fileSet.staticProperty
+###fileSet.files
 the static property
 
   
-###fileSet.methyMeth()
-the static methy meth
+###fileSet.delete()
+A static methy meth
+
+
+ -  `array` - the paths to delete
 
 
 

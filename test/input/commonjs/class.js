@@ -1,7 +1,7 @@
 /**
-this module exports the class FileSet
+this module returns a set of files
 @module file-set
-@param {number} - the input number
+@param {array} - a list of file patterns
 @alias fileSet
 @example
 ```js
@@ -21,9 +21,10 @@ function FileSet(num){};
 /**
 the static property
 */
-FileSet.prototype.staticProperty = true;
+FileSet.prototype.files = true;
 
 /**
-the static methy meth
+A static methy meth
+@param {array} - the paths to delete
 */
-FileSet.prototype.methyMeth = function(){};
+FileSet.prototype.delete = function(paths){};
