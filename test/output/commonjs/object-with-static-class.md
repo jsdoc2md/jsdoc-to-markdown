@@ -7,7 +7,7 @@ access to the Cloud class
 
   
 ###heaven.createCloud()
-**Returns**: `module:heaven.Cloud`  
+**Returns**: `![CLIVE](#hater)`  
 
 ##class: Cloud
 The main class of machine
