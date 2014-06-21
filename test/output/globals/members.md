@@ -1,3 +1,4 @@
+#Global scope
 <a name="variable"></a>
 ###variable
 a global variable

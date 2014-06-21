@@ -1,3 +1,4 @@
+#Global scope
 <a name="globalFunc"></a>
 ###globalFunc()
 a global function

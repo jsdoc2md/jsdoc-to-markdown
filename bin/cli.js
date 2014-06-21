@@ -18,6 +18,8 @@ var cli = cliArgs([
       description: "The javascript source files. The default option." },
     { name: "index", type: Boolean,
       description: "Print usage information" },
+    { name: "skip-heading", type: Boolean,
+    description: "Skip the module heading" },
 ]);
 var usage = cli.usage({
     forms: [ "$ jsdoc2md <options> <source_files>" ]
@@ -40,7 +42,7 @@ jsdoc2md.render(argv, function(err, result){
 });
 
 function halt(err){
-    dope.red.error("Error: " + err.msg);
+    dope.red.error("Error: " + err.message);
     dope.log(usage);
     process.exit(1);
 }

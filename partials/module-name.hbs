@@ -1,2 +1,2 @@
-{{#if name}}#{{{name}}}
-{{/if}}
+{{#unless @root.argv.skip-heading}}{{#if name}}#{{{name}}}
+{{/if}}{{/unless}}
