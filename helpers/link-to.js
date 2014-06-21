@@ -11,7 +11,7 @@ module.exports = function(handlebars){
             if (["string", "object", "number", "boolean", "array"].indexOf(longname) > -1){
                 return "`" + longname + "`";
             } else {
-                return util.format("[%s](%s)", longname, handlebars.helpers.anchorName(longname));
+                return util.format("[%s](#%s)", longname, handlebars.helpers.anchorName(longname));
             }
         }
     });
