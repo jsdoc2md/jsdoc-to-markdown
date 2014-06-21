@@ -15,3 +15,4 @@ module description
 allTogether(true);
 ```
 */
+module.exports = function(one, two){};

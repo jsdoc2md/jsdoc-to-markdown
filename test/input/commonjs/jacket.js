@@ -5,9 +5,10 @@
 
 /**
  * @constructor
+ * @param {string} - the input
  * @alias module:jacket
  */
-function Jacket() {
+function Jacket(input) {
 }
 
 /** Open and close your Jacket. */

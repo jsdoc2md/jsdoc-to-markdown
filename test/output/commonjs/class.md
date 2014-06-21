@@ -1,5 +1,5 @@
 <a name="module_file-set"></a>
-#file-set
+#file-set()
 this module returns a set of files
 
 
