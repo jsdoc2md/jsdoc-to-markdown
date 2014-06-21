@@ -3,6 +3,11 @@
 [![Dependency Status](https://david-dm.org/75lb/jsdoc-to-markdown.svg)](https://david-dm.org/75lb/jsdoc-to-markdown)
 ![Analytics](https://ga-beacon.appspot.com/UA-27725889-32/jsdoc-to-markdown/README.md?pixel)
 
-jsdoc-to-markdown
-=================
+#jsdoc-to-markdown
 coming soon..  not yet stable enough to document.. 
+
+###examples
+* https://github.com/75lb/handbrake-js
+* https://github.com/75lb/array-tools
+* https://github.com/75lb/file-set
+* https://github.com/75lb/command-line-args
