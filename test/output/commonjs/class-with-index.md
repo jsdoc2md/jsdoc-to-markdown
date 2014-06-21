@@ -16,15 +16,3 @@ var cowFiles = fileSet("cow/*");
 * [files](#module_file-set#files)
 * [delete(paths)](#module_file-set#delete)
 
-<a name="module_file-set#files"></a>
-###fileSet.files
-the static property
-
-  
-<a name="module_file-set#delete"></a>
-###fileSet.delete(paths)
-A static methy meth
-
-
-- paths `array` - the paths to delete
-
