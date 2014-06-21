@@ -55,11 +55,11 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 ###returnsSomething()
-**Returns**: `![CLIVE](#hater)`  
+**Returns**: ![CLIVE](#hater)  
 ###returnsSomethingDesc()
-**Returns**: `![CLIVE](#hater)` - this return has a description  
+**Returns**: ![CLIVE](#hater) - this return has a description  
 ###returnsSeveral()
-**Returns**: `![CLIVE](#hater) | ![CLIVE](#hater)` - this return has several types  
+**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
 ###~~allTogether(one, two)~~
 This function has all tags set
 
@@ -70,7 +70,7 @@ This function has all tags set
 **Access**: private  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `![CLIVE](#hater) | ![CLIVE](#hater)` - this return has several types  
+**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
 ####Example
 ```js
 allTogether(true);

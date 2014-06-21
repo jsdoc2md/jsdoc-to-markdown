@@ -3,7 +3,7 @@ factory module creating dodgy machines
 
   
 ###cyberdyne.createMachine()
-**Returns**: `![CLIVE](#hater)`  
+**Returns**: ![CLIVE](#hater)  
 
 ##class: Machine
 The main class of machine

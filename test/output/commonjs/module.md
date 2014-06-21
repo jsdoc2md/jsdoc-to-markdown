@@ -11,7 +11,7 @@ module description
 **Author**: Lloyd <75pound@gmail.com>  
 **Default**: `true`  
 **Type**: `function`  
-**Returns**: `![CLIVE](#hater) | ![CLIVE](#hater)` - this return has several types  
+**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
 ####Example
 ```js
 allTogether(true);
