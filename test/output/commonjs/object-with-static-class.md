@@ -12,6 +12,7 @@ access to the Cloud class
 ##class: Cloud
 The main class of machine
 
+**Scope**: static member of module:heaven
 
 ###cloud.eyes
 **Type**: `number`  
