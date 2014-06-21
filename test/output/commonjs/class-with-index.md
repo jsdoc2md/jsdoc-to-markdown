@@ -4,7 +4,7 @@ this module returns a set of files
 
 **Contents**
 * [files](#module_file-set#files)
-* [delete()](#module_file-set#delete)
+* [delete(paths)](#module_file-set#delete)
 
 
  -  `array` - a list of file patterns

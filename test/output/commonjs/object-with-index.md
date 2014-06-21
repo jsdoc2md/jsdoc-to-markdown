@@ -5,7 +5,7 @@ simple object export
 **Contents**
 * [one](#module_object.one)
 * [two](#module_object.two)
-* [three(, )](#module_object.three)
+* [three(four, five)](#module_object.three)
 
   
 <a name="module_object.one"></a>
@@ -29,12 +29,12 @@ Author: 75lb <75pound@gmail.com>
 var allTogether = true;
 ```
 <a name="module_object.three"></a>
-###object.three(, )
+###object.three(four, five)
 a function
 
 
- -  `string` - The input string
- -  `object` - a second input
+ - four `string` - The input string
+ - five `object` - a second input
 
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  

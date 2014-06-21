@@ -184,12 +184,12 @@ Since: v1.0.0
 the general size
 
   
-###~~all.allThings(, )~~
+###~~all.allThings(one, two)~~
 This function has all tags set
 
 
- -  `string` - The input string
- -  `object` - a second input
+ - one `string` - The input string
+ - two `object` - a second input
 
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
@@ -240,12 +240,12 @@ var yeah = new Everything(true);
 ###something.methodOne()
 method description
 
-###~~something.allTogether(, )~~
+###~~something.allTogether(one, two)~~
 This function has all tags set
 
 
- -  `string` - The input string
- -  `object` - a second input
+ - one `string` - The input string
+ - two `object` - a second input
 
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  

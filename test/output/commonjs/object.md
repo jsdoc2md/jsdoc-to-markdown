@@ -20,12 +20,12 @@ Author: 75lb <75pound@gmail.com>
 ```js
 var allTogether = true;
 ```
-###object.three(, )
+###object.three(four, five)
 a function
 
 
- -  `string` - The input string
- -  `object` - a second input
+ - four `string` - The input string
+ - five `object` - a second input
 
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
