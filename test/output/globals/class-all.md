@@ -2,6 +2,7 @@
 ##class: All
 a class with all of the things
 
+**Extends**: `Number`  
 ###all.topping
 the ingredients on top
 

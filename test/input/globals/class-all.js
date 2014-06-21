@@ -7,6 +7,7 @@ the constructor description
 @author 75lb <75pound@gmail.com>
 @deprecated
 @since v0.10.28
+@extends {Number}
 @example
 ```js
 var yeah = new Everything(true);

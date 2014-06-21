@@ -2,6 +2,7 @@
 a constructor description
 @class
 @classdesc simple class description
+@extends {Object}
 */
 function Person(){}
 Person.prototype.methodOne = function(){};
