@@ -7,7 +7,7 @@ factory module creating dodgy machines
 ###cyberdyne.createMachine()
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-###cyberdyne.something
+###something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  

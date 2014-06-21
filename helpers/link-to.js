@@ -8,11 +8,13 @@ module.exports = function(handlebars){
                 return linkTo(name, options);
             });
         } else {
-            if (["string", "object", "number", "boolean", "array"].indexOf(longname) > -1){
+            if (["string", "object", "number", "boolean", "array"].indexOf(longname.toLowerCase()) > -1){
                 return "`" + longname + "`";
             } else {
                 var linked = a.findWhere(options.data.root, { longname: longname });
-                return util.format("[%s](#%s)", linked.name || "!error!",handlebars.helpers.anchorName(longname));
+                return linked 
+                    ? util.format("[%s](#%s)", linked.name, handlebars.helpers.anchorName(longname))
+                    : "`" + longname + "`";
             }
         }
     });
