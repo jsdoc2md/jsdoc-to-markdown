@@ -6,7 +6,6 @@
 ###pizza.topping
 the ingredients on top
 
-**Scope**: instance member of [Pizza](#Pizza)  
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
@@ -14,5 +13,4 @@ the ingredients on top
 ###pizza.size
 the general size
 
-**Scope**: instance member of [Pizza](#Pizza)  
   

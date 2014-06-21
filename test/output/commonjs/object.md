@@ -7,14 +7,12 @@ simple object export
 ###object.one
 first property
 
-**Scope**: static member of [object](#module_object)  
   
 <a name="module_object.two"></a>
 ###~~object.two~~
 This property has all tags set
 
 ***Deprecated***  
-**Scope**: static member of [object](#module_object)  
 **Access**: private  
 **Default**: `2`  
 **Read only**: true  
@@ -33,7 +31,6 @@ a function
 - four `string` - The input string
 - five `object` - a second input
 
-**Scope**: static function of [object](#module_object)  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  
