@@ -1,18 +1,22 @@
+<a name="All"></a>
 
 ##class: All
 a class with all of the things
 
 **Extends**: `Number`  
+<a name="All#topping"></a>
 ###all.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
+<a name="All#size"></a>
 ###all.size
 the general size
 
   
+<a name="All#allThings"></a>
 ###~~all.allThings(one, two)~~
 This function has all tags set
 
@@ -22,7 +26,7 @@ This function has all tags set
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
+**Returns**: `object` | `string` - this return has several types  
 ####Example
 ```js
 all.allTogether(true);

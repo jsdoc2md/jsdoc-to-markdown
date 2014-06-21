@@ -8,7 +8,11 @@ module.exports = function(handlebars){
                 return linkTo(name);
             });
         } else {
-            return util.format("![%s](%s)", "CLIVE", "#hater");
+            if (["string", "object", "number", "boolean", "array"].indexOf(longname) > -1){
+                return "`" + longname + "`";
+            } else {
+                return util.format("[%s](%s)", longname, handlebars.helpers.anchorName(longname));
+            }
         }
     });
 };

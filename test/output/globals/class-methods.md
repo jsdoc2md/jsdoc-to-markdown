@@ -1,8 +1,11 @@
+<a name="Something"></a>
 
 ##class: Something
+<a name="Something#methodOne"></a>
 ###something.methodOne()
 method description
 
+<a name="Something#allTogether"></a>
 ###~~something.allTogether(one, two)~~
 This function has all tags set
 
@@ -12,7 +15,7 @@ This function has all tags set
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
+**Returns**: `object` | `string` - this return has several types  
 ####Example
 ```js
 something.allTogether(true);

@@ -1,11 +1,14 @@
+<a name="module_object"></a>
 #object
 simple object export
 
   
+<a name="module_object.one"></a>
 ###object.one
 first property
 
   
+<a name="module_object.two"></a>
 ###~~object.two~~
 This property has all tags set
 
@@ -20,6 +23,7 @@ This property has all tags set
 ```js
 var allTogether = true;
 ```
+<a name="module_object.three"></a>
 ###object.three(four, five)
 a function
 
@@ -29,7 +33,7 @@ a function
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
+**Returns**: `object` | `string` - this return has several types  
 ####Example
 ```js
 allTogether(true);

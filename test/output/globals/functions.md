@@ -1,6 +1,8 @@
+<a name="globalFunc"></a>
 ###globalFunc()
 a global function
 
+<a name="exampled"></a>
 ###exampled()
 a function with an example
 
@@ -8,6 +10,7 @@ a function with an example
 ```js
 var result = exampled();
 ```
+<a name="multiExampled"></a>
 ###multiExampled()
 a function with multiple examples
 
@@ -19,29 +22,38 @@ var another = 100;
 ```js
 var next = "p";
 ```
+<a name="_protected"></a>
 ###_protected()
 **Access**: protected  
+<a name="_private"></a>
 ###_private()
 **Access**: private  
+<a name="withAuthor"></a>
 ###withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
+<a name="oldFunction"></a>
 ###~~oldFunction()~~
+<a name="newFunction"></a>
 ###newFunction()
 **Since**: v0.10.28  
+<a name="withParam"></a>
 ###withParam(one)
 
 - one `string` - The input string
 
+<a name="withParams"></a>
 ###withParams(one, two)
 
 - one `string` - The input string
 - two `object`
 
+<a name="withOptional"></a>
 ###withOptional(one, [two])
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
+<a name="withBullets"></a>
 ###withBullets(one, two)
 this description has 
 
@@ -54,12 +66,16 @@ and needs this line to separate the above list from the below
 - one `string` - The input string
 - two `object` - a second input
 
+<a name="returnsSomething"></a>
 ###returnsSomething()
-**Returns**: ![CLIVE](#hater)  
+**Returns**: `string`  
+<a name="returnsSomethingDesc"></a>
 ###returnsSomethingDesc()
-**Returns**: ![CLIVE](#hater) - this return has a description  
+**Returns**: `object` - this return has a description  
+<a name="returnsSeveral"></a>
 ###returnsSeveral()
-**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
+**Returns**: `object` | `string` - this return has several types  
+<a name="allTogether"></a>
 ###~~allTogether(one, two)~~
 This function has all tags set
 
@@ -70,7 +86,7 @@ This function has all tags set
 **Access**: private  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
+**Returns**: `object` | `string` - this return has several types  
 ####Example
 ```js
 allTogether(true);

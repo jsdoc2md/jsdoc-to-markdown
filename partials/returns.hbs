@@ -1,6 +1,6 @@
 {{#if returns~}}
 **Returns**: {{#each returns~}}
-  {{#if type.names}}{{join (linkTo type.names) " | "}}{{/if}}
+  {{#if type.names}}{{{join (linkTo type.names) " | "}}}{{/if}}
   {{~#if description}} - {{{description}}}{{/if}}
 {{~/each}}  
 {{/if}}

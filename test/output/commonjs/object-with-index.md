@@ -38,7 +38,7 @@ a function
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: ![CLIVE](#hater) | ![CLIVE](#hater) - this return has several types  
+**Returns**: `object` | `string` - this return has several types  
 ####Example
 ```js
 allTogether(true);
