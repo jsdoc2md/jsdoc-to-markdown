@@ -162,7 +162,6 @@ allTogether(true);
 ##class: All
 a class with all of the things
 
-
 ###all.topping
 the ingredients on top
 
@@ -192,24 +191,37 @@ all.allTogether(true);
 simple class description
 
 
-
 ##class: Car
-
 
 ##class: Pipe
 a class which extends
 
 **Extends**: `Pipe`
 
-
 ##class: Everything
 a class with all trimmings
 
 **Extends**: `Pipe`
 
+##class: Pizza
+###pizza.topping
+the ingredients on top
+
+**Default**: `mud, lettuce`  
+**Type**: `string`  
+**Since**: v1.0.0  
+###pizza.size
+the general size
+
+  
+###event: "cooked"
+Fired when pizza is ready
+
+###event: "cooking"
+Fired when pizza is cooking
+
 
 ##class: Something
-
 ###something.methodOne()
 method description
 
@@ -229,7 +241,6 @@ something.allTogether(true);
 ```
 
 ##class: Pizza
-
 ###pizza.topping
 the ingredients on top
 
@@ -240,3 +251,9 @@ the ingredients on top
 the general size
 
   
+###event: "cooked"
+Fired when pizza is ready
+
+###event: "cooking"
+Fired when pizza is cooking
+

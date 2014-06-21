@@ -9,7 +9,6 @@ factory module creating dodgy machines
 The main class of machine
 
 **Scope**: inner member of module:cyberdyne
-
 ###machine.eyes
 **Type**: `number`  
 ###machine.vibe

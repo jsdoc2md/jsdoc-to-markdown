@@ -1,6 +1,5 @@
 
 ##class: Something
-
 ###something.methodOne()
 method description
 
