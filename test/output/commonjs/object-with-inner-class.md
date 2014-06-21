@@ -11,7 +11,7 @@ factory module creating dodgy machines
 ##class: Machine
 The main class of machine
 
-**Scope**: inner member of module:cyberdyne  
+**Scope**: inner member of [module:cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine#eyes"></a>
 ###machine.eyes
 **Type**: `number`  
