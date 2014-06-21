@@ -14,6 +14,7 @@ var cowFiles = fileSet("cow/*");
 module.exports = FileSet;
 
 /**
+@class
 @alias module:file-set
 */
 function FileSet(num){};

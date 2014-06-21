@@ -10,7 +10,7 @@ access to the Cloud class
   
 <a name="module_heaven.createCloud"></a>
 ###heaven.createCloud()
-**Returns**: [module:heaven.Cloud](module_heaven.Cloud)  
+**Returns**: [module:heaven.Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
 ##class: Cloud

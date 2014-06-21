@@ -5,7 +5,7 @@ factory module creating dodgy machines
   
 <a name="module_cyberdyne.createMachine"></a>
 ###cyberdyne.createMachine()
-**Returns**: [module:cyberdyne~Machine](module_cyberdyne.Machine)  
+**Returns**: [module:cyberdyne~Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.Machine"></a>
 
 ##class: Machine

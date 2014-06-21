@@ -7,7 +7,7 @@
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {
     "test": "",
-    "render": "node test/render.js",
+    "docs": "node test/render.js",
     "watch": "baldrick --do 'npm run render' --when test/input/*/*.js partials/* --change --speak"
   },
   "bin": {
