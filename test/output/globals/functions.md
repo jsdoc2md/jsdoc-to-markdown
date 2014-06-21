@@ -20,14 +20,14 @@ var another = 100;
 var next = "p";
 ```
 ###_protected()
-Access: protected  
+**Access**: protected  
 ###_private()
-Access: private  
+**Access**: private  
 ###withAuthor()
-Author: Clive Jones <clive@jones.com>  
+**Author**: Clive Jones <clive@jones.com>  
 ###~~oldFunction()~~
 ###newFunction()
-Since: v0.10.28  
+**Since**: v0.10.28  
 ###withParam(one)
 
 - one `string` - The input string
@@ -67,9 +67,9 @@ This function has all tags set
 - one `string` - The input string
 - two `object` - a second input
 
-Access: private  
-Since: v0.10.28  
-Author: Lloyd <75pound@gmail.com>  
+**Access**: private  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object | string` - this return has several types  
 ####Example
 ```js

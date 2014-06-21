@@ -10,6 +10,6 @@ The main class of machine
 
 
 ###machine.eyes
-Type: `number`  
+**Type**: `number`  
 ###machine.vibe
-Type: `string`  
+**Type**: `string`  

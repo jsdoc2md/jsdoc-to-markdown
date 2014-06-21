@@ -14,6 +14,6 @@ The main class of machine
 
 
 ###cloud.eyes
-Type: `number`  
+**Type**: `number`  
 ###cloud.vibe
-Type: `string`  
+**Type**: `string`  

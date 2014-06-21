@@ -3,9 +3,9 @@ a global variable
 
   
 ###typed
-Type: `string`  
+**Type**: `string`  
 ###types
-Type: `string | number`  
+**Type**: `string | number`  
 ###exampled
 a var with an example
 
@@ -27,39 +27,39 @@ var another = 100;
 var next = "p";
 ```
 ###_protected
-Access: protected  
+**Access**: protected  
   
 ###_private
-Access: private  
+**Access**: private  
   
 ###withAuthor
   
-Author: Clive Jones <clive@jones.com>  
+**Author**: Clive Jones <clive@jones.com>  
 ###hasDefault
-Default: `23`  
+**Default**: `23`  
   
 ###hasDefaultObject
-Default: `{"one":1,"two":2}`  
+**Default**: `{"one":1,"two":2}`  
   
 ###~~deprecated~~
 ***Deprecated***  
   
 ###readOnly
-Read only: true  
+**Read only**: true  
   
 ###hasSince
   
-Since: v0.10.28  
+**Since**: v0.10.28  
 ###~~allTogether~~
 This variable has all tags set
 
 ***Deprecated***  
-Access: private  
-Default: `false`  
-Read only: true  
-Type: `boolean`  
-Since: v0.10.28  
-Author: 75lb <75pound@gmail.com>  
+**Access**: private  
+**Default**: `false`  
+**Read only**: true  
+**Type**: `boolean`  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
 ####Example
 ```js
 var allTogether = true;
