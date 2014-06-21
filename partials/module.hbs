@@ -3,8 +3,6 @@
 
 {{>description~}}
 
-{{>module-index~}}
-
 {{>params~}}
 {{>deprecated~}}
 {{>access~}}
@@ -16,8 +14,9 @@
 {{>returns~}}
 {{>examples~}}
 
+{{>module-index~}}
+
 {{#with (where @root memberof=longname)~}}
-{{#each (where this kind="member" scope="static")}}{{>member parentName=../../alias}}{{/each~}}
-{{#each (where this kind="function" scope="static")}}{{>function parentName=../../alias}}{{/each~}}
-{{#each (where this kind="class")}}{{>class}}{{/each~}}
+ {{#each (where this kind="member" scope="static")}}{{>member parentName=../../alias}}{{/each~}}
+ {{#each (where this kind="function" scope="static")}}{{>function parentName=../../alias}}{{/each~}}    {{#each (where this kind="class")}}{{>class}}{{/each~}}
 {{/with}}

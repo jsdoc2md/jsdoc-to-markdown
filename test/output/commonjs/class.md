@@ -2,7 +2,7 @@
 this module returns a set of files
 
 
- -  `array` - a list of file patterns
+-  `array` - a list of file patterns
 
   
 ####Example

@@ -1,19 +1,8 @@
 
 ##class: All
 a class with all of the things
-###~~new All(input, [options])~~
-the constructor description
 
 
- - input `object` - an input
- - [options] `object` - optional shit
-
-Since: v0.10.28  
-Author: 75lb <75pound@gmail.com>  
-####Example
-```js
-var yeah = new Everything(true);
-```
 ###all.topping
 the ingredients on top
 
@@ -28,12 +17,12 @@ the general size
 This function has all tags set
 
 
- - one `string` - The input string
- - two `object` - a second input
+- one `string` - The input string
+- two `object` - a second input
 
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
-Returns: `object | string` - this return has several types  
+**Returns**: `object | string` - this return has several types  
 ####Example
 ```js
 all.allTogether(true);

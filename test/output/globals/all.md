@@ -113,17 +113,17 @@ Author: Clive Jones <clive@jones.com>
 Since: v0.10.28  
 ###withParam(one)
 
- - one `string` - The input string
+- one `string` - The input string
 
 ###withParams(one, two)
 
- - one `string` - The input string
- - two `object`
+- one `string` - The input string
+- two `object`
 
 ###withOptional(one, [two])
 
- - one `string` - The input string
- - [two] `object` - this one is optional
+- one `string` - The input string
+- [two] `object` - this one is optional
 
 ###withBullets(one, two)
 this description has 
@@ -134,26 +134,26 @@ this description has
 and needs this line to separate the above list from the below
 
 
- - one `string` - The input string
- - two `object` - a second input
+- one `string` - The input string
+- two `object` - a second input
 
 ###returnsSomething()
-Returns: `string`  
+**Returns**: `string`  
 ###returnsSomethingDesc()
-Returns: `object` - this return has a description  
+**Returns**: `object` - this return has a description  
 ###returnsSeveral()
-Returns: `object | string` - this return has several types  
+**Returns**: `object | string` - this return has several types  
 ###~~allTogether(one, two)~~
 This function has all tags set
 
 
- - one `string` - The input string
- - two `object` - a second input
+- one `string` - The input string
+- two `object` - a second input
 
 Access: private  
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
-Returns: `object | string` - this return has several types  
+**Returns**: `object | string` - this return has several types  
 ####Example
 ```js
 allTogether(true);
@@ -161,19 +161,8 @@ allTogether(true);
 
 ##class: All
 a class with all of the things
-###~~new All(input, [options])~~
-the constructor description
 
 
- - input `object` - an input
- - [options] `object` - optional shit
-
-Since: v0.10.28  
-Author: 75lb <75pound@gmail.com>  
-####Example
-```js
-var yeah = new Everything(true);
-```
 ###all.topping
 the ingredients on top
 
@@ -188,12 +177,12 @@ the general size
 This function has all tags set
 
 
- - one `string` - The input string
- - two `object` - a second input
+- one `string` - The input string
+- two `object` - a second input
 
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
-Returns: `object | string` - this return has several types  
+**Returns**: `object | string` - this return has several types  
 ####Example
 ```js
 all.allTogether(true);
@@ -201,42 +190,26 @@ all.allTogether(true);
 
 ##class: Person
 simple class description
-###new Person()
-a constructor description
+
 
 
 ##class: Car
-###new Car([options])
-a constructor with args
-
-
- - [options] `object` - optional shit
 
 
 ##class: Pipe
 a class which extends
+
 Extends: `Pipe`
-###new Pipe()
+
 
 ##class: Everything
 a class with all trimmings
+
 Extends: `Pipe`
-###~~new Everything(input, [options])~~
-the constructor description
 
-
- - input `object` - an input
- - [options] `object` - optional shit
-
-Since: v0.10.28  
-Author: 75lb <75pound@gmail.com>  
-####Example
-```js
-var yeah = new Everything(true);
-```
 
 ##class: Something
-###new Something()
+
 ###something.methodOne()
 method description
 
@@ -244,19 +217,19 @@ method description
 This function has all tags set
 
 
- - one `string` - The input string
- - two `object` - a second input
+- one `string` - The input string
+- two `object` - a second input
 
 Since: v0.10.28  
 Author: Lloyd <75pound@gmail.com>  
-Returns: `object | string` - this return has several types  
+**Returns**: `object | string` - this return has several types  
 ####Example
 ```js
 something.allTogether(true);
 ```
 
 ##class: Pizza
-###new Pizza()
+
 ###pizza.topping
 the ingredients on top
 

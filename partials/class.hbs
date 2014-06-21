@@ -3,6 +3,6 @@
 {{>classdesc~}}
 
 {{>augments~}}
-{{>function~}}
+{{#if constructorHasDocs}}{{>function~}}{{/if}}
 {{#each (where @root kind="member" memberof=longname)}}{{>member}}{{/each~}}
 {{#each (where @root kind="function" memberof=longname)}}{{>function}}{{/each~}}

@@ -2,12 +2,8 @@
 #file-set
 this module returns a set of files
 
-**Contents**
-* [files](#module_file-set#files)
-* [delete(paths)](#module_file-set#delete)
 
-
- -  `array` - a list of file patterns
+-  `array` - a list of file patterns
 
   
 ####Example
@@ -16,3 +12,7 @@ var fileSet = require("file-set");
 
 var cowFiles = fileSet("cow/*");
 ```
+**Contents**
+* [files](#module_file-set#files)
+* [delete(paths)](#module_file-set#delete)
+
