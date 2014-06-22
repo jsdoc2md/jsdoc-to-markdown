@@ -1,5 +1,5 @@
-<a name="module_module"></a>
-#module(, )
+<a name="module_function"></a>
+#function(, )
 module description
 
 
