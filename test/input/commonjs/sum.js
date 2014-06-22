@@ -1,8 +1,8 @@
 /**
 A simple maths function
 @module
-@param {number} - first number 
-@param {number} - second number
+@param a {number} - first number 
+@param b {number} - second number
 @returns {number} the result
 @example
 ```js

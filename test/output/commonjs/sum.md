@@ -1,10 +1,10 @@
 <a name="module_sum"></a>
-#sum(, )
+#sum(a, b)
 A simple maths function
 
 
--  `number` - first number
--  `number` - second number
+- a `number` - first number
+- b `number` - second number
 
   
 **Returns**: `number` - the result  
