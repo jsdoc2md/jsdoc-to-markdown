@@ -1,6 +1,7 @@
 /**
 this module returns a set of files
 @module
+@alias fileSet
 @example
 ```js
 var fileSet = require("file-set");

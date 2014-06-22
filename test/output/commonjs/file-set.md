@@ -11,12 +11,12 @@ this module returns a set of files
 var cowFiles = fileSet("cow/*");
 ```
 <a name="module_file-set#files"></a>
-###file-set.files
+###fileSet.files
 the static property
 
   
 <a name="module_file-set#delete"></a>
-###file-set.delete(paths)
+###fileSet.delete(paths)
 A static methy meth
 
 
