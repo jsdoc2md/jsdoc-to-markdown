@@ -42,7 +42,8 @@ jsdoc2md.render(argv, function(err, result){
 });
 
 function halt(err){
-    dope.red.error("Error: " + err.message);
+    dope.red.error(err.stack || "Error: " + err.message);
+    dope.red.error(err.debug);
     dope.log(usage);
     process.exit(1);
 }

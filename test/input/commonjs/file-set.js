@@ -2,16 +2,18 @@
 this module returns a set of files
 @module
 @alias fileSet
+@param {string[]} - a list of file patterns
 @example
 ```js
 var fileSet = require("file-set");
+
+var cowFiles = fileSet("cow/*");
 ```
 */
 module.exports = FileSet;
 
 /**
 @class
-@param {string[]} - a list of file patterns
 @example
 ```js
 var cowFiles = fileSet("cow/*");

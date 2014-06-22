@@ -8,7 +8,8 @@
   "scripts": {
     "test": "",
     "docs": "node test/render.js",
-    "watch": "baldrick --do 'npm run docs' --when test/input/*/*.js partials/* --change --speak"
+    "watch": "baldrick --do 'npm run docs' --when test/input/*/*.js partials/* --change --speak",
+    "lint": "jshint helpers/*.js bin/*.js lib/*.js; echo"
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"

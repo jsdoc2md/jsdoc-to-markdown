@@ -1,2 +1,2 @@
-{{#unless @root.argv.skip-heading}}{{#if name}}#{{{name}}}{{#if params}}({{methodSig params}}){{/if}}
+{{#unless @root.argv.skip-heading}}{{#if name}}{{#if _merged}}##{{else}}#{{/if}}{{{name}}}{{#if params}}({{methodSig params}}){{/if}}
 {{/if}}{{/unless}}
