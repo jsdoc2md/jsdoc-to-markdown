@@ -13,6 +13,7 @@ the constructor description
 - input `object` - an input
 - [options] `object` - optional shit
 
+***Deprecated***  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 ####Example
@@ -39,6 +40,7 @@ This function has all tags set
 - one `string` - The input string
 - two `object` - a second input
 
+***Deprecated***  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  

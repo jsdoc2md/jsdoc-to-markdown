@@ -39,6 +39,7 @@ the constructor description
 - input `object` - an input
 - [options] `object` - optional shit
 
+***Deprecated***  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 ####Example

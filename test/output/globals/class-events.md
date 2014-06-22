@@ -1,10 +1,10 @@
 #Global scope
-<a name="Pizza"></a>
+<a name="Rice"></a>
 
-##class: Pizza
+##class: Rice
 ###event: "cooked"
-Fired when pizza is ready
+Fired when rice is ready
 
 ###event: "cooking"
-Fired when pizza is cooking
+Fired when rice is cooking
 

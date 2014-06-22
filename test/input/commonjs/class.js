@@ -1,7 +1,6 @@
 /**
 this module returns a set of files
 @module file-set
-@param {array} - a list of file patterns
 @alias fileSet
 @example
 ```js
@@ -15,6 +14,7 @@ module.exports = FileSet;
 
 /**
 @class
+@param {array} - a list of file patterns
 @alias module:file-set
 */
 function FileSet(num){};

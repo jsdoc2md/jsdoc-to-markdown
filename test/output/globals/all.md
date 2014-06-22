@@ -133,6 +133,7 @@ var next = "p";
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
 ###~~oldFunction()~~
+***Deprecated***  
 <a name="newFunction"></a>
 ###newFunction()
 **Since**: v0.10.28  
@@ -183,6 +184,7 @@ This function has all tags set
 - one `string` - The input string
 - two `object` - a second input
 
+***Deprecated***  
 **Access**: private  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
@@ -205,6 +207,7 @@ the constructor description
 - input `object` - an input
 - [options] `object` - optional shit
 
+***Deprecated***  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 ####Example
@@ -231,6 +234,7 @@ This function has all tags set
 - one `string` - The input string
 - two `object` - a second input
 
+***Deprecated***  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  
@@ -278,32 +282,21 @@ the constructor description
 - input `object` - an input
 - [options] `object` - optional shit
 
+***Deprecated***  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 ####Example
 ```js
 var yeah = new Everything(true);
 ```
-<a name="Pizza"></a>
+<a name="Rice"></a>
 
-##class: Pizza
-<a name="Pizza#topping"></a>
-###pizza.topping
-the ingredients on top
-
-**Default**: `mud, lettuce`  
-**Type**: `string`  
-**Since**: v1.0.0  
-<a name="Pizza#size"></a>
-###pizza.size
-the general size
-
-  
+##class: Rice
 ###event: "cooked"
-Fired when pizza is ready
+Fired when rice is ready
 
 ###event: "cooking"
-Fired when pizza is cooking
+Fired when rice is cooking
 
 <a name="Something"></a>
 
@@ -320,6 +313,7 @@ This function has all tags set
 - one `string` - The input string
 - two `object` - a second input
 
+***Deprecated***  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  
@@ -342,9 +336,3 @@ the ingredients on top
 the general size
 
   
-###event: "cooked"
-Fired when pizza is ready
-
-###event: "cooking"
-Fired when pizza is cooking
-

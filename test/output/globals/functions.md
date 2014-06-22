@@ -34,6 +34,7 @@ var next = "p";
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
 ###~~oldFunction()~~
+***Deprecated***  
 <a name="newFunction"></a>
 ###newFunction()
 **Since**: v0.10.28  
@@ -84,6 +85,7 @@ This function has all tags set
 - one `string` - The input string
 - two `object` - a second input
 
+***Deprecated***  
 **Access**: private  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  

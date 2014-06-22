@@ -1,13 +1,13 @@
 /**
 @class
 */
-function Pizza(){}
+function Rice(){}
 
 /**
-Fired when pizza is ready
-@event Pizza#cooked
+Fired when rice is ready
+@event Rice#cooked
 */
 /**
-Fired when pizza is cooking
-@event Pizza#cooking
+Fired when rice is cooking
+@event Rice#cooking
 */
