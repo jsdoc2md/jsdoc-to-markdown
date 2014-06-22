@@ -34,4 +34,4 @@ fs.readdirSync("test/input/globals").forEach(function(file){
 
 render("test/input/globals/*.js", "test/output/globals/all.md", "globals");
 render("test/input/commonjs/object.js", "test/output/commonjs/object-with-index.md", "modules", true);
-render("test/input/commonjs/class-alias.js", "test/output/commonjs/class-with-index.md", "modules", true);
+render("test/input/commonjs/file-set.js", "test/output/commonjs/fileset-with-index.md", "modules", true);

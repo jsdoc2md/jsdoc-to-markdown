@@ -1,20 +1,20 @@
 /**
 this module returns a set of files
-@module file-set
-@alias fileSet
+@module
 @example
 ```js
 var fileSet = require("file-set");
-
-var cowFiles = fileSet("cow/*");
 ```
 */
-
 module.exports = FileSet;
 
 /**
 @class
-@param {array} - a list of file patterns
+@param {string[]} - a list of file patterns
+@example
+```js
+var cowFiles = fileSet("cow/*");
+```
 @alias module:file-set
 */
 function FileSet(num){};
