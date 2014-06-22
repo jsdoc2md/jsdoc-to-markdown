@@ -1,13 +1,12 @@
 <a name="module_function"></a>
 #function(, )
-module description
+This is the module description
 
 
 -  `string` - The input string
 -  `object` - a second input
 
 ***Deprecated***  
-**Access**: private  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Default**: `true`  
