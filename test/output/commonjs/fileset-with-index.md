@@ -1,13 +1,15 @@
 <a name="module_file-set"></a>
-#file-set(num)
+##file-set()
 this module returns a set of files
 
 
-- num `Array.<string>` - a list of file patterns
+-  `Array.<string>` - a list of file patterns
 
   
 ####Example
 ```js
+var fileSet = require("file-set");
+
 var cowFiles = fileSet("cow/*");
 ```
 **Contents**

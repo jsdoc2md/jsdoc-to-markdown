@@ -193,6 +193,22 @@ This function has all tags set
 ```js
 allTogether(true);
 ```
+<a name="doSomething"></a>
+###doSomething(options, options.one, options.two)
+
+- options `object` - the function options
+- options.one `string` - first option
+- options.two `string` - second option
+
+<a name="doAnother"></a>
+###doAnother(options)
+
+- options `Object` - the function options
+
+<a name="requirer"></a>
+###requirer()
+ensure you have some-module installed
+
 <a name="All"></a>
 
 ##class: All

@@ -1,5 +1,5 @@
 <a name="module_sum-alias"></a>
-#sum-alias(a, b)
+##sum-alias(a, b)
 A simple maths function
 
 
@@ -10,5 +10,5 @@ A simple maths function
 **Returns**: `number` - the result  
 ####Example
 ```js
-var result = sum(1, 1);
+var sum = require("sum");
 ```
