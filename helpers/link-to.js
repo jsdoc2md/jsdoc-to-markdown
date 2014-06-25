@@ -11,7 +11,6 @@ module.exports = function(handlebars){
         } else {
             if (re.test(longname)){
                 var fullName = longname;
-                fullName = fullName.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                 longname = longname.match(re)[1];
             }
             
@@ -21,9 +20,13 @@ module.exports = function(handlebars){
                 return "`" + (fullName || longname) + "`";
             } else {
                 var linked = a.findWhere(options.data.root, { longname: longname });
-                return linked 
-                    ? util.format("[%s](#%s)", fullName ? fullName.replace(longname, linked.name) : linked.name, handlebars.helpers.anchorName(longname))
-                    : "`" + (fullName || longname) + "`";
+                if (linked){
+                    if (fullName) fullName = fullName.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                    var linkText = fullName ? fullName.replace(longname, linked.name) : linked.name;
+                    return util.format("[%s](#%s)", linkText, handlebars.helpers.anchorName(longname))
+                } else {
+                    return "`" + (fullName || longname) + "`";
+                }
             }
         }
     });
