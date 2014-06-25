@@ -70,5 +70,15 @@ var jsdoc2md = require("jsdoc-to-markdown");
 ###jsdoc2md.render(options, done)
 
 - options `object` - The render options
-- done `function` - a callback invoked on completion
+- done [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
 
+<a name="module_jsdoc-to-markdown.onRender"></a>
+###callback: onRender
+Called by `jsdoc2md.render()` on completion.
+
+
+- err `object` - An error instance if applicable, else `null`
+- result `string` - the rendered markdown
+
+**Scope**: inner typedef of [jsdoc-to-markdown](#module_jsdoc-to-markdown)  
+**Type**: `function`  
