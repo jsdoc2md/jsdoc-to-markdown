@@ -6,7 +6,7 @@
 ***work in progress, unstable, draft documentation***
 
 #jsdoc-to-markdown
-Jsdocumented source code in, markdown out.. In development, any feedback welcome.
+[Documented](http://usejsdoc.org) source code in, markdown out.. In development, any feedback welcome.
 
 ##Install
 Ensure [node.js](http://nodejs.org) is installed first. Linux/Mac users may need to run the following commands with `sudo`.

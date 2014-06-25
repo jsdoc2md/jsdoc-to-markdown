@@ -98,6 +98,12 @@ This variable has all tags set
 ```js
 var allTogether = true;
 ```
+<a name="read"></a>
+###read(filename, done)
+
+- filename `string` - the filename
+- done [onComplete](#onComplete) - the callback
+
 <a name="globalFunc"></a>
 ###globalFunc()
 a global function
