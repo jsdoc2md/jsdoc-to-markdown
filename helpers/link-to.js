@@ -15,7 +15,7 @@ module.exports = function(handlebars){
                 longname = longname.match(re)[1];
             }
             
-            var builtInType = /string|object|number|boolean|array/i.test(longname);
+            var builtInType = /^(string|object|number|boolean|array)$/i.test(longname);
             
             if (builtInType){
                 return "`" + (fullName || longname) + "`";

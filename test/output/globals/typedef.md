@@ -4,7 +4,7 @@
 Set the magic number.
 
 
-- x `NumberLike` - The magic number.
+- x [NumberLike](#NumberLike) - The magic number.
 
 <a name="NumberLike"></a>
 ###type: NumberLike

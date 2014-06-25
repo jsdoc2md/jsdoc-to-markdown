@@ -220,7 +220,7 @@ ensure you have some-module installed
 Set the magic number.
 
 
-- x `NumberLike` - The magic number.
+- x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
 ###doSomething(options)
