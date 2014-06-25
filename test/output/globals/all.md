@@ -386,6 +386,18 @@ the ingredients on top
 the general size
 
   
+<a name="Plucker"></a>
+
+##class: Plucker
+<a name="Plucker#doPluck"></a>
+###plucker.doPluck(one, ...prop, ...three)
+This function takes variable input
+
+**Params**
+- one `string` - an input
+- ...prop `string` - the property(s) as input
+- ...three `string` - more input
+
 <a name="onComplete"></a>
 ###callback: onComplete
 Called when an async operation completes
