@@ -4,16 +4,16 @@ simple object export
 
   
 <a name="module_object-with-alias.one"></a>
-###`_.one`
+###_.one
 first property
 
   
 <a name="module_object-with-alias.two"></a>
-###`_.two`
+###_.two
 second property
 
   
 <a name="module_object-with-alias.three"></a>
-###`_.three()`
+###_.three()
 a function
 

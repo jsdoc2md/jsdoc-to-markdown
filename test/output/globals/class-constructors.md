@@ -6,14 +6,14 @@ simple class description
 
 **Extends**: `Object`  
 <a name="Person"></a>
-###`new Person()`
+###new Person()
 a constructor description
 
 <a name="Car"></a>
 
 ##class: Car
 <a name="Car"></a>
-###`new Car([options])`
+###new Car([options])
 a constructor with args
 
 **Params**
@@ -32,7 +32,7 @@ a class with all trimmings
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
-###`~~new Everything(input, [options])~~`
+###~~new Everything(input, [options])~~
 the constructor description
 
 **Params**

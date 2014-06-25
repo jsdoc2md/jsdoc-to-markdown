@@ -1,4 +1,4 @@
-{{#if name}}###`
+{{#if name}}###
   {{~#if deprecated}}~~{{/if}}
   {{~#if (equal-some scope "static" "instance")}}
     {{~#if parentName}}{{parentName}}.
@@ -6,5 +6,5 @@
     {{~/if}}
   {{~/if}}
   {{~{name}}}
-  {{~#if deprecated}}~~{{/if}}`
+  {{~#if deprecated}}~~{{/if}}
 {{/if}}

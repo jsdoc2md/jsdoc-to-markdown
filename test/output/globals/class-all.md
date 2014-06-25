@@ -6,7 +6,7 @@ a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-###`~~new All(input, [options])~~`
+###~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -21,19 +21,19 @@ the constructor description
 var yeah = new Everything(true);
 ```
 <a name="All#topping"></a>
-###`all.topping`
+###all.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###`all.size`
+###all.size
 the general size
 
   
 <a name="All#allThings"></a>
-###`~~all.allThings(one, two)~~`
+###~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**

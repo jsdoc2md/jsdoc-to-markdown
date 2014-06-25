@@ -1,10 +1,10 @@
 #Global scope
 <a name="globalFunc"></a>
-###`globalFunc()`
+###globalFunc()
 a global function
 
 <a name="exampled"></a>
-###`exampled()`
+###exampled()
 a function with an example
 
 ####Example
@@ -12,7 +12,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-###`multiExampled()`
+###multiExampled()
 a function with multiple examples
 
 ####Example
@@ -24,39 +24,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-###`_protected()`
+###_protected()
 **Access**: protected  
 <a name="_private"></a>
-###`_private()`
+###_private()
 **Access**: private  
 <a name="withAuthor"></a>
-###`withAuthor()`
+###withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-###`~~oldFunction()~~`
+###~~oldFunction()~~
 ***Deprecated***  
 <a name="newFunction"></a>
-###`newFunction()`
+###newFunction()
 **Since**: v0.10.28  
 <a name="withParam"></a>
-###`withParam(one)`
+###withParam(one)
 **Params**
 - one `string` - The input string
 
 <a name="withParams"></a>
-###`withParams(one, two)`
+###withParams(one, two)
 **Params**
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-###`withOptional(one, [two])`
+###withOptional(one, [two])
 **Params**
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-###`withBullets(one, two)`
+###withBullets(one, two)
 this description has 
 
 - bullet
@@ -69,16 +69,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-###`returnsSomething()`
+###returnsSomething()
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-###`returnsSomethingDesc()`
+###returnsSomethingDesc()
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-###`returnsSeveral()`
+###returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  
 <a name="allTogether"></a>
-###`~~allTogether(one, two)~~`
+###~~allTogether(one, two)~~
 This function has all tags set
 
 **Params**

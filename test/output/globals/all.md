@@ -1,11 +1,11 @@
 #Global scope
 <a name="CONST_ONE"></a>
-###`CONST_ONE`
+###CONST_ONE
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-###`~~CONST_TWO~~`
+###~~CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  
@@ -19,25 +19,25 @@ This variable has all tags set
 var CONST_TWO = true;
 ```
 <a name="eFileType"></a>
-###`eFileType`
+###eFileType
 Enum for the `type` value
 
 **Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  
 <a name="variable"></a>
-###`variable`
+###variable
 a global variable
 
   
 <a name="typed"></a>
-###`typed`
+###typed
 **Type**: `string`  
 <a name="types"></a>
-###`types`
+###types
 **Type**: `string | number`  
 <a name="exampled"></a>
-###`exampled`
+###exampled
 a var with an example
 
   
@@ -46,7 +46,7 @@ a var with an example
 var another = 100;
 ```
 <a name="examples"></a>
-###`examples`
+###examples
 a var with multiple examples
 
   
@@ -59,39 +59,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-###`_protected`
+###_protected
 **Access**: protected  
   
 <a name="_private"></a>
-###`_private`
+###_private
 **Access**: private  
   
 <a name="withAuthor"></a>
-###`withAuthor`
+###withAuthor
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-###`hasDefault`
+###hasDefault
 **Default**: `23`  
   
 <a name="hasDefaultObject"></a>
-###`hasDefaultObject`
+###hasDefaultObject
 **Default**: `{"one":1,"two":2}`  
   
 <a name="deprecated"></a>
-###`~~deprecated~~`
+###~~deprecated~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
-###`readOnly`
+###readOnly
 **Read only**: true  
   
 <a name="hasSince"></a>
-###`hasSince`
+###hasSince
   
 **Since**: v0.10.28  
 <a name="allTogether"></a>
-###`~~allTogether~~`
+###~~allTogether~~
 This variable has all tags set
 
 ***Deprecated***  
@@ -106,17 +106,17 @@ This variable has all tags set
 var allTogether = true;
 ```
 <a name="read"></a>
-###`read(filename, done)`
+###read(filename, done)
 **Params**
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="globalFunc"></a>
-###`globalFunc()`
+###globalFunc()
 a global function
 
 <a name="exampled"></a>
-###`exampled()`
+###exampled()
 a function with an example
 
 ####Example
@@ -124,7 +124,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-###`multiExampled()`
+###multiExampled()
 a function with multiple examples
 
 ####Example
@@ -136,39 +136,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-###`_protected()`
+###_protected()
 **Access**: protected  
 <a name="_private"></a>
-###`_private()`
+###_private()
 **Access**: private  
 <a name="withAuthor"></a>
-###`withAuthor()`
+###withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-###`~~oldFunction()~~`
+###~~oldFunction()~~
 ***Deprecated***  
 <a name="newFunction"></a>
-###`newFunction()`
+###newFunction()
 **Since**: v0.10.28  
 <a name="withParam"></a>
-###`withParam(one)`
+###withParam(one)
 **Params**
 - one `string` - The input string
 
 <a name="withParams"></a>
-###`withParams(one, two)`
+###withParams(one, two)
 **Params**
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-###`withOptional(one, [two])`
+###withOptional(one, [two])
 **Params**
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-###`withBullets(one, two)`
+###withBullets(one, two)
 this description has 
 
 - bullet
@@ -181,16 +181,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-###`returnsSomething()`
+###returnsSomething()
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-###`returnsSomethingDesc()`
+###returnsSomethingDesc()
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-###`returnsSeveral()`
+###returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  
 <a name="allTogether"></a>
-###`~~allTogether(one, two)~~`
+###~~allTogether(one, two)~~
 This function has all tags set
 
 **Params**
@@ -207,30 +207,30 @@ This function has all tags set
 allTogether(true);
 ```
 <a name="doSomething"></a>
-###`doSomething(options)`
+###doSomething(options)
 **Params**
 - options `object` - the function options
 - options.one `string` - first option
 - options.two `string` - second option
 
 <a name="doAnother"></a>
-###`doAnother(options)`
+###doAnother(options)
 **Params**
 - options `Object` - the function options
 
 <a name="requirer"></a>
-###`requirer()`
+###requirer()
 ensure you have some-module installed
 
 <a name="setMagicNumber"></a>
-###`setMagicNumber(x)`
+###setMagicNumber(x)
 Set the magic number.
 
 **Params**
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
-###`doSomething(options)`
+###doSomething(options)
 **Params**
 - options `object` - the function options
 - options.one `string` - first option
@@ -243,7 +243,7 @@ a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-###`~~new All(input, [options])~~`
+###~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -258,19 +258,19 @@ the constructor description
 var yeah = new Everything(true);
 ```
 <a name="All#topping"></a>
-###`all.topping`
+###all.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###`all.size`
+###all.size
 the general size
 
   
 <a name="All#allThings"></a>
-###`~~all.allThings(one, two)~~`
+###~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**
@@ -292,14 +292,14 @@ simple class description
 
 **Extends**: `Object`  
 <a name="Person"></a>
-###`new Person()`
+###new Person()
 a constructor description
 
 <a name="Car"></a>
 
 ##class: Car
 <a name="Car"></a>
-###`new Car([options])`
+###new Car([options])
 a constructor with args
 
 **Params**
@@ -318,7 +318,7 @@ a class with all trimmings
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
-###`~~new Everything(input, [options])~~`
+###~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -345,11 +345,11 @@ Fired when rice is cooking
 
 ##class: Something
 <a name="Something#methodOne"></a>
-###`something.methodOne()`
+###something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-###`~~something.allTogether(one, two)~~`
+###~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**
@@ -368,14 +368,14 @@ something.allTogether(true);
 
 ##class: Pizza
 <a name="Pizza#topping"></a>
-###`pizza.topping`
+###pizza.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###`pizza.size`
+###pizza.size
 the general size
 
   

@@ -13,12 +13,12 @@ var fileSet = require("file-set");
 var cowFiles = fileSet("cow/*");
 ```
 <a name="module_file-set#files"></a>
-###`fileSet.files`
+###fileSet.files
 the static property
 
   
 <a name="module_file-set#delete"></a>
-###`fileSet.delete(paths)`
+###fileSet.delete(paths)
 A static methy meth
 
 **Params**

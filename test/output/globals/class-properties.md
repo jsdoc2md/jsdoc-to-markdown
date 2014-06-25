@@ -3,14 +3,14 @@
 
 ##class: Pizza
 <a name="Pizza#topping"></a>
-###`pizza.topping`
+###pizza.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###`pizza.size`
+###pizza.size
 the general size
 
   
