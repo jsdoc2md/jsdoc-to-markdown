@@ -6,8 +6,3 @@
 - options.one `string` - first option
 - options.two `string` - second option
 
-<a name="doAnother"></a>
-###doAnother(options)
-
-- options `Object` - the function options
-

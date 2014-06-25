@@ -194,7 +194,7 @@ This function has all tags set
 allTogether(true);
 ```
 <a name="doSomething"></a>
-###doSomething(options, options.one, options.two)
+###doSomething(options)
 
 - options `object` - the function options
 - options.one `string` - first option
@@ -208,6 +208,13 @@ allTogether(true);
 <a name="requirer"></a>
 ###requirer()
 ensure you have some-module installed
+
+<a name="doSomething"></a>
+###doSomething(options)
+
+- options `object` - the function options
+- options.one `string` - first option
+- options.two `string` - second option
 
 <a name="All"></a>
 

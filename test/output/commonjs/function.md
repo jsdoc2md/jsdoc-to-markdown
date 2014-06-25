@@ -1,5 +1,5 @@
 <a name="module_function"></a>
-#function(, )
+#function()
 This is the module description
 
 
