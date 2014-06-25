@@ -42,7 +42,7 @@ the constructor description
 ***Deprecated***  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-####Example
+**Example**  
 ```js
 var yeah = new Everything(true);
 ```

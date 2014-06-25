@@ -12,7 +12,7 @@ This is the module description
 **Default**: `true`  
 **Type**: `function`  
 **Returns**: `object` | `string` - this return has several types  
-####Example
+**Example**  
 ```js
 allTogether(true);
 ```

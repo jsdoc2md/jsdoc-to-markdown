@@ -8,7 +8,7 @@ A simple maths function
 
   
 **Returns**: `number` - the result  
-####Example
+**Example**  
 ```js
 var sum = require("sum");
 var result = sum(1, 1);

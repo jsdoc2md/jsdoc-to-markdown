@@ -15,7 +15,7 @@ a global variable
 a var with an example
 
   
-####Example
+**Example**  
 ```js
 var another = 100;
 ```
@@ -24,11 +24,11 @@ var another = 100;
 a var with multiple examples
 
   
-####Example
+**Example**  
 ```js
 var another = 100;
 ```
-####Example
+**Example**  
 ```js
 var next = "p";
 ```
@@ -75,7 +75,7 @@ This variable has all tags set
 **Type**: `boolean`  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-####Example
+**Example**  
 ```js
 var allTogether = true;
 ```

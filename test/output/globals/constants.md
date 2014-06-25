@@ -14,7 +14,7 @@ This variable has all tags set
 **Type**: `boolean`  
 **Since**: v0.10.28  
 **Author**: Lloyd Brookes <lloyd@brookes.com>  
-####Example
+**Example**  
 ```js
 var CONST_TWO = true;
 ```

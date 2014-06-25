@@ -6,7 +6,7 @@ this module returns a set of files
 -  `Array.<string>` - a list of file patterns
 
   
-####Example
+**Example**  
 ```js
 var fileSet = require("file-set");
 

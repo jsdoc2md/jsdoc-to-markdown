@@ -18,7 +18,7 @@ This function has all tags set
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  
-####Example
+**Example**  
 ```js
 something.allTogether(true);
 ```

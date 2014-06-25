@@ -3,7 +3,7 @@
 this module returns a set of files
 
   
-####Example
+**Example**  
 ```js
 var cowFiles = FileSet("cow/*");
 ```

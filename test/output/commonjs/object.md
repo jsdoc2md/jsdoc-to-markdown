@@ -19,7 +19,7 @@ This property has all tags set
 **Type**: `boolean`  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-####Example
+**Example**  
 ```js
 var allTogether = true;
 ```
@@ -34,7 +34,7 @@ a function
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  
-####Example
+**Example**  
 ```js
 allTogether(true);
 ```

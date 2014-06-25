@@ -16,7 +16,7 @@ the constructor description
 ***Deprecated***  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-####Example
+**Example**  
 ```js
 var yeah = new Everything(true);
 ```
@@ -44,7 +44,7 @@ This function has all tags set
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  
-####Example
+**Example**  
 ```js
 all.allTogether(true);
 ```

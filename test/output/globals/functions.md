@@ -7,7 +7,7 @@ a global function
 ###exampled()
 a function with an example
 
-####Example
+**Example**  
 ```js
 var result = exampled();
 ```
@@ -15,11 +15,11 @@ var result = exampled();
 ###multiExampled()
 a function with multiple examples
 
-####Example
+**Example**  
 ```js
 var another = 100;
 ```
-####Example
+**Example**  
 ```js
 var next = "p";
 ```
@@ -90,7 +90,7 @@ This function has all tags set
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
 **Returns**: `object` | `string` - this return has several types  
-####Example
+**Example**  
 ```js
 allTogether(true);
 ```
