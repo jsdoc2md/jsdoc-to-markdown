@@ -9,6 +9,7 @@ module.exports = function(handlebars){
             this.params = this.params || alias.params;
             this.returns = this.returns || alias.returns;
             this.examples = this.examples || alias.examples;
+            this.augments = this.augments || alias.augments;
             this._merged = true;
         }
     });

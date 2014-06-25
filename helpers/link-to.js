@@ -3,18 +3,19 @@ var a = require("array-tools"),
 
 module.exports = function(handlebars){
     handlebars.registerHelper("linkTo", function linkTo(longname, options){
+        var re = /<(.*)>/;
         if (Array.isArray(longname)){
             return longname.map(function(name){
                 return linkTo(name, options);
             });
         } else {
-            if (["string", "object", "number", "boolean", "array"].indexOf(longname.toLowerCase()) > -1){
+            var builtInType = /string|object|number|boolean|array/i.test(longname);
+            if (builtInType){
                 return "`" + longname + "`";
             } else {
-                var re = /<(.*)>/;
-                if (re.test(longname)){
+                if (re.test(longname) && !builtInType){
                     var fullName = longname;
-                    fullName = fullName.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+                    fullName = fullName.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                     longname = longname.match(re)[1];
                 }
                 var linked = a.findWhere(options.data.root, { longname: longname });
