@@ -1,14 +1,24 @@
+/**
+this module returns a set of files
+@module
+@example
+```js
+var cowFiles = FileSet("cow/*");
+```
+*/
+
 define("FileSet", function(){
 
     /**
     this module returns a set of files
-    @exports FileSet
+    @class
     @example
     ```js
-    var cowFiles = fileSet("cow/*");
+    var cowFiles = FileSet("cow/*");
     ```
+    @alias module:file-set
     */
-    function FileSet(num){};
+    var FileSet = function(num){};
 
     /**
     the static property

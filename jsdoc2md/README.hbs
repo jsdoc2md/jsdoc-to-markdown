@@ -38,6 +38,7 @@ $ npm run docs
 ```
 
 ##Usage
+Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`. 
 ```
 $ jsdoc2md <options> <source_files>
 
