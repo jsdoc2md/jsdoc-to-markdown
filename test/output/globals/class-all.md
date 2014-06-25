@@ -6,7 +6,7 @@ a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-###~~new All(input, [options])~~
+###`~~new All(input, [options])~~`
 the constructor description
 
 
@@ -33,7 +33,7 @@ the general size
 
   
 <a name="All#allThings"></a>
-###~~all.allThings(one, two)~~
+###`~~all.allThings(one, two)~~`
 This function has all tags set
 
 

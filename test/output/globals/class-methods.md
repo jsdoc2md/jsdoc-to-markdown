@@ -3,11 +3,11 @@
 
 ##class: Something
 <a name="Something#methodOne"></a>
-###something.methodOne()
+###`something.methodOne()`
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two)~~
+###`~~something.allTogether(one, two)~~`
 This function has all tags set
 
 

@@ -106,17 +106,17 @@ This variable has all tags set
 var allTogether = true;
 ```
 <a name="read"></a>
-###read(filename, done)
+###`read(filename, done)`
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="globalFunc"></a>
-###globalFunc()
+###`globalFunc()`
 a global function
 
 <a name="exampled"></a>
-###exampled()
+###`exampled()`
 a function with an example
 
 ####Example
@@ -124,7 +124,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-###multiExampled()
+###`multiExampled()`
 a function with multiple examples
 
 ####Example
@@ -136,39 +136,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-###_protected()
+###`_protected()`
 **Access**: protected  
 <a name="_private"></a>
-###_private()
+###`_private()`
 **Access**: private  
 <a name="withAuthor"></a>
-###withAuthor()
+###`withAuthor()`
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-###~~oldFunction()~~
+###`~~oldFunction()~~`
 ***Deprecated***  
 <a name="newFunction"></a>
-###newFunction()
+###`newFunction()`
 **Since**: v0.10.28  
 <a name="withParam"></a>
-###withParam(one)
+###`withParam(one)`
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-###withParams(one, two)
+###`withParams(one, two)`
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-###withOptional(one, [two])
+###`withOptional(one, [two])`
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-###withBullets(one, two)
+###`withBullets(one, two)`
 this description has 
 
 - bullet
@@ -181,16 +181,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-###returnsSomething()
+###`returnsSomething()`
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-###returnsSomethingDesc()
+###`returnsSomethingDesc()`
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-###returnsSeveral()
+###`returnsSeveral()`
 **Returns**: `object` | `string` - this return has several types  
 <a name="allTogether"></a>
-###~~allTogether(one, two)~~
+###`~~allTogether(one, two)~~`
 This function has all tags set
 
 
@@ -207,30 +207,30 @@ This function has all tags set
 allTogether(true);
 ```
 <a name="doSomething"></a>
-###doSomething(options)
+###`doSomething(options)`
 
 - options `object` - the function options
 - options.one `string` - first option
 - options.two `string` - second option
 
 <a name="doAnother"></a>
-###doAnother(options)
+###`doAnother(options)`
 
 - options `Object` - the function options
 
 <a name="requirer"></a>
-###requirer()
+###`requirer()`
 ensure you have some-module installed
 
 <a name="setMagicNumber"></a>
-###setMagicNumber(x)
+###`setMagicNumber(x)`
 Set the magic number.
 
 
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
-###doSomething(options)
+###`doSomething(options)`
 
 - options `object` - the function options
 - options.one `string` - first option
@@ -243,7 +243,7 @@ a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-###~~new All(input, [options])~~
+###`~~new All(input, [options])~~`
 the constructor description
 
 
@@ -270,7 +270,7 @@ the general size
 
   
 <a name="All#allThings"></a>
-###~~all.allThings(one, two)~~
+###`~~all.allThings(one, two)~~`
 This function has all tags set
 
 
@@ -292,14 +292,14 @@ simple class description
 
 **Extends**: `Object`  
 <a name="Person"></a>
-###new Person()
+###`new Person()`
 a constructor description
 
 <a name="Car"></a>
 
 ##class: Car
 <a name="Car"></a>
-###new Car([options])
+###`new Car([options])`
 a constructor with args
 
 
@@ -318,7 +318,7 @@ a class with all trimmings
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
-###~~new Everything(input, [options])~~
+###`~~new Everything(input, [options])~~`
 the constructor description
 
 
@@ -345,11 +345,11 @@ Fired when rice is cooking
 
 ##class: Something
 <a name="Something#methodOne"></a>
-###something.methodOne()
+###`something.methodOne()`
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two)~~
+###`~~something.allTogether(one, two)~~`
 This function has all tags set
 
 

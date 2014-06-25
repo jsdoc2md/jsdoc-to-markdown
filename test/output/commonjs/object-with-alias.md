@@ -14,6 +14,6 @@ second property
 
   
 <a name="module_object-with-alias.three"></a>
-###_.three()
+###`_.three()`
 a function
 

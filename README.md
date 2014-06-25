@@ -68,7 +68,7 @@ These projects have readme files rendered by `jsdoc2md`:
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 <a name="module_jsdoc-to-markdown.render"></a>
-###jsdoc2md.render(options, done)
+###`jsdoc2md.render(options, done)`
 
 - options `object` - The render options
 - done [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion

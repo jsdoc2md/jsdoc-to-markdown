@@ -1,6 +1,6 @@
 #Global scope
 <a name="setMagicNumber"></a>
-###setMagicNumber(x)
+###`setMagicNumber(x)`
 Set the magic number.
 
 

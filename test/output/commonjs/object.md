@@ -24,7 +24,7 @@ This property has all tags set
 var allTogether = true;
 ```
 <a name="module_object.three"></a>
-###object.three(four, five)
+###`object.three(four, five)`
 a function
 
 

@@ -13,7 +13,7 @@ the static property
 
   
 <a name="module_file-set#delete"></a>
-###file-set.delete(paths)
+###`file-set.delete(paths)`
 A static methy meth
 
 

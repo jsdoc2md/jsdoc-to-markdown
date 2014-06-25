@@ -1,13 +1,13 @@
 #Global scope
 <a name="doSomething"></a>
-###doSomething(options)
+###`doSomething(options)`
 
 - options `object` - the function options
 - options.one `string` - first option
 - options.two `string` - second option
 
 <a name="doAnother"></a>
-###doAnother(options)
+###`doAnother(options)`
 
 - options `Object` - the function options
 
