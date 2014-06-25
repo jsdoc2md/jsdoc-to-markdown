@@ -7,9 +7,9 @@ var cliArgs = require("command-line-args"),
     
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
-      description: "A custom handlebars template to insert the rendered documentation into" },
+      description: "A custom handlebars template to insert the rendered documentation into,\noverriding the default" },
     { name: "preset", alias: "p", type: String, value: "default",
-      description: "Use a preset template" },
+      description: "Use a preset template ('default', 'global' or 'modules')" },
     { name: "json", alias: "j", type: Boolean,
       description: "Output the template data only" },
     { name: "help", alias: "h", type: Boolean,
@@ -17,11 +17,13 @@ var cli = cliArgs([
     { name: "src", type: Array, defaultOption: true,
       description: "The javascript source files. The default option." },
     { name: "index", type: Boolean,
-      description: "Print usage information" },
+      description: "Include an index for each module and class, linking to members" },
     { name: "skip-heading", type: Boolean,
     description: "Skip the module heading" },
 ]);
-var usage = cli.usage({
+var usage = cli.getUsage({
+    title: "jsdoc-to-markdown",
+    header: "Renders jsdoc documentation as markdown",
     forms: [ "$ jsdoc2md <options> <source_files>" ]
 });
 
@@ -42,8 +44,7 @@ jsdoc2md.render(argv, function(err, result){
 });
 
 function halt(err){
-    dope.red.error(err.stack || "Error: " + err.message);
-    dope.red.error(err.debug);
+    dope.red.error("Error: " + err.message);
     dope.log(usage);
     process.exit(1);
 }
