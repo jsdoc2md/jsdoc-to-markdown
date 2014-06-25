@@ -373,7 +373,7 @@ the general size
 
   
 <a name="onComplete"></a>
-###type: onComplete
+###callback: onComplete
 
 Called when an async operation completes
 

@@ -1,5 +1,5 @@
 {{>anchor~}}
-{{#if name}}###type: {{{name}}}
+{{#if name}}###{{#if (equal type.names.[0] "function")}}callback:{{else}}type:{{/if}} {{{name}}}
 {{/if}}
 {{>description~}}
 
