@@ -215,6 +215,13 @@ allTogether(true);
 ###requirer()
 ensure you have some-module installed
 
+<a name="setMagicNumber"></a>
+###setMagicNumber(x)
+Set the magic number.
+
+
+- x `NumberLike` - The magic number.
+
 <a name="doSomething"></a>
 ###doSomething(options)
 
@@ -365,3 +372,15 @@ the ingredients on top
 the general size
 
   
+<a name="onComplete"></a>
+###type: onComplete
+
+Called when an async operation completes
+
+**Type**: `function`  
+<a name="NumberLike"></a>
+###type: NumberLike
+
+A number, or a string containing a number.
+
+**Type**: `number | string`  
