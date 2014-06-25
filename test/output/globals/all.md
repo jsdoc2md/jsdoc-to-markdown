@@ -374,13 +374,15 @@ the general size
   
 <a name="onComplete"></a>
 ###callback: onComplete
-
 Called when an async operation completes
+
+
+- err `object` - an error, or `null`
+- result `string` - the result info
 
 **Type**: `function`  
 <a name="NumberLike"></a>
 ###type: NumberLike
-
 A number, or a string containing a number.
 
 **Type**: `number | string`  

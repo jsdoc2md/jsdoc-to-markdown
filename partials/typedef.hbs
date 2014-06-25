@@ -1,7 +1,7 @@
 {{>anchor~}}
-{{#if name}}###{{#if (equal type.names.[0] "function")}}callback:{{else}}type:{{/if}} {{{name}}}
-{{/if}}
+{{>typedef-name~}}
 {{>description~}}
+{{>params~}}
 
 {{>deprecated~}}
 {{>memberof~}}

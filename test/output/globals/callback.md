@@ -7,7 +7,10 @@
 
 <a name="onComplete"></a>
 ###callback: onComplete
-
 Called when an async operation completes
+
+
+- err `object` - an error, or `null`
+- result `string` - the result info
 
 **Type**: `function`  
