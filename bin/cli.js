@@ -19,7 +19,7 @@ var cli = cliArgs([
     { name: "index", type: Boolean,
       description: "Include an index for each module and class, linking to members" },
     { name: "skip-heading", type: Boolean,
-    description: "Skip the module heading" },
+    description: "Skip the module heading, useful if you already have the heading elsewhere\nin your template." },
 ]);
 var usage = cli.getUsage({
     title: "jsdoc-to-markdown",

@@ -6,19 +6,19 @@
 ***work in progress, unstable, draft documentation***
 
 #jsdoc-to-markdown
-Pass your source code in, get markdown API documentation out.. In development, any feedback welcome.
+Jsdocumented source code in, markdown out.. In development, any feedback welcome.
 
 ##Install
 Ensure [node.js](http://nodejs.org) is installed first. Linux/Mac users may need to run the following commands with `sudo`.
 
 ###Globally
 ```sh
-$ npm install -g local-web-server
+$ npm install -g jsdoc-to-markdown
 ```
 
 ###Bundled with your project
 ```sh
-$ npm install local-web-server --save-dev
+$ npm install jsdoc-to-markdown --save-dev
 ```
 
 Then add an `docs` build task to your `package.json` scripts, e.g.:
@@ -31,7 +31,7 @@ Then add an `docs` build task to your `package.json` scripts, e.g.:
   }
 }
 ```
-This approach abstracts generator implentation details away, saving your collaborators the hassle of installing/learning `jsdoc-to-markdown`. You can document that docs are generated like so:
+This approach abstracts implementation details away, saving collaborators the hassle of installing / learning `jsdoc-to-markdown`. Docs are generated like so:
 
 ```sh
 $ npm run docs
@@ -39,10 +39,6 @@ $ npm run docs
 
 ##Usage
 ```
-jsdoc-to-markdown
-Renders jsdoc documentation as markdown
-
-Usage
 $ jsdoc2md <options> <source_files>
 
 -t, --template <string>  A custom handlebars template to insert the rendered documentation into,
@@ -52,11 +48,12 @@ $ jsdoc2md <options> <source_files>
 -h, --help               Print usage information
 --src <array>            The javascript source files. The default option.
 --index                  Include an index for each module and class, linking to members
---skip-heading           Skip the module heading
+--skip-heading           Skip the module heading, useful if you already have the heading elsewhere
+                         in your template.
 ```
 
 ##examples
-All these projects have readme files rendered by `jsdoc2md`:
+These projects have readme files rendered by `jsdoc2md`:
 * https://github.com/75lb/handbrake-js
 * https://github.com/75lb/array-tools
 * https://github.com/75lb/file-set

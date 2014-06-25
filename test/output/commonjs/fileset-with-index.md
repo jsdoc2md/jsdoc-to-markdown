@@ -3,7 +3,7 @@
 this module returns a set of files
 
 
--  `Array.<string>` - a list of file patterns
+-  `Array.&lt;string&gt;` - a list of file patterns
 
   
 ####Example
