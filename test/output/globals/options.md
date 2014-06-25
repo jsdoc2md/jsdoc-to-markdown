@@ -3,8 +3,8 @@
 ###doSomething(options)
 **Params**
 - options `object` - the function options
-- options.one `string` - first option
-- options.two `string` - second option
+  - options.one `string` - first option
+  - options.two `string` - second option
 
 <a name="doAnother"></a>
 ###doAnother(options)
