@@ -13,7 +13,7 @@ var fileSet = require("file-set");
 var cowFiles = fileSet("cow/*");
 ```
 <a name="module_file-set#files"></a>
-###fileSet.files
+###`fileSet.files`
 the static property
 
   

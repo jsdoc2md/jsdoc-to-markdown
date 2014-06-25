@@ -4,7 +4,7 @@ A module representing a shirt.
 
   
 <a name="module_my/shirt.color"></a>
-###my/shirt.color
+###`my/shirt.color`
 A property of the module.
 
   
@@ -12,7 +12,7 @@ A property of the module.
 
 ##class: Turtleneck
 <a name="module_my/shirt.Turtleneck#size"></a>
-###turtleneck.size
+###`turtleneck.size`
 A property of the class.
 
   

@@ -17,7 +17,7 @@ var cowFiles = fileSet("cow/*");
 * [delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set#files"></a>
-###fileSet.files
+###`fileSet.files`
 the static property
 
   

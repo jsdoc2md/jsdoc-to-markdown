@@ -4,7 +4,7 @@ factory module creating dodgy cloud
 
   
 <a name="module_heaven.Cloud"></a>
-###heaven.Cloud
+###`heaven.Cloud`
 access to the Cloud class
 
   
@@ -17,8 +17,8 @@ access to the Cloud class
 The main class of machine
 
 <a name="module_heaven.Cloud#eyes"></a>
-###cloud.eyes
+###`cloud.eyes`
 **Type**: `number`  
 <a name="module_heaven.Cloud#vibe"></a>
-###cloud.vibe
+###`cloud.vibe`
 **Type**: `string`  

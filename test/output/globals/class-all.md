@@ -21,14 +21,14 @@ the constructor description
 var yeah = new Everything(true);
 ```
 <a name="All#topping"></a>
-###all.topping
+###`all.topping`
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size
+###`all.size`
 the general size
 
   
