@@ -11,9 +11,15 @@ module.exports = function(handlebars){
             if (["string", "object", "number", "boolean", "array"].indexOf(longname.toLowerCase()) > -1){
                 return "`" + longname + "`";
             } else {
+                var re = /<(.*)>/;
+                if (re.test(longname)){
+                    var fullName = longname;
+                    fullName = fullName.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+                    longname = longname.match(re)[1];
+                }
                 var linked = a.findWhere(options.data.root, { longname: longname });
                 return linked 
-                    ? util.format("[%s](#%s)", linked.name, handlebars.helpers.anchorName(longname))
+                    ? util.format("[%s](#%s)", fullName ? fullName.replace(longname, linked.name) : linked.name, handlebars.helpers.anchorName(longname))
                     : "`" + longname + "`";
             }
         }
