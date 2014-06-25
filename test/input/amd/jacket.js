@@ -7,12 +7,12 @@ define('jacket', function () {
      * @constructor
      * @alias module:jacket
      */
-    var exports = function() {
+    var Jacket = function() {
     }
 
     /** Open and close your Jacket. */
-    exports.prototype.zip = function() {
+    Jacket.prototype.zip = function() {
     }
 
-    return exports;
+    return Jacket;
 });
