@@ -45,6 +45,6 @@ jsdoc2md.render(argv, function(err, result){
 
 function halt(err){
     dope.red.error("Error: " + err.message);
-    dope.log(usage);
+    dope.error(usage);
     process.exit(1);
 }

@@ -7,7 +7,7 @@
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {
     "test": "",
-    "docs": "node test/render.js",
+    "docs": "node test/render.js && node bin/cli.js --skip-heading -t jsdoc2md/README.hbs lib/jsdoc-to-markdown.js > README.md; ",
     "watch": "baldrick --do 'npm run docs' --when test/input/*/*.js partials/* --change --speak",
     "lint": "jshint helpers/*.js bin/*.js lib/*.js; echo"
   },
