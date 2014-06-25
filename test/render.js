@@ -1,5 +1,5 @@
 "use strict";
-var yuidoc2md = require("../"),
+var jsdoc2md = require("../"),
     fs = require("fs"),
     path = require("path"),
     mfs = require("more-fs");
@@ -10,7 +10,7 @@ function halt(err){
 }
 
 function render(input, output, preset, index){
-    yuidoc2md.render({ preset: preset, src: input, index: index }, function(err, result){
+    jsdoc2md.render({ preset: preset, src: input, index: index }, function(err, result){
         if (err) halt(err);
         mfs.write(output, result);
     });
