@@ -18,6 +18,13 @@ This variable has all tags set
 ```js
 var CONST_TWO = true;
 ```
+<a name="eFileType"></a>
+###eFileType
+Enum for the `type` value
+
+**Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
+**Read only**: true  
+**Type**: `number`  
 <a name="variable"></a>
 ###variable
 a global variable
