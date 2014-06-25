@@ -10,7 +10,7 @@ method description
 ###`~~something.allTogether(one, two)~~`
 This function has all tags set
 
-
+**Params**
 - one `string` - The input string
 - two `object` - a second input
 

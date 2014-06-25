@@ -16,6 +16,6 @@ the static property
 ###`file-set.delete(paths)`
 A static methy meth
 
-
+**Params**
 - paths `array` - the paths to delete
 

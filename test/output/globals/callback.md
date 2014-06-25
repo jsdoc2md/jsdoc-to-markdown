@@ -1,7 +1,7 @@
 #Global scope
 <a name="read"></a>
 ###`read(filename, done)`
-
+**Params**
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
@@ -9,7 +9,7 @@
 ###callback: onComplete
 Called when an async operation completes
 
-
+**Params**
 - err `object` - an error, or `null`
 - result `string` - the result info
 

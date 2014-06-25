@@ -69,7 +69,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 ```
 <a name="module_jsdoc-to-markdown.render"></a>
 ###`jsdoc2md.render(options, done)`
-
+**Params**
 - options `object` - The render options
 - done [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
 
@@ -77,7 +77,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 ###callback: onRender
 Called by `jsdoc2md.render()` on completion.
 
-
+**Params**
 - err `object` - An error instance if applicable, else `null`
 - result `string` - the rendered markdown
 

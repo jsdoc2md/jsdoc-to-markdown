@@ -9,7 +9,7 @@ a class with all of the things
 ###`~~new All(input, [options])~~`
 the constructor description
 
-
+**Params**
 - input `object` - an input
 - [options] `object` - optional shit
 
@@ -36,7 +36,7 @@ the general size
 ###`~~all.allThings(one, two)~~`
 This function has all tags set
 
-
+**Params**
 - one `string` - The input string
 - two `object` - a second input
 

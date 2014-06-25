@@ -2,7 +2,7 @@
 ##sum-alias(a, b)
 A simple maths function
 
-
+**Params**
 - a `number` - first number
 - b `number` - second number
 

@@ -40,18 +40,18 @@ var next = "p";
 **Since**: v0.10.28  
 <a name="withParam"></a>
 ###`withParam(one)`
-
+**Params**
 - one `string` - The input string
 
 <a name="withParams"></a>
 ###`withParams(one, two)`
-
+**Params**
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
 ###`withOptional(one, [two])`
-
+**Params**
 - one `string` - The input string
 - [two] `object` - this one is optional
 
@@ -64,7 +64,7 @@ this description has
 
 and needs this line to separate the above list from the below
 
-
+**Params**
 - one `string` - The input string
 - two `object` - a second input
 
@@ -81,7 +81,7 @@ and needs this line to separate the above list from the below
 ###`~~allTogether(one, two)~~`
 This function has all tags set
 
-
+**Params**
 - one `string` - The input string
 - two `object` - a second input
 

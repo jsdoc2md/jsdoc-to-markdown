@@ -27,7 +27,7 @@ var allTogether = true;
 ###`object.three(four, five)`
 a function
 
-
+**Params**
 - four `string` - The input string
 - five `object` - a second input
 
