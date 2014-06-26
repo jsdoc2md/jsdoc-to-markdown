@@ -390,12 +390,12 @@ the general size
 
 ##class: Plucker
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...prop, ...three)
+###plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
 **Params**
 - one `string` - an input
-- ...prop `string` - the property(s) as input
+- ...args `string` - the property(s) as input
 - ...three `string` - more input
 
 <a name="onComplete"></a>
