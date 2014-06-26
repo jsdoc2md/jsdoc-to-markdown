@@ -1,8 +1,8 @@
-{{#if @root.argv.index}}{{#if (where @root memberof=longname)}}**Contents**
-{{#each (where @root kind="member" memberof=longname)}}* [{{name}}](#{{{anchorName longname}}})
+{{#if @root.argv.index}}{{#if (where @root memberof=longname ignore=undefined)}}**Contents**
+{{#each (where @root kind="member" memberof=longname ignore=undefined)}}* [{{name}}](#{{{anchorName longname}}})
 {{/each}}
-{{~#each (where @root kind="function" memberof=longname)}}* [{{name}}({{methodSig params}})](#{{{anchorName longname}}})
+{{~#each (where @root kind="function" memberof=longname ignore=undefined)}}* [{{name}}({{methodSig params}})](#{{{anchorName longname}}})
 {{/each}}
-{{~#each (where @root kind="class" scope="inner" memberof=longname)}}* [Class: {{name}}](#{{{anchorName longname}}})
+{{~#each (where @root kind="class" scope="inner" memberof=longname ignore=undefined)}}* [Class: {{name}}](#{{{anchorName longname}}})
 {{/each}}
 {{/if}}{{/if}}
