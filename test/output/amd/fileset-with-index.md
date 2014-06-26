@@ -8,6 +8,11 @@ this module returns a set of files
 ```js
 var cowFiles = FileSet("cow/*");
 ```
+**Contents**  
+* [instie](#module_file-set#instie)
+* [files](#module_file-set#files)
+* [delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set#instie"></a>
 ###file-set.instie
 an instance ting

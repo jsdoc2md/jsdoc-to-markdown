@@ -18,7 +18,12 @@ define("FileSet", function(){
     ```
     @alias module:file-set
     */
-    var FileSet = function(num){};
+    var FileSet = function(num){
+        /**
+        an instance ting
+        */
+        this.instie = 0;
+    };
 
     /**
     the static property

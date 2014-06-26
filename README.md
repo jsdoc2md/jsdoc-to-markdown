@@ -37,6 +37,9 @@ This approach abstracts implementation details away, saving collaborators the ha
 $ npm run docs
 ```
 
+###As a grunt plug-in
+See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
+
 ##Usage
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`. 
 ```
