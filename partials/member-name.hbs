@@ -2,7 +2,7 @@
   {{~#if deprecated}}~~{{/if}}
   {{~#if (equal-some scope "static" "instance")}}
     {{~#if parentName}}{{parentName}}.
-      {{~else}}{{#if memberof}}{{instantiate (memberofName)}}.{{/if}}
+      {{~else}}{{#if memberof}}{{memberofName}}.{{/if}}
     {{~/if}}
   {{~/if}}
   {{~{name}}}
