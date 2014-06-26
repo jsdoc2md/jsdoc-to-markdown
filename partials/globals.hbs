@@ -1,4 +1,4 @@
-{{#with (where @root scope="global")~}}
+{{#with (where @root scope="global" ignore=undefined)~}}
 #Global scope
 {{#each (where this kind="constant")}}{{>constant}}{{/each~}}
 {{#each (where this kind="member")}}{{>member}}{{/each~}}

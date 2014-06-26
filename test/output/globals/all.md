@@ -25,6 +25,11 @@ Enum for the `type` value
 **Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  
+<a name="visible"></a>
+###visible
+a visible global
+
+  
 <a name="variable"></a>
 ###variable
 a global variable

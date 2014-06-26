@@ -5,7 +5,10 @@
 {{>augments~}}
 {{>memberof~}}
 {{#if (constructorHasDocs)}}{{>function}}{{/if~}}
-{{#each (where @root kind="member" memberof=longname)}}{{>member}}{{/each~}}
-{{#each (where @root kind="function" memberof=longname)}}{{>function}}{{/each~}}
-{{#each (where @root kind="event" memberof=longname)}}{{>event}}{{/each~}}
-{{#each (where @root kind="constant" memberof=longname)}}{{>constant}}{{/each~}}
+
+{{#with (where @root memberof=longname ignore=undefined)~}}
+  {{#each (where this kind="member")}}{{>member}}{{/each~}}
+  {{#each (where this kind="function")}}{{>function}}{{/each~}}
+  {{#each (where this kind="event")}}{{>event}}{{/each~}}
+  {{#each (where this kind="constant")}}{{>constant}}{{/each~}}
+{{/with}}
