@@ -1,5 +1,6 @@
 <a name="module_sum"></a>
 #sum(a, b)
+
 A simple maths function
 
 **Params**

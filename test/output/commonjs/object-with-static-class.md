@@ -1,5 +1,6 @@
 <a name="module_heaven"></a>
 #heaven
+
 factory module creating dodgy cloud
 
   
@@ -16,6 +17,8 @@ access to the Cloud class
 ##class: Cloud
 The main class of machine
 
+<a name="module_heaven.Cloud"></a>
+###new heaven.Cloud()
 <a name="module_heaven.Cloud#eyes"></a>
 ###cloud.eyes
 **Type**: `number`  

@@ -1,5 +1,6 @@
 <a name="module_my/shirt"></a>
 #my/shirt
+
 A module representing a shirt.
 
   

@@ -1,5 +1,6 @@
 <a name="module_jacket"></a>
 ##jacket(input)
+
 A module representing a jacket.
 
 **Params**
