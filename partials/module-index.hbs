@@ -6,7 +6,7 @@
 {{~#each (where this kind="function")}}* [{{name}}({{methodSig params}})](#{{{anchorName longname}}})
 {{/each}}
 {{~#each (where this kind="class" scope="inner")}}* [Class: {{name}}](#{{{anchorName longname}}})
-{{/each}}
+{{/each~}}
 {{/with~}}
 {{#with (where this scope="static")~}}
 {{#each (where this kind="member")}}* [{{name}}](#{{{anchorName longname}}})
@@ -14,7 +14,7 @@
 {{~#each (where this kind="function")}}* [{{name}}({{methodSig params}})](#{{{anchorName longname}}})
 {{/each}}
 {{~#each (where this kind="class" scope="inner")}}* [Class: {{name}}](#{{{anchorName longname}}})
-{{/each}}
+{{/each~}}
 {{/with~}}
 {{/with~}}
 {{/if}}
