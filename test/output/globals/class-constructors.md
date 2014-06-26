@@ -25,8 +25,6 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
-<a name="Pipe"></a>
-###new Pipe()
 <a name="Everything"></a>
 
 ##class: Everything

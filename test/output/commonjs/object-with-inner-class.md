@@ -19,9 +19,6 @@ random
 The main class of machine
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
-<a name="module_cyberdyne.Machine"></a>
-###new Machine()
-**Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine#eyes"></a>
 ###machine.eyes
 **Type**: `number`  
