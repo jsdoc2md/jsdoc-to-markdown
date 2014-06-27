@@ -15,6 +15,7 @@ var fileSet = require("file-set");
 var cowFiles = fileSet("cow/*");
 ```
 **Contents**  
+
 * [files](#module_file-set#files)
 * [delete(paths)](#module_file-set#delete)
 

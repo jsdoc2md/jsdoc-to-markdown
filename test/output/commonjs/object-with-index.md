@@ -5,6 +5,7 @@ simple object export
 
   
 **Contents**  
+
 * [one](#module_object.one)
 * [two](#module_object.two)
 * [three(four, five)](#module_object.three)
@@ -14,21 +15,6 @@ simple object export
 first property
 
   
-<a name="module_object.two"></a>
-###~~object.two~~
-This property has all tags set
-
-***Deprecated***  
-**Access**: private  
-**Default**: `2`  
-**Read only**: true  
-**Type**: `boolean`  
-**Since**: v0.10.28  
-**Author**: 75lb <75pound@gmail.com>  
-**Example**  
-```js
-var allTogether = true;
-```
 <a name="module_object.three"></a>
 ###object.three(four, five)
 a function

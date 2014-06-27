@@ -9,6 +9,7 @@ this module returns a set of files
 var cowFiles = FileSet("cow/*");
 ```
 **Contents**  
+
 * [instie](#module_file-set#instie)
 * [files](#module_file-set#files)
 * [delete(paths)](#module_file-set#delete)

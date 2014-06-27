@@ -82,6 +82,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
   - [src] `Array.<string>` - The javascript source files
   - [index] `boolean` - Include an index for each module and class, linking to members
   - [skip-heading] `boolean` - Skip the module heading, useful if you already have the heading elsewhere in your template.
+  - [private] `boolean` - Include symbols marked @private in the output
 -  [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
 
 <a name="module_jsdoc-to-markdown.onRender"></a>

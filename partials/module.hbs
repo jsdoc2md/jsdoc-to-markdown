@@ -18,7 +18,7 @@
 
 {{>module-index~}}
 
-{{#with (where @root memberof=longname ignore=undefined)~}}
+{{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
   {{#each (where this kind="member" scope="instance")}}{{>member parentName=../../alias}}{{/each~}}
   {{#each (where this kind="function" scope="instance")}}{{>function parentName=../../alias}}{{/each~}}
   {{#each (where this kind="class" scope="instance")}}{{>class}}{{/each~}}
