@@ -4,6 +4,7 @@
 Set the magic number.
 
 **Params**
+
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="NumberLike"></a>

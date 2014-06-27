@@ -17,6 +17,7 @@ a constructor description
 a constructor with args
 
 **Params**
+
 - [options] `object` - optional shit
 
 <a name="Pipe"></a>
@@ -36,6 +37,7 @@ a class with all trimmings
 the constructor description
 
 **Params**
+
 - input `object` - an input
 - [options] `object` - optional shit
 

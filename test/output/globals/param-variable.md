@@ -4,6 +4,7 @@
 This function takes variable input
 
 **Params**
+
 - ...prop `string` - the property(s) as input
 
 <a name="Plucker"></a>
@@ -14,6 +15,7 @@ This function takes variable input
 This function takes variable input
 
 **Params**
+
 - one `string` - an input
 - ...args `string` - the property(s) as input
 - ...three `string` - more input

@@ -113,6 +113,7 @@ var allTogether = true;
 <a name="read"></a>
 ###read(filename, done)
 **Params**
+
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
@@ -158,17 +159,20 @@ var next = "p";
 <a name="withParam"></a>
 ###withParam(one)
 **Params**
+
 - one `string` - The input string
 
 <a name="withParams"></a>
 ###withParams(one, two)
 **Params**
+
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
 ###withOptional(one, [two])
 **Params**
+
 - one `string` - The input string
 - [two] `object` - this one is optional
 
@@ -182,6 +186,7 @@ this description has
 and needs this line to separate the above list from the below
 
 **Params**
+
 - one `string` - The input string
 - two `object` - a second input
 
@@ -199,6 +204,7 @@ and needs this line to separate the above list from the below
 This function has all tags set
 
 **Params**
+
 - one `string` - The input string
 - two `object` - a second input
 
@@ -214,6 +220,7 @@ allTogether(true);
 <a name="doSomething"></a>
 ###doSomething(options)
 **Params**
+
 - options `object` - the function options
   - one `string` - first option
   - two `string` - second option
@@ -221,6 +228,7 @@ allTogether(true);
 <a name="doAnother"></a>
 ###doAnother(options)
 **Params**
+
 - options `Object` - the function options
 
 <a name="pluck"></a>
@@ -228,6 +236,7 @@ allTogether(true);
 This function takes variable input
 
 **Params**
+
 - ...prop `string` - the property(s) as input
 
 <a name="requirer"></a>
@@ -239,11 +248,13 @@ ensure you have some-module installed
 Set the magic number.
 
 **Params**
+
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
 ###doSomething(options)
 **Params**
+
 - options `object` - the function options
   - one `string` - first option
   - two `string` - second option
@@ -259,6 +270,7 @@ a class with all of the things
 the constructor description
 
 **Params**
+
 - input `object` - an input
 - [options] `object` - optional shit
 
@@ -286,6 +298,7 @@ the general size
 This function has all tags set
 
 **Params**
+
 - one `string` - The input string
 - two `object` - a second input
 
@@ -315,6 +328,7 @@ a constructor description
 a constructor with args
 
 **Params**
+
 - [options] `object` - optional shit
 
 <a name="Pipe"></a>
@@ -334,6 +348,7 @@ a class with all trimmings
 the constructor description
 
 **Params**
+
 - input `object` - an input
 - [options] `object` - optional shit
 
@@ -365,6 +380,7 @@ method description
 This function has all tags set
 
 **Params**
+
 - one `string` - The input string
 - two `object` - a second input
 
@@ -399,6 +415,7 @@ the general size
 This function takes variable input
 
 **Params**
+
 - one `string` - an input
 - ...args `string` - the property(s) as input
 - ...three `string` - more input
@@ -408,6 +425,7 @@ This function takes variable input
 Called when an async operation completes
 
 **Params**
+
 - err `object` - an error, or `null`
 - result `string` - the result info
 

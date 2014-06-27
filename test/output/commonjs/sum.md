@@ -4,6 +4,7 @@
 A simple maths function
 
 **Params**
+
 - a `number` - first number
 - b `number` - second number
 

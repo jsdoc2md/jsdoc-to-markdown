@@ -4,6 +4,7 @@
 A module representing a jacket.
 
 **Params**
+
 - input `string` - the input
 
   

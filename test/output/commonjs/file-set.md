@@ -4,6 +4,7 @@
 this module returns a set of files
 
 **Params**
+
 -  `Array.<string>` - a list of file patterns
 
   
@@ -23,5 +24,6 @@ the static property
 A static methy meth
 
 **Params**
+
 - paths `array` - the paths to delete
 

@@ -74,6 +74,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 <a name="module_jsdoc-to-markdown.render"></a>
 ###jsdoc2md.render(options)
 **Params**
+
 - options `object` - The render options
   - [template] `string` - A handlebars template to insert your documentation into.
   - [preset] `string` - Choose from one of the built-in templates
@@ -88,6 +89,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 Called by `jsdoc2md.render()` on completion.
 
 **Params**
+
 - err `object` - An error instance if applicable, else `null`
 - result `string` - the rendered markdown
 

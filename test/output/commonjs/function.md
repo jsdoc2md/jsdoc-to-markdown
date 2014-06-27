@@ -5,6 +5,7 @@
 This is the module description
 
 **Params**
+
 -  `string` - The input string
 -  `object` - a second input
 

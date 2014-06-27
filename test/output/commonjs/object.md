@@ -29,6 +29,7 @@ var allTogether = true;
 a function
 
 **Params**
+
 - four `string` - The input string
 - five `object` - a second input
 

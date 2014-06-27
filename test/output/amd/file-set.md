@@ -23,5 +23,6 @@ the static property
 A static methy meth
 
 **Params**
+
 - paths `array` - the paths to delete
 
