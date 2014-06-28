@@ -18,18 +18,12 @@
 
 {{>module-index~}}
 
-{{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
-  {{#each (where this kind="member" scope="instance")}}{{>member parentName=../../alias}}{{/each~}}
-  {{#each (where this kind="function" scope="instance")}}{{>function parentName=../../alias}}{{/each~}}
-  {{#each (where this kind="class" scope="instance")}}{{>class}}{{/each~}}
-  {{#each (where this kind="constant" scope="instance")}}{{>constant}}{{/each~}}
-  {{#each (where this kind="member" scope="static")}}{{>member parentName=../../alias}}{{/each~}}
-  {{#each (where this kind="function" scope="static")}}{{>function parentName=../../alias}}{{/each~}}
-  {{#each (where this kind="class" scope="static")}}{{>class}}{{/each~}}
-  {{#each (where this kind="constant" scope="static")}}{{>constant}}{{/each~}}
-  {{#each (where this kind="member" scope="inner")}}{{>member parentName=../../alias}}{{/each~}}
-  {{#each (where this kind="function" scope="inner")}}{{>function parentName=../../alias}}{{/each~}}
-  {{#each (where this kind="class" scope="inner")}}{{>class}}{{/each~}}
-  {{#each (where this kind="constant" scope="inner")}}{{>constant}}{{/each~}}
-  {{#each (where this kind="typedef" scope="inner")}}{{>typedef}}{{/each~}}
-{{/with}}
+{{#if @root.argv.private~}}
+  {{#with (where @root memberof=longname ignore=undefined)~}}
+  {{>module-symbols parentName=../../alias data=this~}}
+  {{/with~}}
+{{else~}}
+  {{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
+  {{>module-symbols parentName=../../alias data=this~}}
+  {{/with~}}
+{{/if}}
