@@ -1,6 +1,8 @@
 {{mergeModuleAlias~}}
 {{>anchor~}}
-{{>module-name~}}
+{{#unless @root.argv.skip-heading}}{{#if name}}{{#if _merged}}##{{else}}#{{/if}}{{>module-name~}}
+{{/if}}
+{{/unless~}}
 {{>header~}}
 
 {{>description~}}
