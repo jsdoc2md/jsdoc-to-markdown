@@ -1,6 +1,6 @@
 /**
-factory module creating dodgy cloud
-@module heaven
+factory module creating dodgy cloud. object-with-static-class.
+@module
 */
 
 /**

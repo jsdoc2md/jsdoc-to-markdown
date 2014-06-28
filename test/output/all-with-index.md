@@ -1,32 +1,28 @@
 * amd/file-set <sub>- module</sub>
-* jacket <sub>- module</sub>
-  * zip() <sub>instance function</sub>
-  * zip() <sub>instance function</sub>
+* amd/jacket <sub>- module</sub>
+* my/ShirtCreator <sub>global module</sub>
 * my/shirt <sub>global module</sub>
   * color <sub>static member</sub>
-* my/ShirtCreator <sub>global module</sub>
+* commonjs/cattle <sub>- module</sub>
+  * innerMember~ <sub>inner member</sub>
+  * createCow() <sub>static function</sub>
+  * innerFuction()~ <sub>inner function</sub>
+* commonjs/cyberdyne <sub>- module</sub>
+  * something~ <sub>inner member</sub>
+  * createMachine() <sub>static function</sub>
 * commonjs/file-set() <sub>- module</sub>
 * commonjs/function() <sub>- module</sub>
+* commonjs/heaven <sub>- module</sub>
+  * Cloud <sub>static member</sub>
+  * createCloud() <sub>static function</sub>
 * commonjs/ignore <sub>- module</sub>
   * visible <sub>static member</sub>
   * invisible <sub>static member</sub>
-* jacket <sub>- module</sub>
-  * zip() <sub>instance function</sub>
-  * zip() <sub>instance function</sub>
+* commonjs/jacket <sub>- module</sub>
 * commonjs/object-with-alias <sub>- module</sub>
   * one <sub>static member</sub>
   * two <sub>static member</sub>
   * three() <sub>static function</sub>
-* cyberdyne <sub>- module</sub>
-  * something~ <sub>inner member</sub>
-  * createMachine() <sub>static function</sub>
-* cattle <sub>- module</sub>
-  * innerMember~ <sub>inner member</sub>
-  * createCow() <sub>static function</sub>
-  * innerFuction()~ <sub>inner function</sub>
-* heaven <sub>- module</sub>
-  * Cloud <sub>static member</sub>
-  * createCloud() <sub>static function</sub>
 * commonjs/object <sub>- module</sub>
   * one <sub>static member</sub>
   * ~~two~~ <sub>static member</sub>

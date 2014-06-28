@@ -1,6 +1,6 @@
 /**
-factory module creating dodgy machines
-@module cyberdyne
+exports an object.. has an inner class.
+@module
 */
 
 /**

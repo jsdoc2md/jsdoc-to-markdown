@@ -1,6 +1,6 @@
 /**
-factory module creating cattle
-@module cattle
+object-with-inner-members
+@module
 */
 
 /**
@@ -17,4 +17,3 @@ var innerMember = 1;
 the inner function
 */
 function innerFuction(){}
-
