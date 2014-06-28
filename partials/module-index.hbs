@@ -1,5 +1,5 @@
 {{#if @root.argv.index~}}
-{{#with (where @root memberof=longname ignore=undefined)}}**Contents**  
+{{#with (where @root memberof=longname ignore=undefined)}}**Symbols**  
 
 {{#with (where this scope="instance")~}}
 {{#each (where this kind="member")}}* [{{name}}](#{{{anchorName longname}}})

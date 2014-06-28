@@ -8,7 +8,7 @@ this module returns a set of files
 ```js
 var cowFiles = FileSet("cow/*");
 ```
-**Contents**  
+**Symbols**  
 
 * [instie](#module_file-set#instie)
 * [files](#module_file-set#files)

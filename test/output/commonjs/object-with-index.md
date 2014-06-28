@@ -4,7 +4,7 @@
 simple object export
 
   
-**Contents**  
+**Symbols**  
 
 * [one](#module_object.one)
 * [two](#module_object.two)

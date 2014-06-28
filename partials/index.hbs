@@ -1,0 +1,4 @@
+{{#each (where @root kind="module")}}* module: {{{name}}}
+{{#each (where @root memberof=longname)}}  * {{kind}}: {{name}} <sub>{{scope}}</sub>
+{{/each~}}
+{{/each}}
