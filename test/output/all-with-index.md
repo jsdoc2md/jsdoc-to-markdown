@@ -1,29 +1,39 @@
-* amd/file-set
-* jacket
-* my/shirt
-  * color <sub>member: color static</sub>
-* my/ShirtCreator
-* commonjs/file-set()
-* commonjs/function()
-* commonjs/ignore
-  * visible <sub>member: visible static</sub>
-  * invisible <sub>member: invisible static</sub>
-* jacket
-* commonjs/object-with-alias
-  * one <sub>member: one static</sub>
-  * two <sub>member: two static</sub>
-* cyberdyne
-  * something~ <sub>member: something inner</sub>
-* cattle
-  * innerMember~ <sub>member: innerMember inner</sub>
-* heaven
-  * Cloud <sub>member: Cloud static</sub>
-* commonjs/object
-  * one <sub>member: one static</sub>
-  * ~~two~~ <sub>member: two static</sub>
-* commonjs/private
-  * notprivate <sub>member: notprivate static</sub>
-  * isprivate <sub>member: isprivate static</sub>
-* commonjs/single-value
-* commonjs/sum-alias
-* commonjs/sum(a, b)
+* amd/file-set <sub>- module</sub>
+* jacket <sub>- module</sub>
+  * zip() <sub>instance function</sub>
+  * zip() <sub>instance function</sub>
+* my/shirt <sub>global module</sub>
+  * color <sub>static member</sub>
+* my/ShirtCreator <sub>global module</sub>
+* commonjs/file-set() <sub>- module</sub>
+* commonjs/function() <sub>- module</sub>
+* commonjs/ignore <sub>- module</sub>
+  * visible <sub>static member</sub>
+  * invisible <sub>static member</sub>
+* jacket <sub>- module</sub>
+  * zip() <sub>instance function</sub>
+  * zip() <sub>instance function</sub>
+* commonjs/object-with-alias <sub>- module</sub>
+  * one <sub>static member</sub>
+  * two <sub>static member</sub>
+  * three() <sub>static function</sub>
+* cyberdyne <sub>- module</sub>
+  * something~ <sub>inner member</sub>
+  * createMachine() <sub>static function</sub>
+* cattle <sub>- module</sub>
+  * innerMember~ <sub>inner member</sub>
+  * createCow() <sub>static function</sub>
+  * innerFuction()~ <sub>inner function</sub>
+* heaven <sub>- module</sub>
+  * Cloud <sub>static member</sub>
+  * createCloud() <sub>static function</sub>
+* commonjs/object <sub>- module</sub>
+  * one <sub>static member</sub>
+  * ~~two~~ <sub>static member</sub>
+  * three(four, five) <sub>static function</sub>
+* commonjs/private <sub>- module</sub>
+  * notprivate <sub>static member</sub>
+  * isprivate <sub>static member</sub>
+* commonjs/single-value <sub>- module</sub>
+* commonjs/sum-alias <sub>- module</sub>
+* commonjs/sum(a, b) <sub>- module</sub>
