@@ -2,11 +2,13 @@
   * file-pet.instie
   * file-pet.files
   * file-pet.delete(paths)
-* amd/jacket
-* my/ShirtCreator
-* my/shirt
-  * my/shirt.color
-  * new my/shirt.Turtleneck()
+* jacket <sub>class</sub>
+  * jacket.zip()
+* shirt
+  * shirt.color
+  * new shirt.Turtleneck()
+* blazer <sub>class</sub>
+  * blazer.zip()
 * cattle
   * cattle.createCow()
   * ~innerMember
@@ -26,7 +28,6 @@
   * \~new Cloud()
 * commonjs/ignore
   * ignore.visible
-* commonjs/jacket
 * commonjs/object-with-alias
   * _.one
   * _.two
@@ -43,7 +44,7 @@
 * commonjs/sum(a, b)
 
 * Globals
-  * eFileType
+  * eFileType <sub>enum</sub>
   * visible
   * variable
   * typed
@@ -83,8 +84,6 @@
   * requirer()
   * setMagicNumber(x)
   * doSomething(options)
-  * new module:jacket()
-  * new module:jacket(input)
   * ~~new All(input, [options])~~
   * new Person()
   * new Car([options])

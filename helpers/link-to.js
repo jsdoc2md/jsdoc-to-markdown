@@ -4,13 +4,14 @@ var a = require("array-tools"),
 module.exports = function(handlebars){
     handlebars.registerHelper("linkTo", function linkTo(longname, options){
         var re = /<(.*)>/;
+        var fullName = "";
         if (Array.isArray(longname)){
             return longname.map(function(name){
                 return linkTo(name, options);
             });
         } else {
             if (re.test(longname)){
-                var fullName = longname;
+                fullName = longname;
                 longname = longname.match(re)[1];
             }
             

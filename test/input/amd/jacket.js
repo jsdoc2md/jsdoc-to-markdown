@@ -1,6 +1,6 @@
 /**
  * A module representing a jacket.
- * @module
+ * @module jacket
  */
 define('jacket', function () {
     /**
