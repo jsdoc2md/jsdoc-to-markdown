@@ -12,6 +12,6 @@
 {{/each~}}
 {{/if}}
 * Globals
-{{#with (where (whereno @root kind="module") scope="global" ignore=undefined)~}}
+{{#with (whereno (where (whereno @root kind="module") scope="global" ignore=undefined) access="private")~}}
 {{>index-symbols data=this ~}}
 {{/with}}

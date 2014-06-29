@@ -8,7 +8,6 @@ var CONST_ONE = 1;
 This variable has all tags set
 @deprecated
 @constant {boolean}
-@private
 @readonly
 @author Lloyd Brookes <lloyd@brookes.com>
 @since v0.10.28

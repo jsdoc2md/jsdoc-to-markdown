@@ -34,11 +34,9 @@
   * _.three()
 * commonjs/object
   * object.one
-  * ~~object.two~~
   * object.three(four, five)
 * private
   * private.notprivate
-  * private.isprivate
 * commonjs/single-value <sub>member</sub>
 * commonjs/sum-alias
 * commonjs/sum(a, b)
@@ -52,21 +50,18 @@
   * exampled
   * examples
   * _protected
-  * _private
   * withAuthor
   * hasDefault
   * hasDefaultObject
   * ~~deprecated~~
   * readOnly
   * hasSince
-  * ~~allTogether~~
   * module:sum-alias(a, b)
   * read(filename, done)
   * globalFunc()
   * exampled()
   * multiExampled()
   * _protected()
-  * _private()
   * withAuthor()
   * ~~oldFunction()~~
   * newFunction()
@@ -77,7 +72,6 @@
   * returnsSomething()
   * returnsSomethingDesc()
   * returnsSeveral()
-  * ~~allTogether(one, two)~~
   * doSomething(options)
   * doAnother(options)
   * pluck(...prop)
