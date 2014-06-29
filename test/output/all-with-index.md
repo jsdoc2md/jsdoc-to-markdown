@@ -18,9 +18,10 @@
   * \~new Machine() <sub>inner class</sub>
 * commonjs/file-set() <sub>- module</sub> 
 * commonjs/function() <sub>- module</sub> 
-* commonjs/heaven <sub>- module</sub> 
+* heaven <sub>- module</sub> 
   * heaven.Cloud <sub>static member</sub>
   * heaven.createCloud() <sub>static function</sub>
+  * new heaven.Cloud() <sub>static class</sub>
 * commonjs/ignore <sub>- module</sub> 
   * ignore.visible <sub>static member</sub>
   * ignore.invisible <sub>static member</sub>
