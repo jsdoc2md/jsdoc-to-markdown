@@ -1,6 +1,6 @@
-{{#each (where @root kind="module")}}* {{>module-name}} {{>summary}}
+{{#each (where @root kind="module")}}* {{>module-name}} {{>summary}} {{#with (exported)}}{{name}} {{kind}}{{/with}}
 {{#with (where @root memberof=longname)~}}
-{{#each (where this kind="member")}}  * {{>member-name}} {{>summary}}
+{{#each (where this kind="member")}}  * {{>member-name-long}} {{>summary}}
 {{/each~}}
 {{#each (where this kind="function")}}  * {{>function-name}} {{>summary}}
 {{/each~}}

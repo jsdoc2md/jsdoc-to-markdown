@@ -1,22 +1,12 @@
-/**
-this module returns a set of files
-@module
-@example
-```js
-var cowFiles = FileSet("cow/*");
-```
-*/
-
 define("FileSet", function(){
 
     /**
-    this module returns a set of files
+    this class returns a set of files
     @class
     @example
     ```js
     var cowFiles = FileSet("cow/*");
     ```
-    @alias module:file-set
     */
     var FileSet = function(num){
         /**
@@ -35,6 +25,10 @@ define("FileSet", function(){
     @param {array} - the paths to delete
     */
     FileSet.prototype.delete = function(paths){};
-    
+
+    /**
+    This module exports the FileSet class
+    @exports amd/FileSet
+    */    
     return FileSet;
 });
