@@ -9,8 +9,8 @@
 * cattle <sub>- module</sub> 
   * ~innerMember <sub>inner member</sub>
   * cattle.createCow() <sub>static function</sub>
-  * ~innerFuction() <sub>inner function</sub>
-  * ~~~anotherInnerFuction()~~ <sub>inner function</sub>
+  * \~innerFuction() <sub>inner function</sub>
+  * ~~\~anotherInnerFuction()~~ <sub>inner function</sub>
 * commonjs/cyberdyne <sub>- module</sub> 
   * ~something <sub>inner member</sub>
   * commonjs/cyberdyne.createMachine() <sub>static function</sub>
