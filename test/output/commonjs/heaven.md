@@ -4,6 +4,11 @@
 factory module creating dodgy cloud. object-with-static-class.
 
   
+**Symbols**  
+  * [heaven.Cloud](#module_heaven.Cloud)
+  * [heaven.createCloud()](#module_heaven.createCloud)
+  * [\~new Cloud()](#module_heaven.Cloud)
+
 <a name="module_heaven.Cloud"></a>
 ###heaven.Cloud
 access to the Cloud class

@@ -4,6 +4,11 @@
 exports an object.. has an inner class.
 
   
+**Symbols**  
+  * [cyber.createMachine()](#module_cyberdyne.createMachine)
+  * [\~something](#module_cyberdyne.something)
+  * [\~new Machine()](#module_cyberdyne.Machine)
+
 <a name="module_cyberdyne.createMachine"></a>
 ###cyber.createMachine()
 **Returns**: [Machine](#module_cyberdyne.Machine)  

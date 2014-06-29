@@ -4,6 +4,12 @@
 exported object, with-inner-members
 
   
+**Symbols**  
+  * [cattle.createCow()](#module_cattle.createCow)
+  * [\~innerMember](#module_cattle.innerMember)
+  * [\~innerFuction()](#module_cattle.innerFuction)
+  * [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+
 <a name="module_cattle.createCow"></a>
 ###cattle.createCow()
 **Returns**: `boolean`  

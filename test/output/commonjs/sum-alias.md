@@ -8,3 +8,5 @@ A simple maths function
 ```js
 var sum = require("sum");
 ```
+**Symbols**  
+

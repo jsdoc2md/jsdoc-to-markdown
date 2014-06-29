@@ -15,3 +15,5 @@ A simple maths function
 var sum = require("sum");
 var result = sum(1, 1);
 ```
+**Symbols**  
+

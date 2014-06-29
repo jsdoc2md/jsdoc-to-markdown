@@ -4,6 +4,10 @@
 simple object export
 
   
+**Symbols**  
+  * [object.one](#module_object.one)
+  * [object.three(four, five)](#module_object.three)
+
 <a name="module_object.one"></a>
 ###object.one
 first property
