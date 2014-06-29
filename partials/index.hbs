@@ -1,18 +1,17 @@
-{{#each (where @root kind="module")}}* {{>module-name}} {{>summary}} {{#with (exported)}}{{name}} {{kind}}{{/with}}
-{{#with (where @root memberof=longname)~}}
-{{#with (where this scope="instance")~}}
-{{>index-symbols data=this ~}}
-{{/with~}}
-{{#with (where this scope="static")~}}
-{{>index-symbols data=this ~}}
-{{/with~}}
-{{#with (where this scope="inner")~}}
-{{>index-symbols data=this ~}}
-{{/with~}}
+{{#if @root.argv.private~}}
+{{#each (where @root kind="module" ignore=undefined)}}* {{>module-name}} {{>summary}} {{#with (exported)}}{{name}} {{kind}}{{/with}}
+{{#with (where @root memberof=longname ignore=undefined)~}}
+{{>index-symbols-grouped data=this~}}
 {{/with~}}
 {{/each~}}
-
+{{else~}}
+{{#each (whereno (where @root kind="module" ignore=undefined) access="private")}}* {{>module-name}} {{>summary}} {{#with (exported)}}{{name}} {{kind}}{{/with}}
+{{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
+{{>index-symbols-grouped data=this~}}
+{{/with~}}
+{{/each~}}
+{{/if}}
 * Globals
-{{#with (where (whereno @root kind="module") scope="global")~}}
+{{#with (where (whereno @root kind="module") scope="global" ignore=undefined)~}}
 {{>index-symbols data=this ~}}
 {{/with}}

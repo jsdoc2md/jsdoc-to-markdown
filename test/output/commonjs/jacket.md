@@ -1,11 +1,7 @@
 <a name="module_jacket"></a>
-##jacket(input)
+#jacket
 
 A module representing a jacket.
-
-**Params**
-
-- input `string` - the input
 
   
 <a name="module_jacket#zip"></a>

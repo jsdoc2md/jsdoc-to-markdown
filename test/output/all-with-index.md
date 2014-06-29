@@ -16,15 +16,16 @@
   * cyber.createMachine() <sub>static function</sub>
   * ~something <sub>inner member</sub>
   * \~new Machine() <sub>inner class</sub>
-* commonjs/file-set() <sub>- module</sub> 
-* commonjs/function() <sub>- module</sub> 
+* file-set <sub>- module</sub> module:file-set class
+  * file-set.files <sub>instance member</sub>
+  * file-set.delete(paths) <sub>instance function</sub>
+* commonjs/function <sub>- module</sub> module:commonjs/function function
 * heaven <sub>- module</sub> 
   * heaven.Cloud <sub>static member</sub>
   * heaven.createCloud() <sub>static function</sub>
   * \~new Cloud() <sub>inner class</sub>
 * commonjs/ignore <sub>- module</sub> 
   * ignore.visible <sub>static member</sub>
-  * ignore.invisible <sub>static member</sub>
 * commonjs/jacket <sub>- module</sub> 
 * commonjs/object-with-alias <sub>- module</sub> 
   * _.one <sub>static member</sub>
@@ -40,10 +41,11 @@
 * commonjs/single-value <sub>- module</sub> module:commonjs/single-value member
 * commonjs/sum-alias <sub>- module</sub> 
 * commonjs/sum(a, b) <sub>- module</sub> 
+
+
 * Globals
   * eFileType <sub>global member</sub>
   * visible <sub>global member</sub>
-  * invisible <sub>global member</sub>
   * variable <sub>global member</sub>
   * typed <sub>global member</sub>
   * types <sub>global member</sub>
@@ -83,7 +85,6 @@
   * setMagicNumber(x) <sub>global function</sub>
   * doSomething(options) <sub>global function</sub>
   * new module:jacket() <sub>global class</sub>
-  * new module:file-set() <sub>global class</sub>
   * new module:jacket(input) <sub>global class</sub>
   * ~~new All(input, [options])~~ <sub>global class</sub>
   * new Person() <sub>global class</sub>
