@@ -52,8 +52,8 @@ $ jsdoc2md <options> <source_files>
 -h, --help               Print usage information
 --src <array>            The javascript source files. The default option.
 --index                  Include an index for each module and class, linking to members
---skip-heading           Skip the module heading, useful if you already have the heading elsewhere
-                         in your template.
+--skip-heading           Skip the module heading, useful if you already have the heading
+                         elsewhere in your template.
 --private                Include symbols marked @private in the output
 ```
 
