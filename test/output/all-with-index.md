@@ -1,4 +1,4 @@
-* file-pet module:file-pet class
+* file-pet <sub>class</sub>
   * file-pet.instie
   * file-pet.files
   * file-pet.delete(paths)
@@ -16,10 +16,10 @@
   * cyber.createMachine()
   * ~something
   * \~new Machine()
-* file-set module:file-set class
+* file-set <sub>class</sub>
   * file-set.files
   * file-set.delete(paths)
-* commonjs/function module:commonjs/function function
+* commonjs/function <sub>function</sub>
 * heaven
   * heaven.Cloud
   * heaven.createCloud()
@@ -38,7 +38,7 @@
 * private
   * private.notprivate
   * private.isprivate
-* commonjs/single-value module:commonjs/single-value member
+* commonjs/single-value <sub>member</sub>
 * commonjs/sum-alias
 * commonjs/sum(a, b)
 
