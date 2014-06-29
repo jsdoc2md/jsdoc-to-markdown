@@ -1,2 +1,9 @@
-{{#if name}}##class: {{{name}}}{{>icon}}
+{{#if name}}
+  {{~#if deprecated}}~~{{/if}}
+  {{~#if (equal scope "inner")}}\~{{/if}}
+  {{~#if (equal-some scope "static" "instance")}}
+    {{~#if memberof}}{{parentName}}.{{/if}}
+  {{~/if~}}
+  class: {{{name}~}}
+  {{~#if deprecated}}~~{{/if~}}
 {{/if}}
