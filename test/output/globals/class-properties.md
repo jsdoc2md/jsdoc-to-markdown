@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="Pizza"></a>
 
 ##class: Pizza

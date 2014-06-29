@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="pluck"></a>
 ###pluck(...prop)
 This function takes variable input

@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="globalFunc"></a>
 ###globalFunc()
 a global function
@@ -26,9 +26,6 @@ var next = "p";
 <a name="_protected"></a>
 ###_protected()
 **Access**: protected  
-<a name="_private"></a>
-###_private()
-**Access**: private  
 <a name="withAuthor"></a>
 ###withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
@@ -81,21 +78,3 @@ and needs this line to separate the above list from the below
 <a name="returnsSeveral"></a>
 ###returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  
-<a name="allTogether"></a>
-###~~allTogether(one, two)~~
-This function has all tags set
-
-**Params**
-
-- one `string` - The input string
-- two `object` - a second input
-
-***Deprecated***  
-**Access**: private  
-**Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `object` | `string` - this return has several types  
-**Example**  
-```js
-allTogether(true);
-```

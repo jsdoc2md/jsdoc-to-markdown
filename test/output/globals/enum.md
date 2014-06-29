@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="eFileType"></a>
 ###eFileType
 Enum for the `type` value

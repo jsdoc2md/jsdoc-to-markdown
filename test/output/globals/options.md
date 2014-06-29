@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="doSomething"></a>
 ###doSomething(options)
 **Params**

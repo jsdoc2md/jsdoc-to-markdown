@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="All"></a>
 
 ##class: All

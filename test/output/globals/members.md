@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="variable"></a>
 ###variable
 a global variable
@@ -36,10 +36,6 @@ var next = "p";
 ###_protected
 **Access**: protected  
   
-<a name="_private"></a>
-###_private
-**Access**: private  
-  
 <a name="withAuthor"></a>
 ###withAuthor
   
@@ -64,18 +60,3 @@ var next = "p";
 ###hasSince
   
 **Since**: v0.10.28  
-<a name="allTogether"></a>
-###~~allTogether~~
-This variable has all tags set
-
-***Deprecated***  
-**Access**: private  
-**Default**: `false`  
-**Read only**: true  
-**Type**: `boolean`  
-**Since**: v0.10.28  
-**Author**: 75lb <75pound@gmail.com>  
-**Example**  
-```js
-var allTogether = true;
-```

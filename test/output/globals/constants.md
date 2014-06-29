@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="CONST_ONE"></a>
 ###CONST_ONE
 the first important constant

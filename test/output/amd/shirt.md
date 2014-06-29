@@ -31,4 +31,3 @@ A property of the module.
 A property of the class.
 
   
-#Global scope

@@ -1,4 +1,4 @@
-#Global scope
+##Global scope
 <a name="Rice"></a>
 
 ##class: Rice

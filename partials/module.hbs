@@ -22,10 +22,10 @@
 
 {{#if @root.argv.private~}}
   {{#with (where @root memberof=longname ignore=undefined)~}}
-  {{>module-symbols parentName=../../alias data=this~}}
+  {{>module-symbols data=this ~}}
   {{/with~}}
 {{else~}}
   {{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
-  {{>module-symbols parentName=../../alias data=this~}}
+  {{>module-symbols data=this ~}}
   {{/with~}}
 {{/if}}
