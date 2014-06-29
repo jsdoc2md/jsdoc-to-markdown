@@ -4,19 +4,19 @@ factory module creating dodgy cloud. object-with-static-class.
 */
 
 /**
-@returns {module:heaven.Cloud}
+@returns {module:heaven~Cloud}
 */
 exports.createCloud = function(){};
 
 /**
 access to the Cloud class
+@type {module:heaven~Cloud}
 */
 exports.Cloud = Cloud;
 
 /**
 @class 
 @classdesc The main class of machine
-@alias module:heaven.Cloud
 */
 function Cloud(){
     /**

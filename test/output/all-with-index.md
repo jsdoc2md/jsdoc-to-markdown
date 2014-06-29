@@ -21,7 +21,7 @@
 * heaven <sub>- module</sub> 
   * heaven.Cloud <sub>static member</sub>
   * heaven.createCloud() <sub>static function</sub>
-  * new heaven.Cloud() <sub>static class</sub>
+  * \~new Cloud() <sub>inner class</sub>
 * commonjs/ignore <sub>- module</sub> 
   * ignore.visible <sub>static member</sub>
   * ignore.invisible <sub>static member</sub>
