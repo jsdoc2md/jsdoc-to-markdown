@@ -10,4 +10,9 @@
 {{>index-symbols data=this ~}}
 {{/with~}}
 {{/with~}}
-{{/each}}
+{{/each~}}
+
+* Globals
+{{#with (where (whereno @root kind="module") scope="global")~}}
+{{>index-symbols data=this ~}}
+{{/with}}
