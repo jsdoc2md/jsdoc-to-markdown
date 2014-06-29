@@ -1,15 +1,12 @@
 <a name="module_object"></a>
-#object
+##object
 
 simple object export
 
   
 **Symbols**  
-
-* [one](#module_object.one)
-* [two](#module_object.two)
-* [three(four, five)](#module_object.three)
-
+  * [object.one](#module_object.one)
+  * [object.three(four, five)](#module_object.three)
 <a name="module_object.one"></a>
 ###object.one
 first property

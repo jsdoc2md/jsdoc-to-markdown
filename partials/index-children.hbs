@@ -1,0 +1,3 @@
+{{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
+{{>index-symbols-grouped data=this~}}
+{{/with~}}

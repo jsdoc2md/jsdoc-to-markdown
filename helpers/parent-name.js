@@ -10,7 +10,7 @@ module.exports = function(handlebars){
             var parentClass = a.findWhere(options.data.root, { longname: this.memberof });
             if (parentClass) {
                 return this.scope === "instance"
-                    ? instantiate(parentClass.name)
+                    ? instantiate(parentClass.alias || parentClass.name)
                     : parentClass.alias || parentClass.name;
             }
         }        

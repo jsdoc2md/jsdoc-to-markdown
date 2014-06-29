@@ -1,5 +1,5 @@
 <a name="module_ignore"></a>
-#ignore
+##ignore
 
 module with ignored shiz
 

@@ -1,5 +1,5 @@
 <a name="module_blazer"></a>
-#blazer
+##blazer
 
 A module representing a blazer.
 

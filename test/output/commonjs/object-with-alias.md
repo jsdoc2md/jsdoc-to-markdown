@@ -1,5 +1,5 @@
 <a name="module_object-with-alias"></a>
-#object-with-alias
+##object-with-alias
 
 simple object export
 

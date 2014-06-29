@@ -1,7 +1,7 @@
 * file-pet <sub>class</sub>
-  * file-pet.instie
-  * file-pet.files
-  * file-pet.delete(paths)
+  * filePet.instie
+  * filePet.files
+  * filePet.delete(paths)
 * jacket <sub>class</sub>
   * jacket.zip()
 * shirt
@@ -19,8 +19,8 @@
   * ~something
   * \~new Machine()
 * file-set <sub>class</sub>
-  * file-set.files
-  * file-set.delete(paths)
+  * fileSet.files
+  * fileSet.delete(paths)
 * commonjs/function <sub>function</sub>
 * heaven
   * heaven.Cloud

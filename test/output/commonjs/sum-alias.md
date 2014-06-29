@@ -1,5 +1,5 @@
 <a name="module_sum-alias"></a>
-#sum-alias
+##sum-alias
 
 A simple maths function
 

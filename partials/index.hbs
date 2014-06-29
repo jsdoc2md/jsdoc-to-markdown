@@ -1,14 +1,10 @@
 {{#if @root.argv.private~}}
 {{#each (where @root kind="module" ignore=undefined)}}* {{>module-name}}{{#with (exported)}} <sub>{{kind}}</sub>{{/with}}
-{{#with (where @root memberof=longname ignore=undefined)~}}
-{{>index-symbols-grouped data=this~}}
-{{/with~}}
+{{>index-children~}}
 {{/each~}}
 {{else~}}
 {{#each (whereno (where @root kind="module" ignore=undefined) access="private")}}* {{>module-name}}{{#with (exported)}} <sub>{{kind}}</sub>{{/with}}
-{{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
-{{>index-symbols-grouped data=this~}}
-{{/with~}}
+{{>index-children~}}
 {{/each~}}
 {{/if}}
 * Globals

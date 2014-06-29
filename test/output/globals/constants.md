@@ -9,7 +9,6 @@ the first important constant
 This variable has all tags set
 
 ***Deprecated***  
-**Access**: private  
 **Read only**: true  
 **Type**: `boolean`  
 **Since**: v0.10.28  

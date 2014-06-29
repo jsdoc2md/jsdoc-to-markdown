@@ -1,13 +1,13 @@
-{{#each (where data kind="member" scope="instance")}}{{>member parentName=../parentName}}{{/each~}}
-{{#each (where data kind="function" scope="instance")}}{{>function parentName=../parentName}}{{/each~}}
+{{#each (where data kind="member" scope="instance")}}{{>member}}{{/each~}}
+{{#each (where data kind="function" scope="instance")}}{{>function}}{{/each~}}
 {{#each (where data kind="class" scope="instance")}}{{>class}}{{/each~}}
 {{#each (where data kind="constant" scope="instance")}}{{>constant}}{{/each~}}
-{{#each (where data kind="member" scope="static")}}{{>member parentName=../parentName}}{{/each~}}
-{{#each (where data kind="function" scope="static")}}{{>function parentName=../parentName}}{{/each~}}
+{{#each (where data kind="member" scope="static")}}{{>member}}{{/each~}}
+{{#each (where data kind="function" scope="static")}}{{>function}}{{/each~}}
 {{#each (where data kind="class" scope="static")}}{{>class}}{{/each~}}
 {{#each (where data kind="constant" scope="static")}}{{>constant}}{{/each~}}
-{{#each (where data kind="member" scope="inner")}}{{>member parentName=../parentName}}{{/each~}}
-{{#each (where data kind="function" scope="inner")}}{{>function parentName=../parentName}}{{/each~}}
+{{#each (where data kind="member" scope="inner")}}{{>member}}{{/each~}}
+{{#each (where data kind="function" scope="inner")}}{{>function}}{{/each~}}
 {{#each (where data kind="class" scope="inner")}}{{>class}}{{/each~}}
 {{#each (where data kind="constant" scope="inner")}}{{>constant}}{{/each~}}
 {{#each (where data kind="typedef" scope="inner")}}{{>typedef}}{{/each~}}
