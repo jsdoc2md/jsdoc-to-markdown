@@ -4,7 +4,7 @@
 {{/each~}}
 {{#each (where data kind="class")}}  * {{>function-name-long}} {{>summary}}
 {{/each~}}
-{{#each (where data kind="constant")}}  * {{>function-name-long}} {{>summary}}
+{{#each (where data kind="constant")}}  * {{>member-name-long}} {{>summary}}
 {{/each~}}
-{{#each (where data kind="typedef")}}  * {{>function-name-long}} {{>summary}}
+{{#each (where data kind="typedef")}}  * {{>typedef-name}} {{>summary}}
 {{/each~}}

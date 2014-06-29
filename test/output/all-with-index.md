@@ -94,7 +94,7 @@
   * new Something() 
   * new Pizza() 
   * new Plucker() 
-  * CONST_ONE() <sub>constant</sub>
-  * ~~CONST_TWO()~~ <sub>constant</sub>
-  * onComplete(err, result) <sub>typedef</sub>
-  * NumberLike() <sub>typedef</sub>
+  * CONST_ONE <sub>constant</sub>
+  * ~~CONST_TWO~~ <sub>constant</sub>
+  * callback: onComplete <sub>typedef</sub>
+  * type: NumberLike <sub>typedef</sub>
