@@ -1,6 +1,7 @@
 /**
 exports an object.. has an inner class.
 @module
+@alias cyber
 */
 
 /**

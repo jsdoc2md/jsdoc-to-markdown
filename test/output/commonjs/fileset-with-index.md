@@ -20,12 +20,12 @@ var cowFiles = fileSet("cow/*");
 * [delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set#files"></a>
-###fileSet.files
+###file-set.files
 the static property
 
   
 <a name="module_file-set#delete"></a>
-###fileSet.delete(paths)
+###file-set.delete(paths)
 A static methy meth
 
 **Params**

@@ -3,9 +3,7 @@
   {{~#if (equal scope "inner")}}\~{{/if}}
   {{~#if (equal kind "class")}}new {{/if}}
   {{~#if (equal-some scope "static" "instance")}}
-    {{~#if parentName}}{{parentName}}.
-      {{~else}}{{#if memberof}}{{memberofName}}.{{/if}}
-    {{~/if}}
+    {{~#if memberof}}{{parentName}}.{{/if}}
   {{~/if}}
   {{~{name}}}({{methodSig params}})
   {{~#if deprecated}}~~{{/if}}{{>icon}}

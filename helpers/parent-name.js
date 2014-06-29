@@ -5,13 +5,13 @@ function instantiate(input){
 }
 
 module.exports = function(handlebars){
-    handlebars.registerHelper("memberofName", function(options){
+    handlebars.registerHelper("parentName", function(options){
         if (this.memberof){
             var parentClass = a.findWhere(options.data.root, { longname: this.memberof });
             if (parentClass) {
                 return this.scope === "instance"
                     ? instantiate(parentClass.name)
-                    : parentClass.name;
+                    : parentClass.alias || parentClass.name;
             }
         }        
     });

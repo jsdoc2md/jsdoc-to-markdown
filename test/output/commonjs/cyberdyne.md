@@ -5,17 +5,17 @@ exports an object.. has an inner class.
 
   
 <a name="module_cyberdyne.createMachine"></a>
-###cyberdyne.createMachine()
+###cyber.createMachine()
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-###something~
+###~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
   
 <a name="module_cyberdyne.Machine"></a>
 
-##class: Machine~
+##class: Machine
 The main class of machine
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  

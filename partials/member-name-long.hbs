@@ -2,9 +2,7 @@
   {{~#if deprecated}}~~{{/if}}
   {{~#if (equal scope "inner")}}~{{/if}}
   {{~#if (equal-some scope "static" "instance")}}
-    {{~#if parentName}}{{parentName}}.
-      {{~else}}{{#if memberof}}{{memberofName}}.{{/if}}
-    {{~/if}}
+    {{~#if memberof}}{{parentName}}.{{/if}}
   {{~/if}}
   {{~{name}}}
   {{~#if deprecated}}~~{{/if}}{{>icon~}}

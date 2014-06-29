@@ -13,7 +13,7 @@
   * \~innerFuction() <sub>inner function</sub>
   * ~~\~anotherInnerFuction()~~ <sub>inner function</sub>
 * commonjs/cyberdyne <sub>- module</sub> 
-  * commonjs/cyberdyne.createMachine() <sub>static function</sub>
+  * cyber.createMachine() <sub>static function</sub>
   * ~something <sub>inner member</sub>
   * \~new Machine() <sub>inner class</sub>
 * commonjs/file-set() <sub>- module</sub> 
@@ -26,9 +26,9 @@
   * commonjs/ignore.invisible <sub>static member</sub>
 * commonjs/jacket <sub>- module</sub> 
 * commonjs/object-with-alias <sub>- module</sub> 
-  * commonjs/object-with-alias.one <sub>static member</sub>
-  * commonjs/object-with-alias.two <sub>static member</sub>
-  * commonjs/object-with-alias.three() <sub>static function</sub>
+  * _.one <sub>static member</sub>
+  * _.two <sub>static member</sub>
+  * _.three() <sub>static function</sub>
 * commonjs/object <sub>- module</sub> 
   * commonjs/object.one <sub>static member</sub>
   * ~~commonjs/object.two~~ <sub>static member</sub>
