@@ -19,23 +19,23 @@
 * commonjs/file-set() <sub>- module</sub> 
 * commonjs/function() <sub>- module</sub> 
 * commonjs/heaven <sub>- module</sub> 
-  * commonjs/heaven.Cloud <sub>static member</sub>
-  * commonjs/heaven.createCloud() <sub>static function</sub>
+  * heaven.Cloud <sub>static member</sub>
+  * heaven.createCloud() <sub>static function</sub>
 * commonjs/ignore <sub>- module</sub> 
-  * commonjs/ignore.visible <sub>static member</sub>
-  * commonjs/ignore.invisible <sub>static member</sub>
+  * ignore.visible <sub>static member</sub>
+  * ignore.invisible <sub>static member</sub>
 * commonjs/jacket <sub>- module</sub> 
 * commonjs/object-with-alias <sub>- module</sub> 
   * _.one <sub>static member</sub>
   * _.two <sub>static member</sub>
   * _.three() <sub>static function</sub>
 * commonjs/object <sub>- module</sub> 
-  * commonjs/object.one <sub>static member</sub>
-  * ~~commonjs/object.two~~ <sub>static member</sub>
-  * commonjs/object.three(four, five) <sub>static function</sub>
-* commonjs/private <sub>- module</sub> 
-  * commonjs/private.notprivate <sub>static member</sub>
-  * commonjs/private.isprivate <sub>static member</sub>
+  * object.one <sub>static member</sub>
+  * ~~object.two~~ <sub>static member</sub>
+  * object.three(four, five) <sub>static function</sub>
+* private <sub>- module</sub> 
+  * private.notprivate <sub>static member</sub>
+  * private.isprivate <sub>static member</sub>
 * commonjs/single-value <sub>- module</sub> module:commonjs/single-value member
 * commonjs/sum-alias <sub>- module</sub> 
 * commonjs/sum(a, b) <sub>- module</sub> 

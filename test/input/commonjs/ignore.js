@@ -1,6 +1,7 @@
 /**
 module with ignored shiz
 @module
+@alias ignore
 */
 
 /**

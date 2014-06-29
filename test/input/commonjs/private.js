@@ -1,6 +1,6 @@
 /**
 module with private shiz
-@module
+@module private
 */
 
 /**

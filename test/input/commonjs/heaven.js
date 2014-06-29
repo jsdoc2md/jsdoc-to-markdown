@@ -1,6 +1,7 @@
 /**
 factory module creating dodgy cloud. object-with-static-class.
 @module
+@alias heaven
 */
 
 /**

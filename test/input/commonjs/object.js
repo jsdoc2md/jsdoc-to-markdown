@@ -1,6 +1,7 @@
 /**
 simple object export
 @module
+@alias object
 */
 
 /**
