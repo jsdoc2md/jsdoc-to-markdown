@@ -2,6 +2,10 @@
 <a name="Pizza"></a>
 
 ##class: Pizza
+**Symbols**  
+  * [pizza.topping](#Pizza#topping)
+  * [pizza.size](#Pizza#size)
+
 <a name="Pizza#topping"></a>
 ###pizza.topping
 the ingredients on top

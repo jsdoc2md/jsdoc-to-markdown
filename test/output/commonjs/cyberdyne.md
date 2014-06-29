@@ -24,6 +24,10 @@ random
 The main class of machine
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
+**Symbols**  
+  * [machine.eyes](#module_cyberdyne.Machine#eyes)
+  * [machine.vibe](#module_cyberdyne.Machine#vibe)
+
 <a name="module_cyberdyne.Machine#eyes"></a>
 ###machine.eyes
 **Type**: `number`  

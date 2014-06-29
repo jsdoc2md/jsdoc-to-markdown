@@ -23,6 +23,9 @@ A property of the module.
 
 -  `number` - the size innit
 
+**Symbols**  
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
 <a name="module_shirt.Turtleneck#size"></a>
 ###turtleneck.size
 A property of the class.

@@ -23,6 +23,10 @@ access to the Cloud class
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
+**Symbols**  
+  * [cloud.eyes](#module_heaven.Cloud#eyes)
+  * [cloud.vibe](#module_heaven.Cloud#vibe)
+
 <a name="module_heaven.Cloud#eyes"></a>
 ###cloud.eyes
 **Type**: `number`  
