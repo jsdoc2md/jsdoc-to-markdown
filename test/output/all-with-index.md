@@ -6,14 +6,16 @@
 * my/ShirtCreator <sub>global module</sub> 
 * my/shirt <sub>global module</sub> 
   * my/shirt.color <sub>static member</sub>
+  * new my/shirt.Turtleneck() <sub>static class</sub>
 * cattle <sub>- module</sub> 
-  * ~innerMember <sub>inner member</sub>
   * cattle.createCow() <sub>static function</sub>
+  * ~innerMember <sub>inner member</sub>
   * \~innerFuction() <sub>inner function</sub>
   * ~~\~anotherInnerFuction()~~ <sub>inner function</sub>
 * commonjs/cyberdyne <sub>- module</sub> 
-  * ~something <sub>inner member</sub>
   * commonjs/cyberdyne.createMachine() <sub>static function</sub>
+  * ~something <sub>inner member</sub>
+  * \~new Machine() <sub>inner class</sub>
 * commonjs/file-set() <sub>- module</sub> 
 * commonjs/function() <sub>- module</sub> 
 * commonjs/heaven <sub>- module</sub> 

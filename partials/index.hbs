@@ -1,8 +1,13 @@
 {{#each (where @root kind="module")}}* {{>module-name}} {{>summary}} {{#with (exported)}}{{name}} {{kind}}{{/with}}
 {{#with (where @root memberof=longname)~}}
-{{#each (where this kind="member")}}  * {{>member-name-long}} {{>summary}}
-{{/each~}}
-{{#each (where this kind="function")}}  * {{>function-name-long}} {{>summary}}
-{{/each~}}
+{{#with (where this scope="instance")~}}
+{{>index-symbols data=this ~}}
+{{/with~}}
+{{#with (where this scope="static")~}}
+{{>index-symbols data=this ~}}
+{{/with~}}
+{{#with (where this scope="inner")~}}
+{{>index-symbols data=this ~}}
+{{/with~}}
 {{/with~}}
 {{/each}}
