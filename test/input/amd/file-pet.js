@@ -1,6 +1,7 @@
 /**
 this module returns a pet of files
 @module file-pet
+@alias filePet
 @example
 ```js
 var cowFiles = FilePet("cow/*");

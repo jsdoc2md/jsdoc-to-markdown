@@ -1,101 +1,100 @@
-* file-pet <sub>- module</sub> module:file-pet class
-  * file-pet.instie <sub>instance member</sub>
-  * file-pet.files <sub>instance member</sub>
-  * file-pet.delete(paths) <sub>instance function</sub>
-* amd/jacket <sub>- module</sub> 
-* my/ShirtCreator <sub>global module</sub> 
-* my/shirt <sub>global module</sub> 
-  * my/shirt.color <sub>static member</sub>
-  * new my/shirt.Turtleneck() <sub>static class</sub>
-* cattle <sub>- module</sub> 
-  * cattle.createCow() <sub>static function</sub>
-  * ~innerMember <sub>inner member</sub>
-  * \~innerFuction() <sub>inner function</sub>
-  * ~~\~anotherInnerFuction()~~ <sub>inner function</sub>
-* commonjs/cyberdyne <sub>- module</sub> 
-  * cyber.createMachine() <sub>static function</sub>
-  * ~something <sub>inner member</sub>
-  * \~new Machine() <sub>inner class</sub>
-* file-set <sub>- module</sub> module:file-set class
-  * file-set.files <sub>instance member</sub>
-  * file-set.delete(paths) <sub>instance function</sub>
-* commonjs/function <sub>- module</sub> module:commonjs/function function
-* heaven <sub>- module</sub> 
-  * heaven.Cloud <sub>static member</sub>
-  * heaven.createCloud() <sub>static function</sub>
-  * \~new Cloud() <sub>inner class</sub>
-* commonjs/ignore <sub>- module</sub> 
-  * ignore.visible <sub>static member</sub>
-* commonjs/jacket <sub>- module</sub> 
-* commonjs/object-with-alias <sub>- module</sub> 
-  * _.one <sub>static member</sub>
-  * _.two <sub>static member</sub>
-  * _.three() <sub>static function</sub>
-* commonjs/object <sub>- module</sub> 
-  * object.one <sub>static member</sub>
-  * ~~object.two~~ <sub>static member</sub>
-  * object.three(four, five) <sub>static function</sub>
-* private <sub>- module</sub> 
-  * private.notprivate <sub>static member</sub>
-  * private.isprivate <sub>static member</sub>
-* commonjs/single-value <sub>- module</sub> module:commonjs/single-value member
-* commonjs/sum-alias <sub>- module</sub> 
-* commonjs/sum(a, b) <sub>- module</sub> 
-
+* file-pet  module:file-pet class
+  * file-pet.instie 
+  * file-pet.files 
+  * file-pet.delete(paths) 
+* amd/jacket  
+* my/ShirtCreator  
+* my/shirt  
+  * my/shirt.color 
+  * new my/shirt.Turtleneck() 
+* cattle  
+  * cattle.createCow() 
+  * ~innerMember 
+  * \~innerFuction() 
+  * ~~\~anotherInnerFuction()~~ 
+* commonjs/cyberdyne  
+  * cyber.createMachine() 
+  * ~something 
+  * \~new Machine() 
+* file-set  module:file-set class
+  * file-set.files 
+  * file-set.delete(paths) 
+* commonjs/function  module:commonjs/function function
+* heaven  
+  * heaven.Cloud 
+  * heaven.createCloud() 
+  * \~new Cloud() 
+* commonjs/ignore  
+  * ignore.visible 
+* commonjs/jacket  
+* commonjs/object-with-alias  
+  * _.one 
+  * _.two 
+  * _.three() 
+* commonjs/object  
+  * object.one 
+  * ~~object.two~~ 
+  * object.three(four, five) 
+* private  
+  * private.notprivate 
+  * private.isprivate 
+* commonjs/single-value  module:commonjs/single-value member
+* commonjs/sum-alias  
+* commonjs/sum(a, b)  
 
 * Globals
-  * eFileType <sub>global member</sub>
-  * visible <sub>global member</sub>
-  * variable <sub>global member</sub>
-  * typed <sub>global member</sub>
-  * types <sub>global member</sub>
-  * exampled <sub>global member</sub>
-  * examples <sub>global member</sub>
-  * _protected <sub>global member</sub>
-  * _private <sub>global member</sub>
-  * withAuthor <sub>global member</sub>
-  * hasDefault <sub>global member</sub>
-  * hasDefaultObject <sub>global member</sub>
-  * ~~deprecated~~ <sub>global member</sub>
-  * readOnly <sub>global member</sub>
-  * hasSince <sub>global member</sub>
-  * ~~allTogether~~ <sub>global member</sub>
-  * module:sum-alias(a, b) <sub>global function</sub>
-  * read(filename, done) <sub>global function</sub>
-  * globalFunc() <sub>global function</sub>
-  * exampled() <sub>global function</sub>
-  * multiExampled() <sub>global function</sub>
-  * _protected() <sub>global function</sub>
-  * _private() <sub>global function</sub>
-  * withAuthor() <sub>global function</sub>
-  * ~~oldFunction()~~ <sub>global function</sub>
-  * newFunction() <sub>global function</sub>
-  * withParam(one) <sub>global function</sub>
-  * withParams(one, two) <sub>global function</sub>
-  * withOptional(one, [two]) <sub>global function</sub>
-  * withBullets(one, two) <sub>global function</sub>
-  * returnsSomething() <sub>global function</sub>
-  * returnsSomethingDesc() <sub>global function</sub>
-  * returnsSeveral() <sub>global function</sub>
-  * ~~allTogether(one, two)~~ <sub>global function</sub>
-  * doSomething(options) <sub>global function</sub>
-  * doAnother(options) <sub>global function</sub>
-  * pluck(...prop) <sub>global function</sub>
-  * requirer() <sub>global function</sub>
-  * setMagicNumber(x) <sub>global function</sub>
-  * doSomething(options) <sub>global function</sub>
-  * new module:jacket() <sub>global class</sub>
-  * new module:jacket(input) <sub>global class</sub>
-  * ~~new All(input, [options])~~ <sub>global class</sub>
-  * new Person() <sub>global class</sub>
-  * new Car([options]) <sub>global class</sub>
-  * new Pipe() <sub>global class</sub>
-  * ~~new Everything(input, [options])~~ <sub>global class</sub>
-  * new Rice() <sub>global class</sub>
-  * new Something() <sub>global class</sub>
-  * new Pizza() <sub>global class</sub>
-  * new Plucker() <sub>global class</sub>
-  * CONST_ONE() <sub>global constant</sub>
-  * ~~CONST_TWO()~~ <sub>global constant</sub>
-  * onComplete(err, result) <sub>global typedef</sub>
-  * NumberLike() <sub>global typedef</sub>
+  * eFileType 
+  * visible 
+  * variable 
+  * typed 
+  * types 
+  * exampled 
+  * examples 
+  * _protected 
+  * _private 
+  * withAuthor 
+  * hasDefault 
+  * hasDefaultObject 
+  * ~~deprecated~~ 
+  * readOnly 
+  * hasSince 
+  * ~~allTogether~~ 
+  * module:sum-alias(a, b) 
+  * read(filename, done) 
+  * globalFunc() 
+  * exampled() 
+  * multiExampled() 
+  * _protected() 
+  * _private() 
+  * withAuthor() 
+  * ~~oldFunction()~~ 
+  * newFunction() 
+  * withParam(one) 
+  * withParams(one, two) 
+  * withOptional(one, [two]) 
+  * withBullets(one, two) 
+  * returnsSomething() 
+  * returnsSomethingDesc() 
+  * returnsSeveral() 
+  * ~~allTogether(one, two)~~ 
+  * doSomething(options) 
+  * doAnother(options) 
+  * pluck(...prop) 
+  * requirer() 
+  * setMagicNumber(x) 
+  * doSomething(options) 
+  * new module:jacket() 
+  * new module:jacket(input) 
+  * ~~new All(input, [options])~~ 
+  * new Person() 
+  * new Car([options]) 
+  * new Pipe() 
+  * ~~new Everything(input, [options])~~ 
+  * new Rice() 
+  * new Something() 
+  * new Pizza() 
+  * new Plucker() 
+  * CONST_ONE() <sub>constant</sub>
+  * ~~CONST_TWO()~~ <sub>constant</sub>
+  * onComplete(err, result) <sub>typedef</sub>
+  * NumberLike() <sub>typedef</sub>

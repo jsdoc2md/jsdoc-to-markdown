@@ -1,1 +1,1 @@
-<sub>{{#if scope}}{{scope}}{{else}}-{{/if}} {{kind}}</sub>
+{{#if (equal-some kind "typedef" "constant")}}<sub>{{kind}}</sub>{{/if}}
