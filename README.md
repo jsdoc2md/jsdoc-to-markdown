@@ -87,7 +87,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 -  [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
 
 <a name="module_jsdoc-to-markdown.onRender"></a>
-###callback: onRender
+###\~callback: onRender
 Called by `jsdoc2md.render()` on completion.
 
 **Params**

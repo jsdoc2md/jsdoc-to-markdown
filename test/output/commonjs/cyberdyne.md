@@ -8,7 +8,7 @@ exports an object.. has an inner class.
 ###cyber.createMachine()
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-###~something
+###\~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  

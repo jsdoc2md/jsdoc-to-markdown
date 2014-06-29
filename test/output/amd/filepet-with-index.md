@@ -12,6 +12,7 @@ var cowFiles = FilePet("cow/*");
   * [filePet.instie](#module_file-pet#instie)
   * [filePet.files](#module_file-pet#files)
   * [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet#instie"></a>
 ###filePet.instie
 an instance ting
