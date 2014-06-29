@@ -1,6 +1,6 @@
 /**
-object-with-inner-members
-@module
+exported object, with-inner-members
+@module cattle
 */
 
 /**
@@ -17,3 +17,9 @@ var innerMember = 1;
 the inner function
 */
 function innerFuction(){}
+
+/**
+another inner function
+@deprecated
+*/
+function anotherInnerFuction(){}

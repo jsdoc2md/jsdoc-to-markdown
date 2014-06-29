@@ -2,7 +2,7 @@
 {{#with (where @root memberof=longname)~}}
 {{#each (where this kind="member")}}  * {{>member-name-long}} {{>summary}}
 {{/each~}}
-{{#each (where this kind="function")}}  * {{>function-name}} {{>summary}}
+{{#each (where this kind="function")}}  * {{>function-name-long}} {{>summary}}
 {{/each~}}
 {{/with~}}
 {{/each}}

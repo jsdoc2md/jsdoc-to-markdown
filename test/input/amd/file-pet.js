@@ -10,8 +10,8 @@ var cowFiles = FilePet("cow/*");
 define("FilePet", function(){
 
     /**
-    this class returns a pet of files
-    @class
+    this is the contructor
+    @class this class returns a pet of files
     @example
     ```js
     var cowFiles = FilePet("cow/*");
