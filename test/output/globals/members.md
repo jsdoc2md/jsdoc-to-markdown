@@ -1,17 +1,17 @@
 ##Global scope
 <a name="variable"></a>
-##variable <sub>*member*</sub>
+##variable
 a global variable
 
   
 <a name="typed"></a>
-##typed <sub>*member*</sub>
+##typed
 **Type**: `string`  
 <a name="types"></a>
-##types <sub>*member*</sub>
+##types
 **Type**: `string` | `number`  
 <a name="exampled"></a>
-##exampled <sub>*member*</sub>
+##exampled
 a var with an example
 
   
@@ -20,7 +20,7 @@ a var with an example
 var another = 100;
 ```
 <a name="examples"></a>
-##examples <sub>*member*</sub>
+##examples
 a var with multiple examples
 
   
@@ -33,30 +33,30 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected <sub>*member*</sub>
+##_protected
 **Access**: protected  
   
 <a name="withAuthor"></a>
-##withAuthor <sub>*member*</sub>
+##withAuthor
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-##hasDefault <sub>*member*</sub>
+##hasDefault
 **Default**: `23`  
   
 <a name="hasDefaultObject"></a>
-##hasDefaultObject <sub>*member*</sub>
+##hasDefaultObject
 **Default**: `{"one":1,"two":2}`  
   
 <a name="deprecated"></a>
-##~~deprecated <sub>*member*</sub>~~
+##~~deprecated~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
-##readOnly <sub>*member*</sub>
+##readOnly
 **Read only**: true  
   
 <a name="hasSince"></a>
-##hasSince <sub>*member*</sub>
+##hasSince
   
 **Since**: v0.10.28  

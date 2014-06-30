@@ -1,13 +1,13 @@
 <a name="module_blazer"></a>
-##blazer <sub>*module*</sub>
+##blazer
 
 A module representing a blazer.
 
   
 **Symbols**  
-  * [blazer.zip() <sub>*function*</sub>](#module_blazer#zip)
+  * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer#zip"></a>
-###blazer.zip() <sub>*function*</sub>
+###blazer.zip()
 Open and close your Blazer.
 

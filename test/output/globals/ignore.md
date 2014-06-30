@@ -1,6 +1,6 @@
 ##Global scope
 <a name="visible"></a>
-##visible <sub>*member*</sub>
+##visible
 a visible global
 
   

@@ -1,52 +1,52 @@
 <a name="module_heaven"></a>
-##heaven <sub>*module*</sub>
+##heaven
 
 factory module creating dodgy cloud. object-with-static-class.
 
   
 **Symbols**  
-  * [heaven.Cloud <sub>*member*</sub>](#module_heaven.Cloud)
-  * [heaven.createCloud() <sub>*function*</sub>](#module_heaven.createCloud)
-  * [\~heaven.Cloud <sub>*class*</sub>](#module_heaven.Cloud)
-  * [*const* \~FACT <sub>*constant*</sub>](#module_heaven.FACT)
+  * [heaven.Cloud](#module_heaven.Cloud)
+  * [heaven.createCloud()](#module_heaven.createCloud)
+  * [class: \~heaven.Cloud](#module_heaven.Cloud)
+  * [const: \~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>
-###heaven.Cloud <sub>*member*</sub>
+###heaven.Cloud
 access to the Cloud class
 
 **Type**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
-###heaven.createCloud() <sub>*function*</sub>
+###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-###\~heaven.Cloud <sub>*class*</sub>
+###class: \~heaven.Cloud
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
 **Symbols**  
-  * [cloud.eyes <sub>*member*</sub>](#module_heaven.Cloud#eyes)
-  * [cloud.vibe <sub>*member*</sub>](#module_heaven.Cloud#vibe)
-  * [Cloud.classMethod() <sub>*function*</sub>](#module_heaven.Cloud.classMethod)
-  * [*const* Cloud.SPACES <sub>*constant*</sub>](#module_heaven.Cloud.SPACES)
+  * [cloud.eyes](#module_heaven.Cloud#eyes)
+  * [cloud.vibe](#module_heaven.Cloud#vibe)
+  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud#eyes"></a>
-####cloud.eyes <sub>*member*</sub>
+####cloud.eyes
 **Type**: `number`  
 <a name="module_heaven.Cloud#vibe"></a>
-####cloud.vibe <sub>*member*</sub>
+####cloud.vibe
 **Type**: `string`  
 <a name="module_heaven.Cloud.classMethod"></a>
-####Cloud.classMethod() <sub>*function*</sub>
+####Cloud.classMethod()
 a class method
 
 <a name="module_heaven.Cloud.SPACES"></a>
-####*const* Cloud.SPACES <sub>*constant*</sub>
+####const: Cloud.SPACES
 a class constant
 
 **Type**: `number`  
 <a name="module_heaven.FACT"></a>
-###*const* \~FACT <sub>*constant*</sub>
+###const: \~FACT
 an inner constant
 
 **Type**: `boolean`  

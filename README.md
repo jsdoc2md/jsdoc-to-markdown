@@ -73,7 +73,7 @@ These projects have readme files rendered by `jsdoc2md`:
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 <a name="module_jsdoc-to-markdown.render"></a>
-###jsdoc2md.render(options) <sub>*function*</sub>
+###jsdoc2md.render(options)
 **Params**
 
 - options `object` - The render options
@@ -87,7 +87,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 -  [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
 
 <a name="module_jsdoc-to-markdown.onRender"></a>
-###\~callback: onRender <sub>*typedef*</sub>
+###\~callback: onRender
 Called by `jsdoc2md.render()` on completion.
 
 **Params**

@@ -1,6 +1,6 @@
 {{#if name}}
   {{~#if deprecated}}~~{{/if~}}
-  {{#if (equal scope "inner")}}\~{{/if~}}
+  class: {{#if (equal scope "inner")}}\~{{/if~}}
     {{~#if memberof}}{{parentName}}.{{/if}}
   {{~{name}}}
   {{~>name-suffix~}}

@@ -1,5 +1,5 @@
 ##Global scope
 <a name="requirer"></a>
-##requirer() <sub>*function*</sub>
+##requirer()
 ensure you have some-module installed
 

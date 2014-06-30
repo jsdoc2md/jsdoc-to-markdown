@@ -1,17 +1,17 @@
 ##Global scope
 <a name="Something"></a>
 
-##Something <sub>*class*</sub>
+##class: Something
 **Symbols**  
-  * [something.methodOne() <sub>*function*</sub>](#Something#methodOne)
-  * [~~something.allTogether(one, two) <sub>*function*</sub>~~](#Something#allTogether)
+  * [something.methodOne()](#Something#methodOne)
+  * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
-###something.methodOne() <sub>*function*</sub>
+###something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two) <sub>*function*</sub>~~
+###~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**

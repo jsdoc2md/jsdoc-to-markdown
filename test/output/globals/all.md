@@ -1,11 +1,11 @@
 ##Global scope
 <a name="CONST_ONE"></a>
-##*const* CONST_ONE <sub>*constant*</sub>
+##const: CONST_ONE
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-##~~*const* CONST_TWO <sub>*constant*</sub>~~
+##~~const: CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  
@@ -18,30 +18,30 @@ This variable has all tags set
 var CONST_TWO = true;
 ```
 <a name="eFileType"></a>
-##eFileType <sub>*member*</sub>
+##eFileType
 Enum for the `type` value
 
 **Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  
 <a name="visible"></a>
-##visible <sub>*member*</sub>
+##visible
 a visible global
 
   
 <a name="variable"></a>
-##variable <sub>*member*</sub>
+##variable
 a global variable
 
   
 <a name="typed"></a>
-##typed <sub>*member*</sub>
+##typed
 **Type**: `string`  
 <a name="types"></a>
-##types <sub>*member*</sub>
+##types
 **Type**: `string` | `number`  
 <a name="exampled"></a>
-##exampled <sub>*member*</sub>
+##exampled
 a var with an example
 
   
@@ -50,7 +50,7 @@ a var with an example
 var another = 100;
 ```
 <a name="examples"></a>
-##examples <sub>*member*</sub>
+##examples
 a var with multiple examples
 
   
@@ -63,46 +63,46 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected <sub>*member*</sub>
+##_protected
 **Access**: protected  
   
 <a name="withAuthor"></a>
-##withAuthor <sub>*member*</sub>
+##withAuthor
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-##hasDefault <sub>*member*</sub>
+##hasDefault
 **Default**: `23`  
   
 <a name="hasDefaultObject"></a>
-##hasDefaultObject <sub>*member*</sub>
+##hasDefaultObject
 **Default**: `{"one":1,"two":2}`  
   
 <a name="deprecated"></a>
-##~~deprecated <sub>*member*</sub>~~
+##~~deprecated~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
-##readOnly <sub>*member*</sub>
+##readOnly
 **Read only**: true  
   
 <a name="hasSince"></a>
-##hasSince <sub>*member*</sub>
+##hasSince
   
 **Since**: v0.10.28  
 <a name="read"></a>
-##read(filename, done) <sub>*function*</sub>
+##read(filename, done)
 **Params**
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="globalFunc"></a>
-##globalFunc() <sub>*function*</sub>
+##globalFunc()
 a global function
 
 <a name="exampled"></a>
-##exampled() <sub>*function*</sub>
+##exampled()
 a function with an example
 
 **Example**  
@@ -110,7 +110,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-##multiExampled() <sub>*function*</sub>
+##multiExampled()
 a function with multiple examples
 
 **Example**  
@@ -122,39 +122,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected() <sub>*function*</sub>
+##_protected()
 **Access**: protected  
 <a name="withAuthor"></a>
-##withAuthor() <sub>*function*</sub>
+##withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-##~~oldFunction() <sub>*function*</sub>~~
+##~~oldFunction()~~
 ***Deprecated***  
 <a name="newFunction"></a>
-##newFunction() <sub>*function*</sub>
+##newFunction()
 **Since**: v0.10.28  
 <a name="withParam"></a>
-##withParam(one) <sub>*function*</sub>
+##withParam(one)
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-##withParams(one, two) <sub>*function*</sub>
+##withParams(one, two)
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-##withOptional(one, [two]) <sub>*function*</sub>
+##withOptional(one, [two])
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-##withBullets(one, two) <sub>*function*</sub>
+##withBullets(one, two)
 this description has 
 
 - bullet
@@ -168,16 +168,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-##returnsSomething() <sub>*function*</sub>
+##returnsSomething()
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-##returnsSomethingDesc() <sub>*function*</sub>
+##returnsSomethingDesc()
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-##returnsSeveral() <sub>*function*</sub>
+##returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  
 <a name="doSomething"></a>
-##doSomething(options) <sub>*function*</sub>
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -185,13 +185,13 @@ and needs this line to separate the above list from the below
   - two `string` - second option
 
 <a name="doAnother"></a>
-##doAnother(options) <sub>*function*</sub>
+##doAnother(options)
 **Params**
 
 - options `Object` - the function options
 
 <a name="pluck"></a>
-##pluck(...prop) <sub>*function*</sub>
+##pluck(...prop)
 This function takes variable input
 
 **Params**
@@ -199,11 +199,11 @@ This function takes variable input
 - ...prop `string` - the property(s) as input
 
 <a name="requirer"></a>
-##requirer() <sub>*function*</sub>
+##requirer()
 ensure you have some-module installed
 
 <a name="setMagicNumber"></a>
-##setMagicNumber(x) <sub>*function*</sub>
+##setMagicNumber(x)
 Set the magic number.
 
 **Params**
@@ -211,7 +211,7 @@ Set the magic number.
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
-##doSomething(options) <sub>*function*</sub>
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -220,12 +220,12 @@ Set the magic number.
 
 <a name="All"></a>
 
-##~~All <sub>*class*</sub>~~
+##~~class: All~~
 a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-##~~new All(input, [options]) <sub>*class*</sub>~~
+##~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -241,24 +241,24 @@ the constructor description
 var yeah = new Everything(true);
 ```
 **Symbols**  
-  * [all.topping <sub>*member*</sub>](#All#topping)
-  * [all.size <sub>*member*</sub>](#All#size)
-  * [~~all.allThings(one, two) <sub>*function*</sub>~~](#All#allThings)
+  * [all.topping](#All#topping)
+  * [all.size](#All#size)
+  * [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All#topping"></a>
-###all.topping <sub>*member*</sub>
+###all.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size <sub>*member*</sub>
+###all.size
 the general size
 
   
 <a name="All#allThings"></a>
-###~~all.allThings(one, two) <sub>*function*</sub>~~
+###~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**
@@ -276,21 +276,21 @@ all.allTogether(true);
 ```
 <a name="Person"></a>
 
-##Person <sub>*class*</sub>
+##class: Person
 simple class description
 
 **Extends**: `Object`  
 <a name="Person"></a>
-##new Person() <sub>*class*</sub>
+##new Person()
 a constructor description
 
 **Symbols**  
 
 <a name="Car"></a>
 
-##Car <sub>*class*</sub>
+##class: Car
 <a name="Car"></a>
-##new Car([options]) <sub>*class*</sub>
+##new Car([options])
 a constructor with args
 
 **Params**
@@ -301,7 +301,7 @@ a constructor with args
 
 <a name="Pipe"></a>
 
-##Pipe <sub>*class*</sub>
+##class: Pipe
 a class which extends
 
 **Extends**: `Pipe`  
@@ -309,12 +309,12 @@ a class which extends
 
 <a name="Everything"></a>
 
-##~~Everything <sub>*class*</sub>~~
+##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
-##~~new Everything(input, [options]) <sub>*class*</sub>~~
+##~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -333,32 +333,32 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 
-##Rice <sub>*class*</sub>
+##class: Rice
 **Symbols**  
-  * [event: "cooked" <sub>*event*</sub>](#Rice#event_cooked)
-  * [event: "cooking" <sub>*event*</sub>](#Rice#event_cooking)
+  * [event: "cooked"](#Rice#event_cooked)
+  * [event: "cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
-###event: "cooked" <sub>*event*</sub>
+###event: "cooked"
 Fired when rice is ready
 
 <a name="Rice#event_cooking"></a>
-###event: "cooking" <sub>*event*</sub>
+###event: "cooking"
 Fired when rice is cooking
 
 <a name="Something"></a>
 
-##Something <sub>*class*</sub>
+##class: Something
 **Symbols**  
-  * [something.methodOne() <sub>*function*</sub>](#Something#methodOne)
-  * [~~something.allTogether(one, two) <sub>*function*</sub>~~](#Something#allTogether)
+  * [something.methodOne()](#Something#methodOne)
+  * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
-###something.methodOne() <sub>*function*</sub>
+###something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two) <sub>*function*</sub>~~
+###~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**
@@ -376,31 +376,31 @@ something.allTogether(true);
 ```
 <a name="Pizza"></a>
 
-##Pizza <sub>*class*</sub>
+##class: Pizza
 **Symbols**  
-  * [pizza.topping <sub>*member*</sub>](#Pizza#topping)
-  * [pizza.size <sub>*member*</sub>](#Pizza#size)
+  * [pizza.topping](#Pizza#topping)
+  * [pizza.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-###pizza.topping <sub>*member*</sub>
+###pizza.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###pizza.size <sub>*member*</sub>
+###pizza.size
 the general size
 
   
 <a name="Plucker"></a>
 
-##Plucker <sub>*class*</sub>
+##class: Plucker
 **Symbols**  
-  * [plucker.doPluck(one, ...args, ...three) <sub>*function*</sub>](#Plucker#doPluck)
+  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...args, ...three) <sub>*function*</sub>
+###plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
 **Params**
@@ -410,7 +410,7 @@ This function takes variable input
 - ...three `string` - more input
 
 <a name="onComplete"></a>
-##callback: onComplete <sub>*typedef*</sub>
+##callback: onComplete
 Called when an async operation completes
 
 **Params**
@@ -420,7 +420,7 @@ Called when an async operation completes
 
 **Type**: `function`  
 <a name="NumberLike"></a>
-##type: NumberLike <sub>*typedef*</sub>
+##type: NumberLike
 A number, or a string containing a number.
 
 **Type**: `number` | `string`  

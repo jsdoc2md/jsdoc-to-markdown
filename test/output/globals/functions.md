@@ -1,10 +1,10 @@
 ##Global scope
 <a name="globalFunc"></a>
-##globalFunc() <sub>*function*</sub>
+##globalFunc()
 a global function
 
 <a name="exampled"></a>
-##exampled() <sub>*function*</sub>
+##exampled()
 a function with an example
 
 **Example**  
@@ -12,7 +12,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-##multiExampled() <sub>*function*</sub>
+##multiExampled()
 a function with multiple examples
 
 **Example**  
@@ -24,39 +24,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected() <sub>*function*</sub>
+##_protected()
 **Access**: protected  
 <a name="withAuthor"></a>
-##withAuthor() <sub>*function*</sub>
+##withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-##~~oldFunction() <sub>*function*</sub>~~
+##~~oldFunction()~~
 ***Deprecated***  
 <a name="newFunction"></a>
-##newFunction() <sub>*function*</sub>
+##newFunction()
 **Since**: v0.10.28  
 <a name="withParam"></a>
-##withParam(one) <sub>*function*</sub>
+##withParam(one)
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-##withParams(one, two) <sub>*function*</sub>
+##withParams(one, two)
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-##withOptional(one, [two]) <sub>*function*</sub>
+##withOptional(one, [two])
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-##withBullets(one, two) <sub>*function*</sub>
+##withBullets(one, two)
 this description has 
 
 - bullet
@@ -70,11 +70,11 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-##returnsSomething() <sub>*function*</sub>
+##returnsSomething()
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-##returnsSomethingDesc() <sub>*function*</sub>
+##returnsSomethingDesc()
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-##returnsSeveral() <sub>*function*</sub>
+##returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  

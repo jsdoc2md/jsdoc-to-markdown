@@ -1,11 +1,11 @@
 ##Global scope
 <a name="CONST_ONE"></a>
-##*const* CONST_ONE <sub>*constant*</sub>
+##const: CONST_ONE
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-##~~*const* CONST_TWO <sub>*constant*</sub>~~
+##~~const: CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  
