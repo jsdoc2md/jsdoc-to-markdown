@@ -1,5 +1,5 @@
 <a name="module_file-set"></a>
-file-set
+##file-set
 
   
 **Example**  
@@ -11,12 +11,12 @@ var fileSet = require("file-set");
   * [fileSet.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set#files"></a>
-fileSet.files
+###fileSet.files
 the static property
 
   
 <a name="module_file-set#delete"></a>
-fileSet.delete(paths)
+###fileSet.delete(paths)
 A static methy meth
 
 **Params**

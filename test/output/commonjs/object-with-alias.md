@@ -1,5 +1,5 @@
 <a name="module_object-with-alias"></a>
-object-with-alias
+##object-with-alias
 
 simple object export
 
@@ -10,16 +10,16 @@ simple object export
   * [_.three()](#module_object-with-alias.three)
 
 <a name="module_object-with-alias.one"></a>
-_.one
+###_.one
 first property
 
   
 <a name="module_object-with-alias.two"></a>
-_.two
+###_.two
 second property
 
   
 <a name="module_object-with-alias.three"></a>
-_.three()
+###_.three()
 a function
 

@@ -9,7 +9,7 @@ var cli = cliArgs([
     { name: "template", alias: "t", type: String,
       description: "A custom handlebars template to insert the rendered documentation into,\noverriding the default" 
     },
-    { name: "preset", alias: "p", type: String, value: "default",
+    { name: "preset", alias: "p", type: String,
       description: "Use a preset template ('default', 'global' or 'modules')" 
     },
     { name: "json", alias: "j", type: Boolean,
@@ -30,7 +30,7 @@ var cli = cliArgs([
     { name: "private", type: Boolean,
       description: "Include symbols marked @private in the output"
     },
-    { name: "depth", type: Number, value: 2,
+    { name: "depth", type: Number,
       description: "Root depth"
     }
 ]);

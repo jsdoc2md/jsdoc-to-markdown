@@ -1,6 +1,6 @@
 ##Global scope
 <a name="doSomething"></a>
-doSomething(options)
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -8,7 +8,7 @@ doSomething(options)
   - two `string` - second option
 
 <a name="doAnother"></a>
-doAnother(options)
+##doAnother(options)
 **Params**
 
 - options `Object` - the function options

@@ -1,5 +1,5 @@
 <a name="module_jacket"></a>
-jacket
+##jacket
 
 A module representing a jacket.
 
@@ -8,6 +8,6 @@ A module representing a jacket.
   * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
-jacket.zip()
+###jacket.zip()
 Open and close your Jacket.
 

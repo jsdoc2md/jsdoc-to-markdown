@@ -1,20 +1,20 @@
 ##Global scope
 <a name="Pizza"></a>
 
-class: Pizza
+##class: Pizza
 **Symbols**  
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-pizza.topping
+###pizza.topping
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-pizza.size
+###pizza.size
 the general size
 
   

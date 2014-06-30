@@ -1,5 +1,5 @@
 <a name="module_heaven"></a>
-heaven
+##heaven
 
 factory module creating dodgy cloud. object-with-static-class.
 
@@ -10,16 +10,16 @@ factory module creating dodgy cloud. object-with-static-class.
   * [\~class: Cloud](#module_heaven.Cloud)
 
 <a name="module_heaven.Cloud"></a>
-heaven.Cloud
+###heaven.Cloud
 access to the Cloud class
 
 **Type**: `module:heaven~Cloud`  
 <a name="module_heaven.createCloud"></a>
-heaven.createCloud()
+###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-\~class: Cloud
+###\~class: Cloud
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
@@ -28,8 +28,8 @@ The main class of machine
   * [cloud.vibe](#module_heaven.Cloud#vibe)
 
 <a name="module_heaven.Cloud#eyes"></a>
-cloud.eyes
+####cloud.eyes
 **Type**: `number`  
 <a name="module_heaven.Cloud#vibe"></a>
-cloud.vibe
+####cloud.vibe
 **Type**: `string`  
