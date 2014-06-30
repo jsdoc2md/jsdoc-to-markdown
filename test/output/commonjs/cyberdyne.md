@@ -1,36 +1,36 @@
 <a name="module_cyberdyne"></a>
-##cyberdyne
+##cyberdyne *module*
 
 exports an object.. has an inner class.
 
   
 **Symbols**  
-  * [cyber.createMachine()](#module_cyberdyne.createMachine)
-  * [\~something](#module_cyberdyne.something)
-  * [class: \~cyber.Machine](#module_cyberdyne.Machine)
+  * [cyber.createMachine() *function*](#module_cyberdyne.createMachine)
+  * [\~something *member*](#module_cyberdyne.something)
+  * [\~cyber.Machine *class*](#module_cyberdyne.Machine)
 
 <a name="module_cyberdyne.createMachine"></a>
-###cyber.createMachine()
+###cyber.createMachine() *function*
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-###\~something
+###\~something *member*
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
   
 <a name="module_cyberdyne.Machine"></a>
 
-###class: \~cyber.Machine
+###\~cyber.Machine *class*
 The main class of machine
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 **Symbols**  
-  * [machine.eyes](#module_cyberdyne.Machine#eyes)
-  * [machine.vibe](#module_cyberdyne.Machine#vibe)
+  * [machine.eyes *member*](#module_cyberdyne.Machine#eyes)
+  * [machine.vibe *member*](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.Machine#eyes"></a>
-####machine.eyes
+####machine.eyes *member*
 **Type**: `number`  
 <a name="module_cyberdyne.Machine#vibe"></a>
-####machine.vibe
+####machine.vibe *member*
 **Type**: `string`  

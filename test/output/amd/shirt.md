@@ -1,33 +1,33 @@
 <a name="module_shirt"></a>
-##shirt
+##shirt *module*
 **Version**: 1.0  
 
 A module representing a shirt.
 
   
 **Symbols**  
-  * [shirt.color](#module_shirt.color)
-  * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+  * [shirt.color *member*](#module_shirt.color)
+  * [shirt.Turtleneck *class*](#module_shirt.Turtleneck)
 
 <a name="module_shirt.color"></a>
-###shirt.color
+###shirt.color *member*
 A property of the module.
 
   
 <a name="module_shirt.Turtleneck"></a>
 
-###class: shirt.Turtleneck
+###shirt.Turtleneck *class*
 <a name="module_shirt.Turtleneck"></a>
-###new shirt.Turtleneck()
+###new shirt.Turtleneck() *class*
 **Params**
 
 -  `number` - the size innit
 
 **Symbols**  
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
+  * [turtleneck.size *member*](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck#size"></a>
-####turtleneck.size
+####turtleneck.size *member*
 A property of the class.
 
   

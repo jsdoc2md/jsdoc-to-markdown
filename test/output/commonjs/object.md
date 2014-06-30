@@ -1,20 +1,20 @@
 <a name="module_object"></a>
-##object
+##object *module*
 
 simple object export
 
   
 **Symbols**  
-  * [object.one](#module_object.one)
-  * [object.three(four, five)](#module_object.three)
+  * [object.one *member*](#module_object.one)
+  * [object.three(four, five) *function*](#module_object.three)
 
 <a name="module_object.one"></a>
-###object.one
+###object.one *member*
 first property
 
   
 <a name="module_object.three"></a>
-###object.three(four, five)
+###object.three(four, five) *function*
 a function
 
 **Params**

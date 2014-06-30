@@ -1,10 +1,10 @@
 ##Global scope
 <a name="globalFunc"></a>
-##globalFunc()
+##globalFunc() *function*
 a global function
 
 <a name="exampled"></a>
-##exampled()
+##exampled() *function*
 a function with an example
 
 **Example**  
@@ -12,7 +12,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-##multiExampled()
+##multiExampled() *function*
 a function with multiple examples
 
 **Example**  
@@ -24,39 +24,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected()
+##_protected() *function*
 **Access**: protected  
 <a name="withAuthor"></a>
-##withAuthor()
+##withAuthor() *function*
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-##~~oldFunction()~~
+##~~oldFunction() *function*~~
 ***Deprecated***  
 <a name="newFunction"></a>
-##newFunction()
+##newFunction() *function*
 **Since**: v0.10.28  
 <a name="withParam"></a>
-##withParam(one)
+##withParam(one) *function*
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-##withParams(one, two)
+##withParams(one, two) *function*
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-##withOptional(one, [two])
+##withOptional(one, [two]) *function*
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-##withBullets(one, two)
+##withBullets(one, two) *function*
 this description has 
 
 - bullet
@@ -70,11 +70,11 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-##returnsSomething()
+##returnsSomething() *function*
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-##returnsSomethingDesc()
+##returnsSomethingDesc() *function*
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-##returnsSeveral()
+##returnsSeveral() *function*
 **Returns**: `object` | `string` - this return has several types  

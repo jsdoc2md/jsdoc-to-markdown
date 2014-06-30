@@ -1,17 +1,17 @@
 ##Global scope
 <a name="variable"></a>
-##variable
+##variable *member*
 a global variable
 
   
 <a name="typed"></a>
-##typed
+##typed *member*
 **Type**: `string`  
 <a name="types"></a>
-##types
+##types *member*
 **Type**: `string` | `number`  
 <a name="exampled"></a>
-##exampled
+##exampled *member*
 a var with an example
 
   
@@ -20,7 +20,7 @@ a var with an example
 var another = 100;
 ```
 <a name="examples"></a>
-##examples
+##examples *member*
 a var with multiple examples
 
   
@@ -33,30 +33,30 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected
+##_protected *member*
 **Access**: protected  
   
 <a name="withAuthor"></a>
-##withAuthor
+##withAuthor *member*
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-##hasDefault
+##hasDefault *member*
 **Default**: `23`  
   
 <a name="hasDefaultObject"></a>
-##hasDefaultObject
+##hasDefaultObject *member*
 **Default**: `{"one":1,"two":2}`  
   
 <a name="deprecated"></a>
-##~~deprecated~~
+##~~deprecated *member*~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
-##readOnly
+##readOnly *member*
 **Read only**: true  
   
 <a name="hasSince"></a>
-##hasSince
+##hasSince *member*
   
 **Since**: v0.10.28  

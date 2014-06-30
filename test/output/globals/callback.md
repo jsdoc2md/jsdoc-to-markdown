@@ -1,13 +1,13 @@
 ##Global scope
 <a name="read"></a>
-##read(filename, done)
+##read(filename, done) *function*
 **Params**
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="onComplete"></a>
-##callback: onComplete
+##callback: onComplete *typedef*
 Called when an async operation completes
 
 **Params**

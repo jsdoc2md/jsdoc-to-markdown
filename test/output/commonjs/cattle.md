@@ -1,31 +1,31 @@
 <a name="module_cattle"></a>
-##cattle
+##cattle *module*
 
 exported object, with-inner-members
 
   
 **Symbols**  
-  * [cattle.createCow()](#module_cattle.createCow)
-  * [\~innerMember](#module_cattle.innerMember)
-  * [\~innerFuction()](#module_cattle.innerFuction)
-  * [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+  * [cattle.createCow() *function*](#module_cattle.createCow)
+  * [\~innerMember *member*](#module_cattle.innerMember)
+  * [\~innerFuction() *function*](#module_cattle.innerFuction)
+  * [~~\~anotherInnerFuction() *function*~~](#module_cattle.anotherInnerFuction)
 
 <a name="module_cattle.createCow"></a>
-###cattle.createCow()
+###cattle.createCow() *function*
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-###\~innerMember
+###\~innerMember *member*
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
   
 <a name="module_cattle.innerFuction"></a>
-###\~innerFuction()
+###\~innerFuction() *function*
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-###~~\~anotherInnerFuction()~~
+###~~\~anotherInnerFuction() *function*~~
 another inner function
 
 ***Deprecated***  
