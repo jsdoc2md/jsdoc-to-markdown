@@ -26,6 +26,7 @@
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [class: \~heaven.Cloud](#module_heaven.Cloud)
+  * [const: \~FACT](#module_heaven.FACT)
 * commonjs/ignore
   * [ignore.visible](#module_commonjs/ignore.visible)
 * commonjs/object-with-alias
@@ -87,8 +88,8 @@
   * [class: Something](#Something)
   * [class: Pizza](#Pizza)
   * [class: Plucker](#Plucker)
-  * [CONST_ONE](#CONST_ONE)
-  * [~~CONST_TWO~~](#CONST_TWO)
+  * [const: CONST_ONE](#CONST_ONE)
+  * [~~const: CONST_TWO~~](#CONST_TWO)
   * [callback: onComplete](#onComplete)
   * [type: NumberLike](#NumberLike)
 
@@ -274,15 +275,20 @@ The main class of machine
 <a name="module_heaven.Cloud#vibe"></a>
 ####cloud.vibe
 **Type**: `string`  
-<a name="module_heaven.Cloud.ClassMethod"></a>
-####Cloud.ClassMethod()
+<a name="module_heaven.Cloud.classMethod"></a>
+####Cloud.classMethod()
 a class method
 
-<a name="module_heaven.Cloud.ClassConst"></a>
-####Cloud.ClassConst
+<a name="module_heaven.Cloud.SPACES"></a>
+####const: Cloud.SPACES
 a class constant
 
 **Type**: `number`  
+<a name="module_heaven.FACT"></a>
+###const: \~FACT
+an inner constant
+
+**Type**: `boolean`  
 <a name="module_commonjs/ignore"></a>
 ##commonjs/ignore
 
@@ -387,12 +393,12 @@ var result = sum(1, 1);
 ```
 ##Global scope
 <a name="CONST_ONE"></a>
-##CONST_ONE
+##const: CONST_ONE
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-##~~CONST_TWO~~
+##~~const: CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  

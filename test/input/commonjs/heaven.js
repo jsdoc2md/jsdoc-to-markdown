@@ -15,7 +15,7 @@ access to the Cloud class
 exports.Cloud = Cloud;
 
 /**
-@class 
+@class
 @classdesc The main class of machine
 */
 function Cloud(){
@@ -33,10 +33,16 @@ function Cloud(){
 /**
 a class method
 */
-Cloud.ClassMethod = function(){};
+Cloud.classMethod = function(){};
 
 /**
 a class constant
-@const {number} 
+@const {number}
 */
-Cloud.ClassConst = 94;
+Cloud.SPACES = 94;
+
+/**
+an inner constant
+@const {boolean}
+*/
+var FACT = false;

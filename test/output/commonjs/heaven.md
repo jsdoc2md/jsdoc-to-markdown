@@ -8,6 +8,7 @@ factory module creating dodgy cloud. object-with-static-class.
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [class: \~heaven.Cloud](#module_heaven.Cloud)
+  * [const: \~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>
 ###heaven.Cloud
@@ -26,8 +27,8 @@ The main class of machine
 **Symbols**  
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
-  * [Cloud.ClassMethod()](#module_heaven.Cloud.ClassMethod)
-  * [Cloud.ClassConst](#module_heaven.Cloud.ClassConst)
+  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud#eyes"></a>
 ####cloud.eyes
@@ -35,12 +36,17 @@ The main class of machine
 <a name="module_heaven.Cloud#vibe"></a>
 ####cloud.vibe
 **Type**: `string`  
-<a name="module_heaven.Cloud.ClassMethod"></a>
-####Cloud.ClassMethod()
+<a name="module_heaven.Cloud.classMethod"></a>
+####Cloud.classMethod()
 a class method
 
-<a name="module_heaven.Cloud.ClassConst"></a>
-####Cloud.ClassConst
+<a name="module_heaven.Cloud.SPACES"></a>
+####const: Cloud.SPACES
 a class constant
 
 **Type**: `number`  
+<a name="module_heaven.FACT"></a>
+###const: \~FACT
+an inner constant
+
+**Type**: `boolean`  
