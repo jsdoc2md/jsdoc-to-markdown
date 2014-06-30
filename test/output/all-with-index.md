@@ -278,6 +278,11 @@ The main class of machine
 ####Cloud.ClassMethod()
 a class method
 
+<a name="module_heaven.Cloud.ClassConst"></a>
+####Cloud.ClassConst
+a class constant
+
+**Type**: `number`  
 <a name="module_commonjs/ignore"></a>
 ##commonjs/ignore
 

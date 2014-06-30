@@ -27,6 +27,7 @@ The main class of machine
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.ClassMethod()](#module_heaven.Cloud.ClassMethod)
+  * [Cloud.ClassConst](#module_heaven.Cloud.ClassConst)
 
 <a name="module_heaven.Cloud#eyes"></a>
 ####cloud.eyes
@@ -38,3 +39,8 @@ The main class of machine
 ####Cloud.ClassMethod()
 a class method
 
+<a name="module_heaven.Cloud.ClassConst"></a>
+####Cloud.ClassConst
+a class constant
+
+**Type**: `number`  

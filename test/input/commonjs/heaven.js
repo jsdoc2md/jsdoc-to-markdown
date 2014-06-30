@@ -34,3 +34,9 @@ function Cloud(){
 a class method
 */
 Cloud.ClassMethod = function(){};
+
+/**
+a class constant
+@const {number} 
+*/
+Cloud.ClassConst = 94;
