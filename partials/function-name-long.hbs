@@ -6,5 +6,6 @@
     {{~#if memberof}}{{parentName}}.{{/if}}
   {{~/if}}
   {{~{name}}}({{methodSig params}})
+  {{~>name-suffix}}
   {{~#if deprecated}}~~{{/if}}{{>icon}}
 {{~/if}}

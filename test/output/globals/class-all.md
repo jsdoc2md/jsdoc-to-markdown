@@ -1,12 +1,12 @@
 ##Global scope
 <a name="All"></a>
 
-##~~class: All~~
+##~~class: All (1)~~
 a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-###~~new All(input, [options])~~
+###~~new All(input, [options]) (1)~~
 the constructor description
 
 **Params**
@@ -22,24 +22,24 @@ the constructor description
 var yeah = new Everything(true);
 ```
 **Symbols**  
-  * [all.topping](#All#topping)
-  * [all.size](#All#size)
-  * [~~all.allThings(one, two)~~](#All#allThings)
+  * [all.topping (2)](#All#topping)
+  * [all.size (2)](#All#size)
+  * [~~all.allThings(one, two) (2)~~](#All#allThings)
 
 <a name="All#topping"></a>
-###all.topping
+###all.topping (2)
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size
+###all.size (2)
 the general size
 
   
 <a name="All#allThings"></a>
-###~~all.allThings(one, two)~~
+###~~all.allThings(one, two) (2)~~
 This function has all tags set
 
 **Params**

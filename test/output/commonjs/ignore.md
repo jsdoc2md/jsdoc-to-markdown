@@ -5,10 +5,10 @@ module with ignored shiz
 
   
 **Symbols**  
-  * [ignore.visible](#module_ignore.visible)
+  * [ignore.visible (2)](#module_ignore.visible)
 
 <a name="module_ignore.visible"></a>
-###ignore.visible
+###ignore.visible (2)
 visible property
 
   

@@ -5,10 +5,10 @@ module with private shiz
 
   
 **Symbols**  
-  * [private.notprivate](#module_private.notprivate)
+  * [private.notprivate (2)](#module_private.notprivate)
 
 <a name="module_private.notprivate"></a>
-###private.notprivate
+###private.notprivate (2)
 visible property
 
   

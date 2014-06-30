@@ -1,6 +1,6 @@
 ##Global scope
 <a name="eFileType"></a>
-###eFileType
+###eFileType (1)
 Enum for the `type` value
 
 **Enum** with properties: `NOEXIST`, `FILE`, `DIR`  

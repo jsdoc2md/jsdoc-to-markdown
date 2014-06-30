@@ -1,12 +1,12 @@
-{{#each (where data kind="member")}}  * [{{>member-name-long}}](#{{{anchorName longname}}}){{!>summary}}
+{{#each (where data kind="member")}}  * [{{>member-name-long}}](#{{{anchorName longname}}})
 {{/each~}}
-{{#each (where data kind="function")}}  * [{{>function-name-long}}](#{{{anchorName longname}}}){{!>summary}}
+{{#each (where data kind="function")}}  * [{{>function-name-long}}](#{{{anchorName longname}}})
 {{/each~}}
-{{#each (where data kind="class")}}  * [{{>class-name}}](#{{{anchorName longname}}}){{!>summary}}
+{{#each (where data kind="class")}}  * [{{>class-name}}](#{{{anchorName longname}}})
 {{/each~}}
-{{#each (where data kind="constant")}}  * [{{>member-name-long}}](#{{{anchorName longname}}}){{!>summary}}
+{{#each (where data kind="constant")}}  * [{{>member-name-long}}](#{{{anchorName longname}}})
 {{/each~}}
-{{#each (where data kind="typedef")}}  * [{{>typedef-name}}](#{{{anchorName longname}}}){{!>summary}}
+{{#each (where data kind="typedef")}}  * [{{>typedef-name}}](#{{{anchorName longname}}})
 {{/each~}}
 {{#each (where data kind="event")}}  * [{{>event-name}}](#{{{anchorName longname}}})
 {{/each~}}

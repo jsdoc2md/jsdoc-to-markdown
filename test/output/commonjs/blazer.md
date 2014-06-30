@@ -5,9 +5,9 @@ A module representing a blazer.
 
   
 **Symbols**  
-  * [blazer.zip()](#module_blazer#zip)
+  * [blazer.zip() (2)](#module_blazer#zip)
 
 <a name="module_blazer#zip"></a>
-###blazer.zip()
+###blazer.zip() (2)
 Open and close your Blazer.
 

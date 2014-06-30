@@ -5,21 +5,21 @@ simple object export
 
   
 **Symbols**  
-  * [_.one](#module_object-with-alias.one)
-  * [_.two](#module_object-with-alias.two)
-  * [_.three()](#module_object-with-alias.three)
+  * [_.one (2)](#module_object-with-alias.one)
+  * [_.two (2)](#module_object-with-alias.two)
+  * [_.three() (2)](#module_object-with-alias.three)
 
 <a name="module_object-with-alias.one"></a>
-###_.one
+###_.one (2)
 first property
 
   
 <a name="module_object-with-alias.two"></a>
-###_.two
+###_.two (2)
 second property
 
   
 <a name="module_object-with-alias.three"></a>
-###_.three()
+###_.three() (2)
 a function
 

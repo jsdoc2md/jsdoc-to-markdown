@@ -1,96 +1,96 @@
 * file-pet <sub>class</sub>
-  * [filePet.instie](#module_file-pet#instie)
-  * [filePet.files](#module_file-pet#files)
-  * [filePet.delete(paths)](#module_file-pet#delete)
+  * [filePet.instie (2)](#module_file-pet#instie)
+  * [filePet.files (2)](#module_file-pet#files)
+  * [filePet.delete(paths) (2)](#module_file-pet#delete)
 * jacket <sub>class</sub>
-  * [jacket.zip()](#module_jacket#zip)
+  * [jacket.zip() (2)](#module_jacket#zip)
 * shirt
-  * [shirt.color](#module_shirt.color)
-  * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+  * [shirt.color (2)](#module_shirt.color)
+  * [class: shirt.Turtleneck (2)](#module_shirt.Turtleneck)
 * blazer <sub>class</sub>
-  * [blazer.zip()](#module_blazer#zip)
+  * [blazer.zip() (2)](#module_blazer#zip)
 * cattle
-  * [cattle.createCow()](#module_cattle.createCow)
-  * [\~innerMember](#module_cattle.innerMember)
-  * [\~innerFuction()](#module_cattle.innerFuction)
-  * [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+  * [cattle.createCow() (2)](#module_cattle.createCow)
+  * [\~innerMember (2)](#module_cattle.innerMember)
+  * [\~innerFuction() (2)](#module_cattle.innerFuction)
+  * [~~\~anotherInnerFuction() (2)~~](#module_cattle.anotherInnerFuction)
 * commonjs/cyberdyne
-  * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
-  * [\~something](#module_commonjs/cyberdyne.something)
-  * [\~class: Machine](#module_commonjs/cyberdyne.Machine)
+  * [cyber.createMachine() (2)](#module_commonjs/cyberdyne.createMachine)
+  * [\~something (2)](#module_commonjs/cyberdyne.something)
+  * [\~class: Machine (2)](#module_commonjs/cyberdyne.Machine)
 * file-set <sub>class</sub>
-  * [fileSet.files](#module_file-set#files)
-  * [fileSet.delete(paths)](#module_file-set#delete)
+  * [fileSet.files (2)](#module_file-set#files)
+  * [fileSet.delete(paths) (2)](#module_file-set#delete)
 * commonjs/function <sub>function</sub>
 * heaven
-  * [heaven.Cloud](#module_heaven.Cloud)
-  * [heaven.createCloud()](#module_heaven.createCloud)
-  * [\~class: Cloud](#module_heaven.Cloud)
+  * [heaven.Cloud (2)](#module_heaven.Cloud)
+  * [heaven.createCloud() (2)](#module_heaven.createCloud)
+  * [\~class: Cloud (2)](#module_heaven.Cloud)
 * commonjs/ignore
-  * [ignore.visible](#module_commonjs/ignore.visible)
+  * [ignore.visible (2)](#module_commonjs/ignore.visible)
 * commonjs/object-with-alias
-  * [_.one](#module_commonjs/object-with-alias.one)
-  * [_.two](#module_commonjs/object-with-alias.two)
-  * [_.three()](#module_commonjs/object-with-alias.three)
+  * [_.one (2)](#module_commonjs/object-with-alias.one)
+  * [_.two (2)](#module_commonjs/object-with-alias.two)
+  * [_.three() (2)](#module_commonjs/object-with-alias.three)
 * commonjs/object
-  * [object.one](#module_commonjs/object.one)
-  * [object.three(four, five)](#module_commonjs/object.three)
+  * [object.one (2)](#module_commonjs/object.one)
+  * [object.three(four, five) (2)](#module_commonjs/object.three)
 * private
-  * [private.notprivate](#module_private.notprivate)
+  * [private.notprivate (2)](#module_private.notprivate)
 * commonjs/single-value <sub>member</sub>
 * commonjs/sum-alias
 * commonjs/sum(a, b)
 
 * Globals
-  * [eFileType](#eFileType)
-  * [visible](#visible)
-  * [variable](#variable)
-  * [typed](#typed)
-  * [types](#types)
-  * [exampled](#exampled)
-  * [examples](#examples)
-  * [_protected](#_protected)
-  * [withAuthor](#withAuthor)
-  * [hasDefault](#hasDefault)
-  * [hasDefaultObject](#hasDefaultObject)
-  * [~~deprecated~~](#deprecated)
-  * [readOnly](#readOnly)
-  * [hasSince](#hasSince)
-  * [module:sum-alias(a, b)](#module_sum-alias)
-  * [read(filename, done)](#read)
-  * [globalFunc()](#globalFunc)
-  * [exampled()](#exampled)
-  * [multiExampled()](#multiExampled)
-  * [_protected()](#_protected)
-  * [withAuthor()](#withAuthor)
-  * [~~oldFunction()~~](#oldFunction)
-  * [newFunction()](#newFunction)
-  * [withParam(one)](#withParam)
-  * [withParams(one, two)](#withParams)
-  * [withOptional(one, [two])](#withOptional)
-  * [withBullets(one, two)](#withBullets)
-  * [returnsSomething()](#returnsSomething)
-  * [returnsSomethingDesc()](#returnsSomethingDesc)
-  * [returnsSeveral()](#returnsSeveral)
-  * [doSomething(options)](#doSomething)
-  * [doAnother(options)](#doAnother)
-  * [pluck(...prop)](#pluck)
-  * [requirer()](#requirer)
-  * [setMagicNumber(x)](#setMagicNumber)
-  * [doSomething(options)](#doSomething)
-  * [~~class: All~~](#All)
-  * [class: Person](#Person)
-  * [class: Car](#Car)
-  * [class: Pipe](#Pipe)
-  * [~~class: Everything~~](#Everything)
-  * [class: Rice](#Rice)
-  * [class: Something](#Something)
-  * [class: Pizza](#Pizza)
-  * [class: Plucker](#Plucker)
-  * [CONST_ONE](#CONST_ONE)
-  * [~~CONST_TWO~~](#CONST_TWO)
-  * [callback: onComplete](#onComplete)
-  * [type: NumberLike](#NumberLike)
+  * [eFileType (1)](#eFileType)
+  * [visible (1)](#visible)
+  * [variable (1)](#variable)
+  * [typed (1)](#typed)
+  * [types (1)](#types)
+  * [exampled (1)](#exampled)
+  * [examples (1)](#examples)
+  * [_protected (1)](#_protected)
+  * [withAuthor (1)](#withAuthor)
+  * [hasDefault (1)](#hasDefault)
+  * [hasDefaultObject (1)](#hasDefaultObject)
+  * [~~deprecated (1)~~](#deprecated)
+  * [readOnly (1)](#readOnly)
+  * [hasSince (1)](#hasSince)
+  * [module:sum-alias(a, b) (1)](#module_sum-alias)
+  * [read(filename, done) (1)](#read)
+  * [globalFunc() (1)](#globalFunc)
+  * [exampled() (1)](#exampled)
+  * [multiExampled() (1)](#multiExampled)
+  * [_protected() (1)](#_protected)
+  * [withAuthor() (1)](#withAuthor)
+  * [~~oldFunction() (1)~~](#oldFunction)
+  * [newFunction() (1)](#newFunction)
+  * [withParam(one) (1)](#withParam)
+  * [withParams(one, two) (1)](#withParams)
+  * [withOptional(one, [two]) (1)](#withOptional)
+  * [withBullets(one, two) (1)](#withBullets)
+  * [returnsSomething() (1)](#returnsSomething)
+  * [returnsSomethingDesc() (1)](#returnsSomethingDesc)
+  * [returnsSeveral() (1)](#returnsSeveral)
+  * [doSomething(options) (1)](#doSomething)
+  * [doAnother(options) (1)](#doAnother)
+  * [pluck(...prop) (1)](#pluck)
+  * [requirer() (1)](#requirer)
+  * [setMagicNumber(x) (1)](#setMagicNumber)
+  * [doSomething(options) (1)](#doSomething)
+  * [~~class: All (1)~~](#All)
+  * [class: Person (1)](#Person)
+  * [class: Car (1)](#Car)
+  * [class: Pipe (1)](#Pipe)
+  * [~~class: Everything (1)~~](#Everything)
+  * [class: Rice (1)](#Rice)
+  * [class: Something (1)](#Something)
+  * [class: Pizza (1)](#Pizza)
+  * [class: Plucker (1)](#Plucker)
+  * [CONST_ONE (1)](#CONST_ONE)
+  * [~~CONST_TWO (1)~~](#CONST_TWO)
+  * [callback: onComplete (1)](#onComplete)
+  * [type: NumberLike (1)](#NumberLike)
 
 <a name="module_file-pet"></a>
 ##file-pet
@@ -103,17 +103,17 @@ this module returns a pet of files
 var cowFiles = FilePet("cow/*");
 ```
 <a name="module_file-pet#instie"></a>
-###filePet.instie
+###filePet.instie (2)
 an instance ting
 
   
 <a name="module_file-pet#files"></a>
-###filePet.files
+###filePet.files (2)
 the static property
 
   
 <a name="module_file-pet#delete"></a>
-###filePet.delete(paths)
+###filePet.delete(paths) (2)
 A static methy meth
 
 **Params**
@@ -127,7 +127,7 @@ A module representing a jacket.
 
   
 <a name="module_jacket#zip"></a>
-###jacket.zip()
+###jacket.zip() (2)
 Open and close your Jacket.
 
 <a name="module_shirt"></a>
@@ -138,21 +138,21 @@ A module representing a shirt.
 
   
 <a name="module_shirt.color"></a>
-###shirt.color
+###shirt.color (2)
 A property of the module.
 
   
 <a name="module_shirt.Turtleneck"></a>
 
-##class: shirt.Turtleneck
+##class: shirt.Turtleneck (2)
 <a name="module_shirt.Turtleneck"></a>
-###new shirt.Turtleneck()
+###new shirt.Turtleneck() (2)
 **Params**
 
 -  `number` - the size innit
 
 <a name="module_shirt.Turtleneck#size"></a>
-###turtleneck.size
+###turtleneck.size (3)
 A property of the class.
 
   
@@ -163,7 +163,7 @@ A module representing a blazer.
 
   
 <a name="module_blazer#zip"></a>
-###blazer.zip()
+###blazer.zip() (2)
 Open and close your Blazer.
 
 <a name="module_cattle"></a>
@@ -173,21 +173,21 @@ exported object, with-inner-members
 
   
 <a name="module_cattle.createCow"></a>
-###cattle.createCow()
+###cattle.createCow() (2)
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-###\~innerMember
+###\~innerMember (2)
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
   
 <a name="module_cattle.innerFuction"></a>
-###\~innerFuction()
+###\~innerFuction() (2)
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-###~~\~anotherInnerFuction()~~
+###~~\~anotherInnerFuction() (2)~~
 another inner function
 
 ***Deprecated***  
@@ -199,25 +199,25 @@ exports an object.. has an inner class.
 
   
 <a name="module_commonjs/cyberdyne.createMachine"></a>
-###cyber.createMachine()
+###cyber.createMachine() (2)
 **Returns**: `module:cyberdyne~Machine`  
 <a name="module_commonjs/cyberdyne.something"></a>
-###\~something
+###\~something (2)
 random
 
 **Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
   
 <a name="module_commonjs/cyberdyne.Machine"></a>
 
-##\~class: Machine
+##\~class: Machine (2)
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
 <a name="module_commonjs/cyberdyne.Machine#eyes"></a>
-###machine.eyes
+###machine.eyes (3)
 **Type**: `number`  
 <a name="module_commonjs/cyberdyne.Machine#vibe"></a>
-###machine.vibe
+###machine.vibe (3)
 **Type**: `string`  
 <a name="module_file-set"></a>
 ##file-set
@@ -228,12 +228,12 @@ The main class of machine
 var fileSet = require("file-set");
 ```
 <a name="module_file-set#files"></a>
-###fileSet.files
+###fileSet.files (2)
 the static property
 
   
 <a name="module_file-set#delete"></a>
-###fileSet.delete(paths)
+###fileSet.delete(paths) (2)
 A static methy meth
 
 **Params**
@@ -255,24 +255,24 @@ factory module creating dodgy cloud. object-with-static-class.
 
   
 <a name="module_heaven.Cloud"></a>
-###heaven.Cloud
+###heaven.Cloud (2)
 access to the Cloud class
 
 **Type**: `module:heaven~Cloud`  
 <a name="module_heaven.createCloud"></a>
-###heaven.createCloud()
+###heaven.createCloud() (2)
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-##\~class: Cloud
+##\~class: Cloud (2)
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven.Cloud#eyes"></a>
-###cloud.eyes
+###cloud.eyes (3)
 **Type**: `number`  
 <a name="module_heaven.Cloud#vibe"></a>
-###cloud.vibe
+###cloud.vibe (3)
 **Type**: `string`  
 <a name="module_commonjs/ignore"></a>
 ##commonjs/ignore
@@ -281,7 +281,7 @@ module with ignored shiz
 
   
 <a name="module_commonjs/ignore.visible"></a>
-###ignore.visible
+###ignore.visible (2)
 visible property
 
   
@@ -292,17 +292,17 @@ simple object export
 
   
 <a name="module_commonjs/object-with-alias.one"></a>
-###_.one
+###_.one (2)
 first property
 
   
 <a name="module_commonjs/object-with-alias.two"></a>
-###_.two
+###_.two (2)
 second property
 
   
 <a name="module_commonjs/object-with-alias.three"></a>
-###_.three()
+###_.three() (2)
 a function
 
 <a name="module_commonjs/object"></a>
@@ -312,12 +312,12 @@ simple object export
 
   
 <a name="module_commonjs/object.one"></a>
-###object.one
+###object.one (2)
 first property
 
   
 <a name="module_commonjs/object.three"></a>
-###object.three(four, five)
+###object.three(four, five) (2)
 a function
 
 **Params**
@@ -339,7 +339,7 @@ module with private shiz
 
   
 <a name="module_private.notprivate"></a>
-###private.notprivate
+###private.notprivate (2)
 visible property
 
   
@@ -378,12 +378,12 @@ var result = sum(1, 1);
 ```
 ##Global scope
 <a name="CONST_ONE"></a>
-###CONST_ONE
+###CONST_ONE (1)
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-###~~CONST_TWO~~
+###~~CONST_TWO (1)~~
 This variable has all tags set
 
 ***Deprecated***  
@@ -396,30 +396,30 @@ This variable has all tags set
 var CONST_TWO = true;
 ```
 <a name="eFileType"></a>
-###eFileType
+###eFileType (1)
 Enum for the `type` value
 
 **Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  
 <a name="visible"></a>
-###visible
+###visible (1)
 a visible global
 
   
 <a name="variable"></a>
-###variable
+###variable (1)
 a global variable
 
   
 <a name="typed"></a>
-###typed
+###typed (1)
 **Type**: `string`  
 <a name="types"></a>
-###types
+###types (1)
 **Type**: `string | number`  
 <a name="exampled"></a>
-###exampled
+###exampled (1)
 a var with an example
 
   
@@ -428,7 +428,7 @@ a var with an example
 var another = 100;
 ```
 <a name="examples"></a>
-###examples
+###examples (1)
 a var with multiple examples
 
   
@@ -441,35 +441,35 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-###_protected
+###_protected (1)
 **Access**: protected  
   
 <a name="withAuthor"></a>
-###withAuthor
+###withAuthor (1)
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-###hasDefault
+###hasDefault (1)
 **Default**: `23`  
   
 <a name="hasDefaultObject"></a>
-###hasDefaultObject
+###hasDefaultObject (1)
 **Default**: `{"one":1,"two":2}`  
   
 <a name="deprecated"></a>
-###~~deprecated~~
+###~~deprecated (1)~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
-###readOnly
+###readOnly (1)
 **Read only**: true  
   
 <a name="hasSince"></a>
-###hasSince
+###hasSince (1)
   
 **Since**: v0.10.28  
 <a name="module_sum-alias"></a>
-###module:sum-alias(a, b)
+###module:sum-alias(a, b) (1)
 Sums two numbers together
 
 **Params**
@@ -483,18 +483,18 @@ Sums two numbers together
 var result = sum(1, 1);
 ```
 <a name="read"></a>
-###read(filename, done)
+###read(filename, done) (1)
 **Params**
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="globalFunc"></a>
-###globalFunc()
+###globalFunc() (1)
 a global function
 
 <a name="exampled"></a>
-###exampled()
+###exampled() (1)
 a function with an example
 
 **Example**  
@@ -502,7 +502,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-###multiExampled()
+###multiExampled() (1)
 a function with multiple examples
 
 **Example**  
@@ -514,39 +514,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-###_protected()
+###_protected() (1)
 **Access**: protected  
 <a name="withAuthor"></a>
-###withAuthor()
+###withAuthor() (1)
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-###~~oldFunction()~~
+###~~oldFunction() (1)~~
 ***Deprecated***  
 <a name="newFunction"></a>
-###newFunction()
+###newFunction() (1)
 **Since**: v0.10.28  
 <a name="withParam"></a>
-###withParam(one)
+###withParam(one) (1)
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-###withParams(one, two)
+###withParams(one, two) (1)
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-###withOptional(one, [two])
+###withOptional(one, [two]) (1)
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-###withBullets(one, two)
+###withBullets(one, two) (1)
 this description has 
 
 - bullet
@@ -560,16 +560,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-###returnsSomething()
+###returnsSomething() (1)
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-###returnsSomethingDesc()
+###returnsSomethingDesc() (1)
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-###returnsSeveral()
+###returnsSeveral() (1)
 **Returns**: `object` | `string` - this return has several types  
 <a name="doSomething"></a>
-###doSomething(options)
+###doSomething(options) (1)
 **Params**
 
 - options `object` - the function options
@@ -577,13 +577,13 @@ and needs this line to separate the above list from the below
   - two `string` - second option
 
 <a name="doAnother"></a>
-###doAnother(options)
+###doAnother(options) (1)
 **Params**
 
 - options `Object` - the function options
 
 <a name="pluck"></a>
-###pluck(...prop)
+###pluck(...prop) (1)
 This function takes variable input
 
 **Params**
@@ -591,11 +591,11 @@ This function takes variable input
 - ...prop `string` - the property(s) as input
 
 <a name="requirer"></a>
-###requirer()
+###requirer() (1)
 ensure you have some-module installed
 
 <a name="setMagicNumber"></a>
-###setMagicNumber(x)
+###setMagicNumber(x) (1)
 Set the magic number.
 
 **Params**
@@ -603,7 +603,7 @@ Set the magic number.
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
-###doSomething(options)
+###doSomething(options) (1)
 **Params**
 
 - options `object` - the function options
@@ -612,12 +612,12 @@ Set the magic number.
 
 <a name="All"></a>
 
-##~~class: All~~
+##~~class: All (1)~~
 a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-###~~new All(input, [options])~~
+###~~new All(input, [options]) (1)~~
 the constructor description
 
 **Params**
@@ -633,19 +633,19 @@ the constructor description
 var yeah = new Everything(true);
 ```
 <a name="All#topping"></a>
-###all.topping
+###all.topping (2)
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size
+###all.size (2)
 the general size
 
   
 <a name="All#allThings"></a>
-###~~all.allThings(one, two)~~
+###~~all.allThings(one, two) (2)~~
 This function has all tags set
 
 **Params**
@@ -663,19 +663,19 @@ all.allTogether(true);
 ```
 <a name="Person"></a>
 
-##class: Person
+##class: Person (1)
 simple class description
 
 **Extends**: `Object`  
 <a name="Person"></a>
-###new Person()
+###new Person() (1)
 a constructor description
 
 <a name="Car"></a>
 
-##class: Car
+##class: Car (1)
 <a name="Car"></a>
-###new Car([options])
+###new Car([options]) (1)
 a constructor with args
 
 **Params**
@@ -684,18 +684,18 @@ a constructor with args
 
 <a name="Pipe"></a>
 
-##class: Pipe
+##class: Pipe (1)
 a class which extends
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
 
-##~~class: Everything~~
+##~~class: Everything (1)~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
-###~~new Everything(input, [options])~~
+###~~new Everything(input, [options]) (1)~~
 the constructor description
 
 **Params**
@@ -712,24 +712,24 @@ var yeah = new Everything(true);
 ```
 <a name="Rice"></a>
 
-##class: Rice
+##class: Rice (1)
 <a name="Rice#event_cooked"></a>
-###event: "cooked"
+###event: "cooked" (2)
 Fired when rice is ready
 
 <a name="Rice#event_cooking"></a>
-###event: "cooking"
+###event: "cooking" (2)
 Fired when rice is cooking
 
 <a name="Something"></a>
 
-##class: Something
+##class: Something (1)
 <a name="Something#methodOne"></a>
-###something.methodOne()
+###something.methodOne() (2)
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two)~~
+###~~something.allTogether(one, two) (2)~~
 This function has all tags set
 
 **Params**
@@ -747,24 +747,24 @@ something.allTogether(true);
 ```
 <a name="Pizza"></a>
 
-##class: Pizza
+##class: Pizza (1)
 <a name="Pizza#topping"></a>
-###pizza.topping
+###pizza.topping (2)
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###pizza.size
+###pizza.size (2)
 the general size
 
   
 <a name="Plucker"></a>
 
-##class: Plucker
+##class: Plucker (1)
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...args, ...three)
+###plucker.doPluck(one, ...args, ...three) (2)
 This function takes variable input
 
 **Params**
@@ -774,7 +774,7 @@ This function takes variable input
 - ...three `string` - more input
 
 <a name="onComplete"></a>
-###callback: onComplete
+###callback: onComplete (1)
 Called when an async operation completes
 
 **Params**
@@ -784,7 +784,7 @@ Called when an async operation completes
 
 **Type**: `function`  
 <a name="NumberLike"></a>
-###type: NumberLike
+###type: NumberLike (1)
 A number, or a string containing a number.
 
 **Type**: `number | string`  

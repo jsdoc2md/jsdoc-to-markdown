@@ -5,16 +5,16 @@ simple object export
 
   
 **Symbols**  
-  * [object.one](#module_object.one)
-  * [object.three(four, five)](#module_object.three)
+  * [object.one (2)](#module_object.one)
+  * [object.three(four, five) (2)](#module_object.three)
 
 <a name="module_object.one"></a>
-###object.one
+###object.one (2)
 first property
 
   
 <a name="module_object.three"></a>
-###object.three(four, five)
+###object.three(four, five) (2)
 a function
 
 **Params**
