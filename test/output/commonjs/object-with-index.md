@@ -1,5 +1,5 @@
 <a name="module_object"></a>
-##object (1)
+#object (1)
 
 simple object export
 
@@ -9,12 +9,12 @@ simple object export
   * [object.three(four, five) (2)](#module_object.three)
 
 <a name="module_object.one"></a>
-###object.one (2)
+##object.one (2)
 first property
 
   
 <a name="module_object.three"></a>
-###object.three(four, five) (2)
+##object.three(four, five) (2)
 a function
 
 **Params**

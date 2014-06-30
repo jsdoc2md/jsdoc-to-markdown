@@ -1,5 +1,5 @@
 <a name="module_cattle"></a>
-##cattle (1)
+#cattle (1)
 
 exported object, with-inner-members
 
@@ -11,21 +11,21 @@ exported object, with-inner-members
   * [~~\~anotherInnerFuction() (2)~~](#module_cattle.anotherInnerFuction)
 
 <a name="module_cattle.createCow"></a>
-###cattle.createCow() (2)
+##cattle.createCow() (2)
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-###\~innerMember (2)
+##\~innerMember (2)
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
   
 <a name="module_cattle.innerFuction"></a>
-###\~innerFuction() (2)
+##\~innerFuction() (2)
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-###~~\~anotherInnerFuction() (2)~~
+##~~\~anotherInnerFuction() (2)~~
 another inner function
 
 ***Deprecated***  

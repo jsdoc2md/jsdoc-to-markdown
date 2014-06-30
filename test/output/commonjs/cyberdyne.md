@@ -1,5 +1,5 @@
 <a name="module_cyberdyne"></a>
-##cyberdyne (1)
+#cyberdyne (1)
 
 exports an object.. has an inner class.
 
@@ -10,10 +10,10 @@ exports an object.. has an inner class.
   * [\~class: Machine (2)](#module_cyberdyne.Machine)
 
 <a name="module_cyberdyne.createMachine"></a>
-###cyber.createMachine() (2)
+##cyber.createMachine() (2)
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-###\~something (2)
+##\~something (2)
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  

@@ -1,5 +1,5 @@
 <a name="module_ignore"></a>
-##ignore (1)
+#ignore (1)
 
 module with ignored shiz
 
@@ -8,7 +8,7 @@ module with ignored shiz
   * [ignore.visible (2)](#module_ignore.visible)
 
 <a name="module_ignore.visible"></a>
-###ignore.visible (2)
+##ignore.visible (2)
 visible property
 
   

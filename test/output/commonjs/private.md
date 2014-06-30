@@ -1,5 +1,5 @@
 <a name="module_private"></a>
-##private (1)
+#private (1)
 
 module with private shiz
 
@@ -8,7 +8,7 @@ module with private shiz
   * [private.notprivate (2)](#module_private.notprivate)
 
 <a name="module_private.notprivate"></a>
-###private.notprivate (2)
+##private.notprivate (2)
 visible property
 
   

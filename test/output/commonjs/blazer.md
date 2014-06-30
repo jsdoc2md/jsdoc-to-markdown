@@ -1,5 +1,5 @@
 <a name="module_blazer"></a>
-##blazer (1)
+#blazer (1)
 
 A module representing a blazer.
 
@@ -8,6 +8,6 @@ A module representing a blazer.
   * [blazer.zip() (2)](#module_blazer#zip)
 
 <a name="module_blazer#zip"></a>
-###blazer.zip() (2)
+##blazer.zip() (2)
 Open and close your Blazer.
 

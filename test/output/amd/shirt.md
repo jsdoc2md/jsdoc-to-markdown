@@ -1,5 +1,5 @@
 <a name="module_shirt"></a>
-##shirt (1)
+#shirt (1)
 **Version**: 1.0  
 
 A module representing a shirt.
@@ -10,7 +10,7 @@ A module representing a shirt.
   * [class: shirt.Turtleneck (2)](#module_shirt.Turtleneck)
 
 <a name="module_shirt.color"></a>
-###shirt.color (2)
+##shirt.color (2)
 A property of the module.
 
   
@@ -18,7 +18,7 @@ A property of the module.
 
 ##class: shirt.Turtleneck (2)
 <a name="module_shirt.Turtleneck"></a>
-###new shirt.Turtleneck() (2)
+##new shirt.Turtleneck() (2)
 **Params**
 
 -  `number` - the size innit

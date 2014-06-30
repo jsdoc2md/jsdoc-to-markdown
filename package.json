@@ -29,6 +29,7 @@
     "file-set": "^0.2",
     "jsdoc": "jsdoc3/jsdoc",
     "more-fs": "^0.4.0",
-    "object-tools": "^1.0.0"
+    "object-tools": "^1.0.0",
+    "string-tools": "^0.1.4"
   }
 }

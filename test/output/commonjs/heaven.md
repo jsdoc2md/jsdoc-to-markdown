@@ -1,5 +1,5 @@
 <a name="module_heaven"></a>
-##heaven (1)
+#heaven (1)
 
 factory module creating dodgy cloud. object-with-static-class.
 
@@ -10,12 +10,12 @@ factory module creating dodgy cloud. object-with-static-class.
   * [\~class: Cloud (2)](#module_heaven.Cloud)
 
 <a name="module_heaven.Cloud"></a>
-###heaven.Cloud (2)
+##heaven.Cloud (2)
 access to the Cloud class
 
 **Type**: `module:heaven~Cloud`  
 <a name="module_heaven.createCloud"></a>
-###heaven.createCloud() (2)
+##heaven.createCloud() (2)
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
