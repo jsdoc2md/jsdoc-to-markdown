@@ -1,13 +1,13 @@
 <a name="module_jacket"></a>
-#jacket (1)
+jacket
 
 A module representing a jacket.
 
   
 **Symbols**  
-  * [jacket.zip() (2)](#module_jacket#zip)
+  * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
-##jacket.zip() (2)
+jacket.zip()
 Open and close your Jacket.
 

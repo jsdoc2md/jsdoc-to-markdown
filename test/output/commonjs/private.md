@@ -1,14 +1,14 @@
 <a name="module_private"></a>
-#private (1)
+private
 
 module with private shiz
 
   
 **Symbols**  
-  * [private.notprivate (2)](#module_private.notprivate)
+  * [private.notprivate](#module_private.notprivate)
 
 <a name="module_private.notprivate"></a>
-##private.notprivate (2)
+private.notprivate
 visible property
 
   

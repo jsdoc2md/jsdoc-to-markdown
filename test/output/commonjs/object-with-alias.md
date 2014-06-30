@@ -1,25 +1,25 @@
 <a name="module_object-with-alias"></a>
-#object-with-alias (1)
+object-with-alias
 
 simple object export
 
   
 **Symbols**  
-  * [_.one (2)](#module_object-with-alias.one)
-  * [_.two (2)](#module_object-with-alias.two)
-  * [_.three() (2)](#module_object-with-alias.three)
+  * [_.one](#module_object-with-alias.one)
+  * [_.two](#module_object-with-alias.two)
+  * [_.three()](#module_object-with-alias.three)
 
 <a name="module_object-with-alias.one"></a>
-##_.one (2)
+_.one
 first property
 
   
 <a name="module_object-with-alias.two"></a>
-##_.two (2)
+_.two
 second property
 
   
 <a name="module_object-with-alias.three"></a>
-##_.three() (2)
+_.three()
 a function
 

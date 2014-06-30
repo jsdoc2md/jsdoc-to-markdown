@@ -1,14 +1,14 @@
 <a name="module_ignore"></a>
-#ignore (1)
+ignore
 
 module with ignored shiz
 
   
 **Symbols**  
-  * [ignore.visible (2)](#module_ignore.visible)
+  * [ignore.visible](#module_ignore.visible)
 
 <a name="module_ignore.visible"></a>
-##ignore.visible (2)
+ignore.visible
 visible property
 
   

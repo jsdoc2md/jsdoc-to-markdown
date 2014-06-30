@@ -1,6 +1,6 @@
 module.exports = function(handlebars){
     handlebars.registerHelper("depth", function(options){
-        var depth = 0;
+        var depth = 0 + (options.data.root.argv.depth - 1);
         function recurse(node){
             if (node._parent){
                 depth++;

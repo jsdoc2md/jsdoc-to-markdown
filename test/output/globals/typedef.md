@@ -1,6 +1,6 @@
 ##Global scope
 <a name="setMagicNumber"></a>
-#setMagicNumber(x) (1)
+setMagicNumber(x)
 Set the magic number.
 
 **Params**
@@ -8,7 +8,7 @@ Set the magic number.
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="NumberLike"></a>
-#type: NumberLike (1)
+type: NumberLike
 A number, or a string containing a number.
 
 **Type**: `number | string`  

@@ -1,6 +1,6 @@
 ##Global scope
 <a name="visible"></a>
-#visible (1)
+visible
 a visible global
 
   

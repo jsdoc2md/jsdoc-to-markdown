@@ -1,5 +1,5 @@
 <a name="module_single-value"></a>
-#single-value (1)
+single-value
 
 this module exports one value, that's it
 

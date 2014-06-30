@@ -1,16 +1,16 @@
 ##Global scope
 <a name="Rice"></a>
 
-#class: Rice (1)
+class: Rice
 **Symbols**  
-  * [event: "cooked" (2)](#Rice#event_cooked)
-  * [event: "cooking" (2)](#Rice#event_cooking)
+  * [event: "cooked"](#Rice#event_cooked)
+  * [event: "cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
-##event: "cooked" (2)
+event: "cooked"
 Fired when rice is ready
 
 <a name="Rice#event_cooking"></a>
-##event: "cooking" (2)
+event: "cooking"
 Fired when rice is cooking
 

@@ -7,21 +7,32 @@ var cliArgs = require("command-line-args"),
     
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
-      description: "A custom handlebars template to insert the rendered documentation into,\noverriding the default" },
+      description: "A custom handlebars template to insert the rendered documentation into,\noverriding the default" 
+    },
     { name: "preset", alias: "p", type: String, value: "default",
-      description: "Use a preset template ('default', 'global' or 'modules')" },
+      description: "Use a preset template ('default', 'global' or 'modules')" 
+    },
     { name: "json", alias: "j", type: Boolean,
-      description: "Output the template data only" },
+      description: "Output the template data only"
+    },
     { name: "help", alias: "h", type: Boolean,
-      description: "Print usage information" },
+      description: "Print usage information"
+    },
     { name: "src", type: Array, defaultOption: true,
-      description: "The javascript source files. The default option." },
+      description: "The javascript source files. The default option."
+    },
     { name: "index", type: Boolean,
-      description: "Include an index for each module and class, linking to members" },
+      description: "Include an index for each module and class, linking to members"
+    },
     { name: "skip-heading", type: Boolean,
-    description: "Skip the module heading, useful if you already have the heading\nelsewhere in your template." },
+      description: "Skip the module heading, useful if you already have the heading\nelsewhere in your template."
+    },
     { name: "private", type: Boolean,
-      description: "Include symbols marked @private in the output" }
+      description: "Include symbols marked @private in the output"
+    },
+    { name: "depth", type: Number, value: 2,
+      description: "Root depth"
+    }
 ]);
 var usage = cli.getUsage({
     title: "jsdoc-to-markdown",
