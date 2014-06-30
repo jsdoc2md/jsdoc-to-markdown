@@ -17,7 +17,7 @@
 * commonjs/cyberdyne
   * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
   * [\~something](#module_commonjs/cyberdyne.something)
-  * [\~class: Machine](#module_commonjs/cyberdyne.Machine)
+  * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
 * file-set <sub>exports: class</sub>
   * [fileSet.files](#module_file-set#files)
   * [fileSet.delete(paths)](#module_file-set#delete)
@@ -25,7 +25,7 @@
 * heaven
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
-  * [\~class: Cloud](#module_heaven.Cloud)
+  * [class: \~heaven.Cloud](#module_heaven.Cloud)
 * commonjs/ignore
   * [ignore.visible](#module_commonjs/ignore.visible)
 * commonjs/object-with-alias
@@ -209,7 +209,7 @@ random
   
 <a name="module_commonjs/cyberdyne.Machine"></a>
 
-###\~class: Machine
+###class: \~cyber.Machine
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
@@ -264,7 +264,7 @@ access to the Cloud class
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-###\~class: Cloud
+###class: \~heaven.Cloud
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
