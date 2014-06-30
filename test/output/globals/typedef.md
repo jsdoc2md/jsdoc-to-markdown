@@ -11,4 +11,4 @@ Set the magic number.
 ##type: NumberLike
 A number, or a string containing a number.
 
-**Type**: `number | string`  
+**Type**: `number` | `string`  

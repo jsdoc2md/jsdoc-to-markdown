@@ -9,7 +9,7 @@ a global variable
 **Type**: `string`  
 <a name="types"></a>
 ##types
-**Type**: `string | number`  
+**Type**: `string` | `number`  
 <a name="exampled"></a>
 ##exampled
 a var with an example

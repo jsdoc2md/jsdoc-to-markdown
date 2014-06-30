@@ -13,7 +13,7 @@ factory module creating dodgy cloud. object-with-static-class.
 ###heaven.Cloud
 access to the Cloud class
 
-**Type**: `module:heaven~Cloud`  
+**Type**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
 ###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
