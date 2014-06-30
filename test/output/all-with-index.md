@@ -1,45 +1,45 @@
-* file-pet <sub>class</sub>
+* file-pet (1) <sub>exports: class</sub>
   * [filePet.instie (2)](#module_file-pet#instie)
   * [filePet.files (2)](#module_file-pet#files)
   * [filePet.delete(paths) (2)](#module_file-pet#delete)
-* jacket <sub>class</sub>
+* jacket (1) <sub>exports: class</sub>
   * [jacket.zip() (2)](#module_jacket#zip)
-* shirt
+* shirt (1)
   * [shirt.color (2)](#module_shirt.color)
   * [class: shirt.Turtleneck (2)](#module_shirt.Turtleneck)
-* blazer <sub>class</sub>
+* blazer (1) <sub>exports: class</sub>
   * [blazer.zip() (2)](#module_blazer#zip)
-* cattle
+* cattle (1)
   * [cattle.createCow() (2)](#module_cattle.createCow)
   * [\~innerMember (2)](#module_cattle.innerMember)
   * [\~innerFuction() (2)](#module_cattle.innerFuction)
   * [~~\~anotherInnerFuction() (2)~~](#module_cattle.anotherInnerFuction)
-* commonjs/cyberdyne
+* commonjs/cyberdyne (1)
   * [cyber.createMachine() (2)](#module_commonjs/cyberdyne.createMachine)
   * [\~something (2)](#module_commonjs/cyberdyne.something)
   * [\~class: Machine (2)](#module_commonjs/cyberdyne.Machine)
-* file-set <sub>class</sub>
+* file-set (1) <sub>exports: class</sub>
   * [fileSet.files (2)](#module_file-set#files)
   * [fileSet.delete(paths) (2)](#module_file-set#delete)
-* commonjs/function <sub>function</sub>
-* heaven
+* commonjs/function (1) <sub>exports: function</sub>
+* heaven (1)
   * [heaven.Cloud (2)](#module_heaven.Cloud)
   * [heaven.createCloud() (2)](#module_heaven.createCloud)
   * [\~class: Cloud (2)](#module_heaven.Cloud)
-* commonjs/ignore
+* commonjs/ignore (1)
   * [ignore.visible (2)](#module_commonjs/ignore.visible)
-* commonjs/object-with-alias
+* commonjs/object-with-alias (1)
   * [_.one (2)](#module_commonjs/object-with-alias.one)
   * [_.two (2)](#module_commonjs/object-with-alias.two)
   * [_.three() (2)](#module_commonjs/object-with-alias.three)
-* commonjs/object
+* commonjs/object (1)
   * [object.one (2)](#module_commonjs/object.one)
   * [object.three(four, five) (2)](#module_commonjs/object.three)
-* private
+* private (1)
   * [private.notprivate (2)](#module_private.notprivate)
-* commonjs/single-value <sub>member</sub>
-* commonjs/sum-alias
-* commonjs/sum(a, b)
+* commonjs/single-value (1) <sub>exports: member</sub>
+* commonjs/sum-alias (1)
+* commonjs/sum(a, b) (1)
 
 * Globals
   * [eFileType (1)](#eFileType)
@@ -93,7 +93,7 @@
   * [type: NumberLike (1)](#NumberLike)
 
 <a name="module_file-pet"></a>
-##file-pet
+##file-pet (1)
 
 this module returns a pet of files
 
@@ -121,7 +121,7 @@ A static methy meth
 - paths `array` - the paths to delete
 
 <a name="module_jacket"></a>
-##jacket
+##jacket (1)
 
 A module representing a jacket.
 
@@ -131,7 +131,7 @@ A module representing a jacket.
 Open and close your Jacket.
 
 <a name="module_shirt"></a>
-##shirt
+##shirt (1)
 **Version**: 1.0  
 
 A module representing a shirt.
@@ -157,7 +157,7 @@ A property of the class.
 
   
 <a name="module_blazer"></a>
-##blazer
+##blazer (1)
 
 A module representing a blazer.
 
@@ -167,7 +167,7 @@ A module representing a blazer.
 Open and close your Blazer.
 
 <a name="module_cattle"></a>
-##cattle
+##cattle (1)
 
 exported object, with-inner-members
 
@@ -193,7 +193,7 @@ another inner function
 ***Deprecated***  
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_commonjs/cyberdyne"></a>
-##commonjs/cyberdyne
+##commonjs/cyberdyne (1)
 
 exports an object.. has an inner class.
 
@@ -220,7 +220,7 @@ The main class of machine
 ###machine.vibe (3)
 **Type**: `string`  
 <a name="module_file-set"></a>
-##file-set
+##file-set (1)
 
   
 **Example**  
@@ -241,7 +241,7 @@ A static methy meth
 - paths `array` - the paths to delete
 
 <a name="module_commonjs/function"></a>
-##commonjs/function
+##commonjs/function (1)
 **Author**: Lloyd <75pound@gmail.com>  
 
 This is the module description
@@ -249,7 +249,7 @@ This is the module description
 **Since**: v0.10.28  
   
 <a name="module_heaven"></a>
-##heaven
+##heaven (1)
 
 factory module creating dodgy cloud. object-with-static-class.
 
@@ -275,7 +275,7 @@ The main class of machine
 ###cloud.vibe (3)
 **Type**: `string`  
 <a name="module_commonjs/ignore"></a>
-##commonjs/ignore
+##commonjs/ignore (1)
 
 module with ignored shiz
 
@@ -286,7 +286,7 @@ visible property
 
   
 <a name="module_commonjs/object-with-alias"></a>
-##commonjs/object-with-alias
+##commonjs/object-with-alias (1)
 
 simple object export
 
@@ -306,7 +306,7 @@ second property
 a function
 
 <a name="module_commonjs/object"></a>
-##commonjs/object
+##commonjs/object (1)
 
 simple object export
 
@@ -333,7 +333,7 @@ a function
 allTogether(true);
 ```
 <a name="module_private"></a>
-##private
+##private (1)
 
 module with private shiz
 
@@ -344,13 +344,13 @@ visible property
 
   
 <a name="module_commonjs/single-value"></a>
-##commonjs/single-value
+##commonjs/single-value (1)
 
 this module exports one value, that's it
 
   
 <a name="module_commonjs/sum-alias"></a>
-##commonjs/sum-alias
+##commonjs/sum-alias (1)
 
 A simple maths function
 
@@ -360,7 +360,7 @@ A simple maths function
 var sum = require("sum");
 ```
 <a name="module_commonjs/sum"></a>
-##commonjs/sum(a, b)
+##commonjs/sum(a, b) (1)
 
 A simple maths function
 

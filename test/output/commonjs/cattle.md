@@ -1,5 +1,5 @@
 <a name="module_cattle"></a>
-##cattle
+##cattle (1)
 
 exported object, with-inner-members
 

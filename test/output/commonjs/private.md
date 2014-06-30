@@ -1,5 +1,5 @@
 <a name="module_private"></a>
-##private
+##private (1)
 
 module with private shiz
 

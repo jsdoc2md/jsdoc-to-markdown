@@ -1,5 +1,5 @@
 <a name="module_shirt"></a>
-##shirt
+##shirt (1)
 **Version**: 1.0  
 
 A module representing a shirt.

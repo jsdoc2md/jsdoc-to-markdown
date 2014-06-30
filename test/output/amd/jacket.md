@@ -1,5 +1,5 @@
 <a name="module_jacket"></a>
-##jacket
+##jacket (1)
 
 A module representing a jacket.
 

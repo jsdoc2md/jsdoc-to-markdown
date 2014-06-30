@@ -1,5 +1,5 @@
 <a name="module_object"></a>
-##object
+##object (1)
 
 simple object export
 

@@ -1,5 +1,5 @@
 <a name="module_heaven"></a>
-##heaven
+##heaven (1)
 
 factory module creating dodgy cloud. object-with-static-class.
 
