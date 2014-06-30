@@ -6,7 +6,7 @@
   * [jacket.zip()](#module_jacket#zip)
 * shirt
   * [shirt.color](#module_shirt.color)
-  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+  * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
 * blazer <sub>class</sub>
   * [blazer.zip()](#module_blazer#zip)
 * cattle
@@ -17,7 +17,7 @@
 * commonjs/cyberdyne
   * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
   * [\~something](#module_commonjs/cyberdyne.something)
-  * [\~new Machine()](#module_commonjs/cyberdyne.Machine)
+  * [\~class: Machine](#module_commonjs/cyberdyne.Machine)
 * file-set <sub>class</sub>
   * [fileSet.files](#module_file-set#files)
   * [fileSet.delete(paths)](#module_file-set#delete)
@@ -25,7 +25,7 @@
 * heaven
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
-  * [\~new Cloud()](#module_heaven.Cloud)
+  * [\~class: Cloud](#module_heaven.Cloud)
 * commonjs/ignore
   * [ignore.visible](#module_commonjs/ignore.visible)
 * commonjs/object-with-alias
@@ -42,7 +42,7 @@
 * commonjs/sum(a, b)
 
 * Globals
-  * [eFileType](#eFileType) <sub>enum</sub>
+  * [eFileType](#eFileType)
   * [visible](#visible)
   * [variable](#variable)
   * [typed](#typed)
@@ -78,19 +78,20 @@
   * [requirer()](#requirer)
   * [setMagicNumber(x)](#setMagicNumber)
   * [doSomething(options)](#doSomething)
-  * [~~new All(input, [options])~~](#All)
-  * [new Person()](#Person)
-  * [new Car([options])](#Car)
-  * [new Pipe()](#Pipe)
-  * [~~new Everything(input, [options])~~](#Everything)
-  * [new Rice()](#Rice)
-  * [new Something()](#Something)
-  * [new Pizza()](#Pizza)
-  * [new Plucker()](#Plucker)
-  * [CONST_ONE](#CONST_ONE) <sub>constant</sub>
-  * [~~CONST_TWO~~](#CONST_TWO) <sub>constant</sub>
-  * [callback: onComplete](#onComplete) <sub>typedef</sub>
-  * [type: NumberLike](#NumberLike) <sub>typedef</sub>
+  * [~~class: All~~](#All)
+  * [class: Person](#Person)
+  * [class: Car](#Car)
+  * [class: Pipe](#Pipe)
+  * [~~class: Everything~~](#Everything)
+  * [class: Rice](#Rice)
+  * [class: Something](#Something)
+  * [class: Pizza](#Pizza)
+  * [class: Plucker](#Plucker)
+  * [CONST_ONE](#CONST_ONE)
+  * [~~CONST_TWO~~](#CONST_TWO)
+  * [callback: onComplete](#onComplete)
+  * [type: NumberLike](#NumberLike)
+
 <a name="module_file-pet"></a>
 ##file-pet
 
@@ -143,7 +144,7 @@ A property of the module.
   
 <a name="module_shirt.Turtleneck"></a>
 
-##class: Turtleneck
+##class: shirt.Turtleneck
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**
@@ -208,7 +209,7 @@ random
   
 <a name="module_commonjs/cyberdyne.Machine"></a>
 
-##class: Machine
+##\~class: Machine
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
@@ -263,7 +264,7 @@ access to the Cloud class
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-##class: Cloud
+##\~class: Cloud
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
@@ -611,7 +612,7 @@ Set the magic number.
 
 <a name="All"></a>
 
-##class: All
+##~~class: All~~
 a class with all of the things
 
 **Extends**: `Number`  
@@ -689,7 +690,7 @@ a class which extends
 **Extends**: `Pipe`  
 <a name="Everything"></a>
 
-##class: Everything
+##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
@@ -712,9 +713,11 @@ var yeah = new Everything(true);
 <a name="Rice"></a>
 
 ##class: Rice
+<a name="Rice#event_cooked"></a>
 ###event: "cooked"
 Fired when rice is ready
 
+<a name="Rice#event_cooking"></a>
 ###event: "cooking"
 Fired when rice is cooking
 
