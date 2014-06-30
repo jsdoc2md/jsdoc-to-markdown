@@ -6,8 +6,9 @@ A module representing a shirt.
 
   
 **Symbols**  
-  * [shirt.color](#module_shirt.color)
-  * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+    * [shirt.color](#module_shirt.color)
+    * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+      * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.color"></a>
 ###shirt.color
@@ -24,7 +25,7 @@ A property of the module.
 -  `number` - the size innit
 
 **Symbols**  
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
+      * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck#size"></a>
 ####turtleneck.size

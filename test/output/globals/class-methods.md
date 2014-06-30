@@ -3,8 +3,8 @@
 
 ##class: Something
 **Symbols**  
-  * [something.methodOne()](#Something#methodOne)
-  * [~~something.allTogether(one, two)~~](#Something#allTogether)
+    * [something.methodOne()](#Something#methodOne)
+    * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
 ###something.methodOne()

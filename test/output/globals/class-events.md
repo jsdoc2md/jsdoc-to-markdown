@@ -3,8 +3,8 @@
 
 ##class: Rice
 **Symbols**  
-  * [event: "cooked"](#Rice#event_cooked)
-  * [event: "cooking"](#Rice#event_cooking)
+    * [event: "cooked"](#Rice#event_cooked)
+    * [event: "cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
 ###event: "cooked"

@@ -10,4 +10,16 @@ module.exports = function(handlebars){
         recurse(options.data);
         return depth;
     });
+
+    handlebars.registerHelper("depth2", function(options){
+        var depth = 0;
+        function recurse(node){
+            if (node._parent){
+                depth++;
+                recurse(node._parent)
+            }
+        }
+        recurse(options.data);
+        return depth;
+    });
 };

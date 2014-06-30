@@ -11,7 +11,7 @@ This function takes variable input
 
 ##class: Plucker
 **Symbols**  
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)
