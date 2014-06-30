@@ -1,46 +1,46 @@
-* file-pet <sub>exports: class</sub>
+* [file-pet](#module_file-pet) <sub>exports: class</sub>
   * [filePet.instie](#module_file-pet#instie)
   * [filePet.files](#module_file-pet#files)
   * [filePet.delete(paths)](#module_file-pet#delete)
-* jacket <sub>exports: class</sub>
+* [jacket](#module_jacket) <sub>exports: class</sub>
   * [jacket.zip()](#module_jacket#zip)
-* shirt
+* [shirt](#module_shirt)
   * [shirt.color](#module_shirt.color)
   * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
-* blazer <sub>exports: class</sub>
+* [blazer](#module_blazer) <sub>exports: class</sub>
   * [blazer.zip()](#module_blazer#zip)
-* cattle
+* [cattle](#module_cattle)
   * [cattle.createCow()](#module_cattle.createCow)
   * [\~innerMember](#module_cattle.innerMember)
   * [\~innerFuction()](#module_cattle.innerFuction)
   * [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
-* commonjs/cyberdyne
+* [commonjs/cyberdyne](#module_commonjs/cyberdyne)
   * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
   * [\~something](#module_commonjs/cyberdyne.something)
   * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
-* file-set <sub>exports: class</sub>
+* [file-set](#module_file-set) <sub>exports: class</sub>
   * [fileSet.files](#module_file-set#files)
   * [fileSet.delete(paths)](#module_file-set#delete)
-* commonjs/function <sub>exports: function</sub>
-* heaven
+* [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
+* [heaven](#module_heaven)
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [class: \~heaven.Cloud](#module_heaven.Cloud)
   * [const: \~FACT](#module_heaven.FACT)
-* commonjs/ignore
+* [commonjs/ignore](#module_commonjs/ignore)
   * [ignore.visible](#module_commonjs/ignore.visible)
-* commonjs/object-with-alias
+* [commonjs/object-with-alias](#module_commonjs/object-with-alias)
   * [_.one](#module_commonjs/object-with-alias.one)
   * [_.two](#module_commonjs/object-with-alias.two)
   * [_.three()](#module_commonjs/object-with-alias.three)
-* commonjs/object
+* [commonjs/object](#module_commonjs/object)
   * [object.one](#module_commonjs/object.one)
   * [object.three(four, five)](#module_commonjs/object.three)
-* private
+* [private](#module_private)
   * [private.notprivate](#module_private.notprivate)
-* commonjs/single-value <sub>exports: member</sub>
-* commonjs/sum-alias
-* commonjs/sum(a, b)
+* [commonjs/single-value](#module_commonjs/single-value) <sub>exports: member</sub>
+* [commonjs/sum-alias](#module_commonjs/sum-alias)
+* [commonjs/sum(a, b)](#module_commonjs/sum)
 
 * Globals
   * [eFileType](#eFileType)

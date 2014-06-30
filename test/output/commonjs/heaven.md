@@ -1,5 +1,5 @@
 <a name="module_heaven"></a>
-###heaven
+##heaven
 
 factory module creating dodgy cloud. object-with-static-class.
 
@@ -11,16 +11,16 @@ factory module creating dodgy cloud. object-with-static-class.
   * [const: \~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>
-####heaven.Cloud
+###heaven.Cloud
 access to the Cloud class
 
 **Type**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
-####heaven.createCloud()
+###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-####class: \~heaven.Cloud
+###class: \~heaven.Cloud
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
@@ -31,22 +31,22 @@ The main class of machine
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud#eyes"></a>
-#####cloud.eyes
+####cloud.eyes
 **Type**: `number`  
 <a name="module_heaven.Cloud#vibe"></a>
-#####cloud.vibe
+####cloud.vibe
 **Type**: `string`  
 <a name="module_heaven.Cloud.classMethod"></a>
-#####Cloud.classMethod()
+####Cloud.classMethod()
 a class method
 
 <a name="module_heaven.Cloud.SPACES"></a>
-#####const: Cloud.SPACES
+####const: Cloud.SPACES
 a class constant
 
 **Type**: `number`  
 <a name="module_heaven.FACT"></a>
-####const: \~FACT
+###const: \~FACT
 an inner constant
 
 **Type**: `boolean`  
