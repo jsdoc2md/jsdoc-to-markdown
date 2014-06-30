@@ -29,3 +29,8 @@ function Cloud(){
     */
     this.vibe = "sinister";
 }
+
+/**
+a class method
+*/
+Cloud.ClassMethod = function(){};

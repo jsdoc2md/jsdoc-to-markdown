@@ -274,6 +274,10 @@ The main class of machine
 <a name="module_heaven.Cloud#vibe"></a>
 ####cloud.vibe
 **Type**: `string`  
+<a name="module_heaven.Cloud.ClassMethod"></a>
+####Cloud.ClassMethod()
+a class method
+
 <a name="module_commonjs/ignore"></a>
 ##commonjs/ignore
 

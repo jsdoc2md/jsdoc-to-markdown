@@ -26,6 +26,7 @@ The main class of machine
 **Symbols**  
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
+  * [Cloud.ClassMethod()](#module_heaven.Cloud.ClassMethod)
 
 <a name="module_heaven.Cloud#eyes"></a>
 ####cloud.eyes
@@ -33,3 +34,7 @@ The main class of machine
 <a name="module_heaven.Cloud#vibe"></a>
 ####cloud.vibe
 **Type**: `string`  
+<a name="module_heaven.Cloud.ClassMethod"></a>
+####Cloud.ClassMethod()
+a class method
+
