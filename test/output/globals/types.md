@@ -1,6 +1,6 @@
 ##Global scope
 <a name="doSomething"></a>
-##doSomething(options) *function*
+##doSomething(options) <sub>*function*</sub>
 **Params**
 
 - options `object` - the function options

@@ -1,21 +1,21 @@
 ##Global scope
 <a name="Person"></a>
 
-##Person *class*
+##Person <sub>*class*</sub>
 simple class description
 
 **Extends**: `Object`  
 <a name="Person"></a>
-##new Person() *class*
+##new Person() <sub>*class*</sub>
 a constructor description
 
 **Symbols**  
 
 <a name="Car"></a>
 
-##Car *class*
+##Car <sub>*class*</sub>
 <a name="Car"></a>
-##new Car([options]) *class*
+##new Car([options]) <sub>*class*</sub>
 a constructor with args
 
 **Params**
@@ -26,7 +26,7 @@ a constructor with args
 
 <a name="Pipe"></a>
 
-##Pipe *class*
+##Pipe <sub>*class*</sub>
 a class which extends
 
 **Extends**: `Pipe`  
@@ -34,12 +34,12 @@ a class which extends
 
 <a name="Everything"></a>
 
-##~~Everything *class*~~
+##~~Everything <sub>*class*</sub>~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
-##~~new Everything(input, [options]) *class*~~
+##~~new Everything(input, [options]) <sub>*class*</sub>~~
 the constructor description
 
 **Params**

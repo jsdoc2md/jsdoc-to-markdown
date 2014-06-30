@@ -1,5 +1,5 @@
 <a name="module_sum"></a>
-##sum(a, b) *module*
+##sum(a, b) <sub>*module*</sub>
 
 A simple maths function
 

@@ -1,5 +1,5 @@
 <a name="module_sum-alias"></a>
-##sum-alias *module*
+##sum-alias <sub>*module*</sub>
 
 A simple maths function
 

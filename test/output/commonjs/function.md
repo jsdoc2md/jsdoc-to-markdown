@@ -1,5 +1,5 @@
 <a name="module_function"></a>
-##function *module*
+##function <sub>*module*</sub>
 **Author**: Lloyd <75pound@gmail.com>  
 
 This is the module description

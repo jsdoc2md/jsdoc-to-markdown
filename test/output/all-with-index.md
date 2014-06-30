@@ -1,100 +1,100 @@
-* file-pet *module* <sub>exports: class</sub>
-  * [filePet.instie *member*](#module_file-pet#instie)
-  * [filePet.files *member*](#module_file-pet#files)
-  * [filePet.delete(paths) *function*](#module_file-pet#delete)
-* jacket *module* <sub>exports: class</sub>
-  * [jacket.zip() *function*](#module_jacket#zip)
-* shirt *module*
-  * [shirt.color *member*](#module_shirt.color)
-  * [shirt.Turtleneck *class*](#module_shirt.Turtleneck)
-* blazer *module* <sub>exports: class</sub>
-  * [blazer.zip() *function*](#module_blazer#zip)
-* cattle *module*
-  * [cattle.createCow() *function*](#module_cattle.createCow)
-  * [\~innerMember *member*](#module_cattle.innerMember)
-  * [\~innerFuction() *function*](#module_cattle.innerFuction)
-  * [~~\~anotherInnerFuction() *function*~~](#module_cattle.anotherInnerFuction)
-* commonjs/cyberdyne *module*
-  * [cyber.createMachine() *function*](#module_commonjs/cyberdyne.createMachine)
-  * [\~something *member*](#module_commonjs/cyberdyne.something)
-  * [\~cyber.Machine *class*](#module_commonjs/cyberdyne.Machine)
-* file-set *module* <sub>exports: class</sub>
-  * [fileSet.files *member*](#module_file-set#files)
-  * [fileSet.delete(paths) *function*](#module_file-set#delete)
-* commonjs/function *module* <sub>exports: function</sub>
-* heaven *module*
-  * [heaven.Cloud *member*](#module_heaven.Cloud)
-  * [heaven.createCloud() *function*](#module_heaven.createCloud)
-  * [\~heaven.Cloud *class*](#module_heaven.Cloud)
-  * [*const* \~FACT *constant*](#module_heaven.FACT)
-* commonjs/ignore *module*
-  * [ignore.visible *member*](#module_commonjs/ignore.visible)
-* commonjs/object-with-alias *module*
-  * [_.one *member*](#module_commonjs/object-with-alias.one)
-  * [_.two *member*](#module_commonjs/object-with-alias.two)
-  * [_.three() *function*](#module_commonjs/object-with-alias.three)
-* commonjs/object *module*
-  * [object.one *member*](#module_commonjs/object.one)
-  * [object.three(four, five) *function*](#module_commonjs/object.three)
-* private *module*
-  * [private.notprivate *member*](#module_private.notprivate)
-* commonjs/single-value *module* <sub>exports: member</sub>
-* commonjs/sum-alias *module*
-* commonjs/sum(a, b) *module*
+* file-pet <sub>*module*</sub> <sub>exports: class</sub>
+  * [filePet.instie <sub>*member*</sub>](#module_file-pet#instie)
+  * [filePet.files <sub>*member*</sub>](#module_file-pet#files)
+  * [filePet.delete(paths) <sub>*function*</sub>](#module_file-pet#delete)
+* jacket <sub>*module*</sub> <sub>exports: class</sub>
+  * [jacket.zip() <sub>*function*</sub>](#module_jacket#zip)
+* shirt <sub>*module*</sub>
+  * [shirt.color <sub>*member*</sub>](#module_shirt.color)
+  * [shirt.Turtleneck <sub>*class*</sub>](#module_shirt.Turtleneck)
+* blazer <sub>*module*</sub> <sub>exports: class</sub>
+  * [blazer.zip() <sub>*function*</sub>](#module_blazer#zip)
+* cattle <sub>*module*</sub>
+  * [cattle.createCow() <sub>*function*</sub>](#module_cattle.createCow)
+  * [\~innerMember <sub>*member*</sub>](#module_cattle.innerMember)
+  * [\~innerFuction() <sub>*function*</sub>](#module_cattle.innerFuction)
+  * [~~\~anotherInnerFuction() <sub>*function*</sub>~~](#module_cattle.anotherInnerFuction)
+* commonjs/cyberdyne <sub>*module*</sub>
+  * [cyber.createMachine() <sub>*function*</sub>](#module_commonjs/cyberdyne.createMachine)
+  * [\~something <sub>*member*</sub>](#module_commonjs/cyberdyne.something)
+  * [\~cyber.Machine <sub>*class*</sub>](#module_commonjs/cyberdyne.Machine)
+* file-set <sub>*module*</sub> <sub>exports: class</sub>
+  * [fileSet.files <sub>*member*</sub>](#module_file-set#files)
+  * [fileSet.delete(paths) <sub>*function*</sub>](#module_file-set#delete)
+* commonjs/function <sub>*module*</sub> <sub>exports: function</sub>
+* heaven <sub>*module*</sub>
+  * [heaven.Cloud <sub>*member*</sub>](#module_heaven.Cloud)
+  * [heaven.createCloud() <sub>*function*</sub>](#module_heaven.createCloud)
+  * [\~heaven.Cloud <sub>*class*</sub>](#module_heaven.Cloud)
+  * [*const* \~FACT <sub>*constant*</sub>](#module_heaven.FACT)
+* commonjs/ignore <sub>*module*</sub>
+  * [ignore.visible <sub>*member*</sub>](#module_commonjs/ignore.visible)
+* commonjs/object-with-alias <sub>*module*</sub>
+  * [_.one <sub>*member*</sub>](#module_commonjs/object-with-alias.one)
+  * [_.two <sub>*member*</sub>](#module_commonjs/object-with-alias.two)
+  * [_.three() <sub>*function*</sub>](#module_commonjs/object-with-alias.three)
+* commonjs/object <sub>*module*</sub>
+  * [object.one <sub>*member*</sub>](#module_commonjs/object.one)
+  * [object.three(four, five) <sub>*function*</sub>](#module_commonjs/object.three)
+* private <sub>*module*</sub>
+  * [private.notprivate <sub>*member*</sub>](#module_private.notprivate)
+* commonjs/single-value <sub>*module*</sub> <sub>exports: member</sub>
+* commonjs/sum-alias <sub>*module*</sub>
+* commonjs/sum(a, b) <sub>*module*</sub>
 
 * Globals
-  * [eFileType *member*](#eFileType)
-  * [visible *member*](#visible)
-  * [variable *member*](#variable)
-  * [typed *member*](#typed)
-  * [types *member*](#types)
-  * [exampled *member*](#exampled)
-  * [examples *member*](#examples)
-  * [_protected *member*](#_protected)
-  * [withAuthor *member*](#withAuthor)
-  * [hasDefault *member*](#hasDefault)
-  * [hasDefaultObject *member*](#hasDefaultObject)
-  * [~~deprecated *member*~~](#deprecated)
-  * [readOnly *member*](#readOnly)
-  * [hasSince *member*](#hasSince)
-  * [module:sum-alias(a, b) *function*](#module_sum-alias)
-  * [read(filename, done) *function*](#read)
-  * [globalFunc() *function*](#globalFunc)
-  * [exampled() *function*](#exampled)
-  * [multiExampled() *function*](#multiExampled)
-  * [_protected() *function*](#_protected)
-  * [withAuthor() *function*](#withAuthor)
-  * [~~oldFunction() *function*~~](#oldFunction)
-  * [newFunction() *function*](#newFunction)
-  * [withParam(one) *function*](#withParam)
-  * [withParams(one, two) *function*](#withParams)
-  * [withOptional(one, [two]) *function*](#withOptional)
-  * [withBullets(one, two) *function*](#withBullets)
-  * [returnsSomething() *function*](#returnsSomething)
-  * [returnsSomethingDesc() *function*](#returnsSomethingDesc)
-  * [returnsSeveral() *function*](#returnsSeveral)
-  * [doSomething(options) *function*](#doSomething)
-  * [doAnother(options) *function*](#doAnother)
-  * [pluck(...prop) *function*](#pluck)
-  * [requirer() *function*](#requirer)
-  * [setMagicNumber(x) *function*](#setMagicNumber)
-  * [doSomething(options) *function*](#doSomething)
-  * [~~All *class*~~](#All)
-  * [Person *class*](#Person)
-  * [Car *class*](#Car)
-  * [Pipe *class*](#Pipe)
-  * [~~Everything *class*~~](#Everything)
-  * [Rice *class*](#Rice)
-  * [Something *class*](#Something)
-  * [Pizza *class*](#Pizza)
-  * [Plucker *class*](#Plucker)
-  * [*const* CONST_ONE *constant*](#CONST_ONE)
-  * [~~*const* CONST_TWO *constant*~~](#CONST_TWO)
-  * [callback: onComplete *typedef*](#onComplete)
-  * [type: NumberLike *typedef*](#NumberLike)
+  * [eFileType <sub>*member*</sub>](#eFileType)
+  * [visible <sub>*member*</sub>](#visible)
+  * [variable <sub>*member*</sub>](#variable)
+  * [typed <sub>*member*</sub>](#typed)
+  * [types <sub>*member*</sub>](#types)
+  * [exampled <sub>*member*</sub>](#exampled)
+  * [examples <sub>*member*</sub>](#examples)
+  * [_protected <sub>*member*</sub>](#_protected)
+  * [withAuthor <sub>*member*</sub>](#withAuthor)
+  * [hasDefault <sub>*member*</sub>](#hasDefault)
+  * [hasDefaultObject <sub>*member*</sub>](#hasDefaultObject)
+  * [~~deprecated <sub>*member*</sub>~~](#deprecated)
+  * [readOnly <sub>*member*</sub>](#readOnly)
+  * [hasSince <sub>*member*</sub>](#hasSince)
+  * [module:sum-alias(a, b) <sub>*function*</sub>](#module_sum-alias)
+  * [read(filename, done) <sub>*function*</sub>](#read)
+  * [globalFunc() <sub>*function*</sub>](#globalFunc)
+  * [exampled() <sub>*function*</sub>](#exampled)
+  * [multiExampled() <sub>*function*</sub>](#multiExampled)
+  * [_protected() <sub>*function*</sub>](#_protected)
+  * [withAuthor() <sub>*function*</sub>](#withAuthor)
+  * [~~oldFunction() <sub>*function*</sub>~~](#oldFunction)
+  * [newFunction() <sub>*function*</sub>](#newFunction)
+  * [withParam(one) <sub>*function*</sub>](#withParam)
+  * [withParams(one, two) <sub>*function*</sub>](#withParams)
+  * [withOptional(one, [two]) <sub>*function*</sub>](#withOptional)
+  * [withBullets(one, two) <sub>*function*</sub>](#withBullets)
+  * [returnsSomething() <sub>*function*</sub>](#returnsSomething)
+  * [returnsSomethingDesc() <sub>*function*</sub>](#returnsSomethingDesc)
+  * [returnsSeveral() <sub>*function*</sub>](#returnsSeveral)
+  * [doSomething(options) <sub>*function*</sub>](#doSomething)
+  * [doAnother(options) <sub>*function*</sub>](#doAnother)
+  * [pluck(...prop) <sub>*function*</sub>](#pluck)
+  * [requirer() <sub>*function*</sub>](#requirer)
+  * [setMagicNumber(x) <sub>*function*</sub>](#setMagicNumber)
+  * [doSomething(options) <sub>*function*</sub>](#doSomething)
+  * [~~All <sub>*class*</sub>~~](#All)
+  * [Person <sub>*class*</sub>](#Person)
+  * [Car <sub>*class*</sub>](#Car)
+  * [Pipe <sub>*class*</sub>](#Pipe)
+  * [~~Everything <sub>*class*</sub>~~](#Everything)
+  * [Rice <sub>*class*</sub>](#Rice)
+  * [Something <sub>*class*</sub>](#Something)
+  * [Pizza <sub>*class*</sub>](#Pizza)
+  * [Plucker <sub>*class*</sub>](#Plucker)
+  * [*const* CONST_ONE <sub>*constant*</sub>](#CONST_ONE)
+  * [~~*const* CONST_TWO <sub>*constant*</sub>~~](#CONST_TWO)
+  * [callback: onComplete <sub>*typedef*</sub>](#onComplete)
+  * [type: NumberLike <sub>*typedef*</sub>](#NumberLike)
 
 <a name="module_file-pet"></a>
-##file-pet *module*
+##file-pet <sub>*module*</sub>
 
 this module returns a pet of files
 
@@ -104,17 +104,17 @@ this module returns a pet of files
 var cowFiles = FilePet("cow/*");
 ```
 <a name="module_file-pet#instie"></a>
-###filePet.instie *member*
+###filePet.instie <sub>*member*</sub>
 an instance ting
 
   
 <a name="module_file-pet#files"></a>
-###filePet.files *member*
+###filePet.files <sub>*member*</sub>
 the static property
 
   
 <a name="module_file-pet#delete"></a>
-###filePet.delete(paths) *function*
+###filePet.delete(paths) <sub>*function*</sub>
 A static methy meth
 
 **Params**
@@ -122,106 +122,106 @@ A static methy meth
 - paths `array` - the paths to delete
 
 <a name="module_jacket"></a>
-##jacket *module*
+##jacket <sub>*module*</sub>
 
 A module representing a jacket.
 
   
 <a name="module_jacket#zip"></a>
-###jacket.zip() *function*
+###jacket.zip() <sub>*function*</sub>
 Open and close your Jacket.
 
 <a name="module_shirt"></a>
-##shirt *module*
+##shirt <sub>*module*</sub>
 **Version**: 1.0  
 
 A module representing a shirt.
 
   
 <a name="module_shirt.color"></a>
-###shirt.color *member*
+###shirt.color <sub>*member*</sub>
 A property of the module.
 
   
 <a name="module_shirt.Turtleneck"></a>
 
-###shirt.Turtleneck *class*
+###shirt.Turtleneck <sub>*class*</sub>
 <a name="module_shirt.Turtleneck"></a>
-###new shirt.Turtleneck() *class*
+###new shirt.Turtleneck() <sub>*class*</sub>
 **Params**
 
 -  `number` - the size innit
 
 <a name="module_shirt.Turtleneck#size"></a>
-####turtleneck.size *member*
+####turtleneck.size <sub>*member*</sub>
 A property of the class.
 
   
 <a name="module_blazer"></a>
-##blazer *module*
+##blazer <sub>*module*</sub>
 
 A module representing a blazer.
 
   
 <a name="module_blazer#zip"></a>
-###blazer.zip() *function*
+###blazer.zip() <sub>*function*</sub>
 Open and close your Blazer.
 
 <a name="module_cattle"></a>
-##cattle *module*
+##cattle <sub>*module*</sub>
 
 exported object, with-inner-members
 
   
 <a name="module_cattle.createCow"></a>
-###cattle.createCow() *function*
+###cattle.createCow() <sub>*function*</sub>
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-###\~innerMember *member*
+###\~innerMember <sub>*member*</sub>
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
   
 <a name="module_cattle.innerFuction"></a>
-###\~innerFuction() *function*
+###\~innerFuction() <sub>*function*</sub>
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-###~~\~anotherInnerFuction() *function*~~
+###~~\~anotherInnerFuction() <sub>*function*</sub>~~
 another inner function
 
 ***Deprecated***  
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_commonjs/cyberdyne"></a>
-##commonjs/cyberdyne *module*
+##commonjs/cyberdyne <sub>*module*</sub>
 
 exports an object.. has an inner class.
 
   
 <a name="module_commonjs/cyberdyne.createMachine"></a>
-###cyber.createMachine() *function*
+###cyber.createMachine() <sub>*function*</sub>
 **Returns**: `module:cyberdyne~Machine`  
 <a name="module_commonjs/cyberdyne.something"></a>
-###\~something *member*
+###\~something <sub>*member*</sub>
 random
 
 **Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
   
 <a name="module_commonjs/cyberdyne.Machine"></a>
 
-###\~cyber.Machine *class*
+###\~cyber.Machine <sub>*class*</sub>
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
 <a name="module_commonjs/cyberdyne.Machine#eyes"></a>
-####machine.eyes *member*
+####machine.eyes <sub>*member*</sub>
 **Type**: `number`  
 <a name="module_commonjs/cyberdyne.Machine#vibe"></a>
-####machine.vibe *member*
+####machine.vibe <sub>*member*</sub>
 **Type**: `string`  
 <a name="module_file-set"></a>
-##file-set *module*
+##file-set <sub>*module*</sub>
 
   
 **Example**  
@@ -229,12 +229,12 @@ The main class of machine
 var fileSet = require("file-set");
 ```
 <a name="module_file-set#files"></a>
-###fileSet.files *member*
+###fileSet.files <sub>*member*</sub>
 the static property
 
   
 <a name="module_file-set#delete"></a>
-###fileSet.delete(paths) *function*
+###fileSet.delete(paths) <sub>*function*</sub>
 A static methy meth
 
 **Params**
@@ -242,7 +242,7 @@ A static methy meth
 - paths `array` - the paths to delete
 
 <a name="module_commonjs/function"></a>
-##commonjs/function *module*
+##commonjs/function <sub>*module*</sub>
 **Author**: Lloyd <75pound@gmail.com>  
 
 This is the module description
@@ -250,89 +250,89 @@ This is the module description
 **Since**: v0.10.28  
   
 <a name="module_heaven"></a>
-##heaven *module*
+##heaven <sub>*module*</sub>
 
 factory module creating dodgy cloud. object-with-static-class.
 
   
 <a name="module_heaven.Cloud"></a>
-###heaven.Cloud *member*
+###heaven.Cloud <sub>*member*</sub>
 access to the Cloud class
 
 **Type**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
-###heaven.createCloud() *function*
+###heaven.createCloud() <sub>*function*</sub>
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-###\~heaven.Cloud *class*
+###\~heaven.Cloud <sub>*class*</sub>
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven.Cloud#eyes"></a>
-####cloud.eyes *member*
+####cloud.eyes <sub>*member*</sub>
 **Type**: `number`  
 <a name="module_heaven.Cloud#vibe"></a>
-####cloud.vibe *member*
+####cloud.vibe <sub>*member*</sub>
 **Type**: `string`  
 <a name="module_heaven.Cloud.classMethod"></a>
-####Cloud.classMethod() *function*
+####Cloud.classMethod() <sub>*function*</sub>
 a class method
 
 <a name="module_heaven.Cloud.SPACES"></a>
-####*const* Cloud.SPACES *constant*
+####*const* Cloud.SPACES <sub>*constant*</sub>
 a class constant
 
 **Type**: `number`  
 <a name="module_heaven.FACT"></a>
-###*const* \~FACT *constant*
+###*const* \~FACT <sub>*constant*</sub>
 an inner constant
 
 **Type**: `boolean`  
 <a name="module_commonjs/ignore"></a>
-##commonjs/ignore *module*
+##commonjs/ignore <sub>*module*</sub>
 
 module with ignored shiz
 
   
 <a name="module_commonjs/ignore.visible"></a>
-###ignore.visible *member*
+###ignore.visible <sub>*member*</sub>
 visible property
 
   
 <a name="module_commonjs/object-with-alias"></a>
-##commonjs/object-with-alias *module*
+##commonjs/object-with-alias <sub>*module*</sub>
 
 simple object export
 
   
 <a name="module_commonjs/object-with-alias.one"></a>
-###_.one *member*
+###_.one <sub>*member*</sub>
 first property
 
   
 <a name="module_commonjs/object-with-alias.two"></a>
-###_.two *member*
+###_.two <sub>*member*</sub>
 second property
 
   
 <a name="module_commonjs/object-with-alias.three"></a>
-###_.three() *function*
+###_.three() <sub>*function*</sub>
 a function
 
 <a name="module_commonjs/object"></a>
-##commonjs/object *module*
+##commonjs/object <sub>*module*</sub>
 
 simple object export
 
   
 <a name="module_commonjs/object.one"></a>
-###object.one *member*
+###object.one <sub>*member*</sub>
 first property
 
   
 <a name="module_commonjs/object.three"></a>
-###object.three(four, five) *function*
+###object.three(four, five) <sub>*function*</sub>
 a function
 
 **Params**
@@ -348,24 +348,24 @@ a function
 allTogether(true);
 ```
 <a name="module_private"></a>
-##private *module*
+##private <sub>*module*</sub>
 
 module with private shiz
 
   
 <a name="module_private.notprivate"></a>
-###private.notprivate *member*
+###private.notprivate <sub>*member*</sub>
 visible property
 
   
 <a name="module_commonjs/single-value"></a>
-##commonjs/single-value *module*
+##commonjs/single-value <sub>*module*</sub>
 
 this module exports one value, that's it
 
   
 <a name="module_commonjs/sum-alias"></a>
-##commonjs/sum-alias *module*
+##commonjs/sum-alias <sub>*module*</sub>
 
 A simple maths function
 
@@ -375,7 +375,7 @@ A simple maths function
 var sum = require("sum");
 ```
 <a name="module_commonjs/sum"></a>
-##commonjs/sum(a, b) *module*
+##commonjs/sum(a, b) <sub>*module*</sub>
 
 A simple maths function
 
@@ -393,12 +393,12 @@ var result = sum(1, 1);
 ```
 ##Global scope
 <a name="CONST_ONE"></a>
-##*const* CONST_ONE *constant*
+##*const* CONST_ONE <sub>*constant*</sub>
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-##~~*const* CONST_TWO *constant*~~
+##~~*const* CONST_TWO <sub>*constant*</sub>~~
 This variable has all tags set
 
 ***Deprecated***  
@@ -411,30 +411,30 @@ This variable has all tags set
 var CONST_TWO = true;
 ```
 <a name="eFileType"></a>
-##eFileType *member*
+##eFileType <sub>*member*</sub>
 Enum for the `type` value
 
 **Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  
 <a name="visible"></a>
-##visible *member*
+##visible <sub>*member*</sub>
 a visible global
 
   
 <a name="variable"></a>
-##variable *member*
+##variable <sub>*member*</sub>
 a global variable
 
   
 <a name="typed"></a>
-##typed *member*
+##typed <sub>*member*</sub>
 **Type**: `string`  
 <a name="types"></a>
-##types *member*
+##types <sub>*member*</sub>
 **Type**: `string` | `number`  
 <a name="exampled"></a>
-##exampled *member*
+##exampled <sub>*member*</sub>
 a var with an example
 
   
@@ -443,7 +443,7 @@ a var with an example
 var another = 100;
 ```
 <a name="examples"></a>
-##examples *member*
+##examples <sub>*member*</sub>
 a var with multiple examples
 
   
@@ -456,35 +456,35 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected *member*
+##_protected <sub>*member*</sub>
 **Access**: protected  
   
 <a name="withAuthor"></a>
-##withAuthor *member*
+##withAuthor <sub>*member*</sub>
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-##hasDefault *member*
+##hasDefault <sub>*member*</sub>
 **Default**: `23`  
   
 <a name="hasDefaultObject"></a>
-##hasDefaultObject *member*
+##hasDefaultObject <sub>*member*</sub>
 **Default**: `{"one":1,"two":2}`  
   
 <a name="deprecated"></a>
-##~~deprecated *member*~~
+##~~deprecated <sub>*member*</sub>~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
-##readOnly *member*
+##readOnly <sub>*member*</sub>
 **Read only**: true  
   
 <a name="hasSince"></a>
-##hasSince *member*
+##hasSince <sub>*member*</sub>
   
 **Since**: v0.10.28  
 <a name="module_sum-alias"></a>
-##module:sum-alias(a, b) *function*
+##module:sum-alias(a, b) <sub>*function*</sub>
 Sums two numbers together
 
 **Params**
@@ -498,18 +498,18 @@ Sums two numbers together
 var result = sum(1, 1);
 ```
 <a name="read"></a>
-##read(filename, done) *function*
+##read(filename, done) <sub>*function*</sub>
 **Params**
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="globalFunc"></a>
-##globalFunc() *function*
+##globalFunc() <sub>*function*</sub>
 a global function
 
 <a name="exampled"></a>
-##exampled() *function*
+##exampled() <sub>*function*</sub>
 a function with an example
 
 **Example**  
@@ -517,7 +517,7 @@ a function with an example
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-##multiExampled() *function*
+##multiExampled() <sub>*function*</sub>
 a function with multiple examples
 
 **Example**  
@@ -529,39 +529,39 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected() *function*
+##_protected() <sub>*function*</sub>
 **Access**: protected  
 <a name="withAuthor"></a>
-##withAuthor() *function*
+##withAuthor() <sub>*function*</sub>
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-##~~oldFunction() *function*~~
+##~~oldFunction() <sub>*function*</sub>~~
 ***Deprecated***  
 <a name="newFunction"></a>
-##newFunction() *function*
+##newFunction() <sub>*function*</sub>
 **Since**: v0.10.28  
 <a name="withParam"></a>
-##withParam(one) *function*
+##withParam(one) <sub>*function*</sub>
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-##withParams(one, two) *function*
+##withParams(one, two) <sub>*function*</sub>
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-##withOptional(one, [two]) *function*
+##withOptional(one, [two]) <sub>*function*</sub>
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-##withBullets(one, two) *function*
+##withBullets(one, two) <sub>*function*</sub>
 this description has 
 
 - bullet
@@ -575,16 +575,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-##returnsSomething() *function*
+##returnsSomething() <sub>*function*</sub>
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-##returnsSomethingDesc() *function*
+##returnsSomethingDesc() <sub>*function*</sub>
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-##returnsSeveral() *function*
+##returnsSeveral() <sub>*function*</sub>
 **Returns**: `object` | `string` - this return has several types  
 <a name="doSomething"></a>
-##doSomething(options) *function*
+##doSomething(options) <sub>*function*</sub>
 **Params**
 
 - options `object` - the function options
@@ -592,13 +592,13 @@ and needs this line to separate the above list from the below
   - two `string` - second option
 
 <a name="doAnother"></a>
-##doAnother(options) *function*
+##doAnother(options) <sub>*function*</sub>
 **Params**
 
 - options `Object` - the function options
 
 <a name="pluck"></a>
-##pluck(...prop) *function*
+##pluck(...prop) <sub>*function*</sub>
 This function takes variable input
 
 **Params**
@@ -606,11 +606,11 @@ This function takes variable input
 - ...prop `string` - the property(s) as input
 
 <a name="requirer"></a>
-##requirer() *function*
+##requirer() <sub>*function*</sub>
 ensure you have some-module installed
 
 <a name="setMagicNumber"></a>
-##setMagicNumber(x) *function*
+##setMagicNumber(x) <sub>*function*</sub>
 Set the magic number.
 
 **Params**
@@ -618,7 +618,7 @@ Set the magic number.
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
-##doSomething(options) *function*
+##doSomething(options) <sub>*function*</sub>
 **Params**
 
 - options `object` - the function options
@@ -627,12 +627,12 @@ Set the magic number.
 
 <a name="All"></a>
 
-##~~All *class*~~
+##~~All <sub>*class*</sub>~~
 a class with all of the things
 
 **Extends**: `Number`  
 <a name="All"></a>
-##~~new All(input, [options]) *class*~~
+##~~new All(input, [options]) <sub>*class*</sub>~~
 the constructor description
 
 **Params**
@@ -648,19 +648,19 @@ the constructor description
 var yeah = new Everything(true);
 ```
 <a name="All#topping"></a>
-###all.topping *member*
+###all.topping <sub>*member*</sub>
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size *member*
+###all.size <sub>*member*</sub>
 the general size
 
   
 <a name="All#allThings"></a>
-###~~all.allThings(one, two) *function*~~
+###~~all.allThings(one, two) <sub>*function*</sub>~~
 This function has all tags set
 
 **Params**
@@ -678,19 +678,19 @@ all.allTogether(true);
 ```
 <a name="Person"></a>
 
-##Person *class*
+##Person <sub>*class*</sub>
 simple class description
 
 **Extends**: `Object`  
 <a name="Person"></a>
-##new Person() *class*
+##new Person() <sub>*class*</sub>
 a constructor description
 
 <a name="Car"></a>
 
-##Car *class*
+##Car <sub>*class*</sub>
 <a name="Car"></a>
-##new Car([options]) *class*
+##new Car([options]) <sub>*class*</sub>
 a constructor with args
 
 **Params**
@@ -699,18 +699,18 @@ a constructor with args
 
 <a name="Pipe"></a>
 
-##Pipe *class*
+##Pipe <sub>*class*</sub>
 a class which extends
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
 
-##~~Everything *class*~~
+##~~Everything <sub>*class*</sub>~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
 <a name="Everything"></a>
-##~~new Everything(input, [options]) *class*~~
+##~~new Everything(input, [options]) <sub>*class*</sub>~~
 the constructor description
 
 **Params**
@@ -727,24 +727,24 @@ var yeah = new Everything(true);
 ```
 <a name="Rice"></a>
 
-##Rice *class*
+##Rice <sub>*class*</sub>
 <a name="Rice#event_cooked"></a>
-###event: "cooked" *event*
+###event: "cooked" <sub>*event*</sub>
 Fired when rice is ready
 
 <a name="Rice#event_cooking"></a>
-###event: "cooking" *event*
+###event: "cooking" <sub>*event*</sub>
 Fired when rice is cooking
 
 <a name="Something"></a>
 
-##Something *class*
+##Something <sub>*class*</sub>
 <a name="Something#methodOne"></a>
-###something.methodOne() *function*
+###something.methodOne() <sub>*function*</sub>
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two) *function*~~
+###~~something.allTogether(one, two) <sub>*function*</sub>~~
 This function has all tags set
 
 **Params**
@@ -762,24 +762,24 @@ something.allTogether(true);
 ```
 <a name="Pizza"></a>
 
-##Pizza *class*
+##Pizza <sub>*class*</sub>
 <a name="Pizza#topping"></a>
-###pizza.topping *member*
+###pizza.topping <sub>*member*</sub>
 the ingredients on top
 
 **Default**: `mud, lettuce`  
 **Type**: `string`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###pizza.size *member*
+###pizza.size <sub>*member*</sub>
 the general size
 
   
 <a name="Plucker"></a>
 
-##Plucker *class*
+##Plucker <sub>*class*</sub>
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...args, ...three) *function*
+###plucker.doPluck(one, ...args, ...three) <sub>*function*</sub>
 This function takes variable input
 
 **Params**
@@ -789,7 +789,7 @@ This function takes variable input
 - ...three `string` - more input
 
 <a name="onComplete"></a>
-##callback: onComplete *typedef*
+##callback: onComplete <sub>*typedef*</sub>
 Called when an async operation completes
 
 **Params**
@@ -799,7 +799,7 @@ Called when an async operation completes
 
 **Type**: `function`  
 <a name="NumberLike"></a>
-##type: NumberLike *typedef*
+##type: NumberLike <sub>*typedef*</sub>
 A number, or a string containing a number.
 
 **Type**: `number` | `string`  

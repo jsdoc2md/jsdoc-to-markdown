@@ -1,5 +1,5 @@
 <a name="module_file-pet"></a>
-##file-pet *module*
+##file-pet <sub>*module*</sub>
 
 this module returns a pet of files
 
@@ -9,22 +9,22 @@ this module returns a pet of files
 var cowFiles = FilePet("cow/*");
 ```
 **Symbols**  
-  * [filePet.instie *member*](#module_file-pet#instie)
-  * [filePet.files *member*](#module_file-pet#files)
-  * [filePet.delete(paths) *function*](#module_file-pet#delete)
+  * [filePet.instie <sub>*member*</sub>](#module_file-pet#instie)
+  * [filePet.files <sub>*member*</sub>](#module_file-pet#files)
+  * [filePet.delete(paths) <sub>*function*</sub>](#module_file-pet#delete)
 
 <a name="module_file-pet#instie"></a>
-###filePet.instie *member*
+###filePet.instie <sub>*member*</sub>
 an instance ting
 
   
 <a name="module_file-pet#files"></a>
-###filePet.files *member*
+###filePet.files <sub>*member*</sub>
 the static property
 
   
 <a name="module_file-pet#delete"></a>
-###filePet.delete(paths) *function*
+###filePet.delete(paths) <sub>*function*</sub>
 A static methy meth
 
 **Params**

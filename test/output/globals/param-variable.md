@@ -1,6 +1,6 @@
 ##Global scope
 <a name="pluck"></a>
-##pluck(...prop) *function*
+##pluck(...prop) <sub>*function*</sub>
 This function takes variable input
 
 **Params**
@@ -9,12 +9,12 @@ This function takes variable input
 
 <a name="Plucker"></a>
 
-##Plucker *class*
+##Plucker <sub>*class*</sub>
 **Symbols**  
-  * [plucker.doPluck(one, ...args, ...three) *function*](#Plucker#doPluck)
+  * [plucker.doPluck(one, ...args, ...three) <sub>*function*</sub>](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...args, ...three) *function*
+###plucker.doPluck(one, ...args, ...three) <sub>*function*</sub>
 This function takes variable input
 
 **Params**
