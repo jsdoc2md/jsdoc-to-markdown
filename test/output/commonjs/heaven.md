@@ -7,7 +7,7 @@ factory module creating dodgy cloud. object-with-static-class.
 **Symbols**  
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
-  * [\~new Cloud()](#module_heaven.Cloud)
+  * [\~class: Cloud](#module_heaven.Cloud)
 
 <a name="module_heaven.Cloud"></a>
 ###heaven.Cloud
@@ -19,7 +19,7 @@ access to the Cloud class
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
 
-##class: Cloud
+##\~class: Cloud
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  

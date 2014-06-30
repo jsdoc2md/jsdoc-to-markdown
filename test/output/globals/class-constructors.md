@@ -34,7 +34,7 @@ a class which extends
 
 <a name="Everything"></a>
 
-##class: Everything
+##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  

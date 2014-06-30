@@ -220,7 +220,7 @@ Set the magic number.
 
 <a name="All"></a>
 
-##class: All
+##~~class: All~~
 a class with all of the things
 
 **Extends**: `Number`  
@@ -298,7 +298,7 @@ a class which extends
 **Extends**: `Pipe`  
 <a name="Everything"></a>
 
-##class: Everything
+##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
@@ -321,9 +321,11 @@ var yeah = new Everything(true);
 <a name="Rice"></a>
 
 ##class: Rice
+<a name="Rice#event_cooked"></a>
 ###event: "cooked"
 Fired when rice is ready
 
+<a name="Rice#event_cooking"></a>
 ###event: "cooking"
 Fired when rice is cooking
 

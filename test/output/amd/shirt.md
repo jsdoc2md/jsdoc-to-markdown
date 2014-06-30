@@ -7,7 +7,7 @@ A module representing a shirt.
   
 **Symbols**  
   * [shirt.color](#module_shirt.color)
-  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+  * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
 
 <a name="module_shirt.color"></a>
 ###shirt.color
@@ -16,7 +16,7 @@ A property of the module.
   
 <a name="module_shirt.Turtleneck"></a>
 
-##class: Turtleneck
+##class: shirt.Turtleneck
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**

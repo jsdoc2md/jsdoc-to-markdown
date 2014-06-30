@@ -1,7 +1,7 @@
 ##Global scope
 <a name="All"></a>
 
-##class: All
+##~~class: All~~
 a class with all of the things
 
 **Extends**: `Number`  
