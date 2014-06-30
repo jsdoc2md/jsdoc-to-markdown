@@ -30,8 +30,8 @@ var cli = cliArgs([
     { name: "private", type: Boolean,
       description: "Include symbols marked @private in the output"
     },
-    { name: "depth", type: Number,
-      description: "Root depth"
+    { name: "heading-depth", type: Number,
+      description: "root heading depth, defaults to 2."
     }
 ]);
 var usage = cli.getUsage({

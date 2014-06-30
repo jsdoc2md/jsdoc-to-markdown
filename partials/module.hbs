@@ -20,12 +20,6 @@
 
 {{>module-index~}}
 
-{{#if @root.argv.private~}}
-  {{#with (where @root memberof=longname ignore=undefined)~}}
-  {{>module-symbols data=this ~}}
-  {{/with~}}
-{{else~}}
-  {{#with (whereno (where @root memberof=longname ignore=undefined) access="private")~}}
-  {{>module-symbols data=this ~}}
-  {{/with~}}
-{{/if}}
+{{#with (where @root memberof=longname)~}}
+{{>module-symbols data=this ~}}
+{{/with~}}
