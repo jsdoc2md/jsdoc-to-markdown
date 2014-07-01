@@ -6,7 +6,7 @@
 {{>memberof~}}
 {{#if (constructorHasDocs)}}{{>function}}{{/if~}}
 
-{{>module-index~}}
+{{>module-index offset=-2~}}
 
 {{#with (where @root memberof=longname)~}}
   {{#each (where this kind="member")}}{{>member}}{{/each~}}

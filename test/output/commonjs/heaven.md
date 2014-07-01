@@ -8,10 +8,10 @@ factory module creating dodgy cloud. object-with-static-class.
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: \~heaven.Cloud](#module_heaven.Cloud)
-  * [cloud.eyes](#module_heaven.Cloud#eyes)
-  * [cloud.vibe](#module_heaven.Cloud#vibe)
-  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+      * [cloud.eyes](#module_heaven.Cloud#eyes)
+      * [cloud.vibe](#module_heaven.Cloud#vibe)
+      * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+      * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 * [const: \~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>

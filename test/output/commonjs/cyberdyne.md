@@ -8,8 +8,8 @@ exports an object.. has an inner class.
 * [cyber.createMachine()](#module_cyberdyne.createMachine)
 * [\~something](#module_cyberdyne.something)
 * [class: \~cyber.Machine](#module_cyberdyne.Machine)
-  * [machine.eyes](#module_cyberdyne.Machine#eyes)
-  * [machine.vibe](#module_cyberdyne.Machine#vibe)
+      * [machine.eyes](#module_cyberdyne.Machine#eyes)
+      * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.createMachine"></a>
 ###cyber.createMachine()
