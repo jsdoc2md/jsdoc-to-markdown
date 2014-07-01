@@ -1,11 +1,11 @@
-#Modules
 <a name="module_jacket"></a>
 ##jacket
 
 A module representing a jacket.
 
   
-**Symbols**  
+**Symbols**
+
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>

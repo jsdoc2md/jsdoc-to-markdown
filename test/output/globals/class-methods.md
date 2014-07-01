@@ -1,8 +1,8 @@
-#Modules
 #Globals
 <a name="Something"></a>
 ##class: Something
-**Symbols**  
+**Symbols**
+
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
@@ -27,3 +27,4 @@ This function has all tags set
 ```js
 something.allTogether(true);
 ```
+

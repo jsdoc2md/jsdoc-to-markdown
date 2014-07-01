@@ -1,9 +1,8 @@
-#Modules
 #Globals
 <a name="eFileType"></a>
-##eFileType
+##enum: eFileType
 Enum for the `type` value
 
-**Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
+**Properties**: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  

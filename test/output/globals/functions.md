@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="globalFunc"></a>
 ##globalFunc()
@@ -12,6 +11,7 @@ a function with an example
 ```js
 var result = exampled();
 ```
+
 <a name="multiExampled"></a>
 ##multiExampled()
 a function with multiple examples
@@ -20,10 +20,12 @@ a function with multiple examples
 ```js
 var another = 100;
 ```
+
 **Example**  
 ```js
 var next = "p";
 ```
+
 <a name="_protected"></a>
 ##_protected()
 **Access**: protected  

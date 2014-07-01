@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="requirer"></a>
 ##requirer()

@@ -1,11 +1,11 @@
-#Modules
 <a name="module_cyberdyne"></a>
 ##cyberdyne
 
 exports an object.. has an inner class.
 
   
-**Symbols**  
+**Symbols**
+
 * [cyber.createMachine()](#module_cyberdyne.createMachine)
 * [\~something](#module_cyberdyne.something)
 * [class: \~cyber.Machine](#module_cyberdyne.Machine)
@@ -26,7 +26,8 @@ random
 The main class of machine
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
-**Symbols**  
+**Symbols**
+
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 

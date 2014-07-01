@@ -1,11 +1,11 @@
-#Modules
 <a name="module_heaven"></a>
 ##heaven
 
 factory module creating dodgy cloud. object-with-static-class.
 
   
-**Symbols**  
+**Symbols**
+
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: \~heaven.Cloud](#module_heaven.Cloud)
@@ -28,7 +28,8 @@ access to the Cloud class
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
-**Symbols**  
+**Symbols**
+
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)

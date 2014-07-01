@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="pluck"></a>
 ##pluck(...prop)
@@ -10,7 +9,8 @@ This function takes variable input
 
 <a name="Plucker"></a>
 ##class: Plucker
-**Symbols**  
+**Symbols**
+
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>

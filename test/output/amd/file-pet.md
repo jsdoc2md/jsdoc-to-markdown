@@ -1,4 +1,3 @@
-#Modules
 <a name="module_file-pet"></a>
 ##file-pet
 
@@ -9,7 +8,9 @@ this module returns a pet of files
 ```js
 var cowFiles = FilePet("cow/*");
 ```
-**Symbols**  
+
+**Symbols**
+
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)

@@ -1,4 +1,3 @@
-#Modules
 <a name="module_sum-alias"></a>
 ##sum-alias
 
@@ -9,5 +8,7 @@ A simple maths function
 ```js
 var sum = require("sum");
 ```
-**Symbols**  
+
+**Symbols**
+
 

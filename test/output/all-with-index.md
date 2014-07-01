@@ -1,32 +1,33 @@
 #Index
-* [file-pet](#module_file-pet) <sub>exports: class</sub>
+* Modules
+  * [file-pet](#module_file-pet) <sub>exports: class</sub>
     * [filePet.instie](#module_file-pet#instie)
     * [filePet.files](#module_file-pet#files)
     * [filePet.delete(paths)](#module_file-pet#delete)
-* [jacket](#module_jacket) <sub>exports: class</sub>
+  * [jacket](#module_jacket) <sub>exports: class</sub>
     * [jacket.zip()](#module_jacket#zip)
-* [shirt](#module_shirt)
+  * [shirt](#module_shirt)
     * [shirt.color](#module_shirt.color)
     * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
       * [turtleneck.size](#module_shirt.Turtleneck#size)
-* [blazer](#module_blazer) <sub>exports: class</sub>
+  * [blazer](#module_blazer) <sub>exports: class</sub>
     * [blazer.zip()](#module_blazer#zip)
-* [cattle](#module_cattle)
+  * [cattle](#module_cattle)
     * [cattle.createCow()](#module_cattle.createCow)
     * [\~innerMember](#module_cattle.innerMember)
     * [\~innerFuction()](#module_cattle.innerFuction)
     * [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
-* [commonjs/cyberdyne](#module_commonjs/cyberdyne)
+  * [commonjs/cyberdyne](#module_commonjs/cyberdyne)
     * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
     * [\~something](#module_commonjs/cyberdyne.something)
     * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
       * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
       * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
-* [file-set](#module_file-set) <sub>exports: class</sub>
+  * [file-set](#module_file-set) <sub>exports: class</sub>
     * [fileSet.files](#module_file-set#files)
     * [fileSet.delete(paths)](#module_file-set#delete)
-* [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
-* [heaven](#module_heaven)
+  * [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
+  * [heaven](#module_heaven)
     * [heaven.Cloud](#module_heaven.Cloud)
     * [heaven.createCloud()](#module_heaven.createCloud)
     * [class: \~heaven.Cloud](#module_heaven.Cloud)
@@ -35,23 +36,23 @@
       * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
       * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
     * [const: \~FACT](#module_heaven.FACT)
-* [commonjs/ignore](#module_commonjs/ignore)
+  * [commonjs/ignore](#module_commonjs/ignore)
     * [ignore.visible](#module_commonjs/ignore.visible)
-* [commonjs/object-with-alias](#module_commonjs/object-with-alias)
+  * [commonjs/object-with-alias](#module_commonjs/object-with-alias)
     * [_.one](#module_commonjs/object-with-alias.one)
     * [_.two](#module_commonjs/object-with-alias.two)
     * [_.three()](#module_commonjs/object-with-alias.three)
-* [commonjs/object](#module_commonjs/object)
+  * [commonjs/object](#module_commonjs/object)
     * [object.one](#module_commonjs/object.one)
     * [object.three(four, five)](#module_commonjs/object.three)
-* [private](#module_private)
+  * [private](#module_private)
     * [private.notprivate](#module_private.notprivate)
-* [commonjs/single-value](#module_commonjs/single-value) <sub>exports: member</sub>
-* [commonjs/sum-alias](#module_commonjs/sum-alias)
-* [commonjs/sum(a, b)](#module_commonjs/sum)
+  * [commonjs/single-value](#module_commonjs/single-value) <sub>exports: member</sub>
+  * [commonjs/sum-alias](#module_commonjs/sum-alias)
+  * [commonjs/sum(a, b)](#module_commonjs/sum)
 
 * Globals
-  * [eFileType](#eFileType)
+  * [enum: eFileType](#eFileType)
   * [visible](#visible)
   * [variable](#variable)
   * [typed](#typed)
@@ -122,7 +123,9 @@ this module returns a pet of files
 ```js
 var cowFiles = FilePet("cow/*");
 ```
-**Symbols**  
+
+**Symbols**
+
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
@@ -151,7 +154,8 @@ A static methy meth
 A module representing a jacket.
 
   
-**Symbols**  
+**Symbols**
+
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
@@ -165,7 +169,8 @@ Open and close your Jacket.
 A module representing a shirt.
 
   
-**Symbols**  
+**Symbols**
+
 * [shirt.color](#module_shirt.color)
 * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
@@ -183,7 +188,8 @@ A property of the module.
 
 -  `number` - the size innit
 
-**Symbols**  
+**Symbols**
+
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck#size"></a>
@@ -197,7 +203,8 @@ A property of the class.
 A module representing a blazer.
 
   
-**Symbols**  
+**Symbols**
+
 * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer#zip"></a>
@@ -210,7 +217,8 @@ Open and close your Blazer.
 exported object, with-inner-members
 
   
-**Symbols**  
+**Symbols**
+
 * [cattle.createCow()](#module_cattle.createCow)
 * [\~innerMember](#module_cattle.innerMember)
 * [\~innerFuction()](#module_cattle.innerFuction)
@@ -242,7 +250,8 @@ another inner function
 exports an object.. has an inner class.
 
   
-**Symbols**  
+**Symbols**
+
 * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
 * [\~something](#module_commonjs/cyberdyne.something)
 * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
@@ -263,7 +272,8 @@ random
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
-**Symbols**  
+**Symbols**
+
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
 
@@ -281,7 +291,9 @@ The main class of machine
 ```js
 var fileSet = require("file-set");
 ```
-**Symbols**  
+
+**Symbols**
+
 * [fileSet.files](#module_file-set#files)
 * [fileSet.delete(paths)](#module_file-set#delete)
 
@@ -306,7 +318,8 @@ This is the module description
 
 **Since**: v0.10.28  
   
-**Symbols**  
+**Symbols**
+
 
 <a name="module_heaven"></a>
 ##heaven
@@ -314,7 +327,8 @@ This is the module description
 factory module creating dodgy cloud. object-with-static-class.
 
   
-**Symbols**  
+**Symbols**
+
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: \~heaven.Cloud](#module_heaven.Cloud)
@@ -337,7 +351,8 @@ access to the Cloud class
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
-**Symbols**  
+**Symbols**
+
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -369,7 +384,8 @@ an inner constant
 module with ignored shiz
 
   
-**Symbols**  
+**Symbols**
+
 * [ignore.visible](#module_commonjs/ignore.visible)
 
 <a name="module_commonjs/ignore.visible"></a>
@@ -383,7 +399,8 @@ visible property
 simple object export
 
   
-**Symbols**  
+**Symbols**
+
 * [_.one](#module_commonjs/object-with-alias.one)
 * [_.two](#module_commonjs/object-with-alias.two)
 * [_.three()](#module_commonjs/object-with-alias.three)
@@ -408,7 +425,8 @@ a function
 simple object export
 
   
-**Symbols**  
+**Symbols**
+
 * [object.one](#module_commonjs/object.one)
 * [object.three(four, five)](#module_commonjs/object.three)
 
@@ -433,13 +451,15 @@ a function
 ```js
 allTogether(true);
 ```
+
 <a name="module_private"></a>
 ##private
 
 module with private shiz
 
   
-**Symbols**  
+**Symbols**
+
 * [private.notprivate](#module_private.notprivate)
 
 <a name="module_private.notprivate"></a>
@@ -453,7 +473,8 @@ visible property
 this module exports one value, that's it
 
   
-**Symbols**  
+**Symbols**
+
 
 <a name="module_commonjs/sum-alias"></a>
 ##commonjs/sum-alias
@@ -465,7 +486,9 @@ A simple maths function
 ```js
 var sum = require("sum");
 ```
-**Symbols**  
+
+**Symbols**
+
 
 <a name="module_commonjs/sum"></a>
 ##commonjs/sum(a, b)
@@ -484,7 +507,9 @@ A simple maths function
 var sum = require("sum");
 var result = sum(1, 1);
 ```
-**Symbols**  
+
+**Symbols**
+
 
 #Globals
 <a name="CONST_ONE"></a>
@@ -505,11 +530,12 @@ This variable has all tags set
 ```js
 var CONST_TWO = true;
 ```
+
 <a name="eFileType"></a>
-##eFileType
+##enum: eFileType
 Enum for the `type` value
 
-**Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
+**Properties**: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  
 <a name="visible"></a>
@@ -537,6 +563,7 @@ a var with an example
 ```js
 var another = 100;
 ```
+
 <a name="examples"></a>
 ##examples
 a var with multiple examples
@@ -546,10 +573,12 @@ a var with multiple examples
 ```js
 var another = 100;
 ```
+
 **Example**  
 ```js
 var next = "p";
 ```
+
 <a name="_protected"></a>
 ##_protected
 **Access**: protected  
@@ -592,6 +621,7 @@ Sums two numbers together
 ```js
 var result = sum(1, 1);
 ```
+
 <a name="read"></a>
 ##read(filename, done)
 **Params**
@@ -611,6 +641,7 @@ a function with an example
 ```js
 var result = exampled();
 ```
+
 <a name="multiExampled"></a>
 ##multiExampled()
 a function with multiple examples
@@ -619,10 +650,12 @@ a function with multiple examples
 ```js
 var another = 100;
 ```
+
 **Example**  
 ```js
 var next = "p";
 ```
+
 <a name="_protected"></a>
 ##_protected()
 **Access**: protected  
@@ -741,7 +774,9 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-**Symbols**  
+
+**Symbols**
+
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -775,6 +810,7 @@ This function has all tags set
 ```js
 all.allTogether(true);
 ```
+
 <a name="Person"></a>
 ##class: Person
 simple class description
@@ -784,7 +820,8 @@ simple class description
 ##new Person()
 a constructor description
 
-**Symbols**  
+**Symbols**
+
 
 <a name="Car"></a>
 ##class: Car
@@ -796,14 +833,16 @@ a constructor with args
 
 - [options] `object` - optional shit
 
-**Symbols**  
+**Symbols**
+
 
 <a name="Pipe"></a>
 ##class: Pipe
 a class which extends
 
 **Extends**: `Pipe`  
-**Symbols**  
+**Symbols**
+
 
 <a name="Everything"></a>
 ##~~class: Everything~~
@@ -826,11 +865,14 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-**Symbols**  
+
+**Symbols**
+
 
 <a name="Rice"></a>
 ##class: Rice
-**Symbols**  
+**Symbols**
+
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
@@ -844,7 +886,8 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-**Symbols**  
+**Symbols**
+
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
@@ -869,9 +912,11 @@ This function has all tags set
 ```js
 something.allTogether(true);
 ```
+
 <a name="Pizza"></a>
 ##class: Pizza
-**Symbols**  
+**Symbols**
+
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
@@ -889,7 +934,8 @@ the general size
   
 <a name="Plucker"></a>
 ##class: Plucker
-**Symbols**  
+**Symbols**
+
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>

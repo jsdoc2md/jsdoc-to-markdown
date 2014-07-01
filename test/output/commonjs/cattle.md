@@ -1,11 +1,11 @@
-#Modules
 <a name="module_cattle"></a>
 ##cattle
 
 exported object, with-inner-members
 
   
-**Symbols**  
+**Symbols**
+
 * [cattle.createCow()](#module_cattle.createCow)
 * [\~innerMember](#module_cattle.innerMember)
 * [\~innerFuction()](#module_cattle.innerFuction)

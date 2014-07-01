@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE
@@ -18,11 +17,12 @@ This variable has all tags set
 ```js
 var CONST_TWO = true;
 ```
+
 <a name="eFileType"></a>
-##eFileType
+##enum: eFileType
 Enum for the `type` value
 
-**Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
+**Properties**: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 **Type**: `number`  
 <a name="visible"></a>
@@ -50,6 +50,7 @@ a var with an example
 ```js
 var another = 100;
 ```
+
 <a name="examples"></a>
 ##examples
 a var with multiple examples
@@ -59,10 +60,12 @@ a var with multiple examples
 ```js
 var another = 100;
 ```
+
 **Example**  
 ```js
 var next = "p";
 ```
+
 <a name="_protected"></a>
 ##_protected
 **Access**: protected  
@@ -110,6 +113,7 @@ a function with an example
 ```js
 var result = exampled();
 ```
+
 <a name="multiExampled"></a>
 ##multiExampled()
 a function with multiple examples
@@ -118,10 +122,12 @@ a function with multiple examples
 ```js
 var another = 100;
 ```
+
 **Example**  
 ```js
 var next = "p";
 ```
+
 <a name="_protected"></a>
 ##_protected()
 **Access**: protected  
@@ -240,7 +246,9 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-**Symbols**  
+
+**Symbols**
+
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -274,6 +282,7 @@ This function has all tags set
 ```js
 all.allTogether(true);
 ```
+
 <a name="Person"></a>
 ##class: Person
 simple class description
@@ -283,7 +292,8 @@ simple class description
 ##new Person()
 a constructor description
 
-**Symbols**  
+**Symbols**
+
 
 <a name="Car"></a>
 ##class: Car
@@ -295,14 +305,16 @@ a constructor with args
 
 - [options] `object` - optional shit
 
-**Symbols**  
+**Symbols**
+
 
 <a name="Pipe"></a>
 ##class: Pipe
 a class which extends
 
 **Extends**: `Pipe`  
-**Symbols**  
+**Symbols**
+
 
 <a name="Everything"></a>
 ##~~class: Everything~~
@@ -325,11 +337,14 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-**Symbols**  
+
+**Symbols**
+
 
 <a name="Rice"></a>
 ##class: Rice
-**Symbols**  
+**Symbols**
+
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
@@ -343,7 +358,8 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-**Symbols**  
+**Symbols**
+
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
@@ -368,9 +384,11 @@ This function has all tags set
 ```js
 something.allTogether(true);
 ```
+
 <a name="Pizza"></a>
 ##class: Pizza
-**Symbols**  
+**Symbols**
+
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
@@ -388,7 +406,8 @@ the general size
   
 <a name="Plucker"></a>
 ##class: Plucker
-**Symbols**  
+**Symbols**
+
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>

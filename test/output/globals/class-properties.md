@@ -1,8 +1,8 @@
-#Modules
 #Globals
 <a name="Pizza"></a>
 ##class: Pizza
-**Symbols**  
+**Symbols**
+
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 

@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE
@@ -18,3 +17,4 @@ This variable has all tags set
 ```js
 var CONST_TWO = true;
 ```
+

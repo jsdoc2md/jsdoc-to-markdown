@@ -1,11 +1,11 @@
-#Modules
 <a name="module_object"></a>
 ##object
 
 simple object export
 
   
-**Symbols**  
+**Symbols**
+
 * [object.one](#module_object.one)
 * [object.three(four, five)](#module_object.three)
 
@@ -30,3 +30,4 @@ a function
 ```js
 allTogether(true);
 ```
+

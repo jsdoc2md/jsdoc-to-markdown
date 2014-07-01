@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="variable"></a>
 ##variable
@@ -20,6 +19,7 @@ a var with an example
 ```js
 var another = 100;
 ```
+
 <a name="examples"></a>
 ##examples
 a var with multiple examples
@@ -29,10 +29,12 @@ a var with multiple examples
 ```js
 var another = 100;
 ```
+
 **Example**  
 ```js
 var next = "p";
 ```
+
 <a name="_protected"></a>
 ##_protected
 **Access**: protected  

@@ -1,4 +1,3 @@
-#Modules
 <a name="module_shirt"></a>
 ##shirt
 **Version**: 1.0  
@@ -6,7 +5,8 @@
 A module representing a shirt.
 
   
-**Symbols**  
+**Symbols**
+
 * [shirt.color](#module_shirt.color)
 * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
@@ -24,7 +24,8 @@ A property of the module.
 
 -  `number` - the size innit
 
-**Symbols**  
+**Symbols**
+
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck#size"></a>

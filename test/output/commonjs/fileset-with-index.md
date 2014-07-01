@@ -1,4 +1,3 @@
-#Modules
 <a name="module_file-set"></a>
 ##file-set
 
@@ -7,7 +6,9 @@
 ```js
 var fileSet = require("file-set");
 ```
-**Symbols**  
+
+**Symbols**
+
 * [fileSet.files](#module_file-set#files)
 * [fileSet.delete(paths)](#module_file-set#delete)
 

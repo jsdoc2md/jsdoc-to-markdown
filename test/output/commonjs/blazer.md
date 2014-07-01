@@ -1,11 +1,11 @@
-#Modules
 <a name="module_blazer"></a>
 ##blazer
 
 A module representing a blazer.
 
   
-**Symbols**  
+**Symbols**
+
 * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer#zip"></a>

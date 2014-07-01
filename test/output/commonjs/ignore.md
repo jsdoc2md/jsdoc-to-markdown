@@ -1,11 +1,11 @@
-#Modules
 <a name="module_ignore"></a>
 ##ignore
 
 module with ignored shiz
 
   
-**Symbols**  
+**Symbols**
+
 * [ignore.visible](#module_ignore.visible)
 
 <a name="module_ignore.visible"></a>

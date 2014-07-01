@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="setMagicNumber"></a>
 ##setMagicNumber(x)

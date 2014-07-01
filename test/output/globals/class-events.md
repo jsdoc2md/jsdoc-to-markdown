@@ -1,8 +1,8 @@
-#Modules
 #Globals
 <a name="Rice"></a>
 ##class: Rice
-**Symbols**  
+**Symbols**
+
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 

@@ -65,7 +65,6 @@ These projects have readme files rendered by `jsdoc2md`:
 * https://github.com/75lb/command-line-args
 
 #API Reference
-#Modules
 <a name="module_jsdoc-to-markdown"></a>
 
   
@@ -73,6 +72,7 @@ These projects have readme files rendered by `jsdoc2md`:
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
+
 <a name="module_jsdoc-to-markdown.render"></a>
 ###jsdoc2md.render(options)
 **Params**

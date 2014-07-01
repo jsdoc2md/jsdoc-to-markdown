@@ -1,6 +1,7 @@
 {{>heading}}Index
+* Modules
 {{#each (where @root kind="module")~}}
-* {{#link}}{{>module-name}}{{/link}}{{>exports}}
+{{string-repeat "  " (depth2 0)}}* {{#link}}{{>module-name}}{{/link}}{{>exports}}
 {{>index-children~}}
 {{/each}}
 * Globals

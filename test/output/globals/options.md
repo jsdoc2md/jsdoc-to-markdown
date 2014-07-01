@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="doSomething"></a>
 ##doSomething(options)

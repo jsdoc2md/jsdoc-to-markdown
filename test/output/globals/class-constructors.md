@@ -1,4 +1,3 @@
-#Modules
 #Globals
 <a name="Person"></a>
 ##class: Person
@@ -9,7 +8,8 @@ simple class description
 ##new Person()
 a constructor description
 
-**Symbols**  
+**Symbols**
+
 
 <a name="Car"></a>
 ##class: Car
@@ -21,14 +21,16 @@ a constructor with args
 
 - [options] `object` - optional shit
 
-**Symbols**  
+**Symbols**
+
 
 <a name="Pipe"></a>
 ##class: Pipe
 a class which extends
 
 **Extends**: `Pipe`  
-**Symbols**  
+**Symbols**
+
 
 <a name="Everything"></a>
 ##~~class: Everything~~
@@ -51,5 +53,7 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-**Symbols**  
+
+**Symbols**
+
 

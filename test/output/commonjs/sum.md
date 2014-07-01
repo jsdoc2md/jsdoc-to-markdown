@@ -1,4 +1,3 @@
-#Modules
 <a name="module_sum"></a>
 ##sum(a, b)
 
@@ -16,5 +15,7 @@ A simple maths function
 var sum = require("sum");
 var result = sum(1, 1);
 ```
-**Symbols**  
+
+**Symbols**
+
 
