@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="globalFunc"></a>
 ##globalFunc()
 a global function

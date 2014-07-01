@@ -1,23 +1,8 @@
-{{#if @root.argv.private~}}
-
-{{#with (where (whereno @root kind="module") scope="global" ignore=undefined)~}}
-##Global scope
+{{#with (whereno @root kind="module")~}}
+{{>heading}}Globals
 {{#each (where this kind="constant")}}{{>constant}}{{/each~}}
 {{#each (where this kind="member")}}{{>member}}{{/each~}}
 {{#each (where this kind="function")}}{{>function}}{{/each~}}
 {{#each (where this kind="class")}}{{>class}}{{/each~}}
 {{#each (where this kind="typedef")}}{{>typedef}}{{/each~}}
 {{/with~}}
-
-{{else~}}
-
-{{#with (whereno (where (whereno @root kind="module") scope="global" ignore=undefined) access="private")~}}
-##Global scope
-{{#each (where this kind="constant")}}{{>constant}}{{/each~}}
-{{#each (where this kind="member")}}{{>member}}{{/each~}}
-{{#each (where this kind="function")}}{{>function}}{{/each~}}
-{{#each (where this kind="class")}}{{>class}}{{/each~}}
-{{#each (where this kind="typedef")}}{{>typedef}}{{/each~}}
-{{/with~}}
-
-{{/if}}

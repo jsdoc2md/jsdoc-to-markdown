@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE
 the first important constant

@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="Person"></a>
 ##class: Person
 simple class description

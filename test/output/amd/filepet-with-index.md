@@ -1,3 +1,4 @@
+#Modules
 <a name="module_file-pet"></a>
 ##file-pet
 
@@ -8,6 +9,61 @@ this module returns a pet of files
 ```js
 var cowFiles = FilePet("cow/*");
 ```
+**Symbols**  
+* [filePet.instie](#module_file-pet#instie)
+* [filePet.files](#module_file-pet#files)
+* [filePet.delete(paths)](#module_file-pet#delete)
+
+<a name="module_file-pet#instie"></a>
+###filePet.instie
+an instance ting
+
+  
+<a name="module_file-pet#files"></a>
+###filePet.files
+the static property
+
+  
+<a name="module_file-pet#delete"></a>
+###filePet.delete(paths)
+A static methy meth
+
+**Params**
+
+- paths `array` - the paths to delete
+
+#Globals
+<a name="module_file-pet#instie"></a>
+##filePet.instie
+an instance ting
+
+  
+<a name="module_file-pet#files"></a>
+##filePet.files
+the static property
+
+  
+<a name="module_file-pet#delete"></a>
+##filePet.delete(paths)
+A static methy meth
+
+**Params**
+
+- paths `array` - the paths to delete
+
+<a name="module_file-pet"></a>
+##class: module:file-pet
+this class returns a pet of files
+
+<a name="module_file-pet"></a>
+##new module:file-pet()
+this is the contructor
+
+**Example**  
+```js
+var cowFiles = FilePet("cow/*");
+```
+
 **Symbols**  
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)

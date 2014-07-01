@@ -1,3 +1,4 @@
+#Modules
 <a name="module_sum"></a>
 ##sum(a, b)
 
@@ -17,3 +18,4 @@ var result = sum(1, 1);
 ```
 **Symbols**  
 
+#Globals

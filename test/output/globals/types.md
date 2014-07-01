@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="doSomething"></a>
 ##doSomething(options)
 **Params**

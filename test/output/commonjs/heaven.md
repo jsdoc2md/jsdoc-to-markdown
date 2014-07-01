@@ -1,3 +1,4 @@
+#Modules
 <a name="module_heaven"></a>
 ##heaven
 
@@ -53,3 +54,58 @@ a class constant
 an inner constant
 
 **Type**: `boolean`  
+#Globals
+<a name="module_heaven.Cloud.SPACES"></a>
+##const: Cloud.SPACES
+a class constant
+
+**Type**: `number`  
+<a name="module_heaven.FACT"></a>
+##const: \~FACT
+an inner constant
+
+**Type**: `boolean`  
+<a name="module_heaven.Cloud"></a>
+##heaven.Cloud
+access to the Cloud class
+
+**Type**: [Cloud](#module_heaven.Cloud)  
+<a name="module_heaven.Cloud#eyes"></a>
+##cloud.eyes
+**Type**: `number`  
+<a name="module_heaven.Cloud#vibe"></a>
+##cloud.vibe
+**Type**: `string`  
+<a name="module_heaven.createCloud"></a>
+##heaven.createCloud()
+**Returns**: [Cloud](#module_heaven.Cloud)  
+<a name="module_heaven.Cloud.classMethod"></a>
+##Cloud.classMethod()
+a class method
+
+<a name="module_heaven.Cloud"></a>
+##class: \~heaven.Cloud
+The main class of machine
+
+**Scope**: inner class of [heaven](#module_heaven)  
+**Symbols**  
+* [cloud.eyes](#module_heaven.Cloud#eyes)
+* [cloud.vibe](#module_heaven.Cloud#vibe)
+* [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+* [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+
+<a name="module_heaven.Cloud#eyes"></a>
+###cloud.eyes
+**Type**: `number`  
+<a name="module_heaven.Cloud#vibe"></a>
+###cloud.vibe
+**Type**: `string`  
+<a name="module_heaven.Cloud.classMethod"></a>
+###Cloud.classMethod()
+a class method
+
+<a name="module_heaven.Cloud.SPACES"></a>
+###const: Cloud.SPACES
+a class constant
+
+**Type**: `number`  

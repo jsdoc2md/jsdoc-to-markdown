@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="setMagicNumber"></a>
 ##setMagicNumber(x)
 Set the magic number.

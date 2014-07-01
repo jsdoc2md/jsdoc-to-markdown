@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="read"></a>
 ##read(filename, done)
 **Params**

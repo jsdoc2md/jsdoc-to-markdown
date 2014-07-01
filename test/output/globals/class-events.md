@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="Rice"></a>
 ##class: Rice
 **Symbols**  

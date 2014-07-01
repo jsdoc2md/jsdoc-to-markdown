@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="visible"></a>
 ##visible
 a visible global

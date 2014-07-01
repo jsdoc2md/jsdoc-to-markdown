@@ -1,4 +1,5 @@
-##Global scope
+#Modules
+#Globals
 <a name="variable"></a>
 ##variable
 a global variable
