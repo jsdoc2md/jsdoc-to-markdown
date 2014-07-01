@@ -16,7 +16,6 @@ A property of the module.
 
   
 <a name="module_shirt.Turtleneck"></a>
-
 ###class: shirt.Turtleneck
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()

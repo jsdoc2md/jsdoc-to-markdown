@@ -1,6 +1,5 @@
 ##Global scope
 <a name="Something"></a>
-
 ##class: Something
 **Symbols**  
 * [something.methodOne()](#Something#methodOne)

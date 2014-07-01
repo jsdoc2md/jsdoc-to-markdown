@@ -7,10 +7,10 @@ var cliArgs = require("command-line-args"),
     
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
-      description: "A custom handlebars template to insert the rendered documentation into,\noverriding the default" 
+      description: "A custom handlebars template to insert the rendered documentation into" 
     },
     { name: "preset", alias: "p", type: String,
-      description: "Use a preset template ('default', 'global' or 'modules')" 
+      description: "Use a preset template" 
     },
     { name: "json", alias: "j", type: Boolean,
       description: "Output the template data only"
@@ -22,16 +22,16 @@ var cli = cliArgs([
       description: "The javascript source files. The default option."
     },
     { name: "index", type: Boolean,
-      description: "Include an index for each module and class, linking to members"
+      description: "Include a symbol index at the head of each module and class"
     },
     { name: "skip-heading", type: Boolean,
-      description: "Skip the module heading, useful if you already have the heading\nelsewhere in your template."
+      description: "Skip the module heading, useful if you already have the heading\nelsewhere in your custom template."
     },
     { name: "private", type: Boolean,
       description: "Include symbols marked @private in the output"
     },
     { name: "heading-depth", type: Number,
-      description: "root heading depth, defaults to 2."
+      description: "root heading depth to begin the documentation from, defaults to 2 (`##`)."
     }
 ]);
 var usage = cli.getUsage({

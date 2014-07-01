@@ -23,7 +23,6 @@ access to the Cloud class
 ###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.Cloud"></a>
-
 ###class: \~heaven.Cloud
 The main class of machine
 

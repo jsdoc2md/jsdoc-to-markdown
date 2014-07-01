@@ -1,6 +1,5 @@
 ##Global scope
 <a name="Person"></a>
-
 ##class: Person
 simple class description
 
@@ -12,7 +11,6 @@ a constructor description
 **Symbols**  
 
 <a name="Car"></a>
-
 ##class: Car
 <a name="Car"></a>
 ##new Car([options])
@@ -25,7 +23,6 @@ a constructor with args
 **Symbols**  
 
 <a name="Pipe"></a>
-
 ##class: Pipe
 a class which extends
 
@@ -33,7 +30,6 @@ a class which extends
 **Symbols**  
 
 <a name="Everything"></a>
-
 ##~~class: Everything~~
 a class with all trimmings
 

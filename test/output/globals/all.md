@@ -219,7 +219,6 @@ Set the magic number.
   - two `string` - second option
 
 <a name="All"></a>
-
 ##~~class: All~~
 a class with all of the things
 
@@ -275,7 +274,6 @@ This function has all tags set
 all.allTogether(true);
 ```
 <a name="Person"></a>
-
 ##class: Person
 simple class description
 
@@ -287,7 +285,6 @@ a constructor description
 **Symbols**  
 
 <a name="Car"></a>
-
 ##class: Car
 <a name="Car"></a>
 ##new Car([options])
@@ -300,7 +297,6 @@ a constructor with args
 **Symbols**  
 
 <a name="Pipe"></a>
-
 ##class: Pipe
 a class which extends
 
@@ -308,7 +304,6 @@ a class which extends
 **Symbols**  
 
 <a name="Everything"></a>
-
 ##~~class: Everything~~
 a class with all trimmings
 
@@ -332,7 +327,6 @@ var yeah = new Everything(true);
 **Symbols**  
 
 <a name="Rice"></a>
-
 ##class: Rice
 **Symbols**  
 * [event: "cooked"](#Rice#event_cooked)
@@ -347,7 +341,6 @@ Fired when rice is ready
 Fired when rice is cooking
 
 <a name="Something"></a>
-
 ##class: Something
 **Symbols**  
 * [something.methodOne()](#Something#methodOne)
@@ -375,7 +368,6 @@ This function has all tags set
 something.allTogether(true);
 ```
 <a name="Pizza"></a>
-
 ##class: Pizza
 **Symbols**  
 * [pizza.topping](#Pizza#topping)
@@ -394,7 +386,6 @@ the general size
 
   
 <a name="Plucker"></a>
-
 ##class: Plucker
 **Symbols**  
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

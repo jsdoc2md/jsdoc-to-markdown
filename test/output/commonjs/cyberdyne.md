@@ -21,7 +21,6 @@ random
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
   
 <a name="module_cyberdyne.Machine"></a>
-
 ###class: \~cyber.Machine
 The main class of machine
 

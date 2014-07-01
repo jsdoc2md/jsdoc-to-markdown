@@ -8,7 +8,6 @@ This function takes variable input
 - ...prop `string` - the property(s) as input
 
 <a name="Plucker"></a>
-
 ##class: Plucker
 **Symbols**  
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
