@@ -122,6 +122,11 @@ this module returns a pet of files
 ```js
 var cowFiles = FilePet("cow/*");
 ```
+**Symbols**  
+* [filePet.instie](#module_file-pet#instie)
+* [filePet.files](#module_file-pet#files)
+* [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet#instie"></a>
 ###filePet.instie
 an instance ting
@@ -146,6 +151,9 @@ A static methy meth
 A module representing a jacket.
 
   
+**Symbols**  
+* [jacket.zip()](#module_jacket#zip)
+
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -157,6 +165,11 @@ Open and close your Jacket.
 A module representing a shirt.
 
   
+**Symbols**  
+* [shirt.color](#module_shirt.color)
+* [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
 <a name="module_shirt.color"></a>
 ###shirt.color
 A property of the module.
@@ -170,6 +183,9 @@ A property of the module.
 
 -  `number` - the size innit
 
+**Symbols**  
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
 <a name="module_shirt.Turtleneck#size"></a>
 ####turtleneck.size
 A property of the class.
@@ -181,6 +197,9 @@ A property of the class.
 A module representing a blazer.
 
   
+**Symbols**  
+* [blazer.zip()](#module_blazer#zip)
+
 <a name="module_blazer#zip"></a>
 ###blazer.zip()
 Open and close your Blazer.
@@ -191,6 +210,12 @@ Open and close your Blazer.
 exported object, with-inner-members
 
   
+**Symbols**  
+* [cattle.createCow()](#module_cattle.createCow)
+* [\~innerMember](#module_cattle.innerMember)
+* [\~innerFuction()](#module_cattle.innerFuction)
+* [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+
 <a name="module_cattle.createCow"></a>
 ###cattle.createCow()
 **Returns**: `boolean`  
@@ -217,6 +242,13 @@ another inner function
 exports an object.. has an inner class.
 
   
+**Symbols**  
+* [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
+* [\~something](#module_commonjs/cyberdyne.something)
+* [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
+  * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
+  * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
+
 <a name="module_commonjs/cyberdyne.createMachine"></a>
 ###cyber.createMachine()
 **Returns**: `module:cyberdyne~Machine`  
@@ -231,6 +263,10 @@ random
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
+**Symbols**  
+  * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
+  * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
+
 <a name="module_commonjs/cyberdyne.Machine#eyes"></a>
 ####machine.eyes
 **Type**: `number`  
@@ -245,6 +281,10 @@ The main class of machine
 ```js
 var fileSet = require("file-set");
 ```
+**Symbols**  
+* [fileSet.files](#module_file-set#files)
+* [fileSet.delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set#files"></a>
 ###fileSet.files
 the static property
@@ -266,12 +306,24 @@ This is the module description
 
 **Since**: v0.10.28  
   
+**Symbols**  
+
 <a name="module_heaven"></a>
 ##heaven
 
 factory module creating dodgy cloud. object-with-static-class.
 
   
+**Symbols**  
+* [heaven.Cloud](#module_heaven.Cloud)
+* [heaven.createCloud()](#module_heaven.createCloud)
+* [class: \~heaven.Cloud](#module_heaven.Cloud)
+  * [cloud.eyes](#module_heaven.Cloud#eyes)
+  * [cloud.vibe](#module_heaven.Cloud#vibe)
+  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+* [const: \~FACT](#module_heaven.FACT)
+
 <a name="module_heaven.Cloud"></a>
 ###heaven.Cloud
 access to the Cloud class
@@ -285,6 +337,12 @@ access to the Cloud class
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
+**Symbols**  
+  * [cloud.eyes](#module_heaven.Cloud#eyes)
+  * [cloud.vibe](#module_heaven.Cloud#vibe)
+  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+
 <a name="module_heaven.Cloud#eyes"></a>
 ####cloud.eyes
 **Type**: `number`  
@@ -311,6 +369,9 @@ an inner constant
 module with ignored shiz
 
   
+**Symbols**  
+* [ignore.visible](#module_commonjs/ignore.visible)
+
 <a name="module_commonjs/ignore.visible"></a>
 ###ignore.visible
 visible property
@@ -322,6 +383,11 @@ visible property
 simple object export
 
   
+**Symbols**  
+* [_.one](#module_commonjs/object-with-alias.one)
+* [_.two](#module_commonjs/object-with-alias.two)
+* [_.three()](#module_commonjs/object-with-alias.three)
+
 <a name="module_commonjs/object-with-alias.one"></a>
 ###_.one
 first property
@@ -342,6 +408,10 @@ a function
 simple object export
 
   
+**Symbols**  
+* [object.one](#module_commonjs/object.one)
+* [object.three(four, five)](#module_commonjs/object.three)
+
 <a name="module_commonjs/object.one"></a>
 ###object.one
 first property
@@ -369,6 +439,9 @@ allTogether(true);
 module with private shiz
 
   
+**Symbols**  
+* [private.notprivate](#module_private.notprivate)
+
 <a name="module_private.notprivate"></a>
 ###private.notprivate
 visible property
@@ -380,6 +453,8 @@ visible property
 this module exports one value, that's it
 
   
+**Symbols**  
+
 <a name="module_commonjs/sum-alias"></a>
 ##commonjs/sum-alias
 
@@ -390,6 +465,8 @@ A simple maths function
 ```js
 var sum = require("sum");
 ```
+**Symbols**  
+
 <a name="module_commonjs/sum"></a>
 ##commonjs/sum(a, b)
 
@@ -407,6 +484,8 @@ A simple maths function
 var sum = require("sum");
 var result = sum(1, 1);
 ```
+**Symbols**  
+
 #Globals
 <a name="module_heaven.Cloud.SPACES"></a>
 ##const: Cloud.SPACES
@@ -913,6 +992,11 @@ this is the contructor
 var cowFiles = FilePet("cow/*");
 ```
 
+**Symbols**  
+* [filePet.instie](#module_file-pet#instie)
+* [filePet.files](#module_file-pet#files)
+* [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet#instie"></a>
 ###filePet.instie
 an instance ting
@@ -939,12 +1023,18 @@ A static methy meth
 A class that says hello!
 
 **Scope**: inner class of &#x60;&lt;anonymous&gt;&#x60;  
+**Symbols**  
+* [module:hello/world.sayHello()](#<anonymous>.module_hello/world#sayHello)
+
 <a name="<anonymous>.module_hello/world#sayHello"></a>
 ###module:hello/world.sayHello()
 Say hello.
 
 <a name="module_jacket"></a>
 ##class: module:jacket
+**Symbols**  
+* [jacket.zip()](#module_jacket#zip)
+
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -956,6 +1046,9 @@ Open and close your Jacket.
 **Params**
 
 -  `number` - the size innit
+
+**Symbols**  
+* [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck#size"></a>
 ###turtleneck.size
@@ -970,6 +1063,9 @@ A property of the class.
 
 - input `string` - the input
 
+**Symbols**  
+* [blazer.zip()](#module_blazer#zip)
+
 <a name="module_blazer#zip"></a>
 ###blazer.zip()
 Open and close your Blazer.
@@ -979,6 +1075,10 @@ Open and close your Blazer.
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
+**Symbols**  
+* [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
+* [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
+
 <a name="module_commonjs/cyberdyne.Machine#eyes"></a>
 ###machine.eyes
 **Type**: `number`  
@@ -1001,6 +1101,10 @@ Takes a list of path patterns
 ```js
 var cowFiles = FileSet("cow/*");
 ```
+**Symbols**  
+* [fileSet.files](#module_file-set#files)
+* [fileSet.delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set#files"></a>
 ###fileSet.files
 the static property
@@ -1019,6 +1123,12 @@ A static methy meth
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
+**Symbols**  
+* [cloud.eyes](#module_heaven.Cloud#eyes)
+* [cloud.vibe](#module_heaven.Cloud#vibe)
+* [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+* [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+
 <a name="module_heaven.Cloud#eyes"></a>
 ###cloud.eyes
 **Type**: `number`  
@@ -1055,6 +1165,11 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
+**Symbols**  
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
+
 <a name="All#topping"></a>
 ###all.topping
 the ingredients on top
@@ -1093,6 +1208,8 @@ simple class description
 ##new Person()
 a constructor description
 
+**Symbols**  
+
 <a name="Car"></a>
 ##class: Car
 <a name="Car"></a>
@@ -1103,11 +1220,15 @@ a constructor with args
 
 - [options] `object` - optional shit
 
+**Symbols**  
+
 <a name="Pipe"></a>
 ##class: Pipe
 a class which extends
 
 **Extends**: `Pipe`  
+**Symbols**  
+
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
@@ -1129,8 +1250,14 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
+**Symbols**  
+
 <a name="Rice"></a>
 ##class: Rice
+**Symbols**  
+* [event: "cooked"](#Rice#event_cooked)
+* [event: "cooking"](#Rice#event_cooking)
+
 <a name="Rice#event_cooked"></a>
 ###event: "cooked"
 Fired when rice is ready
@@ -1141,6 +1268,10 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
+**Symbols**  
+* [something.methodOne()](#Something#methodOne)
+* [~~something.allTogether(one, two)~~](#Something#allTogether)
+
 <a name="Something#methodOne"></a>
 ###something.methodOne()
 method description
@@ -1164,6 +1295,10 @@ something.allTogether(true);
 ```
 <a name="Pizza"></a>
 ##class: Pizza
+**Symbols**  
+* [pizza.topping](#Pizza#topping)
+* [pizza.size](#Pizza#size)
+
 <a name="Pizza#topping"></a>
 ###pizza.topping
 the ingredients on top
@@ -1178,6 +1313,9 @@ the general size
   
 <a name="Plucker"></a>
 ##class: Plucker
+**Symbols**  
+* [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)
 This function takes variable input
