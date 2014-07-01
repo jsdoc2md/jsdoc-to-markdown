@@ -18,4 +18,3 @@ var result = sum(1, 1);
 ```
 **Symbols**  
 
-#Globals

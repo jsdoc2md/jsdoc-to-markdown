@@ -13,9 +13,3 @@ module with private shiz
 visible property
 
   
-#Globals
-<a name="module_private.notprivate"></a>
-##private.notprivate
-visible property
-
-  

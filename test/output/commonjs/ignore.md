@@ -13,9 +13,3 @@ module with ignored shiz
 visible property
 
   
-#Globals
-<a name="module_ignore.visible"></a>
-##ignore.visible
-visible property
-
-  

@@ -12,17 +12,3 @@ A module representing a jacket.
 ###jacket.zip()
 Open and close your Jacket.
 
-#Globals
-<a name="module_jacket#zip"></a>
-##jacket.zip()
-Open and close your Jacket.
-
-<a name="module_jacket"></a>
-##class: module:jacket
-**Symbols**  
-* [jacket.zip()](#module_jacket#zip)
-
-<a name="module_jacket#zip"></a>
-###jacket.zip()
-Open and close your Jacket.
-

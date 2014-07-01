@@ -1,4 +1,4 @@
-{{#with (whereno @root kind="module")~}}
+{{#with (where (whereno @root kind="module") scope="global")~}}
 {{>heading}}Globals
 {{#each (where this kind="constant")}}{{>constant}}{{/each~}}
 {{#each (where this kind="member")}}{{>member}}{{/each~}}

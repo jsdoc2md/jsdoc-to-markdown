@@ -18,48 +18,12 @@ This variable has all tags set
 ```js
 var CONST_TWO = true;
 ```
-<a name="All#topping"></a>
-##all.topping
-the ingredients on top
-
-**Default**: `mud, lettuce`  
-**Type**: `string`  
-**Since**: v1.0.0  
-<a name="All#size"></a>
-##all.size
-the general size
-
-  
-<a name="Pizza#topping"></a>
-##pizza.topping
-the ingredients on top
-
-**Default**: `mud, lettuce`  
-**Type**: `string`  
-**Since**: v1.0.0  
-<a name="Pizza#size"></a>
-##pizza.size
-the general size
-
-  
 <a name="eFileType"></a>
 ##eFileType
 Enum for the `type` value
 
 **Enum** with properties: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
-**Type**: `number`  
-<a name="eFileType.NOEXIST"></a>
-##eFileType.NOEXIST
-**Default**: `0`  
-**Type**: `number`  
-<a name="eFileType.FILE"></a>
-##eFileType.FILE
-**Default**: `1`  
-**Type**: `number`  
-<a name="eFileType.DIR"></a>
-##eFileType.DIR
-**Default**: `2`  
 **Type**: `number`  
 <a name="visible"></a>
 ##visible
@@ -134,44 +98,6 @@ var next = "p";
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
-<a name="All#allThings"></a>
-##~~all.allThings(one, two)~~
-This function has all tags set
-
-**Params**
-
-- one `string` - The input string
-- two `object` - a second input
-
-***Deprecated***  
-**Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `object` | `string` - this return has several types  
-**Example**  
-```js
-all.allTogether(true);
-```
-<a name="Something#methodOne"></a>
-##something.methodOne()
-method description
-
-<a name="Something#allTogether"></a>
-##~~something.allTogether(one, two)~~
-This function has all tags set
-
-**Params**
-
-- one `string` - The input string
-- two `object` - a second input
-
-***Deprecated***  
-**Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `object` | `string` - this return has several types  
-**Example**  
-```js
-something.allTogether(true);
-```
 <a name="globalFunc"></a>
 ##globalFunc()
 a global function
@@ -272,16 +198,6 @@ This function takes variable input
 **Params**
 
 - ...prop `string` - the property(s) as input
-
-<a name="Plucker#doPluck"></a>
-##plucker.doPluck(one, ...args, ...three)
-This function takes variable input
-
-**Params**
-
-- one `string` - an input
-- ...args `string` - the property(s) as input
-- ...three `string` - more input
 
 <a name="requirer"></a>
 ##requirer()
