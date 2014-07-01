@@ -3,7 +3,7 @@
 {{#each (where data kind="function")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>function-name-long}}{{/link}}
 {{/each~}}
 {{#each (where data kind="class")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>class-name}}{{/link}}
-{{>index-children offset=../../offset ~}}
+{{>index-children offset=../offset ~}}
 {{/each~}}
 {{#each (where data kind="constant")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>constant-name-long}}{{/link}}
 {{/each~}}
