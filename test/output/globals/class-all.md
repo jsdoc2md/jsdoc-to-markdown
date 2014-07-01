@@ -22,9 +22,9 @@ the constructor description
 var yeah = new Everything(true);
 ```
 **Symbols**  
-    * [all.topping](#All#topping)
-    * [all.size](#All#size)
-    * [~~all.allThings(one, two)~~](#All#allThings)
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All#topping"></a>
 ###all.topping

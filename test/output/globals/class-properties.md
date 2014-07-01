@@ -3,8 +3,8 @@
 
 ##class: Pizza
 **Symbols**  
-    * [pizza.topping](#Pizza#topping)
-    * [pizza.size](#Pizza#size)
+* [pizza.topping](#Pizza#topping)
+* [pizza.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
 ###pizza.topping

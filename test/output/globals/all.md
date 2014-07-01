@@ -241,9 +241,9 @@ the constructor description
 var yeah = new Everything(true);
 ```
 **Symbols**  
-    * [all.topping](#All#topping)
-    * [all.size](#All#size)
-    * [~~all.allThings(one, two)~~](#All#allThings)
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All#topping"></a>
 ###all.topping
@@ -335,8 +335,8 @@ var yeah = new Everything(true);
 
 ##class: Rice
 **Symbols**  
-    * [event: "cooked"](#Rice#event_cooked)
-    * [event: "cooking"](#Rice#event_cooking)
+* [event: "cooked"](#Rice#event_cooked)
+* [event: "cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
 ###event: "cooked"
@@ -350,8 +350,8 @@ Fired when rice is cooking
 
 ##class: Something
 **Symbols**  
-    * [something.methodOne()](#Something#methodOne)
-    * [~~something.allTogether(one, two)~~](#Something#allTogether)
+* [something.methodOne()](#Something#methodOne)
+* [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
 ###something.methodOne()
@@ -378,8 +378,8 @@ something.allTogether(true);
 
 ##class: Pizza
 **Symbols**  
-    * [pizza.topping](#Pizza#topping)
-    * [pizza.size](#Pizza#size)
+* [pizza.topping](#Pizza#topping)
+* [pizza.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
 ###pizza.topping
@@ -397,7 +397,7 @@ the general size
 
 ##class: Plucker
 **Symbols**  
-    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+* [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)

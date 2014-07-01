@@ -11,8 +11,8 @@ module.exports = function(handlebars){
         return depth;
     });
 
-    handlebars.registerHelper("depth2", function(options){
-        var depth = 0;
+    handlebars.registerHelper("depth2", function(offset, options){
+        var depth = 0 + (offset || 0);
         function recurse(node){
             if (node._parent){
                 depth++;

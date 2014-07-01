@@ -9,9 +9,9 @@ this module returns a pet of files
 var cowFiles = FilePet("cow/*");
 ```
 **Symbols**  
-    * [filePet.instie](#module_file-pet#instie)
-    * [filePet.files](#module_file-pet#files)
-    * [filePet.delete(paths)](#module_file-pet#delete)
+* [filePet.instie](#module_file-pet#instie)
+* [filePet.files](#module_file-pet#files)
+* [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet#instie"></a>
 ###filePet.instie

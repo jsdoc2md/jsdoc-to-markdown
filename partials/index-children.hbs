@@ -1,3 +1,13 @@
 {{#with (where @root memberof=longname)~}}
-{{>index-symbols-grouped data=this~}}
+
+{{#with (where this scope="instance")~}}
+{{>index-symbols data=this offset=../../offset ~}}
+{{/with~}}
+{{#with (where this scope="static")~}}
+{{>index-symbols data=this offset=../../offset ~}}
+{{/with~}}
+{{#with (where this scope="inner")~}}
+{{>index-symbols data=this offset=../../offset ~}}
+{{/with~}}
+
 {{/with~}}

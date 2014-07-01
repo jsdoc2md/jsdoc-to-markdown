@@ -5,7 +5,7 @@ module with private shiz
 
   
 **Symbols**  
-    * [private.notprivate](#module_private.notprivate)
+* [private.notprivate](#module_private.notprivate)
 
 <a name="module_private.notprivate"></a>
 ###private.notprivate
