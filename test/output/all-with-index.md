@@ -88,6 +88,8 @@
   * [requirer()](#requirer)
   * [setMagicNumber(x)](#setMagicNumber)
   * [doSomething(options)](#doSomething)
+  * [class: module:hello/world](#module_hello/world)
+    * [module:hello/world.sayHello()](#module_hello/world#sayHello)
   * [~~class: All~~](#All)
     * [all.topping](#All#topping)
     * [all.size](#All#size)
@@ -762,6 +764,20 @@ Set the magic number.
 - options `object` - the function options
   - one `string` - first option
   - two `string` - second option
+
+<a name="module_hello/world"></a>
+##class: module:hello/world
+<a name="module_hello/world"></a>
+##new module:hello/world()
+A class that says hello!
+
+**Symbols**
+
+* [module:hello/world.sayHello()](#module_hello/world#sayHello)
+
+<a name="module_hello/world#sayHello"></a>
+###module:hello/world.sayHello()
+Say hello.
 
 <a name="All"></a>
 ##~~class: All~~
