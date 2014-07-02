@@ -1,5 +1,11 @@
 <a name="module_file-set"></a>
-##file-set
+##file-set(num)
+
+this class returns a set of files
+
+**Params**
+
+- num `Array.<string>` - a list of file patterns
 
   
 **Example**  

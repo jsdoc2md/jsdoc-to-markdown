@@ -40,6 +40,12 @@ $ npm run docs
 ###As a grunt plug-in
 See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
 
+###As a gulp plug-in
+Use like this until [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown):
+
+```js
+```
+
 ##Usage
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`. 
 ```
@@ -59,10 +65,10 @@ $ jsdoc2md <options> <source_files>
 
 ##examples
 These projects have readme files rendered by `jsdoc2md`:
-* https://github.com/75lb/handbrake-js
-* https://github.com/75lb/array-tools
-* https://github.com/75lb/file-set
-* https://github.com/75lb/command-line-args
+* https://github.com/75lb/handbrake-js (exports an object with inner class)
+* https://github.com/75lb/array-tools (exports a object)
+* https://github.com/75lb/file-set (exports a class)
+* https://github.com/75lb/command-line-args  (exports a class)
 
 #API Reference
 <a name="module_jsdoc-to-markdown"></a>

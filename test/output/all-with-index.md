@@ -198,9 +198,13 @@ A property of the class.
 
   
 <a name="module_blazer"></a>
-##blazer
+##blazer(input)
 
 A module representing a blazer.
+
+**Params**
+
+- input `string` - the input
 
   
 **Symbols**
@@ -284,7 +288,13 @@ The main class of machine
 ####machine.vibe
 **Type**: `string`  
 <a name="module_file-set"></a>
-##file-set
+##file-set(num)
+
+this class returns a set of files
+
+**Params**
+
+- num `Array.<string>` - a list of file patterns
 
   
 **Example**  
