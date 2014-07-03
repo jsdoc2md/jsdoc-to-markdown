@@ -1,6 +1,5 @@
 <a name="module_heaven"></a>
 ##heaven
-
 factory module creating dodgy cloud. object-with-static-class.
 
 **Symbols**

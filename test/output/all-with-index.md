@@ -121,7 +121,6 @@
 #Modules
 <a name="module_file-pet"></a>
 ##file-pet
-
 this module returns a pet of files
 
 **Example**  
@@ -155,7 +154,6 @@ A prototype instance methy meth
 
 <a name="module_jacket"></a>
 ##jacket
-
 A module representing a jacket.
 
 **Symbols**
@@ -169,7 +167,6 @@ Open and close your Jacket.
 <a name="module_shirt"></a>
 ##shirt
 **Version**: 1.0  
-
 A module representing a shirt.
 
 **Symbols**
@@ -204,7 +201,6 @@ A property of the class.
 
 <a name="module_coat"></a>
 ##coat
-
 A module representing a coat.
 
 **Symbols**
@@ -217,7 +213,6 @@ Open and close your Coat.
 
 <a name="module_blouse"></a>
 ##blouse
-
 A module representing a blouse.
 
 **Scope**: inner module of [coat](#module_coat)  
@@ -231,7 +226,6 @@ Open and close your Blouse.
 
 <a name="module_blazer"></a>
 ##blazer
-
 A module representing a blazer.
 
 **Symbols**
@@ -244,7 +238,6 @@ Open and close your Blazer.
 
 <a name="module_cattle"></a>
 ##cattle
-
 exported object, with-inner-members
 
 **Symbols**
@@ -275,7 +268,6 @@ another inner function
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_commonjs/cyberdyne"></a>
 ##commonjs/cyberdyne
-
 exports an object.. has an inner class.
 
 **Symbols**
@@ -312,7 +304,6 @@ The main class of machine
 **Type**: `string`  
 <a name="module_file-set"></a>
 ##file-set
-
 this module exports a class constructor
 
 **Example**  
@@ -340,17 +331,14 @@ A prototype instance methy meth
 <a name="module_commonjs/function"></a>
 ##commonjs/function
 **Author**: Lloyd <75pound@gmail.com>  
-
 This is the module description
 
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
 **Symbols**
 
 
 <a name="module_heaven"></a>
 ##heaven
-
 factory module creating dodgy cloud. object-with-static-class.
 
 **Symbols**
@@ -407,7 +395,6 @@ an inner constant
 **Type**: `boolean`  
 <a name="module_commonjs/ignore"></a>
 ##commonjs/ignore
-
 module with ignored shiz
 
 **Symbols**
@@ -420,7 +407,6 @@ visible property
 
 <a name="module_commonjs/object-with-alias"></a>
 ##commonjs/object-with-alias
-
 simple object export
 
 **Symbols**
@@ -443,7 +429,6 @@ a function
 
 <a name="module_commonjs/object"></a>
 ##commonjs/object
-
 simple object export
 
 **Symbols**
@@ -457,6 +442,7 @@ first property
 
 <a name="module_commonjs/object.three"></a>
 ###object.three(four, five)
+**Author**: Lloyd <75pound@gmail.com>  
 a function
 
 **Params**
@@ -466,7 +452,6 @@ a function
 
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 allTogether(true);
@@ -474,7 +459,6 @@ allTogether(true);
 
 <a name="module_private"></a>
 ##private
-
 module with private shiz
 
 **Symbols**
@@ -487,7 +471,6 @@ visible property
 
 <a name="module_commonjs/single-value"></a>
 ##commonjs/single-value
-
 this module exports one value, that's it
 
 **Symbols**
@@ -495,7 +478,6 @@ this module exports one value, that's it
 
 <a name="module_commonjs/sum-alias"></a>
 ##commonjs/sum-alias
-
 A simple maths function
 
 **Example**  
@@ -508,7 +490,6 @@ var sum = require("sum");
 
 <a name="module_commonjs/sum"></a>
 ##commonjs/sum(a, b)
-
 A simple maths function
 
 **Params**
@@ -534,13 +515,13 @@ the first important constant
 **Type**: `number`  
 <a name="CONST_TWO"></a>
 ##~~const: CONST_TWO~~
+**Author**: Lloyd Brookes <lloyd@brookes.com>  
 This variable has all tags set
 
 ***Deprecated***  
 **Type**: `boolean`  
 **Read only**: true  
 **Since**: v0.10.28  
-**Author**: Lloyd Brookes <lloyd@brookes.com>  
 **Example**  
 ```js
 var CONST_TWO = true;
@@ -771,6 +752,8 @@ Set the magic number.
 
 <a name="module_world"></a>
 ##class: module:world
+A class that says hello!
+
 <a name="module_world"></a>
 ##new module:world()
 A class that says hello!
@@ -787,22 +770,7 @@ Say hello.
 ##~~class: All~~
 a class with all of the things
 
-**Params**
-
-- input `object` - an input
-- [options] `object` - optional shit
-
-***Deprecated***  
-**Extends**: `Number`  
-**Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-**Example**  
-```js
-var yeah = new Everything(true);
-```
-
-<a name="All"></a>
-##~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -813,7 +781,24 @@ the constructor description
 ***Deprecated***  
 **Extends**: `Number`  
 **Since**: v0.10.28  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="All"></a>
+##~~new All(input, [options])~~
 **Author**: 75lb <75pound@gmail.com>  
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Number`  
+**Since**: v0.10.28  
 **Example**  
 ```js
 var yeah = new Everything(true);
@@ -838,6 +823,7 @@ the general size
 
 <a name="All#allThings"></a>
 ###~~all.allThings(one, two)~~
+**Author**: Lloyd <75pound@gmail.com>  
 This function has all tags set
 
 **Params**
@@ -848,7 +834,6 @@ This function has all tags set
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 all.allTogether(true);
@@ -857,6 +842,8 @@ all.allTogether(true);
 <a name="Person"></a>
 ##class: Person
 simple class description
+
+a constructor description
 
 **Extends**: `Object`  
 <a name="Person"></a>
@@ -869,6 +856,8 @@ a constructor description
 
 <a name="Car"></a>
 ##class: Car
+a constructor with args
+
 **Params**
 
 - [options] `object` - optional shit
@@ -896,22 +885,7 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
-**Params**
-
-- input `object` - an input
-- [options] `object` - optional shit
-
-***Deprecated***  
-**Extends**: `Pipe`  
-**Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-**Example**  
-```js
-var yeah = new Everything(true);
-```
-
-<a name="Everything"></a>
-##~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -922,7 +896,24 @@ the constructor description
 ***Deprecated***  
 **Extends**: `Pipe`  
 **Since**: v0.10.28  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="Everything"></a>
+##~~new Everything(input, [options])~~
 **Author**: 75lb <75pound@gmail.com>  
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Pipe`  
+**Since**: v0.10.28  
 **Example**  
 ```js
 var yeah = new Everything(true);
@@ -959,6 +950,7 @@ method description
 
 <a name="Something#allTogether"></a>
 ###~~something.allTogether(one, two)~~
+**Author**: Lloyd <75pound@gmail.com>  
 This function has all tags set
 
 **Params**
@@ -969,7 +961,6 @@ This function has all tags set
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 something.allTogether(true);

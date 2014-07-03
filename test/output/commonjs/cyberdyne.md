@@ -1,6 +1,5 @@
 <a name="module_cyberdyne"></a>
 ##cyberdyne
-
 exports an object.. has an inner class.
 
 **Symbols**

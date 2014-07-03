@@ -6,13 +6,13 @@ the first important constant
 **Type**: `number`  
 <a name="CONST_TWO"></a>
 ##~~const: CONST_TWO~~
+**Author**: Lloyd Brookes <lloyd@brookes.com>  
 This variable has all tags set
 
 ***Deprecated***  
 **Type**: `boolean`  
 **Read only**: true  
 **Since**: v0.10.28  
-**Author**: Lloyd Brookes <lloyd@brookes.com>  
 **Example**  
 ```js
 var CONST_TWO = true;
@@ -230,22 +230,7 @@ Set the magic number.
 ##~~class: All~~
 a class with all of the things
 
-**Params**
-
-- input `object` - an input
-- [options] `object` - optional shit
-
-***Deprecated***  
-**Extends**: `Number`  
-**Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-**Example**  
-```js
-var yeah = new Everything(true);
-```
-
-<a name="All"></a>
-##~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -256,7 +241,24 @@ the constructor description
 ***Deprecated***  
 **Extends**: `Number`  
 **Since**: v0.10.28  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="All"></a>
+##~~new All(input, [options])~~
 **Author**: 75lb <75pound@gmail.com>  
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Number`  
+**Since**: v0.10.28  
 **Example**  
 ```js
 var yeah = new Everything(true);
@@ -281,6 +283,7 @@ the general size
 
 <a name="All#allThings"></a>
 ###~~all.allThings(one, two)~~
+**Author**: Lloyd <75pound@gmail.com>  
 This function has all tags set
 
 **Params**
@@ -291,7 +294,6 @@ This function has all tags set
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 all.allTogether(true);
@@ -300,6 +302,8 @@ all.allTogether(true);
 <a name="Person"></a>
 ##class: Person
 simple class description
+
+a constructor description
 
 **Extends**: `Object`  
 <a name="Person"></a>
@@ -312,6 +316,8 @@ a constructor description
 
 <a name="Car"></a>
 ##class: Car
+a constructor with args
+
 **Params**
 
 - [options] `object` - optional shit
@@ -339,22 +345,7 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
-**Params**
-
-- input `object` - an input
-- [options] `object` - optional shit
-
-***Deprecated***  
-**Extends**: `Pipe`  
-**Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-**Example**  
-```js
-var yeah = new Everything(true);
-```
-
-<a name="Everything"></a>
-##~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -365,7 +356,24 @@ the constructor description
 ***Deprecated***  
 **Extends**: `Pipe`  
 **Since**: v0.10.28  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="Everything"></a>
+##~~new Everything(input, [options])~~
 **Author**: 75lb <75pound@gmail.com>  
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Pipe`  
+**Since**: v0.10.28  
 **Example**  
 ```js
 var yeah = new Everything(true);
@@ -402,6 +410,7 @@ method description
 
 <a name="Something#allTogether"></a>
 ###~~something.allTogether(one, two)~~
+**Author**: Lloyd <75pound@gmail.com>  
 This function has all tags set
 
 **Params**
@@ -412,7 +421,6 @@ This function has all tags set
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 something.allTogether(true);

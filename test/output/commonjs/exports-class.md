@@ -1,6 +1,5 @@
 <a name="module_file-set"></a>
 ##file-set
-
 this module exports a class constructor
 
 **Example**  

@@ -3,6 +3,8 @@
 ##class: Person
 simple class description
 
+a constructor description
+
 **Extends**: `Object`  
 <a name="Person"></a>
 ##new Person()
@@ -14,6 +16,8 @@ a constructor description
 
 <a name="Car"></a>
 ##class: Car
+a constructor with args
+
 **Params**
 
 - [options] `object` - optional shit
@@ -41,22 +45,7 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
-**Params**
-
-- input `object` - an input
-- [options] `object` - optional shit
-
-***Deprecated***  
-**Extends**: `Pipe`  
-**Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
-**Example**  
-```js
-var yeah = new Everything(true);
-```
-
-<a name="Everything"></a>
-##~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -67,7 +56,24 @@ the constructor description
 ***Deprecated***  
 **Extends**: `Pipe`  
 **Since**: v0.10.28  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="Everything"></a>
+##~~new Everything(input, [options])~~
 **Author**: 75lb <75pound@gmail.com>  
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Pipe`  
+**Since**: v0.10.28  
 **Example**  
 ```js
 var yeah = new Everything(true);
