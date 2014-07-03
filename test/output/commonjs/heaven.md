@@ -53,4 +53,5 @@ a class constant
 ###const: \~FACT
 an inner constant
 
+**Scope**: inner constant of [heaven](#module_heaven)  
 **Type**: `boolean`  

@@ -9,8 +9,8 @@ the first important constant
 This variable has all tags set
 
 ***Deprecated***  
-**Read only**: true  
 **Type**: `boolean`  
+**Read only**: true  
 **Since**: v0.10.28  
 **Author**: Lloyd Brookes <lloyd@brookes.com>  
 **Example**  
