@@ -1,6 +1,7 @@
 #Globals
 <a name="Rice"></a>
 ##class: Rice
+  
 **Symbols**
 
 * [event: "cooked"](#Rice#event_cooked)

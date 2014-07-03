@@ -1,11 +1,7 @@
 <a name="module_file-pet"></a>
-##file-pet(num)
+##file-pet
 
 this module returns a pet of files
-
-**Params**
-
-- num `number` - the input number
 
   
 **Example**  

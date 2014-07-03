@@ -1,9 +1,9 @@
 /**
+this module exports a class constructor
 @module file-set
-@alias fileSet
 @example
 ```js
-var fileSet = require("file-set");
+var FileSet = require("file-set");
 ```
 */
 module.exports = FileSet;
@@ -16,7 +16,7 @@ Takes a list of path patterns
 @alias module:file-set
 @example
 ```js
-var cowFiles = FileSet("cow/*");
+var cowFiles = new FileSet("cow/*");
 ```
 */
 function FileSet(num){};

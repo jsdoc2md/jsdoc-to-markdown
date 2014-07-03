@@ -1,6 +1,7 @@
 #Globals
 <a name="Pizza"></a>
 ##class: Pizza
+  
 **Symbols**
 
 * [pizza.topping](#Pizza#topping)

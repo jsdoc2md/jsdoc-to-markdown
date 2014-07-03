@@ -9,6 +9,7 @@ This function takes variable input
 
 <a name="Plucker"></a>
 ##class: Plucker
+  
 **Symbols**
 
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

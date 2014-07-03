@@ -28,8 +28,8 @@
       * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
       * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
   * [file-set](#module_file-set) <sub>exports: class</sub>
-    * [fileSet.files](#module_file-set#files)
-    * [fileSet.delete(paths)](#module_file-set#delete)
+    * [file-set.files](#module_file-set#files)
+    * [file-set.delete(paths)](#module_file-set#delete)
   * [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
   * [heaven](#module_heaven)
     * [heaven.Cloud](#module_heaven.Cloud)
@@ -120,13 +120,9 @@
 
 #Modules
 <a name="module_file-pet"></a>
-##file-pet(num)
+##file-pet
 
 this module returns a pet of files
-
-**Params**
-
-- num `number` - the input number
 
   
 **Example**  
@@ -193,6 +189,11 @@ A property of the module.
   
 <a name="module_shirt.Turtleneck"></a>
 ###class: shirt.Turtleneck
+**Params**
+
+-  `number` - the size innit
+
+  
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**
@@ -237,13 +238,9 @@ A module representing a blouse.
 Open and close your Blouse.
 
 <a name="module_blazer"></a>
-##blazer(input)
+##blazer
 
 A module representing a blazer.
-
-**Params**
-
-- input `string` - the input
 
   
 **Symbols**
@@ -315,6 +312,7 @@ random
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
+  
 **Symbols**
 
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
@@ -327,32 +325,28 @@ The main class of machine
 ####machine.vibe
 **Type**: `string`  
 <a name="module_file-set"></a>
-##file-set(num)
+##file-set
 
-this class returns a set of files
-
-**Params**
-
-- num `Array.<string>` - a list of file patterns
+this module exports a class constructor
 
   
 **Example**  
 ```js
-var fileSet = require("file-set");
+var FileSet = require("file-set");
 ```
 
 **Symbols**
 
-* [fileSet.files](#module_file-set#files)
-* [fileSet.delete(paths)](#module_file-set#delete)
+* [file-set.files](#module_file-set#files)
+* [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set#files"></a>
-###fileSet.files
+###file-set.files
 the prototype instance property
 
   
 <a name="module_file-set#delete"></a>
-###fileSet.delete(paths)
+###file-set.delete(paths)
 A prototype instance methy meth
 
 **Params**
@@ -400,6 +394,7 @@ access to the Cloud class
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
+  
 **Symbols**
 
   * [cloud.eyes](#module_heaven.Cloud#eyes)
@@ -804,6 +799,7 @@ Set the magic number.
 
 <a name="module_world"></a>
 ##class: module:world
+  
 <a name="module_world"></a>
 ##new module:world()
 A class that says hello!
@@ -820,7 +816,21 @@ Say hello.
 ##~~class: All~~
 a class with all of the things
 
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
 **Extends**: `Number`  
+  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
 <a name="All"></a>
 ##~~new All(input, [options])~~
 the constructor description
@@ -879,6 +889,7 @@ all.allTogether(true);
 simple class description
 
 **Extends**: `Object`  
+  
 <a name="Person"></a>
 ##new Person()
 a constructor description
@@ -888,6 +899,11 @@ a constructor description
 
 <a name="Car"></a>
 ##class: Car
+**Params**
+
+- [options] `object` - optional shit
+
+  
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -904,6 +920,7 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
+  
 **Symbols**
 
 
@@ -911,7 +928,21 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
 **Extends**: `Pipe`  
+  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
 the constructor description
@@ -934,6 +965,7 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
+  
 **Symbols**
 
 * [event: "cooked"](#Rice#event_cooked)
@@ -949,6 +981,7 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
+  
 **Symbols**
 
 * [something.methodOne()](#Something#methodOne)
@@ -978,6 +1011,7 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
+  
 **Symbols**
 
 * [pizza.topping](#Pizza#topping)
@@ -997,6 +1031,7 @@ the general size
   
 <a name="Plucker"></a>
 ##class: Plucker
+  
 **Symbols**
 
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

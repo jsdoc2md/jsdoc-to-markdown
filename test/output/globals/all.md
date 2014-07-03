@@ -229,7 +229,21 @@ Set the magic number.
 ##~~class: All~~
 a class with all of the things
 
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
 **Extends**: `Number`  
+  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
 <a name="All"></a>
 ##~~new All(input, [options])~~
 the constructor description
@@ -288,6 +302,7 @@ all.allTogether(true);
 simple class description
 
 **Extends**: `Object`  
+  
 <a name="Person"></a>
 ##new Person()
 a constructor description
@@ -297,6 +312,11 @@ a constructor description
 
 <a name="Car"></a>
 ##class: Car
+**Params**
+
+- [options] `object` - optional shit
+
+  
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -313,6 +333,7 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
+  
 **Symbols**
 
 
@@ -320,7 +341,21 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
 **Extends**: `Pipe`  
+  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
 the constructor description
@@ -343,6 +378,7 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
+  
 **Symbols**
 
 * [event: "cooked"](#Rice#event_cooked)
@@ -358,6 +394,7 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
+  
 **Symbols**
 
 * [something.methodOne()](#Something#methodOne)
@@ -387,6 +424,7 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
+  
 **Symbols**
 
 * [pizza.topping](#Pizza#topping)
@@ -406,6 +444,7 @@ the general size
   
 <a name="Plucker"></a>
 ##class: Plucker
+  
 **Symbols**
 
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

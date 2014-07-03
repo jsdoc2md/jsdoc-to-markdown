@@ -1,11 +1,7 @@
 <a name="module_blazer"></a>
-##blazer(input)
+##blazer
 
 A module representing a blazer.
-
-**Params**
-
-- input `string` - the input
 
   
 **Symbols**

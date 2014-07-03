@@ -18,6 +18,11 @@ A property of the module.
   
 <a name="module_shirt.Turtleneck"></a>
 ###class: shirt.Turtleneck
+**Params**
+
+-  `number` - the size innit
+
+  
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**

@@ -1,6 +1,7 @@
 #Globals
 <a name="module_world"></a>
 ##class: module:world
+  
 <a name="module_world"></a>
 ##new module:world()
 A class that says hello!
