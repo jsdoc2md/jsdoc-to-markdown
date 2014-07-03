@@ -1,15 +1,15 @@
 #Globals
-<a name="module_hello/world"></a>
-##class: module:hello/world
-<a name="module_hello/world"></a>
-##new module:hello/world()
+<a name="module_world"></a>
+##class: module:world
+<a name="module_world"></a>
+##new module:world()
 A class that says hello!
 
 **Symbols**
 
-* [module:hello/world.sayHello()](#module_hello/world#sayHello)
+* [module:world.sayHello()](#module_world#sayHello)
 
-<a name="module_hello/world#sayHello"></a>
-###module:hello/world.sayHello()
+<a name="module_world#sayHello"></a>
+###module:world.sayHello()
 Say hello.
 

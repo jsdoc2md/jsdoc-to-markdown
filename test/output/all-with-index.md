@@ -6,10 +6,16 @@
     * [filePet.delete(paths)](#module_file-pet#delete)
   * [jacket](#module_jacket) <sub>exports: class</sub>
     * [jacket.zip()](#module_jacket#zip)
+    * [jacket.zip()](#module_jacket#zip)
   * [shirt](#module_shirt)
     * [shirt.color](#module_shirt.color)
     * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
       * [turtleneck.size](#module_shirt.Turtleneck#size)
+  * [jacket](#module_jacket) <sub>exports: class</sub>
+    * [jacket.zip()](#module_jacket#zip)
+    * [jacket.zip()](#module_jacket#zip)
+  * [blouse](#module_blouse) <sub>exports: class</sub>
+    * [blouse.zip()](#module_blouse#zip)
   * [blazer](#module_blazer) <sub>exports: class</sub>
     * [blazer.zip()](#module_blazer#zip)
   * [cattle](#module_cattle)
@@ -88,8 +94,8 @@
   * [requirer()](#requirer)
   * [setMagicNumber(x)](#setMagicNumber)
   * [doSomething(options)](#doSomething)
-  * [class: module:hello/world](#module_hello/world)
-    * [module:hello/world.sayHello()](#module_hello/world#sayHello)
+  * [class: module:world](#module_world)
+    * [module:world.sayHello()](#module_world#sayHello)
   * [~~class: All~~](#All)
     * [all.topping](#All#topping)
     * [all.size](#All#size)
@@ -159,6 +165,11 @@ A module representing a jacket.
 **Symbols**
 
 * [jacket.zip()](#module_jacket#zip)
+* [jacket.zip()](#module_jacket#zip)
+
+<a name="module_jacket#zip"></a>
+###jacket.zip()
+Open and close your Jacket.
 
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
@@ -199,6 +210,39 @@ A property of the module.
 A property of the class.
 
   
+<a name="module_jacket"></a>
+##jacket
+
+A module representing a jacket.
+
+  
+**Symbols**
+
+* [jacket.zip()](#module_jacket#zip)
+* [jacket.zip()](#module_jacket#zip)
+
+<a name="module_jacket#zip"></a>
+###jacket.zip()
+Open and close your Jacket.
+
+<a name="module_jacket#zip"></a>
+###jacket.zip()
+Open and close your Jacket.
+
+<a name="module_blouse"></a>
+##blouse
+
+A module representing a blouse.
+
+  
+**Symbols**
+
+* [blouse.zip()](#module_blouse#zip)
+
+<a name="module_blouse#zip"></a>
+###blouse.zip()
+Open and close your Blouse.
+
 <a name="module_blazer"></a>
 ##blazer(input)
 
@@ -765,18 +809,18 @@ Set the magic number.
   - one `string` - first option
   - two `string` - second option
 
-<a name="module_hello/world"></a>
-##class: module:hello/world
-<a name="module_hello/world"></a>
-##new module:hello/world()
+<a name="module_world"></a>
+##class: module:world
+<a name="module_world"></a>
+##new module:world()
 A class that says hello!
 
 **Symbols**
 
-* [module:hello/world.sayHello()](#module_hello/world#sayHello)
+* [module:world.sayHello()](#module_world#sayHello)
 
-<a name="module_hello/world#sayHello"></a>
-###module:hello/world.sayHello()
+<a name="module_world#sayHello"></a>
+###module:world.sayHello()
 Say hello.
 
 <a name="All"></a>

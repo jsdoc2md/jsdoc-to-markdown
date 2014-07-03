@@ -3,7 +3,7 @@ define(function () {
     /**
     A class that says hello!
     @class
-    @alias module:hello/world
+    @alias module:world
     */
     function Hello(){
         /** Say hello. */
@@ -11,7 +11,7 @@ define(function () {
     };
 
     /**
-    @exports hello/world
+    @exports world
     */
     return Hello;
 });

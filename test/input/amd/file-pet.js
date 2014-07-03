@@ -19,7 +19,7 @@ define("FilePet", function(){
     ```
     @alias module:file-pet
     */
-    var FilePet = function(num){
+    function FilePet(num){
         /**
         an instance ting
         */
