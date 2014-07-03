@@ -9,6 +9,7 @@
   * [shirt](#module_shirt)
     * [shirt.color](#module_shirt.color)
     * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
       * [turtleneck.size](#module_shirt.Turtleneck#size)
   * [coat](#module_coat) <sub>exports: class</sub>
     * [coat.zip()](#module_coat#zip)
@@ -19,12 +20,13 @@
   * [cattle](#module_cattle)
     * [cattle.createCow()](#module_cattle.createCow)
     * [\~innerMember](#module_cattle.innerMember)
-    * [\~innerFuction()](#module_cattle.innerFuction)
-    * [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+    * [cattle~innerFuction()](#module_cattle.innerFuction)
+    * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
   * [commonjs/cyberdyne](#module_commonjs/cyberdyne)
     * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
     * [\~something](#module_commonjs/cyberdyne.something)
     * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
+      * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
       * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
       * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
   * [FileSet](#module_FileSet) <sub>exports: class</sub>
@@ -35,6 +37,7 @@
     * [heaven.Cloud](#module_heaven.Cloud)
     * [heaven.createCloud()](#module_heaven.createCloud)
     * [class: \~heaven.Cloud](#module_heaven.Cloud)
+      * [new heaven~Cloud()](#module_heaven.Cloud)
       * [cloud.eyes](#module_heaven.Cloud#eyes)
       * [cloud.vibe](#module_heaven.Cloud#vibe)
       * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -93,25 +96,35 @@
   * [setMagicNumber(x)](#setMagicNumber)
   * [doSomething(options)](#doSomething)
   * [class: module:world](#module_world)
+    * [new module:world()](#module_world)
     * [module:world.sayHello()](#module_world#sayHello)
   * [~~class: All~~](#All)
+    * [~~new All(input, [options])~~](#All)
     * [all.topping](#All#topping)
     * [all.size](#All#size)
     * [~~all.allThings(one, two)~~](#All#allThings)
   * [class: Person](#Person)
+    * [new Person()](#Person)
   * [class: Car](#Car)
+    * [new Car([options])](#Car)
   * [class: Pipe](#Pipe)
+    * [new Pipe()](#Pipe)
   * [~~class: Everything~~](#Everything)
+    * [~~new Everything(input, [options])~~](#Everything)
   * [class: Rice](#Rice)
+    * [new Rice()](#Rice)
     * [event: "cooked"](#Rice#event_cooked)
     * [event: "cooking"](#Rice#event_cooking)
   * [class: Something](#Something)
+    * [new Something()](#Something)
     * [something.methodOne()](#Something#methodOne)
     * [~~something.allTogether(one, two)~~](#Something#allTogether)
   * [class: Pizza](#Pizza)
+    * [new Pizza()](#Pizza)
     * [pizza.topping](#Pizza#topping)
     * [pizza.size](#Pizza#size)
   * [class: Plucker](#Plucker)
+    * [new Plucker()](#Plucker)
     * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
   * [const: CONST_ONE](#CONST_ONE)
   * [~~const: CONST_TWO~~](#CONST_TWO)
@@ -135,7 +148,7 @@ var cowFiles = FilePet("cow/*");
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-##new module:file-pet(num)
+##new .module:file-pet(num)
 this is the contructor
 
 **Params**
@@ -175,7 +188,7 @@ A module representing a jacket.
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket"></a>
-##new module:jacket()
+##new .module:jacket()
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -189,6 +202,7 @@ A module representing a shirt.
 
 * [shirt.color](#module_shirt.color)
 * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.color"></a>
@@ -220,7 +234,7 @@ A module representing a coat.
 * [coat.zip()](#module_coat#zip)
 
 <a name="module_coat"></a>
-##new module:coat()
+##new .module:coat()
 <a name="module_coat#zip"></a>
 ###coat.zip()
 Open and close your Coat.
@@ -235,7 +249,7 @@ A module representing a blouse.
 * [blouse.zip()](#module_blouse#zip)
 
 <a name="module_blouse"></a>
-##new module:blouse()
+##new .module:blouse()
 <a name="module_blouse#zip"></a>
 ###blouse.zip()
 Open and close your Blouse.
@@ -249,7 +263,7 @@ A module representing a blazer.
 * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer"></a>
-##new module:blazer(input)
+##new .module:blazer(input)
 **Params**
 
 - input `string` - the input
@@ -266,8 +280,8 @@ exported object, with-inner-members
 
 * [cattle.createCow()](#module_cattle.createCow)
 * [\~innerMember](#module_cattle.innerMember)
-* [\~innerFuction()](#module_cattle.innerFuction)
-* [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+* [cattle~innerFuction()](#module_cattle.innerFuction)
+* [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
 <a name="module_cattle.createCow"></a>
 ###cattle.createCow()
@@ -278,12 +292,12 @@ the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
-###\~innerFuction()
+###cattle~innerFuction()
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-###~~\~anotherInnerFuction()~~
+###~~cattle~anotherInnerFuction()~~
 another inner function
 
 ***Deprecated***  
@@ -297,6 +311,7 @@ exports an object.. has an inner class.
 * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
 * [\~something](#module_commonjs/cyberdyne.something)
 * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
+  * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
 
@@ -318,7 +333,7 @@ The main class of machine
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
 
 <a name="module_commonjs/cyberdyne.Machine"></a>
-###\~new Machine(options)
+###new cyber~Machine(options)
 the Machine constructor
 
 **Params**
@@ -347,7 +362,7 @@ var FileSet = require("file-set");
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
 <a name="module_FileSet"></a>
-##new module:FileSet(num)
+##new .module:FileSet(num)
 Takes a list of path patterns
 
 **Params**
@@ -389,6 +404,7 @@ factory module creating dodgy cloud. object-with-static-class.
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: \~heaven.Cloud](#module_heaven.Cloud)
+  * [new heaven~Cloud()](#module_heaven.Cloud)
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)

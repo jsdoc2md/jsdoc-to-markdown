@@ -1,10 +1,9 @@
 {{#if name}}
   {{~#if deprecated}}~~{{/if}}
-  {{~#if (equal scope "inner")}}\~{{/if}}
   {{~#if (equal kind "class")}}new {{/if}}
-  {{~#if (equal-some scope "static" "instance")}}
-    {{~#if memberof}}{{parentName}}.{{/if}}
-  {{~/if}}
+  {{~#if memberof}}{{parentName}}{{/if}}
+  {{~#if (equal-some scope "static" "instance" undefined)}}.{{~/if~}}
+  {{~#if (equal-some scope "inner")}}~{{~/if~}}
   {{~{name}}}({{methodSig params}})
   {{~>name-suffix}}
   {{~#if deprecated}}~~{{/if}}
