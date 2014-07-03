@@ -19,8 +19,8 @@ exports an object.. has an inner class.
 ###\~something
 random
 
-**Scope**: inner member of [cyberdyne](#module_cyberdyne)  
   
+**Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine"></a>
 ###class: \~cyber.Machine
 The main class of machine

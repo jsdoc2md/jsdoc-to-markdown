@@ -1,7 +1,11 @@
 <a name="module_file-pet"></a>
-##file-pet
+##file-pet(num)
 
 this module returns a pet of files
+
+**Params**
+
+- num `number` - the input number
 
   
 **Example**  
@@ -22,12 +26,13 @@ an instance ting
   
 <a name="module_file-pet#files"></a>
 ###filePet.files
-the static property
+the prototype instance property
 
-  
+**Type**: `boolean`  
+**Default**: `true`  
 <a name="module_file-pet#delete"></a>
 ###filePet.delete(paths)
-A static methy meth
+A prototype instance methy meth
 
 **Params**
 

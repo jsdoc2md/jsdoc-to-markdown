@@ -22,12 +22,12 @@ var cowFiles = FileSet("cow/*");
 function FileSet(num){};
 
 /**
-the static property
+the prototype instance property
 */
 FileSet.prototype.files = true;
 
 /**
-A static methy meth
+A prototype instance methy meth
 @param {array} - the paths to delete
 */
 FileSet.prototype.delete = function(paths){};

@@ -28,8 +28,8 @@ an instance ting
 ###filePet.files
 the prototype instance property
 
-**Default**: `true`  
 **Type**: `boolean`  
+**Default**: `true`  
 <a name="module_file-pet#delete"></a>
 ###filePet.delete(paths)
 A prototype instance methy meth

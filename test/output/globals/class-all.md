@@ -31,8 +31,8 @@ var yeah = new Everything(true);
 ###all.topping
 the ingredients on top
 
-**Default**: `mud, lettuce`  
 **Type**: `string`  
+**Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
 ###all.size

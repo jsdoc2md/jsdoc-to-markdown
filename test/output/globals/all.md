@@ -22,9 +22,9 @@ var CONST_TWO = true;
 ##enum: eFileType
 Enum for the `type` value
 
+**Type**: `number`  
 **Properties**: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
-**Type**: `number`  
 <a name="visible"></a>
 ##visible
 a visible global
@@ -68,28 +68,28 @@ var next = "p";
 
 <a name="_protected"></a>
 ##_protected
-**Access**: protected  
   
+**Access**: protected  
 <a name="withAuthor"></a>
 ##withAuthor
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
 ##hasDefault
-**Default**: `23`  
   
+**Default**: `23`  
 <a name="hasDefaultObject"></a>
 ##hasDefaultObject
-**Default**: `{"one":1,"two":2}`  
   
+**Default**: `{"one":1,"two":2}`  
 <a name="deprecated"></a>
 ##~~deprecated~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
 ##readOnly
-**Read only**: true  
   
+**Read only**: true  
 <a name="hasSince"></a>
 ##hasSince
   
@@ -257,8 +257,8 @@ var yeah = new Everything(true);
 ###all.topping
 the ingredients on top
 
-**Default**: `mud, lettuce`  
 **Type**: `string`  
+**Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
 ###all.size
@@ -396,8 +396,8 @@ something.allTogether(true);
 ###pizza.topping
 the ingredients on top
 
-**Default**: `mud, lettuce`  
 **Type**: `string`  
+**Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
 ###pizza.size

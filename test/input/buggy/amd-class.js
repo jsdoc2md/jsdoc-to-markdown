@@ -1,19 +1,19 @@
 /**
- * A module representing a jacket.
- * @module jacket
+ * A module representing a coat.
+ * @module coat
  */
-define('jacket', function () {
+define('coat', function () {
     /**
-     * @constructs module:jacket
+     * @constructs module:coat
      */
-    function Jacket() {
+    function Coat() {
     }
 
-    /** Open and close your Jacket. */
-    Jacket.prototype.zip = function() {
+    /** Open and close your Coat. */
+    Coat.prototype.zip = function() {
     }
 
-    return Jacket;
+    return Coat;
 });
 
 /**

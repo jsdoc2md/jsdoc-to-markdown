@@ -6,14 +6,12 @@
     * [filePet.delete(paths)](#module_file-pet#delete)
   * [jacket](#module_jacket) <sub>exports: class</sub>
     * [jacket.zip()](#module_jacket#zip)
-    * [jacket.zip()](#module_jacket#zip)
   * [shirt](#module_shirt)
     * [shirt.color](#module_shirt.color)
     * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
       * [turtleneck.size](#module_shirt.Turtleneck#size)
-  * [jacket](#module_jacket) <sub>exports: class</sub>
-    * [jacket.zip()](#module_jacket#zip)
-    * [jacket.zip()](#module_jacket#zip)
+  * [coat](#module_coat) <sub>exports: class</sub>
+    * [coat.zip()](#module_coat#zip)
   * [blouse](#module_blouse) <sub>exports: class</sub>
     * [blouse.zip()](#module_blouse#zip)
   * [blazer](#module_blazer) <sub>exports: class</sub>
@@ -122,9 +120,13 @@
 
 #Modules
 <a name="module_file-pet"></a>
-##file-pet
+##file-pet(num)
 
 this module returns a pet of files
+
+**Params**
+
+- num `number` - the input number
 
   
 **Example**  
@@ -145,12 +147,13 @@ an instance ting
   
 <a name="module_file-pet#files"></a>
 ###filePet.files
-the static property
+the prototype instance property
 
-  
+**Type**: `boolean`  
+**Default**: `true`  
 <a name="module_file-pet#delete"></a>
 ###filePet.delete(paths)
-A static methy meth
+A prototype instance methy meth
 
 **Params**
 
@@ -165,11 +168,6 @@ A module representing a jacket.
 **Symbols**
 
 * [jacket.zip()](#module_jacket#zip)
-* [jacket.zip()](#module_jacket#zip)
-
-<a name="module_jacket#zip"></a>
-###jacket.zip()
-Open and close your Jacket.
 
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
@@ -210,24 +208,19 @@ A property of the module.
 A property of the class.
 
   
-<a name="module_jacket"></a>
-##jacket
+<a name="module_coat"></a>
+##coat
 
-A module representing a jacket.
+A module representing a coat.
 
   
 **Symbols**
 
-* [jacket.zip()](#module_jacket#zip)
-* [jacket.zip()](#module_jacket#zip)
+* [coat.zip()](#module_coat#zip)
 
-<a name="module_jacket#zip"></a>
-###jacket.zip()
-Open and close your Jacket.
-
-<a name="module_jacket#zip"></a>
-###jacket.zip()
-Open and close your Jacket.
+<a name="module_coat#zip"></a>
+###coat.zip()
+Open and close your Coat.
 
 <a name="module_blouse"></a>
 ##blouse
@@ -281,8 +274,8 @@ exported object, with-inner-members
 ###\~innerMember
 the inner member
 
-**Scope**: inner member of [cattle](#module_cattle)  
   
+**Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
 ###\~innerFuction()
 the inner function
@@ -315,8 +308,8 @@ exports an object.. has an inner class.
 ###\~something
 random
 
-**Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
   
+**Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
 <a name="module_commonjs/cyberdyne.Machine"></a>
 ###class: \~cyber.Machine
 The main class of machine
@@ -355,12 +348,12 @@ var fileSet = require("file-set");
 
 <a name="module_file-set#files"></a>
 ###fileSet.files
-the static property
+the prototype instance property
 
   
 <a name="module_file-set#delete"></a>
 ###fileSet.delete(paths)
-A static methy meth
+A prototype instance methy meth
 
 **Params**
 
@@ -591,9 +584,9 @@ var CONST_TWO = true;
 ##enum: eFileType
 Enum for the `type` value
 
+**Type**: `number`  
 **Properties**: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
-**Type**: `number`  
 <a name="visible"></a>
 ##visible
 a visible global
@@ -637,28 +630,28 @@ var next = "p";
 
 <a name="_protected"></a>
 ##_protected
-**Access**: protected  
   
+**Access**: protected  
 <a name="withAuthor"></a>
 ##withAuthor
   
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
 ##hasDefault
-**Default**: `23`  
   
+**Default**: `23`  
 <a name="hasDefaultObject"></a>
 ##hasDefaultObject
-**Default**: `{"one":1,"two":2}`  
   
+**Default**: `{"one":1,"two":2}`  
 <a name="deprecated"></a>
 ##~~deprecated~~
 ***Deprecated***  
   
 <a name="readOnly"></a>
 ##readOnly
-**Read only**: true  
   
+**Read only**: true  
 <a name="hasSince"></a>
 ##hasSince
   
@@ -855,8 +848,8 @@ var yeah = new Everything(true);
 ###all.topping
 the ingredients on top
 
-**Default**: `mud, lettuce`  
 **Type**: `string`  
+**Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
 ###all.size
@@ -994,8 +987,8 @@ something.allTogether(true);
 ###pizza.topping
 the ingredients on top
 
-**Default**: `mud, lettuce`  
 **Type**: `string`  
+**Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
 ###pizza.size

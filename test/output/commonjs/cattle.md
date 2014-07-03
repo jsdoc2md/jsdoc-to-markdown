@@ -18,8 +18,8 @@ exported object, with-inner-members
 ###\~innerMember
 the inner member
 
-**Scope**: inner member of [cattle](#module_cattle)  
   
+**Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
 ###\~innerFuction()
 the inner function
