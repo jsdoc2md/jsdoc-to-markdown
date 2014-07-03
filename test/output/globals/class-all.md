@@ -3,6 +3,12 @@
 ##~~class: All~~
 a class with all of the things
 
+**Symbols**
+
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
+
 <a name="All"></a>
 ##~~new All(input, [options])~~
 the constructor description
@@ -20,12 +26,6 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-
-**Symbols**
-
-* [all.topping](#All#topping)
-* [all.size](#All#size)
-* [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All#topping"></a>
 ###all.topping

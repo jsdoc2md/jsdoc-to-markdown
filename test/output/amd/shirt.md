@@ -15,15 +15,15 @@ A property of the module.
 
 <a name="module_shirt.Turtleneck"></a>
 ###class: shirt.Turtleneck
+**Symbols**
+
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**
 
 -  `number` - the size innit
-
-**Symbols**
-
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck#size"></a>
 ####turtleneck.size

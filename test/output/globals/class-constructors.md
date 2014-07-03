@@ -3,16 +3,19 @@
 ##class: Person
 simple class description
 
+**Symbols**
+
+
 <a name="Person"></a>
 ##new Person()
 a constructor description
 
 **Extends**: `Object`  
+<a name="Car"></a>
+##class: Car
 **Symbols**
 
 
-<a name="Car"></a>
-##class: Car
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -20,9 +23,6 @@ a constructor with args
 **Params**
 
 - [options] `object` - optional shit
-
-**Symbols**
-
 
 <a name="Pipe"></a>
 ##class: Pipe
@@ -34,6 +34,9 @@ a class which extends
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
+
+**Symbols**
+
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
@@ -52,7 +55,4 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-
-**Symbols**
-
 

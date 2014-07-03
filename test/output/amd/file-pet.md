@@ -17,6 +17,12 @@ var cowFiles = FilePet("cow/*");
 ###class: module:file-pet
 this class returns a pet of files
 
+**Symbols**
+
+  * [filePet.instie](#module_file-pet#instie)
+  * [filePet.files](#module_file-pet#files)
+  * [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet"></a>
 ###new module:file-pet(num)
 this is the contructor
@@ -30,12 +36,6 @@ this is the contructor
 var cowFiles = FilePet("cow/*");
 ```
 
-
-**Symbols**
-
-  * [filePet.instie](#module_file-pet#instie)
-  * [filePet.files](#module_file-pet#files)
-  * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet#instie"></a>
 ####filePet.instie

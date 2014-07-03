@@ -16,6 +16,11 @@ var FileSet = require("file-set");
 ###class: module:file-set
 this class returns a set of files
 
+**Symbols**
+
+  * [file-set.files](#module_file-set#files)
+  * [file-set.delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set"></a>
 ###new module:file-set(num)
 Takes a list of path patterns
@@ -28,11 +33,6 @@ Takes a list of path patterns
 ```js
 var cowFiles = new FileSet("cow/*");
 ```
-
-**Symbols**
-
-  * [file-set.files](#module_file-set#files)
-  * [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set#files"></a>
 ####file-set.files

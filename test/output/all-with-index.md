@@ -138,6 +138,12 @@ var cowFiles = FilePet("cow/*");
 ###class: module:file-pet
 this class returns a pet of files
 
+**Symbols**
+
+  * [filePet.instie](#module_file-pet#instie)
+  * [filePet.files](#module_file-pet#files)
+  * [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet"></a>
 ###new module:file-pet(num)
 this is the contructor
@@ -151,12 +157,6 @@ this is the contructor
 var cowFiles = FilePet("cow/*");
 ```
 
-
-**Symbols**
-
-  * [filePet.instie](#module_file-pet#instie)
-  * [filePet.files](#module_file-pet#files)
-  * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet#instie"></a>
 ####filePet.instie
@@ -233,15 +233,15 @@ A property of the module.
 
 <a name="module_shirt.Turtleneck"></a>
 ###class: shirt.Turtleneck
+**Symbols**
+
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**
 
 -  `number` - the size innit
-
-**Symbols**
-
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck#size"></a>
 ####turtleneck.size
@@ -302,15 +302,15 @@ A module representing a blazer.
 
 <a name="module_blazer"></a>
 ###class: module:blazer
+**Symbols**
+
+  * [blazer.zip()](#module_blazer#zip)
+
 <a name="module_blazer"></a>
 ###new module:blazer(input)
 **Params**
 
 - input `string` - the input
-
-**Symbols**
-
-  * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer#zip"></a>
 ####blazer.zip()
@@ -403,6 +403,11 @@ var FileSet = require("file-set");
 ###class: module:file-set
 this class returns a set of files
 
+**Symbols**
+
+  * [file-set.files](#module_file-set#files)
+  * [file-set.delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set"></a>
 ###new module:file-set(num)
 Takes a list of path patterns
@@ -415,11 +420,6 @@ Takes a list of path patterns
 ```js
 var cowFiles = new FileSet("cow/*");
 ```
-
-**Symbols**
-
-  * [file-set.files](#module_file-set#files)
-  * [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set#files"></a>
 ####file-set.files
@@ -882,13 +882,13 @@ Set the magic number.
 
 <a name="module_world"></a>
 ##class: module:world
-<a name="module_world"></a>
-##new module:world()
-A class that says hello!
-
 **Symbols**
 
 * [module:world.sayHello()](#module_world#sayHello)
+
+<a name="module_world"></a>
+##new module:world()
+A class that says hello!
 
 <a name="module_world#sayHello"></a>
 ###module:world.sayHello()
@@ -897,6 +897,12 @@ Say hello.
 <a name="All"></a>
 ##~~class: All~~
 a class with all of the things
+
+**Symbols**
+
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All"></a>
 ##~~new All(input, [options])~~
@@ -915,12 +921,6 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-
-**Symbols**
-
-* [all.topping](#All#topping)
-* [all.size](#All#size)
-* [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All#topping"></a>
 ###all.topping
@@ -955,16 +955,19 @@ all.allTogether(true);
 ##class: Person
 simple class description
 
+**Symbols**
+
+
 <a name="Person"></a>
 ##new Person()
 a constructor description
 
 **Extends**: `Object`  
+<a name="Car"></a>
+##class: Car
 **Symbols**
 
 
-<a name="Car"></a>
-##class: Car
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -972,9 +975,6 @@ a constructor with args
 **Params**
 
 - [options] `object` - optional shit
-
-**Symbols**
-
 
 <a name="Pipe"></a>
 ##class: Pipe
@@ -986,6 +986,9 @@ a class which extends
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
+
+**Symbols**
+
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
@@ -1004,9 +1007,6 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-
-**Symbols**
-
 
 <a name="Rice"></a>
 ##class: Rice

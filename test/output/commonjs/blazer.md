@@ -8,15 +8,15 @@ A module representing a blazer.
 
 <a name="module_blazer"></a>
 ###class: module:blazer
+**Symbols**
+
+  * [blazer.zip()](#module_blazer#zip)
+
 <a name="module_blazer"></a>
 ###new module:blazer(input)
 **Params**
 
 - input `string` - the input
-
-**Symbols**
-
-  * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer#zip"></a>
 ####blazer.zip()
