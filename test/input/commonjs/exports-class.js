@@ -1,6 +1,6 @@
 /**
 this module exports a class constructor
-@module file-set
+@module FileSet
 @example
 ```js
 var FileSet = require("file-set");
@@ -13,13 +13,15 @@ Takes a list of path patterns
 @class
 @classdesc this class returns a set of files
 @param {string[]} - a list of file patterns
-@alias module:file-set
+@alias module:FileSet
 @example
 ```js
 var cowFiles = new FileSet("cow/*");
 ```
 */
-function FileSet(num){};
+function FileSet(num){
+    var the = "constructor";
+};
 
 /**
 the prototype instance property

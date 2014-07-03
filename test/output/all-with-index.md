@@ -27,9 +27,9 @@
     * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
       * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
       * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
-  * [file-set](#module_file-set) <sub>exports: class</sub>
-    * [file-set.files](#module_file-set#files)
-    * [file-set.delete(paths)](#module_file-set#delete)
+  * [FileSet](#module_FileSet) <sub>exports: class</sub>
+    * [fileSet.files](#module_FileSet#files)
+    * [fileSet.delete(paths)](#module_FileSet#delete)
   * [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
   * [heaven](#module_heaven)
     * [heaven.Cloud](#module_heaven.Cloud)
@@ -385,8 +385,8 @@ The main class of machine
 <a name="module_commonjs/cyberdyne.Machine#vibe"></a>
 ####machine.vibe
 **Type**: `string`  
-<a name="module_file-set"></a>
-##file-set
+<a name="module_FileSet"></a>
+##FileSet
 this module exports a class constructor
 
 **Example**  
@@ -396,20 +396,20 @@ var FileSet = require("file-set");
 
 **Symbols**
 
-* [file-set.files](#module_file-set#files)
-* [file-set.delete(paths)](#module_file-set#delete)
+* [fileSet.files](#module_FileSet#files)
+* [fileSet.delete(paths)](#module_FileSet#delete)
 
-<a name="module_file-set"></a>
-###class: module:file-set
+<a name="module_FileSet"></a>
+###class: module:FileSet
 this class returns a set of files
 
 **Symbols**
 
-  * [file-set.files](#module_file-set#files)
-  * [file-set.delete(paths)](#module_file-set#delete)
+  * [fileSet.files](#module_FileSet#files)
+  * [fileSet.delete(paths)](#module_FileSet#delete)
 
-<a name="module_file-set"></a>
-###new module:file-set(num)
+<a name="module_FileSet"></a>
+###new module:FileSet(num)
 Takes a list of path patterns
 
 **Params**
@@ -421,24 +421,24 @@ Takes a list of path patterns
 var cowFiles = new FileSet("cow/*");
 ```
 
-<a name="module_file-set#files"></a>
-####file-set.files
+<a name="module_FileSet#files"></a>
+####fileSet.files
 the prototype instance property
 
-<a name="module_file-set#delete"></a>
-####file-set.delete(paths)
+<a name="module_FileSet#delete"></a>
+####fileSet.delete(paths)
 A prototype instance methy meth
 
 **Params**
 
 - paths `array` - the paths to delete
 
-<a name="module_file-set#files"></a>
-###file-set.files
+<a name="module_FileSet#files"></a>
+###fileSet.files
 the prototype instance property
 
-<a name="module_file-set#delete"></a>
-###file-set.delete(paths)
+<a name="module_FileSet#delete"></a>
+###fileSet.delete(paths)
 A prototype instance methy meth
 
 **Params**

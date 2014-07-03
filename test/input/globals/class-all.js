@@ -41,5 +41,7 @@ This function has all tags set
 all.allTogether(true);
 ```
 */
-All.prototype.allThings = function(one, two){}
+All.prototype.allThings = function(one, two){
+    var some = "bs code";
+}
 
