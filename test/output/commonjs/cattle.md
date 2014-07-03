@@ -3,7 +3,6 @@
 
 exported object, with-inner-members
 
-  
 **Symbols**
 
 * [cattle.createCow()](#module_cattle.createCow)
@@ -18,7 +17,6 @@ exported object, with-inner-members
 ###\~innerMember
 the inner member
 
-  
 **Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
 ###\~innerFuction()

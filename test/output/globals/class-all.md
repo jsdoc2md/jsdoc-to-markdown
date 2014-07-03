@@ -10,7 +10,6 @@ a class with all of the things
 
 ***Deprecated***  
 **Extends**: `Number`  
-  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
@@ -52,7 +51,6 @@ the ingredients on top
 ###all.size
 the general size
 
-  
 <a name="All#allThings"></a>
 ###~~all.allThings(one, two)~~
 This function has all tags set

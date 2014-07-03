@@ -3,7 +3,6 @@
 
 factory module creating dodgy cloud. object-with-static-class.
 
-  
 **Symbols**
 
 * [heaven.Cloud](#module_heaven.Cloud)
@@ -28,7 +27,6 @@ access to the Cloud class
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
-  
 **Symbols**
 
   * [cloud.eyes](#module_heaven.Cloud#eyes)

@@ -3,7 +3,6 @@
 
 A module representing a jacket.
 
-  
 **Symbols**
 
 * [jacket.zip()](#module_jacket#zip)

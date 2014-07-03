@@ -3,7 +3,6 @@
 
 this module returns a pet of files
 
-  
 **Example**  
 ```js
 var cowFiles = FilePet("cow/*");
@@ -19,7 +18,6 @@ var cowFiles = FilePet("cow/*");
 ###filePet.instie
 an instance ting
 
-  
 <a name="module_file-pet#files"></a>
 ###filePet.files
 the prototype instance property

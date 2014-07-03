@@ -3,7 +3,6 @@
 
 A simple maths function
 
-  
 **Example**  
 ```js
 var sum = require("sum");

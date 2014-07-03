@@ -3,7 +3,6 @@
 
 this module exports a class constructor
 
-  
 **Example**  
 ```js
 var FileSet = require("file-set");
@@ -18,7 +17,6 @@ var FileSet = require("file-set");
 ###file-set.files
 the prototype instance property
 
-  
 <a name="module_file-set#delete"></a>
 ###file-set.delete(paths)
 A prototype instance methy meth

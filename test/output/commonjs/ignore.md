@@ -3,7 +3,6 @@
 
 module with ignored shiz
 
-  
 **Symbols**
 
 * [ignore.visible](#module_ignore.visible)
@@ -12,4 +11,3 @@ module with ignored shiz
 ###ignore.visible
 visible property
 
-  

@@ -8,7 +8,6 @@ A simple maths function
 - a `number` - first number
 - b `number` - second number
 
-  
 **Returns**: `number` - the result  
 **Example**  
 ```js

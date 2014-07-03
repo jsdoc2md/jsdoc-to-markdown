@@ -3,7 +3,6 @@
 
 simple object export
 
-  
 **Symbols**
 
 * [object.one](#module_object.one)
@@ -13,7 +12,6 @@ simple object export
 ###object.one
 first property
 
-  
 <a name="module_object.three"></a>
 ###object.three(four, five)
 a function

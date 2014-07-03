@@ -3,7 +3,6 @@
 
 module with private shiz
 
-  
 **Symbols**
 
 * [private.notprivate](#module_private.notprivate)
@@ -12,4 +11,3 @@ module with private shiz
 ###private.notprivate
 visible property
 
-  

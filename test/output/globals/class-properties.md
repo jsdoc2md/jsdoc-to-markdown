@@ -1,7 +1,6 @@
 #Globals
 <a name="Pizza"></a>
 ##class: Pizza
-  
 **Symbols**
 
 * [pizza.topping](#Pizza#topping)
@@ -18,4 +17,3 @@ the ingredients on top
 ###pizza.size
 the general size
 
-  

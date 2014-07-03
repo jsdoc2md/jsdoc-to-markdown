@@ -124,7 +124,6 @@
 
 this module returns a pet of files
 
-  
 **Example**  
 ```js
 var cowFiles = FilePet("cow/*");
@@ -140,7 +139,6 @@ var cowFiles = FilePet("cow/*");
 ###filePet.instie
 an instance ting
 
-  
 <a name="module_file-pet#files"></a>
 ###filePet.files
 the prototype instance property
@@ -160,7 +158,6 @@ A prototype instance methy meth
 
 A module representing a jacket.
 
-  
 **Symbols**
 
 * [jacket.zip()](#module_jacket#zip)
@@ -175,7 +172,6 @@ Open and close your Jacket.
 
 A module representing a shirt.
 
-  
 **Symbols**
 
 * [shirt.color](#module_shirt.color)
@@ -186,14 +182,12 @@ A module representing a shirt.
 ###shirt.color
 A property of the module.
 
-  
 <a name="module_shirt.Turtleneck"></a>
 ###class: shirt.Turtleneck
 **Params**
 
 -  `number` - the size innit
 
-  
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**
@@ -208,13 +202,11 @@ A property of the module.
 ####turtleneck.size
 A property of the class.
 
-  
 <a name="module_coat"></a>
 ##coat
 
 A module representing a coat.
 
-  
 **Symbols**
 
 * [coat.zip()](#module_coat#zip)
@@ -228,7 +220,6 @@ Open and close your Coat.
 
 A module representing a blouse.
 
-  
 **Symbols**
 
 * [blouse.zip()](#module_blouse#zip)
@@ -242,7 +233,6 @@ Open and close your Blouse.
 
 A module representing a blazer.
 
-  
 **Symbols**
 
 * [blazer.zip()](#module_blazer#zip)
@@ -256,7 +246,6 @@ Open and close your Blazer.
 
 exported object, with-inner-members
 
-  
 **Symbols**
 
 * [cattle.createCow()](#module_cattle.createCow)
@@ -271,7 +260,6 @@ exported object, with-inner-members
 ###\~innerMember
 the inner member
 
-  
 **Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
 ###\~innerFuction()
@@ -289,7 +277,6 @@ another inner function
 
 exports an object.. has an inner class.
 
-  
 **Symbols**
 
 * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
@@ -305,14 +292,12 @@ exports an object.. has an inner class.
 ###\~something
 random
 
-  
 **Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
 <a name="module_commonjs/cyberdyne.Machine"></a>
 ###class: \~cyber.Machine
 The main class of machine
 
 **Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
-  
 **Symbols**
 
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
@@ -329,7 +314,6 @@ The main class of machine
 
 this module exports a class constructor
 
-  
 **Example**  
 ```js
 var FileSet = require("file-set");
@@ -344,7 +328,6 @@ var FileSet = require("file-set");
 ###file-set.files
 the prototype instance property
 
-  
 <a name="module_file-set#delete"></a>
 ###file-set.delete(paths)
 A prototype instance methy meth
@@ -360,7 +343,6 @@ A prototype instance methy meth
 This is the module description
 
 **Since**: v0.10.28  
-  
 **Symbols**
 
 
@@ -369,7 +351,6 @@ This is the module description
 
 factory module creating dodgy cloud. object-with-static-class.
 
-  
 **Symbols**
 
 * [heaven.Cloud](#module_heaven.Cloud)
@@ -394,7 +375,6 @@ access to the Cloud class
 The main class of machine
 
 **Scope**: inner class of [heaven](#module_heaven)  
-  
 **Symbols**
 
   * [cloud.eyes](#module_heaven.Cloud#eyes)
@@ -427,7 +407,6 @@ an inner constant
 
 module with ignored shiz
 
-  
 **Symbols**
 
 * [ignore.visible](#module_commonjs/ignore.visible)
@@ -436,13 +415,11 @@ module with ignored shiz
 ###ignore.visible
 visible property
 
-  
 <a name="module_commonjs/object-with-alias"></a>
 ##commonjs/object-with-alias
 
 simple object export
 
-  
 **Symbols**
 
 * [_.one](#module_commonjs/object-with-alias.one)
@@ -453,12 +430,10 @@ simple object export
 ###_.one
 first property
 
-  
 <a name="module_commonjs/object-with-alias.two"></a>
 ###_.two
 second property
 
-  
 <a name="module_commonjs/object-with-alias.three"></a>
 ###_.three()
 a function
@@ -468,7 +443,6 @@ a function
 
 simple object export
 
-  
 **Symbols**
 
 * [object.one](#module_commonjs/object.one)
@@ -478,7 +452,6 @@ simple object export
 ###object.one
 first property
 
-  
 <a name="module_commonjs/object.three"></a>
 ###object.three(four, five)
 a function
@@ -501,7 +474,6 @@ allTogether(true);
 
 module with private shiz
 
-  
 **Symbols**
 
 * [private.notprivate](#module_private.notprivate)
@@ -510,13 +482,11 @@ module with private shiz
 ###private.notprivate
 visible property
 
-  
 <a name="module_commonjs/single-value"></a>
 ##commonjs/single-value
 
 this module exports one value, that's it
 
-  
 **Symbols**
 
 
@@ -525,7 +495,6 @@ this module exports one value, that's it
 
 A simple maths function
 
-  
 **Example**  
 ```js
 var sum = require("sum");
@@ -544,7 +513,6 @@ A simple maths function
 - a `number` - first number
 - b `number` - second number
 
-  
 **Returns**: `number` - the result  
 **Example**  
 ```js
@@ -586,12 +554,10 @@ Enum for the `type` value
 ##visible
 a visible global
 
-  
 <a name="variable"></a>
 ##variable
 a global variable
 
-  
 <a name="typed"></a>
 ##typed
 **Type**: `string`  
@@ -602,7 +568,6 @@ a global variable
 ##exampled
 a var with an example
 
-  
 **Example**  
 ```js
 var another = 100;
@@ -612,7 +577,6 @@ var another = 100;
 ##examples
 a var with multiple examples
 
-  
 **Example**  
 ```js
 var another = 100;
@@ -625,31 +589,24 @@ var next = "p";
 
 <a name="_protected"></a>
 ##_protected
-  
 **Access**: protected  
 <a name="withAuthor"></a>
 ##withAuthor
-  
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
 ##hasDefault
-  
 **Default**: `23`  
 <a name="hasDefaultObject"></a>
 ##hasDefaultObject
-  
 **Default**: `{"one":1,"two":2}`  
 <a name="deprecated"></a>
 ##~~deprecated~~
 ***Deprecated***  
-  
 <a name="readOnly"></a>
 ##readOnly
-  
 **Read only**: true  
 <a name="hasSince"></a>
 ##hasSince
-  
 **Since**: v0.10.28  
 <a name="module_sum-alias"></a>
 ##module:sum-alias(a, b)
@@ -799,7 +756,6 @@ Set the magic number.
 
 <a name="module_world"></a>
 ##class: module:world
-  
 <a name="module_world"></a>
 ##new module:world()
 A class that says hello!
@@ -823,7 +779,6 @@ a class with all of the things
 
 ***Deprecated***  
 **Extends**: `Number`  
-  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
@@ -865,7 +820,6 @@ the ingredients on top
 ###all.size
 the general size
 
-  
 <a name="All#allThings"></a>
 ###~~all.allThings(one, two)~~
 This function has all tags set
@@ -889,7 +843,6 @@ all.allTogether(true);
 simple class description
 
 **Extends**: `Object`  
-  
 <a name="Person"></a>
 ##new Person()
 a constructor description
@@ -903,7 +856,6 @@ a constructor description
 
 - [options] `object` - optional shit
 
-  
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -920,7 +872,6 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
-  
 **Symbols**
 
 
@@ -935,7 +886,6 @@ a class with all trimmings
 
 ***Deprecated***  
 **Extends**: `Pipe`  
-  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
@@ -965,7 +915,6 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
-  
 **Symbols**
 
 * [event: "cooked"](#Rice#event_cooked)
@@ -981,7 +930,6 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-  
 **Symbols**
 
 * [something.methodOne()](#Something#methodOne)
@@ -1011,7 +959,6 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
-  
 **Symbols**
 
 * [pizza.topping](#Pizza#topping)
@@ -1028,10 +975,8 @@ the ingredients on top
 ###pizza.size
 the general size
 
-  
 <a name="Plucker"></a>
 ##class: Plucker
-  
 **Symbols**
 
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

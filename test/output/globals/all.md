@@ -29,12 +29,10 @@ Enum for the `type` value
 ##visible
 a visible global
 
-  
 <a name="variable"></a>
 ##variable
 a global variable
 
-  
 <a name="typed"></a>
 ##typed
 **Type**: `string`  
@@ -45,7 +43,6 @@ a global variable
 ##exampled
 a var with an example
 
-  
 **Example**  
 ```js
 var another = 100;
@@ -55,7 +52,6 @@ var another = 100;
 ##examples
 a var with multiple examples
 
-  
 **Example**  
 ```js
 var another = 100;
@@ -68,31 +64,24 @@ var next = "p";
 
 <a name="_protected"></a>
 ##_protected
-  
 **Access**: protected  
 <a name="withAuthor"></a>
 ##withAuthor
-  
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
 ##hasDefault
-  
 **Default**: `23`  
 <a name="hasDefaultObject"></a>
 ##hasDefaultObject
-  
 **Default**: `{"one":1,"two":2}`  
 <a name="deprecated"></a>
 ##~~deprecated~~
 ***Deprecated***  
-  
 <a name="readOnly"></a>
 ##readOnly
-  
 **Read only**: true  
 <a name="hasSince"></a>
 ##hasSince
-  
 **Since**: v0.10.28  
 <a name="read"></a>
 ##read(filename, done)
@@ -236,7 +225,6 @@ a class with all of the things
 
 ***Deprecated***  
 **Extends**: `Number`  
-  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
@@ -278,7 +266,6 @@ the ingredients on top
 ###all.size
 the general size
 
-  
 <a name="All#allThings"></a>
 ###~~all.allThings(one, two)~~
 This function has all tags set
@@ -302,7 +289,6 @@ all.allTogether(true);
 simple class description
 
 **Extends**: `Object`  
-  
 <a name="Person"></a>
 ##new Person()
 a constructor description
@@ -316,7 +302,6 @@ a constructor description
 
 - [options] `object` - optional shit
 
-  
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -333,7 +318,6 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
-  
 **Symbols**
 
 
@@ -348,7 +332,6 @@ a class with all trimmings
 
 ***Deprecated***  
 **Extends**: `Pipe`  
-  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
@@ -378,7 +361,6 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
-  
 **Symbols**
 
 * [event: "cooked"](#Rice#event_cooked)
@@ -394,7 +376,6 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-  
 **Symbols**
 
 * [something.methodOne()](#Something#methodOne)
@@ -424,7 +405,6 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
-  
 **Symbols**
 
 * [pizza.topping](#Pizza#topping)
@@ -441,10 +421,8 @@ the ingredients on top
 ###pizza.size
 the general size
 
-  
 <a name="Plucker"></a>
 ##class: Plucker
-  
 **Symbols**
 
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

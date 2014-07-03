@@ -4,7 +4,6 @@
 simple class description
 
 **Extends**: `Object`  
-  
 <a name="Person"></a>
 ##new Person()
 a constructor description
@@ -18,7 +17,6 @@ a constructor description
 
 - [options] `object` - optional shit
 
-  
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -35,7 +33,6 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
-  
 **Symbols**
 
 
@@ -50,7 +47,6 @@ a class with all trimmings
 
 ***Deprecated***  
 **Extends**: `Pipe`  
-  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
