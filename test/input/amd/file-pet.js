@@ -13,6 +13,7 @@ define("FilePet", function(){
     /**
     this is the contructor
     @class this class returns a pet of files
+    @param {number} - the input number
     @example
     ```js
     var cowFiles = FilePet("cow/*");
@@ -27,12 +28,14 @@ define("FilePet", function(){
     };
 
     /**
-    the static property
+    the prototype instance property
+    @type {boolean}
+    @default
     */
     FilePet.prototype.files = true;
 
     /**
-    A static methy meth
+    A prototype instance methy meth
     @param {array} - the paths to delete
     */
     FilePet.prototype.delete = function(paths){};
