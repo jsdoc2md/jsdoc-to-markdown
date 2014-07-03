@@ -31,7 +31,6 @@ an inner constant
 ###class: \~heaven.Cloud
 The main class of machine
 
-**Scope**: inner class of [heaven](#module_heaven)  
 **Symbols**
 
   * [cloud.eyes](#module_heaven.Cloud#eyes)

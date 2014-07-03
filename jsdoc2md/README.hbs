@@ -17,7 +17,7 @@ $ npm install -g jsdoc-to-markdown
 ```
 
 ###Bundled with your project
-In my opinion, this is the most efficient solution as it doesn't require an additional task runner.
+In my opinion, this is the most efficient solution (no task runner required).
 ```sh
 $ npm install jsdoc-to-markdown --save-dev
 ```
@@ -32,7 +32,7 @@ Then add an `docs` build task to your `package.json` scripts, e.g.:
   }
 }
 ```
-This approach abstracts implementation details away, saving collaborators the hassle of installing / learning `jsdoc-to-markdown`. Docs are generated like so:
+Docs are generated like so:
 
 ```sh
 $ npm run docs
@@ -69,16 +69,17 @@ Document your source code using [correct jsdoc syntax](http://usejsdoc.org), the
 ```
 $ jsdoc2md <options> <source_files>
 
--t, --template <string>  A custom handlebars template to insert the rendered documentation into,
-                         overriding the default
--p, --preset <string>    Use a preset template ('default', 'global' or 'modules')
--j, --json               Output the template data only
--h, --help               Print usage information
---src <array>            The javascript source files. The default option.
---index                  Include an index for each module and class, linking to members
---skip-heading           Skip the module heading, useful if you already have the heading
-                         elsewhere in your template.
---private                Include symbols marked @private in the output
+-t, --template <string>   A custom handlebars template to insert the rendered documentation into,
+                          overriding the default
+-p, --preset <string>     Use a preset template ('default', 'global' or 'modules')
+-j, --json                Output the template data only
+-h, --help                Print usage information
+--src <array>             The javascript source files. The default option.
+--index                   Include an index for each module and class, linking to members
+--skip-heading            Skip the module heading, useful if you already have the heading
+                          elsewhere in your template.
+--private                 Include symbols marked @private in the output
+--heading-depth <number>  root heading depth to begin the documentation from, defaults to 2 (`##`).
 ```
 
 ##examples

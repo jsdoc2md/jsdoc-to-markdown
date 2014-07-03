@@ -138,18 +138,6 @@ var cowFiles = FilePet("cow/*");
 ###class: module:file-pet
 this class returns a pet of files
 
-this is the contructor
-
-**Params**
-
-- num `number` - the input number
-
-**Example**  
-```js
-var cowFiles = FilePet("cow/*");
-```
-
-
 <a name="module_file-pet"></a>
 ###new module:file-pet(num)
 this is the contructor
@@ -230,9 +218,9 @@ Open and close your Jacket.
 
 <a name="module_shirt"></a>
 ##shirt
-**Version**: 1.0  
 A module representing a shirt.
 
+**Version**: 1.0  
 **Symbols**
 
 * [shirt.color](#module_shirt.color)
@@ -245,10 +233,6 @@ A property of the module.
 
 <a name="module_shirt.Turtleneck"></a>
 ###class: shirt.Turtleneck
-**Params**
-
--  `number` - the size innit
-
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
 **Params**
@@ -318,10 +302,6 @@ A module representing a blazer.
 
 <a name="module_blazer"></a>
 ###class: module:blazer
-**Params**
-
-- input `string` - the input
-
 <a name="module_blazer"></a>
 ###new module:blazer(input)
 **Params**
@@ -394,7 +374,6 @@ random
 ###class: \~cyber.Machine
 The main class of machine
 
-**Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
 **Symbols**
 
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
@@ -423,17 +402,6 @@ var FileSet = require("file-set");
 <a name="module_file-set"></a>
 ###class: module:file-set
 this class returns a set of files
-
-Takes a list of path patterns
-
-**Params**
-
-- num `Array.<string>` - a list of file patterns
-
-**Example**  
-```js
-var cowFiles = new FileSet("cow/*");
-```
 
 <a name="module_file-set"></a>
 ###new module:file-set(num)
@@ -479,10 +447,10 @@ A prototype instance methy meth
 
 <a name="module_commonjs/function"></a>
 ##commonjs/function
-**Author**: Lloyd <75pound@gmail.com>  
 This is the module description
 
 **Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Symbols**
 
 
@@ -529,7 +497,6 @@ an inner constant
 ###class: \~heaven.Cloud
 The main class of machine
 
-**Scope**: inner class of [heaven](#module_heaven)  
 **Symbols**
 
   * [cloud.eyes](#module_heaven.Cloud#eyes)
@@ -601,7 +568,6 @@ first property
 
 <a name="module_commonjs/object.three"></a>
 ###object.three(four, five)
-**Author**: Lloyd <75pound@gmail.com>  
 a function
 
 **Params**
@@ -611,6 +577,7 @@ a function
 
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 allTogether(true);
@@ -678,13 +645,13 @@ the first important constant
 **Type**: `number`  
 <a name="CONST_TWO"></a>
 ##~~const: CONST_TWO~~
-**Author**: Lloyd Brookes <lloyd@brookes.com>  
 This variable has all tags set
 
 ***Deprecated***  
 **Type**: `boolean`  
 **Read only**: true  
 **Since**: v0.10.28  
+**Author**: Lloyd Brookes <lloyd@brookes.com>  
 **Example**  
 ```js
 var CONST_TWO = true;
@@ -915,8 +882,6 @@ Set the magic number.
 
 <a name="module_world"></a>
 ##class: module:world
-A class that says hello!
-
 <a name="module_world"></a>
 ##new module:world()
 A class that says hello!
@@ -933,25 +898,8 @@ Say hello.
 ##~~class: All~~
 a class with all of the things
 
-**Author**: 75lb <75pound@gmail.com>  
-the constructor description
-
-**Params**
-
-- input `object` - an input
-- [options] `object` - optional shit
-
-***Deprecated***  
-**Extends**: `Number`  
-**Since**: v0.10.28  
-**Example**  
-```js
-var yeah = new Everything(true);
-```
-
 <a name="All"></a>
 ##~~new All(input, [options])~~
-**Author**: 75lb <75pound@gmail.com>  
 the constructor description
 
 **Params**
@@ -962,6 +910,7 @@ the constructor description
 ***Deprecated***  
 **Extends**: `Number`  
 **Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
 **Example**  
 ```js
 var yeah = new Everything(true);
@@ -986,7 +935,6 @@ the general size
 
 <a name="All#allThings"></a>
 ###~~all.allThings(one, two)~~
-**Author**: Lloyd <75pound@gmail.com>  
 This function has all tags set
 
 **Params**
@@ -997,6 +945,7 @@ This function has all tags set
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 all.allTogether(true);
@@ -1006,9 +955,6 @@ all.allTogether(true);
 ##class: Person
 simple class description
 
-a constructor description
-
-**Extends**: `Object`  
 <a name="Person"></a>
 ##new Person()
 a constructor description
@@ -1019,12 +965,6 @@ a constructor description
 
 <a name="Car"></a>
 ##class: Car
-a constructor with args
-
-**Params**
-
-- [options] `object` - optional shit
-
 <a name="Car"></a>
 ##new Car([options])
 a constructor with args
@@ -1040,7 +980,6 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
-**Extends**: `Pipe`  
 **Symbols**
 
 
@@ -1048,25 +987,8 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
-**Author**: 75lb <75pound@gmail.com>  
-the constructor description
-
-**Params**
-
-- input `object` - an input
-- [options] `object` - optional shit
-
-***Deprecated***  
-**Extends**: `Pipe`  
-**Since**: v0.10.28  
-**Example**  
-```js
-var yeah = new Everything(true);
-```
-
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
-**Author**: 75lb <75pound@gmail.com>  
 the constructor description
 
 **Params**
@@ -1077,6 +999,7 @@ the constructor description
 ***Deprecated***  
 **Extends**: `Pipe`  
 **Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
 **Example**  
 ```js
 var yeah = new Everything(true);
@@ -1113,7 +1036,6 @@ method description
 
 <a name="Something#allTogether"></a>
 ###~~something.allTogether(one, two)~~
-**Author**: Lloyd <75pound@gmail.com>  
 This function has all tags set
 
 **Params**
@@ -1124,6 +1046,7 @@ This function has all tags set
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 something.allTogether(true);

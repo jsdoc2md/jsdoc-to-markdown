@@ -8,10 +8,6 @@ A module representing a blazer.
 
 <a name="module_blazer"></a>
 ###class: module:blazer
-**Params**
-
-- input `string` - the input
-
 <a name="module_blazer"></a>
 ###new module:blazer(input)
 **Params**

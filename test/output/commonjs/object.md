@@ -13,7 +13,6 @@ first property
 
 <a name="module_object.three"></a>
 ###object.three(four, five)
-**Author**: Lloyd <75pound@gmail.com>  
 a function
 
 **Params**
@@ -23,6 +22,7 @@ a function
 
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 allTogether(true);

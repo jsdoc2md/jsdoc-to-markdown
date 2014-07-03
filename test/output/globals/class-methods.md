@@ -12,7 +12,6 @@ method description
 
 <a name="Something#allTogether"></a>
 ###~~something.allTogether(one, two)~~
-**Author**: Lloyd <75pound@gmail.com>  
 This function has all tags set
 
 **Params**
@@ -23,6 +22,7 @@ This function has all tags set
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 something.allTogether(true);

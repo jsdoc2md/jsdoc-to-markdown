@@ -17,18 +17,6 @@ var cowFiles = FilePet("cow/*");
 ###class: module:file-pet
 this class returns a pet of files
 
-this is the contructor
-
-**Params**
-
-- num `number` - the input number
-
-**Example**  
-```js
-var cowFiles = FilePet("cow/*");
-```
-
-
 <a name="module_file-pet"></a>
 ###new module:file-pet(num)
 this is the contructor

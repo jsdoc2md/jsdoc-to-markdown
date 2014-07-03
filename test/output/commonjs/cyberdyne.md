@@ -22,7 +22,6 @@ random
 ###class: \~cyber.Machine
 The main class of machine
 
-**Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 **Symbols**
 
   * [machine.eyes](#module_cyberdyne.Machine#eyes)

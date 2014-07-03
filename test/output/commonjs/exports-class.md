@@ -16,17 +16,6 @@ var FileSet = require("file-set");
 ###class: module:file-set
 this class returns a set of files
 
-Takes a list of path patterns
-
-**Params**
-
-- num `Array.<string>` - a list of file patterns
-
-**Example**  
-```js
-var cowFiles = new FileSet("cow/*");
-```
-
 <a name="module_file-set"></a>
 ###new module:file-set(num)
 Takes a list of path patterns
