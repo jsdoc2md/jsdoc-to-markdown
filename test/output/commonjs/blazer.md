@@ -22,7 +22,3 @@ A module representing a blazer.
 ####blazer.zip()
 Open and close your Blazer.
 
-<a name="module_blazer#zip"></a>
-###blazer.zip()
-Open and close your Blazer.
-

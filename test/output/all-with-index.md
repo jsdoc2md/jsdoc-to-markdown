@@ -176,24 +176,6 @@ A prototype instance methy meth
 
 - paths `array` - the paths to delete
 
-<a name="module_file-pet#instie"></a>
-###filePet.instie
-an instance ting
-
-<a name="module_file-pet#files"></a>
-###filePet.files
-the prototype instance property
-
-**Type**: `boolean`  
-**Default**: `true`  
-<a name="module_file-pet#delete"></a>
-###filePet.delete(paths)
-A prototype instance methy meth
-
-**Params**
-
-- paths `array` - the paths to delete
-
 <a name="module_jacket"></a>
 ##jacket
 A module representing a jacket.
@@ -212,10 +194,6 @@ A module representing a jacket.
 ####jacket.zip()
 Open and close your Jacket.
 
-<a name="module_jacket#zip"></a>
-###jacket.zip()
-Open and close your Jacket.
-
 <a name="module_shirt"></a>
 ##shirt
 A module representing a shirt.
@@ -226,26 +204,6 @@ A module representing a shirt.
 * [shirt.color](#module_shirt.color)
 * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
-
-<a name="module_shirt.color"></a>
-###shirt.color
-A property of the module.
-
-<a name="module_shirt.Turtleneck"></a>
-###class: shirt.Turtleneck
-**Symbols**
-
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
-
-<a name="module_shirt.Turtleneck"></a>
-###new shirt.Turtleneck()
-**Params**
-
--  `number` - the size innit
-
-<a name="module_shirt.Turtleneck#size"></a>
-####turtleneck.size
-A property of the class.
 
 <a name="module_coat"></a>
 ##coat
@@ -265,10 +223,6 @@ A module representing a coat.
 ####coat.zip()
 Open and close your Coat.
 
-<a name="module_coat#zip"></a>
-###coat.zip()
-Open and close your Coat.
-
 <a name="module_blouse"></a>
 ##blouse
 A module representing a blouse.
@@ -286,10 +240,6 @@ A module representing a blouse.
 
 <a name="module_blouse#zip"></a>
 ####blouse.zip()
-Open and close your Blouse.
-
-<a name="module_blouse#zip"></a>
-###blouse.zip()
 Open and close your Blouse.
 
 <a name="module_blazer"></a>
@@ -316,10 +266,6 @@ A module representing a blazer.
 ####blazer.zip()
 Open and close your Blazer.
 
-<a name="module_blazer#zip"></a>
-###blazer.zip()
-Open and close your Blazer.
-
 <a name="module_cattle"></a>
 ##cattle
 exported object, with-inner-members
@@ -331,25 +277,6 @@ exported object, with-inner-members
 * [\~innerFuction()](#module_cattle.innerFuction)
 * [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
-<a name="module_cattle.createCow"></a>
-###cattle.createCow()
-**Returns**: `boolean`  
-<a name="module_cattle.innerMember"></a>
-###\~innerMember
-the inner member
-
-**Scope**: inner member of [cattle](#module_cattle)  
-<a name="module_cattle.innerFuction"></a>
-###\~innerFuction()
-the inner function
-
-**Scope**: inner function of [cattle](#module_cattle)  
-<a name="module_cattle.anotherInnerFuction"></a>
-###~~\~anotherInnerFuction()~~
-another inner function
-
-***Deprecated***  
-**Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_commonjs/cyberdyne"></a>
 ##commonjs/cyberdyne
 exports an object.. has an inner class.
@@ -362,29 +289,6 @@ exports an object.. has an inner class.
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
 
-<a name="module_commonjs/cyberdyne.createMachine"></a>
-###cyber.createMachine()
-**Returns**: `module:cyberdyne~Machine`  
-<a name="module_commonjs/cyberdyne.something"></a>
-###\~something
-random
-
-**Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
-<a name="module_commonjs/cyberdyne.Machine"></a>
-###class: \~cyber.Machine
-The main class of machine
-
-**Symbols**
-
-  * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
-  * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
-
-<a name="module_commonjs/cyberdyne.Machine#eyes"></a>
-####machine.eyes
-**Type**: `number`  
-<a name="module_commonjs/cyberdyne.Machine#vibe"></a>
-####machine.vibe
-**Type**: `string`  
 <a name="module_FileSet"></a>
 ##FileSet
 this module exports a class constructor
@@ -433,18 +337,6 @@ A prototype instance methy meth
 
 - paths `array` - the paths to delete
 
-<a name="module_FileSet#files"></a>
-###fileSet.files
-the prototype instance property
-
-<a name="module_FileSet#delete"></a>
-###fileSet.delete(paths)
-A prototype instance methy meth
-
-**Params**
-
-- paths `array` - the paths to delete
-
 <a name="module_commonjs/function"></a>
 ##commonjs/function
 This is the module description
@@ -479,46 +371,6 @@ factory module creating dodgy cloud. object-with-static-class.
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 * [const: \~FACT](#module_heaven.FACT)
 
-<a name="module_heaven.Cloud"></a>
-###heaven.Cloud
-access to the Cloud class
-
-**Type**: [Cloud](#module_heaven.Cloud)  
-<a name="module_heaven.createCloud"></a>
-###heaven.createCloud()
-**Returns**: [Cloud](#module_heaven.Cloud)  
-<a name="module_heaven.FACT"></a>
-###const: \~FACT
-an inner constant
-
-**Scope**: inner constant of [heaven](#module_heaven)  
-**Type**: `boolean`  
-<a name="module_heaven.Cloud"></a>
-###class: \~heaven.Cloud
-The main class of machine
-
-**Symbols**
-
-  * [cloud.eyes](#module_heaven.Cloud#eyes)
-  * [cloud.vibe](#module_heaven.Cloud#vibe)
-  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-
-<a name="module_heaven.Cloud#eyes"></a>
-####cloud.eyes
-**Type**: `number`  
-<a name="module_heaven.Cloud#vibe"></a>
-####cloud.vibe
-**Type**: `string`  
-<a name="module_heaven.Cloud.classMethod"></a>
-####Cloud.classMethod()
-a class method
-
-<a name="module_heaven.Cloud.SPACES"></a>
-####const: Cloud.SPACES
-a class constant
-
-**Type**: `number`  
 <a name="module_commonjs/ignore"></a>
 ##commonjs/ignore
 module with ignored shiz
@@ -526,10 +378,6 @@ module with ignored shiz
 **Symbols**
 
 * [ignore.visible](#module_commonjs/ignore.visible)
-
-<a name="module_commonjs/ignore.visible"></a>
-###ignore.visible
-visible property
 
 <a name="module_commonjs/object-with-alias"></a>
 ##commonjs/object-with-alias
@@ -541,18 +389,6 @@ simple object export
 * [_.two](#module_commonjs/object-with-alias.two)
 * [_.three()](#module_commonjs/object-with-alias.three)
 
-<a name="module_commonjs/object-with-alias.one"></a>
-###_.one
-first property
-
-<a name="module_commonjs/object-with-alias.two"></a>
-###_.two
-second property
-
-<a name="module_commonjs/object-with-alias.three"></a>
-###_.three()
-a function
-
 <a name="module_commonjs/object"></a>
 ##commonjs/object
 simple object export
@@ -562,27 +398,6 @@ simple object export
 * [object.one](#module_commonjs/object.one)
 * [object.three(four, five)](#module_commonjs/object.three)
 
-<a name="module_commonjs/object.one"></a>
-###object.one
-first property
-
-<a name="module_commonjs/object.three"></a>
-###object.three(four, five)
-a function
-
-**Params**
-
-- four `string` - The input string
-- five `object` - a second input
-
-**Returns**: `object` | `string` - this return has several types  
-**Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-**Example**  
-```js
-allTogether(true);
-```
-
 <a name="module_private"></a>
 ##private
 module with private shiz
@@ -590,10 +405,6 @@ module with private shiz
 **Symbols**
 
 * [private.notprivate](#module_private.notprivate)
-
-<a name="module_private.notprivate"></a>
-###private.notprivate
-visible property
 
 <a name="module_commonjs/single-value"></a>
 ##commonjs/single-value

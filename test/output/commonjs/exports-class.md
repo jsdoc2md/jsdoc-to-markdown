@@ -46,15 +46,3 @@ A prototype instance methy meth
 
 - paths `array` - the paths to delete
 
-<a name="module_FileSet#files"></a>
-###fileSet.files
-the prototype instance property
-
-<a name="module_FileSet#delete"></a>
-###fileSet.delete(paths)
-A prototype instance methy meth
-
-**Params**
-
-- paths `array` - the paths to delete
-
