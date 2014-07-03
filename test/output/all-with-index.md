@@ -220,6 +220,7 @@ Open and close your Coat.
 
 A module representing a blouse.
 
+**Scope**: inner module of [coat](#module_coat)  
 **Symbols**
 
 * [blouse.zip()](#module_blouse#zip)
@@ -343,6 +344,7 @@ A prototype instance methy meth
 This is the module description
 
 **Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
 **Symbols**
 
 
