@@ -5,6 +5,7 @@ simple class description
 
 **Symbols**
 
+  * [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -15,6 +16,7 @@ a constructor description
 ##class: Car
 **Symbols**
 
+  * [new Car([options])](#Car)
 
 <a name="Car"></a>
 ##new Car([options])
@@ -37,6 +39,7 @@ a class with all trimmings
 
 **Symbols**
 
+  * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~

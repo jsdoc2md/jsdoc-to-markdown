@@ -3,6 +3,7 @@
 ##class: module:world
 **Symbols**
 
+  * [new module:world()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>

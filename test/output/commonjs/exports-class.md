@@ -13,7 +13,7 @@ var FileSet = require("file-set");
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
 <a name="module_FileSet"></a>
-##new module:FileSet(num)
+##new .module:FileSet(num)
 Takes a list of path patterns
 
 **Params**

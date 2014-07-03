@@ -6,8 +6,8 @@ exported object, with-inner-members
 
 * [cattle.createCow()](#module_cattle.createCow)
 * [\~innerMember](#module_cattle.innerMember)
-* [\~innerFuction()](#module_cattle.innerFuction)
-* [~~\~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+* [cattle~innerFuction()](#module_cattle.innerFuction)
+* [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
 <a name="module_cattle.createCow"></a>
 ###cattle.createCow()
@@ -18,12 +18,12 @@ the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
-###\~innerFuction()
+###cattle~innerFuction()
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-###~~\~anotherInnerFuction()~~
+###~~cattle~anotherInnerFuction()~~
 another inner function
 
 ***Deprecated***  

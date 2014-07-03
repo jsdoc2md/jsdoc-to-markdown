@@ -236,7 +236,7 @@ A property of the module.
 ###class: shirt.Turtleneck
 **Symbols**
 
-* [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck"></a>
@@ -324,7 +324,7 @@ The main class of machine
 
 **Symbols**
 
-* [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
+  * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
 
@@ -795,7 +795,7 @@ Set the magic number.
 ##class: module:world
 **Symbols**
 
-* [new module:world()](#module_world)
+  * [new module:world()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>
@@ -812,7 +812,7 @@ a class with all of the things
 
 **Symbols**
 
-* [~~new All(input, [options])~~](#All)
+  * [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -870,7 +870,7 @@ simple class description
 
 **Symbols**
 
-* [new Person()](#Person)
+  * [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -881,7 +881,7 @@ a constructor description
 ##class: Car
 **Symbols**
 
-* [new Car([options])](#Car)
+  * [new Car([options])](#Car)
 
 <a name="Car"></a>
 ##new Car([options])
@@ -904,7 +904,7 @@ a class with all trimmings
 
 **Symbols**
 
-* [~~new Everything(input, [options])~~](#Everything)
+  * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
