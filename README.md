@@ -17,6 +17,7 @@ $ npm install -g jsdoc-to-markdown
 ```
 
 ###Bundled with your project
+In my opinion, this is the most efficient solution as it doesn't require an additional task runner.
 ```sh
 $ npm install jsdoc-to-markdown --save-dev
 ```
@@ -41,7 +42,7 @@ $ npm run docs
 See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
 
 ###As a gulp plug-in
-Use a task like this until the gulp plugin is ready: 
+Use a task like this until the gulp plugin is ready, you should only need to edit `options` and `outputFile`: 
 
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
