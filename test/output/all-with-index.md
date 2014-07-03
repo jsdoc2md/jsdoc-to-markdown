@@ -462,9 +462,9 @@ a function
 - four `string` - The input string
 - five `object` - a second input
 
+**Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `object` | `string` - this return has several types  
 **Example**  
 ```js
 allTogether(true);
@@ -797,6 +797,7 @@ the constructor description
 - [options] `object` - optional shit
 
 ***Deprecated***  
+**Extends**: `Number`  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
@@ -831,9 +832,9 @@ This function has all tags set
 - two `object` - a second input
 
 ***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `object` | `string` - this return has several types  
 **Example**  
 ```js
 all.allTogether(true);
@@ -848,6 +849,7 @@ simple class description
 ##new Person()
 a constructor description
 
+**Extends**: `Object`  
 **Symbols**
 
 
@@ -904,6 +906,7 @@ the constructor description
 - [options] `object` - optional shit
 
 ***Deprecated***  
+**Extends**: `Pipe`  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
@@ -950,9 +953,9 @@ This function has all tags set
 - two `object` - a second input
 
 ***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `object` | `string` - this return has several types  
 **Example**  
 ```js
 something.allTogether(true);

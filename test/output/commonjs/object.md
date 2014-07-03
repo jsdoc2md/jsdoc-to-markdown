@@ -21,9 +21,9 @@ a function
 - four `string` - The input string
 - five `object` - a second input
 
+**Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Returns**: `object` | `string` - this return has several types  
 **Example**  
 ```js
 allTogether(true);

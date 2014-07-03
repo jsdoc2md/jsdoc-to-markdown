@@ -8,6 +8,7 @@ simple class description
 ##new Person()
 a constructor description
 
+**Extends**: `Object`  
 **Symbols**
 
 
@@ -64,6 +65,7 @@ the constructor description
 - [options] `object` - optional shit
 
 ***Deprecated***  
+**Extends**: `Pipe`  
 **Since**: v0.10.28  
 **Author**: 75lb <75pound@gmail.com>  
 **Example**  
