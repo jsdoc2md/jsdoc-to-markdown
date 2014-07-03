@@ -134,8 +134,20 @@ var cowFiles = FilePet("cow/*");
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
 
-<a name=""></a>
-##
+<a name="module_file-pet"></a>
+##new module:file-pet(num)
+this is the contructor
+
+**Params**
+
+- num `number` - the input number
+
+**Example**  
+```js
+var cowFiles = FilePet("cow/*");
+```
+
+
 <a name="module_file-pet#instie"></a>
 ###filePet.instie
 an instance ting
@@ -162,8 +174,8 @@ A module representing a jacket.
 
 * [jacket.zip()](#module_jacket#zip)
 
-<a name=""></a>
-##
+<a name="module_jacket"></a>
+##new module:jacket()
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -207,8 +219,8 @@ A module representing a coat.
 
 * [coat.zip()](#module_coat#zip)
 
-<a name=""></a>
-##
+<a name="module_coat"></a>
+##new module:coat()
 <a name="module_coat#zip"></a>
 ###coat.zip()
 Open and close your Coat.
@@ -222,8 +234,8 @@ A module representing a blouse.
 
 * [blouse.zip()](#module_blouse#zip)
 
-<a name=""></a>
-##
+<a name="module_blouse"></a>
+##new module:blouse()
 <a name="module_blouse#zip"></a>
 ###blouse.zip()
 Open and close your Blouse.
@@ -236,8 +248,12 @@ A module representing a blazer.
 
 * [blazer.zip()](#module_blazer#zip)
 
-<a name=""></a>
-##
+<a name="module_blazer"></a>
+##new module:blazer(input)
+**Params**
+
+- input `string` - the input
+
 <a name="module_blazer#zip"></a>
 ###blazer.zip()
 Open and close your Blazer.
@@ -321,8 +337,19 @@ var FileSet = require("file-set");
 * [fileSet.files](#module_FileSet#files)
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
-<a name=""></a>
-##
+<a name="module_FileSet"></a>
+##new module:FileSet(num)
+Takes a list of path patterns
+
+**Params**
+
+- num `Array.<string>` - a list of file patterns
+
+**Example**  
+```js
+var cowFiles = new FileSet("cow/*");
+```
+
 <a name="module_FileSet#files"></a>
 ###fileSet.files
 the prototype instance property

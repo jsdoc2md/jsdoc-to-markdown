@@ -12,8 +12,19 @@ var FileSet = require("file-set");
 * [fileSet.files](#module_FileSet#files)
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
-<a name=""></a>
-##
+<a name="module_FileSet"></a>
+##new module:FileSet(num)
+Takes a list of path patterns
+
+**Params**
+
+- num `Array.<string>` - a list of file patterns
+
+**Example**  
+```js
+var cowFiles = new FileSet("cow/*");
+```
+
 <a name="module_FileSet#files"></a>
 ###fileSet.files
 the prototype instance property

@@ -6,8 +6,12 @@ A module representing a blazer.
 
 * [blazer.zip()](#module_blazer#zip)
 
-<a name=""></a>
-##
+<a name="module_blazer"></a>
+##new module:blazer(input)
+**Params**
+
+- input `string` - the input
+
 <a name="module_blazer#zip"></a>
 ###blazer.zip()
 Open and close your Blazer.

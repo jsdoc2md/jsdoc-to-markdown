@@ -8,7 +8,7 @@
 
 {{>module-index offset=-2~}}
 
-{{#with (where @root longname=longname kind="class")~}}
+{{#with (findWhere @root longname=longname kind="class")~}}
 {{>function~}}
 {{/with~}}
 

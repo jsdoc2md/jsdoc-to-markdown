@@ -13,8 +13,20 @@ var cowFiles = FilePet("cow/*");
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
 
-<a name=""></a>
-##
+<a name="module_file-pet"></a>
+##new module:file-pet(num)
+this is the contructor
+
+**Params**
+
+- num `number` - the input number
+
+**Example**  
+```js
+var cowFiles = FilePet("cow/*");
+```
+
+
 <a name="module_file-pet#instie"></a>
 ###filePet.instie
 an instance ting
