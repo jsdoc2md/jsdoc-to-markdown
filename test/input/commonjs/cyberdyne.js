@@ -10,10 +10,12 @@ exports an object.. has an inner class.
 exports.createMachine = function(){};
 
 /**
+the Machine constructor
 @class 
 @classdesc The main class of machine
+@param {object} - constructor options
 */
-function Machine(){
+function Machine(options){
     /**
     @type {number}
     */

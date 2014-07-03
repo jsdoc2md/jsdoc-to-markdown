@@ -317,6 +317,15 @@ The main class of machine
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
 
+<a name="module_commonjs/cyberdyne.Machine"></a>
+###\~new Machine(options)
+the Machine constructor
+
+**Params**
+
+- options `object` - constructor options
+
+**Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
 <a name="module_commonjs/cyberdyne.Machine#eyes"></a>
 ####machine.eyes
 **Type**: `number`  
