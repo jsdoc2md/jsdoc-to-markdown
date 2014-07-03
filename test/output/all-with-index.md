@@ -6,15 +6,15 @@
     * [filePet.delete(paths)](#module_file-pet#delete)
   * [jacket](#module_jacket) <sub>exports: class</sub>
     * [jacket.zip()](#module_jacket#zip)
+  * [coat](#module_coat) <sub>exports: class</sub>
+    * [coat.zip()](#module_coat#zip)
+  * [blouse](#module_blouse) <sub>exports: class</sub>
+    * [blouse.zip()](#module_blouse#zip)
   * [shirt](#module_shirt)
     * [shirt.color](#module_shirt.color)
     * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
       * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
       * [turtleneck.size](#module_shirt.Turtleneck#size)
-  * [coat](#module_coat) <sub>exports: class</sub>
-    * [coat.zip()](#module_coat#zip)
-  * [blouse](#module_blouse) <sub>exports: class</sub>
-    * [blouse.zip()](#module_blouse#zip)
   * [blazer](#module_blazer) <sub>exports: class</sub>
     * [blazer.zip()](#module_blazer#zip)
   * [cattle](#module_cattle)
@@ -187,38 +187,6 @@ A module representing a jacket.
 ###jacket.zip()
 Open and close your Jacket.
 
-<a name="module_shirt"></a>
-##shirt
-A module representing a shirt.
-
-**Version**: 1.0  
-**Symbols**
-
-* [shirt.color](#module_shirt.color)
-* [class: shirt.Turtleneck](#module_shirt.Turtleneck)
-      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
-
-<a name="module_shirt.color"></a>
-###shirt.color
-A property of the module.
-
-<a name="module_shirt.Turtleneck"></a>
-###class: shirt.Turtleneck
-**Symbols**
-
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
-
-<a name="module_shirt.Turtleneck"></a>
-###new shirt.Turtleneck()
-**Params**
-
--  `number` - the size innit
-
-<a name="module_shirt.Turtleneck#size"></a>
-####turtleneck.size
-A property of the class.
-
 <a name="module_coat"></a>
 ##coat
 A module representing a coat.
@@ -247,6 +215,39 @@ A module representing a blouse.
 <a name="module_blouse#zip"></a>
 ###blouse.zip()
 Open and close your Blouse.
+
+<a name="module_shirt"></a>
+##shirt
+A module representing a shirt.
+
+**Version**: 1.0  
+**Symbols**
+
+* [shirt.color](#module_shirt.color)
+* [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
+<a name="module_shirt.color"></a>
+###shirt.color
+A property of the module.
+
+<a name="module_shirt.Turtleneck"></a>
+###class: shirt.Turtleneck
+**Symbols**
+
+* [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
+<a name="module_shirt.Turtleneck"></a>
+###new shirt.Turtleneck()
+**Params**
+
+-  `number` - the size innit
+
+<a name="module_shirt.Turtleneck#size"></a>
+####turtleneck.size
+A property of the class.
 
 <a name="module_blazer"></a>
 ##blazer
@@ -323,6 +324,7 @@ The main class of machine
 
 **Symbols**
 
+* [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
 
@@ -793,6 +795,7 @@ Set the magic number.
 ##class: module:world
 **Symbols**
 
+* [new module:world()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>
@@ -809,6 +812,7 @@ a class with all of the things
 
 **Symbols**
 
+* [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -866,6 +870,7 @@ simple class description
 
 **Symbols**
 
+* [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -876,6 +881,7 @@ a constructor description
 ##class: Car
 **Symbols**
 
+* [new Car([options])](#Car)
 
 <a name="Car"></a>
 ##new Car([options])
@@ -898,6 +904,7 @@ a class with all trimmings
 
 **Symbols**
 
+* [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
