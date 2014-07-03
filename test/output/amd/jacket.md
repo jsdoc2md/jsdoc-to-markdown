@@ -6,13 +6,9 @@ A module representing a jacket.
 
 * [jacket.zip()](#module_jacket#zip)
 
-<a name="module_jacket"></a>
-###class: module:jacket
-**Symbols**
-
-  * [jacket.zip()](#module_jacket#zip)
-
+<a name=""></a>
+##
 <a name="module_jacket#zip"></a>
-####jacket.zip()
+###jacket.zip()
 Open and close your Jacket.
 

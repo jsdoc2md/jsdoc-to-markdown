@@ -9,3 +9,23 @@ A module representing a shirt.
 * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
+<a name="module_shirt.color"></a>
+###shirt.color
+A property of the module.
+
+<a name="module_shirt.Turtleneck"></a>
+###class: shirt.Turtleneck
+**Symbols**
+
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
+
+<a name="module_shirt.Turtleneck"></a>
+###new shirt.Turtleneck()
+**Params**
+
+-  `number` - the size innit
+
+<a name="module_shirt.Turtleneck#size"></a>
+####turtleneck.size
+A property of the class.
+

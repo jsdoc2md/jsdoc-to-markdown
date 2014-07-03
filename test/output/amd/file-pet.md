@@ -13,42 +13,20 @@ var cowFiles = FilePet("cow/*");
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
 
-<a name="module_file-pet"></a>
-###class: module:file-pet
-this class returns a pet of files
-
-**Symbols**
-
-  * [filePet.instie](#module_file-pet#instie)
-  * [filePet.files](#module_file-pet#files)
-  * [filePet.delete(paths)](#module_file-pet#delete)
-
-<a name="module_file-pet"></a>
-###new module:file-pet(num)
-this is the contructor
-
-**Params**
-
-- num `number` - the input number
-
-**Example**  
-```js
-var cowFiles = FilePet("cow/*");
-```
-
-
+<a name=""></a>
+##
 <a name="module_file-pet#instie"></a>
-####filePet.instie
+###filePet.instie
 an instance ting
 
 <a name="module_file-pet#files"></a>
-####filePet.files
+###filePet.files
 the prototype instance property
 
 **Type**: `boolean`  
 **Default**: `true`  
 <a name="module_file-pet#delete"></a>
-####filePet.delete(paths)
+###filePet.delete(paths)
 A prototype instance methy meth
 
 **Params**

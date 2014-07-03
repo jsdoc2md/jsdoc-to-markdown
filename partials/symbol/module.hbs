@@ -8,8 +8,8 @@
 
 {{>module-index offset=-2~}}
 
-{{#with (where @root longname=longname -kind="module")~}}
-{{>symbols-grouped data=this ~}}
+{{#with (where @root longname=longname kind="class")~}}
+{{>function~}}
 {{/with~}}
 
-{{!>child-docs}}
+{{>child-docs}}

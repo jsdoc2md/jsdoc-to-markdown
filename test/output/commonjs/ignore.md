@@ -6,3 +6,7 @@ module with ignored shiz
 
 * [ignore.visible](#module_ignore.visible)
 
+<a name="module_ignore.visible"></a>
+###ignore.visible
+visible property
+

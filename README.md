@@ -96,3 +96,29 @@ These projects have readme files rendered by `jsdoc2md`:
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 
+<a name="module_jsdoc-to-markdown.render"></a>
+###jsdoc2md.render(options)
+**Params**
+
+- options `object` - The render options
+  - [template] `string` - A handlebars template to insert your documentation into.
+  - [preset] `string` - Choose from one of the built-in templates
+  - [json] `boolean` - Return the JSON template data only
+  - [src] `Array.<string>` - The javascript source files
+  - [index] `boolean` - Include an index for each module and class, linking to members
+  - [skip-heading] `boolean` - Skip the module heading, useful if you already have the heading elsewhere in your template.
+  - [private] `boolean` - Include symbols marked @private in the output
+  - [heading-depth] `number` - Root heading depth, defaults to 2.
+-  [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
+
+<a name="module_jsdoc-to-markdown.onRender"></a>
+###\~callback: onRender
+Called by `jsdoc2md.render()` on completion.
+
+**Params**
+
+- err `object` - An error instance if applicable, else `null`
+- result `string` - the rendered markdown
+
+**Scope**: inner typedef of [jsdoc-to-markdown](#module_jsdoc-to-markdown)  
+**Type**: `function`  
