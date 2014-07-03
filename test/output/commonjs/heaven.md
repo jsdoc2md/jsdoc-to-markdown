@@ -21,6 +21,12 @@ access to the Cloud class
 <a name="module_heaven.createCloud"></a>
 ###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
+<a name="module_heaven.FACT"></a>
+###const: \~FACT
+an inner constant
+
+**Scope**: inner constant of [heaven](#module_heaven)  
+**Type**: `boolean`  
 <a name="module_heaven.Cloud"></a>
 ###class: \~heaven.Cloud
 The main class of machine
@@ -48,9 +54,3 @@ a class method
 a class constant
 
 **Type**: `number`  
-<a name="module_heaven.FACT"></a>
-###const: \~FACT
-an inner constant
-
-**Scope**: inner constant of [heaven](#module_heaven)  
-**Type**: `boolean`  
