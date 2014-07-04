@@ -2,38 +2,15 @@
 This is the documentation for a full module
 
 <a name="module_FileSet"></a>
-##FileSet
-this module exports a class constructor
-
-**Example**  
-```js
-var FileSet = require("file-set");
-```
-
-**Symbols**
-
-* [fileSet.files](#module_FileSet#files)
-* [fileSet.delete(paths)](#module_FileSet#delete)
-
+#FileSet
 <a name="module_FileSet"></a>
-##new FileSet(num)
-Takes a list of path patterns
-
-**Params**
-
-- num `Array.<string>` - a list of file patterns
-
-**Example**  
-```js
-var cowFiles = new FileSet("cow/*");
-```
-
+#FileSet
 <a name="module_FileSet#files"></a>
-###fileSet.files
+##fileSet.files
 the prototype instance property
 
 <a name="module_FileSet#delete"></a>
-###fileSet.delete(paths)
+##fileSet.delete(paths)
 A prototype instance methy meth
 
 **Params**
@@ -45,7 +22,7 @@ A prototype instance methy meth
 #And a class here
 
 <a name="All"></a>
-##~~class: All~~
+#~~class: All~~
 a class with all of the things
 
 **Symbols**
@@ -56,7 +33,7 @@ a class with all of the things
 * [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All"></a>
-##~~new All(input, [options])~~
+#~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -74,18 +51,18 @@ var yeah = new Everything(true);
 ```
 
 <a name="All#topping"></a>
-###all.topping
+##all.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size
+##all.size
 the general size
 
 <a name="All#allThings"></a>
-###~~all.allThings(one, two)~~
+##~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**

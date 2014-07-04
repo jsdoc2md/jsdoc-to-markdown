@@ -1,15 +1,3 @@
-{{!mergeModuleAlias~}}
-{{~>anchor~}}
-{{#unless @root.argv.skip-heading}}{{#if name}}{{>heading}}{{>module-name~}}
-{{/if}}
-{{/unless~}}
-
-{{>fields~}}
-
-{{>module-index offset=-2~}}
-
-{{#with (findWhere @root longname=longname kind="class")~}}
-{{>function~}}
-{{/with~}}
-
+{{>module-head~}}
+{{>module-head~}}
 {{>child-docs}}

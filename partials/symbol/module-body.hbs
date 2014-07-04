@@ -1,0 +1,6 @@
+{{>fields~}}
+{{>module-index offset=-2~}}
+
+{{#with (findWhere @root longname=longname kind="class")~}}
+{{>function~}}
+{{/with~}}

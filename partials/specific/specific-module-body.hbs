@@ -1,0 +1,7 @@
+{{#if name~}}
+  {{#with (findWhere @root kind="module" name=name)~}}
+  {{>module-body~}}
+  {{/with~}}
+{{else~}}
+  {{>module-body~}}
+{{/if~}}

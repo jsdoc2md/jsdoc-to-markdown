@@ -16,7 +16,12 @@ function render(options, output){
     });
 }
 
-render({
-    src: "test/input/commonjs/exports-class.js",
-    template: "test/template/module-full.hbs"    
-}, "test/output/template/module-full.md");
+fs.readdirSync("test/template").forEach(function(file){
+    render(
+        {
+            src: "test/input/**/*.js",
+            template: path.join("test/template", file)
+        }, 
+        path.join("test/output/template", path.basename(file, ".js") + ".md")
+    )
+});
