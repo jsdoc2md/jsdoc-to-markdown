@@ -10,7 +10,7 @@ module.exports = sum;
 
 /**
 Sums two numbers together
-@name CLIVE YEAH
+@name sum
 @param {number} - first number 
 @param {number} - second number
 @returns {number} the result

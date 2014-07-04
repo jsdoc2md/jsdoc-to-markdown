@@ -9,16 +9,18 @@ var sum = require("sum");
 
 **Symbols**
 
+* [\~sum](#module_sum-alias.sum)
 
-<a name="module_sum-alias"></a>
-##sum-alias(a, b)
+<a name="module_sum-alias.sum"></a>
+###\~sum
 Sums two numbers together
 
 **Params**
 
-- a `number` - first number
-- b `number` - second number
+-  `number` - first number
+-  `number` - second number
 
+**Scope**: inner member of [sum-alias](#module_sum-alias)  
 **Returns**: `number` - the result  
 **Example**  
 ```js
