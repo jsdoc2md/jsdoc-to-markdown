@@ -15,14 +15,6 @@ blah blah
 Blah blah 
 
 #API
-this module exports a class constructor
-
-**Example**  
-```js
-var FileSet = require("file-set");
-```
-
-
 **Symbols**
 
 * [fileSet.files](#module_FileSet#files)
