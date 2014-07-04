@@ -14,7 +14,7 @@ var cowFiles = FilePet("cow/*");
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-##new filePet(num)
+##new FilePet(num) <sub>exported</sub>
 this is the contructor
 
 **Params**

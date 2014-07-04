@@ -7,7 +7,7 @@ A module representing a blazer.
 * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer"></a>
-##new blazer(input)
+##new Blazer(input) <sub>exported</sub>
 **Params**
 
 - input `string` - the input

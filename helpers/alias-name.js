@@ -7,10 +7,13 @@ function instantiate(input){
 module.exports = function(handlebars){
     handlebars.registerHelper("aliasName", function(options){
         var alias = a.findWhere(options.data.root, { longname: this.longname, kind: "module" });
+        var name = "";
         if (alias){
-            return alias.alias || alias.name;
+            name = alias.alias || alias.name;
         } else {
-            return this.name;
+            name = this.name;
         }
+        if (/module:/.test(this.name)) name = this.codeName;
+        return name;
     });
 };

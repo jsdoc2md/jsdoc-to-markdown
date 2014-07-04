@@ -8,7 +8,7 @@ This is the module description
 
 
 <a name="module_function"></a>
-##function(one, two)
+##module.exports(one, two) <sub>exported</sub>
 the main function description
 
 **Params**

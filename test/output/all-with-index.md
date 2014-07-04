@@ -54,8 +54,7 @@
   * [private](#module_private)
     * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value) <sub>exports: member</sub>
-  * [sum-alias](#module_sum-alias)
-    * [\~sum](#module_sum-alias.sum)
+  * [sum-alias](#module_sum-alias) <sub>exports: function</sub>
   * [commonjs/sum(a, b)](#module_commonjs/sum)
 
 * Globals
@@ -95,7 +94,7 @@
   * [setMagicNumber(x)](#setMagicNumber)
   * [doSomething(options)](#doSomething)
   * [class: module:world](#module_world)
-    * [new module:world()](#module_world)
+    * [new Hello()](#module_world)
     * [module:world.sayHello()](#module_world#sayHello)
   * [~~class: All~~](#All)
     * [~~new All(input, [options])~~](#All)
@@ -142,7 +141,7 @@ var cowFiles = FilePet("cow/*");
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-##new filePet(num)
+##new FilePet(num) <sub>exported</sub>
 this is the contructor
 
 **Params**
@@ -182,7 +181,7 @@ A module representing a jacket.
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket"></a>
-##new jacket()
+##new Jacket() <sub>exported</sub>
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -196,7 +195,7 @@ A module representing a coat.
 * [coat.zip()](#module_coat#zip)
 
 <a name="module_coat"></a>
-##new coat()
+##new Coat() <sub>exported</sub>
 <a name="module_coat#zip"></a>
 ###coat.zip()
 Open and close your Coat.
@@ -211,7 +210,7 @@ A module representing a blouse.
 * [blouse.zip()](#module_blouse#zip)
 
 <a name="module_blouse"></a>
-##new blouse()
+##new Blouse() <sub>exported</sub>
 <a name="module_blouse#zip"></a>
 ###blouse.zip()
 Open and close your Blouse.
@@ -258,7 +257,7 @@ A module representing a blazer.
 * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer"></a>
-##new blazer(input)
+##new Blazer(input) <sub>exported</sub>
 **Params**
 
 - input `string` - the input
@@ -358,7 +357,7 @@ var FileSet = require("file-set");
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
 <a name="module_FileSet"></a>
-##new FileSet(num)
+##new FileSet(num) <sub>exported</sub>
 Takes a list of path patterns
 
 **Params**
@@ -392,7 +391,7 @@ This is the module description
 
 
 <a name="module_commonjs/function"></a>
-##commonjs/function(one, two)
+##module.exports(one, two) <sub>exported</sub>
 the main function description
 
 **Params**
@@ -550,18 +549,16 @@ var sum = require("sum");
 
 **Symbols**
 
-* [\~sum](#module_sum-alias.sum)
 
-<a name="module_sum-alias.sum"></a>
-###\~sum
+<a name="module_sum-alias"></a>
+##sum(a, b) <sub>exported</sub>
 Sums two numbers together
 
 **Params**
 
--  `number` - first number
--  `number` - second number
+- a `number` - first number
+- b `number` - second number
 
-**Scope**: inner member of [sum-alias](#module_sum-alias)  
 **Returns**: `number` - the result  
 **Example**  
 ```js
@@ -807,11 +804,11 @@ Set the magic number.
 ##class: module:world
 **Symbols**
 
-  * [new module:world()](#module_world)
+  * [new Hello()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>
-##new module:world()
+##new Hello()
 A class that says hello!
 
 <a name="module_world#sayHello"></a>
