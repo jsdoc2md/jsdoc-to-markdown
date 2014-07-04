@@ -22,6 +22,6 @@ fs.readdirSync("test/template").forEach(function(file){
             src: "test/input/**/*.js",
             template: path.join("test/template", file)
         }, 
-        path.join("test/output/template", path.basename(file, ".js") + ".md")
+        path.join("test/output/template", path.basename(file, ".hbs") + ".md")
     )
 });
