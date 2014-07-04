@@ -6,7 +6,7 @@ exports an object.. has an inner class.
 
 * [cyber.createMachine()](#module_cyberdyne.createMachine)
 * [\~something](#module_cyberdyne.something)
-* [class: \~cyber.Machine](#module_cyberdyne.Machine)
+* [class: cyber~Machine](#module_cyberdyne.Machine)
       * [new cyber~Machine(options)](#module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
@@ -20,7 +20,7 @@ random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine"></a>
-###class: \~cyber.Machine
+###class: cyber~Machine
 The main class of machine
 
 **Symbols**

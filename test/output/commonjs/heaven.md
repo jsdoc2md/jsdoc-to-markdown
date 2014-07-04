@@ -6,7 +6,7 @@ factory module creating dodgy cloud. object-with-static-class.
 
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
-* [class: \~heaven.Cloud](#module_heaven.Cloud)
+* [class: heaven~Cloud](#module_heaven.Cloud)
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -28,7 +28,7 @@ an inner constant
 **Scope**: inner constant of [heaven](#module_heaven)  
 **Type**: `boolean`  
 <a name="module_heaven.Cloud"></a>
-###class: \~heaven.Cloud
+###class: heaven~Cloud
 The main class of machine
 
 **Symbols**

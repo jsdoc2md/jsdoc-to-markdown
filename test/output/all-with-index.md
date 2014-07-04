@@ -25,7 +25,7 @@
   * [commonjs/cyberdyne](#module_commonjs/cyberdyne)
     * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
     * [\~something](#module_commonjs/cyberdyne.something)
-    * [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
+    * [class: cyber~Machine](#module_commonjs/cyberdyne.Machine)
       * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
       * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
       * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
@@ -36,7 +36,7 @@
   * [heaven](#module_heaven)
     * [heaven.Cloud](#module_heaven.Cloud)
     * [heaven.createCloud()](#module_heaven.createCloud)
-    * [class: \~heaven.Cloud](#module_heaven.Cloud)
+    * [class: heaven~Cloud](#module_heaven.Cloud)
       * [cloud.eyes](#module_heaven.Cloud#eyes)
       * [cloud.vibe](#module_heaven.Cloud#vibe)
       * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -305,7 +305,7 @@ exports an object.. has an inner class.
 
 * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
 * [\~something](#module_commonjs/cyberdyne.something)
-* [class: \~cyber.Machine](#module_commonjs/cyberdyne.Machine)
+* [class: cyber~Machine](#module_commonjs/cyberdyne.Machine)
       * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
   * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
   * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
@@ -319,7 +319,7 @@ random
 
 **Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
 <a name="module_commonjs/cyberdyne.Machine"></a>
-###class: \~cyber.Machine
+###class: cyber~Machine
 The main class of machine
 
 **Symbols**
@@ -399,7 +399,7 @@ factory module creating dodgy cloud. object-with-static-class.
 
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
-* [class: \~heaven.Cloud](#module_heaven.Cloud)
+* [class: heaven~Cloud](#module_heaven.Cloud)
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -421,7 +421,7 @@ an inner constant
 **Scope**: inner constant of [heaven](#module_heaven)  
 **Type**: `boolean`  
 <a name="module_heaven.Cloud"></a>
-###class: \~heaven.Cloud
+###class: heaven~Cloud
 The main class of machine
 
 **Symbols**
