@@ -6,11 +6,6 @@ this module exports a class constructor
 var FileSet = require("file-set");
 ```
 
-**Symbols**
-
-* [fileSet.files](#module_FileSet#files)
-* [fileSet.delete(paths)](#module_FileSet#delete)
-
 
 
 ##Install
@@ -27,11 +22,11 @@ this module exports a class constructor
 var FileSet = require("file-set");
 ```
 
+
 **Symbols**
 
 * [fileSet.files](#module_FileSet#files)
 * [fileSet.delete(paths)](#module_FileSet#delete)
-
 
 <a name="module_FileSet"></a>
 #new FileSet(num)
