@@ -1,4 +1,6 @@
-{{!mergeModuleAlias~}}
+{{#if show~}}
+CLIVE
+{{#with (findWhere @root kind="module" name=show)~}}
 {{~>anchor~}}
 {{#unless @root.argv.skip-heading}}{{#if name}}{{>heading}}{{>module-name~}}
 {{/if}}
@@ -13,3 +15,24 @@
 {{/with~}}
 
 {{>child-docs}}
+{{/with~}}
+
+
+{{else~}}
+
+
+{{~>anchor~}}
+{{#unless @root.argv.skip-heading}}{{#if name}}{{>heading}}{{>module-name~}}
+{{/if}}
+{{/unless~}}
+
+{{>fields~}}
+
+{{>module-index offset=-2~}}
+
+{{#with (findWhere @root longname=longname kind="class")~}}
+{{>function~}}
+{{/with~}}
+
+{{>child-docs}}
+{{/if~}}
