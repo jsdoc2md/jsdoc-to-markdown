@@ -1,7 +1,6 @@
 {{#if show~}}
-CLIVE
 {{#with (findWhere @root kind="module" name=show)~}}
-{{~>anchor~}}
+{{~>anchor~}}  
 {{#unless @root.argv.skip-heading}}{{#if name}}{{>heading}}{{>module-name~}}
 {{/if}}
 {{/unless~}}

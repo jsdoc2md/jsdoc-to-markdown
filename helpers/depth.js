@@ -1,25 +1,25 @@
 module.exports = function(handlebars){
-    handlebars.registerHelper("depth", function(options){
-        var depth = 0 + (options.data.root.argv["heading-depth"] - 1);
+    function getDepth(data){
+        var depth = 0;
         function recurse(node){
             if (node._parent){
                 depth++;
                 recurse(node._parent)
             }
         }
-        recurse(options.data);
+        recurse(data);
         return depth;
+    }
+    
+    handlebars.registerHelper("depth", function(options){
+        return getDepth(options.data) + (options.data.root.argv["heading-depth"] - 1);
     });
 
     handlebars.registerHelper("depth2", function(offset, options){
-        var depth = 0 + (offset || 0);
-        function recurse(node){
-            if (node._parent){
-                depth++;
-                recurse(node._parent)
-            }
-        }
-        recurse(options.data);
-        return depth;
+        return getDepth(options.data) + (offset || 0);
+    });
+
+    handlebars.registerHelper("currentDepth", function(options){
+        return getDepth(options.data);
     });
 };
