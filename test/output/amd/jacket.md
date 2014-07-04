@@ -7,7 +7,7 @@ A module representing a jacket.
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket"></a>
-##new module:jacket()
+##new jacket()
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.

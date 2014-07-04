@@ -5,7 +5,7 @@
     {{#if (equal-some scope "static" "instance" undefined)}}.{{/if~}}
     {{#if (equal-some scope "inner")}}~{{/if~}}
   {{/if~}}
-  {{{name}}}({{methodSig params}})
+  {{aliasName}}({{methodSig params}})
   {{~>name-suffix~}}
   {{#if deprecated}}~~{{/if~}}
 {{~/if}}

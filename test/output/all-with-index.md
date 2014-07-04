@@ -142,7 +142,7 @@ var cowFiles = FilePet("cow/*");
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-##new module:file-pet(num)
+##new filePet(num)
 this is the contructor
 
 **Params**
@@ -182,7 +182,7 @@ A module representing a jacket.
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket"></a>
-##new module:jacket()
+##new jacket()
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -196,7 +196,7 @@ A module representing a coat.
 * [coat.zip()](#module_coat#zip)
 
 <a name="module_coat"></a>
-##new module:coat()
+##new coat()
 <a name="module_coat#zip"></a>
 ###coat.zip()
 Open and close your Coat.
@@ -211,7 +211,7 @@ A module representing a blouse.
 * [blouse.zip()](#module_blouse#zip)
 
 <a name="module_blouse"></a>
-##new module:blouse()
+##new blouse()
 <a name="module_blouse#zip"></a>
 ###blouse.zip()
 Open and close your Blouse.
@@ -258,7 +258,7 @@ A module representing a blazer.
 * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer"></a>
-##new module:blazer(input)
+##new blazer(input)
 **Params**
 
 - input `string` - the input
@@ -358,7 +358,7 @@ var FileSet = require("file-set");
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
 <a name="module_FileSet"></a>
-##new module:FileSet(num)
+##new FileSet(num)
 Takes a list of path patterns
 
 **Params**
