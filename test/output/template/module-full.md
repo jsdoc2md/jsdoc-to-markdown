@@ -42,7 +42,6 @@ A prototype instance methy meth
 
 
 
-
 #And a class here
 
 <a name="All"></a>
@@ -102,5 +101,4 @@ This function has all tags set
 ```js
 all.allTogether(true);
 ```
-
 

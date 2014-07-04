@@ -1,6 +1,3 @@
-{{#if show~}}
-
-{{#with (findWhere @root kind="class" name=show)~}}
 {{>anchor~}}
 {{>heading}}{{>class-name}}
 {{>classdesc~}}
@@ -9,17 +6,3 @@
 
 {{#if (constructorHasDocs)}}{{>function}}{{/if~}}
 {{>child-docs}}
-{{/with~}}
-
-{{else~}}
-
-{{>anchor~}}
-{{>heading}}{{>class-name}}
-{{>classdesc~}}
-
-{{>module-index offset=-2~}}
-
-{{#if (constructorHasDocs)}}{{>function}}{{/if~}}
-{{>child-docs}}
-
-{{/if}}
