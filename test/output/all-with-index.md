@@ -54,7 +54,7 @@
   * [private](#module_private)
     * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value) <sub>exports: member</sub>
-  * [commonjs/sum-alias](#module_commonjs/sum-alias)
+  * [sum-alias](#module_sum-alias) <sub>exports: function</sub>
   * [commonjs/sum(a, b)](#module_commonjs/sum)
 
 * Globals
@@ -72,7 +72,6 @@
   * [~~deprecated~~](#deprecated)
   * [readOnly](#readOnly)
   * [hasSince](#hasSince)
-  * [module:sum-alias(a, b)](#module_sum-alias)
   * [read(filename, done)](#read)
   * [globalFunc()](#globalFunc)
   * [exampled()](#exampled)
@@ -391,6 +390,16 @@ This is the module description
 **Symbols**
 
 
+<a name="module_commonjs/function"></a>
+##commonjs/function(one, two)
+the main function description
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+**Returns**: `object` | `string` - this return has several types  
 <a name="module_heaven"></a>
 ##heaven
 factory module creating dodgy cloud. object-with-static-class.
@@ -529,8 +538,8 @@ this module exports one value, that's it
 **Symbols**
 
 
-<a name="module_commonjs/sum-alias"></a>
-##commonjs/sum-alias
+<a name="module_sum-alias"></a>
+##sum-alias
 A simple maths function
 
 **Example**  
@@ -540,6 +549,21 @@ var sum = require("sum");
 
 **Symbols**
 
+
+<a name="module_sum-alias"></a>
+##sum-alias(a, b)
+Sums two numbers together
+
+**Params**
+
+- a `number` - first number
+- b `number` - second number
+
+**Returns**: `number` - the result  
+**Example**  
+```js
+var result = sum(1, 1);
+```
 
 <a name="module_commonjs/sum"></a>
 ##commonjs/sum(a, b)
@@ -645,21 +669,6 @@ var next = "p";
 <a name="hasSince"></a>
 ##hasSince
 **Since**: v0.10.28  
-<a name="module_sum-alias"></a>
-##module:sum-alias(a, b)
-Sums two numbers together
-
-**Params**
-
-- a `number` - first number
-- b `number` - second number
-
-**Returns**: `number` - the result  
-**Example**  
-```js
-var result = sum(1, 1);
-```
-
 <a name="read"></a>
 ##read(filename, done)
 **Params**

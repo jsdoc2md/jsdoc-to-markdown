@@ -7,3 +7,13 @@ This is the module description
 **Symbols**
 
 
+<a name="module_function"></a>
+##function(one, two)
+the main function description
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+**Returns**: `object` | `string` - this return has several types  

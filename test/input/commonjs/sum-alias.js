@@ -1,6 +1,6 @@
 /**
 A simple maths function
-@module
+@module sum-alias
 @example
 ```js
 var sum = require("sum");

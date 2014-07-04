@@ -3,5 +3,8 @@
 {{#with (findWhere @root longname=longname kind="class")~}}
 {{>function~}}
 {{/with~}}
+{{#with (findWhere @root longname=longname kind="function")~}}
+{{>function~}}
+{{/with~}}
 
 {{>child-docs}}
