@@ -37,6 +37,7 @@
     * [heaven.Cloud](#module_heaven.Cloud)
     * [heaven.createCloud()](#module_heaven.createCloud)
     * [class: heaven~Cloud](#module_heaven.Cloud)
+      * [new heaven~Cloud(options)](#module_heaven.Cloud)
       * [cloud.eyes](#module_heaven.Cloud#eyes)
       * [cloud.vibe](#module_heaven.Cloud#vibe)
       * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -425,6 +426,7 @@ factory module creating dodgy cloud. object-with-static-class.
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: heaven~Cloud](#module_heaven.Cloud)
+      * [new heaven~Cloud(options)](#module_heaven.Cloud)
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -451,12 +453,22 @@ The main class of machine
 
 **Identifiers**
 
+  * [new heaven~Cloud(options)](#module_heaven.Cloud)
 
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
+<a name="module_heaven.Cloud"></a>
+###new heaven~Cloud(options)
+cloud constructor
+
+**Params**
+
+- options `object` - the options
+
+**Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven.Cloud#eyes"></a>
 ####cloud.eyes
 **Type**: `number`  

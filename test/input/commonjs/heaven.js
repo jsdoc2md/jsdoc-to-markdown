@@ -15,10 +15,12 @@ access to the Cloud class
 exports.Cloud = Cloud;
 
 /**
+cloud constructor
 @class
 @classdesc The main class of machine
+@param {object} - the options
 */
-function Cloud(){
+function Cloud(options){
     /**
     @type {number}
     */
