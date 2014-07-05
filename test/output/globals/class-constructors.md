@@ -3,8 +3,9 @@
 ##class: Person
 simple class description
 
-**Symbols**
+**Identifiers**
 
+  * [new Person()](#Person)
   * [new Person()](#Person)
 
 <a name="Person"></a>
@@ -14,8 +15,9 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
-**Symbols**
+**Identifiers**
 
+  * [new Car([options])](#Car)
   * [new Car([options])](#Car)
 
 <a name="Car"></a>
@@ -30,15 +32,17 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
-**Symbols**
+**Identifiers**
 
+  * [new Pipe()](#Pipe)
 
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
-**Symbols**
+**Identifiers**
 
+  * [~~new Everything(input, [options])~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>

@@ -1,7 +1,8 @@
 {{#if @root.argv.index~}}
-**Symbols**
+**Identifiers**
 
 {{#if (constructorHasDocs)}}{{string-repeat "  " (depth2 ../offset)}}  * {{#link}}{{>function-name-long}}{{/link}}
 {{/if~}}
+{{#with (exported)}}{{string-repeat "  " (depth2 ../offset)}}  * {{#link}}{{>function-name-long}}{{/link}}{{/with}}
 {{>index-children offset=offset}}
 {{/if}}

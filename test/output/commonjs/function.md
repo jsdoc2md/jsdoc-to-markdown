@@ -4,16 +4,7 @@ This is the module description
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Symbols**
+**Identifiers**
 
+  * [module.exports(one, two) ⏏](#module_function)
 
-<a name="module_function"></a>
-##module.exports(one, two) <sub>exported</sub>
-the main function description
-
-**Params**
-
-- one `string` - The input string
-- two `object` - a second input
-
-**Returns**: `object` | `string` - this return has several types  

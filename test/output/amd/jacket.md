@@ -2,12 +2,13 @@
 ##jacket
 A module representing a jacket.
 
-**Symbols**
+<a name="module_jacket"></a>
+##class: .module:jacket ⏏
+**Identifiers**
 
+  * [new Jacket() ⏏](#module_jacket)
 * [jacket.zip()](#module_jacket#zip)
 
-<a name="module_jacket"></a>
-##new Jacket() <sub>exported</sub>
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.

@@ -2,7 +2,8 @@
 ##private
 module with private shiz
 
-**Symbols**
+**Identifiers**
+
 
 * [private.notprivate](#module_private.notprivate)
 

@@ -2,6 +2,7 @@
 ##single-value
 this module exports one value, that's it
 
-**Symbols**
+**Identifiers**
 
+  * [module.exports() ⏏](#module_single-value)
 

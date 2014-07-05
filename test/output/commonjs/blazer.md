@@ -2,12 +2,16 @@
 ##blazer
 A module representing a blazer.
 
-**Symbols**
+<a name="module_blazer"></a>
+##class: .module:blazer ⏏
+**Identifiers**
 
+  * [new Blazer(input) ⏏](#module_blazer)
+  * [new Blazer(input) ⏏](#module_blazer)
 * [blazer.zip()](#module_blazer#zip)
 
 <a name="module_blazer"></a>
-##new Blazer(input) <sub>exported</sub>
+##new Blazer(input) ⏏
 **Params**
 
 - input `string` - the input

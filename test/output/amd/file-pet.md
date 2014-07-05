@@ -7,14 +7,20 @@ this module returns a pet of files
 var cowFiles = FilePet("cow/*");
 ```
 
-**Symbols**
+<a name="module_file-pet"></a>
+##class: .module:file-pet ⏏
+this class returns a pet of files
 
+**Identifiers**
+
+  * [new FilePet(num) ⏏](#module_file-pet)
+  * [new FilePet(num) ⏏](#module_file-pet)
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-##new FilePet(num) <sub>exported</sub>
+##new FilePet(num) ⏏
 this is the contructor
 
 **Params**

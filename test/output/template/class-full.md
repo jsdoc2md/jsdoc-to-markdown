@@ -6,7 +6,8 @@ This is a long piece of text all about a class
 #class: heaven~Cloud
 The main class of machine
 
-**Symbols**
+**Identifiers**
+
 
 * [cloud.eyes](#module_heaven.Cloud#eyes)
 * [cloud.vibe](#module_heaven.Cloud#vibe)

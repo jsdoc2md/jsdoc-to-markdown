@@ -2,7 +2,8 @@
 ##object
 simple object export
 
-**Symbols**
+**Identifiers**
+
 
 * [object.one](#module_object.one)
 * [object.three(four, five)](#module_object.three)

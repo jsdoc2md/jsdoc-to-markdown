@@ -2,7 +2,8 @@
 ##cyberdyne
 exports an object.. has an inner class.
 
-**Symbols**
+**Identifiers**
+
 
 * [cyber.createMachine()](#module_cyberdyne.createMachine)
 * [\~something](#module_cyberdyne.something)
@@ -23,9 +24,10 @@ random
 ###class: cyber~Machine
 The main class of machine
 
-**Symbols**
+**Identifiers**
 
   * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 

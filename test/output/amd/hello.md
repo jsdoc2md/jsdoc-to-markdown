@@ -1,8 +1,9 @@
 #Globals
 <a name="module_world"></a>
 ##class: module:world
-**Symbols**
+**Identifiers**
 
+  * [new Hello()](#module_world)
   * [new Hello()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 

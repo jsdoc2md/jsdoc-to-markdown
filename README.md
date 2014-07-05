@@ -96,7 +96,8 @@ These projects have readme files rendered by `jsdoc2md`:
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 
-**Symbols**
+**Identifiers**
+
 
 * [jsdoc2md.render(options)](#module_jsdoc-to-markdown.render)
 * [\~callback: onRender](#module_jsdoc-to-markdown.onRender)

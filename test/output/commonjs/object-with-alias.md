@@ -2,7 +2,8 @@
 ##object-with-alias
 simple object export
 
-**Symbols**
+**Identifiers**
+
 
 * [_.one](#module_object-with-alias.one)
 * [_.two](#module_object-with-alias.two)

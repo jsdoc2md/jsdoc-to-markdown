@@ -1,10 +1,8 @@
-{{>module-index offset=-2~}}
-
-{{#with (findWhere @root longname=longname kind="class")~}}
-{{>function~}}
-{{/with~}}
-{{#with (findWhere @root longname=longname kind="function")~}}
-{{>function~}}
-{{/with~}}
-
-{{>child-docs}}
+{{#if (findWhere @root longname=longname kind="class")~}}
+  {{#with (findWhere @root longname=longname kind="class")~}}
+    {{>class~}}
+  {{/with~}}
+{{else~}}
+  {{>module-index offset=-2~}}
+  {{>child-docs~}}
+{{/if}}

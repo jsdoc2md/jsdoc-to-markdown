@@ -2,7 +2,8 @@
 ##ignore
 module with ignored shiz
 
-**Symbols**
+**Identifiers**
+
 
 * [ignore.visible](#module_ignore.visible)
 

@@ -1,8 +1,9 @@
 #Globals
 <a name="Something"></a>
 ##class: Something
-**Symbols**
+**Identifiers**
 
+  * [new Something()](#Something)
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 

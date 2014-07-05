@@ -218,8 +218,9 @@ Set the magic number.
 ##~~class: All~~
 a class with all of the things
 
-**Symbols**
+**Identifiers**
 
+  * [~~new All(input, [options])~~](#All)
   * [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)
@@ -276,8 +277,9 @@ all.allTogether(true);
 ##class: Person
 simple class description
 
-**Symbols**
+**Identifiers**
 
+  * [new Person()](#Person)
   * [new Person()](#Person)
 
 <a name="Person"></a>
@@ -287,8 +289,9 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
-**Symbols**
+**Identifiers**
 
+  * [new Car([options])](#Car)
   * [new Car([options])](#Car)
 
 <a name="Car"></a>
@@ -303,15 +306,17 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
-**Symbols**
+**Identifiers**
 
+  * [new Pipe()](#Pipe)
 
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
-**Symbols**
+**Identifiers**
 
+  * [~~new Everything(input, [options])~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
@@ -334,8 +339,9 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
-**Symbols**
+**Identifiers**
 
+  * [new Rice()](#Rice)
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
@@ -349,8 +355,9 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-**Symbols**
+**Identifiers**
 
+  * [new Something()](#Something)
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
@@ -378,8 +385,9 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
-**Symbols**
+**Identifiers**
 
+  * [new Pizza()](#Pizza)
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
@@ -396,8 +404,9 @@ the general size
 
 <a name="Plucker"></a>
 ##class: Plucker
-**Symbols**
+**Identifiers**
 
+  * [new Plucker()](#Plucker)
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>

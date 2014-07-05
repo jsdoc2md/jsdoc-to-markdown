@@ -10,13 +10,19 @@ this module exports a class constructor
 var FileSet = require("file-set");
 ```
 
-**Symbols**
+<a name="module_FileSet"></a>
+#class: .module:FileSet ⏏
+this class returns a set of files
 
+**Identifiers**
+
+  * [new FileSet(num) ⏏](#module_FileSet)
+  * [new FileSet(num) ⏏](#module_FileSet)
 * [fileSet.files](#module_FileSet#files)
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
 <a name="module_FileSet"></a>
-#new FileSet(num) <sub>exported</sub>
+#new FileSet(num) ⏏
 Takes a list of path patterns
 
 **Params**
@@ -48,8 +54,9 @@ A prototype instance methy meth
 #~~class: All~~
 a class with all of the things
 
-**Symbols**
+**Identifiers**
 
+  * [~~new All(input, [options])~~](#All)
   * [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)

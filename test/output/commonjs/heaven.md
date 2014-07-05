@@ -2,7 +2,8 @@
 ##heaven
 factory module creating dodgy cloud. object-with-static-class.
 
-**Symbols**
+**Identifiers**
+
 
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
@@ -31,7 +32,8 @@ an inner constant
 ###class: heaven~Cloud
 The main class of machine
 
-**Symbols**
+**Identifiers**
+
 
   * [cloud.eyes](#module_heaven.Cloud#eyes)
   * [cloud.vibe](#module_heaven.Cloud#vibe)
