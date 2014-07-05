@@ -16,7 +16,7 @@ Blah blah
 
 #API
 <a name="module_FileSet"></a>
-#class: .module:FileSet ⏏
+#class: FileSet ⏏
 this class returns a set of files
 
 **Identifiers**

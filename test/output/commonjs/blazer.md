@@ -3,7 +3,7 @@
 A module representing a blazer.
 
 <a name="module_blazer"></a>
-##class: .module:blazer ⏏
+##class: Blazer ⏏
 **Identifiers**
 
   * [new Blazer(input) ⏏](#module_blazer)

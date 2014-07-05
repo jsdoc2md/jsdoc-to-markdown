@@ -8,7 +8,7 @@ var cowFiles = FilePet("cow/*");
 ```
 
 <a name="module_file-pet"></a>
-##class: .module:file-pet ⏏
+##class: FilePet ⏏
 this class returns a pet of files
 
 **Identifiers**

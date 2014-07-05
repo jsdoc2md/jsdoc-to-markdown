@@ -3,7 +3,7 @@
 A module representing a jacket.
 
 <a name="module_jacket"></a>
-##class: .module:jacket ⏏
+##class: Jacket ⏏
 **Identifiers**
 
   * [new Jacket() ⏏](#module_jacket)

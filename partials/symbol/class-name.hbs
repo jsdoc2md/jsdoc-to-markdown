@@ -1,9 +1,9 @@
 {{#if name}}
   {{~#if deprecated}}~~{{/if~}}
   class: {{#if memberof}}{{parentName}}{{/if~}}
-  {{#if (equal-some scope "static" "instance" undefined)}}.{{~/if~}}
+  {{#if (equal-some scope "static" "instance")}}.{{~/if~}}
   {{#if (equal-some scope "inner")}}~{{/if~}}
-  {{{name}~}}
+  {{{aliasName}~}}
   {{>name-suffix~}}
   {{#if deprecated}}~~{{/if~}}
 {{/if}}

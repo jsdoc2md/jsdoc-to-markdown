@@ -1,6 +1,6 @@
 #Globals
 <a name="module_world"></a>
-##class: module:world
+##class: Hello
 **Identifiers**
 
   * [new Hello()](#module_world)

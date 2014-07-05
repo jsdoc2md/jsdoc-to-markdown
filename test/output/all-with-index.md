@@ -94,7 +94,7 @@
   * [requirer()](#requirer)
   * [setMagicNumber(x)](#setMagicNumber)
   * [doSomething(options)](#doSomething)
-  * [class: module:world](#module_world)
+  * [class: Hello](#module_world)
     * [new Hello()](#module_world)
     * [module:world.sayHello()](#module_world#sayHello)
   * [~~class: All~~](#All)
@@ -136,7 +136,7 @@ var cowFiles = FilePet("cow/*");
 ```
 
 <a name="module_file-pet"></a>
-##class: .module:file-pet ⏏
+##class: FilePet ⏏
 this class returns a pet of files
 
 **Identifiers**
@@ -184,7 +184,7 @@ A prototype instance methy meth
 A module representing a jacket.
 
 <a name="module_jacket"></a>
-##class: .module:jacket ⏏
+##class: Jacket ⏏
 **Identifiers**
 
   * [new Jacket() ⏏](#module_jacket)
@@ -199,7 +199,7 @@ Open and close your Jacket.
 A module representing a coat.
 
 <a name="module_coat"></a>
-##class: .module:coat ⏏
+##class: Coat ⏏
 **Identifiers**
 
   * [new Coat() ⏏](#module_coat)
@@ -215,7 +215,7 @@ A module representing a blouse.
 
 **Scope**: inner module of [coat](#module_coat)  
 <a name="module_blouse"></a>
-##class: .module:blouse ⏏
+##class: Blouse ⏏
 **Identifiers**
 
   * [new Blouse() ⏏](#module_blouse)
@@ -265,7 +265,7 @@ A property of the class.
 A module representing a blazer.
 
 <a name="module_blazer"></a>
-##class: .module:blazer ⏏
+##class: Blazer ⏏
 **Identifiers**
 
   * [new Blazer(input) ⏏](#module_blazer)
@@ -371,7 +371,7 @@ var FileSet = require("file-set");
 ```
 
 <a name="module_FileSet"></a>
-##class: .module:FileSet ⏏
+##class: FileSet ⏏
 this class returns a set of files
 
 **Identifiers**
@@ -822,7 +822,7 @@ Set the magic number.
   - two `string` - second option
 
 <a name="module_world"></a>
-##class: module:world
+##class: Hello
 **Identifiers**
 
   * [new Hello()](#module_world)
