@@ -17,19 +17,20 @@ exports.Cloud = Cloud;
 /**
 cloud constructor
 @class
-@classdesc The main class of machine
+@classdesc The main class for a cloud
 @param {object} - the options
 */
 function Cloud(options){
     /**
     @type {number}
     */
-    this.eyes = 4;
+    this.size = 4;
 
     /**
-    @type {string}
+    @type {boolean}
+    @default
     */
-    this.vibe = "sinister";
+    this.rain = false;
 }
 
 /**
