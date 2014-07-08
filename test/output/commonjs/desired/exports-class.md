@@ -13,7 +13,7 @@ this class returns a set of files
 
 **Identifiers**
 
-* [new FileSet(num) ⏏](#module_FileSet)
+* [new FileSet(num)](#module_FileSet)
 * [fileSet.files](#module_FileSet#files)
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
