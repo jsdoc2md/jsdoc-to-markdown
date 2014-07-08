@@ -1,0 +1,72 @@
+[
+  {
+    "description": "this module exports a class constructor",
+    "kind": "module",
+    "name": "FileSet",
+    "examples": [
+      "```js\nvar FileSet = require(\"file-set\");\n```"
+    ],
+    "longname": "module:FileSet",
+    "exports": "FileSet"
+  },
+  {
+    "description": "Takes a list of path patterns",
+    "kind": "class",
+    "classdesc": "this class returns a set of files",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Array.<string>"
+          ]
+        },
+        "description": "a list of file patterns",
+        "name": "num"
+      }
+    ],
+    "alias": "module:FileSet",
+    "examples": [
+      "```js\nvar cowFiles = new FileSet(\"cow/*\");\n```"
+    ],
+    "name": "module:FileSet",
+    "longname": "module:FileSet",
+    "codeName": "FileSet",
+    "memberof": "module:FileSet"
+  },
+  {
+    "description": "the prototype instance property",
+    "name": "files",
+    "longname": "module:FileSet#files",
+    "kind": "member",
+    "memberof": "module:FileSet",
+    "scope": "instance",
+    "codeName": "FileSet.prototype.files"
+  },
+  {
+    "description": "A prototype instance methy meth",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "array"
+          ]
+        },
+        "description": "the paths to delete",
+        "name": "paths"
+      }
+    ],
+    "name": "delete",
+    "longname": "module:FileSet#delete",
+    "kind": "function",
+    "memberof": "module:FileSet",
+    "scope": "instance",
+    "codeName": "FileSet.prototype.delete"
+  },
+  {
+    "files": [
+      "/Users/Lloyd/Documents/75lb/jsdoc-to-markdown/test/input/commonjs/exports-class.js"
+    ],
+    "kind": "package",
+    "longname": "package:undefined"
+  }
+]
