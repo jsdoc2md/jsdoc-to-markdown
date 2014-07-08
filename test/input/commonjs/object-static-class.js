@@ -23,6 +23,7 @@ cloud constructor
 function Cloud(options){
     /**
     @type {number}
+    @default
     */
     this.size = 4;
 

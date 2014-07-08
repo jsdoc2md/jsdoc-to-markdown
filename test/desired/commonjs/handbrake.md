@@ -1,66 +1,3 @@
-[![view on npm](http://img.shields.io/npm/v/handbrake-js.svg)](https://www.npmjs.org/package/handbrake-js)
-[![npm module downloads per month](http://img.shields.io/npm/dm/handbrake-js.svg)](https://www.npmjs.org/package/handbrake-js)
-[![Build Status](https://travis-ci.org/75lb/handbrake-js.svg?branch=master)](https://travis-ci.org/75lb/handbrake-js)
-[![Dependency Status](https://david-dm.org/75lb/handbrake-js.svg)](https://david-dm.org/75lb/handbrake-js)
-![Analytics](https://ga-beacon.appspot.com/UA-27725889-6/handbrake-js/README.md?pixel)
-
-#handbrake-js
-Handbrake-js is [Handbrake](http://handbrake.fr) for [node.js](http://nodejs.org), funnily enough. It aspires to do two things:
-
-1. provide a lean and stable foundation for building video transcoding software in node.js
-2. enhance the vanilla HandbrakeCLI command-line experience with some new features: 
-   - Cleaner output, live updating statistics
-   - Improved user input validation
-   - Clear explainations when user input is invalid
-
-
-### Compatible Platforms
-Tested on Mac OSX, Ubuntu 14, Windows XP, Windows 7 and Windows 8.1.
-
-**Ubuntu 14.04 notice**: Transcoding to MP4 fails on Ubuntu since 14.04 [for this reason](https://forum.handbrake.fr/viewtopic.php?f=13&t=30044).
-
-##Installation
-###System Requirements
-Just [node.js](http://nodejs.org). Every else is installed automatically.
-
-###As a library 
-Move into your project directory then run: 
-```sh
-$ npm install handbrake-js --save
-```
-*Mac / Linux users may need to run with `sudo`*.
-
-Now you can begin encoding from your app. 
-
-```js
-var hbjs = require("handbrake-js");
-
-hbjs.spawn({ input: "dope shit.avi", output: "dope shit.m4v" })
-  .on("error", function(err){
-    // invalid user input, no video found etc
-  })
-  .on("progress", function(progress){
-    console.log(
-      "Percent complete: %s, ETA: %s", 
-      progress.percentComplete, 
-      progress.eta
-    );
-  });
-```
-###As a command-line app
-From any directory run the following:
-```sh
-$ npm install -g handbrake-js
-```
-*Mac / Linux users may need to run with `sudo`*.
-
-Now, you can call `handbrake` as you would HandbrakeCLI, using all the usual [options](https://trac.handbrake.fr/wiki/CLIGuide). By default, just statistics are output, passing `--verbose` prints the raw HandbrakeCLI output. This command will transcode an AVI to the more universal H.264 (mp4):
-```sh
-$ handbrake --input "some episode.avi" --output "some episode.mp4" --preset Normal
-Task      % done     FPS       Avg FPS   ETA
-Encoding  1.07       131.76    158.12    00h21m11s
-```
-
 #API Reference
 <a name="module_handbrake-js"></a>
 Handbrake for node.js.
@@ -94,9 +31,9 @@ Spawns a HandbrakeCLI process with the supplied [options](https://trac.handbrake
 
 **Params**
 
-- options {`Object` | `Array`} - [Options](https://trac.handbrake.fr/wiki/CLIGuide#options) to pass directly to HandbrakeCLI
+- options `Object` | `Array` - [Options](https://trac.handbrake.fr/wiki/CLIGuide#options) to pass directly to HandbrakeCLI
 
-**Returns**: { [Handbrake](#module_handbrake-js.Handbrake) } - A `Handbrake` instance  
+**Returns**: [Handbrake](#module_handbrake-js.Handbrake) - A `Handbrake` instance  
 **Example**  
 ```js
 var hbjs = require("handbrake-js");
@@ -112,8 +49,8 @@ Runs HandbrakeCLI with the supplied [options](https://trac.handbrake.fr/wiki/CLI
 
 **Params**
 
-- options {`Object`} - [Options](https://trac.handbrake.fr/wiki/CLIGuide#options) to pass directly to HandbrakeCLI
-- [onComplete] {`function`} - If passed, `onComplete(err, stdout, stderr)` will be called on completion, `stdout` and `stderr` being strings containing the HandbrakeCLI output.
+- options `Object` - [Options](https://trac.handbrake.fr/wiki/CLIGuide#options) to pass directly to HandbrakeCLI
+- [onComplete] `function` - If passed, `onComplete(err, stdout, stderr)` will be called on completion, `stdout` and `stderr` being strings containing the HandbrakeCLI output.
 
 **Example**  
 ```js
@@ -126,14 +63,16 @@ hbjs.exec({ preset-list: true }, function(err, stdout, stderr){
 ```
 
 <a name="module_handbrake-js.Handbrake"></a>
-###class: hbjs~Handbrake
+###hbjs~Handbrake
 A thin wrapper on the handbrakeCLI child_process handle. An instance of this class is returned by `hbjs.spawn()`.
 
-**Members**
+**Scope**: inner class of hbjs
+
+**API**
 
 
-  * [handbrake.output](#module_handbrake-js.Handbrake#output)
-  * [handbrake.options](#module_handbrake-js.Handbrake#options)
+  * [handbrake.output {string}](#module_handbrake-js.Handbrake#output)
+  * [handbrake.options {object}](#module_handbrake-js.Handbrake#options)
   * [event: "start"](#module_handbrake-js.Handbrake#event_start)
   * [event: "begin"](#module_handbrake-js.Handbrake#event_begin)
   * [event: "progress"](#module_handbrake-js.Handbrake#event_progress)
@@ -193,4 +132,4 @@ Fired on successful completion of an encoding task. Always follows a `begin` eve
 Fired when HandbrakeCLI exited cleanly. This does not necessarily mean your encode completed as planned..
 
 
-*documentation by [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown)*.
+*documented by [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown)*.
