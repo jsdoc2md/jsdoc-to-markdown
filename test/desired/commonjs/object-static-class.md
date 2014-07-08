@@ -18,25 +18,25 @@ factory module creating dodgy cloud. object-with-static-class.
   * [Cloud.SPACES {const}](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-###heaven.Cloud
+##heaven.Cloud
 access to the Cloud class
 
 **Type**: [Cloud](#module_heaven.Cloud)  
 **Kind**: instance property
 <a name="module_heaven.createCloud"></a>
-###heaven.createCloud()
+##heaven.createCloud()
 **Kind**: instance method  
 **Returns**: [Cloud](#module_heaven.Cloud)  
 
 <a name="module_heaven.FACT"></a>
-###heaven~FACT
+##heaven~FACT
 an inner constant
 
 **Scope**: inner constant of [heaven](#module_heaven)  
 **Type**: `boolean`  
 
 <a name="module_heaven.Cloud"></a>
-###heaven~Cloud
+##heaven~Cloud
 The main class of cloud
 
 **Scope**: inner class of [heaven](#module_heaven)  
@@ -50,7 +50,7 @@ The main class of cloud
   * [Cloud.SPACES {const}](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-####new heaven~Cloud(options)
+###new heaven~Cloud(options)
 cloud constructor
 
 **Params**
@@ -58,17 +58,17 @@ cloud constructor
 - options `object` - the options
 
 <a name="module_heaven.Cloud#size"></a>
-####cloud.size
+###cloud.size
 **Type**: `number`  
 <a name="module_heaven.Cloud#rain"></a>
-####cloud.rain
+###cloud.rain
 **Type**: `boolean`  
 <a name="module_heaven.Cloud.classMethod"></a>
-####Cloud.classMethod()
+###Cloud.classMethod()
 a class method
 
 <a name="module_heaven.Cloud.SPACES"></a>
-####Cloud.SPACES [const]
+###Cloud.SPACES
 a class constant
 
 **Type**: `number`  

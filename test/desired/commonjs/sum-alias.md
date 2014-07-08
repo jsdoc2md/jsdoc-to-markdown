@@ -11,6 +11,7 @@ var sum = require("sum");
 ##sum(a, b) ⏏
 Sums two numbers together
 
+**Scope:** exported function  
 **Params**
 
 - a `number` - first number

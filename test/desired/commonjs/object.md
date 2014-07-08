@@ -8,11 +8,11 @@ simple object export
 * [object.three(four, five)](#module_object.three)
 
 <a name="module_object.one"></a>
-###object.one
+##object.one
 first property
 
 <a name="module_object.three"></a>
-###object.three(four, five)
+##object.three(four, five)
 a function
 
 **Params**
