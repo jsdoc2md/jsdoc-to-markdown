@@ -19,7 +19,7 @@ Blah blah
 #class: FileSet ⏏
 this class returns a set of files
 
-**Identifiers**
+**Members**
 
   * [new FileSet(num) ⏏](#module_FileSet)
   * [new FileSet(num) ⏏](#module_FileSet)

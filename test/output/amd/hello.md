@@ -1,7 +1,7 @@
 #Globals
 <a name="module_world"></a>
 ##class: Hello
-**Identifiers**
+**Members**
 
   * [new Hello()](#module_world)
   * [new Hello()](#module_world)

@@ -1,7 +1,7 @@
 #Globals
 <a name="Something"></a>
 ##class: Something
-**Identifiers**
+**Members**
 
   * [new Something()](#Something)
 * [something.methodOne()](#Something#methodOne)

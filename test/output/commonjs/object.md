@@ -2,7 +2,7 @@
 ##object
 simple object export
 
-**Identifiers**
+**Members**
 
 
 * [object.one](#module_object.one)

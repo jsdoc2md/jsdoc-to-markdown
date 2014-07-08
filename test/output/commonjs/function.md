@@ -4,7 +4,7 @@ This is the module description
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Identifiers**
+**Members**
 
   * [module.exports(one, two) ⏏](#module_function)
 

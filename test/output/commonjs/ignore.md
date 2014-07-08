@@ -2,7 +2,7 @@
 ##ignore
 module with ignored shiz
 
-**Identifiers**
+**Members**
 
 
 * [ignore.visible](#module_ignore.visible)

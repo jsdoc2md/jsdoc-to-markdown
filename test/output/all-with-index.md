@@ -15,23 +15,17 @@
     * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
       * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
       * [turtleneck.size](#module_shirt.Turtleneck#size)
-  * [blazer](#module_blazer) <sub>exports: class</sub>
-    * [blazer.zip()](#module_blazer#zip)
-  * [cattle](#module_cattle)
-    * [cattle.createCow()](#module_cattle.createCow)
-    * [\~innerMember](#module_cattle.innerMember)
-    * [cattle~innerFuction()](#module_cattle.innerFuction)
-    * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
-  * [commonjs/cyberdyne](#module_commonjs/cyberdyne)
-    * [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
-    * [\~something](#module_commonjs/cyberdyne.something)
-    * [class: cyber~Machine](#module_commonjs/cyberdyne.Machine)
-      * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
-      * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
-      * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
+  * [commonjs/class-inners](#module_commonjs/class-inners)
+    * [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
+    * [\~something](#module_commonjs/class-inners.something)
+    * [class: cyber~Machine](#module_commonjs/class-inners.Machine)
+      * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
+      * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
+      * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
   * [FileSet](#module_FileSet) <sub>exports: class</sub>
     * [fileSet.files](#module_FileSet#files)
     * [fileSet.delete(paths)](#module_FileSet#delete)
+  * [sum-alias](#module_sum-alias) <sub>exports: function</sub>
   * [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
   * [heaven](#module_heaven)
     * [heaven.Cloud](#module_heaven.Cloud)
@@ -45,18 +39,21 @@
     * [const: \~FACT](#module_heaven.FACT)
   * [commonjs/ignore](#module_commonjs/ignore)
     * [ignore.visible](#module_commonjs/ignore.visible)
-  * [commonjs/object-with-alias](#module_commonjs/object-with-alias)
-    * [_.one](#module_commonjs/object-with-alias.one)
-    * [_.two](#module_commonjs/object-with-alias.two)
-    * [_.three()](#module_commonjs/object-with-alias.three)
+  * [commonjs/object-alias](#module_commonjs/object-alias)
+    * [_.one](#module_commonjs/object-alias.one)
+    * [_.two](#module_commonjs/object-alias.two)
+    * [_.three()](#module_commonjs/object-alias.three)
+  * [cattle](#module_cattle)
+    * [cattle.createCow()](#module_cattle.createCow)
+    * [\~innerMember](#module_cattle.innerMember)
+    * [cattle~innerFuction()](#module_cattle.innerFuction)
+    * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
   * [commonjs/object](#module_commonjs/object)
     * [object.one](#module_commonjs/object.one)
     * [object.three(four, five)](#module_commonjs/object.three)
   * [private](#module_private)
     * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value) <sub>exports: member</sub>
-  * [sum-alias](#module_sum-alias) <sub>exports: function</sub>
-  * [commonjs/sum(a, b)](#module_commonjs/sum)
 
 * Globals
   * [enum: eFileType](#eFileType)
@@ -139,7 +136,7 @@ var cowFiles = FilePet("cow/*");
 ##class: FilePet ⏏
 this class returns a pet of files
 
-**Identifiers**
+**Members**
 
   * [new FilePet(num) ⏏](#module_file-pet)
   * [new FilePet(num) ⏏](#module_file-pet)
@@ -185,7 +182,7 @@ A module representing a jacket.
 
 <a name="module_jacket"></a>
 ##class: Jacket ⏏
-**Identifiers**
+**Members**
 
   * [new Jacket() ⏏](#module_jacket)
 * [jacket.zip()](#module_jacket#zip)
@@ -200,7 +197,7 @@ A module representing a coat.
 
 <a name="module_coat"></a>
 ##class: Coat ⏏
-**Identifiers**
+**Members**
 
   * [new Coat() ⏏](#module_coat)
 * [coat.zip()](#module_coat#zip)
@@ -216,7 +213,7 @@ A module representing a blouse.
 **Scope**: inner module of [coat](#module_coat)  
 <a name="module_blouse"></a>
 ##class: Blouse ⏏
-**Identifiers**
+**Members**
 
   * [new Blouse() ⏏](#module_blouse)
 * [blouse.zip()](#module_blouse#zip)
@@ -230,7 +227,7 @@ Open and close your Blouse.
 A module representing a shirt.
 
 **Version**: 1.0  
-**Identifiers**
+**Members**
 
 
 * [shirt.color](#module_shirt.color)
@@ -244,7 +241,7 @@ A property of the module.
 
 <a name="module_shirt.Turtleneck"></a>
 ###class: shirt.Turtleneck
-**Identifiers**
+**Members**
 
   * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
 
@@ -260,93 +257,40 @@ A property of the module.
 ####turtleneck.size
 A property of the class.
 
-<a name="module_blazer"></a>
-##blazer
-A module representing a blazer.
-
-<a name="module_blazer"></a>
-##class: Blazer ⏏
-**Identifiers**
-
-  * [new Blazer(input) ⏏](#module_blazer)
-  * [new Blazer(input) ⏏](#module_blazer)
-* [blazer.zip()](#module_blazer#zip)
-
-<a name="module_blazer"></a>
-##new Blazer(input) ⏏
-**Params**
-
-- input `string` - the input
-
-<a name="module_blazer#zip"></a>
-###blazer.zip()
-Open and close your Blazer.
-
-<a name="module_cattle"></a>
-##cattle
-exported object, with-inner-members
-
-**Identifiers**
-
-
-* [cattle.createCow()](#module_cattle.createCow)
-* [\~innerMember](#module_cattle.innerMember)
-* [cattle~innerFuction()](#module_cattle.innerFuction)
-* [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
-
-<a name="module_cattle.createCow"></a>
-###cattle.createCow()
-**Returns**: `boolean`  
-<a name="module_cattle.innerMember"></a>
-###\~innerMember
-the inner member
-
-**Scope**: inner member of [cattle](#module_cattle)  
-<a name="module_cattle.innerFuction"></a>
-###cattle~innerFuction()
-the inner function
-
-**Scope**: inner function of [cattle](#module_cattle)  
-<a name="module_cattle.anotherInnerFuction"></a>
-###~~cattle~anotherInnerFuction()~~
-another inner function
-
-***Deprecated***  
-**Scope**: inner function of [cattle](#module_cattle)  
-<a name="module_commonjs/cyberdyne"></a>
-##commonjs/cyberdyne
+<a name="module_commonjs/class-inners"></a>
+##commonjs/class-inners
 exports an object.. has an inner class.
 
-**Identifiers**
+**Members**
 
 
-* [cyber.createMachine()](#module_commonjs/cyberdyne.createMachine)
-* [\~something](#module_commonjs/cyberdyne.something)
-* [class: cyber~Machine](#module_commonjs/cyberdyne.Machine)
-      * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
-  * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
-  * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
+* [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
+* [\~something](#module_commonjs/class-inners.something)
+* [class: cyber~Machine](#module_commonjs/class-inners.Machine)
+      * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
+  * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
+  * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
 
-<a name="module_commonjs/cyberdyne.createMachine"></a>
+<a name="module_commonjs/class-inners.createMachine"></a>
 ###cyber.createMachine()
 **Returns**: `module:cyberdyne~Machine`  
-<a name="module_commonjs/cyberdyne.something"></a>
+<a name="module_commonjs/class-inners.something"></a>
 ###\~something
 random
 
-**Scope**: inner member of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
-<a name="module_commonjs/cyberdyne.Machine"></a>
+**Scope**: inner member of [commonjs/class-inners](#module_commonjs/class-inners)  
+<a name="module_commonjs/class-inners.Machine"></a>
 ###class: cyber~Machine
 The main class of machine
 
-**Identifiers**
+**Members**
 
-  * [new cyber~Machine(options)](#module_commonjs/cyberdyne.Machine)
+  * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
 
-  * [machine.eyes](#module_commonjs/cyberdyne.Machine#eyes)
-  * [machine.vibe](#module_commonjs/cyberdyne.Machine#vibe)
+  * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
+  * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
 
-<a name="module_commonjs/cyberdyne.Machine"></a>
+<a name="module_commonjs/class-inners.Machine"></a>
 ###new cyber~Machine(options)
 the Machine constructor
 
@@ -354,11 +298,11 @@ the Machine constructor
 
 - options `object` - constructor options
 
-**Scope**: inner class of [commonjs/cyberdyne](#module_commonjs/cyberdyne)  
-<a name="module_commonjs/cyberdyne.Machine#eyes"></a>
+**Scope**: inner class of [commonjs/class-inners](#module_commonjs/class-inners)  
+<a name="module_commonjs/class-inners.Machine#eyes"></a>
 ####machine.eyes
 **Type**: `number`  
-<a name="module_commonjs/cyberdyne.Machine#vibe"></a>
+<a name="module_commonjs/class-inners.Machine#vibe"></a>
 ####machine.vibe
 **Type**: `string`  
 <a name="module_FileSet"></a>
@@ -374,7 +318,7 @@ var FileSet = require("file-set");
 ##class: FileSet ⏏
 this class returns a set of files
 
-**Identifiers**
+**Members**
 
   * [new FileSet(num) ⏏](#module_FileSet)
   * [new FileSet(num) ⏏](#module_FileSet)
@@ -406,13 +350,26 @@ A prototype instance methy meth
 
 - paths `array` - the paths to delete
 
+<a name="module_sum-alias"></a>
+##sum-alias
+This module exports a simple maths function
+
+**Example**  
+```js
+var sum = require("sum");
+```
+
+**Members**
+
+  * [sum(a, b) ⏏](#module_sum-alias)
+
 <a name="module_commonjs/function"></a>
 ##commonjs/function
 This is the module description
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-**Identifiers**
+**Members**
 
   * [module.exports(one, two) ⏏](#module_commonjs/function)
 
@@ -420,7 +377,7 @@ This is the module description
 ##heaven
 factory module creating dodgy cloud. object-with-static-class.
 
-**Identifiers**
+**Members**
 
 
 * [heaven.Cloud](#module_heaven.Cloud)
@@ -451,7 +408,7 @@ an inner constant
 ###class: heaven~Cloud
 The main class of machine
 
-**Identifiers**
+**Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
 
@@ -488,7 +445,7 @@ a class constant
 ##commonjs/ignore
 module with ignored shiz
 
-**Identifiers**
+**Members**
 
 
 * [ignore.visible](#module_commonjs/ignore.visible)
@@ -497,34 +454,65 @@ module with ignored shiz
 ###ignore.visible
 visible property
 
-<a name="module_commonjs/object-with-alias"></a>
-##commonjs/object-with-alias
+<a name="module_commonjs/object-alias"></a>
+##commonjs/object-alias
 simple object export
 
-**Identifiers**
+**Members**
 
 
-* [_.one](#module_commonjs/object-with-alias.one)
-* [_.two](#module_commonjs/object-with-alias.two)
-* [_.three()](#module_commonjs/object-with-alias.three)
+* [_.one](#module_commonjs/object-alias.one)
+* [_.two](#module_commonjs/object-alias.two)
+* [_.three()](#module_commonjs/object-alias.three)
 
-<a name="module_commonjs/object-with-alias.one"></a>
+<a name="module_commonjs/object-alias.one"></a>
 ###_.one
 first property
 
-<a name="module_commonjs/object-with-alias.two"></a>
+<a name="module_commonjs/object-alias.two"></a>
 ###_.two
 second property
 
-<a name="module_commonjs/object-with-alias.three"></a>
+<a name="module_commonjs/object-alias.three"></a>
 ###_.three()
 a function
 
+<a name="module_cattle"></a>
+##cattle
+exported object, with-inner-members
+
+**Members**
+
+
+* [cattle.createCow()](#module_cattle.createCow)
+* [\~innerMember](#module_cattle.innerMember)
+* [cattle~innerFuction()](#module_cattle.innerFuction)
+* [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+
+<a name="module_cattle.createCow"></a>
+###cattle.createCow()
+**Returns**: `boolean`  
+<a name="module_cattle.innerMember"></a>
+###\~innerMember
+the inner member
+
+**Scope**: inner member of [cattle](#module_cattle)  
+<a name="module_cattle.innerFuction"></a>
+###cattle~innerFuction()
+the inner function
+
+**Scope**: inner function of [cattle](#module_cattle)  
+<a name="module_cattle.anotherInnerFuction"></a>
+###~~cattle~anotherInnerFuction()~~
+another inner function
+
+***Deprecated***  
+**Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_commonjs/object"></a>
 ##commonjs/object
 simple object export
 
-**Identifiers**
+**Members**
 
 
 * [object.one](#module_commonjs/object.one)
@@ -555,7 +543,7 @@ allTogether(true);
 ##private
 module with private shiz
 
-**Identifiers**
+**Members**
 
 
 * [private.notprivate](#module_private.notprivate)
@@ -568,42 +556,9 @@ visible property
 ##commonjs/single-value
 this module exports one value, that's it
 
-**Identifiers**
+**Members**
 
   * [module.exports() ⏏](#module_commonjs/single-value)
-
-<a name="module_sum-alias"></a>
-##sum-alias
-A simple maths function
-
-**Example**  
-```js
-var sum = require("sum");
-```
-
-**Identifiers**
-
-  * [sum(a, b) ⏏](#module_sum-alias)
-
-<a name="module_commonjs/sum"></a>
-##commonjs/sum(a, b)
-A simple maths function
-
-**Params**
-
-- a `number` - first number
-- b `number` - second number
-
-**Returns**: `number` - the result  
-**Example**  
-```js
-var sum = require("sum");
-var result = sum(1, 1);
-```
-
-**Identifiers**
-
-
 
 #Globals
 <a name="CONST_ONE"></a>
@@ -823,7 +778,7 @@ Set the magic number.
 
 <a name="module_world"></a>
 ##class: Hello
-**Identifiers**
+**Members**
 
   * [new Hello()](#module_world)
   * [new Hello()](#module_world)
@@ -841,7 +796,7 @@ Say hello.
 ##~~class: All~~
 a class with all of the things
 
-**Identifiers**
+**Members**
 
   * [~~new All(input, [options])~~](#All)
   * [~~new All(input, [options])~~](#All)
@@ -900,7 +855,7 @@ all.allTogether(true);
 ##class: Person
 simple class description
 
-**Identifiers**
+**Members**
 
   * [new Person()](#Person)
   * [new Person()](#Person)
@@ -912,7 +867,7 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
-**Identifiers**
+**Members**
 
   * [new Car([options])](#Car)
   * [new Car([options])](#Car)
@@ -929,7 +884,7 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
-**Identifiers**
+**Members**
 
   * [new Pipe()](#Pipe)
 
@@ -937,7 +892,7 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
-**Identifiers**
+**Members**
 
   * [~~new Everything(input, [options])~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
@@ -962,7 +917,7 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
-**Identifiers**
+**Members**
 
   * [new Rice()](#Rice)
 * [event: "cooked"](#Rice#event_cooked)
@@ -978,7 +933,7 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-**Identifiers**
+**Members**
 
   * [new Something()](#Something)
 * [something.methodOne()](#Something#methodOne)
@@ -1008,7 +963,7 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
-**Identifiers**
+**Members**
 
   * [new Pizza()](#Pizza)
 * [pizza.topping](#Pizza#topping)
@@ -1027,7 +982,7 @@ the general size
 
 <a name="Plucker"></a>
 ##class: Plucker
-**Identifiers**
+**Members**
 
   * [new Plucker()](#Plucker)
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

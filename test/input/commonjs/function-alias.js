@@ -1,5 +1,5 @@
 /**
-A simple maths function
+This module exports a simple maths function
 @module sum-alias
 @example
 ```js

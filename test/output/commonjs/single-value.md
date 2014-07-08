@@ -2,7 +2,7 @@
 ##single-value
 this module exports one value, that's it
 
-**Identifiers**
+**Members**
 
   * [module.exports() ⏏](#module_single-value)
 

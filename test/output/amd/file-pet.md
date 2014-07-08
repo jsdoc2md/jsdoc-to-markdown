@@ -11,7 +11,7 @@ var cowFiles = FilePet("cow/*");
 ##class: FilePet ⏏
 this class returns a pet of files
 
-**Identifiers**
+**Members**
 
   * [new FilePet(num) ⏏](#module_file-pet)
   * [new FilePet(num) ⏏](#module_file-pet)

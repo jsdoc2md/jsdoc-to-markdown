@@ -2,7 +2,7 @@
 ##private
 module with private shiz
 
-**Identifiers**
+**Members**
 
 
 * [private.notprivate](#module_private.notprivate)

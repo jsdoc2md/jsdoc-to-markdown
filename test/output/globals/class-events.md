@@ -1,7 +1,7 @@
 #Globals
 <a name="Rice"></a>
 ##class: Rice
-**Identifiers**
+**Members**
 
   * [new Rice()](#Rice)
 * [event: "cooked"](#Rice#event_cooked)

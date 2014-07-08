@@ -14,7 +14,7 @@ var FileSet = require("file-set");
 #class: FileSet ⏏
 this class returns a set of files
 
-**Identifiers**
+**Members**
 
   * [new FileSet(num) ⏏](#module_FileSet)
   * [new FileSet(num) ⏏](#module_FileSet)
@@ -54,7 +54,7 @@ A prototype instance methy meth
 #~~class: All~~
 a class with all of the things
 
-**Identifiers**
+**Members**
 
   * [~~new All(input, [options])~~](#All)
   * [~~new All(input, [options])~~](#All)

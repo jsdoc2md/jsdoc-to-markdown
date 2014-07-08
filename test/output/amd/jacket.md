@@ -4,7 +4,7 @@ A module representing a jacket.
 
 <a name="module_jacket"></a>
 ##class: Jacket ⏏
-**Identifiers**
+**Members**
 
   * [new Jacket() ⏏](#module_jacket)
 * [jacket.zip()](#module_jacket#zip)

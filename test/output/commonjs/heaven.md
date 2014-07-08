@@ -2,7 +2,7 @@
 ##heaven
 factory module creating dodgy cloud. object-with-static-class.
 
-**Identifiers**
+**Members**
 
 
 * [heaven.Cloud](#module_heaven.Cloud)
@@ -33,7 +33,7 @@ an inner constant
 ###class: heaven~Cloud
 The main class of machine
 
-**Identifiers**
+**Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
 

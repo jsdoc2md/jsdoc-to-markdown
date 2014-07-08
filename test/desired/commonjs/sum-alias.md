@@ -1,6 +1,15 @@
+<a name="module_sum-alias"></a>
+##sum-alias
+This module exports a simple maths function
+
+**Example**  
+```js
+var sum = require("sum");
+```
+
 <a name="module_sum"></a>
-##sum(a, b)
-A simple maths function
+##sum(a, b) ⏏
+Sums two numbers together
 
 **Params**
 
@@ -10,11 +19,5 @@ A simple maths function
 **Returns**: `number` - the result  
 **Example**  
 ```js
-var sum = require("sum");
 var result = sum(1, 1);
 ```
-
-**Identifiers**
-
-
-

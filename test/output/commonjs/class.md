@@ -1,5 +1,5 @@
 <a name="module_FileSet"></a>
-##FileSet/Users/Lloyd/Documents/75lb/jsdoc-to-markdown/test/output/commonjs/desired/exports-class.md
+##FileSet
 this module exports a class constructor
 
 **Example**  
@@ -11,7 +11,7 @@ var FileSet = require("file-set");
 ##class: FileSet ⏏
 this class returns a set of files
 
-**Identifiers**
+**Members**
 
   * [new FileSet(num) ⏏](#module_FileSet)
   * [new FileSet(num) ⏏](#module_FileSet)

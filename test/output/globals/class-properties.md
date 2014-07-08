@@ -1,7 +1,7 @@
 #Globals
 <a name="Pizza"></a>
 ##class: Pizza
-**Identifiers**
+**Members**
 
   * [new Pizza()](#Pizza)
 * [pizza.topping](#Pizza#topping)

@@ -3,7 +3,7 @@
 ##~~class: All~~
 a class with all of the things
 
-**Identifiers**
+**Members**
 
   * [~~new All(input, [options])~~](#All)
   * [~~new All(input, [options])~~](#All)

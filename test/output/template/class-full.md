@@ -6,7 +6,7 @@ This is a long piece of text all about a class
 #class: heaven~Cloud
 The main class of machine
 
-**Identifiers**
+**Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
 

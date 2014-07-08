@@ -9,7 +9,7 @@ This function takes variable input
 
 <a name="Plucker"></a>
 ##class: Plucker
-**Identifiers**
+**Members**
 
   * [new Plucker()](#Plucker)
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

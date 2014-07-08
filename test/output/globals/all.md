@@ -218,7 +218,7 @@ Set the magic number.
 ##~~class: All~~
 a class with all of the things
 
-**Identifiers**
+**Members**
 
   * [~~new All(input, [options])~~](#All)
   * [~~new All(input, [options])~~](#All)
@@ -277,7 +277,7 @@ all.allTogether(true);
 ##class: Person
 simple class description
 
-**Identifiers**
+**Members**
 
   * [new Person()](#Person)
   * [new Person()](#Person)
@@ -289,7 +289,7 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
-**Identifiers**
+**Members**
 
   * [new Car([options])](#Car)
   * [new Car([options])](#Car)
@@ -306,7 +306,7 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
-**Identifiers**
+**Members**
 
   * [new Pipe()](#Pipe)
 
@@ -314,7 +314,7 @@ a class which extends
 ##~~class: Everything~~
 a class with all trimmings
 
-**Identifiers**
+**Members**
 
   * [~~new Everything(input, [options])~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
@@ -339,7 +339,7 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
-**Identifiers**
+**Members**
 
   * [new Rice()](#Rice)
 * [event: "cooked"](#Rice#event_cooked)
@@ -355,7 +355,7 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-**Identifiers**
+**Members**
 
   * [new Something()](#Something)
 * [something.methodOne()](#Something#methodOne)
@@ -385,7 +385,7 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
-**Identifiers**
+**Members**
 
   * [new Pizza()](#Pizza)
 * [pizza.topping](#Pizza#topping)
@@ -404,7 +404,7 @@ the general size
 
 <a name="Plucker"></a>
 ##class: Plucker
-**Identifiers**
+**Members**
 
   * [new Plucker()](#Plucker)
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)

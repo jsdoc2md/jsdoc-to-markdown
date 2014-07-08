@@ -3,7 +3,7 @@
 this module exports a class constructor
 
 **Example**  
-```
+```js
 var FileSet = require("file-set");
 ```
 
@@ -11,7 +11,7 @@ var FileSet = require("file-set");
 ##class: FileSet ⏏
 this class returns a set of files
 
-**Identifiers**
+**Members**
 
 * [new FileSet(num)](#module_FileSet)
 * [fileSet.files](#module_FileSet#files)
@@ -26,7 +26,7 @@ Takes a list of path patterns
 - num `Array.<string>` - a list of file patterns
 
 **Example**  
-```
+```js
 var cowFiles = new FileSet("cow/*");
 ```
 
