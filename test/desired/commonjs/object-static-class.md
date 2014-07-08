@@ -48,7 +48,7 @@ The main class of cloud
   * [Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-###new heaven~Cloud(options)
+####new heaven~Cloud(options)
 cloud constructor
 
 **Params**
