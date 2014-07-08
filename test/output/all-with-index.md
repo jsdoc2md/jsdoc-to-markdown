@@ -27,16 +27,6 @@
     * [fileSet.delete(paths)](#module_FileSet#delete)
   * [sum-alias](#module_sum-alias) <sub>exports: function</sub>
   * [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
-  * [heaven](#module_heaven)
-    * [heaven.Cloud](#module_heaven.Cloud)
-    * [heaven.createCloud()](#module_heaven.createCloud)
-    * [class: heaven~Cloud](#module_heaven.Cloud)
-      * [new heaven~Cloud(options)](#module_heaven.Cloud)
-      * [cloud.eyes](#module_heaven.Cloud#eyes)
-      * [cloud.vibe](#module_heaven.Cloud#vibe)
-      * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-      * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-    * [const: \~FACT](#module_heaven.FACT)
   * [commonjs/ignore](#module_commonjs/ignore)
     * [ignore.visible](#module_commonjs/ignore.visible)
   * [commonjs/object-alias](#module_commonjs/object-alias)
@@ -48,6 +38,16 @@
     * [\~innerMember](#module_cattle.innerMember)
     * [cattle~innerFuction()](#module_cattle.innerFuction)
     * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+  * [heaven](#module_heaven)
+    * [heaven.Cloud](#module_heaven.Cloud)
+    * [heaven.createCloud()](#module_heaven.createCloud)
+    * [class: heaven~Cloud](#module_heaven.Cloud)
+      * [new heaven~Cloud(options)](#module_heaven.Cloud)
+      * [cloud.eyes](#module_heaven.Cloud#eyes)
+      * [cloud.vibe](#module_heaven.Cloud#vibe)
+      * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+      * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+    * [const: \~FACT](#module_heaven.FACT)
   * [commonjs/object](#module_commonjs/object)
     * [object.one](#module_commonjs/object.one)
     * [object.three(four, five)](#module_commonjs/object.three)
@@ -373,6 +373,73 @@ This is the module description
 
   * [module.exports(one, two) ⏏](#module_commonjs/function)
 
+<a name="module_commonjs/ignore"></a>
+##commonjs/ignore
+module with ignored shiz
+
+**Members**
+
+
+* [ignore.visible](#module_commonjs/ignore.visible)
+
+<a name="module_commonjs/ignore.visible"></a>
+###ignore.visible
+visible property
+
+<a name="module_commonjs/object-alias"></a>
+##commonjs/object-alias
+simple object export
+
+**Members**
+
+
+* [_.one](#module_commonjs/object-alias.one)
+* [_.two](#module_commonjs/object-alias.two)
+* [_.three()](#module_commonjs/object-alias.three)
+
+<a name="module_commonjs/object-alias.one"></a>
+###_.one
+first property
+
+<a name="module_commonjs/object-alias.two"></a>
+###_.two
+second property
+
+<a name="module_commonjs/object-alias.three"></a>
+###_.three()
+a function
+
+<a name="module_cattle"></a>
+##cattle
+exported object, with-inner-members
+
+**Members**
+
+
+* [cattle.createCow()](#module_cattle.createCow)
+* [\~innerMember](#module_cattle.innerMember)
+* [cattle~innerFuction()](#module_cattle.innerFuction)
+* [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+
+<a name="module_cattle.createCow"></a>
+###cattle.createCow()
+**Returns**: `boolean`  
+<a name="module_cattle.innerMember"></a>
+###\~innerMember
+the inner member
+
+**Scope**: inner member of [cattle](#module_cattle)  
+<a name="module_cattle.innerFuction"></a>
+###cattle~innerFuction()
+the inner function
+
+**Scope**: inner function of [cattle](#module_cattle)  
+<a name="module_cattle.anotherInnerFuction"></a>
+###~~cattle~anotherInnerFuction()~~
+another inner function
+
+***Deprecated***  
+**Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_heaven"></a>
 ##heaven
 factory module creating dodgy cloud. object-with-static-class.
@@ -441,73 +508,6 @@ a class method
 a class constant
 
 **Type**: `number`  
-<a name="module_commonjs/ignore"></a>
-##commonjs/ignore
-module with ignored shiz
-
-**Members**
-
-
-* [ignore.visible](#module_commonjs/ignore.visible)
-
-<a name="module_commonjs/ignore.visible"></a>
-###ignore.visible
-visible property
-
-<a name="module_commonjs/object-alias"></a>
-##commonjs/object-alias
-simple object export
-
-**Members**
-
-
-* [_.one](#module_commonjs/object-alias.one)
-* [_.two](#module_commonjs/object-alias.two)
-* [_.three()](#module_commonjs/object-alias.three)
-
-<a name="module_commonjs/object-alias.one"></a>
-###_.one
-first property
-
-<a name="module_commonjs/object-alias.two"></a>
-###_.two
-second property
-
-<a name="module_commonjs/object-alias.three"></a>
-###_.three()
-a function
-
-<a name="module_cattle"></a>
-##cattle
-exported object, with-inner-members
-
-**Members**
-
-
-* [cattle.createCow()](#module_cattle.createCow)
-* [\~innerMember](#module_cattle.innerMember)
-* [cattle~innerFuction()](#module_cattle.innerFuction)
-* [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
-
-<a name="module_cattle.createCow"></a>
-###cattle.createCow()
-**Returns**: `boolean`  
-<a name="module_cattle.innerMember"></a>
-###\~innerMember
-the inner member
-
-**Scope**: inner member of [cattle](#module_cattle)  
-<a name="module_cattle.innerFuction"></a>
-###cattle~innerFuction()
-the inner function
-
-**Scope**: inner function of [cattle](#module_cattle)  
-<a name="module_cattle.anotherInnerFuction"></a>
-###~~cattle~anotherInnerFuction()~~
-another inner function
-
-***Deprecated***  
-**Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_commonjs/object"></a>
 ##commonjs/object
 simple object export
