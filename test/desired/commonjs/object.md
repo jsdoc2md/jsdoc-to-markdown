@@ -1,9 +1,8 @@
 <a name="module_object"></a>
-##object
+#object
 simple object export
 
-**Members**
-
+**API**
 
 * [object.one](#module_object.one)
 * [object.three(four, five)](#module_object.three)
@@ -28,4 +27,3 @@ a function
 ```js
 allTogether(true);
 ```
-

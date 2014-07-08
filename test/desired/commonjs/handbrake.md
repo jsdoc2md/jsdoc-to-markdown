@@ -70,7 +70,6 @@ A thin wrapper on the handbrakeCLI child_process handle. An instance of this cla
 
 **API**
 
-
   * [handbrake.output {string}](#module_handbrake-js.Handbrake#output)
   * [handbrake.options {object}](#module_handbrake-js.Handbrake#options)
   * [event: "start"](#module_handbrake-js.Handbrake#event_start)

@@ -1,5 +1,5 @@
 <a name="module_FileSet"></a>
-#FileSet
+#file-set
 this module exports a class constructor
 
 **Example**  
@@ -8,13 +8,15 @@ var FileSet = require("file-set");
 ```
 
 <a name="module_FileSet"></a>
-##class: FileSet ⏏
+##FileSet ⏏
 this class returns a set of files
+
+**Scope**: inner class of hbjs
 
 **Members**
 
 * [new FileSet(num)](#module_FileSet)
-* [fileSet.files](#module_FileSet#files)
+* [fileSet.files {array}](#module_FileSet#files)
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
 <a name="module_FileSet"></a>
