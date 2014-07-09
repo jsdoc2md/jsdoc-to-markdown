@@ -1,5 +1,4 @@
-var a = require("array-tools"),
-    util = require("util");
+var a = require("array-tools");
 
 module.exports = function(handlebars){
     handlebars.registerHelper("mergeModuleAlias", function(options){

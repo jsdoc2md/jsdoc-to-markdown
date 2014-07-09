@@ -4,7 +4,7 @@ module.exports = function(handlebars){
         function recurse(node){
             if (node._parent){
                 depth++;
-                recurse(node._parent)
+                recurse(node._parent);
             }
         }
         recurse(data);

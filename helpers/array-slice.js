@@ -1,5 +1,3 @@
-var a = require("array-tools");
-
 module.exports = function(handlebars){
     handlebars.registerHelper("array-slice", function(array, begin, end){
         if (typeof end === "object") end = undefined;

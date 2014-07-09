@@ -1,5 +1,3 @@
-var a = require("array-tools");
-
 module.exports = function(handlebars){
     handlebars.registerHelper("exported", function(options){
         var self = this;

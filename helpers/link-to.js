@@ -24,7 +24,7 @@ module.exports = function(handlebars){
                 if (linked){
                     if (fullName) fullName = fullName.replace(/</g, "&lt;").replace(/>/g, "&gt;");
                     var linkText = fullName ? fullName.replace(longname, linked.name) : linked.name;
-                    return util.format("[%s](#%s)", linkText, handlebars.helpers.anchorName(longname))
+                    return util.format("[%s](#%s)", linkText, handlebars.helpers.anchorName(longname));
                 } else {
                     return "`" + (fullName || longname) + "`";
                 }
