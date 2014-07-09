@@ -37,4 +37,8 @@ module.exports = function(handlebars){
         indexDepth++;
     });
 
+    handlebars.registerHelper("index-depth-drop", function(options){
+        indexDepth--;
+    });
+
 };

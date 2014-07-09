@@ -12,7 +12,7 @@ factory module creating dodgy cloud. object-with-static-class.
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-  * [const: \~FACT](#module_heaven.FACT)
+* [const: \~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>
 ###heaven.Cloud

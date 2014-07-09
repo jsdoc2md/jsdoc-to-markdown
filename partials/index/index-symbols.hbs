@@ -9,6 +9,7 @@
 {{#if (constructorHasDocs)}}{{>indent}}* {{#link}}{{>function-name-long}}{{/link}}
 {{/if~}}
 {{>index-children~}}
+{{index-depth-drop~}}
 {{/each~}}
 
 {{#each (where data kind="constant")}}{{>indent}}* {{#link}}{{>constant-name-long}}{{/link}}
