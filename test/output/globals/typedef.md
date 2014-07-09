@@ -1,4 +1,6 @@
-#Globals
+#Global
+* [setMagicNumber(x)](#setMagicNumber)
+* [type: NumberLike](#NumberLike)
 <a name="setMagicNumber"></a>
 ##setMagicNumber(x)
 Set the magic number.

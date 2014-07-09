@@ -1,4 +1,9 @@
-#Globals
+#Global
+* [~~class: All~~](#All)
+  * [~~new All(input, [options])~~](#All)
+  * [all.topping](#All#topping)
+  * [all.size](#All#size)
+  * [~~all.allThings(one, two)~~](#All#allThings)
 <a name="All"></a>
 ##~~class: All~~
 a class with all of the things

@@ -1,4 +1,18 @@
-#Globals
+#Global
+* [globalFunc()](#globalFunc)
+* [exampled()](#exampled)
+* [multiExampled()](#multiExampled)
+* [_protected()](#_protected)
+* [withAuthor()](#withAuthor)
+* [~~oldFunction()~~](#oldFunction)
+* [newFunction()](#newFunction)
+* [withParam(one)](#withParam)
+* [withParams(one, two)](#withParams)
+* [withOptional(one, [two])](#withOptional)
+* [withBullets(one, two)](#withBullets)
+* [returnsSomething()](#returnsSomething)
+* [returnsSomethingDesc()](#returnsSomethingDesc)
+* [returnsSeveral()](#returnsSeveral)
 <a name="globalFunc"></a>
 ##globalFunc()
 a global function

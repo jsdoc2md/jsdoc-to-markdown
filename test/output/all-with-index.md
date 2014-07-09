@@ -1,5 +1,7 @@
 #Index
 * Modules
+  * [hello/world](#module_hello/world)
+* [hello/world.sayHello()](#module_hello/world.sayHello)
   * [file-pet](#module_file-pet) <sub>exports: class</sub>
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
@@ -96,9 +98,6 @@
 * [~~const: CONST_TWO~~](#CONST_TWO)
 * [callback: onComplete](#onComplete)
 * [type: NumberLike](#NumberLike)
-* [class: Hello](#module_world)
-  * [new Hello()](#module_world)
-  * [module:world.sayHello()](#module_world#sayHello)
 * [~~class: All~~](#All)
   * [~~new All(input, [options])~~](#All)
   * [all.topping](#All#topping)
@@ -124,6 +123,18 @@
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 #Modules
+<a name="module_hello/world"></a>
+##hello/world
+A module that says hello!
+
+**Members**
+
+* [hello/world.sayHello()](#module_hello/world.sayHello)
+
+<a name="module_hello/world.sayHello"></a>
+###hello/world.sayHello()
+Say hello.
+
 <a name="module_file-pet"></a>
 ##file-pet
 this module returns a pet of files
@@ -547,7 +558,70 @@ this module exports one value, that's it
 
 * [module.exports()](#module_commonjs/single-value)
 
-#Globals
+#Global
+* [enum: eFileType](#eFileType)
+* [visible](#visible)
+* [variable](#variable)
+* [typed](#typed)
+* [types](#types)
+* [exampled](#exampled)
+* [examples](#examples)
+* [_protected](#_protected)
+* [withAuthor](#withAuthor)
+* [hasDefault](#hasDefault)
+* [hasDefaultObject](#hasDefaultObject)
+* [~~deprecated~~](#deprecated)
+* [readOnly](#readOnly)
+* [hasSince](#hasSince)
+* [operate(options, callback)](#operate)
+* [read(filename, done)](#read)
+* [globalFunc()](#globalFunc)
+* [exampled()](#exampled)
+* [multiExampled()](#multiExampled)
+* [_protected()](#_protected)
+* [withAuthor()](#withAuthor)
+* [~~oldFunction()~~](#oldFunction)
+* [newFunction()](#newFunction)
+* [withParam(one)](#withParam)
+* [withParams(one, two)](#withParams)
+* [withOptional(one, [two])](#withOptional)
+* [withBullets(one, two)](#withBullets)
+* [returnsSomething()](#returnsSomething)
+* [returnsSomethingDesc()](#returnsSomethingDesc)
+* [returnsSeveral()](#returnsSeveral)
+* [doSomething(options)](#doSomething)
+* [doAnother(options)](#doAnother)
+* [pluck(...prop)](#pluck)
+* [requirer()](#requirer)
+* [setMagicNumber(x)](#setMagicNumber)
+* [doSomething(options)](#doSomething)
+* [const: CONST_ONE](#CONST_ONE)
+* [~~const: CONST_TWO~~](#CONST_TWO)
+* [callback: onComplete](#onComplete)
+* [type: NumberLike](#NumberLike)
+* [~~class: All~~](#All)
+  * [~~new All(input, [options])~~](#All)
+  * [all.topping](#All#topping)
+  * [all.size](#All#size)
+  * [~~all.allThings(one, two)~~](#All#allThings)
+* [class: Person](#Person)
+  * [new Person()](#Person)
+* [class: Car](#Car)
+  * [new Car([options])](#Car)
+* [class: Pipe](#Pipe)
+* [~~class: Everything~~](#Everything)
+  * [~~new Everything(input, [options])~~](#Everything)
+* [class: Rice](#Rice)
+  * [event: "cooked"](#Rice#event_cooked)
+  * [event: "cooking"](#Rice#event_cooking)
+* [class: Something](#Something)
+  * [something.methodOne()](#Something#methodOne)
+  * [~~something.allTogether(one, two)~~](#Something#allTogether)
+* [class: Pizza](#Pizza)
+  * [pizza.topping](#Pizza#topping)
+  * [pizza.size](#Pizza#size)
+* [class: Plucker](#Plucker)
+  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE
 the first important constant
@@ -770,21 +844,6 @@ Set the magic number.
 - options `object` - the function options
   - one `string` - first option
   - two `string` - second option
-
-<a name="module_world"></a>
-##class: Hello
-**Members**
-
-* [new Hello()](#module_world)
-* [module:world.sayHello()](#module_world#sayHello)
-
-<a name="module_world"></a>
-##new Hello()
-A class that says hello!
-
-<a name="module_world#sayHello"></a>
-###module:world.sayHello()
-Say hello.
 
 <a name="All"></a>
 ##~~class: All~~
