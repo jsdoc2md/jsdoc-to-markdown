@@ -62,25 +62,6 @@
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
-<a name="CONST_ONE"></a>
-##const: CONST_ONE
-the first important constant
-
-**Type**: `number`  
-<a name="CONST_TWO"></a>
-##~~const: CONST_TWO~~
-This variable has all tags set
-
-***Deprecated***  
-**Type**: `boolean`  
-**Read only**: true  
-**Since**: v0.10.28  
-**Author**: Lloyd Brookes <lloyd@brookes.com>  
-**Example**  
-```js
-var CONST_TWO = true;
-```
-
 <a name="eFileType"></a>
 ##enum: eFileType
 Enum for the `type` value
@@ -276,6 +257,25 @@ Set the magic number.
 - options `object` - the function options
   - one `string` - first option
   - two `string` - second option
+
+<a name="CONST_ONE"></a>
+##const: CONST_ONE
+the first important constant
+
+**Type**: `number`  
+<a name="CONST_TWO"></a>
+##~~const: CONST_TWO~~
+This variable has all tags set
+
+***Deprecated***  
+**Type**: `boolean`  
+**Read only**: true  
+**Since**: v0.10.28  
+**Author**: Lloyd Brookes <lloyd@brookes.com>  
+**Example**  
+```js
+var CONST_TWO = true;
+```
 
 <a name="All"></a>
 ##~~class: All~~
