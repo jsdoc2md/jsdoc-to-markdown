@@ -4,7 +4,6 @@ module with ignored shiz
 
 **Members**
 
-
 * [ignore.visible](#module_ignore.visible)
 
 <a name="module_ignore.visible"></a>

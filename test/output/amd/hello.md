@@ -4,7 +4,6 @@
 **Members**
 
   * [new Hello()](#module_world)
-  * [new Hello()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>

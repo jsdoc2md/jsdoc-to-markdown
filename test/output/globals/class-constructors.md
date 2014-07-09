@@ -6,7 +6,6 @@ simple class description
 **Members**
 
   * [new Person()](#Person)
-  * [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -17,7 +16,6 @@ a constructor description
 ##class: Car
 **Members**
 
-  * [new Car([options])](#Car)
   * [new Car([options])](#Car)
 
 <a name="Car"></a>
@@ -42,7 +40,6 @@ a class with all trimmings
 
 **Members**
 
-  * [~~new Everything(input, [options])~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>

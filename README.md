@@ -95,7 +95,6 @@ var jsdoc2md = require("jsdoc-to-markdown");
 
 **Members**
 
-
 * [jsdoc2md.render(options)](#module_jsdoc-to-markdown.render)
 * [\~callback: onRender](#module_jsdoc-to-markdown.onRender)
 

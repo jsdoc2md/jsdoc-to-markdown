@@ -4,7 +4,6 @@ exports an object.. has an inner class.
 
 **Members**
 
-
 * [cyber.createMachine()](#module_class-inners.createMachine)
 * [\~something](#module_class-inners.something)
 * [class: cyber~Machine](#module_class-inners.Machine)
@@ -27,7 +26,6 @@ The main class of machine
 **Members**
 
   * [new cyber~Machine(options)](#module_class-inners.Machine)
-
   * [machine.eyes](#module_class-inners.Machine#eyes)
   * [machine.vibe](#module_class-inners.Machine#vibe)
 

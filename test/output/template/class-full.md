@@ -9,7 +9,6 @@ The main class for a cloud
 **Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
-
 * [cloud.size](#module_heaven.Cloud#size)
 * [cloud.rain](#module_heaven.Cloud#rain)
 * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)

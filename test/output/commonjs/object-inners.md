@@ -4,7 +4,6 @@ exported object, with-inner-members
 
 **Members**
 
-
 * [cattle.createCow()](#module_cattle.createCow)
 * [\~innerMember](#module_cattle.innerMember)
 * [cattle~innerFuction()](#module_cattle.innerFuction)

@@ -140,7 +140,6 @@ this class returns a pet of files
 **Members**
 
   * [new FilePet(num)](#module_file-pet)
-  * [new FilePet(num)](#module_file-pet)
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
@@ -230,7 +229,6 @@ A module representing a shirt.
 **Version**: 1.0  
 **Members**
 
-
 * [shirt.color](#module_shirt.color)
 * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
       * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
@@ -245,7 +243,6 @@ A property of the module.
 **Members**
 
   * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
-
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck"></a>
@@ -263,7 +260,6 @@ A property of the class.
 exports an object.. has an inner class.
 
 **Members**
-
 
 * [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
 * [\~something](#module_commonjs/class-inners.something)
@@ -287,7 +283,6 @@ The main class of machine
 **Members**
 
   * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
-
   * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
   * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
 
@@ -321,7 +316,6 @@ this class returns a set of files
 
 **Members**
 
-  * [new FileSet()](#module_file-set)
   * [new FileSet()](#module_file-set)
 * [file-set.files](#module_file-set#files)
 * [file-set.delete(paths)](#module_file-set#delete)
@@ -380,7 +374,6 @@ module with ignored shiz
 
 **Members**
 
-
 * [ignore.visible](#module_commonjs/ignore.visible)
 
 <a name="module_commonjs/ignore.visible"></a>
@@ -392,7 +385,6 @@ visible property
 simple object export
 
 **Members**
-
 
 * [_.one](#module_commonjs/object-alias.one)
 * [_.two](#module_commonjs/object-alias.two)
@@ -415,7 +407,6 @@ a function
 exported object, with-inner-members
 
 **Members**
-
 
 * [cattle.createCow()](#module_cattle.createCow)
 * [\~innerMember](#module_cattle.innerMember)
@@ -446,7 +437,6 @@ another inner function
 factory module creating dodgy cloud. object-with-static-class.
 
 **Members**
-
 
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
@@ -479,7 +469,6 @@ The main class for a cloud
 **Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
-
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -517,7 +506,6 @@ simple object export
 
 **Members**
 
-
 * [object.one](#module_commonjs/object.one)
 * [object.three(four, five)](#module_commonjs/object.three)
 
@@ -547,7 +535,6 @@ allTogether(true);
 module with private shiz
 
 **Members**
-
 
 * [private.notprivate](#module_private.notprivate)
 
@@ -792,7 +779,6 @@ Set the magic number.
 **Members**
 
   * [new Hello()](#module_world)
-  * [new Hello()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>
@@ -809,7 +795,6 @@ a class with all of the things
 
 **Members**
 
-  * [~~new All(input, [options])~~](#All)
   * [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)
@@ -869,7 +854,6 @@ simple class description
 **Members**
 
   * [new Person()](#Person)
-  * [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -880,7 +864,6 @@ a constructor description
 ##class: Car
 **Members**
 
-  * [new Car([options])](#Car)
   * [new Car([options])](#Car)
 
 <a name="Car"></a>
@@ -905,7 +888,6 @@ a class with all trimmings
 
 **Members**
 
-  * [~~new Everything(input, [options])~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>

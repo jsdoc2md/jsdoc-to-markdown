@@ -4,7 +4,6 @@ simple object export
 
 **Members**
 
-
 * [object.one](#module_object.one)
 * [object.three(four, five)](#module_object.three)
 

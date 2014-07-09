@@ -4,7 +4,6 @@ factory module creating dodgy cloud. object-with-static-class.
 
 **Members**
 
-
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: heaven~Cloud](#module_heaven.Cloud)
@@ -36,7 +35,6 @@ The main class for a cloud
 **Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
-
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
