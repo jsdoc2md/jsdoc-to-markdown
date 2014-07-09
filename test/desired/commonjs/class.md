@@ -16,7 +16,7 @@ this class returns a set of files
 **Members**
 
 * [new FileSet(num)](#module_FileSet)
-* [fileSet.files {Array.\<string\>}](#module_FileSet#files)
+* [fileSet.files](#module_FileSet#files) {Array.\<string\>}
 * [fileSet.delete(paths)](#module_FileSet#delete)
 
 <a name="module_FileSet"></a>
