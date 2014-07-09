@@ -125,7 +125,7 @@
 
 #Modules
 <a name="module_hello/world"></a>
-#hello/world
+##hello/world
 A module that says hello!
 
 **Members**
@@ -133,7 +133,7 @@ A module that says hello!
 * [hello/world.sayHello()](#module_hello/world.sayHello)
 
 <a name="module_hello/world.sayHello"></a>
-##hello/world.sayHello()
+###hello/world.sayHello()
 Say hello.
 
 <a name="module_file-pet"></a>
@@ -189,50 +189,50 @@ A prototype instance methy meth
 - paths `array` - the paths to delete
 
 <a name="module_jacket"></a>
-###jacket
+##jacket
 A module representing a jacket.
 
 <a name="module_jacket"></a>
-####class: Jacket ⏏
+###class: Jacket ⏏
 **Members**
 
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
-#####jacket.zip()
+####jacket.zip()
 Open and close your Jacket.
 
 <a name="module_coat"></a>
-####coat
+##coat
 A module representing a coat.
 
 <a name="module_coat"></a>
-#####class: Coat ⏏
+###class: Coat ⏏
 **Members**
 
 * [coat.zip()](#module_coat#zip)
 
 <a name="module_coat#zip"></a>
-######coat.zip()
+####coat.zip()
 Open and close your Coat.
 
 <a name="module_blouse"></a>
-#####blouse
+##blouse
 A module representing a blouse.
 
 **Scope**: inner module of [coat](#module_coat)  
 <a name="module_blouse"></a>
-######class: Blouse ⏏
+###class: Blouse ⏏
 **Members**
 
 * [blouse.zip()](#module_blouse#zip)
 
 <a name="module_blouse#zip"></a>
-#######blouse.zip()
+####blouse.zip()
 Open and close your Blouse.
 
 <a name="module_shirt"></a>
-######shirt
+##shirt
 A module representing a shirt.
 
 **Version**: 1.0  
@@ -244,28 +244,28 @@ A module representing a shirt.
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.color"></a>
-#######shirt.color
+###shirt.color
 A property of the module.
 
 <a name="module_shirt.Turtleneck"></a>
-#######class: shirt.Turtleneck
+###class: shirt.Turtleneck
 **Members**
 
 * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
 * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck"></a>
-########new shirt.Turtleneck()
+####new shirt.Turtleneck()
 **Params**
 
 -  `number` - the size innit
 
 <a name="module_shirt.Turtleneck#size"></a>
-########turtleneck.size
+####turtleneck.size
 A property of the class.
 
 <a name="module_cyberdyne"></a>
-#######cyberdyne
+##cyberdyne
 exports an object.. has an inner class.
 
 **Example**  
@@ -283,15 +283,15 @@ var cyber = require("cyberdyne");
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.createMachine"></a>
-########cyber.createMachine()
+###cyber.createMachine()
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-########cyber~something
+###cyber~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine"></a>
-########class: cyber~Machine
+###class: cyber~Machine
 The main class of machine
 
 **Members**
@@ -301,7 +301,7 @@ The main class of machine
 * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.Machine"></a>
-#########new cyber~Machine(options)
+####new cyber~Machine(options)
 the Machine constructor
 
 **Params**
@@ -310,13 +310,13 @@ the Machine constructor
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine#eyes"></a>
-#########machine.eyes
+####machine.eyes
 **Type**: `number`  
 <a name="module_cyberdyne.Machine#vibe"></a>
-#########machine.vibe
+####machine.vibe
 **Type**: `string`  
 <a name="module_file-set"></a>
-########file-set
+##file-set
 this module exports a class constructor
 
 **Example**  
@@ -325,7 +325,7 @@ var FileSet = require("file-set");
 ```
 
 <a name="module_file-set"></a>
-#########class: FileSet ⏏
+###class: FileSet ⏏
 this class returns a set of files
 
 **Members**
@@ -335,7 +335,7 @@ this class returns a set of files
 * [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set"></a>
-##########new FileSet()
+####new FileSet()
 Takes a list of path patterns
 
 **Params**
@@ -348,11 +348,11 @@ var cowFiles = new FileSet("cow/*");
 ```
 
 <a name="module_file-set#files"></a>
-##########file-set.files
+####file-set.files
 the prototype instance property
 
 <a name="module_file-set#delete"></a>
-##########file-set.delete(paths)
+####file-set.delete(paths)
 A prototype instance methy meth
 
 **Params**
@@ -360,7 +360,7 @@ A prototype instance methy meth
 - paths `array` - the paths to delete
 
 <a name="module_sum-alias"></a>
-#########sum-alias
+##sum-alias
 This module exports a simple maths function
 
 **Example**  
@@ -373,7 +373,7 @@ var sum = require("sum");
 * [sum(a, b) ⏏](#module_sum-alias)
 
 <a name="module_commonjs/function"></a>
-##########commonjs/function
+##commonjs/function
 This is the module description
 
 **Since**: v0.10.28  
@@ -383,7 +383,7 @@ This is the module description
 * [module.exports(one, two) ⏏](#module_commonjs/function)
 
 <a name="module_commonjs/ignore"></a>
-###########commonjs/ignore
+##commonjs/ignore
 module with ignored shiz
 
 **Members**
@@ -391,11 +391,11 @@ module with ignored shiz
 * [ignore.visible](#module_commonjs/ignore.visible)
 
 <a name="module_commonjs/ignore.visible"></a>
-############ignore.visible
+###ignore.visible
 visible property
 
 <a name="module_commonjs/object-alias"></a>
-############commonjs/object-alias
+##commonjs/object-alias
 simple object export
 
 **Members**
@@ -405,19 +405,19 @@ simple object export
 * [_.three()](#module_commonjs/object-alias.three)
 
 <a name="module_commonjs/object-alias.one"></a>
-#############_.one
+###_.one
 first property
 
 <a name="module_commonjs/object-alias.two"></a>
-#############_.two
+###_.two
 second property
 
 <a name="module_commonjs/object-alias.three"></a>
-#############_.three()
+###_.three()
 a function
 
 <a name="module_cattle"></a>
-#############cattle
+##cattle
 exported object, with-inner-members
 
 **Members**
@@ -428,26 +428,26 @@ exported object, with-inner-members
 * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
 <a name="module_cattle.createCow"></a>
-##############cattle.createCow()
+###cattle.createCow()
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-##############cattle~innerMember
+###cattle~innerMember
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
-##############cattle~innerFuction()
+###cattle~innerFuction()
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-##############~~cattle~anotherInnerFuction()~~
+###~~cattle~anotherInnerFuction()~~
 another inner function
 
 ***Deprecated***  
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_heaven"></a>
-##############heaven
+##heaven
 factory module creating dodgy cloud. object-with-static-class.
 
 **Members**
@@ -463,21 +463,21 @@ factory module creating dodgy cloud. object-with-static-class.
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-###############heaven.Cloud
+###heaven.Cloud
 access to the Cloud class
 
 **Type**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
-###############heaven.createCloud()
+###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.FACT"></a>
-###############const: heaven~FACT
+###const: heaven~FACT
 an inner constant
 
 **Scope**: inner constant of [heaven](#module_heaven)  
 **Type**: `boolean`  
 <a name="module_heaven.Cloud"></a>
-###############class: heaven~Cloud
+###class: heaven~Cloud
 The main class for a cloud
 
 **Members**
@@ -489,7 +489,7 @@ The main class for a cloud
 * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-################new heaven~Cloud(options)
+####new heaven~Cloud(options)
 cloud constructor
 
 **Params**
@@ -498,24 +498,24 @@ cloud constructor
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven.Cloud#size"></a>
-################cloud.size
+####cloud.size
 **Type**: `number`  
 **Default**: `4`  
 <a name="module_heaven.Cloud#rain"></a>
-################cloud.rain
+####cloud.rain
 **Type**: `boolean`  
 **Default**: `false`  
 <a name="module_heaven.Cloud.classMethod"></a>
-################Cloud.classMethod()
+####Cloud.classMethod()
 a class method
 
 <a name="module_heaven.Cloud.SPACES"></a>
-################const: Cloud.SPACES
+####const: Cloud.SPACES
 a class constant
 
 **Type**: `number`  
 <a name="module_commonjs/object"></a>
-###############commonjs/object
+##commonjs/object
 simple object export
 
 **Members**
@@ -524,11 +524,11 @@ simple object export
 * [object.three(four, five)](#module_commonjs/object.three)
 
 <a name="module_commonjs/object.one"></a>
-################object.one
+###object.one
 first property
 
 <a name="module_commonjs/object.three"></a>
-################object.three(four, five)
+###object.three(four, five)
 a function
 
 **Params**
@@ -545,7 +545,7 @@ allTogether(true);
 ```
 
 <a name="module_private"></a>
-################private
+##private
 module with private shiz
 
 **Members**
@@ -553,18 +553,18 @@ module with private shiz
 * [private.notprivate](#module_private.notprivate)
 
 <a name="module_private.notprivate"></a>
-#################private.notprivate
+###private.notprivate
 visible property
 
 <a name="module_commonjs/single-value"></a>
-#################commonjs/single-value
+##commonjs/single-value
 this module exports one value, that's it
 
 **Members**
 
 * [module.exports()](#module_commonjs/single-value)
 
-##################Global
+##Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)
 * [variable](#variable)
@@ -630,28 +630,28 @@ this module exports one value, that's it
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="eFileType"></a>
-##################enum: eFileType
+##enum: eFileType
 Enum for the `type` value
 
 **Type**: `number`  
 **Properties**: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 <a name="visible"></a>
-##################visible
+##visible
 a visible global
 
 <a name="variable"></a>
-##################variable
+##variable
 a global variable
 
 <a name="typed"></a>
-##################typed
+##typed
 **Type**: `string`  
 <a name="types"></a>
-##################types
+##types
 **Type**: `string` | `number`  
 <a name="exampled"></a>
-##################exampled
+##exampled
 a var with an example
 
 **Example**  
@@ -660,7 +660,7 @@ var another = 100;
 ```
 
 <a name="examples"></a>
-##################examples
+##examples
 a var with multiple examples
 
 **Example**  
@@ -674,28 +674,28 @@ var next = "p";
 ```
 
 <a name="_protected"></a>
-##################_protected
+##_protected
 **Access**: protected  
 <a name="withAuthor"></a>
-##################withAuthor
+##withAuthor
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-##################hasDefault
+##hasDefault
 **Default**: `23`  
 <a name="hasDefaultObject"></a>
-##################hasDefaultObject
+##hasDefaultObject
 **Default**: `{"one":1,"two":2}`  
 <a name="deprecated"></a>
-##################~~deprecated~~
+##~~deprecated~~
 ***Deprecated***  
 <a name="readOnly"></a>
-##################readOnly
+##readOnly
 **Read only**: true  
 <a name="hasSince"></a>
-##################hasSince
+##hasSince
 **Since**: v0.10.28  
 <a name="operate"></a>
-##################operate(options, callback)
+##operate(options, callback)
 **Params**
 
 - options `object` - The options
@@ -703,18 +703,18 @@ var next = "p";
 -  `function` - a callback invoked on completion
 
 <a name="read"></a>
-##################read(filename, done)
+##read(filename, done)
 **Params**
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="globalFunc"></a>
-##################globalFunc()
+##globalFunc()
 a global function
 
 <a name="exampled"></a>
-##################exampled()
+##exampled()
 a function with an example
 
 **Example**  
@@ -723,7 +723,7 @@ var result = exampled();
 ```
 
 <a name="multiExampled"></a>
-##################multiExampled()
+##multiExampled()
 a function with multiple examples
 
 **Example**  
@@ -737,39 +737,39 @@ var next = "p";
 ```
 
 <a name="_protected"></a>
-##################_protected()
+##_protected()
 **Access**: protected  
 <a name="withAuthor"></a>
-##################withAuthor()
+##withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-##################~~oldFunction()~~
+##~~oldFunction()~~
 ***Deprecated***  
 <a name="newFunction"></a>
-##################newFunction()
+##newFunction()
 **Since**: v0.10.28  
 <a name="withParam"></a>
-##################withParam(one)
+##withParam(one)
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-##################withParams(one, two)
+##withParams(one, two)
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-##################withOptional(one, [two])
+##withOptional(one, [two])
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-##################withBullets(one, two)
+##withBullets(one, two)
 this description has 
 
 - bullet
@@ -783,16 +783,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-##################returnsSomething()
+##returnsSomething()
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-##################returnsSomethingDesc()
+##returnsSomethingDesc()
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-##################returnsSeveral()
+##returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  
 <a name="doSomething"></a>
-##################doSomething(options)
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -800,13 +800,13 @@ and needs this line to separate the above list from the below
   - two `string` - second option
 
 <a name="doAnother"></a>
-##################doAnother(options)
+##doAnother(options)
 **Params**
 
 - options `Object` - the function options
 
 <a name="pluck"></a>
-##################pluck(...prop)
+##pluck(...prop)
 This function takes variable input
 
 **Params**
@@ -814,11 +814,11 @@ This function takes variable input
 - ...prop `string` - the property(s) as input
 
 <a name="requirer"></a>
-##################requirer()
+##requirer()
 ensure you have some-module installed
 
 <a name="setMagicNumber"></a>
-##################setMagicNumber(x)
+##setMagicNumber(x)
 Set the magic number.
 
 **Params**
@@ -826,7 +826,7 @@ Set the magic number.
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
-##################doSomething(options)
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -834,12 +834,12 @@ Set the magic number.
   - two `string` - second option
 
 <a name="CONST_ONE"></a>
-##################const: CONST_ONE
+##const: CONST_ONE
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-##################~~const: CONST_TWO~~
+##~~const: CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  
@@ -853,7 +853,7 @@ var CONST_TWO = true;
 ```
 
 <a name="onComplete"></a>
-##################callback: onComplete
+##callback: onComplete
 Called when an async operation completes
 
 **Params**
@@ -863,12 +863,12 @@ Called when an async operation completes
 
 **Type**: `function`  
 <a name="NumberLike"></a>
-##################type: NumberLike
+##type: NumberLike
 A number, or a string containing a number.
 
 **Type**: `number` | `string`  
 <a name="All"></a>
-##################~~class: All~~
+##~~class: All~~
 a class with all of the things
 
 **Members**
@@ -879,7 +879,7 @@ a class with all of the things
 * [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All"></a>
-###################~~new All(input, [options])~~
+###~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -897,18 +897,18 @@ var yeah = new Everything(true);
 ```
 
 <a name="All#topping"></a>
-###################all.topping
+###all.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###################all.size
+###all.size
 the general size
 
 <a name="All#allThings"></a>
-###################~~all.allThings(one, two)~~
+###~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**
@@ -926,7 +926,7 @@ all.allTogether(true);
 ```
 
 <a name="Person"></a>
-##################class: Person
+##class: Person
 simple class description
 
 **Members**
@@ -934,18 +934,18 @@ simple class description
 * [new Person()](#Person)
 
 <a name="Person"></a>
-###################new Person()
+###new Person()
 a constructor description
 
 **Extends**: `Object`  
 <a name="Car"></a>
-##################class: Car
+##class: Car
 **Members**
 
 * [new Car([options])](#Car)
 
 <a name="Car"></a>
-###################new Car([options])
+###new Car([options])
 a constructor with args
 
 **Params**
@@ -953,14 +953,14 @@ a constructor with args
 - [options] `object` - optional shit
 
 <a name="Pipe"></a>
-##################class: Pipe
+##class: Pipe
 a class which extends
 
 **Members**
 
 
 <a name="Everything"></a>
-##################~~class: Everything~~
+##~~class: Everything~~
 a class with all trimmings
 
 **Members**
@@ -968,7 +968,7 @@ a class with all trimmings
 * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
-###################~~new Everything(input, [options])~~
+###~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -986,33 +986,33 @@ var yeah = new Everything(true);
 ```
 
 <a name="Rice"></a>
-##################class: Rice
+##class: Rice
 **Members**
 
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
-###################event: "cooked"
+###event: "cooked"
 Fired when rice is ready
 
 <a name="Rice#event_cooking"></a>
-###################event: "cooking"
+###event: "cooking"
 Fired when rice is cooking
 
 <a name="Something"></a>
-##################class: Something
+##class: Something
 **Members**
 
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
-###################something.methodOne()
+###something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-###################~~something.allTogether(one, two)~~
+###~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**
@@ -1030,31 +1030,31 @@ something.allTogether(true);
 ```
 
 <a name="Pizza"></a>
-##################class: Pizza
+##class: Pizza
 **Members**
 
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-###################pizza.topping
+###pizza.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###################pizza.size
+###pizza.size
 the general size
 
 <a name="Plucker"></a>
-##################class: Plucker
+##class: Plucker
 **Members**
 
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
-###################plucker.doPluck(one, ...args, ...three)
+###plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
 **Params**

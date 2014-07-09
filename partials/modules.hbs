@@ -1,5 +1,6 @@
 {{#with (where @root kind="module")~}}
 {{#if (gt this.length 1)}}{{>heading}}Modules
 {{/if~}}
+{{heading-depth-bump~}}
 {{#each}}{{>module}}{{/each~}}
 {{/with}}
