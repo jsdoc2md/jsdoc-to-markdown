@@ -41,13 +41,13 @@
   * [heaven](#module_heaven)
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
+* [const: \~FACT](#module_heaven.FACT)
 * [class: heaven~Cloud](#module_heaven.Cloud)
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-* [const: \~FACT](#module_heaven.FACT)
   * [commonjs/object](#module_commonjs/object)
 * [object.one](#module_commonjs/object.one)
 * [object.three(four, five)](#module_commonjs/object.three)
@@ -92,6 +92,10 @@
 * [requirer()](#requirer)
 * [setMagicNumber(x)](#setMagicNumber)
 * [doSomething(options)](#doSomething)
+* [const: CONST_ONE](#CONST_ONE)
+* [~~const: CONST_TWO~~](#CONST_TWO)
+* [callback: onComplete](#onComplete)
+* [type: NumberLike](#NumberLike)
 * [class: Hello](#module_world)
   * [new Hello()](#module_world)
   * [module:world.sayHello()](#module_world#sayHello)
@@ -118,10 +122,6 @@
   * [pizza.size](#Pizza#size)
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-* [const: CONST_ONE](#CONST_ONE)
-* [~~const: CONST_TWO~~](#CONST_TWO)
-* [callback: onComplete](#onComplete)
-* [type: NumberLike](#NumberLike)
 
 #Modules
 <a name="module_file-pet"></a>
@@ -437,13 +437,13 @@ factory module creating dodgy cloud. object-with-static-class.
 
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
+* [const: \~FACT](#module_heaven.FACT)
 * [class: heaven~Cloud](#module_heaven.Cloud)
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-* [const: \~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>
 ###heaven.Cloud
