@@ -3,7 +3,6 @@
 ##class: Rice
 **Members**
 
-  * [new Rice()](#Rice)
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 

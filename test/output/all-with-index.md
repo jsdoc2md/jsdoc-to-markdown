@@ -139,7 +139,7 @@ this class returns a pet of files
 
 **Members**
 
-  * [new FilePet(num)](#module_file-pet)
+    * [new FilePet(num)](#module_file-pet)
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
@@ -184,7 +184,6 @@ A module representing a jacket.
 ##class: Jacket ⏏
 **Members**
 
-  * [new Jacket()](#module_jacket)
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
@@ -199,7 +198,6 @@ A module representing a coat.
 ##class: Coat ⏏
 **Members**
 
-  * [new Coat()](#module_coat)
 * [coat.zip()](#module_coat#zip)
 
 <a name="module_coat#zip"></a>
@@ -215,7 +213,6 @@ A module representing a blouse.
 ##class: Blouse ⏏
 **Members**
 
-  * [new Blouse()](#module_blouse)
 * [blouse.zip()](#module_blouse#zip)
 
 <a name="module_blouse#zip"></a>
@@ -242,7 +239,7 @@ A property of the module.
 ###class: shirt.Turtleneck
 **Members**
 
-  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck"></a>
@@ -282,7 +279,7 @@ The main class of machine
 
 **Members**
 
-  * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
+      * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
   * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
   * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
 
@@ -316,7 +313,7 @@ this class returns a set of files
 
 **Members**
 
-  * [new FileSet()](#module_file-set)
+    * [new FileSet()](#module_file-set)
 * [file-set.files](#module_file-set#files)
 * [file-set.delete(paths)](#module_file-set#delete)
 
@@ -468,7 +465,7 @@ The main class for a cloud
 
 **Members**
 
-  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+      * [new heaven~Cloud(options)](#module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -778,7 +775,7 @@ Set the magic number.
 ##class: Hello
 **Members**
 
-  * [new Hello()](#module_world)
+    * [new Hello()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>
@@ -795,7 +792,7 @@ a class with all of the things
 
 **Members**
 
-  * [~~new All(input, [options])~~](#All)
+    * [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -853,7 +850,7 @@ simple class description
 
 **Members**
 
-  * [new Person()](#Person)
+    * [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -864,7 +861,7 @@ a constructor description
 ##class: Car
 **Members**
 
-  * [new Car([options])](#Car)
+    * [new Car([options])](#Car)
 
 <a name="Car"></a>
 ##new Car([options])
@@ -880,7 +877,6 @@ a class which extends
 
 **Members**
 
-  * [new Pipe()](#Pipe)
 
 <a name="Everything"></a>
 ##~~class: Everything~~
@@ -888,7 +884,7 @@ a class with all trimmings
 
 **Members**
 
-  * [~~new Everything(input, [options])~~](#Everything)
+    * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
@@ -912,7 +908,6 @@ var yeah = new Everything(true);
 ##class: Rice
 **Members**
 
-  * [new Rice()](#Rice)
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
@@ -928,7 +923,6 @@ Fired when rice is cooking
 ##class: Something
 **Members**
 
-  * [new Something()](#Something)
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
@@ -958,7 +952,6 @@ something.allTogether(true);
 ##class: Pizza
 **Members**
 
-  * [new Pizza()](#Pizza)
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
@@ -977,7 +970,6 @@ the general size
 ##class: Plucker
 **Members**
 
-  * [new Plucker()](#Plucker)
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>

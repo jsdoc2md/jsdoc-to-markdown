@@ -25,7 +25,7 @@ The main class of machine
 
 **Members**
 
-  * [new cyber~Machine(options)](#module_class-inners.Machine)
+      * [new cyber~Machine(options)](#module_class-inners.Machine)
   * [machine.eyes](#module_class-inners.Machine#eyes)
   * [machine.vibe](#module_class-inners.Machine#vibe)
 

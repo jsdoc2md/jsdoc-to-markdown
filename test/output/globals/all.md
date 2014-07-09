@@ -220,7 +220,7 @@ a class with all of the things
 
 **Members**
 
-  * [~~new All(input, [options])~~](#All)
+    * [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -278,7 +278,7 @@ simple class description
 
 **Members**
 
-  * [new Person()](#Person)
+    * [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -289,7 +289,7 @@ a constructor description
 ##class: Car
 **Members**
 
-  * [new Car([options])](#Car)
+    * [new Car([options])](#Car)
 
 <a name="Car"></a>
 ##new Car([options])
@@ -305,7 +305,6 @@ a class which extends
 
 **Members**
 
-  * [new Pipe()](#Pipe)
 
 <a name="Everything"></a>
 ##~~class: Everything~~
@@ -313,7 +312,7 @@ a class with all trimmings
 
 **Members**
 
-  * [~~new Everything(input, [options])~~](#Everything)
+    * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
@@ -337,7 +336,6 @@ var yeah = new Everything(true);
 ##class: Rice
 **Members**
 
-  * [new Rice()](#Rice)
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
@@ -353,7 +351,6 @@ Fired when rice is cooking
 ##class: Something
 **Members**
 
-  * [new Something()](#Something)
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
@@ -383,7 +380,6 @@ something.allTogether(true);
 ##class: Pizza
 **Members**
 
-  * [new Pizza()](#Pizza)
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
@@ -402,7 +398,6 @@ the general size
 ##class: Plucker
 **Members**
 
-  * [new Plucker()](#Plucker)
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>

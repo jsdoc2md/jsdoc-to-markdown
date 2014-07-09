@@ -13,7 +13,7 @@ this class returns a pet of files
 
 **Members**
 
-  * [new FilePet(num)](#module_file-pet)
+    * [new FilePet(num)](#module_file-pet)
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)

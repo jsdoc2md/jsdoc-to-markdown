@@ -3,7 +3,6 @@
 ##class: Pizza
 **Members**
 
-  * [new Pizza()](#Pizza)
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
