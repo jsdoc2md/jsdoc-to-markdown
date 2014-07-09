@@ -14,9 +14,9 @@ var hbjs = require("handbrake-js");
 
 **Inner Members**
 
-* [hbjs~Handbrake {class}](#module_handbrake-js.Handbrake)
-  * [handbrake.output {string}](#module_handbrake-js.Handbrake#output)
-  * [handbrake.options {object}](#module_handbrake-js.Handbrake#options)
+* [hbjs~Handbrake](#module_handbrake-js.Handbrake) {class}
+  * [handbrake.output](#module_handbrake-js.Handbrake#output) {string}
+  * [handbrake.options](#module_handbrake-js.Handbrake#options) {object}
   * [event: "start"](#module_handbrake-js.Handbrake#event_start)
   * [event: "begin"](#module_handbrake-js.Handbrake#event_begin)
   * [event: "progress"](#module_handbrake-js.Handbrake#event_progress)
@@ -68,10 +68,10 @@ A thin wrapper on the handbrakeCLI child_process handle. An instance of this cla
 
 **Scope**: inner class of hbjs
 
-**API**
+**Members**
 
-  * [handbrake.output {string}](#module_handbrake-js.Handbrake#output)
-  * [handbrake.options {object}](#module_handbrake-js.Handbrake#options)
+  * [handbrake.output](#module_handbrake-js.Handbrake#output) {string}
+  * [handbrake.options](#module_handbrake-js.Handbrake#options) {object}
   * [event: "start"](#module_handbrake-js.Handbrake#event_start)
   * [event: "begin"](#module_handbrake-js.Handbrake#event_begin)
   * [event: "progress"](#module_handbrake-js.Handbrake#event_progress)

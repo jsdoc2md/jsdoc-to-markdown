@@ -19,7 +19,7 @@ Takes a list of path patterns
 var cowFiles = new FileSet("cow/*");
 ```
 */
-function FileSet(num){
+var FileSet = function(num){
     var the = "constructor";
 };
 

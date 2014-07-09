@@ -2,17 +2,24 @@
   {
     "description": "this module exports a class constructor",
     "kind": "module",
-    "name": "FileSet",
+    "name": "file-set",
     "examples": [
       "```js\nvar FileSet = require(\"file-set\");\n```"
     ],
-    "longname": "module:FileSet",
-    "exports": "FileSet"
+    "longname": "module:file-set"
+  },
+  {
+    "kind": "class",
+    "classdesc": "this class returns a set of files",
+    "alias": "module:file-set",
+    "name": "FileSet",
+    "longname": "module:file-set~FileSet",
+    "exported": true,
+    "memberof": "module:file-set"
   },
   {
     "description": "Takes a list of path patterns",
-    "kind": "class",
-    "classdesc": "this class returns a set of files",
+    "kind": "constructor",
     "params": [
       {
         "type": {
@@ -24,21 +31,19 @@
         "name": "num"
       }
     ],
-    "alias": "module:FileSet",
     "examples": [
       "```js\nvar cowFiles = new FileSet(\"cow/*\");\n```"
     ],
-    "name": "module:FileSet",
-    "longname": "module:FileSet",
-    "codeName": "FileSet",
-    "memberof": "module:FileSet"
+    "name": "FileSet",
+    "longname": "module:file-set~FileSet()",
+    "memberof": "module:file-set~FileSet"
   },
   {
     "description": "the prototype instance property",
     "name": "files",
-    "longname": "module:FileSet#files",
+    "longname": "module:file-set~FileSet#files",
     "kind": "member",
-    "memberof": "module:FileSet",
+    "memberof": "module:file-set~FileSet",
     "scope": "instance",
     "codeName": "FileSet.prototype.files"
   },
@@ -56,15 +61,15 @@
       }
     ],
     "name": "delete",
-    "longname": "module:FileSet#delete",
+    "longname": "module:file-set~FileSet#delete",
     "kind": "function",
-    "memberof": "module:FileSet",
+    "memberof": "module:file-set~FileSet",
     "scope": "instance",
     "codeName": "FileSet.prototype.delete"
   },
   {
     "files": [
-      "/Users/Lloyd/Documents/75lb/jsdoc-to-markdown/test/input/commonjs/exports-class.js"
+      "/Users/Lloyd/Documents/75lb/jsdoc-to-markdown/test/input/commonjs/class.js"
     ],
     "kind": "package",
     "longname": "package:undefined"
