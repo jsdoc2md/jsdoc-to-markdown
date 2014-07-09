@@ -6,5 +6,5 @@ This is the module description
 **Author**: Lloyd <75pound@gmail.com>  
 **Members**
 
-  * [module.exports(one, two) ⏏](#module_function)
+* [module.exports(one, two) ⏏](#module_function)
 

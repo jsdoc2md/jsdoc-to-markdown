@@ -1,11 +1,6 @@
-**Members**
+{{index-depth-reset}}**Members**
 
-{{#if (exported)~}}
-  {{#with (exported)}}{{string-repeat "  " (depth2 ../../offset)}}  * {{#link}}{{>function-name-long}}{{/link}}
+{{#with (exported)}}{{>indent}}* {{#link}}{{>function-name-long}}{{/link}}
 {{/with~}}
-{{else~}}
-  {{#if (constructorHasDocs)}}{{string-repeat "  " (depth2 ../../offset)}}  * {{#link}}{{>function-name-long}}{{/link}}
-{{/if~}}
-{{/if~}}
 
-{{>index-children offset=offset}}
+{{>index-children}}

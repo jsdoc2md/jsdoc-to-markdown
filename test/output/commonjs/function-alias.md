@@ -9,5 +9,5 @@ var sum = require("sum");
 
 **Members**
 
-  * [sum(a, b) ⏏](#module_sum-alias)
+* [sum(a, b) ⏏](#module_sum-alias)
 

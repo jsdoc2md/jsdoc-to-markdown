@@ -1,20 +1,21 @@
-{{#each (where data kind="member")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>member-name-long}}{{/link}}
+{{#each (where data kind="member")}}{{>indent}}* {{#link}}{{>member-name-long}}{{/link}}
 {{/each~}}
 
-{{#each (where data kind="function")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>function-name-long}}{{/link}}
+{{#each (where data kind="function")}}{{>indent}}* {{#link}}{{>function-name-long}}{{/link}}
 {{/each~}}
 
-{{#each (where data kind="class")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>class-name}}{{/link}}
-{{#if (constructorHasDocs)}}{{string-repeat "  " (depth2 ../offset)}}  * {{#link}}{{>function-name-long}}{{/link}}
+{{#each (where data kind="class")}}{{>indent}}* {{#link}}{{>class-name}}{{/link}}
+{{index-depth-bump~}}
+{{#if (constructorHasDocs)}}{{>indent}}* {{#link}}{{>function-name-long}}{{/link}}
 {{/if~}}
-{{>index-children offset=../offset ~}}
+{{>index-children~}}
 {{/each~}}
 
-{{#each (where data kind="constant")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>constant-name-long}}{{/link}}
+{{#each (where data kind="constant")}}{{>indent}}* {{#link}}{{>constant-name-long}}{{/link}}
 {{/each~}}
 
-{{#each (where data kind="typedef")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>typedef-name}}{{/link}}
+{{#each (where data kind="typedef")}}{{>indent}}* {{#link}}{{>typedef-name}}{{/link}}
 {{/each~}}
 
-{{#each (where data kind="event")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>event-name}}{{/link}}
+{{#each (where data kind="event")}}{{>indent}}* {{#link}}{{>event-name}}{{/link}}
 {{/each~}}

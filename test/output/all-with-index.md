@@ -1,27 +1,27 @@
 #Index
 * Modules
   * [file-pet](#module_file-pet) <sub>exports: class</sub>
-    * [filePet.instie](#module_file-pet#instie)
-    * [filePet.files](#module_file-pet#files)
-    * [filePet.delete(paths)](#module_file-pet#delete)
+* [filePet.instie](#module_file-pet#instie)
+* [filePet.files](#module_file-pet#files)
+* [filePet.delete(paths)](#module_file-pet#delete)
   * [jacket](#module_jacket) <sub>exports: class</sub>
-    * [jacket.zip()](#module_jacket#zip)
+* [jacket.zip()](#module_jacket#zip)
   * [coat](#module_coat) <sub>exports: class</sub>
-    * [coat.zip()](#module_coat#zip)
+* [coat.zip()](#module_coat#zip)
   * [blouse](#module_blouse) <sub>exports: class</sub>
-    * [blouse.zip()](#module_blouse#zip)
+* [blouse.zip()](#module_blouse#zip)
   * [shirt](#module_shirt)
-    * [shirt.color](#module_shirt.color)
-    * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
-      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
-      * [turtleneck.size](#module_shirt.Turtleneck#size)
+* [shirt.color](#module_shirt.color)
+* [class: shirt.Turtleneck](#module_shirt.Turtleneck)
+  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+  * [turtleneck.size](#module_shirt.Turtleneck#size)
   * [commonjs/class-inners](#module_commonjs/class-inners)
-    * [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
-    * [\~something](#module_commonjs/class-inners.something)
-    * [class: cyber~Machine](#module_commonjs/class-inners.Machine)
-      * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
-      * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
-      * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
+  * [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
+  * [\~something](#module_commonjs/class-inners.something)
+  * [class: cyber~Machine](#module_commonjs/class-inners.Machine)
+    * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
+    * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
+    * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
   * [file-set](#module_file-set) <sub>exports: class</sub>
     * [file-set.files](#module_file-set#files)
     * [file-set.delete(paths)](#module_file-set#delete)
@@ -47,81 +47,81 @@
       * [cloud.rain](#module_heaven.Cloud#rain)
       * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
       * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-    * [const: \~FACT](#module_heaven.FACT)
+      * [const: \~FACT](#module_heaven.FACT)
   * [commonjs/object](#module_commonjs/object)
-    * [object.one](#module_commonjs/object.one)
-    * [object.three(four, five)](#module_commonjs/object.three)
+      * [object.one](#module_commonjs/object.one)
+      * [object.three(four, five)](#module_commonjs/object.three)
   * [private](#module_private)
-    * [private.notprivate](#module_private.notprivate)
+      * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value) <sub>exports: member</sub>
 
 * Globals
-  * [enum: eFileType](#eFileType)
-  * [visible](#visible)
-  * [variable](#variable)
-  * [typed](#typed)
-  * [types](#types)
-  * [exampled](#exampled)
-  * [examples](#examples)
-  * [_protected](#_protected)
-  * [withAuthor](#withAuthor)
-  * [hasDefault](#hasDefault)
-  * [hasDefaultObject](#hasDefaultObject)
-  * [~~deprecated~~](#deprecated)
-  * [readOnly](#readOnly)
-  * [hasSince](#hasSince)
-  * [operate(options, callback)](#operate)
-  * [read(filename, done)](#read)
-  * [globalFunc()](#globalFunc)
-  * [exampled()](#exampled)
-  * [multiExampled()](#multiExampled)
-  * [_protected()](#_protected)
-  * [withAuthor()](#withAuthor)
-  * [~~oldFunction()~~](#oldFunction)
-  * [newFunction()](#newFunction)
-  * [withParam(one)](#withParam)
-  * [withParams(one, two)](#withParams)
-  * [withOptional(one, [two])](#withOptional)
-  * [withBullets(one, two)](#withBullets)
-  * [returnsSomething()](#returnsSomething)
-  * [returnsSomethingDesc()](#returnsSomethingDesc)
-  * [returnsSeveral()](#returnsSeveral)
-  * [doSomething(options)](#doSomething)
-  * [doAnother(options)](#doAnother)
-  * [pluck(...prop)](#pluck)
-  * [requirer()](#requirer)
-  * [setMagicNumber(x)](#setMagicNumber)
-  * [doSomething(options)](#doSomething)
-  * [class: Hello](#module_world)
-    * [new Hello()](#module_world)
-    * [module:world.sayHello()](#module_world#sayHello)
-  * [~~class: All~~](#All)
-    * [~~new All(input, [options])~~](#All)
-    * [all.topping](#All#topping)
-    * [all.size](#All#size)
-    * [~~all.allThings(one, two)~~](#All#allThings)
-  * [class: Person](#Person)
-    * [new Person()](#Person)
-  * [class: Car](#Car)
-    * [new Car([options])](#Car)
-  * [class: Pipe](#Pipe)
-  * [~~class: Everything~~](#Everything)
-    * [~~new Everything(input, [options])~~](#Everything)
-  * [class: Rice](#Rice)
-    * [event: "cooked"](#Rice#event_cooked)
-    * [event: "cooking"](#Rice#event_cooking)
-  * [class: Something](#Something)
-    * [something.methodOne()](#Something#methodOne)
-    * [~~something.allTogether(one, two)~~](#Something#allTogether)
-  * [class: Pizza](#Pizza)
-    * [pizza.topping](#Pizza#topping)
-    * [pizza.size](#Pizza#size)
-  * [class: Plucker](#Plucker)
-    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-  * [const: CONST_ONE](#CONST_ONE)
-  * [~~const: CONST_TWO~~](#CONST_TWO)
-  * [callback: onComplete](#onComplete)
-  * [type: NumberLike](#NumberLike)
+      * [enum: eFileType](#eFileType)
+      * [visible](#visible)
+      * [variable](#variable)
+      * [typed](#typed)
+      * [types](#types)
+      * [exampled](#exampled)
+      * [examples](#examples)
+      * [_protected](#_protected)
+      * [withAuthor](#withAuthor)
+      * [hasDefault](#hasDefault)
+      * [hasDefaultObject](#hasDefaultObject)
+      * [~~deprecated~~](#deprecated)
+      * [readOnly](#readOnly)
+      * [hasSince](#hasSince)
+      * [operate(options, callback)](#operate)
+      * [read(filename, done)](#read)
+      * [globalFunc()](#globalFunc)
+      * [exampled()](#exampled)
+      * [multiExampled()](#multiExampled)
+      * [_protected()](#_protected)
+      * [withAuthor()](#withAuthor)
+      * [~~oldFunction()~~](#oldFunction)
+      * [newFunction()](#newFunction)
+      * [withParam(one)](#withParam)
+      * [withParams(one, two)](#withParams)
+      * [withOptional(one, [two])](#withOptional)
+      * [withBullets(one, two)](#withBullets)
+      * [returnsSomething()](#returnsSomething)
+      * [returnsSomethingDesc()](#returnsSomethingDesc)
+      * [returnsSeveral()](#returnsSeveral)
+      * [doSomething(options)](#doSomething)
+      * [doAnother(options)](#doAnother)
+      * [pluck(...prop)](#pluck)
+      * [requirer()](#requirer)
+      * [setMagicNumber(x)](#setMagicNumber)
+      * [doSomething(options)](#doSomething)
+      * [class: Hello](#module_world)
+        * [new Hello()](#module_world)
+        * [module:world.sayHello()](#module_world#sayHello)
+        * [~~class: All~~](#All)
+          * [~~new All(input, [options])~~](#All)
+          * [all.topping](#All#topping)
+          * [all.size](#All#size)
+          * [~~all.allThings(one, two)~~](#All#allThings)
+          * [class: Person](#Person)
+            * [new Person()](#Person)
+            * [class: Car](#Car)
+              * [new Car([options])](#Car)
+              * [class: Pipe](#Pipe)
+                * [~~class: Everything~~](#Everything)
+                  * [~~new Everything(input, [options])~~](#Everything)
+                  * [class: Rice](#Rice)
+                    * [event: "cooked"](#Rice#event_cooked)
+                    * [event: "cooking"](#Rice#event_cooking)
+                    * [class: Something](#Something)
+                      * [something.methodOne()](#Something#methodOne)
+                      * [~~something.allTogether(one, two)~~](#Something#allTogether)
+                      * [class: Pizza](#Pizza)
+                        * [pizza.topping](#Pizza#topping)
+                        * [pizza.size](#Pizza#size)
+                        * [class: Plucker](#Plucker)
+                          * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+                          * [const: CONST_ONE](#CONST_ONE)
+                          * [~~const: CONST_TWO~~](#CONST_TWO)
+                          * [callback: onComplete](#onComplete)
+                          * [type: NumberLike](#NumberLike)
 
 #Modules
 <a name="module_file-pet"></a>
@@ -139,7 +139,7 @@ this class returns a pet of files
 
 **Members**
 
-    * [new FilePet(num)](#module_file-pet)
+* [new FilePet(num)](#module_file-pet)
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
@@ -228,7 +228,7 @@ A module representing a shirt.
 
 * [shirt.color](#module_shirt.color)
 * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
-      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.color"></a>
@@ -239,8 +239,8 @@ A property of the module.
 ###class: shirt.Turtleneck
 **Members**
 
-      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
+* [new shirt.Turtleneck()](#module_shirt.Turtleneck)
+* [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck"></a>
 ###new shirt.Turtleneck()
@@ -261,7 +261,7 @@ exports an object.. has an inner class.
 * [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
 * [\~something](#module_commonjs/class-inners.something)
 * [class: cyber~Machine](#module_commonjs/class-inners.Machine)
-      * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
+  * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
   * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
   * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
 
@@ -279,9 +279,9 @@ The main class of machine
 
 **Members**
 
-      * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
-  * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
-  * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
+* [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
+* [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
+* [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
 
 <a name="module_commonjs/class-inners.Machine"></a>
 ###new cyber~Machine(options)
@@ -313,7 +313,7 @@ this class returns a set of files
 
 **Members**
 
-    * [new FileSet()](#module_file-set)
+* [new FileSet()](#module_file-set)
 * [file-set.files](#module_file-set#files)
 * [file-set.delete(paths)](#module_file-set#delete)
 
@@ -353,7 +353,7 @@ var sum = require("sum");
 
 **Members**
 
-  * [sum(a, b) ⏏](#module_sum-alias)
+* [sum(a, b) ⏏](#module_sum-alias)
 
 <a name="module_commonjs/function"></a>
 ##commonjs/function
@@ -363,7 +363,7 @@ This is the module description
 **Author**: Lloyd <75pound@gmail.com>  
 **Members**
 
-  * [module.exports(one, two) ⏏](#module_commonjs/function)
+* [module.exports(one, two) ⏏](#module_commonjs/function)
 
 <a name="module_commonjs/ignore"></a>
 ##commonjs/ignore
@@ -438,12 +438,12 @@ factory module creating dodgy cloud. object-with-static-class.
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: heaven~Cloud](#module_heaven.Cloud)
-      * [new heaven~Cloud(options)](#module_heaven.Cloud)
+  * [new heaven~Cloud(options)](#module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-* [const: \~FACT](#module_heaven.FACT)
+  * [const: \~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>
 ###heaven.Cloud
@@ -465,11 +465,11 @@ The main class for a cloud
 
 **Members**
 
-      * [new heaven~Cloud(options)](#module_heaven.Cloud)
-  * [cloud.size](#module_heaven.Cloud#size)
-  * [cloud.rain](#module_heaven.Cloud#rain)
-  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+* [new heaven~Cloud(options)](#module_heaven.Cloud)
+* [cloud.size](#module_heaven.Cloud#size)
+* [cloud.rain](#module_heaven.Cloud#rain)
+* [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+* [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
 ###new heaven~Cloud(options)
@@ -545,7 +545,7 @@ this module exports one value, that's it
 
 **Members**
 
-  * [module.exports()](#module_commonjs/single-value)
+* [module.exports()](#module_commonjs/single-value)
 
 #Globals
 <a name="CONST_ONE"></a>
@@ -775,7 +775,7 @@ Set the magic number.
 ##class: Hello
 **Members**
 
-    * [new Hello()](#module_world)
+* [new Hello()](#module_world)
 * [module:world.sayHello()](#module_world#sayHello)
 
 <a name="module_world"></a>
@@ -792,7 +792,7 @@ a class with all of the things
 
 **Members**
 
-    * [~~new All(input, [options])~~](#All)
+* [~~new All(input, [options])~~](#All)
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -850,7 +850,7 @@ simple class description
 
 **Members**
 
-    * [new Person()](#Person)
+* [new Person()](#Person)
 
 <a name="Person"></a>
 ##new Person()
@@ -861,7 +861,7 @@ a constructor description
 ##class: Car
 **Members**
 
-    * [new Car([options])](#Car)
+* [new Car([options])](#Car)
 
 <a name="Car"></a>
 ##new Car([options])
@@ -884,7 +884,7 @@ a class with all trimmings
 
 **Members**
 
-    * [~~new Everything(input, [options])~~](#Everything)
+* [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
 ##~~new Everything(input, [options])~~
