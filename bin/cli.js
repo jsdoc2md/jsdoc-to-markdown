@@ -54,7 +54,11 @@ jsdoc2md.render(argv, function(err, result){
 });
 
 function halt(err){
-    dope.red.error((argv.verbose ? err.stack : "") || "Error: " + err.message);
+    if (argv){
+        dope.red.error((argv.verbose ? err.stack : "") || "Error: " + err.message);
+    } else {
+        dope.red.error("Error: " + err.message);
+    }
     dope.error(usage);
     process.exit(1);
 }

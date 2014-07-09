@@ -3,7 +3,7 @@
 * [doAnother(options)](#doAnother)
 
 <a name="doSomething"></a>
-##doSomething(options)
+#doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -11,7 +11,7 @@
   - two `string` - second option
 
 <a name="doAnother"></a>
-##doAnother(options)
+#doAnother(options)
 **Params**
 
 - options `Object` - the function options

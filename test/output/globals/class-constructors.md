@@ -8,7 +8,7 @@
   * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Person"></a>
-##class: Person
+#class: Person
 simple class description
 
 **Members**
@@ -21,7 +21,7 @@ a constructor description
 
 **Extends**: `Object`  
 <a name="Car"></a>
-##class: Car
+#class: Car
 **Members**
 
 * [new Car([options])](#Car)
@@ -35,14 +35,14 @@ a constructor with args
 - [options] `object` - optional shit
 
 <a name="Pipe"></a>
-##class: Pipe
+#class: Pipe
 a class which extends
 
 **Members**
 
 
 <a name="Everything"></a>
-##~~class: Everything~~
+#~~class: Everything~~
 a class with all trimmings
 
 **Members**

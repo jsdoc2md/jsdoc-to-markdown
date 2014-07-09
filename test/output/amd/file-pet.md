@@ -1,5 +1,5 @@
 <a name="module_file-pet"></a>
-##file-pet
+#file-pet
 this module returns a pet of files
 
 **Example**  
@@ -19,7 +19,7 @@ this class returns a pet of files
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-##new FilePet(num)
+###new FilePet(num)
 this is the contructor
 
 **Params**

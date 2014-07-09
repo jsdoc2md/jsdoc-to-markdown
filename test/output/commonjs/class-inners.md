@@ -1,5 +1,5 @@
 <a name="module_class-inners"></a>
-##class-inners
+#class-inners
 exports an object.. has an inner class.
 
 **Members**
@@ -12,15 +12,15 @@ exports an object.. has an inner class.
   * [machine.vibe](#module_class-inners.Machine#vibe)
 
 <a name="module_class-inners.createMachine"></a>
-###cyber.createMachine()
+##cyber.createMachine()
 **Returns**: `module:cyberdyne~Machine`  
 <a name="module_class-inners.something"></a>
-###cyber~something
+##cyber~something
 random
 
 **Scope**: inner member of [class-inners](#module_class-inners)  
 <a name="module_class-inners.Machine"></a>
-###class: cyber~Machine
+##class: cyber~Machine
 The main class of machine
 
 **Members**
@@ -39,8 +39,8 @@ the Machine constructor
 
 **Scope**: inner class of [class-inners](#module_class-inners)  
 <a name="module_class-inners.Machine#eyes"></a>
-####machine.eyes
+###machine.eyes
 **Type**: `number`  
 <a name="module_class-inners.Machine#vibe"></a>
-####machine.vibe
+###machine.vibe
 **Type**: `string`  

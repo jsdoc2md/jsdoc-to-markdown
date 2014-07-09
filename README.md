@@ -87,7 +87,7 @@ These projects have readme files rendered by `jsdoc2md`:
 
 #API Reference
 <a name="module_jsdoc-to-markdown"></a>
-##jsdoc-to-markdown
+#jsdoc-to-markdown
 **Example**  
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
@@ -99,7 +99,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 * [\~callback: onRender](#module_jsdoc-to-markdown.onRender)
 
 <a name="module_jsdoc-to-markdown.render"></a>
-###jsdoc2md.render(options)
+##jsdoc2md.render(options)
 **Params**
 
 - options `object` - The render options
@@ -112,7 +112,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 -  [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
 
 <a name="module_jsdoc-to-markdown.onRender"></a>
-###\~callback: onRender
+##\~callback: onRender
 Called by `jsdoc2md.render()` on completion.
 
 **Params**

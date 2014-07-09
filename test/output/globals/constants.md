@@ -3,12 +3,12 @@
 * [~~const: CONST_TWO~~](#CONST_TWO)
 
 <a name="CONST_ONE"></a>
-##const: CONST_ONE
+#const: CONST_ONE
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-##~~const: CONST_TWO~~
+#~~const: CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  

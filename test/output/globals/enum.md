@@ -2,7 +2,7 @@
 * [enum: eFileType](#eFileType)
 
 <a name="eFileType"></a>
-##enum: eFileType
+#enum: eFileType
 Enum for the `type` value
 
 **Type**: `number`  
