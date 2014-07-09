@@ -2,7 +2,7 @@
 This is the documentation for a full module
 
 <a name="module_file-set"></a>
-#file-set
+##file-set
 this module exports a class constructor
 
 **Example**  
@@ -11,7 +11,7 @@ var FileSet = require("file-set");
 ```
 
 <a name="module_file-set"></a>
-##class: FileSet ⏏
+###class: FileSet ⏏
 this class returns a set of files
 
 **Members**
@@ -21,7 +21,7 @@ this class returns a set of files
 * [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set"></a>
-###new FileSet()
+####new FileSet()
 Takes a list of path patterns
 
 **Params**
@@ -34,11 +34,11 @@ var cowFiles = new FileSet("cow/*");
 ```
 
 <a name="module_file-set#files"></a>
-###file-set.files
+####file-set.files
 the prototype instance property
 
 <a name="module_file-set#delete"></a>
-###file-set.delete(paths)
+####file-set.delete(paths)
 A prototype instance methy meth
 
 **Params**
