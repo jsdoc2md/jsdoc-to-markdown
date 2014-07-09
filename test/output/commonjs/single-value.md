@@ -4,5 +4,5 @@ this module exports one value, that's it
 
 **Members**
 
-  * [module.exports() ⏏](#module_single-value)
+  * [module.exports()](#module_single-value)
 

@@ -6,6 +6,6 @@
     {{#if (equal-some scope "inner")}}~{{/if~}}
   {{/if~}}
   {{aliasName}}({{methodSig params}})
-  {{~>name-suffix~}}
+  {{~#if (equal kind "function")}}{{>name-suffix}}{{/if~}}
   {{#if deprecated}}~~{{/if~}}
 {{~/if}}

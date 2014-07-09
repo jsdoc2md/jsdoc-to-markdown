@@ -10,7 +10,9 @@
     "docs": "node test/render.js && node bin/cli.js -t jsdoc2md/README.hbs lib/jsdoc-to-markdown.js > README.md; ",
     "watch": "baldrick --do 'npm run docs' --when test/input/*/*.js partials/* --change --speak",
     "lint": "jshint helpers/*.js bin/*.js lib/*.js; echo",
-    "index": "jsdoc2md test/input/**/*.js -p index > test/output/all-with-index.md"
+    "index": "jsdoc2md test/input/**/*.js -p index > test/output/all-with-index.md",
+    "templates": "node test/templates.js",
+    "all": "npm run docs && npm run index && npm run templates;"
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"

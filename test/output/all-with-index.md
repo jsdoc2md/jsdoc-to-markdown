@@ -139,14 +139,14 @@ this class returns a pet of files
 
 **Members**
 
-  * [new FilePet(num) ⏏](#module_file-pet)
-  * [new FilePet(num) ⏏](#module_file-pet)
+  * [new FilePet(num)](#module_file-pet)
+  * [new FilePet(num)](#module_file-pet)
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-##new FilePet(num) ⏏
+##new FilePet(num)
 this is the contructor
 
 **Params**
@@ -185,7 +185,7 @@ A module representing a jacket.
 ##class: Jacket ⏏
 **Members**
 
-  * [new Jacket() ⏏](#module_jacket)
+  * [new Jacket()](#module_jacket)
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
@@ -200,7 +200,7 @@ A module representing a coat.
 ##class: Coat ⏏
 **Members**
 
-  * [new Coat() ⏏](#module_coat)
+  * [new Coat()](#module_coat)
 * [coat.zip()](#module_coat#zip)
 
 <a name="module_coat#zip"></a>
@@ -216,7 +216,7 @@ A module representing a blouse.
 ##class: Blouse ⏏
 **Members**
 
-  * [new Blouse() ⏏](#module_blouse)
+  * [new Blouse()](#module_blouse)
 * [blouse.zip()](#module_blouse#zip)
 
 <a name="module_blouse#zip"></a>
@@ -321,13 +321,13 @@ this class returns a set of files
 
 **Members**
 
-  * [new FileSet() ⏏](#module_file-set)
-  * [new FileSet() ⏏](#module_file-set)
+  * [new FileSet()](#module_file-set)
+  * [new FileSet()](#module_file-set)
 * [file-set.files](#module_file-set#files)
 * [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set"></a>
-##new FileSet() ⏏
+##new FileSet()
 Takes a list of path patterns
 
 **Params**
@@ -561,7 +561,7 @@ this module exports one value, that's it
 
 **Members**
 
-  * [module.exports() ⏏](#module_commonjs/single-value)
+  * [module.exports()](#module_commonjs/single-value)
 
 #Globals
 <a name="CONST_ONE"></a>

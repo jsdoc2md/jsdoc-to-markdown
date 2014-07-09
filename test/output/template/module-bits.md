@@ -21,13 +21,13 @@ this class returns a set of files
 
 **Members**
 
-  * [new FileSet() ⏏](#module_file-set)
-  * [new FileSet() ⏏](#module_file-set)
+  * [new FileSet()](#module_file-set)
+  * [new FileSet()](#module_file-set)
 * [file-set.files](#module_file-set#files)
 * [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set"></a>
-#new FileSet() ⏏
+#new FileSet()
 Takes a list of path patterns
 
 **Params**
