@@ -6,7 +6,7 @@ factory module creating dodgy cloud. object-with-static-class.
 
 * [heaven.Cloud](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
-* [const: \~FACT](#module_heaven.FACT)
+* [const: heaven~FACT](#module_heaven.FACT)
 * [class: heaven~Cloud](#module_heaven.Cloud)
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
@@ -23,7 +23,7 @@ access to the Cloud class
 ###heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.FACT"></a>
-###const: \~FACT
+###const: heaven~FACT
 an inner constant
 
 **Scope**: inner constant of [heaven](#module_heaven)  

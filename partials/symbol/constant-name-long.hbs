@@ -1,10 +1,10 @@
 {{#if name}}
   {{~#if deprecated}}~~{{/if~}}
-  const: {{#if (equal scope "inner")}}\~{{/if}}
-  {{~#if (equal-some scope "static" "instance")}}
-    {{~#if memberof}}{{parentName}}.{{/if}}
-  {{~/if}}
-  {{~{name}}}
-  {{~>name-suffix}}
-  {{~#if deprecated}}~~{{/if}}
-{{~/if}}
+  const: {{#if memberof}}{{parentName~}}
+    {{#if (equal-some scope "static" "instance" undefined)}}.{{/if~}}
+    {{#if (equal-some scope "inner")}}~{{/if~}}
+  {{/if~}}
+  {{{name}~}}
+  {{>name-suffix~}}
+  {{#if deprecated}}~~{{/if~}}
+{{/if}}
