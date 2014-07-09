@@ -4,14 +4,14 @@ This is a long piece of text all about a class
 ##The implementation
 <a name="module_heaven.Cloud"></a>
 #class: heaven~Cloud
-The main class of machine
+The main class for a cloud
 
 **Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
 
-* [cloud.eyes](#module_heaven.Cloud#eyes)
-* [cloud.vibe](#module_heaven.Cloud#vibe)
+* [cloud.size](#module_heaven.Cloud#size)
+* [cloud.rain](#module_heaven.Cloud#rain)
 * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
 * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
@@ -24,12 +24,14 @@ cloud constructor
 - options `object` - the options
 
 **Scope**: inner class of [heaven](#module_heaven)  
-<a name="module_heaven.Cloud#eyes"></a>
-##cloud.eyes
+<a name="module_heaven.Cloud#size"></a>
+##cloud.size
 **Type**: `number`  
-<a name="module_heaven.Cloud#vibe"></a>
-##cloud.vibe
-**Type**: `string`  
+**Default**: `4`  
+<a name="module_heaven.Cloud#rain"></a>
+##cloud.rain
+**Type**: `boolean`  
+**Default**: `false`  
 <a name="module_heaven.Cloud.classMethod"></a>
 ##Cloud.classMethod()
 a class method

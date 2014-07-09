@@ -22,9 +22,9 @@
       * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
       * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
       * [machine.vibe](#module_commonjs/class-inners.Machine#vibe)
-  * [FileSet](#module_FileSet) <sub>exports: class</sub>
-    * [fileSet.files](#module_FileSet#files)
-    * [fileSet.delete(paths)](#module_FileSet#delete)
+  * [file-set](#module_file-set) <sub>exports: class</sub>
+    * [file-set.files](#module_file-set#files)
+    * [file-set.delete(paths)](#module_file-set#delete)
   * [sum-alias](#module_sum-alias) <sub>exports: function</sub>
   * [commonjs/function](#module_commonjs/function) <sub>exports: function</sub>
   * [commonjs/ignore](#module_commonjs/ignore)
@@ -43,8 +43,8 @@
     * [heaven.createCloud()](#module_heaven.createCloud)
     * [class: heaven~Cloud](#module_heaven.Cloud)
       * [new heaven~Cloud(options)](#module_heaven.Cloud)
-      * [cloud.eyes](#module_heaven.Cloud#eyes)
-      * [cloud.vibe](#module_heaven.Cloud#vibe)
+      * [cloud.size](#module_heaven.Cloud#size)
+      * [cloud.rain](#module_heaven.Cloud#rain)
       * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
       * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
     * [const: \~FACT](#module_heaven.FACT)
@@ -70,6 +70,7 @@
   * [~~deprecated~~](#deprecated)
   * [readOnly](#readOnly)
   * [hasSince](#hasSince)
+  * [operate(options, callback)](#operate)
   * [read(filename, done)](#read)
   * [globalFunc()](#globalFunc)
   * [exampled()](#exampled)
@@ -305,8 +306,8 @@ the Machine constructor
 <a name="module_commonjs/class-inners.Machine#vibe"></a>
 ####machine.vibe
 **Type**: `string`  
-<a name="module_FileSet"></a>
-##FileSet
+<a name="module_file-set"></a>
+##file-set
 this module exports a class constructor
 
 **Example**  
@@ -314,36 +315,36 @@ this module exports a class constructor
 var FileSet = require("file-set");
 ```
 
-<a name="module_FileSet"></a>
+<a name="module_file-set"></a>
 ##class: FileSet ⏏
 this class returns a set of files
 
 **Members**
 
-  * [new FileSet(num) ⏏](#module_FileSet)
-  * [new FileSet(num) ⏏](#module_FileSet)
-* [fileSet.files](#module_FileSet#files)
-* [fileSet.delete(paths)](#module_FileSet#delete)
+  * [new FileSet() ⏏](#module_file-set)
+  * [new FileSet() ⏏](#module_file-set)
+* [file-set.files](#module_file-set#files)
+* [file-set.delete(paths)](#module_file-set#delete)
 
-<a name="module_FileSet"></a>
-##new FileSet(num) ⏏
+<a name="module_file-set"></a>
+##new FileSet() ⏏
 Takes a list of path patterns
 
 **Params**
 
-- num `Array.<string>` - a list of file patterns
+-  `Array.<string>` - a list of file patterns
 
 **Example**  
 ```js
 var cowFiles = new FileSet("cow/*");
 ```
 
-<a name="module_FileSet#files"></a>
-###fileSet.files
+<a name="module_file-set#files"></a>
+###file-set.files
 the prototype instance property
 
-<a name="module_FileSet#delete"></a>
-###fileSet.delete(paths)
+<a name="module_file-set#delete"></a>
+###file-set.delete(paths)
 A prototype instance methy meth
 
 **Params**
@@ -451,8 +452,8 @@ factory module creating dodgy cloud. object-with-static-class.
 * [heaven.createCloud()](#module_heaven.createCloud)
 * [class: heaven~Cloud](#module_heaven.Cloud)
       * [new heaven~Cloud(options)](#module_heaven.Cloud)
-  * [cloud.eyes](#module_heaven.Cloud#eyes)
-  * [cloud.vibe](#module_heaven.Cloud#vibe)
+  * [cloud.size](#module_heaven.Cloud#size)
+  * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 * [const: \~FACT](#module_heaven.FACT)
@@ -473,14 +474,14 @@ an inner constant
 **Type**: `boolean`  
 <a name="module_heaven.Cloud"></a>
 ###class: heaven~Cloud
-The main class of machine
+The main class for a cloud
 
 **Members**
 
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
 
-  * [cloud.eyes](#module_heaven.Cloud#eyes)
-  * [cloud.vibe](#module_heaven.Cloud#vibe)
+  * [cloud.size](#module_heaven.Cloud#size)
+  * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
@@ -493,12 +494,14 @@ cloud constructor
 - options `object` - the options
 
 **Scope**: inner class of [heaven](#module_heaven)  
-<a name="module_heaven.Cloud#eyes"></a>
-####cloud.eyes
+<a name="module_heaven.Cloud#size"></a>
+####cloud.size
 **Type**: `number`  
-<a name="module_heaven.Cloud#vibe"></a>
-####cloud.vibe
-**Type**: `string`  
+**Default**: `4`  
+<a name="module_heaven.Cloud#rain"></a>
+####cloud.rain
+**Type**: `boolean`  
+**Default**: `false`  
 <a name="module_heaven.Cloud.classMethod"></a>
 ####Cloud.classMethod()
 a class method
@@ -645,6 +648,14 @@ var next = "p";
 <a name="hasSince"></a>
 ##hasSince
 **Since**: v0.10.28  
+<a name="operate"></a>
+##operate(options, callback)
+**Params**
+
+- options `object` - The options
+- callback `string` - An option
+-  `function` - a callback invoked on completion
+
 <a name="read"></a>
 ##read(filename, done)
 **Params**
