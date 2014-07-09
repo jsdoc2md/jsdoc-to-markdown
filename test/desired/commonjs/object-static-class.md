@@ -4,28 +4,26 @@ factory module creating dodgy cloud. object-with-static-class.
 
 **API**
 
-* [heaven.Cloud {Cloud}](#module_heaven.Cloud)
+* [heaven.Cloud](#module_heaven.Cloud) [{Cloud}](#module_heaven.Cloud)
 * [heaven.createCloud()](#module_heaven.createCloud)
 
 **Inner members**
 
-* [heaven~FACT {const}](#module_heaven.FACT)
-* [heaven~Cloud {class}](#module_heaven.Cloud)
+* [heaven~FACT](#module_heaven.FACT) {const}
+* [heaven~Cloud](#module_heaven.Cloud) {class}
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
-  * [cloud.size {number=4}](#module_heaven.Cloud#size)
-  * [cloud.rain {boolean=false}](#module_heaven.Cloud#rain)
+  * [cloud.size](#module_heaven.Cloud#size) {number=4}
+  * [cloud.rain](#module_heaven.Cloud#rain) {boolean=false}
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-  * [Cloud.SPACES {const}](#module_heaven.Cloud.SPACES)
+  * [Cloud.SPACES](#module_heaven.Cloud.SPACES) {const}
 
 <a name="module_heaven.Cloud"></a>
 ##heaven.Cloud
 access to the Cloud class
 
 **Type**: [Cloud](#module_heaven.Cloud)  
-**Kind**: instance property
 <a name="module_heaven.createCloud"></a>
 ##heaven.createCloud()
-**Kind**: instance method  
 **Returns**: [Cloud](#module_heaven.Cloud)  
 
 <a name="module_heaven.FACT"></a>
