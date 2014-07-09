@@ -5,7 +5,7 @@ exports an object.. has an inner class.
 **Members**
 
 * [cyber.createMachine()](#module_class-inners.createMachine)
-* [\~something](#module_class-inners.something)
+* [cyber~something](#module_class-inners.something)
 * [class: cyber~Machine](#module_class-inners.Machine)
   * [new cyber~Machine(options)](#module_class-inners.Machine)
   * [machine.eyes](#module_class-inners.Machine#eyes)
@@ -15,7 +15,7 @@ exports an object.. has an inner class.
 ###cyber.createMachine()
 **Returns**: `module:cyberdyne~Machine`  
 <a name="module_class-inners.something"></a>
-###\~something
+###cyber~something
 random
 
 **Scope**: inner member of [class-inners](#module_class-inners)  

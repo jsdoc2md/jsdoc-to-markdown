@@ -17,7 +17,7 @@
   * [turtleneck.size](#module_shirt.Turtleneck#size)
   * [commonjs/class-inners](#module_commonjs/class-inners)
   * [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
-  * [\~something](#module_commonjs/class-inners.something)
+  * [cyber~something](#module_commonjs/class-inners.something)
   * [class: cyber~Machine](#module_commonjs/class-inners.Machine)
     * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
     * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
@@ -35,7 +35,7 @@
     * [_.three()](#module_commonjs/object-alias.three)
   * [cattle](#module_cattle)
     * [cattle.createCow()](#module_cattle.createCow)
-    * [\~innerMember](#module_cattle.innerMember)
+    * [cattle~innerMember](#module_cattle.innerMember)
     * [cattle~innerFuction()](#module_cattle.innerFuction)
     * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
   * [heaven](#module_heaven)
@@ -259,7 +259,7 @@ exports an object.. has an inner class.
 **Members**
 
 * [cyber.createMachine()](#module_commonjs/class-inners.createMachine)
-* [\~something](#module_commonjs/class-inners.something)
+* [cyber~something](#module_commonjs/class-inners.something)
 * [class: cyber~Machine](#module_commonjs/class-inners.Machine)
   * [new cyber~Machine(options)](#module_commonjs/class-inners.Machine)
   * [machine.eyes](#module_commonjs/class-inners.Machine#eyes)
@@ -269,7 +269,7 @@ exports an object.. has an inner class.
 ###cyber.createMachine()
 **Returns**: `module:cyberdyne~Machine`  
 <a name="module_commonjs/class-inners.something"></a>
-###\~something
+###cyber~something
 random
 
 **Scope**: inner member of [commonjs/class-inners](#module_commonjs/class-inners)  
@@ -406,7 +406,7 @@ exported object, with-inner-members
 **Members**
 
 * [cattle.createCow()](#module_cattle.createCow)
-* [\~innerMember](#module_cattle.innerMember)
+* [cattle~innerMember](#module_cattle.innerMember)
 * [cattle~innerFuction()](#module_cattle.innerFuction)
 * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
@@ -414,7 +414,7 @@ exported object, with-inner-members
 ###cattle.createCow()
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-###\~innerMember
+###cattle~innerMember
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  

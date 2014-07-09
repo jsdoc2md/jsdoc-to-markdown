@@ -5,7 +5,7 @@ exported object, with-inner-members
 **Members**
 
 * [cattle.createCow()](#module_cattle.createCow)
-* [\~innerMember](#module_cattle.innerMember)
+* [cattle~innerMember](#module_cattle.innerMember)
 * [cattle~innerFuction()](#module_cattle.innerFuction)
 * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
@@ -13,7 +13,7 @@ exported object, with-inner-members
 ###cattle.createCow()
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-###\~innerMember
+###cattle~innerMember
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
