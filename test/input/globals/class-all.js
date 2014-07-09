@@ -42,6 +42,9 @@ all.allTogether(true);
 ```
 */
 All.prototype.allThings = function(one, two){
+    /**
+    a rarseclart inner
+    */
     var some = "bs code";
 }
 

@@ -1,15 +1,20 @@
 {{#each (where data kind="member")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>member-name-long}}{{/link}}
 {{/each~}}
+
 {{#each (where data kind="function")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>function-name-long}}{{/link}}
 {{/each~}}
+
 {{#each (where data kind="class")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>class-name}}{{/link}}
 {{#if (constructorHasDocs)}}{{string-repeat "  " (depth2 ../offset)}}  * {{#link}}{{>function-name-long}}{{/link}}
 {{/if~}}
 {{>index-children offset=../offset ~}}
 {{/each~}}
+
 {{#each (where data kind="constant")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>constant-name-long}}{{/link}}
 {{/each~}}
+
 {{#each (where data kind="typedef")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>typedef-name}}{{/link}}
 {{/each~}}
+
 {{#each (where data kind="event")}}{{string-repeat "  " (depth2 ../offset)}}* {{#link}}{{>event-name}}{{/link}}
 {{/each~}}
