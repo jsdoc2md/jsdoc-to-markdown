@@ -3,7 +3,7 @@ This is a long piece of text all about a class
 
 ##The implementation
 <a name="module_heaven.Cloud"></a>
-##class: heaven~Cloud
+#class: heaven~Cloud
 The main class for a cloud
 
 **Members**
@@ -15,7 +15,7 @@ The main class for a cloud
 * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-###new heaven~Cloud(options)
+##new heaven~Cloud(options)
 cloud constructor
 
 **Params**
@@ -24,19 +24,19 @@ cloud constructor
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven.Cloud#size"></a>
-###cloud.size
+##cloud.size
 **Type**: `number`  
 **Default**: `4`  
 <a name="module_heaven.Cloud#rain"></a>
-###cloud.rain
+##cloud.rain
 **Type**: `boolean`  
 **Default**: `false`  
 <a name="module_heaven.Cloud.classMethod"></a>
-###Cloud.classMethod()
+##Cloud.classMethod()
 a class method
 
 <a name="module_heaven.Cloud.SPACES"></a>
-###const: Cloud.SPACES
+##const: Cloud.SPACES
 a class constant
 
 **Type**: `number`  

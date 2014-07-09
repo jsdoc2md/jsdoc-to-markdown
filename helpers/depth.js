@@ -2,19 +2,12 @@ module.exports = function(handlebars){
     var indexDepth = 0;
     var headingDepth = 0;
     
-    handlebars.registerHelper("depth", function(options){
-        return getDepth(options.data) + (options.data.root.argv["heading-depth"] - 1);
-    });
-    handlebars.registerHelper("depth2", function(offset, options){
-        return getDepth(options.data) + (offset || 0);
-    });
-    handlebars.registerHelper("currentDepth", function(options){
-        return getDepth(options.data);
+    handlebars.registerHelper("heading-depth", function(options){
+        return headingDepth + (options.data.root.argv["heading-depth"]);
     });
 
-    handlebars.registerHelper("heading-depth", function(options){
-        // console.log(options)
-        return headingDepth + (options.data.root.argv["heading-depth"]);
+    handlebars.registerHelper("heading-depth-set", function(depth){
+        headingDepth = depth;
     });
 
     handlebars.registerHelper("heading-depth-reset", function(){
