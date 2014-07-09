@@ -622,24 +622,6 @@ this module exports one value, that's it
   * [pizza.size](#Pizza#size)
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-<a name="CONST_ONE"></a>
-##const: CONST_ONE
-the first important constant
-
-**Type**: `number`  
-<a name="CONST_TWO"></a>
-##~~const: CONST_TWO~~
-This variable has all tags set
-
-***Deprecated***  
-**Type**: `boolean`  
-**Read only**: true  
-**Since**: v0.10.28  
-**Author**: Lloyd Brookes <lloyd@brookes.com>  
-**Example**  
-```js
-var CONST_TWO = true;
-```
 
 <a name="eFileType"></a>
 ##enum: eFileType
@@ -845,6 +827,40 @@ Set the magic number.
   - one `string` - first option
   - two `string` - second option
 
+<a name="CONST_ONE"></a>
+##const: CONST_ONE
+the first important constant
+
+**Type**: `number`  
+<a name="CONST_TWO"></a>
+##~~const: CONST_TWO~~
+This variable has all tags set
+
+***Deprecated***  
+**Type**: `boolean`  
+**Read only**: true  
+**Since**: v0.10.28  
+**Author**: Lloyd Brookes <lloyd@brookes.com>  
+**Example**  
+```js
+var CONST_TWO = true;
+```
+
+<a name="onComplete"></a>
+##callback: onComplete
+Called when an async operation completes
+
+**Params**
+
+- err `object` - an error, or `null`
+- result `string` - the result info
+
+**Type**: `function`  
+<a name="NumberLike"></a>
+##type: NumberLike
+A number, or a string containing a number.
+
+**Type**: `number` | `string`  
 <a name="All"></a>
 ##~~class: All~~
 a class with all of the things
@@ -1041,18 +1057,3 @@ This function takes variable input
 - ...args `string` - the property(s) as input
 - ...three `string` - more input
 
-<a name="onComplete"></a>
-##callback: onComplete
-Called when an async operation completes
-
-**Params**
-
-- err `object` - an error, or `null`
-- result `string` - the result info
-
-**Type**: `function`  
-<a name="NumberLike"></a>
-##type: NumberLike
-A number, or a string containing a number.
-
-**Type**: `number` | `string`  

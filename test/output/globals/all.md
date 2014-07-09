@@ -277,6 +277,21 @@ This variable has all tags set
 var CONST_TWO = true;
 ```
 
+<a name="onComplete"></a>
+##callback: onComplete
+Called when an async operation completes
+
+**Params**
+
+- err `object` - an error, or `null`
+- result `string` - the result info
+
+**Type**: `function`  
+<a name="NumberLike"></a>
+##type: NumberLike
+A number, or a string containing a number.
+
+**Type**: `number` | `string`  
 <a name="All"></a>
 ##~~class: All~~
 a class with all of the things
@@ -473,18 +488,3 @@ This function takes variable input
 - ...args `string` - the property(s) as input
 - ...three `string` - more input
 
-<a name="onComplete"></a>
-##callback: onComplete
-Called when an async operation completes
-
-**Params**
-
-- err `object` - an error, or `null`
-- result `string` - the result info
-
-**Type**: `function`  
-<a name="NumberLike"></a>
-##type: NumberLike
-A number, or a string containing a number.
-
-**Type**: `number` | `string`  
