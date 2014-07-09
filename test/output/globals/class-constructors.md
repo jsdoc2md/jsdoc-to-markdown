@@ -6,6 +6,7 @@
 * [class: Pipe](#Pipe)
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
+
 <a name="Person"></a>
 ##class: Person
 simple class description

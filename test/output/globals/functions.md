@@ -13,6 +13,7 @@
 * [returnsSomething()](#returnsSomething)
 * [returnsSomethingDesc()](#returnsSomethingDesc)
 * [returnsSeveral()](#returnsSeveral)
+
 <a name="globalFunc"></a>
 ##globalFunc()
 a global function

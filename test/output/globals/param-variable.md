@@ -2,6 +2,7 @@
 * [pluck(...prop)](#pluck)
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
 <a name="pluck"></a>
 ##pluck(...prop)
 This function takes variable input
