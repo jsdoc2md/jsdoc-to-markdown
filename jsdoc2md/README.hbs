@@ -28,7 +28,7 @@ Then add an `docs` build task to your `package.json` scripts, e.g.:
   "name": "my-web-app",
   "version": "1.0.0",
   "scripts": {
-    "docs": "jsdoc2md --index lib/*.js"
+    "docs": "jsdoc2md lib/*.js"
   }
 }
 ```
@@ -51,8 +51,7 @@ var fs = require("fs");
 
 gulp.task("docs", function(done){
     var options = {
-        src: "lib/**/*.js",
-        index: true
+        src: "lib/**/*.js"
     };
     var outputFile = "api.md";
     
@@ -75,9 +74,6 @@ $ jsdoc2md <options> <source_files>
 -j, --json                Output the template data only
 -h, --help                Print usage information
 --src <array>             The javascript source files. The default option.
---index                   Include an index for each module and class, linking to members
---skip-heading            Skip the module heading, useful if you already have the heading
-                          elsewhere in your template.
 --private                 Include symbols marked @private in the output
 --heading-depth <number>  root heading depth to begin the documentation from, defaults to 2 (`##`).
 ```

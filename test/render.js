@@ -10,7 +10,7 @@ function halt(err){
 }
 
 function render(input, output, preset){
-    jsdoc2md.render({ preset: preset, src: input, index: true }, function(err, result){
+    jsdoc2md.render({ preset: preset, src: input }, function(err, result){
         if (err) halt(err);
         mfs.write(output, result);
     });

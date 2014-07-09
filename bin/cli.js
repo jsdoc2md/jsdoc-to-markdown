@@ -15,17 +15,14 @@ var cli = cliArgs([
     { name: "json", alias: "j", type: Boolean,
       description: "Output the template data only"
     },
+    { name: "verbose", alias: "v", type: Boolean,
+      description: "More verbose output and error reporting"
+    },
     { name: "help", alias: "h", type: Boolean,
       description: "Print usage information"
     },
     { name: "src", type: Array, defaultOption: true,
       description: "The javascript source files. The default option."
-    },
-    { name: "index", type: Boolean,
-      description: "Include a symbol index at the head of each module and class"
-    },
-    { name: "skip-heading", type: Boolean,
-      description: "Skip the module heading, useful if you already have the heading\nelsewhere in your custom template."
     },
     { name: "private", type: Boolean,
       description: "Include symbols marked @private in the output"
@@ -57,7 +54,7 @@ jsdoc2md.render(argv, function(err, result){
 });
 
 function halt(err){
-    dope.red.error(err.stack || "Error: " + err.message);
+    dope.red.error((argv.verbose ? err.stack : "") || "Error: " + err.message);
     dope.error(usage);
     process.exit(1);
 }

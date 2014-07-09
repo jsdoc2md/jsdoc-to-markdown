@@ -28,7 +28,7 @@ Then add an `docs` build task to your `package.json` scripts, e.g.:
   "name": "my-web-app",
   "version": "1.0.0",
   "scripts": {
-    "docs": "jsdoc2md --index lib/*.js"
+    "docs": "jsdoc2md lib/*.js"
   }
 }
 ```
@@ -51,8 +51,7 @@ var fs = require("fs");
 
 gulp.task("docs", function(done){
     var options = {
-        src: "lib/**/*.js",
-        index: true
+        src: "lib/**/*.js"
     };
     var outputFile = "api.md";
     
@@ -75,9 +74,6 @@ $ jsdoc2md <options> <source_files>
 -j, --json                Output the template data only
 -h, --help                Print usage information
 --src <array>             The javascript source files. The default option.
---index                   Include an index for each module and class, linking to members
---skip-heading            Skip the module heading, useful if you already have the heading
-                          elsewhere in your template.
 --private                 Include symbols marked @private in the output
 --heading-depth <number>  root heading depth to begin the documentation from, defaults to 2 (`##`).
 ```
@@ -91,6 +87,7 @@ These projects have readme files rendered by `jsdoc2md`:
 
 #API Reference
 <a name="module_jsdoc-to-markdown"></a>
+##jsdoc-to-markdown
 **Example**  
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
@@ -111,8 +108,6 @@ var jsdoc2md = require("jsdoc-to-markdown");
   - [preset] `string` - Choose from one of the built-in templates
   - [json] `boolean` - Return the JSON template data only
   - [src] `Array.<string>` - The javascript source files
-  - [index] `boolean` - Include an index for each module and class, linking to members
-  - [skip-heading] `boolean` - Skip the module heading, useful if you already have the heading elsewhere in your template.
   - [private] `boolean` - Include symbols marked @private in the output
   - [heading-depth] `number` - Root heading depth, defaults to 2.
 -  [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion

@@ -1,5 +1,5 @@
-<a name="module_FileSet"></a>
-##FileSet
+<a name="module_file-set"></a>
+##file-set
 this module exports a class constructor
 
 **Example**  
@@ -7,36 +7,36 @@ this module exports a class constructor
 var FileSet = require("file-set");
 ```
 
-<a name="module_FileSet"></a>
+<a name="module_file-set"></a>
 ##class: FileSet ⏏
 this class returns a set of files
 
 **Members**
 
-  * [new FileSet(num) ⏏](#module_FileSet)
-  * [new FileSet(num) ⏏](#module_FileSet)
-* [fileSet.files](#module_FileSet#files)
-* [fileSet.delete(paths)](#module_FileSet#delete)
+  * [new FileSet() ⏏](#module_file-set)
+  * [new FileSet() ⏏](#module_file-set)
+* [file-set.files](#module_file-set#files)
+* [file-set.delete(paths)](#module_file-set#delete)
 
-<a name="module_FileSet"></a>
-##new FileSet(num) ⏏
+<a name="module_file-set"></a>
+##new FileSet() ⏏
 Takes a list of path patterns
 
 **Params**
 
-- num `Array.<string>` - a list of file patterns
+-  `Array.<string>` - a list of file patterns
 
 **Example**  
 ```js
 var cowFiles = new FileSet("cow/*");
 ```
 
-<a name="module_FileSet#files"></a>
-###fileSet.files
+<a name="module_file-set#files"></a>
+###file-set.files
 the prototype instance property
 
-<a name="module_FileSet#delete"></a>
-###fileSet.delete(paths)
+<a name="module_file-set#delete"></a>
+###file-set.delete(paths)
 A prototype instance methy meth
 
 **Params**
