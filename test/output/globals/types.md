@@ -1,8 +1,8 @@
-#Global
+###############Global
 * [doSomething(options)](#doSomething)
 
 <a name="doSomething"></a>
-#doSomething(options)
+###############doSomething(options)
 **Params**
 
 - options `object` - the function options

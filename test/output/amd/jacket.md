@@ -1,14 +1,14 @@
 <a name="module_jacket"></a>
-#jacket
+##############jacket
 A module representing a jacket.
 
 <a name="module_jacket"></a>
-##class: Jacket ⏏
+###############class: Jacket ⏏
 **Members**
 
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
-###jacket.zip()
+################jacket.zip()
 Open and close your Jacket.
 

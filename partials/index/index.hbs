@@ -1,8 +1,12 @@
 {{>heading}}Index
+
 * Modules
+{{index-depth-bump~}}
 {{#each (where @root kind="module")~}}
-{{string-repeat "  " (depth2 0)}}* {{#link}}{{>module-name}}{{/link}}{{>exports}}
+{{>indent}}* {{#link}}{{>module-name}}{{/link}}
+{{index-depth-bump~}}
 {{>index-children~}}
+{{index-depth-drop~}}
 {{/each}}
 * Globals
 {{#with (where (whereno @root kind="module") scope="global")~}}

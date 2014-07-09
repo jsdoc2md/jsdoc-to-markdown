@@ -86,12 +86,11 @@ These projects have readme files rendered by `jsdoc2md`:
 * https://github.com/75lb/command-line-args  (exports a class)
 
 #API Reference
-<a name="module_jsdoc-to-markdown"></a>
-#jsdoc-to-markdown
 **Example**  
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
+
 
 **Members**
 
@@ -122,3 +121,4 @@ Called by `jsdoc2md.render()` on completion.
 
 **Scope**: inner typedef of [jsdoc-to-markdown](#module_jsdoc-to-markdown)  
 **Type**: `function`  
+

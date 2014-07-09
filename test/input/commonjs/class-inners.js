@@ -1,7 +1,11 @@
 /**
 exports an object.. has an inner class.
-@module
+@module cyberdyne
 @alias cyber
+@example
+```js
+var cyber = require("cyberdyne");
+```
 */
 
 /**
