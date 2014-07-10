@@ -1,4 +1,4 @@
-Index
+#Index
 
 * Modules
 
@@ -16,7 +16,7 @@ Index
   * [readOnly](#readOnly)
   * [hasSince](#hasSince)
 
-Global
+#Global
 * [variable](#variable)
 * [typed](#typed)
 * [types](#types)
@@ -31,17 +31,17 @@ Global
 * [hasSince](#hasSince)
 
 <a name="variable"></a>
-variable
+##variable
 a global variable
 
 <a name="typed"></a>
-typed
+##typed
 **Type**: `string`  
 <a name="types"></a>
-types
+##types
 **Type**: `string` | `number`  
 <a name="exampled"></a>
-exampled
+##exampled
 a var with an example
 
 **Example**  
@@ -50,7 +50,7 @@ var another = 100;
 ```
 
 <a name="examples"></a>
-examples
+##examples
 a var with multiple examples
 
 **Example**  
@@ -64,23 +64,23 @@ var next = "p";
 ```
 
 <a name="_protected"></a>
-_protected
+##_protected
 **Access**: protected  
 <a name="withAuthor"></a>
-withAuthor
+##withAuthor
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-hasDefault
+##hasDefault
 **Default**: `23`  
 <a name="hasDefaultObject"></a>
-hasDefaultObject
+##hasDefaultObject
 **Default**: `{"one":1,"two":2}`  
 <a name="deprecated"></a>
-~~deprecated~~
+##~~deprecated~~
 ***Deprecated***  
 <a name="readOnly"></a>
-readOnly
+##readOnly
 **Read only**: true  
 <a name="hasSince"></a>
-hasSince
+##hasSince
 **Since**: v0.10.28  

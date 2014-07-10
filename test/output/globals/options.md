@@ -1,4 +1,4 @@
-Index
+#Index
 
 * Modules
 
@@ -6,12 +6,12 @@ Index
   * [doSomething(options)](#doSomething)
   * [doAnother(options)](#doAnother)
 
-Global
+#Global
 * [doSomething(options)](#doSomething)
 * [doAnother(options)](#doAnother)
 
 <a name="doSomething"></a>
-doSomething(options)
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -19,7 +19,7 @@ doSomething(options)
   - two `string` - second option
 
 <a name="doAnother"></a>
-doAnother(options)
+##doAnother(options)
 **Params**
 
 - options `Object` - the function options

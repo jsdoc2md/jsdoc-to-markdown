@@ -1,4 +1,4 @@
-Index
+#Index
 
 * Modules
 
@@ -66,7 +66,7 @@ Index
   * [class: Plucker](#Plucker)
     * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
-Global
+#Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)
 * [variable](#variable)
@@ -131,28 +131,28 @@ Global
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="eFileType"></a>
-enum: eFileType
+##enum: eFileType
 Enum for the `type` value
 
 **Type**: `number`  
 **Properties**: `NOEXIST`, `FILE`, `DIR`  
 **Read only**: true  
 <a name="visible"></a>
-visible
+##visible
 a visible global
 
 <a name="variable"></a>
-variable
+##variable
 a global variable
 
 <a name="typed"></a>
-typed
+##typed
 **Type**: `string`  
 <a name="types"></a>
-types
+##types
 **Type**: `string` | `number`  
 <a name="exampled"></a>
-exampled
+##exampled
 a var with an example
 
 **Example**  
@@ -161,7 +161,7 @@ var another = 100;
 ```
 
 <a name="examples"></a>
-examples
+##examples
 a var with multiple examples
 
 **Example**  
@@ -175,39 +175,39 @@ var next = "p";
 ```
 
 <a name="_protected"></a>
-_protected
+##_protected
 **Access**: protected  
 <a name="withAuthor"></a>
-withAuthor
+##withAuthor
 **Author**: Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-hasDefault
+##hasDefault
 **Default**: `23`  
 <a name="hasDefaultObject"></a>
-hasDefaultObject
+##hasDefaultObject
 **Default**: `{"one":1,"two":2}`  
 <a name="deprecated"></a>
-~~deprecated~~
+##~~deprecated~~
 ***Deprecated***  
 <a name="readOnly"></a>
-readOnly
+##readOnly
 **Read only**: true  
 <a name="hasSince"></a>
-hasSince
+##hasSince
 **Since**: v0.10.28  
 <a name="read"></a>
-read(filename, done)
+##read(filename, done)
 **Params**
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="globalFunc"></a>
-globalFunc()
+##globalFunc()
 a global function
 
 <a name="exampled"></a>
-exampled()
+##exampled()
 a function with an example
 
 **Example**  
@@ -216,7 +216,7 @@ var result = exampled();
 ```
 
 <a name="multiExampled"></a>
-multiExampled()
+##multiExampled()
 a function with multiple examples
 
 **Example**  
@@ -230,39 +230,39 @@ var next = "p";
 ```
 
 <a name="_protected"></a>
-_protected()
+##_protected()
 **Access**: protected  
 <a name="withAuthor"></a>
-withAuthor()
+##withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-~~oldFunction()~~
+##~~oldFunction()~~
 ***Deprecated***  
 <a name="newFunction"></a>
-newFunction()
+##newFunction()
 **Since**: v0.10.28  
 <a name="withParam"></a>
-withParam(one)
+##withParam(one)
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-withParams(one, two)
+##withParams(one, two)
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-withOptional(one, [two])
+##withOptional(one, [two])
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-withBullets(one, two)
+##withBullets(one, two)
 this description has 
 
 - bullet
@@ -276,16 +276,16 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-returnsSomething()
+##returnsSomething()
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-returnsSomethingDesc()
+##returnsSomethingDesc()
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-returnsSeveral()
+##returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  
 <a name="doSomething"></a>
-doSomething(options)
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -293,13 +293,13 @@ doSomething(options)
   - two `string` - second option
 
 <a name="doAnother"></a>
-doAnother(options)
+##doAnother(options)
 **Params**
 
 - options `Object` - the function options
 
 <a name="pluck"></a>
-pluck(...prop)
+##pluck(...prop)
 This function takes variable input
 
 **Params**
@@ -307,11 +307,11 @@ This function takes variable input
 - ...prop `string` - the property(s) as input
 
 <a name="requirer"></a>
-requirer()
+##requirer()
 ensure you have some-module installed
 
 <a name="setMagicNumber"></a>
-setMagicNumber(x)
+##setMagicNumber(x)
 Set the magic number.
 
 **Params**
@@ -319,7 +319,7 @@ Set the magic number.
 - x [NumberLike](#NumberLike) - The magic number.
 
 <a name="doSomething"></a>
-doSomething(options)
+##doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -327,12 +327,12 @@ doSomething(options)
   - two `string` - second option
 
 <a name="CONST_ONE"></a>
-const: CONST_ONE
+##const: CONST_ONE
 the first important constant
 
 **Type**: `number`  
 <a name="CONST_TWO"></a>
-~~const: CONST_TWO~~
+##~~const: CONST_TWO~~
 This variable has all tags set
 
 ***Deprecated***  
@@ -346,7 +346,7 @@ var CONST_TWO = true;
 ```
 
 <a name="onComplete"></a>
-callback: onComplete
+##callback: onComplete
 Called when an async operation completes
 
 **Params**
@@ -356,12 +356,12 @@ Called when an async operation completes
 
 **Type**: `function`  
 <a name="NumberLike"></a>
-type: NumberLike
+##type: NumberLike
 A number, or a string containing a number.
 
 **Type**: `number` | `string`  
 <a name="All"></a>
-~~class: All~~
+##~~class: All~~
 a class with all of the things
 
 **Members**
@@ -372,7 +372,7 @@ a class with all of the things
 * [~~all.allThings(one, two)~~](#All#allThings)
 
 <a name="All"></a>
-~~new All(input, [options])~~
+###~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -390,18 +390,18 @@ var yeah = new Everything(true);
 ```
 
 <a name="All#topping"></a>
-all.topping
+###all.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-all.size
+###all.size
 the general size
 
 <a name="All#allThings"></a>
-~~all.allThings(one, two)~~
+###~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**
@@ -419,7 +419,7 @@ all.allTogether(true);
 ```
 
 <a name="Person"></a>
-class: Person
+##class: Person
 simple class description
 
 **Members**
@@ -427,18 +427,18 @@ simple class description
 * [new Person()](#Person)
 
 <a name="Person"></a>
-new Person()
+###new Person()
 a constructor description
 
 **Extends**: `Object`  
 <a name="Car"></a>
-class: Car
+##class: Car
 **Members**
 
 * [new Car([options])](#Car)
 
 <a name="Car"></a>
-new Car([options])
+###new Car([options])
 a constructor with args
 
 **Params**
@@ -446,14 +446,14 @@ a constructor with args
 - [options] `object` - optional shit
 
 <a name="Pipe"></a>
-class: Pipe
+##class: Pipe
 a class which extends
 
 **Members**
 
 
 <a name="Everything"></a>
-~~class: Everything~~
+##~~class: Everything~~
 a class with all trimmings
 
 **Members**
@@ -461,7 +461,7 @@ a class with all trimmings
 * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
-~~new Everything(input, [options])~~
+###~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -479,33 +479,33 @@ var yeah = new Everything(true);
 ```
 
 <a name="Rice"></a>
-class: Rice
+##class: Rice
 **Members**
 
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
-event: "cooked"
+###event: "cooked"
 Fired when rice is ready
 
 <a name="Rice#event_cooking"></a>
-event: "cooking"
+###event: "cooking"
 Fired when rice is cooking
 
 <a name="Something"></a>
-class: Something
+##class: Something
 **Members**
 
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
-something.methodOne()
+###something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-~~something.allTogether(one, two)~~
+###~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**
@@ -523,31 +523,31 @@ something.allTogether(true);
 ```
 
 <a name="Pizza"></a>
-class: Pizza
+##class: Pizza
 **Members**
 
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-pizza.topping
+###pizza.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-pizza.size
+###pizza.size
 the general size
 
 <a name="Plucker"></a>
-class: Plucker
+##class: Plucker
 **Members**
 
 * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
-plucker.doPluck(one, ...args, ...three)
+###plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
 **Params**
