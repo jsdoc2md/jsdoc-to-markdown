@@ -4,10 +4,21 @@ This module exports a simple maths function
 
 **Example**  
 ```js
-var sum = require("sum");
+var sum = require("sum-alias");
 ```
 
-**Members**
+<a name="module_sum-alias"></a>
+##sum(a, b) ⏏
+Sums two numbers together
 
-* [sum(a, b) ⏏](#module_sum-alias)
+**Params**
+
+- a `number` - first number
+- b `number` - second number
+
+**Returns**: `number` - the result  
+**Example**  
+```js
+var result = sum(1, 1);
+```
 

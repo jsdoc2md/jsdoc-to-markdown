@@ -4,7 +4,7 @@ This module exports a simple maths function
 
 **Example**  
 ```js
-var sum = require("sum");
+var sum = require("sum-alias");
 ```
 
 <a name="module_sum"></a>

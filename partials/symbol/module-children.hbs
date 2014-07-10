@@ -4,7 +4,13 @@
     {{>class~}}
   {{/with~}}
 {{else~}}
-  {{>module-index~}}
-  {{>child-docs~}}
+  {{#if (findWhere @root longname=longname kind="function")~}}
+    {{#with (findWhere @root longname=longname kind="function")~}}
+      {{>function~}}
+    {{/with~}}
+  {{else~}}
+    {{>module-index~}}
+    {{>child-docs~}}
+  {{/if~}}
 {{/if~}}
 {{heading-depth-drop~}}
