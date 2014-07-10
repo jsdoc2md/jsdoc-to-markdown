@@ -55,11 +55,8 @@ if (argv.help){
     process.exit(0);
 }
 
-jsdoc2md.render(argv, function(err, result){
-    if (err) halt(err);
-    process.stdout.write(result);
-});
-
+jsdoc2md.render(argv).pipe(process.stdout);
+    
 function halt(err){
     if (argv){
         dope.red.error((argv.verbose ? err.stack : "") || "Error: " + err.message);

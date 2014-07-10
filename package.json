@@ -29,7 +29,7 @@
     "command-line-args": "^0.4.0",
     "console-dope": "^0.3.3",
     "file-set": "^0.2",
-    "jsdoc": "jsdoc3/jsdoc",
+    "jsdoc-parse": "^0.1.0",
     "more-fs": "^0.4.0",
     "object-tools": "^1.0.0",
     "string-tools": "^0.1.4"

@@ -95,7 +95,6 @@ var jsdoc2md = require("jsdoc-to-markdown");
 **Members**
 
 * [jsdoc2md.render(options)](#module_jsdoc-to-markdown.render)
-* [\~callback: onRender](#module_jsdoc-to-markdown.onRender)
 
 <a name="module_jsdoc-to-markdown.render"></a>
 ##jsdoc2md.render(options)
@@ -108,17 +107,5 @@ var jsdoc2md = require("jsdoc-to-markdown");
   - [src] `Array.<string>` - The javascript source files
   - [private] `boolean` - Include symbols marked @private in the output
   - [heading-depth] `number` - Root heading depth, defaults to 2.
--  [onRender](#module_jsdoc-to-markdown.onRender) - a callback invoked on completion
 
-<a name="module_jsdoc-to-markdown.onRender"></a>
-##\~callback: onRender
-Called by `jsdoc2md.render()` on completion.
-
-**Params**
-
-- err `object` - An error instance if applicable, else `null`
-- result `string` - the rendered markdown
-
-**Scope**: inner typedef of [jsdoc-to-markdown](#module_jsdoc-to-markdown)  
-**Type**: `function`  
 
