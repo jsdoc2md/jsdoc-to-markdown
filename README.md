@@ -112,7 +112,7 @@ Renders the jsdoc documentation from the specified source files as markdown.
 
 **Returns**: `stream` - A readable stream containing the rendered markdown  
 **Example**  
-```js
+```
 > jsdoc2md.render({ src: "lib/*.js" }).pipe(process.stdout);
 #jsdoc-to-markdown
 *Example**
