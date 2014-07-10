@@ -9,10 +9,10 @@ function halt(err){
     process.exit(1);
 }
 
-function render(options, output){
+function render(options, outputPath){
     jsdoc2md.render(options, function(err, result){
         if (err) halt(err);
-        mfs.write(output, result);
+        mfs.write(outputPath, result);
     });
 }
 
