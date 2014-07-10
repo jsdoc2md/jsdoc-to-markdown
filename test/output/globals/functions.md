@@ -1,45 +1,45 @@
-#Index
+##############Index
 
 * Modules
 
 * Globals
-        * [globalFunc()](#globalFunc)
-        * [exampled()](#exampled)
-        * [multiExampled()](#multiExampled)
-        * [_protected()](#_protected)
-        * [withAuthor()](#withAuthor)
-        * [~~oldFunction()~~](#oldFunction)
-        * [newFunction()](#newFunction)
-        * [withParam(one)](#withParam)
-        * [withParams(one, two)](#withParams)
-        * [withOptional(one, [two])](#withOptional)
-        * [withBullets(one, two)](#withBullets)
-        * [returnsSomething()](#returnsSomething)
-        * [returnsSomethingDesc()](#returnsSomethingDesc)
-        * [returnsSeveral()](#returnsSeveral)
+  * [globalFunc()](#globalFunc)
+  * [exampled()](#exampled)
+  * [multiExampled()](#multiExampled)
+  * [_protected()](#_protected)
+  * [withAuthor()](#withAuthor)
+  * [~~oldFunction()~~](#oldFunction)
+  * [newFunction()](#newFunction)
+  * [withParam(one)](#withParam)
+  * [withParams(one, two)](#withParams)
+  * [withOptional(one, [two])](#withOptional)
+  * [withBullets(one, two)](#withBullets)
+  * [returnsSomething()](#returnsSomething)
+  * [returnsSomethingDesc()](#returnsSomethingDesc)
+  * [returnsSeveral()](#returnsSeveral)
 
-#Global
-        * [globalFunc()](#globalFunc)
-        * [exampled()](#exampled)
-        * [multiExampled()](#multiExampled)
-        * [_protected()](#_protected)
-        * [withAuthor()](#withAuthor)
-        * [~~oldFunction()~~](#oldFunction)
-        * [newFunction()](#newFunction)
-        * [withParam(one)](#withParam)
-        * [withParams(one, two)](#withParams)
-        * [withOptional(one, [two])](#withOptional)
-        * [withBullets(one, two)](#withBullets)
-        * [returnsSomething()](#returnsSomething)
-        * [returnsSomethingDesc()](#returnsSomethingDesc)
-        * [returnsSeveral()](#returnsSeveral)
+##############Global
+  * [globalFunc()](#globalFunc)
+  * [exampled()](#exampled)
+  * [multiExampled()](#multiExampled)
+  * [_protected()](#_protected)
+  * [withAuthor()](#withAuthor)
+  * [~~oldFunction()~~](#oldFunction)
+  * [newFunction()](#newFunction)
+  * [withParam(one)](#withParam)
+  * [withParams(one, two)](#withParams)
+  * [withOptional(one, [two])](#withOptional)
+  * [withBullets(one, two)](#withBullets)
+  * [returnsSomething()](#returnsSomething)
+  * [returnsSomethingDesc()](#returnsSomethingDesc)
+  * [returnsSeveral()](#returnsSeveral)
 
 <a name="globalFunc"></a>
-#globalFunc()
+###############globalFunc()
 a global function
 
 <a name="exampled"></a>
-#exampled()
+###############exampled()
 a function with an example
 
 **Example**  
@@ -48,7 +48,7 @@ var result = exampled();
 ```
 
 <a name="multiExampled"></a>
-#multiExampled()
+###############multiExampled()
 a function with multiple examples
 
 **Example**  
@@ -62,39 +62,39 @@ var next = "p";
 ```
 
 <a name="_protected"></a>
-#_protected()
+###############_protected()
 **Access**: protected  
 <a name="withAuthor"></a>
-#withAuthor()
+###############withAuthor()
 **Author**: Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-#~~oldFunction()~~
+###############~~oldFunction()~~
 ***Deprecated***  
 <a name="newFunction"></a>
-#newFunction()
+###############newFunction()
 **Since**: v0.10.28  
 <a name="withParam"></a>
-#withParam(one)
+###############withParam(one)
 **Params**
 
 - one `string` - The input string
 
 <a name="withParams"></a>
-#withParams(one, two)
+###############withParams(one, two)
 **Params**
 
 - one `string` - The input string
 - two `object`
 
 <a name="withOptional"></a>
-#withOptional(one, [two])
+###############withOptional(one, [two])
 **Params**
 
 - one `string` - The input string
 - [two] `object` - this one is optional
 
 <a name="withBullets"></a>
-#withBullets(one, two)
+###############withBullets(one, two)
 this description has 
 
 - bullet
@@ -108,11 +108,11 @@ and needs this line to separate the above list from the below
 - two `object` - a second input
 
 <a name="returnsSomething"></a>
-#returnsSomething()
+###############returnsSomething()
 **Returns**: `string`  
 <a name="returnsSomethingDesc"></a>
-#returnsSomethingDesc()
+###############returnsSomethingDesc()
 **Returns**: `object` - this return has a description  
 <a name="returnsSeveral"></a>
-#returnsSeveral()
+###############returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  

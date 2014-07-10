@@ -1,14 +1,14 @@
-#Index
+#######Index
 
 * Modules
 
 * Globals
-    * [visible](#visible)
+  * [visible](#visible)
 
-#Global
-    * [visible](#visible)
+#######Global
+  * [visible](#visible)
 
 <a name="visible"></a>
-#visible
+########visible
 a visible global
 

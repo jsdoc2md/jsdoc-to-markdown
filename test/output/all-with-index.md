@@ -123,9 +123,8 @@
   * [class: Plucker](#Plucker)
     * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
-#Modules
 <a name="module_hello/world"></a>
-##hello/world
+#hello/world
 A module that says hello!
 
 **Members**
@@ -133,11 +132,11 @@ A module that says hello!
 * [hello/world.sayHello()](#module_hello/world.sayHello)
 
 <a name="module_hello/world.sayHello"></a>
-###hello/world.sayHello()
+##hello/world.sayHello()
 Say hello.
 
 <a name="module_file-pet"></a>
-##file-pet
+#file-pet
 this module returns a pet of files
 
 **Example**  
@@ -146,7 +145,7 @@ var cowFiles = FilePet("cow/*");
 ```
 
 <a name="module_file-pet"></a>
-###class: FilePet ⏏
+##class: FilePet ⏏
 this class returns a pet of files
 
 **Members**
@@ -157,7 +156,7 @@ this class returns a pet of files
 * [filePet.delete(paths)](#module_file-pet#delete)
 
 <a name="module_file-pet"></a>
-####new FilePet(num)
+###new FilePet(num)
 this is the contructor
 
 **Params**
@@ -171,17 +170,17 @@ var cowFiles = FilePet("cow/*");
 
 
 <a name="module_file-pet#instie"></a>
-####filePet.instie
+###filePet.instie
 an instance ting
 
 <a name="module_file-pet#files"></a>
-####filePet.files
+###filePet.files
 the prototype instance property
 
 **Type**: `boolean`  
 **Default**: `true`  
 <a name="module_file-pet#delete"></a>
-####filePet.delete(paths)
+###filePet.delete(paths)
 A prototype instance methy meth
 
 **Params**
@@ -189,50 +188,50 @@ A prototype instance methy meth
 - paths `array` - the paths to delete
 
 <a name="module_jacket"></a>
-##jacket
+#jacket
 A module representing a jacket.
 
 <a name="module_jacket"></a>
-###class: Jacket ⏏
+##class: Jacket ⏏
 **Members**
 
 * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
-####jacket.zip()
+###jacket.zip()
 Open and close your Jacket.
 
 <a name="module_coat"></a>
-##coat
+#coat
 A module representing a coat.
 
 <a name="module_coat"></a>
-###class: Coat ⏏
+##class: Coat ⏏
 **Members**
 
 * [coat.zip()](#module_coat#zip)
 
 <a name="module_coat#zip"></a>
-####coat.zip()
+###coat.zip()
 Open and close your Coat.
 
 <a name="module_blouse"></a>
-##blouse
+#blouse
 A module representing a blouse.
 
 **Scope**: inner module of [coat](#module_coat)  
 <a name="module_blouse"></a>
-###class: Blouse ⏏
+##class: Blouse ⏏
 **Members**
 
 * [blouse.zip()](#module_blouse#zip)
 
 <a name="module_blouse#zip"></a>
-####blouse.zip()
+###blouse.zip()
 Open and close your Blouse.
 
 <a name="module_shirt"></a>
-##shirt
+#shirt
 A module representing a shirt.
 
 **Version**: 1.0  
@@ -244,28 +243,28 @@ A module representing a shirt.
   * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.color"></a>
-###shirt.color
+##shirt.color
 A property of the module.
 
 <a name="module_shirt.Turtleneck"></a>
-###class: shirt.Turtleneck
+##class: shirt.Turtleneck
 **Members**
 
 * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
 * [turtleneck.size](#module_shirt.Turtleneck#size)
 
 <a name="module_shirt.Turtleneck"></a>
-####new shirt.Turtleneck()
+###new shirt.Turtleneck()
 **Params**
 
 -  `number` - the size innit
 
 <a name="module_shirt.Turtleneck#size"></a>
-####turtleneck.size
+###turtleneck.size
 A property of the class.
 
 <a name="module_cyberdyne"></a>
-##cyberdyne
+#cyberdyne
 exports an object.. has an inner class.
 
 **Example**  
@@ -283,15 +282,15 @@ var cyber = require("cyberdyne");
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.createMachine"></a>
-###cyber.createMachine()
+##cyber.createMachine()
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-###cyber~something
+##cyber~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine"></a>
-###class: cyber~Machine
+##class: cyber~Machine
 The main class of machine
 
 **Members**
@@ -301,7 +300,7 @@ The main class of machine
 * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.Machine"></a>
-####new cyber~Machine(options)
+###new cyber~Machine(options)
 the Machine constructor
 
 **Params**
@@ -310,13 +309,13 @@ the Machine constructor
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine#eyes"></a>
-####machine.eyes
+###machine.eyes
 **Type**: `number`  
 <a name="module_cyberdyne.Machine#vibe"></a>
-####machine.vibe
+###machine.vibe
 **Type**: `string`  
 <a name="module_file-set"></a>
-##file-set
+#file-set
 this module exports a class constructor
 
 **Example**  
@@ -325,7 +324,7 @@ var FileSet = require("file-set");
 ```
 
 <a name="module_file-set"></a>
-###class: FileSet ⏏
+##class: FileSet ⏏
 this class returns a set of files
 
 **Members**
@@ -335,7 +334,7 @@ this class returns a set of files
 * [file-set.delete(paths)](#module_file-set#delete)
 
 <a name="module_file-set"></a>
-####new FileSet()
+###new FileSet()
 Takes a list of path patterns
 
 **Params**
@@ -348,11 +347,11 @@ var cowFiles = new FileSet("cow/*");
 ```
 
 <a name="module_file-set#files"></a>
-####file-set.files
+###file-set.files
 the prototype instance property
 
 <a name="module_file-set#delete"></a>
-####file-set.delete(paths)
+###file-set.delete(paths)
 A prototype instance methy meth
 
 **Params**
@@ -360,7 +359,7 @@ A prototype instance methy meth
 - paths `array` - the paths to delete
 
 <a name="module_sum-alias"></a>
-##sum-alias
+#sum-alias
 This module exports a simple maths function
 
 **Example**  
@@ -373,7 +372,7 @@ var sum = require("sum");
 * [sum(a, b) ⏏](#module_sum-alias)
 
 <a name="module_commonjs/function"></a>
-##commonjs/function
+#commonjs/function
 This is the module description
 
 **Since**: v0.10.28  
@@ -383,7 +382,7 @@ This is the module description
 * [module.exports(one, two) ⏏](#module_commonjs/function)
 
 <a name="module_commonjs/ignore"></a>
-##commonjs/ignore
+#commonjs/ignore
 module with ignored shiz
 
 **Members**
@@ -391,11 +390,11 @@ module with ignored shiz
 * [ignore.visible](#module_commonjs/ignore.visible)
 
 <a name="module_commonjs/ignore.visible"></a>
-###ignore.visible
+##ignore.visible
 visible property
 
 <a name="module_commonjs/object-alias"></a>
-##commonjs/object-alias
+#commonjs/object-alias
 simple object export
 
 **Members**
@@ -405,19 +404,19 @@ simple object export
 * [_.three()](#module_commonjs/object-alias.three)
 
 <a name="module_commonjs/object-alias.one"></a>
-###_.one
+##_.one
 first property
 
 <a name="module_commonjs/object-alias.two"></a>
-###_.two
+##_.two
 second property
 
 <a name="module_commonjs/object-alias.three"></a>
-###_.three()
+##_.three()
 a function
 
 <a name="module_cattle"></a>
-##cattle
+#cattle
 exported object, with-inner-members
 
 **Members**
@@ -428,26 +427,26 @@ exported object, with-inner-members
 * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
 <a name="module_cattle.createCow"></a>
-###cattle.createCow()
+##cattle.createCow()
 **Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
-###cattle~innerMember
+##cattle~innerMember
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
 <a name="module_cattle.innerFuction"></a>
-###cattle~innerFuction()
+##cattle~innerFuction()
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_cattle.anotherInnerFuction"></a>
-###~~cattle~anotherInnerFuction()~~
+##~~cattle~anotherInnerFuction()~~
 another inner function
 
 ***Deprecated***  
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_heaven"></a>
-##heaven
+#heaven
 factory module creating dodgy cloud. object-with-static-class.
 
 **Members**
@@ -463,21 +462,21 @@ factory module creating dodgy cloud. object-with-static-class.
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-###heaven.Cloud
+##heaven.Cloud
 access to the Cloud class
 
 **Type**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
-###heaven.createCloud()
+##heaven.createCloud()
 **Returns**: [Cloud](#module_heaven.Cloud)  
 <a name="module_heaven.FACT"></a>
-###const: heaven~FACT
+##const: heaven~FACT
 an inner constant
 
 **Scope**: inner constant of [heaven](#module_heaven)  
 **Type**: `boolean`  
 <a name="module_heaven.Cloud"></a>
-###class: heaven~Cloud
+##class: heaven~Cloud
 The main class for a cloud
 
 **Members**
@@ -489,7 +488,7 @@ The main class for a cloud
 * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
-####new heaven~Cloud(options)
+###new heaven~Cloud(options)
 cloud constructor
 
 **Params**
@@ -498,24 +497,24 @@ cloud constructor
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven.Cloud#size"></a>
-####cloud.size
+###cloud.size
 **Type**: `number`  
 **Default**: `4`  
 <a name="module_heaven.Cloud#rain"></a>
-####cloud.rain
+###cloud.rain
 **Type**: `boolean`  
 **Default**: `false`  
 <a name="module_heaven.Cloud.classMethod"></a>
-####Cloud.classMethod()
+###Cloud.classMethod()
 a class method
 
 <a name="module_heaven.Cloud.SPACES"></a>
-####const: Cloud.SPACES
+###const: Cloud.SPACES
 a class constant
 
 **Type**: `number`  
 <a name="module_commonjs/object"></a>
-##commonjs/object
+#commonjs/object
 simple object export
 
 **Members**
@@ -524,11 +523,11 @@ simple object export
 * [object.three(four, five)](#module_commonjs/object.three)
 
 <a name="module_commonjs/object.one"></a>
-###object.one
+##object.one
 first property
 
 <a name="module_commonjs/object.three"></a>
-###object.three(four, five)
+##object.three(four, five)
 a function
 
 **Params**
@@ -545,7 +544,7 @@ allTogether(true);
 ```
 
 <a name="module_private"></a>
-##private
+#private
 module with private shiz
 
 **Members**
@@ -553,18 +552,18 @@ module with private shiz
 * [private.notprivate](#module_private.notprivate)
 
 <a name="module_private.notprivate"></a>
-###private.notprivate
+##private.notprivate
 visible property
 
 <a name="module_commonjs/single-value"></a>
-##commonjs/single-value
+#commonjs/single-value
 this module exports one value, that's it
 
 **Members**
 
 * [module.exports()](#module_commonjs/single-value)
 
-##Global
+#Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)
 * [variable](#variable)

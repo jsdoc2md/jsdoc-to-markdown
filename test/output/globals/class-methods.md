@@ -1,30 +1,30 @@
-#Index
+###Index
 
 * Modules
 
 * Globals
-      * [class: Something](#Something)
-        * [something.methodOne()](#Something#methodOne)
-        * [~~something.allTogether(one, two)~~](#Something#allTogether)
+  * [class: Something](#Something)
+    * [something.methodOne()](#Something#methodOne)
+    * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
-#Global
-      * [class: Something](#Something)
-        * [something.methodOne()](#Something#methodOne)
-        * [~~something.allTogether(one, two)~~](#Something#allTogether)
+###Global
+  * [class: Something](#Something)
+    * [something.methodOne()](#Something#methodOne)
+    * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something"></a>
-#class: Something
+####class: Something
 **Members**
 
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
-##something.methodOne()
+#####something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-##~~something.allTogether(one, two)~~
+#####~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**

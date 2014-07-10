@@ -1,4 +1,4 @@
-#Index
+##Index
 
 * Modules
   * [single-value](#module_single-value)
@@ -6,7 +6,7 @@
 * Globals
 
 <a name="module_single-value"></a>
-#single-value
+##single-value
 this module exports one value, that's it
 
 **Members**

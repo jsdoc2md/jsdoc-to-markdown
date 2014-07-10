@@ -1,4 +1,4 @@
-#Index
+##Index
 
 * Modules
   * [sum-alias](#module_sum-alias)
@@ -6,7 +6,7 @@
 * Globals
 
 <a name="module_sum-alias"></a>
-#sum-alias
+##sum-alias
 This module exports a simple maths function
 
 **Example**  
