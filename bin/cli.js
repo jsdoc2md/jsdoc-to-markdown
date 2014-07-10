@@ -29,6 +29,9 @@ var cli = cliArgs([
     },
     { name: "heading-depth", type: Number,
       description: "root heading depth to begin the documentation from, defaults to 2 (`##`)."
+    },
+    { name: "stats", alias: "s", type: Boolean,
+      description: "Print a few stats about the doclets parsed."
     }
 ]);
 var usage = cli.getUsage({
@@ -41,6 +44,10 @@ try{
     var argv = cli.parse();
 } catch(err){
     halt(err);
+}
+
+if(!argv.src){
+    halt(new Error("Please supply at least one source file"));
 }
 
 if (argv.help){
