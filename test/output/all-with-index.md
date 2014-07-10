@@ -9,15 +9,6 @@
     * [filePet.delete(paths)](#module_file-pet#delete)
   * [jacket](#module_jacket)
     * [jacket.zip()](#module_jacket#zip)
-  * [coat](#module_coat)
-    * [coat.zip()](#module_coat#zip)
-  * [blouse](#module_blouse)
-    * [blouse.zip()](#module_blouse#zip)
-  * [shirt](#module_shirt)
-    * [shirt.color](#module_shirt.color)
-    * [class: shirt.Turtleneck](#module_shirt.Turtleneck)
-      * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
-      * [turtleneck.size](#module_shirt.Turtleneck#size)
   * [cyberdyne](#module_cyberdyne)
     * [cyber.createMachine()](#module_cyberdyne.createMachine)
     * [cyber~something](#module_cyberdyne.something)
@@ -73,7 +64,6 @@
   * [~~deprecated~~](#deprecated)
   * [readOnly](#readOnly)
   * [hasSince](#hasSince)
-  * [operate(options, callback)](#operate)
   * [read(filename, done)](#read)
   * [globalFunc()](#globalFunc)
   * [exampled()](#exampled)
@@ -199,68 +189,6 @@ A module representing a jacket.
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
-
-<a name="module_coat"></a>
-#coat
-A module representing a coat.
-
-<a name="module_coat"></a>
-##class: Coat ⏏
-**Members**
-
-* [coat.zip()](#module_coat#zip)
-
-<a name="module_coat#zip"></a>
-###coat.zip()
-Open and close your Coat.
-
-<a name="module_blouse"></a>
-#blouse
-A module representing a blouse.
-
-**Scope**: inner module of [coat](#module_coat)  
-<a name="module_blouse"></a>
-##class: Blouse ⏏
-**Members**
-
-* [blouse.zip()](#module_blouse#zip)
-
-<a name="module_blouse#zip"></a>
-###blouse.zip()
-Open and close your Blouse.
-
-<a name="module_shirt"></a>
-#shirt
-A module representing a shirt.
-
-**Version**: 1.0  
-**Members**
-
-* [shirt.color](#module_shirt.color)
-* [class: shirt.Turtleneck](#module_shirt.Turtleneck)
-  * [new shirt.Turtleneck()](#module_shirt.Turtleneck)
-  * [turtleneck.size](#module_shirt.Turtleneck#size)
-
-<a name="module_shirt.color"></a>
-##shirt.color
-A property of the module.
-
-<a name="module_shirt.Turtleneck"></a>
-##class: shirt.Turtleneck
-**Members**
-
-* [new shirt.Turtleneck()](#module_shirt.Turtleneck)
-* [turtleneck.size](#module_shirt.Turtleneck#size)
-
-<a name="module_shirt.Turtleneck"></a>
-###new shirt.Turtleneck()
-**Params**
-
--  `number` - the size innit
-
-<a name="module_shirt.Turtleneck#size"></a>
-###turtleneck.size
-A property of the class.
 
 <a name="module_cyberdyne"></a>
 #cyberdyne
@@ -594,7 +522,6 @@ this module exports one value, that's it
 * [~~deprecated~~](#deprecated)
 * [readOnly](#readOnly)
 * [hasSince](#hasSince)
-* [operate(options, callback)](#operate)
 * [read(filename, done)](#read)
 * [globalFunc()](#globalFunc)
 * [exampled()](#exampled)
@@ -709,14 +636,6 @@ var next = "p";
 <a name="hasSince"></a>
 ##hasSince
 **Since**: v0.10.28  
-<a name="operate"></a>
-##operate(options, callback)
-**Params**
-
-- options `object` - The options
-- callback `string` - An option
--  `function` - a callback invoked on completion
-
 <a name="read"></a>
 ##read(filename, done)
 **Params**
