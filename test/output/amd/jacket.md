@@ -1,11 +1,3 @@
-#Index
-
-* Modules
-  * [jacket](#module_jacket)
-    * [jacket.zip()](#module_jacket#zip)
-
-* Globals
-
 <a name="module_jacket"></a>
 #jacket
 A module representing a jacket.

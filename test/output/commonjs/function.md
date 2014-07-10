@@ -1,10 +1,3 @@
-#Index
-
-* Modules
-  * [function](#module_function)
-
-* Globals
-
 <a name="module_function"></a>
 #function
 This is the module description

@@ -1,12 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [pluck(...prop)](#pluck)
-  * [class: Plucker](#Plucker)
-    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
 #Global
 * [pluck(...prop)](#pluck)
 * [class: Plucker](#Plucker)

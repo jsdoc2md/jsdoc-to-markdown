@@ -1,10 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [doSomething(options)](#doSomething)
-
 #Global
 * [doSomething(options)](#doSomething)
 

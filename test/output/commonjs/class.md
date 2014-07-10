@@ -1,12 +1,3 @@
-#Index
-
-* Modules
-  * [file-set](#module_file-set)
-    * [file-set.files](#module_file-set#files)
-    * [file-set.delete(paths)](#module_file-set#delete)
-
-* Globals
-
 <a name="module_file-set"></a>
 #file-set
 this module exports a class constructor

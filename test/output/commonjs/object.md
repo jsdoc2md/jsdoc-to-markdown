@@ -1,12 +1,3 @@
-#Index
-
-* Modules
-  * [object](#module_object)
-    * [object.one](#module_object.one)
-    * [object.three(four, five)](#module_object.three)
-
-* Globals
-
 <a name="module_object"></a>
 #object
 simple object export

@@ -1,16 +1,3 @@
-#Index
-
-* Modules
-  * [cyberdyne](#module_cyberdyne)
-    * [cyber.createMachine()](#module_cyberdyne.createMachine)
-    * [cyber~something](#module_cyberdyne.something)
-    * [class: cyber~Machine](#module_cyberdyne.Machine)
-      * [new cyber~Machine(options)](#module_cyberdyne.Machine)
-      * [machine.eyes](#module_cyberdyne.Machine#eyes)
-      * [machine.vibe](#module_cyberdyne.Machine#vibe)
-
-* Globals
-
 <a name="module_cyberdyne"></a>
 #cyberdyne
 exports an object.. has an inner class.

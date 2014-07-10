@@ -58,7 +58,7 @@
     * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value)
 
-* Globals
+* Global
   * [enum: eFileType](#eFileType)
   * [visible](#visible)
   * [variable](#variable)
@@ -122,7 +122,6 @@
     * [pizza.size](#Pizza#size)
   * [class: Plucker](#Plucker)
     * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
 <a name="module_hello/world"></a>
 #hello/world
 A module that says hello!

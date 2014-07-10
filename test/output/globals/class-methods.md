@@ -1,12 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [class: Something](#Something)
-    * [something.methodOne()](#Something#methodOne)
-    * [~~something.allTogether(one, two)~~](#Something#allTogether)
-
 #Global
 * [class: Something](#Something)
   * [something.methodOne()](#Something#methodOne)

@@ -1,13 +1,3 @@
-#Index
-
-* Modules
-  * [object-alias](#module_object-alias)
-    * [_.one](#module_object-alias.one)
-    * [_.two](#module_object-alias.two)
-    * [_.three()](#module_object-alias.three)
-
-* Globals
-
 <a name="module_object-alias"></a>
 #object-alias
 simple object export

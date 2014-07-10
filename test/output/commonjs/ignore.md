@@ -1,11 +1,3 @@
-#Index
-
-* Modules
-  * [ignore](#module_ignore)
-    * [ignore.visible](#module_ignore.visible)
-
-* Globals
-
 <a name="module_ignore"></a>
 #ignore
 module with ignored shiz

@@ -1,12 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [class: Rice](#Rice)
-    * [event: "cooked"](#Rice#event_cooked)
-    * [event: "cooking"](#Rice#event_cooking)
-
 #Global
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)

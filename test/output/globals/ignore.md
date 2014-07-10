@@ -1,10 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [visible](#visible)
-
 #Global
 * [visible](#visible)
 

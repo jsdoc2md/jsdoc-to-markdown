@@ -1,12 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [class: Pizza](#Pizza)
-    * [pizza.topping](#Pizza#topping)
-    * [pizza.size](#Pizza#size)
-
 #Global
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)

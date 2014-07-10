@@ -1,11 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [read(filename, done)](#read)
-  * [callback: onComplete](#onComplete)
-
 #Global
 * [read(filename, done)](#read)
 * [callback: onComplete](#onComplete)

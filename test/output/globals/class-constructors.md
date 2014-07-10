@@ -1,16 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [class: Person](#Person)
-    * [new Person()](#Person)
-  * [class: Car](#Car)
-    * [new Car([options])](#Car)
-  * [class: Pipe](#Pipe)
-  * [~~class: Everything~~](#Everything)
-    * [~~new Everything(input, [options])~~](#Everything)
-
 #Global
 * [class: Person](#Person)
   * [new Person()](#Person)

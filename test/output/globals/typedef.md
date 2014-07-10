@@ -1,11 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [setMagicNumber(x)](#setMagicNumber)
-  * [type: NumberLike](#NumberLike)
-
 #Global
 * [setMagicNumber(x)](#setMagicNumber)
 * [type: NumberLike](#NumberLike)

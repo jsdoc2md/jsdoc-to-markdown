@@ -1,14 +1,3 @@
-#Index
-
-* Modules
-  * [cattle](#module_cattle)
-    * [cattle.createCow()](#module_cattle.createCow)
-    * [cattle~innerMember](#module_cattle.innerMember)
-    * [cattle~innerFuction()](#module_cattle.innerFuction)
-    * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
-
-* Globals
-
 <a name="module_cattle"></a>
 #cattle
 exported object, with-inner-members

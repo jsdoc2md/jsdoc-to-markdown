@@ -1,10 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [enum: eFileType](#eFileType)
-
 #Global
 * [enum: eFileType](#eFileType)
 

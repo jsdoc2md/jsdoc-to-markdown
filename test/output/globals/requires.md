@@ -1,10 +1,3 @@
-#Index
-
-* Modules
-
-* Globals
-  * [requirer()](#requirer)
-
 #Global
 * [requirer()](#requirer)
 
