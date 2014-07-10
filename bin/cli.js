@@ -3,7 +3,7 @@
 
 var cliArgs = require("command-line-args"),
     dope = require("console-dope"),
-    jsdoc2md = require("../lib/jsdoc-to-markdown");
+    jsdoc2md = require("../");
     
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
