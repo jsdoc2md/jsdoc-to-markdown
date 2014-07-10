@@ -116,9 +116,7 @@ Renders the jsdoc documentation from the specified source files as markdown.
 > jsdoc2md.render({ src: "lib/*.js" }).pipe(process.stdout);
 #jsdoc-to-markdown
 *Example**
-```js
 var jsdoc2md = require("jsdoc-to-markdown");
-```
 
 ##jsdoc2md.render(options)
 Renders the jsdoc documentation from the specified source files as markdown.
