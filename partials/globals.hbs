@@ -1,6 +1,7 @@
 {{#with (where (whereno @root kind="module") scope="global")~}}
 {{>heading}}Global
-{{heading-depth-bump~}}
 {{>index-symbols data=this}}
+{{heading-depth-bump~}}
 {{>symbols data=this~}}
 {{/with~}}
+{{heading-depth-drop~}}

@@ -1,4 +1,4 @@
-#Index
+Index
 
 * Modules
   * [object-alias](#module_object-alias)
@@ -9,7 +9,7 @@
 * Globals
 
 <a name="module_object-alias"></a>
-#object-alias
+object-alias
 simple object export
 
 **Members**
@@ -19,14 +19,14 @@ simple object export
 * [_.three()](#module_object-alias.three)
 
 <a name="module_object-alias.one"></a>
-##_.one
+_.one
 first property
 
 <a name="module_object-alias.two"></a>
-##_.two
+_.two
 second property
 
 <a name="module_object-alias.three"></a>
-##_.three()
+_.three()
 a function
 

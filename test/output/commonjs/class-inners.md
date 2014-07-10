@@ -1,4 +1,4 @@
-##Index
+Index
 
 * Modules
   * [cyberdyne](#module_cyberdyne)
@@ -12,7 +12,7 @@
 * Globals
 
 <a name="module_cyberdyne"></a>
-##cyberdyne
+cyberdyne
 exports an object.. has an inner class.
 
 **Example**  
@@ -30,15 +30,15 @@ var cyber = require("cyberdyne");
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.createMachine"></a>
-###cyber.createMachine()
+cyber.createMachine()
 **Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
-###cyber~something
+cyber~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine"></a>
-###class: cyber~Machine
+class: cyber~Machine
 The main class of machine
 
 **Members**
@@ -48,7 +48,7 @@ The main class of machine
 * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.Machine"></a>
-####new cyber~Machine(options)
+new cyber~Machine(options)
 the Machine constructor
 
 **Params**
@@ -57,8 +57,8 @@ the Machine constructor
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.Machine#eyes"></a>
-####machine.eyes
+machine.eyes
 **Type**: `number`  
 <a name="module_cyberdyne.Machine#vibe"></a>
-####machine.vibe
+machine.vibe
 **Type**: `string`  
