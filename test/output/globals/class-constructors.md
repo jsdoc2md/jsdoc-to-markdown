@@ -1,14 +1,27 @@
-#############Global
-* [class: Person](#Person)
-  * [new Person()](#Person)
-* [class: Car](#Car)
-  * [new Car([options])](#Car)
-* [class: Pipe](#Pipe)
-* [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+#Index
+
+* Modules
+
+* Globals
+  * [class: Person](#Person)
+    * [new Person()](#Person)
+  * [class: Car](#Car)
+    * [new Car([options])](#Car)
+  * [class: Pipe](#Pipe)
+  * [~~class: Everything~~](#Everything)
+    * [~~new Everything(input, [options])~~](#Everything)
+
+#Global
+  * [class: Person](#Person)
+    * [new Person()](#Person)
+  * [class: Car](#Car)
+    * [new Car([options])](#Car)
+  * [class: Pipe](#Pipe)
+  * [~~class: Everything~~](#Everything)
+    * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Person"></a>
-#############class: Person
+#class: Person
 simple class description
 
 **Members**
@@ -16,18 +29,18 @@ simple class description
 * [new Person()](#Person)
 
 <a name="Person"></a>
-##############new Person()
+##new Person()
 a constructor description
 
 **Extends**: `Object`  
 <a name="Car"></a>
-#############class: Car
+#class: Car
 **Members**
 
 * [new Car([options])](#Car)
 
 <a name="Car"></a>
-##############new Car([options])
+##new Car([options])
 a constructor with args
 
 **Params**
@@ -35,14 +48,14 @@ a constructor with args
 - [options] `object` - optional shit
 
 <a name="Pipe"></a>
-#############class: Pipe
+#class: Pipe
 a class which extends
 
 **Members**
 
 
 <a name="Everything"></a>
-#############~~class: Everything~~
+#~~class: Everything~~
 a class with all trimmings
 
 **Members**
@@ -50,7 +63,7 @@ a class with all trimmings
 * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
-##############~~new Everything(input, [options])~~
+##~~new Everything(input, [options])~~
 the constructor description
 
 **Params**

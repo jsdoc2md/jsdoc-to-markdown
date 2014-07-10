@@ -1,9 +1,17 @@
-###############Global
-* [doSomething(options)](#doSomething)
-* [doAnother(options)](#doAnother)
+#Index
+
+* Modules
+
+* Globals
+      * [doSomething(options)](#doSomething)
+      * [doAnother(options)](#doAnother)
+
+#Global
+      * [doSomething(options)](#doSomething)
+      * [doAnother(options)](#doAnother)
 
 <a name="doSomething"></a>
-###############doSomething(options)
+#doSomething(options)
 **Params**
 
 - options `object` - the function options
@@ -11,7 +19,7 @@
   - two `string` - second option
 
 <a name="doAnother"></a>
-###############doAnother(options)
+#doAnother(options)
 **Params**
 
 - options `Object` - the function options

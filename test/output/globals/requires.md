@@ -1,7 +1,14 @@
-###############Global
-* [requirer()](#requirer)
+#Index
+
+* Modules
+
+* Globals
+    * [requirer()](#requirer)
+
+#Global
+    * [requirer()](#requirer)
 
 <a name="requirer"></a>
-###############requirer()
+#requirer()
 ensure you have some-module installed
 

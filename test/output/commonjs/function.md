@@ -1,5 +1,12 @@
+#Index
+
+* Modules
+  * [function](#module_function)
+
+* Globals
+
 <a name="module_function"></a>
-########function
+#function
 This is the module description
 
 **Since**: v0.10.28  

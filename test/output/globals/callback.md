@@ -1,16 +1,24 @@
-#############Global
-* [read(filename, done)](#read)
-* [callback: onComplete](#onComplete)
+#Index
+
+* Modules
+
+* Globals
+  * [read(filename, done)](#read)
+  * [callback: onComplete](#onComplete)
+
+#Global
+  * [read(filename, done)](#read)
+  * [callback: onComplete](#onComplete)
 
 <a name="read"></a>
-#############read(filename, done)
+#read(filename, done)
 **Params**
 
 - filename `string` - the filename
 - done [onComplete](#onComplete) - the callback
 
 <a name="onComplete"></a>
-#############callback: onComplete
+#callback: onComplete
 Called when an async operation completes
 
 **Params**
