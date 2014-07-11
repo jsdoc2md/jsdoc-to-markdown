@@ -113,24 +113,33 @@ Renders the jsdoc documentation from the specified source files as markdown.
 
 **Returns**: `stream` - A readable stream containing the rendered markdown  
 **Example**  
-```
+this code:
+```js
 > jsdoc2md.render("lib/*.js").pipe(process.stdout);
+```
+generates:
+```markdown
 #jsdoc-to-markdown
-*Example**
-var jsdoc2md = require("jsdoc-to-markdown");
+*Members**
+[jsdoc2md.render(sourceFiles, options)](#module_jsdoc-to-markdown.render)
+[jsdoc2md.createRenderStream(options)](#module_jsdoc-to-markdown.createRenderStream)
 
-##jsdoc2md.render(options)
+<a name="module_jsdoc-to-markdown.render"></a>
+##jsdoc2md.render(sourceFiles, options)
 Renders the jsdoc documentation from the specified source files as markdown.
 *Params**
 
+- sourceFiles `string` | `Array.<string>` - The javascript source file(s) - required.
 - options `object` - The render options
-  - src `Array.<string>` - The javascript source files - required.
   - [template] `string` - A handlebars template to insert your documentation into.
   - [preset] `string` - Choose from one of the built-in templates
   - [json] `boolean` - Return the JSON template data only
   - [private] `boolean` - Include symbols marked @private in the output
   - [heading-depth] `number` - Root heading depth, defaults to 2.
 *Returns**: `stream` - A readable stream containing the rendered markdown
+
+etc.
+etc.
 ```
 
 <a name="module_jsdoc-to-markdown.createRenderStream"></a>
