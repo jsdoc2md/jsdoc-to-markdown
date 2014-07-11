@@ -80,32 +80,45 @@ These projects have readme files rendered by `jsdoc2md`:
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
 ##Templating
-The default template anatomy: 
+Running `jsdoc2md` without supplying a custom `--template` will generate documentation with the default template. The default template anatomy: 
 
-    {{index}}
-    {{modules}}
-    {{globals}}
-    {{others}}
+    {{>index}}
+    {{>modules}}
+    {{>globals}}
+    {{>others}}
     
-###{{index}}
+###{{>index}}
 Only output if there are at least two modules defined. 
 
     #Index
     
     * Modules
-      * {{module-name}}
-        * {{module-members}}
+      * {{>module-name}}
+        * {{>module-members}}
     * Global
-      * {{global-name}}
+      * {{>global-name}}
 
-###{{modules}}
-Outputs one {{module}} partial per module.
+###{{>modules}}
+Outputs one {{>module}} partial per module.
 
-###{{globals}}
+####{{>module}}
+
+  {{>module-head}}
+  {{>module-body}}
+  {{>module-children}}
+
+#####{{>module-head}}
+
+    {{>anchor}}
+    {{#if name}}{{>heading}}{{>module-name~}}
+    {{/if}}
+
+
+###{{>globals}}
 
     #Global
-    
-    
+    {{>global-index}}
+    {{>global-symbols}}
 
 ##API Reference
 **Example**  
