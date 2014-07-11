@@ -36,8 +36,11 @@ var cli = cliArgs([
 ]);
 var usage = cli.getUsage({
     title: "jsdoc-to-markdown",
-    header: "Renders jsdoc documentation as markdown",
-    forms: [ "$ jsdoc2md <options> <source_files>" ]
+    header: "Markdown API documentation generator, good for Github projects",
+    forms: [
+        "$ jsdoc2md [<options>] <source_files>",
+        "$ cat doclets.json | jsdoc2md [<options>]"
+    ]
 });
 
 try{

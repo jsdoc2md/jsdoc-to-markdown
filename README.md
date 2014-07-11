@@ -58,9 +58,10 @@ gulp.task("docs", function(done){
 ```
 
 ##Usage
-Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`. 
+Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`. If no `<source_files>` are supplied it will look for doclet data on `stdin`. 
 ```
-$ jsdoc2md <options> <source_files>
+$ jsdoc2md [<options>] [<source_files>]
+$ cat doclets.json | jsdoc2md [<options>]
 
 -t, --template <string>   A custom handlebars template to insert the rendered documentation into,
                           overriding the default
@@ -110,9 +111,31 @@ Outputs one {{>module}} partial per module.
 #####{{>module-head}}
 
     {{>anchor}}
-    {{#if name}}{{>heading}}{{>module-name~}}
-    {{/if}}
+    {{>heading}}{{>module-name}}
+    
+#####{{>module-body}}
 
+    {{>fields}}
+    
+####{{>fields}}
+
+    {{>description~}}
+    {{>params~}}
+    {{>deprecated~}}
+    {{>augments~}}
+    {{>memberof~}}
+    {{>type~}}
+    {{>default~}}
+    {{>returns~}}
+    {{>access~}}
+    {{>enum~}}
+    {{>readOnly~}}
+    {{>since~}}
+    {{>version~}}
+    {{>authors~}}
+    {{>license~}}
+    {{>copyright~}}
+    {{>examples~}}
 
 ###{{>globals}}
 
