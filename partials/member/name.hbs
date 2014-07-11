@@ -1,0 +1,10 @@
+{{#if name}}
+  {{~#if deprecated}}~~{{/if~}}
+  {{>name-prefix~}}
+  {{#if memberof}}{{parentName}}{{/if~}}
+  {{#if (equal-some scope "static" "instance")}}.{{~/if~}}
+  {{#if (equal-some scope "inner")}}~{{/if~}}
+  {{>name-main~}}
+  {{>name-suffix~}}
+  {{#if deprecated}}~~{{/if~}}
+{{/if}}
