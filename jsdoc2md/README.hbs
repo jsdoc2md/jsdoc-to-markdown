@@ -74,18 +74,18 @@ $ jsdoc2md <options> <source_files>
 
 ##examples
 These projects have readme files rendered by `jsdoc2md`:
-* https://github.com/75lb/handbrake-js (exports an object with inner class)
-* https://github.com/75lb/array-tools (exports a object)
-* https://github.com/75lb/file-set (exports a class)
-* https://github.com/75lb/command-line-args  (exports a class)
+* [handbrake-js](https://github.com/75lb/handbrake-js) (exports an object with inner class)
+* [array-tools](https://github.com/75lb/array-tools) (exports a object)
+* [file-set](https://github.com/75lb/file-set) (exports a class)
+* [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
 ##Custom Templates
 The default template anatomy: 
 
-    {{index}}
-    {{modules}}
-    {{globals}}
-    {{others}}
+    \{{index}}
+    \{{modules}}
+    \{{globals}}
+    \{{others}}
     
 ###Index
 Only output if there are at least two modules defined. 
@@ -93,10 +93,10 @@ Only output if there are at least two modules defined.
     #Index
     
     * Modules
-      * {{module-name}}
-        * {{module-members}}
+      * \{{module-name}}
+        * \{{module-members}}
     * Global
-      * {{global-members}}
+      * \{{global-members}}
 
 ##API Reference
 {{>specific-module-body name="jsdoc-to-markdown"}}
