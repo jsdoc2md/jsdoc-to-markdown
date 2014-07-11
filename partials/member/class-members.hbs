@@ -1,2 +1,2 @@
-{{#if (constructorHasDocs)}}{{>function}}{{/if~}}
+{{#if (constructorHasDocs)}}{{set "isConstructor" true~}}{{>function}}{{/if~}}
 {{>members-grouped}}

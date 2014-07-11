@@ -1,1 +1,3 @@
 {{{aliasName}~}}
+{{#if (equal kind "function")}}({{methodSig params}}){{/if~}}
+{{#if (equal kind "class")}}{{#if isConstructor}}({{methodSig params}}){{/if~}}{{/if~}}
