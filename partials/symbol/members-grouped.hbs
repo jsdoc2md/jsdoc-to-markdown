@@ -1,0 +1,19 @@
+{{#with (children)~}}
+
+{{#with (where this scope="instance")~}}
+{{>members data=this~}}
+{{/with~}}
+
+{{#with (where this scope="static")~}}
+{{>members data=this~}}
+{{/with~}}
+
+{{#with (where this scope="inner")~}}
+{{>members data=this~}}
+{{/with~}}
+
+{{#with (where this scope=undefined)~}}
+{{>members data=this~}}
+{{/with~}}
+
+{{/with~}}
