@@ -9,19 +9,21 @@ function halt(err){
     process.exit(1);
 }
 
-function render(options, outputPath){
-    jsdoc2md.render(options, function(err, result){
-        if (err) halt(err);
-        mfs.write(outputPath, result);
+function render(files, options, outputPath){
+    var buffer = new Buffer(0);
+    jsdoc2md.render(files, options).on("readable", function(){
+        var chunk = this.read();
+        if (chunk) buffer = Buffer.concat([ buffer, chunk ]);
+    }).on("end", function(){
+        console.log("writing to " + outputPath);
+        mfs.write(outputPath, buffer);
     });
 }
 
 fs.readdirSync("test/template").forEach(function(file){
     render(
-        {
-            src: "test/input/**/*.js",
-            template: path.join("test/template", file)
-        }, 
+        "test/input/**/*.js",
+        { template: path.join("test/template", file) }, 
         path.join("test/output/template", path.basename(file, ".hbs") + ".md")
     )
 });

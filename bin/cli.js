@@ -52,10 +52,9 @@ if (argv.help){
 }
 
 if(argv.src){
-    jsdoc2md.render(argv).pipe(process.stdout);
+    jsdoc2md.render(argv.src, argv).pipe(process.stdout);
 } else {
     process.stdin.pipe(jsdoc2md.createRenderStream(argv)).pipe(process.stdout);
-    // halt(new Error("Please supply at least one source file"));
 }
 
 function halt(err){
