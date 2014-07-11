@@ -95,29 +95,35 @@ Only output if there are at least two modules defined.
     
     * Modules
       * {{>module-name}}
-        * {{>module-members}}
+        * {{>member-names}}
     * Global
       * {{>global-name}}
 
 ###{{>modules}}
 Outputs one {{>module}} partial per module.
 
-####{{>module}}
+###{{>globals}}
+
+    #Global
+    {{>global-index}}
+    {{>members}}
+
+###{{>module}}
 
   {{>module-head}}
   {{>module-body}}
   {{>module-exported}}
 
-#####{{>module-head}}
+###{{>module-head}}
 
     {{>anchor}}
     {{>heading}}{{>module-name}}
     
-#####{{>module-body}}
+###{{>module-body}}
 
     {{>fields}}
     
-####{{>fields}}
+###{{>fields}}
 
     {{>description~}}
     {{>params~}}
@@ -137,15 +143,10 @@ Outputs one {{>module}} partial per module.
     {{>copyright~}}
     {{>examples~}}
 
-#####{{>module-exported}}
+###{{>module-exported}}
 
-    {{>class}}, {{>function}} or {{>module-members}}
+    {{>class}}, {{>function}} or {{>module-index}} and {{>members}}
 
-###{{>globals}}
-
-    #Global
-    {{>global-index}}
-    {{>global-symbols}}
 
 ##API Reference
 **Example**  
