@@ -4,13 +4,13 @@
 var cliArgs = require("command-line-args"),
     dope = require("console-dope"),
     jsdoc2md = require("../");
-    
+
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
-      description: "A custom handlebars template to insert the rendered documentation into" 
+      description: "A custom handlebars template to insert the rendered documentation into"
     },
     { name: "preset", alias: "p", type: String,
-      description: "Use a preset template" 
+      description: "Use a preset template"
     },
     { name: "json", alias: "j", type: Boolean,
       description: "Output the template data only"
@@ -46,17 +46,18 @@ try{
     halt(err);
 }
 
-if(!argv.src){
-    halt(new Error("Please supply at least one source file"));
-}
-
 if (argv.help){
     dope.log(usage);
     process.exit(0);
 }
 
-jsdoc2md.render(argv).pipe(process.stdout);
-    
+if(argv.src){
+    jsdoc2md.render(argv).pipe(process.stdout);
+} else {
+    process.stdin.pipe(jsdoc2md.createRenderStream(argv)).pipe(process.stdout);
+    // halt(new Error("Please supply at least one source file"));
+}
+
 function halt(err){
     if (argv){
         dope.red.error((argv.verbose ? err.stack : "") || "Error: " + err.message);
