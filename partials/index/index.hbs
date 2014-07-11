@@ -1,5 +1,4 @@
-{{#with (where @root kind="module")~}}
-{{#if (gt length 2)~}}
+{{#if (size (modules) 2) ~}}
 
 {{>heading}}Index
 
@@ -16,8 +15,8 @@
 {{>indent}}* Global
 {{#with (where @root -kind="module" scope="global")~}}
 {{index-depth-bump~}}
-{{>index-symbols data=this ~}}
+{{>index-symbols data=this}}
 {{index-depth-drop~}}
-{{/with}}
+{{/with~}}
+
 {{/if~}}
-{{/with}}

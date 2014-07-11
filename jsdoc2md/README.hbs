@@ -79,6 +79,25 @@ These projects have readme files rendered by `jsdoc2md`:
 * https://github.com/75lb/file-set (exports a class)
 * https://github.com/75lb/command-line-args  (exports a class)
 
-#API Reference
+##Custom Templates
+The default template anatomy: 
+
+    {{index}}
+    {{modules}}
+    {{globals}}
+    {{others}}
+    
+###Index
+Only output if there are at least two modules defined. 
+
+    #Index
+    
+    * Modules
+      * {{module-name}}
+        * {{module-members}}
+    * Global
+      * {{global-members}}
+
+##API Reference
 {{>specific-module-body name="jsdoc-to-markdown"}}
 {{>specific-module-children name="jsdoc-to-markdown"}}
