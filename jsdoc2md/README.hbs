@@ -42,7 +42,7 @@ $ npm run docs
 See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
 
 ###As a gulp plug-in
-Use a task like this until the gulp plugin is ready, you should only need to edit `options` and `outputFile`: 
+Use a task like this until the gulp plugin is ready, you should only need to edit `src` and `outputFile`: 
 
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
@@ -50,16 +50,10 @@ var gutil = require("gulp-util");
 var fs = require("fs");
 
 gulp.task("docs", function(done){
-    var options = {
-        src: "lib/**/*.js"
-    };
+    var src = "lib/**/*.js";
     var outputFile = "api.md";
-    
-    jsdoc2md.render(options, function(err, docs){
-        if (err) done(err);
-        gutil.log("writing documentation to " + outputFile);
-        fs.writeFile(outputFile, docs);
-    })
+    gutil.log("writing documentation to " + outputFile);
+    jsdoc2md.render(src).pipe(fs.createWriteStream(outputFile));
 });
 ```
 
