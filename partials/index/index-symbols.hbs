@@ -7,7 +7,7 @@
 {{#each (where data kind="constant")}}{{>indent}}* {{#link}}{{>name}}{{/link}}
 {{/each~}}
 
-{{#each (where data kind="typedef")}}{{>indent}}* {{#link}}{{>typedef-name}}{{/link}}
+{{#each (where data kind="typedef")}}{{>indent}}* {{#link}}{{>name}}{{/link}}
 {{/each~}}
 
 {{#each (where data kind="event")}}{{>indent}}* {{#link}}{{>name}}{{/link}}

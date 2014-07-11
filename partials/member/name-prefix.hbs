@@ -4,3 +4,6 @@
 {{#if (equal kind "constant")~}}const: {{/if~}}
 {{#if (equal kind "event")~}}event: {{/if~}}
 {{#if isEnum}}enum: {{/if~}}
+{{#if (equal kind "typedef")~}}
+  {{#if (equal type.names.[0] "function")}}callback: {{else}}type: {{/if~}}
+{{/if}}
