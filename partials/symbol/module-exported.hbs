@@ -1,0 +1,16 @@
+{{heading-depth-bump~}}
+{{#if (exportedClass)~}}
+  {{#with (exportedClass)~}}
+    {{>class~}}
+  {{/with~}}
+{{else~}}
+  {{#if (exportedFunction)~}}
+    {{#with (exportedFunction)~}}
+      {{>function~}}
+    {{/with~}}
+  {{else~}}
+    {{>module-index~}}
+    {{>child-docs~}}
+  {{/if~}}
+{{/if~}}
+{{heading-depth-drop~}}

@@ -106,7 +106,7 @@ Outputs one {{>module}} partial per module.
 
   {{>module-head}}
   {{>module-body}}
-  {{>module-children}}
+  {{>module-exported}}
 
 #####{{>module-head}}
 
