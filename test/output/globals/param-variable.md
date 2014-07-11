@@ -13,10 +13,6 @@ This function takes variable input
 
 <a name="Plucker"></a>
 ##class: Plucker
-**Members**
-
-* [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)
 This function takes variable input

@@ -11,10 +11,6 @@
 ##class: Person
 simple class description
 
-**Members**
-
-* [new Person()](#Person)
-
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -22,10 +18,6 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
-**Members**
-
-* [new Car([options])](#Car)
-
 <a name="Car"></a>
 ###new Car([options])
 a constructor with args
@@ -38,16 +30,9 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
-**Members**
-
-
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
-
-**Members**
-
-* [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
