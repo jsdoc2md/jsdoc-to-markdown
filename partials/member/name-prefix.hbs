@@ -1,3 +1,4 @@
 {{#if (equal kind "class")~}}
 {{#if isConstructor}}new {{else}}class: {{/if~}}
 {{/if~}}
+{{#if (equal kind "constant")~}}const: {{/if~}}
