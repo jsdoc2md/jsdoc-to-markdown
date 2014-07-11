@@ -120,14 +120,14 @@ this code:
 generates:
 ```markdown
 #jsdoc-to-markdown
-*Members**
+**Members**
 [jsdoc2md.render(sourceFiles, options)](#module_jsdoc-to-markdown.render)
 [jsdoc2md.createRenderStream(options)](#module_jsdoc-to-markdown.createRenderStream)
 
 <a name="module_jsdoc-to-markdown.render"></a>
 ##jsdoc2md.render(sourceFiles, options)
 Renders the jsdoc documentation from the specified source files as markdown.
-*Params**
+**Params**
 
 - sourceFiles `string` | `Array.<string>` - The javascript source file(s) - required.
 - options `object` - The render options
@@ -136,7 +136,7 @@ Renders the jsdoc documentation from the specified source files as markdown.
   - [json] `boolean` - Return the JSON template data only
   - [private] `boolean` - Include symbols marked @private in the output
   - [heading-depth] `number` - Root heading depth, defaults to 2.
-*Returns**: `stream` - A readable stream containing the rendered markdown
+**Returns**: `stream` - A readable stream containing the rendered markdown
 
 etc.
 etc.
