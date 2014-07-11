@@ -79,7 +79,7 @@ These projects have readme files rendered by `jsdoc2md`:
 * [file-set](https://github.com/75lb/file-set) (exports a class)
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
-##Custom Templates
+##Templating
 The default template anatomy: 
 
     \{{index}}
@@ -87,7 +87,7 @@ The default template anatomy:
     \{{globals}}
     \{{others}}
     
-###Index
+###\{{index}}
 Only output if there are at least two modules defined. 
 
     #Index
@@ -96,7 +96,16 @@ Only output if there are at least two modules defined.
       * \{{module-name}}
         * \{{module-members}}
     * Global
-      * \{{global-members}}
+      * \{{global-name}}
+
+###\{{modules}}
+Outputs one \{{module}} partial per module.
+
+###\{{globals}}
+
+    #Global
+    {{global-index}}
+    {{global-symbols}}
 
 ##API Reference
 {{>specific-module-body name="jsdoc-to-markdown"}}
