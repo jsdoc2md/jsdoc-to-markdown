@@ -1,17 +1,12 @@
-<a name="module_object"></a>
-#object
-simple object export
+<a name="module_one-member"></a>
+#one-member
+simple object, one member
 
 **Members**
 
-* [object.one](#module_object.one)
-* [object.three(four, five)](#module_object.three)
+* [object.three(four, five)](#module_one-member.three)
 
-<a name="module_object.one"></a>
-##object.one
-first property
-
-<a name="module_object.three"></a>
+<a name="module_one-member.three"></a>
 ##object.three(four, five)
 a function
 

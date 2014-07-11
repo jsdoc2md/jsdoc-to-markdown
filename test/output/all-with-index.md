@@ -32,6 +32,8 @@
     * [cattle~innerMember](#module_cattle.innerMember)
     * [cattle~innerFuction()](#module_cattle.innerFuction)
     * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+  * [one-member](#module_one-member)
+    * [object.three(four, five)](#module_one-member.three)
   * [heaven](#module_heaven)
     * [heaven.Cloud](#module_heaven.Cloud)
     * [heaven.createCloud()](#module_heaven.createCloud)
@@ -42,9 +44,6 @@
       * [cloud.rain](#module_heaven.Cloud#rain)
       * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
       * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-  * [commonjs/object](#module_commonjs/object)
-    * [object.one](#module_commonjs/object.one)
-    * [object.three(four, five)](#module_commonjs/object.three)
   * [private](#module_private)
     * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value)
@@ -389,6 +388,31 @@ another inner function
 
 ***Deprecated***  
 **Scope**: inner function of [cattle](#module_cattle)  
+<a name="module_one-member"></a>
+#one-member
+simple object, one member
+
+**Members**
+
+* [object.three(four, five)](#module_one-member.three)
+
+<a name="module_one-member.three"></a>
+##object.three(four, five)
+a function
+
+**Params**
+
+- four `string` - The input string
+- five `object` - a second input
+
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+allTogether(true);
+```
+
 <a name="module_heaven"></a>
 #heaven
 factory module creating dodgy cloud. object-with-static-class.
@@ -457,36 +481,6 @@ a class method
 a class constant
 
 **Type**: `number`  
-<a name="module_commonjs/object"></a>
-#commonjs/object
-simple object export
-
-**Members**
-
-* [object.one](#module_commonjs/object.one)
-* [object.three(four, five)](#module_commonjs/object.three)
-
-<a name="module_commonjs/object.one"></a>
-##object.one
-first property
-
-<a name="module_commonjs/object.three"></a>
-##object.three(four, five)
-a function
-
-**Params**
-
-- four `string` - The input string
-- five `object` - a second input
-
-**Returns**: `object` | `string` - this return has several types  
-**Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-**Example**  
-```js
-allTogether(true);
-```
-
 <a name="module_private"></a>
 #private
 module with private shiz
