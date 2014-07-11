@@ -95,7 +95,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 **Members**
 
 * [jsdoc2md.render(sourceFiles, options)](#module_jsdoc-to-markdown.render)
-* [jsdoc2md~createRenderStream(options)](#module_jsdoc-to-markdown.createRenderStream)
+* [jsdoc2md.createRenderStream(options)](#module_jsdoc-to-markdown.createRenderStream)
 
 <a name="module_jsdoc-to-markdown.render"></a>
 ##jsdoc2md.render(sourceFiles, options)
@@ -134,17 +134,17 @@ Renders the jsdoc documentation from the specified source files as markdown.
 ```
 
 <a name="module_jsdoc-to-markdown.createRenderStream"></a>
-##jsdoc2md~createRenderStream(options)
+##jsdoc2md.createRenderStream(options)
 **Params**
 
 - options `object` - The render options, as specified in `render()`
 
-**Scope**: inner function of [jsdoc-to-markdown](#module_jsdoc-to-markdown)  
 **Returns**: `stream` - a stream containing the rendered markdown  
 **Example**  
 ```js
 process.stdin
     .pipe(jsdoc2md.createRenderStream({ template: "api.hbs" }))
     .pipe(process.stdout);
+```
 
 
