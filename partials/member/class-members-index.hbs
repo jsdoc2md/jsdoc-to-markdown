@@ -2,7 +2,7 @@
 
 {{index-depth-reset}}**Members**
 
-{{#if (constructorHasDocs)}}{{>indent}}* {{#link}}{{>function-name-long}}{{/link}}
+{{#if (constructorHasDocs)}}{{set "isConstructor" true~}}{{>indent}}* {{#link}}{{>name}}{{/link}}
 {{/if~}}
 
 {{>index-children}}

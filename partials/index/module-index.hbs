@@ -2,7 +2,7 @@
 
 {{index-depth-reset}}**Members**
 
-{{#with (exported)}}{{>indent}}* {{#link}}{{>function-name-long}}{{/link}}
+{{#with (exported)}}{{set "isConstructor" true~}}{{>indent}}* {{#link}}{{>name}}{{/link}}
 {{/with~}}
 
 {{>index-children}}
