@@ -115,10 +115,6 @@
 #hello/world
 A module that says hello!
 
-**Members**
-
-* [hello/world.sayHello()](#module_hello/world.sayHello)
-
 <a name="module_hello/world.sayHello"></a>
 ##hello/world.sayHello()
 Say hello.
@@ -328,10 +324,6 @@ the main function description
 #commonjs/ignore
 module with ignored shiz
 
-**Members**
-
-* [ignore.visible](#module_commonjs/ignore.visible)
-
 <a name="module_commonjs/ignore.visible"></a>
 ##ignore.visible
 visible property
@@ -391,10 +383,6 @@ another inner function
 <a name="module_one-member"></a>
 #one-member
 simple object, one member
-
-**Members**
-
-* [object.three(four, five)](#module_one-member.three)
 
 <a name="module_one-member.three"></a>
 ##object.three(four, five)
@@ -485,10 +473,6 @@ a class constant
 #private
 module with private shiz
 
-**Members**
-
-* [private.notprivate](#module_private.notprivate)
-
 <a name="module_private.notprivate"></a>
 ##private.notprivate
 visible property
@@ -496,10 +480,6 @@ visible property
 <a name="module_commonjs/single-value"></a>
 #commonjs/single-value
 this module exports one value, that's it
-
-**Members**
-
-* [module.exports()](#module_commonjs/single-value)
 
 #Global
 * [enum: eFileType](#eFileType)

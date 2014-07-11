@@ -1,6 +1,9 @@
+{{#if (size (where @root memberof=longname) 2) ~}}
+
 {{index-depth-reset}}**Members**
 
 {{#with (exported)}}{{>indent}}* {{#link}}{{>function-name-long}}{{/link}}
 {{/with~}}
 
 {{>index-children}}
+{{/if}}
