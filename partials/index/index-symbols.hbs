@@ -1,21 +1,21 @@
-{{#each (where data kind="member")}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#each (members in=data)}}{{>index-row}}
 {{/each~}}
 
-{{#each (where data kind="function")}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#each (functions in=data)}}{{>index-row}}
 {{/each~}}
 
-{{#each (where data kind="constant")}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#each (constants in=data)}}{{>index-row}}
 {{/each~}}
 
-{{#each (where data kind="typedef")}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#each (typedefs in=data)}}{{>index-row}}
 {{/each~}}
 
-{{#each (where data kind="event")}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#each (events in=data)}}{{>index-row}}
 {{/each~}}
 
-{{#each (where data kind="class")}}{{set "isConstructor" false~}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#each (classes in=data)}}{{set "isConstructor" false~}}{{>index-row}}
 {{index-depth-bump~}}
-{{#if (constructorHasDocs)}}{{set "isConstructor" true~}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#if (constructorHasDocs)}}{{set "isConstructor" true~}}{{>index-row}}
 {{/if~}}
 {{>index-children~}}
 {{index-depth-drop~}}
