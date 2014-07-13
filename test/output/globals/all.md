@@ -292,7 +292,7 @@ start the car
 **Params**
 
 -  `string`
--  
+-  `function`
 
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE
@@ -332,6 +332,7 @@ A number, or a string containing a number.
 ##~~class: All~~
 a class with all of the things
 
+**Extends**: `Number`  
 **Members**
 
 * [~~new All(input, [options])~~](#All)
@@ -390,6 +391,7 @@ all.allTogether(true);
 ##class: Person
 simple class description
 
+**Extends**: `Object`  
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -409,10 +411,12 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
+**Extends**: `Pipe`  
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
+**Extends**: `Pipe`  
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
 the constructor description

@@ -52,6 +52,7 @@ A prototype instance methy meth
 ##~~class: All~~
 a class with all of the things
 
+**Extends**: `Number`  
 **Members**
 
 * [~~new All(input, [options])~~](#All)

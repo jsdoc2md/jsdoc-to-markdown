@@ -1,6 +1,8 @@
-{{>class-head}}
-{{>class-body~}}
+{{set "isConstructor" false~}}
+{{>head~}}
+{{>body~}}
 {{>class-members-index~}}
 {{heading-depth-bump~}}
-{{>class-members~}}
+{{#if (constructorHasDocs)}}{{set "isConstructor" true~}}{{>function}}{{/if~}}
+{{>members-grouped~}}
 {{heading-depth-drop~}}

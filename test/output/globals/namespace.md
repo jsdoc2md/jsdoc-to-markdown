@@ -34,5 +34,5 @@ start the car
 **Params**
 
 -  `string`
--  
+-  `function`
 

@@ -11,6 +11,7 @@
 ##class: Person
 simple class description
 
+**Extends**: `Object`  
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -30,10 +31,12 @@ a constructor with args
 ##class: Pipe
 a class which extends
 
+**Extends**: `Pipe`  
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
+**Extends**: `Pipe`  
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
 the constructor description
