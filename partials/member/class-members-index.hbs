@@ -1,8 +1,8 @@
-{{#if (size (children) 2) ~}}
+{{#if (size (children) 2) }}{{index-depth-reset~}}
 
-{{index-depth-reset}}**Members**
+**Members**
 
-{{#if (constructorHasDocs)}}{{set "isConstructor" true~}}{{>indent}}* {{#link}}{{>name}}{{/link}}
+{{#if (constructorHasDocs)}}{{set "isConstructor" true~}}{{>index-row}}
 {{/if~}}
 
 {{>index-children}}

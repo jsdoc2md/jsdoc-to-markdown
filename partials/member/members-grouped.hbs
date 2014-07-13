@@ -1,18 +1,18 @@
 {{#with (children)~}}
 
-{{#with (where this scope="instance")~}}
+{{#with (instance-scope in=this)~}}
 {{>members data=this~}}
 {{/with~}}
 
-{{#with (where this scope="static")~}}
+{{#with (static-scope in=this)~}}
 {{>members data=this~}}
 {{/with~}}
 
-{{#with (where this scope="inner")~}}
+{{#with (inner-scope in=this)~}}
 {{>members data=this~}}
 {{/with~}}
 
-{{#with (where this scope=undefined)~}}
+{{#with (no-scope in=this)~}}
 {{>members data=this~}}
 {{/with~}}
 
