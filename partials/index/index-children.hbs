@@ -1,13 +1,13 @@
 {{#with (children)~}}
 
 {{#with (instance-scope in=this)~}}
-{{>index-symbols data=this~}}
+{{>index-rows data=this~}}
 {{/with~}}
 {{#with (static-scope in=this)~}}
-{{>index-symbols data=this~}}
+{{>index-rows data=this~}}
 {{/with~}}
 {{#with (inner-scope in=this)~}}
-{{>index-symbols data=this~}}
+{{>index-rows data=this~}}
 {{/with~}}
 
 {{/with~}}
