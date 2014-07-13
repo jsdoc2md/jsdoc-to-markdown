@@ -55,16 +55,18 @@ if (argv.help){
 }
 
 if(argv.src){
-    jsdoc2md.render(argv.src, argv).pipe(process.stdout);
+    var renderStream = jsdoc2md.render(argv.src, argv);
+    renderStream.on("error", halt);
+    renderStream.pipe(process.stdout);
 } else {
     process.stdin.pipe(jsdoc2md.createRenderStream(argv)).pipe(process.stdout);
 }
 
 function halt(err){
     if (argv){
-        dope.red.error((argv.verbose ? err.stack : "") || "Error: " + err.message);
+        dope.red.error(argv.verbose ? err.stack : err.message);
     } else {
-        dope.red.error("Error: " + err.message);
+        dope.red.error(err);
     }
     dope.error(usage);
     process.exit(1);
