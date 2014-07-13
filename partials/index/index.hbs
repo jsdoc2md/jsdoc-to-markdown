@@ -4,8 +4,8 @@
 
 {{>indent}}* Modules
 {{index-depth-bump~}}
-{{#each (where @root kind="module")~}}
-{{>indent}}* {{#link}}{{>module-name}}{{/link}}
+{{#each (modules)~}}
+{{>index-row}}
 {{index-depth-bump~}}
 {{>index-children~}}
 {{index-depth-drop~}}
@@ -13,7 +13,7 @@
 {{index-depth-drop~}}
 
 {{>indent}}* Global
-{{#with (where @root -kind="module" scope="global")~}}
+{{#with (globals)~}}
 {{index-depth-bump~}}
 {{>index-symbols data=this}}
 {{index-depth-drop~}}
