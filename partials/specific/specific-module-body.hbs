@@ -1,7 +1,7 @@
 {{#if name~}}
   {{#with (findWhere @root kind="module" name=name)~}}
-  {{>module-body~}}
+  {{>body~}}
   {{/with~}}
 {{else~}}
-  {{>module-body~}}
+  {{>body~}}
 {{/if~}}

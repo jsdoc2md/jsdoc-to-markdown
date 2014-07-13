@@ -1,0 +1,9 @@
+{{#if (size (children) 2) }}{{index-depth-reset~}}
+
+**Members**
+
+{{#with (exported)}}{{set "isConstructor" true~}}{{>index-row}}
+{{/with~}}
+
+{{>index-children}}
+{{/if}}

@@ -1,9 +1,0 @@
-{{#if (size (where @root memberof=longname) 2) ~}}
-
-{{index-depth-reset}}**Members**
-
-{{#with (exported)}}{{set "isConstructor" true~}}{{>indent}}* {{#link}}{{>name}}{{/link}}
-{{/with~}}
-
-{{>index-children}}
-{{/if}}

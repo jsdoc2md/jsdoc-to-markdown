@@ -120,16 +120,16 @@ Outputs one {{>module}} partial per module.
 
 ###{{>module}}
 
-    {{>module-head}}
-    {{>module-body}}
+    {{>head}}
+    {{>body}}
     {{>module-exported}}  (either a class with index, function or object with index)
 
-###{{>module-head}}
+###{{>head}}
 
     {{>anchor}}
-    {{>heading}}{{>module-name}}
+    {{>heading}}{{>name}}
     
-###{{>module-body}}
+###{{>body}}
 
     {{>fields}}
     
@@ -159,10 +159,10 @@ Outputs one {{>module}} partial per module.
 
 ###{{>class}}
 
-    {{>class-head}}
-    {{>class-body~}}
+    {{>head}}
+    {{>body~}}
     {{>class-members-index~}}
-    {{>class-members~}}
+    {{>members-grouped~}}
 
 ##API Reference
 **Example**  
