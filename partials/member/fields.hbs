@@ -1,4 +1,9 @@
-{{>description~}}
+{{#if (equal kind "class")~}}
+  {{#if isConstructor}}{{>description}}{{else}}{{>classdesc}}{{/if~}}
+{{else~}}
+  {{>description~}}
+{{/if~}}
+
 {{>params~}}
 {{>deprecated~}}
 {{>augments~}}

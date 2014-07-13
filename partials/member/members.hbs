@@ -1,6 +1,7 @@
-{{#each (where data kind="member")}}{{>member}}{{/each~}}
-{{#each (where data kind="function")}}{{>function}}{{/each~}}
-{{#each (where data kind="constant")}}{{>constant}}{{/each~}}
-{{#each (where data kind="typedef")}}{{>typedef}}{{/each~}}
-{{#each (where data kind="event")}}{{>event}}{{/each~}}
-{{#each (where data kind="class")}}{{>class}}{{/each~}}
+{{#each (members in=data)}}{{>member}}{{/each~}}
+{{#each (functions in=data)}}{{>function}}{{/each~}}
+{{#each (namespaces in=data)}}{{>namespace}}{{/each~}}
+{{#each (constants in=data)}}{{>constant}}{{/each~}}
+{{#each (typedefs in=data)}}{{>typedef}}{{/each~}}
+{{#each (events in=data)}}{{>event}}{{/each~}}
+{{#each (classes in=data)}}{{>class}}{{/each~}}

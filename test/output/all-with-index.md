@@ -738,6 +738,16 @@ Set the magic number.
   - one `string` - first option
   - two `string` - second option
 
+<a name="car"></a>
+##car
+<a name="car.wheels"></a>
+###car.wheels
+the round things
+
+<a name="car.sensors"></a>
+###car.sensors
+the electronics that always go wrong
+
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE
 the first important constant
