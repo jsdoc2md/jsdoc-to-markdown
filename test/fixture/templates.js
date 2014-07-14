@@ -1,5 +1,5 @@
 "use strict";
-var jsdoc2md = require("../"),
+var jsdoc2md = require("../../"),
     fs = require("fs"),
     path = require("path"),
     mfs = require("more-fs");
@@ -20,10 +20,10 @@ function render(files, options, outputPath){
     });
 }
 
-fs.readdirSync("test/template").forEach(function(file){
+fs.readdirSync("test/fixture/template").forEach(function(file){
     render(
-        "test/input/**/*.js",
-        { template: path.join("test/template", file) }, 
-        path.join("test/output/template", path.basename(file, ".hbs") + ".md")
+        "test/fixture/input/**/*.js",
+        { template: path.join("test/fixture/template", file) }, 
+        path.join("test/fixture/output/template", path.basename(file, ".hbs") + ".md")
     )
 });
