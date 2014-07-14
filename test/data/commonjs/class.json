@@ -9,17 +9,9 @@
     "longname": "module:file-set"
   },
   {
+    "description": "Takes a list of path patterns",
     "kind": "class",
     "classdesc": "this class returns a set of files",
-    "alias": "module:file-set",
-    "name": "FileSet",
-    "longname": "module:file-set~FileSet",
-    "exported": true,
-    "memberof": "module:file-set"
-  },
-  {
-    "description": "Takes a list of path patterns",
-    "kind": "constructor",
     "params": [
       {
         "type": {
@@ -27,23 +19,23 @@
             "Array.<string>"
           ]
         },
-        "description": "a list of file patterns",
-        "name": "num"
+        "description": "a list of file patterns"
       }
     ],
+    "alias": "module:file-set",
     "examples": [
       "```js\nvar cowFiles = new FileSet(\"cow/*\");\n```"
     ],
-    "name": "FileSet",
-    "longname": "module:file-set~FileSet()",
-    "memberof": "module:file-set~FileSet"
+    "name": "module:file-set",
+    "longname": "module:file-set",
+    "codeName": "FileSet"
   },
   {
     "description": "the prototype instance property",
     "name": "files",
-    "longname": "module:file-set~FileSet#files",
+    "longname": "module:file-set#files",
     "kind": "member",
-    "memberof": "module:file-set~FileSet",
+    "memberof": "module:file-set",
     "scope": "instance",
     "codeName": "FileSet.prototype.files"
   },
@@ -61,9 +53,9 @@
       }
     ],
     "name": "delete",
-    "longname": "module:file-set~FileSet#delete",
+    "longname": "module:file-set#delete",
     "kind": "function",
-    "memberof": "module:file-set~FileSet",
+    "memberof": "module:file-set",
     "scope": "instance",
     "codeName": "FileSet.prototype.delete"
   },

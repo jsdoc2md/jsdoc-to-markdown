@@ -125,7 +125,6 @@ Renders the jsdoc documentation from the specified source files as markdown.
 - sourceFiles `string` | `Array.<string>` - The javascript source file(s) - required.
 - options `object` - The render options
   - [template] `string` - A handlebars template to insert your documentation into.
-  - [preset] `string` - Choose from one of the built-in templates
   - [json] `boolean` - Return the JSON template data only
   - [private] `boolean` - Include symbols marked @private in the output
   - [heading-depth] `number` - Root heading depth, defaults to 1.
