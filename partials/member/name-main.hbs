@@ -1,9 +1,0 @@
-{{#if (equal kind "event")~}}
-  "{{{name}~}}"
-{{~else}}{{#if (equal kind "module")~}}
-  {{{name}~}}
-{{else~}}
-  {{{aliasName}~}}
-{{/if}}{{/if~}}
-{{#if (equal kind "function")}}({{methodSig params}}){{/if~}}
-{{#if (equal kind "class")}}{{#if isConstructor}}({{methodSig params}}){{/if~}}{{/if~}}

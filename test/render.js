@@ -10,14 +10,7 @@ function halt(err){
 }
 
 function render(input, outputPath){
-    var buffer = new Buffer(0);
-    jsdoc2md.render(input).on("readable", function(){
-        var chunk = this.read();
-        if (chunk) buffer = Buffer.concat([ buffer, chunk ]);
-    }).on("end", function(){
-        console.log("writing to " + outputPath);
-        mfs.write(outputPath, buffer);
-    });
+    jsdoc2md.render(input).pipe(fs.createWriteStream(outputPath));
 }
 
 fs.readdirSync("test/input/commonjs").forEach(function(file){

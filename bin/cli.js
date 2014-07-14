@@ -9,9 +9,6 @@ var cli = cliArgs([
     { name: "template", alias: "t", type: String,
       description: "A custom handlebars template to insert the rendered documentation into"
     },
-    { name: "preset", alias: "p", type: String,
-      description: "Use a preset template"
-    },
     { name: "json", alias: "j", type: Boolean,
       description: "Output the template data only"
     },
@@ -52,14 +49,14 @@ try{
 if (argv.help){
     dope.log(usage);
     process.exit(0);
-}
+}    
 
 if(argv.src){
-    var renderStream = jsdoc2md.render(argv.src, argv);
-    renderStream.on("error", halt);
-    renderStream.pipe(process.stdout);
+    var mdStream = jsdoc2md.render(argv.src, argv)
+    mdStream.pipe(process.stdout);
+    mdStream.on("error", halt);
 } else {
-    process.stdin.pipe(jsdoc2md.createRenderStream(argv)).pipe(process.stdout);
+    process.stdin.pipe(jsdoc2md.render(argv)).pipe(process.stdout);
 }
 
 function halt(err){

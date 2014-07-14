@@ -8,6 +8,13 @@
 #jsdoc-to-markdown
 [Documented](http://usejsdoc.org) source code in, markdown out.. In development, any feedback welcome.
 
+##examples
+These projects have readme files rendered by `jsdoc2md`:
+* [handbrake-js](https://github.com/75lb/handbrake-js) (exports an object with inner class)
+* [array-tools](https://github.com/75lb/array-tools) (exports a object)
+* [file-set](https://github.com/75lb/file-set) (exports a class)
+* [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
+
 ##Install
 Ensure [node.js](http://nodejs.org) is installed first. Linux/Mac users may need to run the following commands with `sudo`.
 
@@ -72,13 +79,6 @@ $ cat doclets.json | jsdoc2md [<options>]
 --private                 Include symbols marked @private in the output
 --heading-depth <number>  root heading depth to begin the documentation from, defaults to 2 (`##`).
 ```
-
-##examples
-These projects have readme files rendered by `jsdoc2md`:
-* [handbrake-js](https://github.com/75lb/handbrake-js) (exports an object with inner class)
-* [array-tools](https://github.com/75lb/array-tools) (exports a object)
-* [file-set](https://github.com/75lb/file-set) (exports a class)
-* [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
 ##Templating
 Running `jsdoc2md` without a `--template` generates documentation with the default template, which looks like this:

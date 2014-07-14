@@ -1,5 +1,0 @@
-{{#if optional}}[{{/if}}
-{{~#if variable}}...{{/if}}
-{{~#if (regexp-test name "\w+\.\w+")}}{{{array-slice (string-split name ".") -1}}}{{else}}{{{name}}}{{/if}}
-{{~#if defaultvalue}}={{defaultvalue}}{{/if}}
-{{~#if optional}}]{{/if}} 

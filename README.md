@@ -8,6 +8,13 @@
 #jsdoc-to-markdown
 [Documented](http://usejsdoc.org) source code in, markdown out.. In development, any feedback welcome.
 
+##examples
+These projects have readme files rendered by `jsdoc2md`:
+* [handbrake-js](https://github.com/75lb/handbrake-js) (exports an object with inner class)
+* [array-tools](https://github.com/75lb/array-tools) (exports a object)
+* [file-set](https://github.com/75lb/file-set) (exports a class)
+* [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
+
 ##Install
 Ensure [node.js](http://nodejs.org) is installed first. Linux/Mac users may need to run the following commands with `sudo`.
 
@@ -72,13 +79,6 @@ $ cat doclets.json | jsdoc2md [<options>]
 --private                 Include symbols marked @private in the output
 --heading-depth <number>  root heading depth to begin the documentation from, defaults to 2 (`##`).
 ```
-
-##examples
-These projects have readme files rendered by `jsdoc2md`:
-* [handbrake-js](https://github.com/75lb/handbrake-js) (exports an object with inner class)
-* [array-tools](https://github.com/75lb/array-tools) (exports a object)
-* [file-set](https://github.com/75lb/file-set) (exports a class)
-* [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
 ##Templating
 Running `jsdoc2md` without a `--template` generates documentation with the default template, which looks like this:
@@ -166,27 +166,23 @@ Outputs one {{>module}} partial per module.
 
 ##API Reference
 **Example**  
+
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 
 
-**Members**
-
-* [jsdoc2md.render(sourceFiles, options)](#module_jsdoc-to-markdown.render)
-* [jsdoc2md.createRenderStream(options)](#module_jsdoc-to-markdown.createRenderStream)
-
 <a name="module_jsdoc-to-markdown.render"></a>
-##jsdoc2md.render(sourceFiles, options)
-Renders the jsdoc documentation from the specified source files as markdown.
+##jsdoc-to-markdown.render(src, options)
+Transforms jsdoc into markdown documentation
 
 **Params**
 
-- sourceFiles `string` | `Array.<string>` - The javascript source file(s) - required.
+- src `string` | `Array.<string>` - The javascript source file(s) - required.
 - options `object` - The render options
   - [template] `string` - A handlebars template to insert your documentation into.
-  - [preset] `string` - Choose from one of the built-in templates
   - [json] `boolean` - Return the JSON template data only
+  - [stats] `boolean` - Return stats about the doclets parsed
   - [private] `boolean` - Include symbols marked @private in the output
   - [heading-depth] `number` - Root heading depth, defaults to 2.
 
@@ -219,20 +215,6 @@ Renders the jsdoc documentation from the specified source files as markdown.
 
 etc.
 etc.
-```
-
-<a name="module_jsdoc-to-markdown.createRenderStream"></a>
-##jsdoc2md.createRenderStream(options)
-**Params**
-
-- options `object` - The render options, as specified in `render()`
-
-**Returns**: `stream` - a stream containing the rendered markdown  
-**Example**  
-```js
-process.stdin
-    .pipe(jsdoc2md.createRenderStream({ template: "api.hbs" }))
-    .pipe(process.stdout);
 ```
 
 

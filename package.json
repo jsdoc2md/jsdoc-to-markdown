@@ -29,6 +29,7 @@
     "boil-js": "^0.1.0",
     "command-line-args": "^0.4.0",
     "console-dope": "^0.3.3",
+    "documenter-md": "^0.0.0",
     "file-set": "^0.2",
     "jsdoc-parse": "^0.1.0",
     "more-fs": "^0.4.0",
