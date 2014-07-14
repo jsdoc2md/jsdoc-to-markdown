@@ -8,6 +8,8 @@
 #jsdoc-to-markdown
 [Documented](http://usejsdoc.org) source code in, markdown out.. In development, any feedback welcome.
 
+This app is composed from the lower-level [jsdoc-parse](https://github.com/75lb/jsdoc-parse) and [documenter-md](https://github.com/75lb/documenter-md) modules.
+
 ##examples
 These projects have readme files rendered by `jsdoc2md`:
 * [handbrake-js](https://github.com/75lb/handbrake-js) (exports an object with inner class)
@@ -70,99 +72,15 @@ Document your source code using [correct jsdoc syntax](http://usejsdoc.org), the
 $ jsdoc2md [<options>] [<source_files>]
 $ cat doclets.json | jsdoc2md [<options>]
 
--t, --template <string>   A custom handlebars template to insert the rendered documentation into,
-                          overriding the default
--p, --preset <string>     Use a preset template ('default', 'global' or 'modules')
+-t, --template <string>   A custom handlebars template to insert the rendered documentation into
 -j, --json                Output the template data only
+-v, --verbose             More verbose output and error reporting
 -h, --help                Print usage information
 --src <array>             The javascript source files. The default option.
 --private                 Include symbols marked @private in the output
---heading-depth <number>  root heading depth to begin the documentation from, defaults to 2 (`##`).
+--heading-depth <number>  root heading depth to begin the documentation from, defaults to 1 (`#`).
+-s, --stats               Print a few stats about the doclets parsed.
 ```
-
-##Templating
-Running `jsdoc2md` without a `--template` generates documentation with the default template, which looks like this:
-
-    \{{>index}}
-    \{{>modules}}
-    \{{>globals}}
-    \{{>others}}
-    
-###\{{>index}}
-Only output if there are at least two modules defined. 
-
-    #Index
-    
-    * Modules
-      * \{{>module-name}}
-        * \{{>member-names}}
-    * Global
-      * \{{>global-name}}
-
-###\{{>modules}}
-Outputs one \{{>module}} partial per module.
-
-###\{{>globals}}
-
-    #Global
-    \{{>global-index}}
-    \{{>members}}
-
-###\{{>members}}
-
-    \{{#each (members in=data)}}\{{>member}}\{{/each~}}
-    \{{#each (functions in=data)}}\{{>function}}\{{/each~}}
-    \{{#each (namespaces in=data)}}\{{>namespace}}\{{/each~}}
-    \{{#each (constants in=data)}}\{{>constant}}\{{/each~}}
-    \{{#each (typedefs in=data)}}\{{>typedef}}\{{/each~}}
-    \{{#each (events in=data)}}\{{>event}}\{{/each~}}
-    \{{#each (classes in=data)}}\{{>class}}\{{/each~}}
-
-###\{{>module}}
-
-    \{{>head}}
-    \{{>body}}
-    \{{>module-exported}}  (either a class with index, function or object with index)
-
-###\{{>head}}
-
-    \{{>anchor}}
-    \{{>heading}}\{{>name}}
-    
-###\{{>body}}
-
-    \{{>fields}}
-    
-###\{{>fields}}
-
-    \{{>description~}}
-    \{{>params~}}
-    \{{>deprecated~}}
-    \{{>augments~}}
-    \{{>memberof~}}
-    \{{>type~}}
-    \{{>default~}}
-    \{{>returns~}}
-    \{{>access~}}
-    \{{>enum~}}
-    \{{>readOnly~}}
-    \{{>since~}}
-    \{{>version~}}
-    \{{>authors~}}
-    \{{>license~}}
-    \{{>copyright~}}
-    \{{>examples~}}
-
-###\{{>module-exported}}
-
-    \{{>class}}, \{{>function}} or \{{>module-index}} and \{{>members}}
-
-###\{{>class}}
-
-    \{{>head}}
-    \{{>body~}}
-    \{{>class-members-index~}}
-    \{{>members-grouped~}}
 
 ##API Reference
 {{>specific-module-body name="jsdoc-to-markdown"}}

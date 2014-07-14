@@ -25,7 +25,7 @@ var cli = cliArgs([
       description: "Include symbols marked @private in the output"
     },
     { name: "heading-depth", type: Number,
-      description: "root heading depth to begin the documentation from, defaults to 2 (`##`)."
+      description: "root heading depth to begin the documentation from, defaults to 1 (`#`)."
     },
     { name: "stats", alias: "s", type: Boolean,
       description: "Print a few stats about the doclets parsed."
