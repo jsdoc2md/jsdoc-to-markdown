@@ -1,3 +1,335 @@
+#Index
+
+* Modules
+
+* Classes
+  * [~~class: All~~](#All)
+    * [all.topping](#All#topping)
+    * [all.size](#All#size)
+    * [~~all.allThings(one, two)~~](#All#allThings)
+  * [class: Person](#Person)
+  * [class: Car](#Car)
+  * [class: Pipe](#Pipe)
+  * [~~class: Everything~~](#Everything)
+  * [class: Rice](#Rice)
+    * [event: "cooked"](#Rice#event_cooked)
+    * [event: "cooking"](#Rice#event_cooking)
+  * [class: Something](#Something)
+    * [something.methodOne()](#Something#methodOne)
+    * [~~something.allTogether(one, two)~~](#Something#allTogether)
+  * [class: Pizza](#Pizza)
+    * [pizza.topping](#Pizza#topping)
+    * [pizza.size](#Pizza#size)
+  * [class: Plucker](#Plucker)
+    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
+* Namespaces
+  * [car](#car)
+    * [car.env](#car#env)
+    * [car.wheels](#car.wheels)
+    * [car.sensors](#car.sensors)
+    * [car.start()](#car.start)
+  * [car.env](#car#env)
+    * [env.weather](#car#env.weather)
+    * [env.roads](#car#env.roads)
+
+* Global
+  * [enum: eFileType](#eFileType)
+  * [visible](#visible)
+  * [variable](#variable)
+  * [typed](#typed)
+  * [types](#types)
+  * [exampled](#exampled)
+  * [examples](#examples)
+  * [_protected](#_protected)
+  * [withAuthor](#withAuthor)
+  * [hasDefault](#hasDefault)
+  * [hasDefaultObject](#hasDefaultObject)
+  * [~~deprecated~~](#deprecated)
+  * [readOnly](#readOnly)
+  * [hasSince](#hasSince)
+  * [read(filename, done)](#read)
+  * [globalFunc()](#globalFunc)
+  * [exampled()](#exampled)
+  * [multiExampled()](#multiExampled)
+  * [_protected()](#_protected)
+  * [withAuthor()](#withAuthor)
+  * [~~oldFunction()~~](#oldFunction)
+  * [newFunction()](#newFunction)
+  * [withParam(one)](#withParam)
+  * [withParams(one, two)](#withParams)
+  * [withOptional(one, [two])](#withOptional)
+  * [withBullets(one, two)](#withBullets)
+  * [returnsSomething()](#returnsSomething)
+  * [returnsSomethingDesc()](#returnsSomethingDesc)
+  * [returnsSeveral()](#returnsSeveral)
+  * [doSomething(options)](#doSomething)
+  * [doAnother(options)](#doAnother)
+  * [pluck(...prop)](#pluck)
+  * [requirer()](#requirer)
+  * [setMagicNumber(x)](#setMagicNumber)
+  * [doSomething(options)](#doSomething)
+  * [car](#car)
+  * [const: CONST_ONE](#CONST_ONE)
+  * [~~const: CONST_TWO~~](#CONST_TWO)
+  * [callback: onComplete](#onComplete)
+  * [type: NumberLike](#NumberLike)
+  * [~~class: All~~](#All)
+    * [~~new All(input, [options])~~](#All)
+    * [all.topping](#All#topping)
+    * [all.size](#All#size)
+    * [~~all.allThings(one, two)~~](#All#allThings)
+  * [class: Person](#Person)
+    * [new Person()](#Person)
+  * [class: Car](#Car)
+    * [new Car([options])](#Car)
+  * [class: Pipe](#Pipe)
+  * [~~class: Everything~~](#Everything)
+    * [~~new Everything(input, [options])~~](#Everything)
+  * [class: Rice](#Rice)
+    * [event: "cooked"](#Rice#event_cooked)
+    * [event: "cooking"](#Rice#event_cooking)
+  * [class: Something](#Something)
+    * [something.methodOne()](#Something#methodOne)
+    * [~~something.allTogether(one, two)~~](#Something#allTogether)
+  * [class: Pizza](#Pizza)
+    * [pizza.topping](#Pizza#topping)
+    * [pizza.size](#Pizza#size)
+  * [class: Plucker](#Plucker)
+    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
+<a name="All"></a>
+#~~class: All~~
+a class with all of the things
+
+**Extends**: `Number`  
+**Members**
+
+* [~~new All(input, [options])~~](#All)
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
+
+<a name="All"></a>
+##~~new All(input, [options])~~
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Number`  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="All#topping"></a>
+##all.topping
+the ingredients on top
+
+**Type**: `string`  
+**Default**: `mud, lettuce`  
+**Since**: v1.0.0  
+<a name="All#size"></a>
+##all.size
+the general size
+
+<a name="All#allThings"></a>
+##~~all.allThings(one, two)~~
+This function has all tags set
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+all.allTogether(true);
+```
+
+<a name="Person"></a>
+#class: Person
+simple class description
+
+**Extends**: `Object`  
+<a name="Person"></a>
+##new Person()
+a constructor description
+
+**Extends**: `Object`  
+<a name="Car"></a>
+#class: Car
+<a name="Car"></a>
+##new Car([options])
+a constructor with args
+
+**Params**
+
+- [options] `object` - optional shit
+
+<a name="Pipe"></a>
+#class: Pipe
+a class which extends
+
+**Extends**: `Pipe`  
+<a name="Everything"></a>
+#~~class: Everything~~
+a class with all trimmings
+
+**Extends**: `Pipe`  
+<a name="Everything"></a>
+##~~new Everything(input, [options])~~
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Pipe`  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="Rice"></a>
+#class: Rice
+**Members**
+
+* [event: "cooked"](#Rice#event_cooked)
+* [event: "cooking"](#Rice#event_cooking)
+
+<a name="Rice#event_cooked"></a>
+##event: "cooked"
+Fired when rice is ready
+
+<a name="Rice#event_cooking"></a>
+##event: "cooking"
+Fired when rice is cooking
+
+<a name="Something"></a>
+#class: Something
+**Members**
+
+* [something.methodOne()](#Something#methodOne)
+* [~~something.allTogether(one, two)~~](#Something#allTogether)
+
+<a name="Something#methodOne"></a>
+##something.methodOne()
+method description
+
+<a name="Something#allTogether"></a>
+##~~something.allTogether(one, two)~~
+This function has all tags set
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+something.allTogether(true);
+```
+
+<a name="Pizza"></a>
+#class: Pizza
+**Members**
+
+* [pizza.topping](#Pizza#topping)
+* [pizza.size](#Pizza#size)
+
+<a name="Pizza#topping"></a>
+##pizza.topping
+the ingredients on top
+
+**Type**: `string`  
+**Default**: `mud, lettuce`  
+**Since**: v1.0.0  
+<a name="Pizza#size"></a>
+##pizza.size
+the general size
+
+<a name="Plucker"></a>
+#class: Plucker
+<a name="Plucker#doPluck"></a>
+##plucker.doPluck(one, ...args, ...three)
+This function takes variable input
+
+**Params**
+
+- one `string` - an input
+- ...args `string` - the property(s) as input
+- ...three `string` - more input
+
+<a name="car"></a>
+#car
+<a name="car#env"></a>
+##car.env
+decribes the current conditions
+
+<a name="car#env.weather"></a>
+###env.weather
+what kind of day is it
+
+**Type**: `string`  
+**Default**: `choppy`  
+<a name="car#env.roads"></a>
+###env.roads
+road condition
+
+**Type**: `string`  
+**Default**: `wet`  
+<a name="car.wheels"></a>
+##car.wheels
+the round things
+
+<a name="car.sensors"></a>
+##car.sensors
+the electronics that always go wrong
+
+<a name="car.start"></a>
+##car.start()
+start the car
+
+**Params**
+
+-  `string`
+-  `function`
+
+<a name="car#env"></a>
+#car.env
+decribes the current conditions
+
+<a name="car#env.weather"></a>
+##env.weather
+what kind of day is it
+
+**Type**: `string`  
+**Default**: `choppy`  
+<a name="car#env.roads"></a>
+##env.roads
+road condition
+
+**Type**: `string`  
+**Default**: `wet`  
 #Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)

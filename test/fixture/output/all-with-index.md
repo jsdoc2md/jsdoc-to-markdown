@@ -48,6 +48,54 @@
     * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value)
 
+* Classes
+  * [class: FilePet ⏏](#module_file-pet)
+    * [filePet.instie](#module_file-pet#instie)
+    * [filePet.files](#module_file-pet#files)
+    * [filePet.delete(paths)](#module_file-pet#delete)
+  * [class: Jacket ⏏](#module_jacket)
+    * [jacket.zip()](#module_jacket#zip)
+  * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+    * [machine.eyes](#module_cyberdyne.Machine#eyes)
+    * [machine.vibe](#module_cyberdyne.Machine#vibe)
+  * [class: FileSet ⏏](#module_file-set)
+    * [file-set.files](#module_file-set#files)
+    * [file-set.delete(paths)](#module_file-set#delete)
+  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+    * [cloud.size](#module_heaven.Cloud#size)
+    * [cloud.rain](#module_heaven.Cloud#rain)
+    * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+    * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+  * [~~class: All~~](#All)
+    * [all.topping](#All#topping)
+    * [all.size](#All#size)
+    * [~~all.allThings(one, two)~~](#All#allThings)
+  * [class: Person](#Person)
+  * [class: Car](#Car)
+  * [class: Pipe](#Pipe)
+  * [~~class: Everything~~](#Everything)
+  * [class: Rice](#Rice)
+    * [event: "cooked"](#Rice#event_cooked)
+    * [event: "cooking"](#Rice#event_cooking)
+  * [class: Something](#Something)
+    * [something.methodOne()](#Something#methodOne)
+    * [~~something.allTogether(one, two)~~](#Something#allTogether)
+  * [class: Pizza](#Pizza)
+    * [pizza.topping](#Pizza#topping)
+    * [pizza.size](#Pizza#size)
+  * [class: Plucker](#Plucker)
+    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
+* Namespaces
+  * [car](#car)
+    * [car.env](#car#env)
+    * [car.wheels](#car.wheels)
+    * [car.sensors](#car.sensors)
+    * [car.start()](#car.start)
+  * [car.env](#car#env)
+    * [env.weather](#car#env.weather)
+    * [env.roads](#car#env.roads)
+
 * Global
   * [enum: eFileType](#eFileType)
   * [visible](#visible)
@@ -479,6 +527,385 @@ visible property
 #commonjs/single-value
 this module exports one value, that's it
 
+<a name="module_file-pet"></a>
+#class: FilePet ⏏
+this class returns a pet of files
+
+**Members**
+
+* [new FilePet(num)](#module_file-pet)
+* [filePet.instie](#module_file-pet#instie)
+* [filePet.files](#module_file-pet#files)
+* [filePet.delete(paths)](#module_file-pet#delete)
+
+<a name="module_file-pet"></a>
+##new FilePet(num)
+this is the contructor
+
+**Params**
+
+- num `number` - the input number
+
+**Example**  
+```js
+var cowFiles = FilePet("cow/*");
+```
+
+
+<a name="module_file-pet#instie"></a>
+##filePet.instie
+an instance ting
+
+<a name="module_file-pet#files"></a>
+##filePet.files
+the prototype instance property
+
+**Type**: `boolean`  
+**Default**: `true`  
+<a name="module_file-pet#delete"></a>
+##filePet.delete(paths)
+A prototype instance methy meth
+
+**Params**
+
+- paths `array` - the paths to delete
+
+<a name="module_jacket"></a>
+#class: Jacket ⏏
+<a name="module_jacket#zip"></a>
+##jacket.zip()
+Open and close your Jacket.
+
+<a name="module_cyberdyne.Machine"></a>
+#class: cyber~Machine
+The main class of machine
+
+**Members**
+
+* [new cyber~Machine(options)](#module_cyberdyne.Machine)
+* [machine.eyes](#module_cyberdyne.Machine#eyes)
+* [machine.vibe](#module_cyberdyne.Machine#vibe)
+
+<a name="module_cyberdyne.Machine"></a>
+##new cyber~Machine(options)
+the Machine constructor
+
+**Params**
+
+- options `object` - constructor options
+
+**Scope**: inner class of [cyberdyne](#module_cyberdyne)  
+<a name="module_cyberdyne.Machine#eyes"></a>
+##machine.eyes
+**Type**: `number`  
+<a name="module_cyberdyne.Machine#vibe"></a>
+##machine.vibe
+**Type**: `string`  
+<a name="module_file-set"></a>
+#class: FileSet ⏏
+this class returns a set of files
+
+**Members**
+
+* [new FileSet()](#module_file-set)
+* [file-set.files](#module_file-set#files)
+* [file-set.delete(paths)](#module_file-set#delete)
+
+<a name="module_file-set"></a>
+##new FileSet()
+Takes a list of path patterns
+
+**Params**
+
+-  `Array.<string>` - a list of file patterns
+
+**Example**  
+```js
+var cowFiles = new FileSet("cow/*");
+```
+
+<a name="module_file-set#files"></a>
+##file-set.files
+the prototype instance property
+
+<a name="module_file-set#delete"></a>
+##file-set.delete(paths)
+A prototype instance methy meth
+
+**Params**
+
+- paths `array` - the paths to delete
+
+<a name="module_heaven.Cloud"></a>
+#class: heaven~Cloud
+The main class for a cloud
+
+**Members**
+
+* [new heaven~Cloud(options)](#module_heaven.Cloud)
+* [cloud.size](#module_heaven.Cloud#size)
+* [cloud.rain](#module_heaven.Cloud#rain)
+* [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+* [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+
+<a name="module_heaven.Cloud"></a>
+##new heaven~Cloud(options)
+cloud constructor
+
+**Params**
+
+- options `object` - the options
+
+**Scope**: inner class of [heaven](#module_heaven)  
+<a name="module_heaven.Cloud#size"></a>
+##cloud.size
+**Type**: `number`  
+**Default**: `4`  
+<a name="module_heaven.Cloud#rain"></a>
+##cloud.rain
+**Type**: `boolean`  
+**Default**: `false`  
+<a name="module_heaven.Cloud.classMethod"></a>
+##Cloud.classMethod()
+a class method
+
+<a name="module_heaven.Cloud.SPACES"></a>
+##const: Cloud.SPACES
+a class constant
+
+**Type**: `number`  
+<a name="All"></a>
+#~~class: All~~
+a class with all of the things
+
+**Extends**: `Number`  
+**Members**
+
+* [~~new All(input, [options])~~](#All)
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
+
+<a name="All"></a>
+##~~new All(input, [options])~~
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Number`  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="All#topping"></a>
+##all.topping
+the ingredients on top
+
+**Type**: `string`  
+**Default**: `mud, lettuce`  
+**Since**: v1.0.0  
+<a name="All#size"></a>
+##all.size
+the general size
+
+<a name="All#allThings"></a>
+##~~all.allThings(one, two)~~
+This function has all tags set
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+all.allTogether(true);
+```
+
+<a name="Person"></a>
+#class: Person
+simple class description
+
+**Extends**: `Object`  
+<a name="Person"></a>
+##new Person()
+a constructor description
+
+**Extends**: `Object`  
+<a name="Car"></a>
+#class: Car
+<a name="Car"></a>
+##new Car([options])
+a constructor with args
+
+**Params**
+
+- [options] `object` - optional shit
+
+<a name="Pipe"></a>
+#class: Pipe
+a class which extends
+
+**Extends**: `Pipe`  
+<a name="Everything"></a>
+#~~class: Everything~~
+a class with all trimmings
+
+**Extends**: `Pipe`  
+<a name="Everything"></a>
+##~~new Everything(input, [options])~~
+the constructor description
+
+**Params**
+
+- input `object` - an input
+- [options] `object` - optional shit
+
+***Deprecated***  
+**Extends**: `Pipe`  
+**Since**: v0.10.28  
+**Author**: 75lb <75pound@gmail.com>  
+**Example**  
+```js
+var yeah = new Everything(true);
+```
+
+<a name="Rice"></a>
+#class: Rice
+**Members**
+
+* [event: "cooked"](#Rice#event_cooked)
+* [event: "cooking"](#Rice#event_cooking)
+
+<a name="Rice#event_cooked"></a>
+##event: "cooked"
+Fired when rice is ready
+
+<a name="Rice#event_cooking"></a>
+##event: "cooking"
+Fired when rice is cooking
+
+<a name="Something"></a>
+#class: Something
+**Members**
+
+* [something.methodOne()](#Something#methodOne)
+* [~~something.allTogether(one, two)~~](#Something#allTogether)
+
+<a name="Something#methodOne"></a>
+##something.methodOne()
+method description
+
+<a name="Something#allTogether"></a>
+##~~something.allTogether(one, two)~~
+This function has all tags set
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+something.allTogether(true);
+```
+
+<a name="Pizza"></a>
+#class: Pizza
+**Members**
+
+* [pizza.topping](#Pizza#topping)
+* [pizza.size](#Pizza#size)
+
+<a name="Pizza#topping"></a>
+##pizza.topping
+the ingredients on top
+
+**Type**: `string`  
+**Default**: `mud, lettuce`  
+**Since**: v1.0.0  
+<a name="Pizza#size"></a>
+##pizza.size
+the general size
+
+<a name="Plucker"></a>
+#class: Plucker
+<a name="Plucker#doPluck"></a>
+##plucker.doPluck(one, ...args, ...three)
+This function takes variable input
+
+**Params**
+
+- one `string` - an input
+- ...args `string` - the property(s) as input
+- ...three `string` - more input
+
+<a name="car"></a>
+#car
+<a name="car#env"></a>
+##car.env
+decribes the current conditions
+
+<a name="car#env.weather"></a>
+###env.weather
+what kind of day is it
+
+**Type**: `string`  
+**Default**: `choppy`  
+<a name="car#env.roads"></a>
+###env.roads
+road condition
+
+**Type**: `string`  
+**Default**: `wet`  
+<a name="car.wheels"></a>
+##car.wheels
+the round things
+
+<a name="car.sensors"></a>
+##car.sensors
+the electronics that always go wrong
+
+<a name="car.start"></a>
+##car.start()
+start the car
+
+**Params**
+
+-  `string`
+-  `function`
+
+<a name="car#env"></a>
+#car.env
+decribes the current conditions
+
+<a name="car#env.weather"></a>
+##env.weather
+what kind of day is it
+
+**Type**: `string`  
+**Default**: `choppy`  
+<a name="car#env.roads"></a>
+##env.roads
+road condition
+
+**Type**: `string`  
+**Default**: `wet`  
 #Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)

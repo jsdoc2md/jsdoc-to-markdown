@@ -27,7 +27,7 @@
   "dependencies": {
     "command-line-args": "^0.4.0",
     "console-dope": "^0.3.3",
-    "documenter-md": "^0.1.0",
+    "dmd": "^0.1.0",
     "jsdoc-parse": "^0.2.0",
     "more-fs": "^0.4.0"
   },

@@ -21,6 +21,15 @@ var cli = cliArgs([
     { name: "src", type: Array, defaultOption: true,
       description: "The javascript source files. The default option."
     },
+    { name: "plugin", type: Array, alias: "p",
+      description: "Packages containing helper and/or partial overrides"
+    },
+    { name: "helper", type: Array,
+      description: "helper overrides"
+    },
+    { name: "partial", type: Array,
+      description: "partial overrides"
+    },
     { name: "private", type: Boolean,
       description: "Include symbols marked @private in the output"
     },

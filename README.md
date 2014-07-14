@@ -78,6 +78,9 @@ $ cat doclets.json | jsdoc2md [<options>]
 -v, --verbose             More verbose output and error reporting
 -h, --help                Print usage information
 --src <array>             The javascript source files. The default option.
+-p, --plugin <array>      Packages containing helper and/or partial overrides
+--helper <array>          helper overrides
+--partial <array>         partial overrides
 --private                 Include symbols marked @private in the output
 --heading-depth <number>  root heading depth to begin the documentation from, defaults to 1 (`#`).
 -s, --stats               Print a few stats about the doclets parsed.
@@ -103,6 +106,9 @@ Transforms jsdoc into markdown documentation
   - [json] `boolean` - Return the JSON template data only
   - [stats] `boolean` - Return stats about the doclets parsed
   - [private] `boolean` - Include symbols marked @private in the output
+  - [helper] `string` | `Array.<string>` - Helper overrides
+  - [partial] `string` | `Array.<string>` - Partial overrides
+  - [plugin] `string` | `Array.<string>` - Packages containing helper and/or partial overrides
   - [heading-depth] `number` - Root heading depth, defaults to 2.
 
 **Returns**: `stream` - A readable stream containing the rendered markdown  
