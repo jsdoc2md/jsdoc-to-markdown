@@ -1,8 +1,4 @@
 #Global
-* [class: Rice](#Rice)
-  * [event: "cooked"](#Rice#event_cooked)
-  * [event: "cooking"](#Rice#event_cooking)
-
 <a name="Rice"></a>
 ##class: Rice
 **Members**

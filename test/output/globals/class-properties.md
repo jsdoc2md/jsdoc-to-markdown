@@ -1,8 +1,4 @@
 #Global
-* [class: Pizza](#Pizza)
-  * [pizza.topping](#Pizza#topping)
-  * [pizza.size](#Pizza#size)
-
 <a name="Pizza"></a>
 ##class: Pizza
 **Members**

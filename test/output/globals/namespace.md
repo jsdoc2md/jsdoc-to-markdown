@@ -1,6 +1,4 @@
 #Global
-* [car](#car)
-
 <a name="car"></a>
 ##car
 <a name="car#env"></a>

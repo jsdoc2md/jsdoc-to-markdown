@@ -126,6 +126,7 @@ Renders the jsdoc documentation from the specified source files as markdown.
 - options `object` - The render options
   - [template] `string` - A handlebars template to insert your documentation into.
   - [json] `boolean` - Return the JSON template data only
+  - [stats] `boolean` - Return a few stats about the doclets parsed
   - [private] `boolean` - Include symbols marked @private in the output
   - [heading-depth] `number` - Root heading depth, defaults to 1.
 **Returns**: `stream` - A readable stream containing the rendered markdown
