@@ -6,11 +6,11 @@
   "repository": "https://github.com/75lb/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {
-    "test": "",
+    "test": "tape test/*.js",
     "render": "node test/fixture/render.js",
     "docs": "node bin/cli.js -t jsdoc2md/README.hbs lib/jsdoc-to-markdown.js > README.md; ",
     "watch": "baldrick --do 'npm run docs' --when test/input/*/*.js partials/* --change --speak",
-    "lint": "jshint helpers/*.js bin/*.js lib/*.js; echo",
+    "lint": "jshint bin/*.js lib/*.js test/*.js; echo",
     "index": "jsdoc2md test/fixture/input/**/*.js > test/fixture/output/all-with-index.md",
     "templates": "node test/fixture/templates.js",
     "all": "npm run render && npm run docs && npm run index && npm run templates;"
@@ -25,15 +25,13 @@
     "generator"
   ],
   "dependencies": {
-    "array-tools": "^1.1.0",
-    "boil-js": "^0.2.0",
     "command-line-args": "^0.4.0",
     "console-dope": "^0.3.3",
     "documenter-md": "^0.1.0",
-    "file-set": "^0.2",
     "jsdoc-parse": "^0.2.0",
-    "more-fs": "^0.4.0",
-    "object-tools": "^1.0.0",
-    "string-tools": "^0.1.4"
+    "more-fs": "^0.4.0"
+  },
+  "devDependencies": {
+    "tape": "^2.13.3"
   }
 }

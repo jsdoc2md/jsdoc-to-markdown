@@ -57,7 +57,7 @@ if(argv.src){
     mdStream.on("error", halt);
 } else {
     process.stderr.write("No javascript source files specified, listening on stdin.. \n");
-    process.stdin.pipe(jsdoc2md.render(argv)).pipe(process.stdout);
+    process.stdin.pipe(jsdoc2md.render(argv.src, argv)).pipe(process.stdout);
 }
 
 function halt(err){
