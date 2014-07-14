@@ -9,7 +9,7 @@
 #jsdoc-to-markdown
 [Documented](http://usejsdoc.org) source code in, markdown out.. In development, any feedback welcome.
 
-This app is composed from the lower-level [jsdoc-parse](https://github.com/75lb/jsdoc-parse) and [documenter-md](https://github.com/75lb/documenter-md) modules.
+This app is composed from the lower-level [jsdoc-parse](https://github.com/75lb/jsdoc-parse) and [dmd](https://github.com/75lb/dmd) modules.
 
 ##examples
 These projects have readme files rendered by `jsdoc2md`:
