@@ -3,10 +3,6 @@
 * Modules
 
 * Classes
-  * [class: Person](#Person)
-  * [class: Car](#Car)
-  * [class: Pipe](#Pipe)
-  * [~~class: Everything~~](#Everything)
 
 * Namespaces
 
