@@ -22,3 +22,4 @@ Sums two numbers together
 var result = sum(1, 1);
 ```
 
+

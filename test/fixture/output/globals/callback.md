@@ -1,3 +1,4 @@
+
 #Global
 * [read(filename, done)](#read)
 * [callback: onComplete](#onComplete)
