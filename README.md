@@ -38,7 +38,7 @@ Then add an `docs` build task to your `package.json` scripts, e.g.:
   "name": "my-web-app",
   "version": "1.0.0",
   "scripts": {
-    "docs": "jsdoc2md lib/*.js"
+    "docs": "jsdoc2md lib/*.js > api.md"
   }
 }
 ```
