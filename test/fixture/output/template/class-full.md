@@ -44,17 +44,12 @@ a class constant
 
 #The head
 <a name="module_heaven.Cloud"></a>
-#new heaven~Cloud(options)
+#class: heaven~Cloud
 
 
 #The body
-cloud constructor
+The main class for a cloud
 
-**Params**
-
-- options `object` - the options
-
-**Scope**: inner class of [heaven](#module_heaven)  
 
 
 #The members
