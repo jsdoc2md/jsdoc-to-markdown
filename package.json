@@ -29,7 +29,7 @@
     "console-dope": "^0.3.3",
     "dmd": "^0.1.3",
     "jsdoc-parse": "^0.2.2",
-    "more-fs": "^0.4.0"
+    "more-fs": "^0.5.0"
   },
   "devDependencies": {
     "tape": "^2.13.3"
