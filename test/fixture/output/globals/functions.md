@@ -13,6 +13,7 @@
 * [returnsSomething()](#returnsSomething)
 * [returnsSomethingDesc()](#returnsSomethingDesc)
 * [returnsSeveral()](#returnsSeveral)
+* [~~allTogether(one, two)~~](#allTogether)
 
 <a name="globalFunc"></a>
 ##globalFunc()
@@ -96,3 +97,21 @@ and needs this line to separate the above list from the below
 <a name="returnsSeveral"></a>
 ##returnsSeveral()
 **Returns**: `object` | `string` - this return has several types  
+<a name="allTogether"></a>
+##~~allTogether(one, two)~~
+This function has all tags set
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+allTogether(true);
+```
+

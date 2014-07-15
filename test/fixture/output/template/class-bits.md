@@ -55,6 +55,19 @@ The main class for a cloud
 
 ---------------
 
+#The index
+**Members**
+
+* [new heaven~Cloud(options)](#module_heaven.Cloud)
+* [cloud.size](#module_heaven.Cloud#size)
+* [cloud.rain](#module_heaven.Cloud#rain)
+* [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+* [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+
+
+
+---------------
+
 #The members
 <a name="module_heaven.Cloud"></a>
 ##new heaven~Cloud(options)
@@ -85,6 +98,7 @@ a class constant
 
 
 ---------------
+
 
 #The non-existent class
 ERROR: CLASS NOT FOUND
