@@ -1,6 +1,3 @@
-#A page about a class
-This is a long piece of text all about a class
-
 #The full class
 <a name="module_heaven.Cloud"></a>
 #class: heaven~Cloud
@@ -42,15 +39,21 @@ a class constant
 **Type**: `number`  
 
 
+---------------
+
 #The head
 <a name="module_heaven.Cloud"></a>
 #class: heaven~Cloud
 
 
+---------------
+
 #The body
 The main class for a cloud
 
 
+
+---------------
 
 #The members
 <a name="module_heaven.Cloud"></a>
@@ -80,6 +83,8 @@ a class constant
 
 **Type**: `number`  
 
+
+---------------
 
 #The non-existent class
 ERROR: CLASS NOT FOUND
