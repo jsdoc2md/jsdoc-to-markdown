@@ -22,8 +22,8 @@ allTogether(true);
 ---------------
 
 #The head
-<a name="Something#allTogether"></a>
-#~~something.allTogether(one, two)~~
+<a name="allTogether"></a>
+#~~allTogether(one, two)~~
 
 
 ---------------
@@ -42,7 +42,7 @@ This function has all tags set
 **Author**: Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
-something.allTogether(true);
+allTogether(true);
 ```
 
 
