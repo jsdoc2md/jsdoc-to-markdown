@@ -1,4 +1,3 @@
-
 #Global
 * [variable](#variable)
 * [typed](#typed)

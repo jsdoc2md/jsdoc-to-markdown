@@ -1,4 +1,3 @@
-
 #Global
 * [globalFunc()](#globalFunc)
 * [exampled()](#exampled)

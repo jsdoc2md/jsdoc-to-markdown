@@ -1,4 +1,3 @@
-
 #Global
 * [pluck(...prop)](#pluck)
 * [class: Plucker](#Plucker)

@@ -15,7 +15,6 @@
   * [~~class: Everything~~](#Everything)
     * [~~new Everything(input, [options])~~](#Everything)
 
-
 #Global
 * [class: Person](#Person)
   * [new Person()](#Person)

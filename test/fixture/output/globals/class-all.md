@@ -1,4 +1,3 @@
-
 #Global
 <a name="All"></a>
 ##~~class: All~~

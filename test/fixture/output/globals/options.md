@@ -1,4 +1,3 @@
-
 #Global
 * [doSomething(options)](#doSomething)
 * [doAnother(options)](#doAnother)

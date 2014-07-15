@@ -6,4 +6,3 @@ module with private shiz
 ##private.notprivate
 visible property
 
-

@@ -5,14 +5,6 @@
 * Classes
 
 * Namespaces
-  * [car](#car)
-    * [car.env](#car#env)
-    * [car.wheels](#car.wheels)
-    * [car.sensors](#car.sensors)
-    * [car.start()](#car.start)
-  * [car.env](#car#env)
-    * [env.weather](#car#env.weather)
-    * [env.roads](#car#env.roads)
 
 * Global
   * [enum: eFileType](#eFileType)
@@ -50,7 +42,6 @@
   * [requirer()](#requirer)
   * [setMagicNumber(x)](#setMagicNumber)
   * [doSomething(options)](#doSomething)
-  * [car](#car)
   * [const: CONST_ONE](#CONST_ONE)
   * [~~const: CONST_TWO~~](#CONST_TWO)
   * [callback: onComplete](#onComplete)
@@ -79,58 +70,6 @@
   * [class: Plucker](#Plucker)
     * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
-
-<a name="car"></a>
-#car
-<a name="car#env"></a>
-##car.env
-decribes the current conditions
-
-<a name="car#env.weather"></a>
-###env.weather
-what kind of day is it
-
-**Type**: `string`  
-**Default**: `choppy`  
-<a name="car#env.roads"></a>
-###env.roads
-road condition
-
-**Type**: `string`  
-**Default**: `wet`  
-<a name="car.wheels"></a>
-##car.wheels
-the round things
-
-<a name="car.sensors"></a>
-##car.sensors
-the electronics that always go wrong
-
-<a name="car.start"></a>
-##car.start()
-start the car
-
-**Params**
-
--  `string`
--  `function`
-
-<a name="car#env"></a>
-#car.env
-decribes the current conditions
-
-<a name="car#env.weather"></a>
-##env.weather
-what kind of day is it
-
-**Type**: `string`  
-**Default**: `choppy`  
-<a name="car#env.roads"></a>
-##env.roads
-road condition
-
-**Type**: `string`  
-**Default**: `wet`  
 #Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)
@@ -167,7 +106,6 @@ road condition
 * [requirer()](#requirer)
 * [setMagicNumber(x)](#setMagicNumber)
 * [doSomething(options)](#doSomething)
-* [car](#car)
 * [const: CONST_ONE](#CONST_ONE)
 * [~~const: CONST_TWO~~](#CONST_TWO)
 * [callback: onComplete](#onComplete)
@@ -391,41 +329,6 @@ Set the magic number.
 - options `object` - the function options
   - one `string` - first option
   - two `string` - second option
-
-<a name="car"></a>
-##car
-<a name="car#env"></a>
-###car.env
-decribes the current conditions
-
-<a name="car#env.weather"></a>
-####env.weather
-what kind of day is it
-
-**Type**: `string`  
-**Default**: `choppy`  
-<a name="car#env.roads"></a>
-####env.roads
-road condition
-
-**Type**: `string`  
-**Default**: `wet`  
-<a name="car.wheels"></a>
-###car.wheels
-the round things
-
-<a name="car.sensors"></a>
-###car.sensors
-the electronics that always go wrong
-
-<a name="car.start"></a>
-###car.start()
-start the car
-
-**Params**
-
--  `string`
--  `function`
 
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE

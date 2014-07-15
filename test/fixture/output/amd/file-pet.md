@@ -50,4 +50,3 @@ A prototype instance methy meth
 
 - paths `array` - the paths to delete
 
-

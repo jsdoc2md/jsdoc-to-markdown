@@ -19,4 +19,3 @@ a function
 allTogether(true);
 ```
 
-

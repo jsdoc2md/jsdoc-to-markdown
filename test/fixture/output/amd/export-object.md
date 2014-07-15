@@ -6,4 +6,3 @@ A module that says hello!
 ##hello/world.sayHello()
 Say hello.
 
-

@@ -1,4 +1,3 @@
-
 #Global
 <a name="Pizza"></a>
 ##class: Pizza

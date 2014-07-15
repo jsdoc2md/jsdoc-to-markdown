@@ -14,4 +14,3 @@ the main function description
 - two `object` - a second input
 
 **Returns**: `object` | `string` - this return has several types  
-
