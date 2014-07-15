@@ -10,7 +10,7 @@ function halt(err){
 }
 
 function render(input, outputPath){
-    jsdoc2md.render(input).pipe(fs.createWriteStream(outputPath));
+    jsdoc2md.render(input).pipe(mfs.writeStream(outputPath));
 }
 
 fs.readdirSync("test/fixture/input/commonjs").forEach(function(file){
