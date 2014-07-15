@@ -41,3 +41,17 @@ a class constant
 
 **Type**: `number`  
 
+
+#The head
+<a name="module_heaven.Cloud"></a>
+#new heaven~Cloud(options)
+
+
+#The body
+cloud constructor
+
+**Params**
+
+- options `object` - the options
+
+**Scope**: inner class of [heaven](#module_heaven)  
