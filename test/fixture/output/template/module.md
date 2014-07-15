@@ -1,10 +1,12 @@
-#A page about a module
-This is a long piece of text all about a module
-
 #The full module
 <a name="module_file-set"></a>
-#class: FileSet ⏏
-this class returns a set of files
+#file-set
+this module exports a class constructor
+
+**Example**  
+```js
+var FileSet = require("file-set");
+```
 
 <a name="module_file-set"></a>
 ##class: FileSet ⏏
@@ -43,30 +45,28 @@ A prototype instance methy meth
 
 
 
+---------------
+
 #The head
 <a name="module_file-set"></a>
-#class: FileSet ⏏
+#file-set
 
+
+---------------
 
 #The body
-this class returns a set of files
-
-
-
-#The members
-<a name="module_file-set"></a>
-##new FileSet()
-Takes a list of path patterns
-
-**Params**
-
--  `Array.<string>` - a list of file patterns
+this module exports a class constructor
 
 **Example**  
 ```js
-var cowFiles = new FileSet("cow/*");
+var FileSet = require("file-set");
 ```
 
+
+
+---------------
+
+#The members
 <a name="module_file-set#files"></a>
 ##file-set.files
 the prototype instance property
@@ -81,5 +81,7 @@ A prototype instance methy meth
 
 
 
+---------------
+
 #The non-existent module
-ERROR: CLASS NOT FOUND
+ERROR: MODULE NOT FOUND
