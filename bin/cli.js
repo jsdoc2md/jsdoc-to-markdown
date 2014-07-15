@@ -3,7 +3,8 @@
 
 var cliArgs = require("command-line-args"),
     dope = require("console-dope"),
-    jsdoc2md = require("../");
+    jsdoc2md = require("../"),
+    domain = require("domain");
 
 var cli = cliArgs([
     { name: "template", alias: "t", type: String,
@@ -19,7 +20,7 @@ var cli = cliArgs([
       description: "Print usage information"
     },
     { name: "src", type: Array, defaultOption: true,
-      description: "The javascript source files. The default option."
+      description: "The javascript source files."
     },
     { name: "plugin", type: Array, alias: "p",
       description: "Packages containing helper and/or partial overrides"
@@ -50,7 +51,7 @@ var usage = cli.getUsage({
 });
 
 try{
-    var argv = cli.parse();
+    var argv = cli.parse({ unexpectedType: "string" });
 } catch(err){
     halt(err);
 }
@@ -61,11 +62,14 @@ if (argv.help){
 }
 
 if(argv.src){
-    var mdStream = jsdoc2md.render(argv.src, argv)
-    mdStream.pipe(process.stdout);
-    mdStream.on("error", halt);
+    var d = domain.create();
+    d.on("error", halt);
+    d.run(function(){
+        var mdStream = jsdoc2md.render(argv.src, argv).pipe(process.stdout);
+    });
+    
 } else {
-    process.stderr.write("No javascript source files specified, listening on stdin.. \n");
+    dope.error("No javascript source files specified, listening on stdin..");
     process.stdin.pipe(jsdoc2md.render(argv.src, argv)).pipe(process.stdout);
 }
 
@@ -73,7 +77,7 @@ function halt(err){
     if (argv){
         dope.red.error(argv.verbose ? err.stack : err.message);
     } else {
-        dope.red.error(err);
+        dope.red.error(err.stack);
     }
     dope.error(usage);
     process.exit(1);
