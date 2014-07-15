@@ -1,7 +1,7 @@
 #A page about a class
 This is a long piece of text all about a class
 
-##The implementation
+##The full class
 <a name="module_heaven.Cloud"></a>
 #class: heaven~Cloud
 The main class for a cloud
@@ -80,3 +80,6 @@ a class constant
 
 **Type**: `number`  
 
+
+#The non-existend class
+ERROR: CLASS NOT FOUND
