@@ -48,8 +48,6 @@
     * [private.notprivate](#module_private.notprivate)
   * [commonjs/single-value](#module_commonjs/single-value)
 
-* Classes
-
 * Namespaces
   * [car](#car)
     * [car.env](#car#env)

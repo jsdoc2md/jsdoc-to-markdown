@@ -28,7 +28,7 @@
     "command-line-args": "^0.5.0",
     "console-dope": "^0.3.3",
     "dmd": "^0.1.0",
-    "jsdoc-parse": "^0.2.0",
+    "jsdoc-parse": "^0.2.2",
     "more-fs": "^0.4.0"
   },
   "devDependencies": {

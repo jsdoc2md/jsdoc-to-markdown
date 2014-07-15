@@ -1,9 +1,5 @@
 #Index
 
-* Modules
-
-* Classes
-
 * Namespaces
   * [car](#car)
     * [car.env](#car#env)

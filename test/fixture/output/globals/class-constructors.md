@@ -1,11 +1,5 @@
 #Index
 
-* Modules
-
-* Classes
-
-* Namespaces
-
 * Global
   * [class: Person](#Person)
     * [new Person()](#Person)
