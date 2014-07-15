@@ -9,14 +9,14 @@ exported object, with-inner-members
 * [cattle~innerFuction()](#module_cattle.innerFuction)
 * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
-<a name="module_cattle.createCow"></a>
-##cattle.createCow()
-**Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
 ##cattle~innerMember
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
+<a name="module_cattle.createCow"></a>
+##cattle.createCow()
+**Returns**: `boolean`  
 <a name="module_cattle.innerFuction"></a>
 ##cattle~innerFuction()
 the inner function

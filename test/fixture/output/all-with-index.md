@@ -211,14 +211,14 @@ var cyber = require("cyberdyne");
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
-<a name="module_cyberdyne.createMachine"></a>
-##cyber.createMachine()
-**Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
 ##cyber~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
+<a name="module_cyberdyne.createMachine"></a>
+##cyber.createMachine()
+**Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.Machine"></a>
 ##class: cyber~Machine
 The main class of machine
@@ -369,14 +369,14 @@ exported object, with-inner-members
 * [cattle~innerFuction()](#module_cattle.innerFuction)
 * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
-<a name="module_cattle.createCow"></a>
-##cattle.createCow()
-**Returns**: `boolean`  
 <a name="module_cattle.innerMember"></a>
 ##cattle~innerMember
 the inner member
 
 **Scope**: inner member of [cattle](#module_cattle)  
+<a name="module_cattle.createCow"></a>
+##cattle.createCow()
+**Returns**: `boolean`  
 <a name="module_cattle.innerFuction"></a>
 ##cattle~innerFuction()
 the inner function
@@ -554,6 +554,10 @@ this module exports one value, that's it
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
+<a name="module_commonjs/single-value"></a>
+##module.exports ⏏
+**Type**: `boolean`  
+**Default**: `true`  
 <a name="eFileType"></a>
 ##enum: eFileType
 Enum for the `type` value
@@ -619,6 +623,31 @@ var next = "p";
 <a name="hasSince"></a>
 ##hasSince
 **Since**: v0.10.28  
+<a name="module_sum-alias"></a>
+##sum(a, b) ⏏
+Sums two numbers together
+
+**Params**
+
+- a `number` - first number
+- b `number` - second number
+
+**Returns**: `number` - the result  
+**Example**  
+```js
+var result = sum(1, 1);
+```
+
+<a name="module_commonjs/function"></a>
+##module.exports(one, two) ⏏
+the main function description
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+**Returns**: `object` | `string` - this return has several types  
 <a name="read"></a>
 ##read(filename, done)
 **Params**
@@ -752,22 +781,6 @@ Set the magic number.
 
 <a name="car"></a>
 ##car
-<a name="car#env"></a>
-###car.env
-decribes the current conditions
-
-<a name="car#env.weather"></a>
-####env.weather
-what kind of day is it
-
-**Type**: `string`  
-**Default**: `choppy`  
-<a name="car#env.roads"></a>
-####env.roads
-road condition
-
-**Type**: `string`  
-**Default**: `wet`  
 <a name="car.wheels"></a>
 ###car.wheels
 the round things
@@ -785,6 +798,22 @@ start the car
 -  `string`
 -  `function`
 
+<a name="car#env"></a>
+###car.env
+decribes the current conditions
+
+<a name="car#env.weather"></a>
+####env.weather
+what kind of day is it
+
+**Type**: `string`  
+**Default**: `choppy`  
+<a name="car#env.roads"></a>
+####env.roads
+road condition
+
+**Type**: `string`  
+**Default**: `wet`  
 <a name="CONST_ONE"></a>
 ##const: CONST_ONE
 the first important constant
@@ -819,6 +848,90 @@ Called when an async operation completes
 A number, or a string containing a number.
 
 **Type**: `number` | `string`  
+<a name="module_file-pet"></a>
+##class: FilePet ⏏
+this class returns a pet of files
+
+**Members**
+
+* [new FilePet(num)](#module_file-pet)
+* [filePet.instie](#module_file-pet#instie)
+* [filePet.files](#module_file-pet#files)
+* [filePet.delete(paths)](#module_file-pet#delete)
+
+<a name="module_file-pet"></a>
+###new FilePet(num)
+this is the contructor
+
+**Params**
+
+- num `number` - the input number
+
+**Example**  
+```js
+var cowFiles = FilePet("cow/*");
+```
+
+
+<a name="module_file-pet#instie"></a>
+###filePet.instie
+an instance ting
+
+<a name="module_file-pet#files"></a>
+###filePet.files
+the prototype instance property
+
+**Type**: `boolean`  
+**Default**: `true`  
+<a name="module_file-pet#delete"></a>
+###filePet.delete(paths)
+A prototype instance methy meth
+
+**Params**
+
+- paths `array` - the paths to delete
+
+<a name="module_jacket"></a>
+##class: Jacket ⏏
+<a name="module_jacket#zip"></a>
+###jacket.zip()
+Open and close your Jacket.
+
+<a name="module_file-set"></a>
+##class: FileSet ⏏
+this class returns a set of files
+
+**Members**
+
+* [new FileSet()](#module_file-set)
+* [file-set.files](#module_file-set#files)
+* [file-set.delete(paths)](#module_file-set#delete)
+
+<a name="module_file-set"></a>
+###new FileSet()
+Takes a list of path patterns
+
+**Params**
+
+-  `Array.<string>` - a list of file patterns
+
+**Example**  
+```js
+var cowFiles = new FileSet("cow/*");
+```
+
+<a name="module_file-set#files"></a>
+###file-set.files
+the prototype instance property
+
+<a name="module_file-set#delete"></a>
+###file-set.delete(paths)
+A prototype instance methy meth
+
+**Params**
+
+- paths `array` - the paths to delete
+
 <a name="All"></a>
 ##~~class: All~~
 a class with all of the things

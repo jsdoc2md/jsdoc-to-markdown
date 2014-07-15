@@ -16,14 +16,14 @@ var cyber = require("cyberdyne");
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
-<a name="module_cyberdyne.createMachine"></a>
-##cyber.createMachine()
-**Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.something"></a>
 ##cyber~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
+<a name="module_cyberdyne.createMachine"></a>
+##cyber.createMachine()
+**Returns**: [Machine](#module_cyberdyne.Machine)  
 <a name="module_cyberdyne.Machine"></a>
 ##class: cyber~Machine
 The main class of machine

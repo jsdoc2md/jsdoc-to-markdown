@@ -1,22 +1,6 @@
 #Global
 <a name="car"></a>
 ##car
-<a name="car#env"></a>
-###car.env
-decribes the current conditions
-
-<a name="car#env.weather"></a>
-####env.weather
-what kind of day is it
-
-**Type**: `string`  
-**Default**: `choppy`  
-<a name="car#env.roads"></a>
-####env.roads
-road condition
-
-**Type**: `string`  
-**Default**: `wet`  
 <a name="car.wheels"></a>
 ###car.wheels
 the round things
@@ -34,3 +18,19 @@ start the car
 -  `string`
 -  `function`
 
+<a name="car#env"></a>
+###car.env
+decribes the current conditions
+
+<a name="car#env.weather"></a>
+####env.weather
+what kind of day is it
+
+**Type**: `string`  
+**Default**: `choppy`  
+<a name="car#env.roads"></a>
+####env.roads
+road condition
+
+**Type**: `string`  
+**Default**: `wet`  
