@@ -23,6 +23,8 @@ random
 ##class: cyber~Machine
 The main class of machine
 
+**Members**
+
 * [class: cyber~Machine](#module_cyberdyne.Machine)
   * [new cyber~Machine(options)](#module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)

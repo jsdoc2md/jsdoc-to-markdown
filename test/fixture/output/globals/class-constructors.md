@@ -21,6 +21,8 @@
 simple class description
 
 **Extends**: `Object`  
+**Members**
+
 * [class: Person](#Person)
   * [new Person()](#Person)
 <a name="Person"></a>
@@ -30,6 +32,8 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
+**Members**
+
 * [class: Car](#Car)
   * [new Car([options])](#Car)
 <a name="Car"></a>
@@ -45,12 +49,16 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
+**Members**
+
 * [class: Pipe](#Pipe)
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
+**Members**
+
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 <a name="Everything"></a>

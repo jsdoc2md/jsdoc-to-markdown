@@ -165,6 +165,8 @@ var cowFiles = FilePet("cow/*");
 ##class: FilePet ⏏
 this class returns a pet of files
 
+**Members**
+
 * [class: FilePet ⏏](#module_file-pet)
   * [new FilePet(num)](#module_file-pet)
   * [filePet.instie](#module_file-pet#instie)
@@ -208,6 +210,8 @@ A module representing a jacket.
 
 <a name="module_jacket"></a>
 ##class: Jacket ⏏
+**Members**
+
 * [class: Jacket ⏏](#module_jacket)
   * [jacket.zip()](#module_jacket#zip)
 <a name="module_jacket#zip"></a>
@@ -226,6 +230,8 @@ var FileSet = require("file-set");
 <a name="module_file-set"></a>
 ##class: FileSet ⏏
 this class returns a set of files
+
+**Members**
 
 * [class: FileSet ⏏](#module_file-set)
   * [new FileSet()](#module_file-set)
@@ -349,6 +355,8 @@ random
 ##class: cyber~Machine
 The main class of machine
 
+**Members**
+
 * [class: cyber~Machine](#module_cyberdyne.Machine)
   * [new cyber~Machine(options)](#module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
@@ -443,6 +451,8 @@ an inner constant
 <a name="module_heaven.Cloud"></a>
 ##class: heaven~Cloud
 The main class for a cloud
+
+**Members**
 
 * [class: heaven~Cloud](#module_heaven.Cloud)
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
@@ -864,6 +874,8 @@ A number, or a string containing a number.
 ##class: FilePet ⏏
 this class returns a pet of files
 
+**Members**
+
 * [class: FilePet ⏏](#module_file-pet)
   * [new FilePet(num)](#module_file-pet)
   * [filePet.instie](#module_file-pet#instie)
@@ -903,6 +915,8 @@ A prototype instance methy meth
 
 <a name="module_jacket"></a>
 ##class: Jacket ⏏
+**Members**
+
 * [class: Jacket ⏏](#module_jacket)
   * [jacket.zip()](#module_jacket#zip)
 <a name="module_jacket#zip"></a>
@@ -912,6 +926,8 @@ Open and close your Jacket.
 <a name="module_file-set"></a>
 ##class: FileSet ⏏
 this class returns a set of files
+
+**Members**
 
 * [class: FileSet ⏏](#module_file-set)
   * [new FileSet()](#module_file-set)
@@ -947,6 +963,8 @@ A prototype instance methy meth
 a class with all of the things
 
 **Extends**: `Number`  
+**Members**
+
 * [~~class: All~~](#All)
   * [~~new All(input, [options])~~](#All)
   * [all.topping](#All#topping)
@@ -1005,6 +1023,8 @@ all.allTogether(true);
 simple class description
 
 **Extends**: `Object`  
+**Members**
+
 * [class: Person](#Person)
   * [new Person()](#Person)
 <a name="Person"></a>
@@ -1014,6 +1034,8 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
+**Members**
+
 * [class: Car](#Car)
   * [new Car([options])](#Car)
 <a name="Car"></a>
@@ -1029,12 +1051,16 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
+**Members**
+
 * [class: Pipe](#Pipe)
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
+**Members**
+
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 <a name="Everything"></a>
@@ -1057,6 +1083,8 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
+**Members**
+
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
   * [event: "cooking"](#Rice#event_cooking)
@@ -1070,6 +1098,8 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
+**Members**
+
 * [class: Something](#Something)
   * [something.methodOne()](#Something#methodOne)
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
@@ -1097,6 +1127,8 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
+**Members**
+
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
@@ -1113,6 +1145,8 @@ the general size
 
 <a name="Plucker"></a>
 ##class: Plucker
+**Members**
+
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 <a name="Plucker#doPluck"></a>

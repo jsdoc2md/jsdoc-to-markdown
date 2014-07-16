@@ -25,6 +25,8 @@ an inner constant
 ##class: heaven~Cloud
 The main class for a cloud
 
+**Members**
+
 * [class: heaven~Cloud](#module_heaven.Cloud)
   * [new heaven~Cloud(options)](#module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)

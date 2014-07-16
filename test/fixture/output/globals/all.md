@@ -438,6 +438,8 @@ A number, or a string containing a number.
 a class with all of the things
 
 **Extends**: `Number`  
+**Members**
+
 * [~~class: All~~](#All)
   * [~~new All(input, [options])~~](#All)
   * [all.topping](#All#topping)
@@ -496,6 +498,8 @@ all.allTogether(true);
 simple class description
 
 **Extends**: `Object`  
+**Members**
+
 * [class: Person](#Person)
   * [new Person()](#Person)
 <a name="Person"></a>
@@ -505,6 +509,8 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
+**Members**
+
 * [class: Car](#Car)
   * [new Car([options])](#Car)
 <a name="Car"></a>
@@ -520,12 +526,16 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
+**Members**
+
 * [class: Pipe](#Pipe)
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
+**Members**
+
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 <a name="Everything"></a>
@@ -548,6 +558,8 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
+**Members**
+
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
   * [event: "cooking"](#Rice#event_cooking)
@@ -561,6 +573,8 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
+**Members**
+
 * [class: Something](#Something)
   * [something.methodOne()](#Something#methodOne)
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
@@ -588,6 +602,8 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
+**Members**
+
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
@@ -604,6 +620,8 @@ the general size
 
 <a name="Plucker"></a>
 ##class: Plucker
+**Members**
+
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 <a name="Plucker#doPluck"></a>

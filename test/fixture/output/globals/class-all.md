@@ -4,6 +4,8 @@
 a class with all of the things
 
 **Extends**: `Number`  
+**Members**
+
 * [~~class: All~~](#All)
   * [~~new All(input, [options])~~](#All)
   * [all.topping](#All#topping)

@@ -12,6 +12,8 @@ var FileSet = require("file-set");
 ##class: FileSet ⏏
 this class returns a set of files
 
+**Members**
+
 * [class: FileSet ⏏](#module_file-set)
   * [new FileSet()](#module_file-set)
   * [file-set.files](#module_file-set#files)
@@ -68,6 +70,8 @@ var FileSet = require("file-set");
 <a name="module_file-set"></a>
 ##class: FileSet ⏏
 this class returns a set of files
+
+**Members**
 
 * [class: FileSet ⏏](#module_file-set)
   * [new FileSet()](#module_file-set)

@@ -12,6 +12,8 @@ This function takes variable input
 
 <a name="Plucker"></a>
 ##class: Plucker
+**Members**
+
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 <a name="Plucker#doPluck"></a>
