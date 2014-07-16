@@ -12,6 +12,7 @@ a class with all of the things
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
+
 <a name="All"></a>
 ###~~new All(input, [options])~~
 the constructor description

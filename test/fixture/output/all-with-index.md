@@ -172,6 +172,7 @@ this class returns a pet of files
   * [filePet.instie](#module_file-pet#instie)
   * [filePet.files](#module_file-pet#files)
   * [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet"></a>
 ###new FilePet(num)
 this is the contructor
@@ -214,6 +215,7 @@ A module representing a jacket.
 
 * [class: Jacket ⏏](#module_jacket)
   * [jacket.zip()](#module_jacket#zip)
+
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -237,6 +239,7 @@ this class returns a set of files
   * [new FileSet()](#module_file-set)
   * [file-set.files](#module_file-set#files)
   * [file-set.delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set"></a>
 ###new FileSet()
 Takes a list of path patterns
@@ -361,6 +364,7 @@ The main class of machine
   * [new cyber~Machine(options)](#module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
+
 <a name="module_cyberdyne.Machine"></a>
 ###new cyber~Machine(options)
 the Machine constructor
@@ -460,6 +464,7 @@ The main class for a cloud
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+
 <a name="module_heaven.Cloud"></a>
 ###new heaven~Cloud(options)
 cloud constructor
@@ -881,6 +886,7 @@ this class returns a pet of files
   * [filePet.instie](#module_file-pet#instie)
   * [filePet.files](#module_file-pet#files)
   * [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet"></a>
 ###new FilePet(num)
 this is the contructor
@@ -919,6 +925,7 @@ A prototype instance methy meth
 
 * [class: Jacket ⏏](#module_jacket)
   * [jacket.zip()](#module_jacket#zip)
+
 <a name="module_jacket#zip"></a>
 ###jacket.zip()
 Open and close your Jacket.
@@ -933,6 +940,7 @@ this class returns a set of files
   * [new FileSet()](#module_file-set)
   * [file-set.files](#module_file-set#files)
   * [file-set.delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set"></a>
 ###new FileSet()
 Takes a list of path patterns
@@ -971,6 +979,7 @@ a class with all of the things
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
+
 <a name="All"></a>
 ###~~new All(input, [options])~~
 the constructor description
@@ -1027,6 +1036,7 @@ simple class description
 
 * [class: Person](#Person)
   * [new Person()](#Person)
+
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -1038,6 +1048,7 @@ a constructor description
 
 * [class: Car](#Car)
   * [new Car([options])](#Car)
+
 <a name="Car"></a>
 ###new Car([options])
 a constructor with args
@@ -1054,6 +1065,7 @@ a class which extends
 **Members**
 
 * [class: Pipe](#Pipe)
+
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
@@ -1063,6 +1075,7 @@ a class with all trimmings
 
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
+
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
 the constructor description
@@ -1088,6 +1101,7 @@ var yeah = new Everything(true);
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
   * [event: "cooking"](#Rice#event_cooking)
+
 <a name="Rice#event_cooked"></a>
 ###event: "cooked"
 Fired when rice is ready
@@ -1103,6 +1117,7 @@ Fired when rice is cooking
 * [class: Something](#Something)
   * [something.methodOne()](#Something#methodOne)
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
+
 <a name="Something#methodOne"></a>
 ###something.methodOne()
 method description
@@ -1132,6 +1147,7 @@ something.allTogether(true);
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
+
 <a name="Pizza#topping"></a>
 ###pizza.topping
 the ingredients on top
@@ -1149,6 +1165,7 @@ the general size
 
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)
 This function takes variable input

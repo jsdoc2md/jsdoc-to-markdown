@@ -29,6 +29,7 @@ The main class of machine
   * [new cyber~Machine(options)](#module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
+
 <a name="module_cyberdyne.Machine"></a>
 ###new cyber~Machine(options)
 the Machine constructor

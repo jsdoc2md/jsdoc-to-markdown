@@ -11,6 +11,7 @@ The main class for a cloud
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+
 <a name="module_heaven.Cloud"></a>
 ##new heaven~Cloud(options)
 cloud constructor
