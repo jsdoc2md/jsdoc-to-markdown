@@ -9,6 +9,7 @@ exported object, with-inner-members
   * [cattle~innerMember](#module_cattle.innerMember)
   * [cattle~innerFuction()](#module_cattle.innerFuction)
   * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+
 <a name="module_cattle.innerMember"></a>
 ##cattle~innerMember
 the inner member

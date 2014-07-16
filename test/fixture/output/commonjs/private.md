@@ -6,6 +6,7 @@ module with private shiz
 
 * [private](#module_private)
   * [private.notprivate](#module_private.notprivate)
+
 <a name="module_private.notprivate"></a>
 ##private.notprivate
 visible property

@@ -150,6 +150,7 @@ A module that says hello!
 
 * [amd/export-object](#module_amd/export-object)
   * [amd/export-object.sayHello()](#module_amd/export-object.sayHello)
+
 <a name="module_amd/export-object.sayHello"></a>
 ##amd/export-object.sayHello()
 Say hello.
@@ -312,6 +313,7 @@ module with ignored shiz
 
 * [commonjs/ignore](#module_commonjs/ignore)
   * [ignore.visible](#module_commonjs/ignore.visible)
+
 <a name="module_commonjs/ignore.visible"></a>
 ##ignore.visible
 visible property
@@ -326,6 +328,7 @@ simple object export
   * [_.one](#module_commonjs/object-alias.one)
   * [_.two](#module_commonjs/object-alias.two)
   * [_.three()](#module_commonjs/object-alias.three)
+
 <a name="module_commonjs/object-alias.one"></a>
 ##_.one
 first property
@@ -356,6 +359,7 @@ var cyber = require("cyberdyne");
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
   * [cyber~something](#module_cyberdyne.something)
+
 <a name="module_cyberdyne.something"></a>
 ##cyber~something
 random
@@ -400,6 +404,7 @@ exported object, with-inner-members
   * [cattle~innerMember](#module_cattle.innerMember)
   * [cattle~innerFuction()](#module_cattle.innerFuction)
   * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+
 <a name="module_cattle.innerMember"></a>
 ##cattle~innerMember
 the inner member
@@ -427,6 +432,7 @@ simple object, one member
 
 * [one-member](#module_one-member)
   * [object.three(four, five)](#module_one-member.three)
+
 <a name="module_one-member.three"></a>
 ##object.three(four, five)
 a function
@@ -460,6 +466,7 @@ factory module creating dodgy cloud. object-with-static-class.
     * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
     * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
   * [const: heaven~FACT](#module_heaven.FACT)
+
 <a name="module_heaven.Cloud"></a>
 ##heaven.Cloud
 access to the Cloud class
@@ -520,6 +527,7 @@ module with private shiz
 
 * [private](#module_private)
   * [private.notprivate](#module_private.notprivate)
+
 <a name="module_private.notprivate"></a>
 ##private.notprivate
 visible property
@@ -532,6 +540,7 @@ this module exports one value, that's it
 
 * [commonjs/single-value](#module_commonjs/single-value)
   * [module.exports ⏏](#module_commonjs/single-value)
+
 #Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)

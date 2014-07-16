@@ -16,6 +16,7 @@ var cyber = require("cyberdyne");
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
   * [cyber~something](#module_cyberdyne.something)
+
 <a name="module_cyberdyne.something"></a>
 ##cyber~something
 random
