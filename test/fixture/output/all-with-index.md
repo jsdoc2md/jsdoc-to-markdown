@@ -54,6 +54,7 @@
   * [private.notprivate](#module_private.notprivate)
 * [commonjs/single-value](#module_commonjs/single-value)
   * [module.exports ⏏](#module_commonjs/single-value)
+
 **Namespaces**
 
 * [car](#car)
@@ -66,6 +67,7 @@
 * [car.env](#car#env)
   * [env.weather](#car#env.weather)
   * [env.roads](#car#env.roads)
+
 **Global**
 
 * [callback: onComplete](#onComplete)
