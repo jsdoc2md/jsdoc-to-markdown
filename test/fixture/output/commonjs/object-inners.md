@@ -2,11 +2,13 @@
 #cattle
 exported object, with-inner-members
 
-**Members**
-* [cattle~innerMember](#module_cattle.innerMember)
-* [cattle.createCow()](#module_cattle.createCow)
-* [cattle~innerFuction()](#module_cattle.innerFuction)
-* [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+**Members
+
+* [cattle](#module_cattle)
+  * [cattle.createCow()](#module_cattle.createCow)
+  * [cattle~innerMember](#module_cattle.innerMember)
+  * [cattle~innerFuction()](#module_cattle.innerFuction)
+  * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 <a name="module_cattle.innerMember"></a>
 ##cattle~innerMember
 the inner member

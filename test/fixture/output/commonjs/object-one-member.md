@@ -2,6 +2,10 @@
 #one-member
 simple object, one member
 
+**Members
+
+* [one-member](#module_one-member)
+  * [object.three(four, five)](#module_one-member.three)
 <a name="module_one-member.three"></a>
 ##object.three(four, five)
 a function

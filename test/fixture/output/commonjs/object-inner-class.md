@@ -7,10 +7,15 @@ exports an object.. has an inner class.
 var cyber = require("cyberdyne");
 ```
 
-**Members**
-* [cyber~something](#module_cyberdyne.something)
-* [cyber.createMachine()](#module_cyberdyne.createMachine)
-* [class: cyber~Machine](#module_cyberdyne.Machine)
+**Members
+
+* [cyberdyne](#module_cyberdyne)
+  * [cyber.createMachine()](#module_cyberdyne.createMachine)
+  * [class: cyber~Machine](#module_cyberdyne.Machine)
+    * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+    * [machine.eyes](#module_cyberdyne.Machine#eyes)
+    * [machine.vibe](#module_cyberdyne.Machine#vibe)
+  * [cyber~something](#module_cyberdyne.something)
 <a name="module_cyberdyne.something"></a>
 ##cyber~something
 random
@@ -29,7 +34,6 @@ The main class of machine
   * [new cyber~Machine(options)](#module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
-
 <a name="module_cyberdyne.Machine"></a>
 ###new cyber~Machine(options)
 the Machine constructor

@@ -9,7 +9,6 @@
 * [class: Pipe](#Pipe)
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
-
 #Global
 * [new Person()](#Person)
 * [new Car([options])](#Car)
@@ -25,7 +24,6 @@ simple class description
 
 * [class: Person](#Person)
   * [new Person()](#Person)
-
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -37,7 +35,6 @@ a constructor description
 
 * [class: Car](#Car)
   * [new Car([options])](#Car)
-
 <a name="Car"></a>
 ###new Car([options])
 a constructor with args
@@ -54,7 +51,6 @@ a class which extends
 **Members**
 
 * [class: Pipe](#Pipe)
-
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
@@ -64,7 +60,6 @@ a class with all trimmings
 
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
-
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
 the constructor description
