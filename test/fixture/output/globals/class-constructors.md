@@ -12,10 +12,13 @@
   * [~~new Everything(input, [options])~~](#Everything)
 
 #Global
-* [new Person()](#Person)
-* [new Car([options])](#Car)
+* [class: Person](#Person)
+  * [new Person()](#Person)
+* [class: Car](#Car)
+  * [new Car([options])](#Car)
 * [class: Pipe](#Pipe)
-* [~~new Everything(input, [options])~~](#Everything)
+* [~~class: Everything~~](#Everything)
+  * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Person"></a>
 ##class: Person

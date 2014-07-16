@@ -69,3 +69,5 @@ a class method
 a class constant
 
 **Type**: `number`  
+#Global
+

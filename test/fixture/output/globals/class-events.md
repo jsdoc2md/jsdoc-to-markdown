@@ -1,5 +1,6 @@
 
 #Global
+
 <a name="Rice"></a>
 ##class: Rice
 **Members**

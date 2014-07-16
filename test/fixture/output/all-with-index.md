@@ -360,7 +360,7 @@ var cyber = require("cyberdyne");
 
 * [cyberdyne](#module_cyberdyne)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
-  * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+  * [class: cyber~Machine](#module_cyberdyne.Machine)
     * [new cyber~Machine(options)](#module_cyberdyne.Machine)
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
@@ -466,7 +466,7 @@ factory module creating dodgy cloud. object-with-static-class.
 * [heaven](#module_heaven)
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [heaven.Cloud](#module_heaven.Cloud)
-  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+  * [class: heaven~Cloud](#module_heaven.Cloud)
     * [new heaven~Cloud(options)](#module_heaven.Cloud)
     * [cloud.size](#module_heaven.Cloud#size)
     * [cloud.rain](#module_heaven.Cloud#rain)
@@ -552,18 +552,18 @@ this module exports one value, that's it
 #Global
 * [callback: onComplete](#onComplete)
 * [read(filename, done)](#read)
-* [~~new All(input, [options])~~](#All)
+* [~~class: All~~](#All)
   * [~~new All(input, [options])~~](#All)
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
-* [new Person()](#Person)
+* [class: Person](#Person)
   * [new Person()](#Person)
-* [new Car([options])](#Car)
+* [class: Car](#Car)
   * [new Car([options])](#Car)
 * [class: Pipe](#Pipe)
-* [~~new Everything(input, [options])~~](#Everything)
+* [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
@@ -624,6 +624,7 @@ this module exports one value, that's it
 * [type: NumberLike](#NumberLike)
 * [setMagicNumber(x)](#setMagicNumber)
 * [doSomething(options)](#doSomething)
+
 <a name="module_commonjs/single-value"></a>
 ##module.exports ⏏
 **Type**: `boolean`  

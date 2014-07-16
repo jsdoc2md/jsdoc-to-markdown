@@ -8,3 +8,9 @@ this module exports one value, that's it
 * [single-value](#module_single-value)
   * [module.exports ⏏](#module_single-value)
 
+#Global
+
+<a name="module_single-value"></a>
+##module.exports ⏏
+**Type**: `boolean`  
+**Default**: `true`  

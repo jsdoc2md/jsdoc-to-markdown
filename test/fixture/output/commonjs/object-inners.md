@@ -30,3 +30,5 @@ another inner function
 
 ***Deprecated***  
 **Scope**: inner function of [cattle](#module_cattle)  
+#Global
+
