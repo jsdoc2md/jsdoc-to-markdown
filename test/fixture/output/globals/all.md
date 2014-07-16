@@ -1,81 +1,96 @@
-* [](#undefined)
-  * [callback: onComplete](#onComplete)
-  * [read(filename, done)](#read)
-  * [~~class: All~~](#All)
-    * [~~new All(input, [options])~~](#All)
-    * [all.topping](#All#topping)
-    * [all.size](#All#size)
-    * [~~all.allThings(one, two)~~](#All#allThings)
-      * [allThings~some](#All#allThings.some)
-  * [class: Person](#Person)
-    * [new Person()](#Person)
-  * [class: Car](#Car)
-    * [new Car([options])](#Car)
-  * [class: Pipe](#Pipe)
-  * [~~class: Everything~~](#Everything)
-    * [~~new Everything(input, [options])~~](#Everything)
-  * [class: Rice](#Rice)
-    * [event: "cooked"](#Rice#event_cooked)
-    * [event: "cooking"](#Rice#event_cooking)
-  * [class: Something](#Something)
-    * [something.methodOne()](#Something#methodOne)
-    * [~~something.allTogether(one, two)~~](#Something#allTogether)
-  * [class: Pizza](#Pizza)
-    * [pizza.topping](#Pizza#topping)
-    * [pizza.size](#Pizza#size)
-  * [const: CONST_ONE](#CONST_ONE)
-  * [~~const: CONST_TWO~~](#CONST_TWO)
-  * [enum: eFileType](#eFileType)
-    * [eFileType.NOEXIST](#eFileType.NOEXIST)
-    * [eFileType.FILE](#eFileType.FILE)
-    * [eFileType.DIR](#eFileType.DIR)
-  * [globalFunc()](#globalFunc)
-  * [exampled()](#exampled)
-  * [multiExampled()](#multiExampled)
-  * [_protected()](#_protected)
-  * [withAuthor()](#withAuthor)
-  * [~~oldFunction()~~](#oldFunction)
-  * [newFunction()](#newFunction)
-  * [withParam(one)](#withParam)
-  * [withParams(one, two)](#withParams)
-  * [withOptional(one, [two])](#withOptional)
-  * [withBullets(one, two)](#withBullets)
-  * [returnsSomething()](#returnsSomething)
-  * [returnsSomethingDesc()](#returnsSomethingDesc)
-  * [returnsSeveral()](#returnsSeveral)
-  * [~~allTogether(one, two)~~](#allTogether)
-  * [visible](#visible)
-  * [variable](#variable)
-  * [typed](#typed)
-  * [types](#types)
-  * [exampled](#exampled)
-  * [examples](#examples)
-  * [_protected](#_protected)
-  * [withAuthor](#withAuthor)
-  * [hasDefault](#hasDefault)
-  * [hasDefaultObject](#hasDefaultObject)
-  * [~~deprecated~~](#deprecated)
-  * [readOnly](#readOnly)
-  * [hasSince](#hasSince)
-  * [car](#car)
-    * [car.wheels](#car.wheels)
-    * [car.sensors](#car.sensors)
-    * [car.start()](#car.start)
-    * [car.env](#car#env)
-      * [env.weather](#car#env.weather)
-      * [env.roads](#car#env.roads)
-  * [doSomething(options)](#doSomething)
-  * [doAnother(options)](#doAnother)
-  * [pluck(...prop)](#pluck)
-  * [class: Plucker](#Plucker)
-    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-  * [requirer()](#requirer)
-  * [type: NumberLike](#NumberLike)
-  * [setMagicNumber(x)](#setMagicNumber)
-  * [doSomething(options)](#doSomething)
-  * [](#package_undefined)
-#Global
+#Index
 
+**Namespaces**
+
+* [car](#car)
+  * [car.wheels](#car.wheels)
+  * [car.sensors](#car.sensors)
+  * [car.start()](#car.start)
+  * [car.env](#car#env)
+    * [env.weather](#car#env.weather)
+    * [env.roads](#car#env.roads)
+* [car.env](#car#env)
+  * [env.weather](#car#env.weather)
+  * [env.roads](#car#env.roads)
+
+**Global**
+
+* [callback: onComplete](#onComplete)
+* [read(filename, done)](#read)
+* [~~class: All~~](#All)
+  * [~~new All(input, [options])~~](#All)
+  * [all.topping](#All#topping)
+  * [all.size](#All#size)
+  * [~~all.allThings(one, two)~~](#All#allThings)
+    * [allThings~some](#All#allThings.some)
+* [class: Person](#Person)
+  * [new Person()](#Person)
+* [class: Car](#Car)
+  * [new Car([options])](#Car)
+* [class: Pipe](#Pipe)
+* [~~class: Everything~~](#Everything)
+  * [~~new Everything(input, [options])~~](#Everything)
+* [class: Rice](#Rice)
+  * [event: "cooked"](#Rice#event_cooked)
+  * [event: "cooking"](#Rice#event_cooking)
+* [class: Something](#Something)
+  * [something.methodOne()](#Something#methodOne)
+  * [~~something.allTogether(one, two)~~](#Something#allTogether)
+* [class: Pizza](#Pizza)
+  * [pizza.topping](#Pizza#topping)
+  * [pizza.size](#Pizza#size)
+* [const: CONST_ONE](#CONST_ONE)
+* [~~const: CONST_TWO~~](#CONST_TWO)
+* [enum: eFileType](#eFileType)
+  * [eFileType.NOEXIST](#eFileType.NOEXIST)
+  * [eFileType.FILE](#eFileType.FILE)
+  * [eFileType.DIR](#eFileType.DIR)
+* [globalFunc()](#globalFunc)
+* [exampled()](#exampled)
+* [multiExampled()](#multiExampled)
+* [_protected()](#_protected)
+* [withAuthor()](#withAuthor)
+* [~~oldFunction()~~](#oldFunction)
+* [newFunction()](#newFunction)
+* [withParam(one)](#withParam)
+* [withParams(one, two)](#withParams)
+* [withOptional(one, [two])](#withOptional)
+* [withBullets(one, two)](#withBullets)
+* [returnsSomething()](#returnsSomething)
+* [returnsSomethingDesc()](#returnsSomethingDesc)
+* [returnsSeveral()](#returnsSeveral)
+* [~~allTogether(one, two)~~](#allTogether)
+* [visible](#visible)
+* [variable](#variable)
+* [typed](#typed)
+* [types](#types)
+* [exampled](#exampled)
+* [examples](#examples)
+* [_protected](#_protected)
+* [withAuthor](#withAuthor)
+* [hasDefault](#hasDefault)
+* [hasDefaultObject](#hasDefaultObject)
+* [~~deprecated~~](#deprecated)
+* [readOnly](#readOnly)
+* [hasSince](#hasSince)
+* [car](#car)
+  * [car.wheels](#car.wheels)
+  * [car.sensors](#car.sensors)
+  * [car.start()](#car.start)
+  * [car.env](#car#env)
+    * [env.weather](#car#env.weather)
+    * [env.roads](#car#env.roads)
+* [doSomething(options)](#doSomething)
+* [doAnother(options)](#doAnother)
+* [pluck(...prop)](#pluck)
+* [class: Plucker](#Plucker)
+  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+* [requirer()](#requirer)
+* [type: NumberLike](#NumberLike)
+* [setMagicNumber(x)](#setMagicNumber)
+* [doSomething(options)](#doSomething)
+
+#Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)
 * [variable](#variable)
@@ -118,24 +133,14 @@
 * [callback: onComplete](#onComplete)
 * [type: NumberLike](#NumberLike)
 * [~~new All(input, [options])~~](#All)
-
-* [all.topping](#All#topping)
-* [all.size](#All#size)
-* [~~all.allThings(one, two)~~](#All#allThings)
 * [new Person()](#Person)
 * [new Car([options])](#Car)
+* [class: Pipe](#Pipe)
 * [~~new Everything(input, [options])~~](#Everything)
-
-* [event: "cooked"](#Rice#event_cooked)
-* [event: "cooking"](#Rice#event_cooking)
-
-* [something.methodOne()](#Something#methodOne)
-* [~~something.allTogether(one, two)~~](#Something#allTogether)
-
-* [pizza.topping](#Pizza#topping)
-* [pizza.size](#Pizza#size)
-
-* [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+* [class: Rice](#Rice)
+* [class: Something](#Something)
+* [class: Pizza](#Pizza)
+* [class: Plucker](#Plucker)
 
 <a name="eFileType"></a>
 ##enum: eFileType
@@ -354,13 +359,10 @@ Set the magic number.
 <a name="car"></a>
 ##car
 **Members**
-
-
 * [car.wheels](#car.wheels)
 * [car.sensors](#car.sensors)
 * [car.start()](#car.start)
 * [car.env](#car#env)
-
 <a name="car.wheels"></a>
 ###car.wheels
 the round things
@@ -383,11 +385,8 @@ start the car
 decribes the current conditions
 
 **Members**
-
-
 * [env.weather](#car#env.weather)
 * [env.roads](#car#env.roads)
-
 <a name="car#env.weather"></a>
 ####env.weather
 what kind of day is it
@@ -439,14 +438,12 @@ A number, or a string containing a number.
 a class with all of the things
 
 **Extends**: `Number`  
-**Members**
-
-* [~~new All(input, [options])~~](#All)
-
-* [all.topping](#All#topping)
-* [all.size](#All#size)
-* [~~all.allThings(one, two)~~](#All#allThings)
-
+* [~~class: All~~](#All)
+  * [~~new All(input, [options])~~](#All)
+  * [all.topping](#All#topping)
+  * [all.size](#All#size)
+  * [~~all.allThings(one, two)~~](#All#allThings)
+    * [allThings~some](#All#allThings.some)
 <a name="All"></a>
 ###~~new All(input, [options])~~
 the constructor description
@@ -499,6 +496,8 @@ all.allTogether(true);
 simple class description
 
 **Extends**: `Object`  
+* [class: Person](#Person)
+  * [new Person()](#Person)
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -506,6 +505,8 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
+* [class: Car](#Car)
+  * [new Car([options])](#Car)
 <a name="Car"></a>
 ###new Car([options])
 a constructor with args
@@ -519,11 +520,14 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
+* [class: Pipe](#Pipe)
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
+* [~~class: Everything~~](#Everything)
+  * [~~new Everything(input, [options])~~](#Everything)
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
 the constructor description
@@ -544,12 +548,9 @@ var yeah = new Everything(true);
 
 <a name="Rice"></a>
 ##class: Rice
-**Members**
-
-
-* [event: "cooked"](#Rice#event_cooked)
-* [event: "cooking"](#Rice#event_cooking)
-
+* [class: Rice](#Rice)
+  * [event: "cooked"](#Rice#event_cooked)
+  * [event: "cooking"](#Rice#event_cooking)
 <a name="Rice#event_cooked"></a>
 ###event: "cooked"
 Fired when rice is ready
@@ -560,12 +561,9 @@ Fired when rice is cooking
 
 <a name="Something"></a>
 ##class: Something
-**Members**
-
-
-* [something.methodOne()](#Something#methodOne)
-* [~~something.allTogether(one, two)~~](#Something#allTogether)
-
+* [class: Something](#Something)
+  * [something.methodOne()](#Something#methodOne)
+  * [~~something.allTogether(one, two)~~](#Something#allTogether)
 <a name="Something#methodOne"></a>
 ###something.methodOne()
 method description
@@ -590,12 +588,9 @@ something.allTogether(true);
 
 <a name="Pizza"></a>
 ##class: Pizza
-**Members**
-
-
-* [pizza.topping](#Pizza#topping)
-* [pizza.size](#Pizza#size)
-
+* [class: Pizza](#Pizza)
+  * [pizza.topping](#Pizza#topping)
+  * [pizza.size](#Pizza#size)
 <a name="Pizza#topping"></a>
 ###pizza.topping
 the ingredients on top
@@ -609,6 +604,8 @@ the general size
 
 <a name="Plucker"></a>
 ##class: Plucker
+* [class: Plucker](#Plucker)
+  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)
 This function takes variable input

@@ -1,9 +1,4 @@
-* [](#undefined)
-  * [type: NumberLike](#NumberLike)
-  * [setMagicNumber(x)](#setMagicNumber)
-  * [](#package_undefined)
 #Global
-
 * [setMagicNumber(x)](#setMagicNumber)
 * [type: NumberLike](#NumberLike)
 

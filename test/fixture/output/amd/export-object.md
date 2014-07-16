@@ -1,7 +1,3 @@
-* [](#undefined)
-  * [amd/export-object](#module_amd/export-object)
-    * [amd/export-object.sayHello()](#module_amd/export-object.sayHello)
-  * [](#package_undefined)
 <a name="module_amd/export-object"></a>
 #amd/export-object
 A module that says hello!

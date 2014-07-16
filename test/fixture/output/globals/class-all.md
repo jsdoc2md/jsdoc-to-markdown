@@ -1,25 +1,15 @@
-* [](#undefined)
-  * [~~class: All~~](#All)
-    * [~~new All(input, [options])~~](#All)
-    * [all.topping](#All#topping)
-    * [all.size](#All#size)
-    * [~~all.allThings(one, two)~~](#All#allThings)
-      * [allThings~some](#All#allThings.some)
-  * [](#package_undefined)
 #Global
 <a name="All"></a>
 ##~~class: All~~
 a class with all of the things
 
 **Extends**: `Number`  
-**Members**
-
-* [~~new All(input, [options])~~](#All)
-
-* [all.topping](#All#topping)
-* [all.size](#All#size)
-* [~~all.allThings(one, two)~~](#All#allThings)
-
+* [~~class: All~~](#All)
+  * [~~new All(input, [options])~~](#All)
+  * [all.topping](#All#topping)
+  * [all.size](#All#size)
+  * [~~all.allThings(one, two)~~](#All#allThings)
+    * [allThings~some](#All#allThings.some)
 <a name="All"></a>
 ###~~new All(input, [options])~~
 the constructor description

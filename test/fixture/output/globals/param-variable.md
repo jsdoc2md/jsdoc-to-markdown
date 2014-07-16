@@ -1,13 +1,6 @@
-* [](#undefined)
-  * [pluck(...prop)](#pluck)
-  * [class: Plucker](#Plucker)
-    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-  * [](#package_undefined)
 #Global
-
 * [pluck(...prop)](#pluck)
-
-* [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+* [class: Plucker](#Plucker)
 
 <a name="pluck"></a>
 ##pluck(...prop)
@@ -19,6 +12,8 @@ This function takes variable input
 
 <a name="Plucker"></a>
 ##class: Plucker
+* [class: Plucker](#Plucker)
+  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)
 This function takes variable input

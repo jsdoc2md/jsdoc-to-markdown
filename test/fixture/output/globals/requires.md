@@ -1,6 +1,3 @@
-* [](#undefined)
-  * [requirer()](#requirer)
-  * [](#package_undefined)
 #Global
 <a name="requirer"></a>
 ##requirer()

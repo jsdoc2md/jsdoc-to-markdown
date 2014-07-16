@@ -1,7 +1,3 @@
-* [](#undefined)
-  * [one-member](#module_one-member)
-    * [object.three(four, five)](#module_one-member.three)
-  * [](#package_undefined)
 <a name="module_one-member"></a>
 #one-member
 simple object, one member

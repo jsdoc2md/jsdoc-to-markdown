@@ -1,9 +1,4 @@
-* [](#undefined)
-  * [doSomething(options)](#doSomething)
-  * [doAnother(options)](#doAnother)
-  * [](#package_undefined)
 #Global
-
 * [doSomething(options)](#doSomething)
 * [doAnother(options)](#doAnother)
 

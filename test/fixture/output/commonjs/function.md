@@ -1,8 +1,3 @@
-* [](#undefined)
-  * [function](#module_function)
-    * [module.exports(one, two) ⏏](#module_function)
-  * [module.exports(one, two) ⏏](#module_function)
-  * [](#package_undefined)
 <a name="module_function"></a>
 #function
 This is the module description

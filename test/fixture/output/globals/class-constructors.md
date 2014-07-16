@@ -1,16 +1,19 @@
-* [](#undefined)
-  * [class: Person](#Person)
-    * [new Person()](#Person)
-  * [class: Car](#Car)
-    * [new Car([options])](#Car)
-  * [class: Pipe](#Pipe)
-  * [~~class: Everything~~](#Everything)
-    * [~~new Everything(input, [options])~~](#Everything)
-  * [](#package_undefined)
-#Global
+#Index
 
+**Global**
+
+* [class: Person](#Person)
+  * [new Person()](#Person)
+* [class: Car](#Car)
+  * [new Car([options])](#Car)
+* [class: Pipe](#Pipe)
+* [~~class: Everything~~](#Everything)
+  * [~~new Everything(input, [options])~~](#Everything)
+
+#Global
 * [new Person()](#Person)
 * [new Car([options])](#Car)
+* [class: Pipe](#Pipe)
 * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Person"></a>
@@ -18,6 +21,8 @@
 simple class description
 
 **Extends**: `Object`  
+* [class: Person](#Person)
+  * [new Person()](#Person)
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -25,6 +30,8 @@ a constructor description
 **Extends**: `Object`  
 <a name="Car"></a>
 ##class: Car
+* [class: Car](#Car)
+  * [new Car([options])](#Car)
 <a name="Car"></a>
 ###new Car([options])
 a constructor with args
@@ -38,11 +45,14 @@ a constructor with args
 a class which extends
 
 **Extends**: `Pipe`  
+* [class: Pipe](#Pipe)
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
+* [~~class: Everything~~](#Everything)
+  * [~~new Everything(input, [options])~~](#Everything)
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
 the constructor description

@@ -1,9 +1,4 @@
-* [](#undefined)
-  * [callback: onComplete](#onComplete)
-  * [read(filename, done)](#read)
-  * [](#package_undefined)
 #Global
-
 * [read(filename, done)](#read)
 * [callback: onComplete](#onComplete)
 
