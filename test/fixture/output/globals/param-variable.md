@@ -1,26 +1,13 @@
 
-#Global
-* [pluck(...prop)](#pluck)
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
-<a name="pluck"></a>
-##pluck(...prop)
-This function takes variable input
-
-**Params**
-
-- ...prop `string` - the property(s) as input
-
 <a name="Plucker"></a>
-##class: Plucker
+#class: Plucker
 **Members**
 
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...args, ...three)
+##plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
 **Params**
@@ -28,4 +15,13 @@ This function takes variable input
 - one `string` - an input
 - ...args `string` - the property(s) as input
 - ...three `string` - more input
+
+<a name="pluck"></a>
+#pluck(...prop)
+This function takes variable input
+
+**Params**
+
+- ...prop `string` - the property(s) as input
+
 

@@ -1,7 +1,6 @@
 
-#Global
-
 <a name="requirer"></a>
-##requirer()
+#requirer()
 ensure you have some-module installed
+
 

@@ -1,8 +1,6 @@
 
-#Global
-
 <a name="Something"></a>
-##class: Something
+#class: Something
 **Members**
 
 * [class: Something](#Something)
@@ -10,11 +8,11 @@
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
-###something.methodOne()
+##something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two)~~
+##~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**
@@ -30,4 +28,5 @@ This function has all tags set
 ```js
 something.allTogether(true);
 ```
+
 

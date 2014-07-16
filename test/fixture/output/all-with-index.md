@@ -552,497 +552,8 @@ this module exports one value, that's it
 * [commonjs/single-value](#module_commonjs/single-value)
   * [module.exports ⏏](#module_commonjs/single-value)
 
-#Global
-* [enum: eFileType](#eFileType)
-  * [eFileType.NOEXIST](#eFileType.NOEXIST)
-  * [eFileType.FILE](#eFileType.FILE)
-  * [eFileType.DIR](#eFileType.DIR)
-* [visible](#visible)
-* [variable](#variable)
-* [typed](#typed)
-* [types](#types)
-* [exampled](#exampled)
-* [examples](#examples)
-* [_protected](#_protected)
-* [withAuthor](#withAuthor)
-* [hasDefault](#hasDefault)
-* [hasDefaultObject](#hasDefaultObject)
-* [~~deprecated~~](#deprecated)
-* [readOnly](#readOnly)
-* [hasSince](#hasSince)
-* [read(filename, done)](#read)
-* [globalFunc()](#globalFunc)
-* [exampled()](#exampled)
-* [multiExampled()](#multiExampled)
-* [_protected()](#_protected)
-* [withAuthor()](#withAuthor)
-* [~~oldFunction()~~](#oldFunction)
-* [newFunction()](#newFunction)
-* [withParam(one)](#withParam)
-* [withParams(one, two)](#withParams)
-* [withOptional(one, [two])](#withOptional)
-* [withBullets(one, two)](#withBullets)
-* [returnsSomething()](#returnsSomething)
-* [returnsSomethingDesc()](#returnsSomethingDesc)
-* [returnsSeveral()](#returnsSeveral)
-* [~~allTogether(one, two)~~](#allTogether)
-* [doSomething(options)](#doSomething)
-* [doAnother(options)](#doAnother)
-* [pluck(...prop)](#pluck)
-* [requirer()](#requirer)
-* [setMagicNumber(x)](#setMagicNumber)
-* [doSomething(options)](#doSomething)
-* [car](#car)
-  * [car.wheels](#car.wheels)
-  * [car.sensors](#car.sensors)
-  * [car.start()](#car.start)
-  * [car.env](#car#env)
-    * [env.weather](#car#env.weather)
-    * [env.roads](#car#env.roads)
-* [const: CONST_ONE](#CONST_ONE)
-* [~~const: CONST_TWO~~](#CONST_TWO)
-* [callback: onComplete](#onComplete)
-* [type: NumberLike](#NumberLike)
-* [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
-  * [all.topping](#All#topping)
-  * [all.size](#All#size)
-  * [~~all.allThings(one, two)~~](#All#allThings)
-    * [allThings~some](#All#allThings.some)
-* [class: Person](#Person)
-  * [new Person()](#Person)
-* [class: Car](#Car)
-  * [new Car([options])](#Car)
-* [class: Pipe](#Pipe)
-* [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
-* [class: Rice](#Rice)
-  * [event: "cooked"](#Rice#event_cooked)
-  * [event: "cooking"](#Rice#event_cooking)
-* [class: Something](#Something)
-  * [something.methodOne()](#Something#methodOne)
-  * [~~something.allTogether(one, two)~~](#Something#allTogether)
-* [class: Pizza](#Pizza)
-  * [pizza.topping](#Pizza#topping)
-  * [pizza.size](#Pizza#size)
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
-<a name="module_commonjs/single-value"></a>
-##module.exports ⏏
-**Type**: `boolean`  
-**Default**: `true`  
-<a name="eFileType"></a>
-##enum: eFileType
-Enum for the `type` value
-
-**Type**: `number`  
-**Properties**: `NOEXIST`, `FILE`, `DIR`  
-**Read only**: true  
-<a name="visible"></a>
-##visible
-a visible global
-
-<a name="variable"></a>
-##variable
-a global variable
-
-<a name="typed"></a>
-##typed
-**Type**: `string`  
-<a name="types"></a>
-##types
-**Type**: `string` | `number`  
-<a name="exampled"></a>
-##exampled
-a var with an example
-
-**Example**  
-```js
-var another = 100;
-```
-
-<a name="examples"></a>
-##examples
-a var with multiple examples
-
-**Example**  
-```js
-var another = 100;
-```
-
-**Example**  
-```js
-var next = "p";
-```
-
-<a name="_protected"></a>
-##_protected
-**Access**: protected  
-<a name="withAuthor"></a>
-##withAuthor
-**Author**: Clive Jones <clive@jones.com>  
-<a name="hasDefault"></a>
-##hasDefault
-**Default**: `23`  
-<a name="hasDefaultObject"></a>
-##hasDefaultObject
-**Default**: `{"one":1,"two":2}`  
-<a name="deprecated"></a>
-##~~deprecated~~
-***Deprecated***  
-<a name="readOnly"></a>
-##readOnly
-**Read only**: true  
-<a name="hasSince"></a>
-##hasSince
-**Since**: v0.10.28  
-<a name="module_sum-alias"></a>
-##sum(a, b) ⏏
-Sums two numbers together
-
-**Params**
-
-- a `number` - first number
-- b `number` - second number
-
-**Returns**: `number` - the result  
-**Example**  
-```js
-var result = sum(1, 1);
-```
-
-<a name="module_commonjs/function"></a>
-##module.exports(one, two) ⏏
-the main function description
-
-**Params**
-
-- one `string` - The input string
-- two `object` - a second input
-
-**Returns**: `object` | `string` - this return has several types  
-<a name="read"></a>
-##read(filename, done)
-**Params**
-
-- filename `string` - the filename
-- done [onComplete](#onComplete) - the callback
-
-<a name="globalFunc"></a>
-##globalFunc()
-a global function
-
-<a name="exampled"></a>
-##exampled()
-a function with an example
-
-**Example**  
-```js
-var result = exampled();
-```
-
-<a name="multiExampled"></a>
-##multiExampled()
-a function with multiple examples
-
-**Example**  
-```js
-var another = 100;
-```
-
-**Example**  
-```js
-var next = "p";
-```
-
-<a name="_protected"></a>
-##_protected()
-**Access**: protected  
-<a name="withAuthor"></a>
-##withAuthor()
-**Author**: Clive Jones <clive@jones.com>  
-<a name="oldFunction"></a>
-##~~oldFunction()~~
-***Deprecated***  
-<a name="newFunction"></a>
-##newFunction()
-**Since**: v0.10.28  
-<a name="withParam"></a>
-##withParam(one)
-**Params**
-
-- one `string` - The input string
-
-<a name="withParams"></a>
-##withParams(one, two)
-**Params**
-
-- one `string` - The input string
-- two `object`
-
-<a name="withOptional"></a>
-##withOptional(one, [two])
-**Params**
-
-- one `string` - The input string
-- [two] `object` - this one is optional
-
-<a name="withBullets"></a>
-##withBullets(one, two)
-this description has 
-
-- bullet
-- points
-
-and needs this line to separate the above list from the below
-
-**Params**
-
-- one `string` - The input string
-- two `object` - a second input
-
-<a name="returnsSomething"></a>
-##returnsSomething()
-**Returns**: `string`  
-<a name="returnsSomethingDesc"></a>
-##returnsSomethingDesc()
-**Returns**: `object` - this return has a description  
-<a name="returnsSeveral"></a>
-##returnsSeveral()
-**Returns**: `object` | `string` - this return has several types  
-<a name="allTogether"></a>
-##~~allTogether(one, two)~~
-This function has all tags set
-
-**Params**
-
-- one `string` - The input string
-- two `object` - a second input
-
-***Deprecated***  
-**Returns**: `object` | `string` - this return has several types  
-**Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-**Example**  
-```js
-allTogether(true);
-```
-
-<a name="doSomething"></a>
-##doSomething(options)
-**Params**
-
-- options `object` - the function options
-  - one `string` - first option
-  - two `string` - second option
-
-<a name="doAnother"></a>
-##doAnother(options)
-**Params**
-
-- options `Object` - the function options
-
-<a name="pluck"></a>
-##pluck(...prop)
-This function takes variable input
-
-**Params**
-
-- ...prop `string` - the property(s) as input
-
-<a name="requirer"></a>
-##requirer()
-ensure you have some-module installed
-
-<a name="setMagicNumber"></a>
-##setMagicNumber(x)
-Set the magic number.
-
-**Params**
-
-- x [NumberLike](#NumberLike) - The magic number.
-
-<a name="doSomething"></a>
-##doSomething(options)
-**Params**
-
-- options `object` - the function options
-  - one `string` - first option
-  - two `string` - second option
-
-<a name="car"></a>
-##car
-* [car](#car)
-  * [car.wheels](#car.wheels)
-  * [car.sensors](#car.sensors)
-  * [car.start()](#car.start)
-  * [car.env](#car#env)
-    * [env.weather](#car#env.weather)
-    * [env.roads](#car#env.roads)
-<a name="car.wheels"></a>
-###car.wheels
-the round things
-
-<a name="car.sensors"></a>
-###car.sensors
-the electronics that always go wrong
-
-<a name="car.start"></a>
-###car.start()
-start the car
-
-**Params**
-
--  `string`
--  `function`
-
-<a name="car#env"></a>
-###car.env
-decribes the current conditions
-
-* [car.env](#car#env)
-  * [env.weather](#car#env.weather)
-  * [env.roads](#car#env.roads)
-<a name="car#env.weather"></a>
-####env.weather
-what kind of day is it
-
-**Type**: `string`  
-**Default**: `choppy`  
-<a name="car#env.roads"></a>
-####env.roads
-road condition
-
-**Type**: `string`  
-**Default**: `wet`  
-<a name="CONST_ONE"></a>
-##const: CONST_ONE
-the first important constant
-
-**Type**: `number`  
-<a name="CONST_TWO"></a>
-##~~const: CONST_TWO~~
-This variable has all tags set
-
-***Deprecated***  
-**Type**: `boolean`  
-**Read only**: true  
-**Since**: v0.10.28  
-**Author**: Lloyd Brookes <lloyd@brookes.com>  
-**Example**  
-```js
-var CONST_TWO = true;
-```
-
-<a name="onComplete"></a>
-##callback: onComplete
-Called when an async operation completes
-
-**Params**
-
-- err `object` - an error, or `null`
-- result `string` - the result info
-
-**Type**: `function`  
-<a name="NumberLike"></a>
-##type: NumberLike
-A number, or a string containing a number.
-
-**Type**: `number` | `string`  
-<a name="module_file-pet"></a>
-##class: FilePet ⏏
-this class returns a pet of files
-
-**Members**
-
-* [class: FilePet ⏏](#module_file-pet)
-  * [new FilePet(num)](#module_file-pet)
-  * [filePet.instie](#module_file-pet#instie)
-  * [filePet.files](#module_file-pet#files)
-  * [filePet.delete(paths)](#module_file-pet#delete)
-
-<a name="module_file-pet"></a>
-###new FilePet(num)
-this is the contructor
-
-**Params**
-
-- num `number` - the input number
-
-**Example**  
-```js
-var cowFiles = FilePet("cow/*");
-```
-
-
-<a name="module_file-pet#instie"></a>
-###filePet.instie
-an instance ting
-
-<a name="module_file-pet#files"></a>
-###filePet.files
-the prototype instance property
-
-**Type**: `boolean`  
-**Default**: `true`  
-<a name="module_file-pet#delete"></a>
-###filePet.delete(paths)
-A prototype instance methy meth
-
-**Params**
-
-- paths `array` - the paths to delete
-
-<a name="module_jacket"></a>
-##class: Jacket ⏏
-**Members**
-
-* [class: Jacket ⏏](#module_jacket)
-  * [jacket.zip()](#module_jacket#zip)
-
-<a name="module_jacket#zip"></a>
-###jacket.zip()
-Open and close your Jacket.
-
-<a name="module_file-set"></a>
-##class: FileSet ⏏
-this class returns a set of files
-
-**Members**
-
-* [class: FileSet ⏏](#module_file-set)
-  * [new FileSet()](#module_file-set)
-  * [file-set.files](#module_file-set#files)
-  * [file-set.delete(paths)](#module_file-set#delete)
-
-<a name="module_file-set"></a>
-###new FileSet()
-Takes a list of path patterns
-
-**Params**
-
--  `Array.<string>` - a list of file patterns
-
-**Example**  
-```js
-var cowFiles = new FileSet("cow/*");
-```
-
-<a name="module_file-set#files"></a>
-###file-set.files
-the prototype instance property
-
-<a name="module_file-set#delete"></a>
-###file-set.delete(paths)
-A prototype instance methy meth
-
-**Params**
-
-- paths `array` - the paths to delete
-
 <a name="All"></a>
-##~~class: All~~
+#~~class: All~~
 a class with all of the things
 
 **Extends**: `Number`  
@@ -1056,7 +567,7 @@ a class with all of the things
     * [allThings~some](#All#allThings.some)
 
 <a name="All"></a>
-###~~new All(input, [options])~~
+##~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -1074,18 +585,18 @@ var yeah = new Everything(true);
 ```
 
 <a name="All#topping"></a>
-###all.topping
+##all.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size
+##all.size
 the general size
 
 <a name="All#allThings"></a>
-###~~all.allThings(one, two)~~
+##~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**
@@ -1103,7 +614,7 @@ all.allTogether(true);
 ```
 
 <a name="Person"></a>
-##class: Person
+#class: Person
 simple class description
 
 **Extends**: `Object`  
@@ -1113,19 +624,19 @@ simple class description
   * [new Person()](#Person)
 
 <a name="Person"></a>
-###new Person()
+##new Person()
 a constructor description
 
 **Extends**: `Object`  
 <a name="Car"></a>
-##class: Car
+#class: Car
 **Members**
 
 * [class: Car](#Car)
   * [new Car([options])](#Car)
 
 <a name="Car"></a>
-###new Car([options])
+##new Car([options])
 a constructor with args
 
 **Params**
@@ -1133,7 +644,7 @@ a constructor with args
 - [options] `object` - optional shit
 
 <a name="Pipe"></a>
-##class: Pipe
+#class: Pipe
 a class which extends
 
 **Extends**: `Pipe`  
@@ -1142,7 +653,7 @@ a class which extends
 * [class: Pipe](#Pipe)
 
 <a name="Everything"></a>
-##~~class: Everything~~
+#~~class: Everything~~
 a class with all trimmings
 
 **Extends**: `Pipe`  
@@ -1152,7 +663,7 @@ a class with all trimmings
   * [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Everything"></a>
-###~~new Everything(input, [options])~~
+##~~new Everything(input, [options])~~
 the constructor description
 
 **Params**
@@ -1170,7 +681,7 @@ var yeah = new Everything(true);
 ```
 
 <a name="Rice"></a>
-##class: Rice
+#class: Rice
 **Members**
 
 * [class: Rice](#Rice)
@@ -1178,15 +689,15 @@ var yeah = new Everything(true);
   * [event: "cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
-###event: "cooked"
+##event: "cooked"
 Fired when rice is ready
 
 <a name="Rice#event_cooking"></a>
-###event: "cooking"
+##event: "cooking"
 Fired when rice is cooking
 
 <a name="Something"></a>
-##class: Something
+#class: Something
 **Members**
 
 * [class: Something](#Something)
@@ -1194,11 +705,11 @@ Fired when rice is cooking
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
 
 <a name="Something#methodOne"></a>
-###something.methodOne()
+##something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two)~~
+##~~something.allTogether(one, two)~~
 This function has all tags set
 
 **Params**
@@ -1216,7 +727,7 @@ something.allTogether(true);
 ```
 
 <a name="Pizza"></a>
-##class: Pizza
+#class: Pizza
 **Members**
 
 * [class: Pizza](#Pizza)
@@ -1224,25 +735,25 @@ something.allTogether(true);
   * [pizza.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-###pizza.topping
+##pizza.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###pizza.size
+##pizza.size
 the general size
 
 <a name="Plucker"></a>
-##class: Plucker
+#class: Plucker
 **Members**
 
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...args, ...three)
+##plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
 **Params**
@@ -1250,4 +761,279 @@ This function takes variable input
 - one `string` - an input
 - ...args `string` - the property(s) as input
 - ...three `string` - more input
+
+<a name="car"></a>
+#car
+* [car](#car)
+  * [car.wheels](#car.wheels)
+  * [car.sensors](#car.sensors)
+  * [car.start()](#car.start)
+  * [car.env](#car#env)
+    * [env.weather](#car#env.weather)
+    * [env.roads](#car#env.roads)
+<a name="car.wheels"></a>
+##car.wheels
+the round things
+
+<a name="car.sensors"></a>
+##car.sensors
+the electronics that always go wrong
+
+<a name="car.start"></a>
+##car.start()
+start the car
+
+**Params**
+
+-  `string`
+-  `function`
+
+<a name="car#env"></a>
+##car.env
+decribes the current conditions
+
+* [car.env](#car#env)
+  * [env.weather](#car#env.weather)
+  * [env.roads](#car#env.roads)
+<a name="car#env.weather"></a>
+###env.weather
+what kind of day is it
+
+**Type**: `string`  
+**Default**: `choppy`  
+<a name="car#env.roads"></a>
+###env.roads
+road condition
+
+**Type**: `string`  
+**Default**: `wet`  
+<a name="read"></a>
+#read(filename, done)
+**Params**
+
+- filename `string` - the filename
+- done [onComplete](#onComplete) - the callback
+
+<a name="globalFunc"></a>
+#globalFunc()
+a global function
+
+<a name="exampled"></a>
+#exampled()
+a function with an example
+
+**Example**  
+```js
+var result = exampled();
+```
+
+<a name="multiExampled"></a>
+#multiExampled()
+a function with multiple examples
+
+**Example**  
+```js
+var another = 100;
+```
+
+**Example**  
+```js
+var next = "p";
+```
+
+<a name="_protected"></a>
+#_protected()
+**Access**: protected  
+<a name="withAuthor"></a>
+#withAuthor()
+**Author**: Clive Jones <clive@jones.com>  
+<a name="oldFunction"></a>
+#~~oldFunction()~~
+***Deprecated***  
+<a name="newFunction"></a>
+#newFunction()
+**Since**: v0.10.28  
+<a name="withParam"></a>
+#withParam(one)
+**Params**
+
+- one `string` - The input string
+
+<a name="withParams"></a>
+#withParams(one, two)
+**Params**
+
+- one `string` - The input string
+- two `object`
+
+<a name="withOptional"></a>
+#withOptional(one, [two])
+**Params**
+
+- one `string` - The input string
+- [two] `object` - this one is optional
+
+<a name="withBullets"></a>
+#withBullets(one, two)
+this description has 
+
+- bullet
+- points
+
+and needs this line to separate the above list from the below
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+<a name="returnsSomething"></a>
+#returnsSomething()
+**Returns**: `string`  
+<a name="returnsSomethingDesc"></a>
+#returnsSomethingDesc()
+**Returns**: `object` - this return has a description  
+<a name="returnsSeveral"></a>
+#returnsSeveral()
+**Returns**: `object` | `string` - this return has several types  
+<a name="allTogether"></a>
+#~~allTogether(one, two)~~
+This function has all tags set
+
+**Params**
+
+- one `string` - The input string
+- two `object` - a second input
+
+***Deprecated***  
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+allTogether(true);
+```
+
+<a name="doSomething"></a>
+#doSomething(options)
+**Params**
+
+- options `object` - the function options
+  - one `string` - first option
+  - two `string` - second option
+
+<a name="doAnother"></a>
+#doAnother(options)
+**Params**
+
+- options `Object` - the function options
+
+<a name="pluck"></a>
+#pluck(...prop)
+This function takes variable input
+
+**Params**
+
+- ...prop `string` - the property(s) as input
+
+<a name="requirer"></a>
+#requirer()
+ensure you have some-module installed
+
+<a name="setMagicNumber"></a>
+#setMagicNumber(x)
+Set the magic number.
+
+**Params**
+
+- x [NumberLike](#NumberLike) - The magic number.
+
+<a name="doSomething"></a>
+#doSomething(options)
+**Params**
+
+- options `object` - the function options
+  - one `string` - first option
+  - two `string` - second option
+
+<a name="eFileType"></a>
+#enum: eFileType
+Enum for the `type` value
+
+**Type**: `number`  
+**Properties**: `NOEXIST`, `FILE`, `DIR`  
+**Read only**: true  
+<a name="visible"></a>
+#visible
+a visible global
+
+<a name="variable"></a>
+#variable
+a global variable
+
+<a name="typed"></a>
+#typed
+**Type**: `string`  
+<a name="types"></a>
+#types
+**Type**: `string` | `number`  
+<a name="exampled"></a>
+#exampled
+a var with an example
+
+**Example**  
+```js
+var another = 100;
+```
+
+<a name="examples"></a>
+#examples
+a var with multiple examples
+
+**Example**  
+```js
+var another = 100;
+```
+
+**Example**  
+```js
+var next = "p";
+```
+
+<a name="_protected"></a>
+#_protected
+**Access**: protected  
+<a name="withAuthor"></a>
+#withAuthor
+**Author**: Clive Jones <clive@jones.com>  
+<a name="hasDefault"></a>
+#hasDefault
+**Default**: `23`  
+<a name="hasDefaultObject"></a>
+#hasDefaultObject
+**Default**: `{"one":1,"two":2}`  
+<a name="deprecated"></a>
+#~~deprecated~~
+***Deprecated***  
+<a name="readOnly"></a>
+#readOnly
+**Read only**: true  
+<a name="hasSince"></a>
+#hasSince
+**Since**: v0.10.28  
+<a name="onComplete"></a>
+#callback: onComplete
+Called when an async operation completes
+
+**Params**
+
+- err `object` - an error, or `null`
+- result `string` - the result info
+
+**Type**: `function`  
+<a name="NumberLike"></a>
+#type: NumberLike
+A number, or a string containing a number.
+
+**Type**: `number` | `string`  
 

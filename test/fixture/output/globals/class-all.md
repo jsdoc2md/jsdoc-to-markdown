@@ -1,8 +1,6 @@
 
-#Global
-
 <a name="All"></a>
-##~~class: All~~
+#~~class: All~~
 a class with all of the things
 
 **Extends**: `Number`  
@@ -16,7 +14,7 @@ a class with all of the things
     * [allThings~some](#All#allThings.some)
 
 <a name="All"></a>
-###~~new All(input, [options])~~
+##~~new All(input, [options])~~
 the constructor description
 
 **Params**
@@ -34,18 +32,18 @@ var yeah = new Everything(true);
 ```
 
 <a name="All#topping"></a>
-###all.topping
+##all.topping
 the ingredients on top
 
 **Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size
+##all.size
 the general size
 
 <a name="All#allThings"></a>
-###~~all.allThings(one, two)~~
+##~~all.allThings(one, two)~~
 This function has all tags set
 
 **Params**
@@ -61,4 +59,5 @@ This function has all tags set
 ```js
 all.allTogether(true);
 ```
+
 

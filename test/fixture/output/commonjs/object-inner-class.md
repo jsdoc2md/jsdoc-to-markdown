@@ -52,5 +52,4 @@ the Machine constructor
 <a name="module_cyberdyne.Machine#vibe"></a>
 ###machine.vibe
 **Type**: `string`  
-#Global
 

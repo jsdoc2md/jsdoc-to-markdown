@@ -1,8 +1,6 @@
 
-#Global
-
 <a name="car"></a>
-##car
+#car
 * [car](#car)
   * [car.wheels](#car.wheels)
   * [car.sensors](#car.sensors)
@@ -11,15 +9,15 @@
     * [env.weather](#car#env.weather)
     * [env.roads](#car#env.roads)
 <a name="car.wheels"></a>
-###car.wheels
+##car.wheels
 the round things
 
 <a name="car.sensors"></a>
-###car.sensors
+##car.sensors
 the electronics that always go wrong
 
 <a name="car.start"></a>
-###car.start()
+##car.start()
 start the car
 
 **Params**
@@ -28,21 +26,22 @@ start the car
 -  `function`
 
 <a name="car#env"></a>
-###car.env
+##car.env
 decribes the current conditions
 
 * [car.env](#car#env)
   * [env.weather](#car#env.weather)
   * [env.roads](#car#env.roads)
 <a name="car#env.weather"></a>
-####env.weather
+###env.weather
 what kind of day is it
 
 **Type**: `string`  
 **Default**: `choppy`  
 <a name="car#env.roads"></a>
-####env.roads
+###env.roads
 road condition
 
 **Type**: `string`  
 **Default**: `wet`  
+

@@ -25,5 +25,4 @@ a function
 allTogether(true);
 ```
 
-#Global
 

@@ -12,5 +12,4 @@ module with ignored shiz
 ##ignore.visible
 visible property
 
-#Global
 
