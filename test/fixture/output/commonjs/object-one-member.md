@@ -2,7 +2,7 @@
 #one-member
 simple object, one member
 
-**Members
+**Members**
 
 * [one-member](#module_one-member)
   * [object.three(four, five)](#module_one-member.three)

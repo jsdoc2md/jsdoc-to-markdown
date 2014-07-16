@@ -2,7 +2,7 @@
 #amd/export-object
 A module that says hello!
 
-**Members
+**Members**
 
 * [amd/export-object](#module_amd/export-object)
   * [amd/export-object.sayHello()](#module_amd/export-object.sayHello)

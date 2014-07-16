@@ -2,7 +2,7 @@
 #cattle
 exported object, with-inner-members
 
-**Members
+**Members**
 
 * [cattle](#module_cattle)
   * [cattle.createCow()](#module_cattle.createCow)

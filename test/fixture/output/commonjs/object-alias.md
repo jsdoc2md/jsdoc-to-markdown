@@ -2,7 +2,7 @@
 #object-alias
 simple object export
 
-**Members
+**Members**
 
 * [object-alias](#module_object-alias)
   * [_.one](#module_object-alias.one)

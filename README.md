@@ -93,7 +93,7 @@ $ cat doclets.json | jsdoc2md [<options>]
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 
-**Members
+**Members**
 
 * [jsdoc-to-markdown](#module_jsdoc-to-markdown)
   * [jsdoc2md.render(src, options)](#module_jsdoc-to-markdown.render)

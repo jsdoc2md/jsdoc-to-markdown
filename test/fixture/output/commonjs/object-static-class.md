@@ -2,7 +2,7 @@
 #heaven
 factory module creating dodgy cloud. object-with-static-class.
 
-**Members
+**Members**
 
 * [heaven](#module_heaven)
   * [heaven.createCloud()](#module_heaven.createCloud)

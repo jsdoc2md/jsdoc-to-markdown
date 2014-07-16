@@ -7,7 +7,7 @@ exports an object.. has an inner class.
 var cyber = require("cyberdyne");
 ```
 
-**Members
+**Members**
 
 * [cyberdyne](#module_cyberdyne)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)

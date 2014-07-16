@@ -146,7 +146,7 @@
 #amd/export-object
 A module that says hello!
 
-**Members
+**Members**
 
 * [amd/export-object](#module_amd/export-object)
   * [amd/export-object.sayHello()](#module_amd/export-object.sayHello)
@@ -309,7 +309,7 @@ the main function description
 #commonjs/ignore
 module with ignored shiz
 
-**Members
+**Members**
 
 * [commonjs/ignore](#module_commonjs/ignore)
   * [ignore.visible](#module_commonjs/ignore.visible)
@@ -322,7 +322,7 @@ visible property
 #commonjs/object-alias
 simple object export
 
-**Members
+**Members**
 
 * [commonjs/object-alias](#module_commonjs/object-alias)
   * [_.one](#module_commonjs/object-alias.one)
@@ -350,7 +350,7 @@ exports an object.. has an inner class.
 var cyber = require("cyberdyne");
 ```
 
-**Members
+**Members**
 
 * [cyberdyne](#module_cyberdyne)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
@@ -397,7 +397,7 @@ the Machine constructor
 #cattle
 exported object, with-inner-members
 
-**Members
+**Members**
 
 * [cattle](#module_cattle)
   * [cattle.createCow()](#module_cattle.createCow)
@@ -428,7 +428,7 @@ another inner function
 #one-member
 simple object, one member
 
-**Members
+**Members**
 
 * [one-member](#module_one-member)
   * [object.three(four, five)](#module_one-member.three)
@@ -454,7 +454,7 @@ allTogether(true);
 #heaven
 factory module creating dodgy cloud. object-with-static-class.
 
-**Members
+**Members**
 
 * [heaven](#module_heaven)
   * [heaven.createCloud()](#module_heaven.createCloud)
@@ -523,7 +523,7 @@ a class constant
 #private
 module with private shiz
 
-**Members
+**Members**
 
 * [private](#module_private)
   * [private.notprivate](#module_private.notprivate)
@@ -536,7 +536,7 @@ visible property
 #commonjs/single-value
 this module exports one value, that's it
 
-**Members
+**Members**
 
 * [commonjs/single-value](#module_commonjs/single-value)
   * [module.exports ⏏](#module_commonjs/single-value)
