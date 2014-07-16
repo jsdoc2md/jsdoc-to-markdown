@@ -1,5 +1,6 @@
 #Index
 
+
 **Namespaces**
 
 * [car](#car)
@@ -12,6 +13,7 @@
 * [car.env](#car#env)
   * [env.weather](#car#env.weather)
   * [env.roads](#car#env.roads)
+
 **Global**
 
 * [callback: onComplete](#onComplete)
@@ -88,6 +90,7 @@
 * [type: NumberLike](#NumberLike)
 * [setMagicNumber(x)](#setMagicNumber)
 * [doSomething(options)](#doSomething)
+
 #Global
 * [enum: eFileType](#eFileType)
 * [visible](#visible)
@@ -444,6 +447,7 @@ a class with all of the things
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
+
 <a name="All"></a>
 ###~~new All(input, [options])~~
 the constructor description
@@ -500,6 +504,7 @@ simple class description
 
 * [class: Person](#Person)
   * [new Person()](#Person)
+
 <a name="Person"></a>
 ###new Person()
 a constructor description
@@ -511,6 +516,7 @@ a constructor description
 
 * [class: Car](#Car)
   * [new Car([options])](#Car)
+
 <a name="Car"></a>
 ###new Car([options])
 a constructor with args
@@ -527,6 +533,7 @@ a class which extends
 **Members**
 
 * [class: Pipe](#Pipe)
+
 <a name="Everything"></a>
 ##~~class: Everything~~
 a class with all trimmings
@@ -536,6 +543,7 @@ a class with all trimmings
 
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
+
 <a name="Everything"></a>
 ###~~new Everything(input, [options])~~
 the constructor description
@@ -561,6 +569,7 @@ var yeah = new Everything(true);
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
   * [event: "cooking"](#Rice#event_cooking)
+
 <a name="Rice#event_cooked"></a>
 ###event: "cooked"
 Fired when rice is ready
@@ -576,6 +585,7 @@ Fired when rice is cooking
 * [class: Something](#Something)
   * [something.methodOne()](#Something#methodOne)
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
+
 <a name="Something#methodOne"></a>
 ###something.methodOne()
 method description
@@ -605,6 +615,7 @@ something.allTogether(true);
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
+
 <a name="Pizza#topping"></a>
 ###pizza.topping
 the ingredients on top
@@ -622,6 +633,7 @@ the general size
 
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
 <a name="Plucker#doPluck"></a>
 ###plucker.doPluck(one, ...args, ...three)
 This function takes variable input

@@ -1,3 +1,4 @@
+
 <a name="module_file-set"></a>
 #file-set
 this module exports a class constructor
@@ -17,6 +18,7 @@ this class returns a set of files
   * [new FileSet()](#module_file-set)
   * [file-set.files](#module_file-set#files)
   * [file-set.delete(paths)](#module_file-set#delete)
+
 <a name="module_file-set"></a>
 ###new FileSet()
 Takes a list of path patterns

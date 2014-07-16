@@ -1,3 +1,4 @@
+
 <a name="module_file-pet"></a>
 #file-pet
 this module returns a pet of files
@@ -18,6 +19,7 @@ this class returns a pet of files
   * [filePet.instie](#module_file-pet#instie)
   * [filePet.files](#module_file-pet#files)
   * [filePet.delete(paths)](#module_file-pet#delete)
+
 <a name="module_file-pet"></a>
 ###new FilePet(num)
 this is the contructor

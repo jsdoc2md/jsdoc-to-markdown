@@ -1,3 +1,4 @@
+
 #Global
 * [setMagicNumber(x)](#setMagicNumber)
 * [type: NumberLike](#NumberLike)

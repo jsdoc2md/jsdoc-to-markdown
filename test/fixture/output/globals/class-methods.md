@@ -1,3 +1,4 @@
+
 #Global
 <a name="Something"></a>
 ##class: Something
@@ -6,6 +7,7 @@
 * [class: Something](#Something)
   * [something.methodOne()](#Something#methodOne)
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
+
 <a name="Something#methodOne"></a>
 ###something.methodOne()
 method description
