@@ -55,23 +55,8 @@
 * [commonjs/single-value](#module_commonjs/single-value)
   * [module.exports ⏏](#module_commonjs/single-value)
 
-**Namespaces**
+**Classes**
 
-* [car](#car)
-  * [car.wheels](#car.wheels)
-  * [car.sensors](#car.sensors)
-  * [car.start()](#car.start)
-  * [car.env](#car#env)
-    * [env.weather](#car#env.weather)
-    * [env.roads](#car#env.roads)
-* [car.env](#car#env)
-  * [env.weather](#car#env.weather)
-  * [env.roads](#car#env.roads)
-
-**Global**
-
-* [callback: onComplete](#onComplete)
-* [read(filename, done)](#read)
 * [~~class: All~~](#All)
   * [~~new All(input, [options])~~](#All)
   * [all.topping](#All#topping)
@@ -94,12 +79,27 @@
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
+* [class: Plucker](#Plucker)
+  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
+**Namespaces**
+
+* [car](#car)
+  * [car.wheels](#car.wheels)
+  * [car.sensors](#car.sensors)
+  * [car.start()](#car.start)
+  * [car.env](#car#env)
+    * [env.weather](#car#env.weather)
+    * [env.roads](#car#env.roads)
+
+**Constants**
+
 * [const: CONST_ONE](#CONST_ONE)
 * [~~const: CONST_TWO~~](#CONST_TWO)
-* [enum: eFileType](#eFileType)
-  * [eFileType.NOEXIST](#eFileType.NOEXIST)
-  * [eFileType.FILE](#eFileType.FILE)
-  * [eFileType.DIR](#eFileType.DIR)
+
+**Functions**
+
+* [read(filename, done)](#read)
 * [globalFunc()](#globalFunc)
 * [exampled()](#exampled)
 * [multiExampled()](#multiExampled)
@@ -115,6 +115,19 @@
 * [returnsSomethingDesc()](#returnsSomethingDesc)
 * [returnsSeveral()](#returnsSeveral)
 * [~~allTogether(one, two)~~](#allTogether)
+* [doSomething(options)](#doSomething)
+* [doAnother(options)](#doAnother)
+* [pluck(...prop)](#pluck)
+* [requirer()](#requirer)
+* [setMagicNumber(x)](#setMagicNumber)
+* [doSomething(options)](#doSomething)
+
+**Vars**
+
+* [enum: eFileType](#eFileType)
+  * [eFileType.NOEXIST](#eFileType.NOEXIST)
+  * [eFileType.FILE](#eFileType.FILE)
+  * [eFileType.DIR](#eFileType.DIR)
 * [visible](#visible)
 * [variable](#variable)
 * [typed](#typed)
@@ -128,22 +141,12 @@
 * [~~deprecated~~](#deprecated)
 * [readOnly](#readOnly)
 * [hasSince](#hasSince)
-* [car](#car)
-  * [car.wheels](#car.wheels)
-  * [car.sensors](#car.sensors)
-  * [car.start()](#car.start)
-  * [car.env](#car#env)
-    * [env.weather](#car#env.weather)
-    * [env.roads](#car#env.roads)
-* [doSomething(options)](#doSomething)
-* [doAnother(options)](#doAnother)
-* [pluck(...prop)](#pluck)
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-* [requirer()](#requirer)
+
+**Typedefs**
+
+* [callback: onComplete](#onComplete)
 * [type: NumberLike](#NumberLike)
-* [setMagicNumber(x)](#setMagicNumber)
-* [doSomething(options)](#doSomething)
+
 
 <a name="module_amd/export-object"></a>
 #amd/export-object

@@ -1,7 +1,7 @@
 #Index
 
 
-**Global**
+**Classes**
 
 * [class: Person](#Person)
   * [new Person()](#Person)
@@ -10,6 +10,7 @@
 * [class: Pipe](#Pipe)
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
+
 
 #Global
 * [class: Person](#Person)
