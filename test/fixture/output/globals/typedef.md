@@ -1,7 +1,7 @@
 
 #Global
-* [type: NumberLike](#NumberLike)
 * [setMagicNumber(x)](#setMagicNumber)
+* [type: NumberLike](#NumberLike)
 
 <a name="setMagicNumber"></a>
 ##setMagicNumber(x)

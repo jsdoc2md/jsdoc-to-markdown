@@ -1,7 +1,7 @@
 
 #Global
-* [callback: onComplete](#onComplete)
 * [read(filename, done)](#read)
+* [callback: onComplete](#onComplete)
 
 <a name="read"></a>
 ##read(filename, done)
