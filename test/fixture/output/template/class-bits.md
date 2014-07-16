@@ -57,12 +57,12 @@ The main class for a cloud
 ---------------
 
 #The index
-**Members**
-* [new heaven~Cloud(options)](#module_heaven.Cloud)
-* [cloud.size](#module_heaven.Cloud#size)
-* [cloud.rain](#module_heaven.Cloud#rain)
-* [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-* [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+* [class: heaven~Cloud](#module_heaven.Cloud)
+  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+  * [cloud.size](#module_heaven.Cloud#size)
+  * [cloud.rain](#module_heaven.Cloud#rain)
+  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
+  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
 
 ---------------
