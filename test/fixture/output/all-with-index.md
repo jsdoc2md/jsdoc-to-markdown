@@ -4,28 +4,36 @@
 
 * [amd/export-object](#module_amd/export-object)
   * [amd/export-object.sayHello()](#module_amd/export-object.sayHello)
+
 * [file-pet](#module_file-pet)
   * [class: FilePet ⏏](#module_file-pet)
     * [filePet.instie](#module_file-pet#instie)
     * [filePet.files](#module_file-pet#files)
     * [filePet.delete(paths)](#module_file-pet#delete)
+
 * [jacket](#module_jacket)
   * [class: Jacket ⏏](#module_jacket)
     * [jacket.zip()](#module_jacket#zip)
+
 * [file-set](#module_file-set)
   * [class: FileSet ⏏](#module_file-set)
     * [file-set.files](#module_file-set#files)
     * [file-set.delete(paths)](#module_file-set#delete)
+
 * [sum-alias](#module_sum-alias)
   * [sum(a, b) ⏏](#module_sum-alias)
+
 * [commonjs/function](#module_commonjs/function)
   * [module.exports(one, two) ⏏](#module_commonjs/function)
+
 * [commonjs/ignore](#module_commonjs/ignore)
   * [ignore.visible](#module_commonjs/ignore.visible)
+
 * [commonjs/object-alias](#module_commonjs/object-alias)
   * [_.one](#module_commonjs/object-alias.one)
   * [_.two](#module_commonjs/object-alias.two)
   * [_.three()](#module_commonjs/object-alias.three)
+
 * [cyberdyne](#module_cyberdyne)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
   * [class: cyber~Machine](#module_cyberdyne.Machine)
@@ -33,13 +41,16 @@
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
   * [cyber~something](#module_cyberdyne.something)
+
 * [cattle](#module_cattle)
   * [cattle.createCow()](#module_cattle.createCow)
   * [cattle~innerMember](#module_cattle.innerMember)
   * [cattle~innerFuction()](#module_cattle.innerFuction)
   * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+
 * [one-member](#module_one-member)
   * [object.three(four, five)](#module_one-member.three)
+
 * [heaven](#module_heaven)
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [heaven.Cloud](#module_heaven.Cloud)
@@ -50,10 +61,13 @@
     * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
     * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
   * [const: heaven~FACT](#module_heaven.FACT)
+
 * [private](#module_private)
   * [private.notprivate](#module_private.notprivate)
+
 * [commonjs/single-value](#module_commonjs/single-value)
   * [module.exports ⏏](#module_commonjs/single-value)
+
 **Namespaces**
 
 * [car](#car)
@@ -63,69 +77,112 @@
   * [car.env](#car#env)
     * [env.weather](#car#env.weather)
     * [env.roads](#car#env.roads)
+
 * [car.env](#car#env)
   * [env.weather](#car#env.weather)
   * [env.roads](#car#env.roads)
+
 **Global**
 
 * [callback: onComplete](#onComplete)
+
 * [read(filename, done)](#read)
+
 * [~~class: All~~](#All)
   * [~~new All(input, [options])~~](#All)
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
+
 * [class: Person](#Person)
   * [new Person()](#Person)
+
 * [class: Car](#Car)
   * [new Car([options])](#Car)
+
 * [class: Pipe](#Pipe)
+
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#Everything)
+
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
   * [event: "cooking"](#Rice#event_cooking)
+
 * [class: Something](#Something)
   * [something.methodOne()](#Something#methodOne)
   * [~~something.allTogether(one, two)~~](#Something#allTogether)
+
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
+
 * [const: CONST_ONE](#CONST_ONE)
+
 * [~~const: CONST_TWO~~](#CONST_TWO)
+
 * [enum: eFileType](#eFileType)
   * [eFileType.NOEXIST](#eFileType.NOEXIST)
   * [eFileType.FILE](#eFileType.FILE)
   * [eFileType.DIR](#eFileType.DIR)
+
 * [globalFunc()](#globalFunc)
+
 * [exampled()](#exampled)
+
 * [multiExampled()](#multiExampled)
+
 * [_protected()](#_protected)
+
 * [withAuthor()](#withAuthor)
+
 * [~~oldFunction()~~](#oldFunction)
+
 * [newFunction()](#newFunction)
+
 * [withParam(one)](#withParam)
+
 * [withParams(one, two)](#withParams)
+
 * [withOptional(one, [two])](#withOptional)
+
 * [withBullets(one, two)](#withBullets)
+
 * [returnsSomething()](#returnsSomething)
+
 * [returnsSomethingDesc()](#returnsSomethingDesc)
+
 * [returnsSeveral()](#returnsSeveral)
+
 * [~~allTogether(one, two)~~](#allTogether)
+
 * [visible](#visible)
+
 * [variable](#variable)
+
 * [typed](#typed)
+
 * [types](#types)
+
 * [exampled](#exampled)
+
 * [examples](#examples)
+
 * [_protected](#_protected)
+
 * [withAuthor](#withAuthor)
+
 * [hasDefault](#hasDefault)
+
 * [hasDefaultObject](#hasDefaultObject)
+
 * [~~deprecated~~](#deprecated)
+
 * [readOnly](#readOnly)
+
 * [hasSince](#hasSince)
+
 * [car](#car)
   * [car.wheels](#car.wheels)
   * [car.sensors](#car.sensors)
@@ -133,15 +190,24 @@
   * [car.env](#car#env)
     * [env.weather](#car#env.weather)
     * [env.roads](#car#env.roads)
+
 * [doSomething(options)](#doSomething)
+
 * [doAnother(options)](#doAnother)
+
 * [pluck(...prop)](#pluck)
+
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
 * [requirer()](#requirer)
+
 * [type: NumberLike](#NumberLike)
+
 * [setMagicNumber(x)](#setMagicNumber)
+
 * [doSomething(options)](#doSomething)
+
 <a name="module_amd/export-object"></a>
 #amd/export-object
 A module that says hello!
