@@ -1,6 +1,4 @@
-#Index
-
-* Global
+* [](#undefined)
   * [class: Person](#Person)
     * [new Person()](#Person)
   * [class: Car](#Car)
@@ -8,15 +6,12 @@
   * [class: Pipe](#Pipe)
   * [~~class: Everything~~](#Everything)
     * [~~new Everything(input, [options])~~](#Everything)
-
+  * [](#package_undefined)
 #Global
-* [class: Person](#Person)
-  * [new Person()](#Person)
-* [class: Car](#Car)
-  * [new Car([options])](#Car)
-* [class: Pipe](#Pipe)
-* [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+
+* [new Person()](#Person)
+* [new Car([options])](#Car)
+* [~~new Everything(input, [options])~~](#Everything)
 
 <a name="Person"></a>
 ##class: Person

@@ -1,3 +1,8 @@
+* [](#undefined)
+  * [sum-alias](#module_sum-alias)
+    * [sum(a, b) ⏏](#module_sum-alias)
+  * [sum(a, b) ⏏](#module_sum-alias)
+  * [](#package_undefined)
 <a name="module_sum-alias"></a>
 #sum-alias
 This module exports a simple maths function

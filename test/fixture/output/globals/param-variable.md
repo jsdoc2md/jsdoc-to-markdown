@@ -1,7 +1,13 @@
+* [](#undefined)
+  * [pluck(...prop)](#pluck)
+  * [class: Plucker](#Plucker)
+    * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+  * [](#package_undefined)
 #Global
+
 * [pluck(...prop)](#pluck)
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
+* [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="pluck"></a>
 ##pluck(...prop)

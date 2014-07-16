@@ -1,62 +1,12 @@
-#Index
-
-* Namespaces
-  * [car](#car)
-    * [car.env](#car#env)
-    * [car.wheels](#car.wheels)
-    * [car.sensors](#car.sensors)
-    * [car.start()](#car.start)
-  * [car.env](#car#env)
-    * [env.weather](#car#env.weather)
-    * [env.roads](#car#env.roads)
-
-* Global
-  * [enum: eFileType](#eFileType)
-  * [visible](#visible)
-  * [variable](#variable)
-  * [typed](#typed)
-  * [types](#types)
-  * [exampled](#exampled)
-  * [examples](#examples)
-  * [_protected](#_protected)
-  * [withAuthor](#withAuthor)
-  * [hasDefault](#hasDefault)
-  * [hasDefaultObject](#hasDefaultObject)
-  * [~~deprecated~~](#deprecated)
-  * [readOnly](#readOnly)
-  * [hasSince](#hasSince)
-  * [read(filename, done)](#read)
-  * [globalFunc()](#globalFunc)
-  * [exampled()](#exampled)
-  * [multiExampled()](#multiExampled)
-  * [_protected()](#_protected)
-  * [withAuthor()](#withAuthor)
-  * [~~oldFunction()~~](#oldFunction)
-  * [newFunction()](#newFunction)
-  * [withParam(one)](#withParam)
-  * [withParams(one, two)](#withParams)
-  * [withOptional(one, [two])](#withOptional)
-  * [withBullets(one, two)](#withBullets)
-  * [returnsSomething()](#returnsSomething)
-  * [returnsSomethingDesc()](#returnsSomethingDesc)
-  * [returnsSeveral()](#returnsSeveral)
-  * [~~allTogether(one, two)~~](#allTogether)
-  * [doSomething(options)](#doSomething)
-  * [doAnother(options)](#doAnother)
-  * [pluck(...prop)](#pluck)
-  * [requirer()](#requirer)
-  * [setMagicNumber(x)](#setMagicNumber)
-  * [doSomething(options)](#doSomething)
-  * [car](#car)
-  * [const: CONST_ONE](#CONST_ONE)
-  * [~~const: CONST_TWO~~](#CONST_TWO)
+* [](#undefined)
   * [callback: onComplete](#onComplete)
-  * [type: NumberLike](#NumberLike)
+  * [read(filename, done)](#read)
   * [~~class: All~~](#All)
     * [~~new All(input, [options])~~](#All)
     * [all.topping](#All#topping)
     * [all.size](#All#size)
     * [~~all.allThings(one, two)~~](#All#allThings)
+      * [allThings~some](#All#allThings.some)
   * [class: Person](#Person)
     * [new Person()](#Person)
   * [class: Car](#Car)
@@ -73,10 +23,59 @@
   * [class: Pizza](#Pizza)
     * [pizza.topping](#Pizza#topping)
     * [pizza.size](#Pizza#size)
+  * [const: CONST_ONE](#CONST_ONE)
+  * [~~const: CONST_TWO~~](#CONST_TWO)
+  * [enum: eFileType](#eFileType)
+    * [eFileType.NOEXIST](#eFileType.NOEXIST)
+    * [eFileType.FILE](#eFileType.FILE)
+    * [eFileType.DIR](#eFileType.DIR)
+  * [globalFunc()](#globalFunc)
+  * [exampled()](#exampled)
+  * [multiExampled()](#multiExampled)
+  * [_protected()](#_protected)
+  * [withAuthor()](#withAuthor)
+  * [~~oldFunction()~~](#oldFunction)
+  * [newFunction()](#newFunction)
+  * [withParam(one)](#withParam)
+  * [withParams(one, two)](#withParams)
+  * [withOptional(one, [two])](#withOptional)
+  * [withBullets(one, two)](#withBullets)
+  * [returnsSomething()](#returnsSomething)
+  * [returnsSomethingDesc()](#returnsSomethingDesc)
+  * [returnsSeveral()](#returnsSeveral)
+  * [~~allTogether(one, two)~~](#allTogether)
+  * [visible](#visible)
+  * [variable](#variable)
+  * [typed](#typed)
+  * [types](#types)
+  * [exampled](#exampled)
+  * [examples](#examples)
+  * [_protected](#_protected)
+  * [withAuthor](#withAuthor)
+  * [hasDefault](#hasDefault)
+  * [hasDefaultObject](#hasDefaultObject)
+  * [~~deprecated~~](#deprecated)
+  * [readOnly](#readOnly)
+  * [hasSince](#hasSince)
+  * [car](#car)
+    * [car.wheels](#car.wheels)
+    * [car.sensors](#car.sensors)
+    * [car.start()](#car.start)
+    * [car.env](#car#env)
+      * [env.weather](#car#env.weather)
+      * [env.roads](#car#env.roads)
+  * [doSomething(options)](#doSomething)
+  * [doAnother(options)](#doAnother)
+  * [pluck(...prop)](#pluck)
   * [class: Plucker](#Plucker)
     * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
+  * [requirer()](#requirer)
+  * [type: NumberLike](#NumberLike)
+  * [setMagicNumber(x)](#setMagicNumber)
+  * [doSomething(options)](#doSomething)
+  * [](#package_undefined)
 #Global
+
 * [enum: eFileType](#eFileType)
 * [visible](#visible)
 * [variable](#variable)
@@ -118,29 +117,25 @@
 * [~~const: CONST_TWO~~](#CONST_TWO)
 * [callback: onComplete](#onComplete)
 * [type: NumberLike](#NumberLike)
-* [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
-  * [all.topping](#All#topping)
-  * [all.size](#All#size)
-  * [~~all.allThings(one, two)~~](#All#allThings)
-* [class: Person](#Person)
-  * [new Person()](#Person)
-* [class: Car](#Car)
-  * [new Car([options])](#Car)
-* [class: Pipe](#Pipe)
-* [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
-* [class: Rice](#Rice)
-  * [event: "cooked"](#Rice#event_cooked)
-  * [event: "cooking"](#Rice#event_cooking)
-* [class: Something](#Something)
-  * [something.methodOne()](#Something#methodOne)
-  * [~~something.allTogether(one, two)~~](#Something#allTogether)
-* [class: Pizza](#Pizza)
-  * [pizza.topping](#Pizza#topping)
-  * [pizza.size](#Pizza#size)
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+* [~~new All(input, [options])~~](#All)
+
+* [all.topping](#All#topping)
+* [all.size](#All#size)
+* [~~all.allThings(one, two)~~](#All#allThings)
+* [new Person()](#Person)
+* [new Car([options])](#Car)
+* [~~new Everything(input, [options])~~](#Everything)
+
+* [event: "cooked"](#Rice#event_cooked)
+* [event: "cooking"](#Rice#event_cooking)
+
+* [something.methodOne()](#Something#methodOne)
+* [~~something.allTogether(one, two)~~](#Something#allTogether)
+
+* [pizza.topping](#Pizza#topping)
+* [pizza.size](#Pizza#size)
+
+* [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
 <a name="eFileType"></a>
 ##enum: eFileType
@@ -358,6 +353,14 @@ Set the magic number.
 
 <a name="car"></a>
 ##car
+**Members**
+
+
+* [car.wheels](#car.wheels)
+* [car.sensors](#car.sensors)
+* [car.start()](#car.start)
+* [car.env](#car#env)
+
 <a name="car.wheels"></a>
 ###car.wheels
 the round things
@@ -378,6 +381,12 @@ start the car
 <a name="car#env"></a>
 ###car.env
 decribes the current conditions
+
+**Members**
+
+
+* [env.weather](#car#env.weather)
+* [env.roads](#car#env.roads)
 
 <a name="car#env.weather"></a>
 ####env.weather
@@ -433,6 +442,7 @@ a class with all of the things
 **Members**
 
 * [~~new All(input, [options])~~](#All)
+
 * [all.topping](#All#topping)
 * [all.size](#All#size)
 * [~~all.allThings(one, two)~~](#All#allThings)
@@ -536,6 +546,7 @@ var yeah = new Everything(true);
 ##class: Rice
 **Members**
 
+
 * [event: "cooked"](#Rice#event_cooked)
 * [event: "cooking"](#Rice#event_cooking)
 
@@ -550,6 +561,7 @@ Fired when rice is cooking
 <a name="Something"></a>
 ##class: Something
 **Members**
+
 
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)
@@ -579,6 +591,7 @@ something.allTogether(true);
 <a name="Pizza"></a>
 ##class: Pizza
 **Members**
+
 
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)

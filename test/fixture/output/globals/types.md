@@ -1,3 +1,6 @@
+* [](#undefined)
+  * [doSomething(options)](#doSomething)
+  * [](#package_undefined)
 #Global
 <a name="doSomething"></a>
 ##doSomething(options)

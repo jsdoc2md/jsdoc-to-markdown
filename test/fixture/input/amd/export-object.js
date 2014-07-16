@@ -2,7 +2,7 @@ define(function () {
 
     /**
      * A module that says hello!
-     * @exports hello/world
+     * @exports amd/export-object
      */
     var ns = {};
 

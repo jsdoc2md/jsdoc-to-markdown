@@ -1,3 +1,12 @@
+* [](#undefined)
+  * [cyberdyne](#module_cyberdyne)
+    * [cyber.createMachine()](#module_cyberdyne.createMachine)
+    * [class: cyber~Machine](#module_cyberdyne.Machine)
+      * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+      * [machine.eyes](#module_cyberdyne.Machine#eyes)
+      * [machine.vibe](#module_cyberdyne.Machine#vibe)
+    * [cyber~something](#module_cyberdyne.something)
+  * [](#package_undefined)
 <a name="module_cyberdyne"></a>
 #cyberdyne
 exports an object.. has an inner class.
@@ -9,12 +18,13 @@ var cyber = require("cyberdyne");
 
 **Members**
 
-* [cyber.createMachine()](#module_cyberdyne.createMachine)
+
 * [cyber~something](#module_cyberdyne.something)
-* [class: cyber~Machine](#module_cyberdyne.Machine)
-  * [new cyber~Machine(options)](#module_cyberdyne.Machine)
-  * [machine.eyes](#module_cyberdyne.Machine#eyes)
-  * [machine.vibe](#module_cyberdyne.Machine#vibe)
+* [cyber.createMachine()](#module_cyberdyne.createMachine)
+* [new cyber~Machine(options)](#module_cyberdyne.Machine)
+
+* [machine.eyes](#module_cyberdyne.Machine#eyes)
+* [machine.vibe](#module_cyberdyne.Machine#vibe)
 
 <a name="module_cyberdyne.something"></a>
 ##cyber~something
@@ -31,6 +41,7 @@ The main class of machine
 **Members**
 
 * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+
 * [machine.eyes](#module_cyberdyne.Machine#eyes)
 * [machine.vibe](#module_cyberdyne.Machine#vibe)
 

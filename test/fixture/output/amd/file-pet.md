@@ -1,3 +1,15 @@
+* [](#undefined)
+  * [file-pet](#module_file-pet)
+    * [class: FilePet ⏏](#module_file-pet)
+      * [filePet.instie](#module_file-pet#instie)
+      * [filePet.files](#module_file-pet#files)
+      * [filePet.delete(paths)](#module_file-pet#delete)
+  * [class: FilePet ⏏](#module_file-pet)
+    * [new FilePet(num)](#module_file-pet)
+    * [filePet.instie](#module_file-pet#instie)
+    * [filePet.files](#module_file-pet#files)
+    * [filePet.delete(paths)](#module_file-pet#delete)
+  * [](#package_undefined)
 <a name="module_file-pet"></a>
 #file-pet
 this module returns a pet of files
@@ -14,6 +26,7 @@ this class returns a pet of files
 **Members**
 
 * [new FilePet(num)](#module_file-pet)
+
 * [filePet.instie](#module_file-pet#instie)
 * [filePet.files](#module_file-pet#files)
 * [filePet.delete(paths)](#module_file-pet#delete)

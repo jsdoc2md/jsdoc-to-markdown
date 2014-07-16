@@ -1,7 +1,13 @@
+* [](#undefined)
+  * [class: Pizza](#Pizza)
+    * [pizza.topping](#Pizza#topping)
+    * [pizza.size](#Pizza#size)
+  * [](#package_undefined)
 #Global
 <a name="Pizza"></a>
 ##class: Pizza
 **Members**
+
 
 * [pizza.topping](#Pizza#topping)
 * [pizza.size](#Pizza#size)

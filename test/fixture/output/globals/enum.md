@@ -1,3 +1,9 @@
+* [](#undefined)
+  * [enum: eFileType](#eFileType)
+    * [eFileType.NOEXIST](#eFileType.NOEXIST)
+    * [eFileType.FILE](#eFileType.FILE)
+    * [eFileType.DIR](#eFileType.DIR)
+  * [](#package_undefined)
 #Global
 <a name="eFileType"></a>
 ##enum: eFileType

@@ -1,7 +1,13 @@
+* [](#undefined)
+  * [class: Something](#Something)
+    * [something.methodOne()](#Something#methodOne)
+    * [~~something.allTogether(one, two)~~](#Something#allTogether)
+  * [](#package_undefined)
 #Global
 <a name="Something"></a>
 ##class: Something
 **Members**
+
 
 * [something.methodOne()](#Something#methodOne)
 * [~~something.allTogether(one, two)~~](#Something#allTogether)

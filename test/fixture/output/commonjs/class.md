@@ -1,3 +1,13 @@
+* [](#undefined)
+  * [file-set](#module_file-set)
+    * [class: FileSet ⏏](#module_file-set)
+      * [file-set.files](#module_file-set#files)
+      * [file-set.delete(paths)](#module_file-set#delete)
+  * [class: FileSet ⏏](#module_file-set)
+    * [new FileSet()](#module_file-set)
+    * [file-set.files](#module_file-set#files)
+    * [file-set.delete(paths)](#module_file-set#delete)
+  * [](#package_undefined)
 <a name="module_file-set"></a>
 #file-set
 this module exports a class constructor
@@ -14,6 +24,7 @@ this class returns a set of files
 **Members**
 
 * [new FileSet()](#module_file-set)
+
 * [file-set.files](#module_file-set#files)
 * [file-set.delete(paths)](#module_file-set#delete)
 
