@@ -7,38 +7,53 @@ var cliArgs = require("command-line-args"),
     domain = require("domain");
 
 var cli = cliArgs([
-    { name: "template", alias: "t", type: String,
-      description: "A custom handlebars template to insert the rendered documentation into"
+    {
+        groups: "General",
+        options: [
+            { name: "src", type: Array, defaultOption: true,
+              description: "The javascript source files."
+            },
+            { name: "template", alias: "t", type: String,
+              description: "A custom handlebars template to insert the rendered documentation into"
+            },
+            { name: "json", alias: "j", type: Boolean,
+              description: "Output the template data only"
+            },
+            { name: "verbose", alias: "v", type: Boolean,
+              description: "More verbose error reporting"
+            },
+            { name: "help", alias: "h", type: Boolean,
+              description: "Print usage information"
+            }
+        ]
     },
-    { name: "json", alias: "j", type: Boolean,
-      description: "Output the template data only"
+    {
+        groups: "Parsing",
+        options: [
+            { name: "private", type: Boolean,
+              description: "Include symbols marked @private in the output"
+            },
+            { name: "stats", alias: "s", type: Boolean,
+              description: "Print a few stats about the doclets parsed."
+            }
+        ]
     },
-    { name: "verbose", alias: "v", type: Boolean,
-      description: "More verbose output and error reporting"
-    },
-    { name: "help", alias: "h", type: Boolean,
-      description: "Print usage information"
-    },
-    { name: "src", type: Array, defaultOption: true,
-      description: "The javascript source files."
-    },
-    { name: "plugin", type: Array, alias: "p",
-      description: "Packages containing helper and/or partial overrides"
-    },
-    { name: "helper", type: Array,
-      description: "helper overrides"
-    },
-    { name: "partial", type: Array,
-      description: "partial overrides"
-    },
-    { name: "private", type: Boolean,
-      description: "Include symbols marked @private in the output"
-    },
-    { name: "heading-depth", type: Number,
-      description: "root heading depth to begin the documentation from, defaults to 1 (`#`)."
-    },
-    { name: "stats", alias: "s", type: Boolean,
-      description: "Print a few stats about the doclets parsed."
+    {
+        groups: "Markdown",
+        options: [
+            { name: "heading-depth", type: Number,
+              description: "root heading depth to begin the documentation from, defaults to 1 (`#`)."
+            },
+            { name: "plugin", type: Array, alias: "p",
+              description: "Packages containing helper and/or partial overrides"
+            },
+            { name: "helper", type: Array,
+              description: "helper overrides"
+            },
+            { name: "partial", type: Array,
+              description: "partial overrides"
+            }
+        ]
     }
 ]);
 var usage = cli.getUsage({
@@ -59,12 +74,12 @@ if (argv.help){
     dope.log(usage);
     process.exit(0);
 }
-
-if(argv.src){
+console.dir(argv)
+if(argv.General.src){
     var d = domain.create();
     d.on("error", halt);
     d.run(function(){
-        var mdStream = jsdoc2md.render(argv.src, argv).pipe(process.stdout);
+        var mdStream = jsdoc2md.render(argv.General.src, argv).pipe(process.stdout);
     });
     
 } else {
