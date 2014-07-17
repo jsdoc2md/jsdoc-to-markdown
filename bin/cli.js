@@ -45,7 +45,8 @@ var usage = cli.getUsage({
     title: "jsdoc-to-markdown",
     header: "Markdown API documentation generator, good for Github projects",
     forms: [
-        "$ jsdoc2md [<options>] <source_files>"
+        "$ jsdoc2md [<options>] <source_files>",
+        "$ cat <source_files> | jsdoc2md [<options>]"
     ]
 });
 

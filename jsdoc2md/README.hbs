@@ -7,23 +7,66 @@
 ***work in progress, unstable, draft documentation***
 
 #jsdoc-to-markdown
-[Documented](http://usejsdoc.org) source code in, markdown out.. In development, any feedback welcome.
+[jsdoc](http://usejsdoc.org) documented source code in, markdown out.
 
-Essentially, this app connects the output from [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).
+Essentially, this app connects the output from [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). 
 
-##examples
+##Synopsis
+```
+$ jsdoc2md example/function.js
+
+#protection(cloak, dagger)
+a quite wonderful function
+
+**Params**
+
+- cloak `object` - privacy gown
+- dagger `object` - security
+
+**Returns**: `survival`
+```
+you can achieve the same result with these commands: 
+```sh
+$ cat example/function.js | jsdoc2md
+$ cat example/function.js | jsdoc-parse | dmd
+$ jsdoc-parse example/function.js | dmd
+```
+
+##Examples
 These projects have readme files rendered by `jsdoc2md`:
 * [handbrake-js](https://github.com/75lb/handbrake-js) (exports an object with inner class)
 * [array-tools](https://github.com/75lb/array-tools) (exports a object)
 * [file-set](https://github.com/75lb/file-set) (exports a class)
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
-##Install
-Ensure [node.js](http://nodejs.org) is installed first. Linux/Mac users may need to run the following commands with `sudo`.
+##Usage
 
-###Globally
+###As a command-line tool
+Install the `jsdoc2md` command line tool:
 ```sh
 $ npm install -g jsdoc-to-markdown
+```
+```
+$ jsdoc2md -h
+
+  jsdoc-to-markdown
+  Markdown API documentation generator, good for Github projects
+
+  Usage
+  $ jsdoc2md [<options>] <source_files>
+  $ cat <source_files> | jsdoc2md [<options>]
+
+  --src <array>             The javascript source files.
+  -t, --template <string>   A custom handlebars template to insert the rendered documentation into
+  -j, --json                Output the template data only
+  -v, --verbose             More verbose error reporting
+  -h, --help                Print usage information
+  --private                 Include symbols marked @private in the output
+  -s, --stats               Print a few stats about the doclets parsed.
+  --heading-depth <number>  root heading depth to begin the documentation from, defaults to 1 (`#`).
+  -p, --plugin <array>      Packages containing helper and/or partial overrides
+  --helper <array>          helper overrides
+  --partial <array>         partial overrides    
 ```
 
 ###Bundled with your project
