@@ -152,6 +152,10 @@
 #amd/export-object
 A module that says hello!
 
+<a name="module_amd/export-object.sayHello"></a>
+##amd/export-object.sayHello()
+Say hello.
+
 <a name="module_file-pet"></a>
 #file-pet
 this module returns a pet of files
@@ -309,6 +313,10 @@ the main function description
 #commonjs/ignore
 module with ignored shiz
 
+<a name="module_commonjs/ignore.visible"></a>
+##ignore.visible
+visible property
+
 <a name="module_commonjs/object-alias"></a>
 #commonjs/object-alias
 simple object export
@@ -420,6 +428,23 @@ another inner function
 #one-member
 simple object, one member. It shouldn't have an index.
 
+<a name="module_one-member.three"></a>
+##object.three(four, five)
+a function
+
+**Params**
+
+- four `string` - The input string
+- five `object` - a second input
+
+**Returns**: `object` | `string` - this return has several types  
+**Since**: v0.10.28  
+**Author**: Lloyd <75pound@gmail.com>  
+**Example**  
+```js
+allTogether(true);
+```
+
 <a name="module_heaven"></a>
 #heaven
 factory module creating dodgy cloud. object-with-static-class.
@@ -493,6 +518,10 @@ a class constant
 <a name="module_private"></a>
 #private
 module with private shiz
+
+<a name="module_private.notprivate"></a>
+##private.notprivate
+visible property
 
 <a name="module_commonjs/single-value"></a>
 #commonjs/single-value
