@@ -45,8 +45,7 @@ var usage = cli.getUsage({
     title: "jsdoc-to-markdown",
     header: "Markdown API documentation generator, good for Github projects",
     forms: [
-        "$ jsdoc2md [<options>] <source_files>",
-        "$ cat doclets.json | jsdoc2md [<options>]"
+        "$ jsdoc2md [<options>] <source_files>"
     ]
 });
 
@@ -75,7 +74,7 @@ if(argv.src){
 
 function halt(err){
     if (argv){
-        dope.red.error(argv.verbose ? err.stack : err.message);
+        dope.red.error(argv.verbose ? (err.stack || err) : err.message);
     } else {
         dope.red.error(err.stack);
     }
