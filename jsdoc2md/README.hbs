@@ -12,7 +12,6 @@
 Essentially, this app connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). 
 
 ##Synopsis
-```
 write documented code:
 ```js
 /**
@@ -25,6 +24,7 @@ function protection(cloak, dagger){}
 ```
 
 get markdown docs: 
+```
 $ jsdoc2md example/function.js
 
 #protection(cloak, dagger)
