@@ -1,3 +1,14 @@
+#Index
+
+
+**Functions**
+
+* [read(filename, done)](#read)
+
+**Typedefs**
+
+* [callback: onComplete](#onComplete)
+
 
 <a name="read"></a>
 #read(filename, done)

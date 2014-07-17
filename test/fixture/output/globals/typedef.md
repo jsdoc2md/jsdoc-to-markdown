@@ -1,3 +1,14 @@
+#Index
+
+
+**Functions**
+
+* [setMagicNumber(x)](#setMagicNumber)
+
+**Typedefs**
+
+* [type: NumberLike](#NumberLike)
+
 
 <a name="setMagicNumber"></a>
 #setMagicNumber(x)

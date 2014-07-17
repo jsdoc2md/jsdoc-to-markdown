@@ -1,3 +1,21 @@
+#Index
+
+
+**Vars**
+
+* [variable](#variable)
+* [typed](#typed)
+* [types](#types)
+* [exampled](#exampled)
+* [examples](#examples)
+* [_protected](#_protected)
+* [withAuthor](#withAuthor)
+* [hasDefault](#hasDefault)
+* [hasDefaultObject](#hasDefaultObject)
+* [~~deprecated~~](#deprecated)
+* [readOnly](#readOnly)
+* [hasSince](#hasSince)
+
 
 <a name="variable"></a>
 #variable

@@ -1,3 +1,10 @@
+#Index
+
+
+**Functions**
+
+* [doSomething(options)](#doSomething)
+
 
 <a name="doSomething"></a>
 #doSomething(options)

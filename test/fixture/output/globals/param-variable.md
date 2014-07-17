@@ -1,3 +1,15 @@
+#Index
+
+
+**Classes**
+
+* [class: Plucker](#Plucker)
+  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
+
+**Functions**
+
+* [pluck(...prop)](#pluck)
+
 
 <a name="Plucker"></a>
 #class: Plucker

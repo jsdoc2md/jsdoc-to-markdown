@@ -1,3 +1,13 @@
+#Index
+
+
+**Vars**
+
+* [enum: eFileType](#eFileType)
+  * [eFileType.NOEXIST](#eFileType.NOEXIST)
+  * [eFileType.FILE](#eFileType.FILE)
+  * [eFileType.DIR](#eFileType.DIR)
+
 
 <a name="eFileType"></a>
 #enum: eFileType
