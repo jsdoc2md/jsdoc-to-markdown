@@ -152,7 +152,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 ```
 
 <a name="module_jsdoc-to-markdown.render"></a>
-##jsdoc2md.render(src, options)
+####jsdoc2md.render(src, options)
 Transforms jsdoc into markdown documentation
 
 **Params**
