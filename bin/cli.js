@@ -8,7 +8,7 @@ var cliArgs = require("command-line-args"),
 
 var cli = cliArgs([
     { name: "src", type: Array, defaultOption: true,
-      description: "The javascript source files."
+      description: "A list of javascript source files or glob expressions (globstar-style `**` accepted)"
     },
     { name: "template", alias: "t", type: String,
       description: "A custom handlebars template to insert the rendered documentation into"

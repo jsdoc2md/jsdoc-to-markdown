@@ -9,10 +9,10 @@
 #jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown out.
 
-Essentially, this app connects the output from [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). 
+Essentially, this app connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). 
 
 ##Synopsis
-```
+```sh
 $ jsdoc2md example/function.js
 
 #protection(cloak, dagger)
@@ -25,7 +25,7 @@ a quite wonderful function
 
 **Returns**: `survival`
 ```
-you can achieve the same result with these commands: 
+these commands achieve the same result: 
 ```sh
 $ cat example/function.js | jsdoc2md
 $ cat example/function.js | jsdoc-parse | dmd
@@ -46,6 +46,15 @@ Install the `jsdoc2md` command line tool:
 ```sh
 $ npm install -g jsdoc-to-markdown
 ```
+
+Some typical use cases: 
+
+```sh
+$ # dump everything you have in a single file
+$ jsdoc src/**/*.js > api.md
+```
+
+Options: 
 ```
 $ jsdoc2md -h
 
