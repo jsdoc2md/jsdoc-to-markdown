@@ -29,7 +29,7 @@ var cli = cliArgs([
       description: "Print a few stats about the doclets parsed."
     },
     { name: "heading-depth", type: Number,
-      description: "root heading depth to begin the documentation from, defaults to 1 (`#`)."
+      description: "root heading depth, defaults to 1 (`#`)."
     },
     { name: "plugin", type: Array, alias: "p",
       description: "Use an installed package containing helper and/or partial overrides"

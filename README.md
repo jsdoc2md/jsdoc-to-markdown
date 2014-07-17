@@ -159,14 +159,14 @@ Transforms jsdoc into markdown documentation
 
 - src `string` | `Array.<string>` - The javascript source file(s) - required.
 - options `object` - The render options
+  - [template] `string` - A custom handlebars template to insert the rendered documentation into.
+  - [json] `boolean` - Output the parsed jsdoc data only
   - [private] `boolean` - Include symbols marked @private in the output
-  - [json] `boolean` - Return the JSON template data only
-  - [stats] `boolean` - Return stats about the doclets parsed
-  - [template] `string` - A handlebars template to insert your documentation into.
-  - [helper] `string` | `Array.<string>` - Helper overrides
-  - [partial] `string` | `Array.<string>` - Partial overrides
-  - [plugin] `string` | `Array.<string>` - Packages containing helper and/or partial overrides
-  - [heading-depth] `number` - Root heading depth, defaults to 2.
+  - [stats] `boolean` - Print a few stats about the doclets parsed
+  - [heading-depth] `number` - root heading depth, defaults to 1 (`#`)
+  - [plugin] `string` | `Array.<string>` - Use an installed package containing helper and/or partial overrides
+  - [helper] `string` | `Array.<string>` - handlebars helper files to override or extend the default set
+  - [partial] `string` | `Array.<string>` - handlebars partial files to override or extend the default set
 
 **Returns**: `stream` - A readable stream containing the rendered markdown  
 **Example**  
