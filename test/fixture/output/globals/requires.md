@@ -1,10 +1,3 @@
-#Index
-
-
-**Functions**
-
-* [requirer()](#requirer)
-
 
 <a name="requirer"></a>
 #requirer()

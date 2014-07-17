@@ -1,15 +1,3 @@
-#Index
-
-
-**Classes**
-
-* [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
-  * [all.topping](#All#topping)
-  * [all.size](#All#size)
-  * [~~all.allThings(one, two)~~](#All#allThings)
-    * [allThings~some](#All#allThings.some)
-
 
 <a name="All"></a>
 #~~class: All~~
