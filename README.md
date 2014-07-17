@@ -12,7 +12,7 @@
 Essentially, this app connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). 
 
 ##Synopsis
-```sh
+```
 $ jsdoc2md example/function.js
 
 #protection(cloak, dagger)
@@ -40,21 +40,15 @@ These projects have readme files rendered by `jsdoc2md`:
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
 ##Usage
+Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
 
-###As a command-line tool
-Install the `jsdoc2md` command line tool:
+###Command-line tool
+Install the `jsdoc2md` tool:
 ```sh
 $ npm install -g jsdoc-to-markdown
 ```
 
-Some typical use cases: 
-
-```sh
-$ # dump everything you have in a single file
-$ jsdoc src/**/*.js > api.md
-```
-
-Options: 
+Options:
 ```
 $ jsdoc2md -h
 
@@ -78,13 +72,21 @@ $ jsdoc2md -h
   --partial <array>         partial overrides    
 ```
 
+Some typical use cases: 
+
+```sh
+$ # dump everything you have in a single file
+$ jsdoc src/**/*.js > api.md
+```
+
+
 ###Bundled with your project
-In my opinion, this is the most efficient solution (no task runner required).
+####As an `npm run` task
 ```sh
 $ npm install jsdoc-to-markdown --save-dev
 ```
 
-Then add an `docs` build task to your `package.json` scripts, e.g.:
+Then add a `docs` build script to your `package.json`, e.g.:
 ```json
 {
   "name": "my-web-app",
@@ -100,10 +102,10 @@ Docs are generated like so:
 $ npm run docs
 ```
 
-###As a grunt plug-in
+####As a grunt plug-in
 See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
 
-###As a gulp plug-in
+####As a gulp plug-in
 Use a task like this until the gulp plugin is ready, you should only need to edit `src` and `outputFile`: 
 
 ```js
@@ -119,26 +121,7 @@ gulp.task("docs", function(done){
 });
 ```
 
-##Usage
-Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`. If no `<source_files>` are supplied it will look for doclet data on `stdin`. 
-```
-$ jsdoc2md [<options>] [<source_files>]
-$ cat doclets.json | jsdoc2md [<options>]
-
--t, --template <string>   A custom handlebars template to insert the rendered documentation into
--j, --json                Output the template data only
--v, --verbose             More verbose output and error reporting
--h, --help                Print usage information
---src <array>             The javascript source files. The default option.
--p, --plugin <array>      Packages containing helper and/or partial overrides
---helper <array>          helper overrides
---partial <array>         partial overrides
---private                 Include symbols marked @private in the output
---heading-depth <number>  root heading depth to begin the documentation from, defaults to 1 (`#`).
--s, --stats               Print a few stats about the doclets parsed.
-```
-
-##API Reference
+###Library
 **Example**  
 
 ```js
