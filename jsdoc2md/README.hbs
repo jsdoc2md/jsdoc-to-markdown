@@ -43,7 +43,7 @@ These projects have readme files rendered by `jsdoc2md`:
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
 
 ###Command-line tool
-Install the `jsdoc2md` tool:
+Install `jsdoc2md` globally:
 ```sh
 $ npm install -g jsdoc-to-markdown
 ```
@@ -59,17 +59,17 @@ $ jsdoc2md -h
   $ jsdoc2md [<options>] <source_files>
   $ cat <source_files> | jsdoc2md [<options>]
 
-  --src <array>             The javascript source files.
+  --src <array>             A list of javascript source files or glob expressions
   -t, --template <string>   A custom handlebars template to insert the rendered documentation into
-  -j, --json                Output the template data only
+  -j, --json                Output the parsed jsdoc data only
   -v, --verbose             More verbose error reporting
   -h, --help                Print usage information
   --private                 Include symbols marked @private in the output
   -s, --stats               Print a few stats about the doclets parsed.
   --heading-depth <number>  root heading depth to begin the documentation from, defaults to 1 (`#`).
-  -p, --plugin <array>      Packages containing helper and/or partial overrides
-  --helper <array>          helper overrides
-  --partial <array>         partial overrides    
+  -p, --plugin <array>      Use an installed package containing helper and/or partial overrides
+  --helper <array>          handlebars helper files to override or extend the default set
+  --partial <array>         handlebars partial files to override or extend the default set
 ```
 
 Some typical use cases: 
@@ -79,6 +79,16 @@ $ # dump everything you have in a single file
 $ jsdoc src/**/*.js > api.md
 ```
 
+```sh
+$ # split into separate files
+$ jsdoc src/main-module.js > main-module.md
+$ jsdoc src/important-class.js > important-class.md
+```
+
+```sh
+$ # embed documentation in your README.md
+$ jsdoc src/**/*.js --template readme.hbs > README.md
+```
 
 ###Bundled with your project
 ####As an `npm run` task

@@ -8,13 +8,13 @@ var cliArgs = require("command-line-args"),
 
 var cli = cliArgs([
     { name: "src", type: Array, defaultOption: true,
-      description: "A list of javascript source files or glob expressions (globstar-style `**` accepted)"
+      description: "A list of javascript source files or glob expressions"
     },
     { name: "template", alias: "t", type: String,
       description: "A custom handlebars template to insert the rendered documentation into"
     },
     { name: "json", alias: "j", type: Boolean,
-      description: "Output the template data only"
+      description: "Output the parsed jsdoc data only"
     },
     { name: "verbose", alias: "v", type: Boolean,
       description: "More verbose error reporting"
@@ -32,13 +32,13 @@ var cli = cliArgs([
       description: "root heading depth to begin the documentation from, defaults to 1 (`#`)."
     },
     { name: "plugin", type: Array, alias: "p",
-      description: "Packages containing helper and/or partial overrides"
+      description: "Use an installed package containing helper and/or partial overrides"
     },
     { name: "helper", type: Array,
-      description: "helper overrides"
+      description: "handlebars helper files to override or extend the default set"
     },
     { name: "partial", type: Array,
-      description: "partial overrides"
+      description: "handlebars partial files to override or extend the default set"
     }
 ]);
 var usage = cli.getUsage({
