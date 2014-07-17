@@ -746,6 +746,16 @@ This function takes variable input
   * [car.env](#car#env)
     * [env.weather](#car#env.weather)
     * [env.roads](#car#env.roads)
+**Members**
+
+* [car](#car)
+  * [car.wheels](#car.wheels)
+  * [car.sensors](#car.sensors)
+  * [car.start()](#car.start)
+  * [car.env](#car#env)
+    * [env.weather](#car#env.weather)
+    * [env.roads](#car#env.roads)
+
 <a name="car.wheels"></a>
 ##car.wheels
 the round things
@@ -770,6 +780,12 @@ decribes the current conditions
 * [car.env](#car#env)
   * [env.weather](#car#env.weather)
   * [env.roads](#car#env.roads)
+**Members**
+
+* [car.env](#car#env)
+  * [env.weather](#car#env.weather)
+  * [env.roads](#car#env.roads)
+
 <a name="car#env.weather"></a>
 ###env.weather
 what kind of day is it
