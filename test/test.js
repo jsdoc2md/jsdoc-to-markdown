@@ -19,17 +19,17 @@ test("returns correct data", function(t){
     });
 });
 
-// test("cli check", function(t){
-//     t.plan(1);
-//
-//     var inputFile = fs.openSync("test/fixture/input/globals/ignore.js", "r");
-//     var outputFile = fs.openSync("tmp/ignore.md", "w");
-//
-//     var handle = spawn("node", [ path.join("bin", "cli.js") ], {
-//         stdio: [ inputFile, outputFile, process.stderr ]
-//     });
-//     handle.on("close", function(){
-//         var md = fs.readFileSync("tmp/ignore.md", "utf8");
-//         if (md) t.ok(/a visible global/.test(md.toString()));
-//     });
-// });
+test("stdin check", function(t){
+    t.plan(1);
+
+    var inputFile = fs.openSync("test/fixture/input/globals/ignore.js", "r");
+    var outputFile = fs.openSync("tmp/ignore.md", "w");
+
+    var handle = spawn("node", [ path.join("bin", "cli.js") ], {
+        stdio: [ inputFile, outputFile, process.stderr ]
+    });
+    handle.on("close", function(){
+        var md = fs.readFileSync("tmp/ignore.md", "utf8");
+        if (md) t.ok(/#visible/.test(md.toString()));
+    });
+});
