@@ -27,29 +27,29 @@
   * [_.two](#module_commonjs/object-alias.two)
   * [_.three()](#module_commonjs/object-alias.three)
 * [cyberdyne](#module_cyberdyne)
+  * [cyber~something](#module_cyberdyne.something)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
   * [class: cyber~Machine](#module_cyberdyne.Machine)
     * [new cyber~Machine(options)](#module_cyberdyne.Machine)
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
-  * [cyber~something](#module_cyberdyne.something)
 * [cattle](#module_cattle)
-  * [cattle.createCow()](#module_cattle.createCow)
   * [cattle~innerMember](#module_cattle.innerMember)
+  * [cattle.createCow()](#module_cattle.createCow)
   * [cattle~innerFuction()](#module_cattle.innerFuction)
   * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 * [one-member](#module_one-member)
   * [object.three(four, five)](#module_one-member.three)
 * [heaven](#module_heaven)
-  * [heaven.createCloud()](#module_heaven.createCloud)
   * [heaven.Cloud](#module_heaven.Cloud)
+  * [heaven.createCloud()](#module_heaven.createCloud)
+  * [const: heaven~FACT](#module_heaven.FACT)
   * [class: heaven~Cloud](#module_heaven.Cloud)
     * [new heaven~Cloud(options)](#module_heaven.Cloud)
     * [cloud.size](#module_heaven.Cloud#size)
     * [cloud.rain](#module_heaven.Cloud#rain)
     * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
     * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-  * [const: heaven~FACT](#module_heaven.FACT)
 * [private](#module_private)
   * [private.notprivate](#module_private.notprivate)
 * [commonjs/single-value](#module_commonjs/single-value)
@@ -352,12 +352,12 @@ var cyber = require("cyberdyne");
 **Members**
 
 * [cyberdyne](#module_cyberdyne)
+  * [cyber~something](#module_cyberdyne.something)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
   * [class: cyber~Machine](#module_cyberdyne.Machine)
     * [new cyber~Machine(options)](#module_cyberdyne.Machine)
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
-  * [cyber~something](#module_cyberdyne.something)
 
 <a name="module_cyberdyne.something"></a>
 ##cyber~something
@@ -400,8 +400,8 @@ exported object, with-inner-members
 **Members**
 
 * [cattle](#module_cattle)
-  * [cattle.createCow()](#module_cattle.createCow)
   * [cattle~innerMember](#module_cattle.innerMember)
+  * [cattle.createCow()](#module_cattle.createCow)
   * [cattle~innerFuction()](#module_cattle.innerFuction)
   * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
 
@@ -452,15 +452,15 @@ factory module creating dodgy cloud. object-with-static-class.
 **Members**
 
 * [heaven](#module_heaven)
-  * [heaven.createCloud()](#module_heaven.createCloud)
   * [heaven.Cloud](#module_heaven.Cloud)
+  * [heaven.createCloud()](#module_heaven.createCloud)
+  * [const: heaven~FACT](#module_heaven.FACT)
   * [class: heaven~Cloud](#module_heaven.Cloud)
     * [new heaven~Cloud(options)](#module_heaven.Cloud)
     * [cloud.size](#module_heaven.Cloud#size)
     * [cloud.rain](#module_heaven.Cloud#rain)
     * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
     * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
-  * [const: heaven~FACT](#module_heaven.FACT)
 
 <a name="module_heaven.Cloud"></a>
 ##heaven.Cloud
