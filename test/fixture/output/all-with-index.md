@@ -152,15 +152,6 @@
 #amd/export-object
 A module that says hello!
 
-**Members**
-
-* [amd/export-object](#module_amd/export-object)
-  * [amd/export-object.sayHello()](#module_amd/export-object.sayHello)
-
-<a name="module_amd/export-object.sayHello"></a>
-##amd/export-object.sayHello()
-Say hello.
-
 <a name="module_file-pet"></a>
 #file-pet
 this module returns a pet of files
@@ -318,15 +309,6 @@ the main function description
 #commonjs/ignore
 module with ignored shiz
 
-**Members**
-
-* [commonjs/ignore](#module_commonjs/ignore)
-  * [ignore.visible](#module_commonjs/ignore.visible)
-
-<a name="module_commonjs/ignore.visible"></a>
-##ignore.visible
-visible property
-
 <a name="module_commonjs/object-alias"></a>
 #commonjs/object-alias
 simple object export
@@ -436,29 +418,7 @@ another inner function
 **Scope**: inner function of [cattle](#module_cattle)  
 <a name="module_one-member"></a>
 #one-member
-simple object, one member
-
-**Members**
-
-* [one-member](#module_one-member)
-  * [object.three(four, five)](#module_one-member.three)
-
-<a name="module_one-member.three"></a>
-##object.three(four, five)
-a function
-
-**Params**
-
-- four `string` - The input string
-- five `object` - a second input
-
-**Returns**: `object` | `string` - this return has several types  
-**Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-**Example**  
-```js
-allTogether(true);
-```
+simple object, one member. It shouldn't have an index.
 
 <a name="module_heaven"></a>
 #heaven
@@ -534,23 +494,9 @@ a class constant
 #private
 module with private shiz
 
-**Members**
-
-* [private](#module_private)
-  * [private.notprivate](#module_private.notprivate)
-
-<a name="module_private.notprivate"></a>
-##private.notprivate
-visible property
-
 <a name="module_commonjs/single-value"></a>
 #commonjs/single-value
 this module exports one value, that's it
-
-**Members**
-
-* [commonjs/single-value](#module_commonjs/single-value)
-  * [module.exports ⏏](#module_commonjs/single-value)
 
 <a name="All"></a>
 #~~class: All~~

@@ -1,5 +1,5 @@
 /**
-simple object, one member
+simple object, one member. It shouldn't have an index. 
 @module one-member
 @alias object
 */
