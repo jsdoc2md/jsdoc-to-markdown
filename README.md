@@ -13,6 +13,18 @@ Essentially, this app connects the output of [jsdoc-parse](https://github.com/75
 
 ##Synopsis
 ```
+write documented code:
+```js
+/**
+a quite wonderful function
+@param {object} - privacy gown
+@param {object} - security
+@returns {survival}
+*/
+function protection(cloak, dagger){}
+```
+
+get markdown docs: 
 $ jsdoc2md example/function.js
 
 #protection(cloak, dagger)
@@ -25,6 +37,7 @@ a quite wonderful function
 
 **Returns**: `survival`
 ```
+
 these commands achieve the same result: 
 ```sh
 $ cat example/function.js | jsdoc2md
