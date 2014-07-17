@@ -739,13 +739,6 @@ This function takes variable input
 
 <a name="car"></a>
 #car
-* [car](#car)
-  * [car.wheels](#car.wheels)
-  * [car.sensors](#car.sensors)
-  * [car.start()](#car.start)
-  * [car.env](#car#env)
-    * [env.weather](#car#env.weather)
-    * [env.roads](#car#env.roads)
 **Members**
 
 * [car](#car)
@@ -777,9 +770,6 @@ start the car
 ##car.env
 decribes the current conditions
 
-* [car.env](#car#env)
-  * [env.weather](#car#env.weather)
-  * [env.roads](#car#env.roads)
 **Members**
 
 * [car.env](#car#env)
