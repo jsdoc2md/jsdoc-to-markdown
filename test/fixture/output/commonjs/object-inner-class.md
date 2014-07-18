@@ -14,7 +14,7 @@ var cyber = require("cyberdyne");
   * [cyber~something](#module_cyberdyne.something)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
   * [class: cyber~Machine](#module_cyberdyne.Machine)
-    * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+    * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
@@ -25,7 +25,7 @@ random
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.createMachine"></a>
 ##cyber.createMachine()
-**Returns**: [Machine](#module_cyberdyne.Machine)  
+**Returns**: [Machine](#new_module_cyberdyne.Machine)  
 <a name="module_cyberdyne.Machine"></a>
 ##class: cyber~Machine
 The main class of machine
@@ -33,11 +33,11 @@ The main class of machine
 **Members**
 
 * [class: cyber~Machine](#module_cyberdyne.Machine)
-  * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+  * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
-<a name="module_cyberdyne.Machine"></a>
+<a name="new_module_cyberdyne.Machine"></a>
 ###new cyber~Machine(options)
 the Machine constructor
 

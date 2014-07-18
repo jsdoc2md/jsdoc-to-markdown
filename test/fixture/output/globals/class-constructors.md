@@ -4,12 +4,12 @@
 **Classes**
 
 * [class: Person](#Person)
-  * [new Person()](#Person)
+  * [new Person()](#new_Person)
 * [class: Car](#Car)
-  * [new Car([options])](#Car)
+  * [new Car([options])](#new_Car)
 * [class: Pipe](#Pipe)
 * [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+  * [~~new Everything(input, [options])~~](#new_Everything)
 
 
 <a name="Person"></a>
@@ -20,9 +20,9 @@ simple class description
 **Members**
 
 * [class: Person](#Person)
-  * [new Person()](#Person)
+  * [new Person()](#new_Person)
 
-<a name="Person"></a>
+<a name="new_Person"></a>
 ##new Person()
 a constructor description
 
@@ -32,9 +32,9 @@ a constructor description
 **Members**
 
 * [class: Car](#Car)
-  * [new Car([options])](#Car)
+  * [new Car([options])](#new_Car)
 
-<a name="Car"></a>
+<a name="new_Car"></a>
 ##new Car([options])
 a constructor with args
 
@@ -59,9 +59,9 @@ a class with all trimmings
 **Members**
 
 * [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+  * [~~new Everything(input, [options])~~](#new_Everything)
 
-<a name="Everything"></a>
+<a name="new_Everything"></a>
 ##~~new Everything(input, [options])~~
 the constructor description
 

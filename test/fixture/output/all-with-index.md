@@ -30,7 +30,7 @@
   * [cyber~something](#module_cyberdyne.something)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
   * [class: cyber~Machine](#module_cyberdyne.Machine)
-    * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+    * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
 * [cattle](#module_cattle)
@@ -45,7 +45,7 @@
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [const: heaven~FACT](#module_heaven.FACT)
   * [class: heaven~Cloud](#module_heaven.Cloud)
-    * [new heaven~Cloud(options)](#module_heaven.Cloud)
+    * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
     * [cloud.size](#module_heaven.Cloud#size)
     * [cloud.rain](#module_heaven.Cloud#rain)
     * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -58,18 +58,18 @@
 **Classes**
 
 * [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
+  * [~~new All(input, [options])~~](#new_All)
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
 * [class: Person](#Person)
-  * [new Person()](#Person)
+  * [new Person()](#new_Person)
 * [class: Car](#Car)
-  * [new Car([options])](#Car)
+  * [new Car([options])](#new_Car)
 * [class: Pipe](#Pipe)
 * [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+  * [~~new Everything(input, [options])~~](#new_Everything)
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
   * [event: "cooking"](#Rice#event_cooking)
@@ -172,12 +172,12 @@ this class returns a pet of files
 **Members**
 
 * [class: FilePet ⏏](#module_file-pet)
-  * [new FilePet(num)](#module_file-pet)
+  * [new FilePet(num)](#new_module_file-pet)
   * [filePet.instie](#module_file-pet#instie)
   * [filePet.files](#module_file-pet#files)
   * [filePet.delete(paths)](#module_file-pet#delete)
 
-<a name="module_file-pet"></a>
+<a name="new_module_file-pet"></a>
 ###new FilePet(num)
 this is the contructor
 
@@ -240,11 +240,11 @@ this class returns a set of files
 **Members**
 
 * [class: FileSet ⏏](#module_file-set)
-  * [new FileSet()](#module_file-set)
+  * [new FileSet()](#new_module_file-set)
   * [file-set.files](#module_file-set#files)
   * [file-set.delete(paths)](#module_file-set#delete)
 
-<a name="module_file-set"></a>
+<a name="new_module_file-set"></a>
 ###new FileSet()
 Takes a list of path patterns
 
@@ -355,7 +355,7 @@ var cyber = require("cyberdyne");
   * [cyber~something](#module_cyberdyne.something)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
   * [class: cyber~Machine](#module_cyberdyne.Machine)
-    * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+    * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
     * [machine.eyes](#module_cyberdyne.Machine#eyes)
     * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
@@ -366,7 +366,7 @@ random
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.createMachine"></a>
 ##cyber.createMachine()
-**Returns**: [Machine](#module_cyberdyne.Machine)  
+**Returns**: [Machine](#new_module_cyberdyne.Machine)  
 <a name="module_cyberdyne.Machine"></a>
 ##class: cyber~Machine
 The main class of machine
@@ -374,11 +374,11 @@ The main class of machine
 **Members**
 
 * [class: cyber~Machine](#module_cyberdyne.Machine)
-  * [new cyber~Machine(options)](#module_cyberdyne.Machine)
+  * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
   * [machine.eyes](#module_cyberdyne.Machine#eyes)
   * [machine.vibe](#module_cyberdyne.Machine#vibe)
 
-<a name="module_cyberdyne.Machine"></a>
+<a name="new_module_cyberdyne.Machine"></a>
 ###new cyber~Machine(options)
 the Machine constructor
 
@@ -456,7 +456,7 @@ factory module creating dodgy cloud. object-with-static-class.
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [const: heaven~FACT](#module_heaven.FACT)
   * [class: heaven~Cloud](#module_heaven.Cloud)
-    * [new heaven~Cloud(options)](#module_heaven.Cloud)
+    * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
     * [cloud.size](#module_heaven.Cloud#size)
     * [cloud.rain](#module_heaven.Cloud#rain)
     * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -466,10 +466,10 @@ factory module creating dodgy cloud. object-with-static-class.
 ##heaven.Cloud
 access to the Cloud class
 
-**Type**: [Cloud](#module_heaven.Cloud)  
+**Type**: [Cloud](#new_module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
 ##heaven.createCloud()
-**Returns**: [Cloud](#module_heaven.Cloud)  
+**Returns**: [Cloud](#new_module_heaven.Cloud)  
 <a name="module_heaven.FACT"></a>
 ##const: heaven~FACT
 an inner constant
@@ -483,13 +483,13 @@ The main class for a cloud
 **Members**
 
 * [class: heaven~Cloud](#module_heaven.Cloud)
-  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+  * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
-<a name="module_heaven.Cloud"></a>
+<a name="new_module_heaven.Cloud"></a>
 ###new heaven~Cloud(options)
 cloud constructor
 
@@ -535,13 +535,13 @@ a class with all of the things
 **Members**
 
 * [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
+  * [~~new All(input, [options])~~](#new_All)
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
 
-<a name="All"></a>
+<a name="new_All"></a>
 ##~~new All(input, [options])~~
 the constructor description
 
@@ -596,9 +596,9 @@ simple class description
 **Members**
 
 * [class: Person](#Person)
-  * [new Person()](#Person)
+  * [new Person()](#new_Person)
 
-<a name="Person"></a>
+<a name="new_Person"></a>
 ##new Person()
 a constructor description
 
@@ -608,9 +608,9 @@ a constructor description
 **Members**
 
 * [class: Car](#Car)
-  * [new Car([options])](#Car)
+  * [new Car([options])](#new_Car)
 
-<a name="Car"></a>
+<a name="new_Car"></a>
 ##new Car([options])
 a constructor with args
 
@@ -635,9 +635,9 @@ a class with all trimmings
 **Members**
 
 * [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+  * [~~new Everything(input, [options])~~](#new_Everything)
 
-<a name="Everything"></a>
+<a name="new_Everything"></a>
 ##~~new Everything(input, [options])~~
 the constructor description
 

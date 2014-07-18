@@ -10,7 +10,7 @@ factory module creating dodgy cloud. object-with-static-class.
   * [heaven.createCloud()](#module_heaven.createCloud)
   * [const: heaven~FACT](#module_heaven.FACT)
   * [class: heaven~Cloud](#module_heaven.Cloud)
-    * [new heaven~Cloud(options)](#module_heaven.Cloud)
+    * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
     * [cloud.size](#module_heaven.Cloud#size)
     * [cloud.rain](#module_heaven.Cloud#rain)
     * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -20,10 +20,10 @@ factory module creating dodgy cloud. object-with-static-class.
 ##heaven.Cloud
 access to the Cloud class
 
-**Type**: [Cloud](#module_heaven.Cloud)  
+**Type**: [Cloud](#new_module_heaven.Cloud)  
 <a name="module_heaven.createCloud"></a>
 ##heaven.createCloud()
-**Returns**: [Cloud](#module_heaven.Cloud)  
+**Returns**: [Cloud](#new_module_heaven.Cloud)  
 <a name="module_heaven.FACT"></a>
 ##const: heaven~FACT
 an inner constant
@@ -37,13 +37,13 @@ The main class for a cloud
 **Members**
 
 * [class: heaven~Cloud](#module_heaven.Cloud)
-  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+  * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
-<a name="module_heaven.Cloud"></a>
+<a name="new_module_heaven.Cloud"></a>
 ###new heaven~Cloud(options)
 cloud constructor
 

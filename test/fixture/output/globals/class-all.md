@@ -7,13 +7,13 @@ a class with all of the things
 **Members**
 
 * [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
+  * [~~new All(input, [options])~~](#new_All)
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
 
-<a name="All"></a>
+<a name="new_All"></a>
 ##~~new All(input, [options])~~
 the constructor description
 

@@ -4,18 +4,18 @@
 **Classes**
 
 * [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
+  * [~~new All(input, [options])~~](#new_All)
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
 * [class: Person](#Person)
-  * [new Person()](#Person)
+  * [new Person()](#new_Person)
 * [class: Car](#Car)
-  * [new Car([options])](#Car)
+  * [new Car([options])](#new_Car)
 * [class: Pipe](#Pipe)
 * [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+  * [~~new Everything(input, [options])~~](#new_Everything)
 * [class: Rice](#Rice)
   * [event: "cooked"](#Rice#event_cooked)
   * [event: "cooking"](#Rice#event_cooking)
@@ -102,13 +102,13 @@ a class with all of the things
 **Members**
 
 * [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#All)
+  * [~~new All(input, [options])~~](#new_All)
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
     * [allThings~some](#All#allThings.some)
 
-<a name="All"></a>
+<a name="new_All"></a>
 ##~~new All(input, [options])~~
 the constructor description
 
@@ -163,9 +163,9 @@ simple class description
 **Members**
 
 * [class: Person](#Person)
-  * [new Person()](#Person)
+  * [new Person()](#new_Person)
 
-<a name="Person"></a>
+<a name="new_Person"></a>
 ##new Person()
 a constructor description
 
@@ -175,9 +175,9 @@ a constructor description
 **Members**
 
 * [class: Car](#Car)
-  * [new Car([options])](#Car)
+  * [new Car([options])](#new_Car)
 
-<a name="Car"></a>
+<a name="new_Car"></a>
 ##new Car([options])
 a constructor with args
 
@@ -202,9 +202,9 @@ a class with all trimmings
 **Members**
 
 * [~~class: Everything~~](#Everything)
-  * [~~new Everything(input, [options])~~](#Everything)
+  * [~~new Everything(input, [options])~~](#new_Everything)
 
-<a name="Everything"></a>
+<a name="new_Everything"></a>
 ##~~new Everything(input, [options])~~
 the constructor description
 

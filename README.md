@@ -176,7 +176,7 @@ Transforms jsdoc into markdown documentation.
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
-> jsdoc2md.render().pipe(process.stdout);
+> jsdoc2md.render("lib/*.js").pipe(process.stdout);
 ```
 or pipe in source code from another source:
 ```js

@@ -6,13 +6,13 @@ The main class for a cloud
 **Members**
 
 * [class: heaven~Cloud](#module_heaven.Cloud)
-  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+  * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
   * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
 
-<a name="module_heaven.Cloud"></a>
+<a name="new_module_heaven.Cloud"></a>
 ##new heaven~Cloud(options)
 cloud constructor
 
@@ -58,7 +58,7 @@ The main class for a cloud
 
 #The index
 * [class: heaven~Cloud](#module_heaven.Cloud)
-  * [new heaven~Cloud(options)](#module_heaven.Cloud)
+  * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
   * [cloud.size](#module_heaven.Cloud#size)
   * [cloud.rain](#module_heaven.Cloud#rain)
   * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
@@ -68,7 +68,7 @@ The main class for a cloud
 ---------------
 
 #The members
-<a name="module_heaven.Cloud"></a>
+<a name="new_module_heaven.Cloud"></a>
 ##new heaven~Cloud(options)
 cloud constructor
 
