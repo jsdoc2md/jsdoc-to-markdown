@@ -52,6 +52,9 @@ These projects have readme files rendered by `jsdoc2md`:
 * [file-set](https://github.com/75lb/file-set) (exports a class)
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
+##Compatible Platforms
+Currently MacOSX and Linux only. Windows support coming as soon as [this upstream bug](https://github.com/jsdoc3/jsdoc/issues/713) is fixed. 
+
 ##Usage
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
 

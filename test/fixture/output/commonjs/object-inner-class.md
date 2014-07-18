@@ -25,7 +25,7 @@ random
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.createMachine"></a>
 ##cyber.createMachine()
-**Returns**: [Machine](#new_module_cyberdyne..Machine)  
+**Returns**: [Machine](#module_cyberdyne..Machine)  
 <a name="module_cyberdyne..Machine"></a>
 ##class: cyber~Machine
 The main class of machine

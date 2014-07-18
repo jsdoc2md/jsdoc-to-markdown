@@ -368,7 +368,7 @@ random
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.createMachine"></a>
 ##cyber.createMachine()
-**Returns**: [Machine](#new_module_cyberdyne..Machine)  
+**Returns**: [Machine](#module_cyberdyne..Machine)  
 <a name="module_cyberdyne..Machine"></a>
 ##class: cyber~Machine
 The main class of machine
@@ -468,10 +468,10 @@ factory module creating dodgy cloud. object-with-static-class.
 ##heaven.Cloud
 access to the Cloud class
 
-**Type**: [Cloud](#new_module_heaven..Cloud)  
+**Type**: [Cloud](#module_heaven..Cloud)  
 <a name="module_heaven.createCloud"></a>
 ##heaven.createCloud()
-**Returns**: [Cloud](#new_module_heaven..Cloud)  
+**Returns**: [Cloud](#module_heaven..Cloud)  
 <a name="module_heaven..FACT"></a>
 ##const: heaven~FACT
 an inner constant
