@@ -5,7 +5,7 @@ This is the module description
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-<a name="module_function"></a>
+<a name="exp_module_function"></a>
 ##module.exports(one, two) ⏏
 the main function description
 

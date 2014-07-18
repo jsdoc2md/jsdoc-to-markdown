@@ -7,12 +7,12 @@
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {
     "test": "tape test/*.js",
-    "render": "node test/fixture/render.js",
-    "docs": "node bin/cli.js -t jsdoc2md/README.hbs lib/jsdoc-to-markdown.js > README.md; ",
+    "render": "node test/fixture/render.js; echo",
+    "docs": "node bin/cli.js -t jsdoc2md/README.hbs lib/jsdoc-to-markdown.js > README.md; echo ",
     "watch": "baldrick --do 'npm run docs' --when test/input/*/*.js partials/* --change --speak",
     "lint": "jshint bin/*.js lib/*.js test/*.js; echo",
-    "index": "jsdoc2md test/fixture/input/**/*.js -v > test/fixture/output/all-with-index.md",
-    "templates": "node test/fixture/templates.js",
+    "index": "jsdoc2md test/fixture/input/**/*.js -v > test/fixture/output/all-with-index.md; echo",
+    "templates": "node test/fixture/templates.js; echo",
     "all": "npm run render && npm run docs && npm run index && npm run templates;"
   },
   "bin": {

@@ -8,18 +8,18 @@ this module exports a class constructor
 var FileSet = require("file-set");
 ```
 
-<a name="module_file-set"></a>
+<a name="exp_module_file-set"></a>
 ##class: FileSet ⏏
 this class returns a set of files
 
 **Members**
 
-* [class: FileSet ⏏](#module_file-set)
-  * [new FileSet()](#new_module_file-set)
+* [class: FileSet ⏏](#exp_module_file-set)
+  * [new FileSet()](#exp_new_module_file-set)
   * [file-set.files](#module_file-set#files)
   * [file-set.delete(paths)](#module_file-set#delete)
 
-<a name="new_module_file-set"></a>
+<a name="exp_new_module_file-set"></a>
 ###new FileSet()
 Takes a list of path patterns
 

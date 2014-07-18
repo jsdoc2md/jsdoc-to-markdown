@@ -8,7 +8,7 @@ This module exports a simple maths function
 var sum = require("sum-alias");
 ```
 
-<a name="module_sum-alias"></a>
+<a name="exp_module_sum-alias"></a>
 ##sum(a, b) ⏏
 Sums two numbers together
 

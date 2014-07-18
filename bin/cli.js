@@ -72,6 +72,8 @@ d.run(function(){
 });
 
 function halt(err){
+    if (err.code === "EPIPE") process.exit(0); /* no big deal */
+    
     if (argv){
         dope.red.error(argv.verbose ? (err.stack || err) : err.message);
     } else {

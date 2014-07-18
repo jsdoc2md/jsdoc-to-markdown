@@ -5,21 +5,23 @@
 * [amd/export-object](#module_amd/export-object)
   * [amd/export-object.sayHello()](#module_amd/export-object.sayHello)
 * [file-pet](#module_file-pet)
-  * [class: FilePet ⏏](#module_file-pet)
+  * [class: FilePet ⏏](#exp_module_file-pet)
+    * [new FilePet(num)](#exp_new_module_file-pet)
     * [filePet.instie](#module_file-pet#instie)
     * [filePet.files](#module_file-pet#files)
     * [filePet.delete(paths)](#module_file-pet#delete)
 * [jacket](#module_jacket)
-  * [class: Jacket ⏏](#module_jacket)
+  * [class: Jacket ⏏](#exp_module_jacket)
     * [jacket.zip()](#module_jacket#zip)
 * [file-set](#module_file-set)
-  * [class: FileSet ⏏](#module_file-set)
+  * [class: FileSet ⏏](#exp_module_file-set)
+    * [new FileSet()](#exp_new_module_file-set)
     * [file-set.files](#module_file-set#files)
     * [file-set.delete(paths)](#module_file-set#delete)
 * [sum-alias](#module_sum-alias)
-  * [sum(a, b) ⏏](#module_sum-alias)
+  * [sum(a, b) ⏏](#exp_module_sum-alias)
 * [commonjs/function](#module_commonjs/function)
-  * [module.exports(one, two) ⏏](#module_commonjs/function)
+  * [module.exports(one, two) ⏏](#exp_module_commonjs/function)
 * [commonjs/ignore](#module_commonjs/ignore)
   * [ignore.visible](#module_commonjs/ignore.visible)
 * [commonjs/object-alias](#module_commonjs/object-alias)
@@ -27,33 +29,33 @@
   * [_.two](#module_commonjs/object-alias.two)
   * [_.three()](#module_commonjs/object-alias.three)
 * [cyberdyne](#module_cyberdyne)
-  * [cyber~something](#module_cyberdyne.something)
+  * [cyber~something](#module_cyberdyne..something)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
-  * [class: cyber~Machine](#module_cyberdyne.Machine)
-    * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
-    * [machine.eyes](#module_cyberdyne.Machine#eyes)
-    * [machine.vibe](#module_cyberdyne.Machine#vibe)
+  * [class: cyber~Machine](#module_cyberdyne..Machine)
+    * [new cyber~Machine(options)](#new_module_cyberdyne..Machine)
+    * [machine.eyes](#module_cyberdyne..Machine#eyes)
+    * [machine.vibe](#module_cyberdyne..Machine#vibe)
 * [cattle](#module_cattle)
-  * [cattle~innerMember](#module_cattle.innerMember)
+  * [cattle~innerMember](#module_cattle..innerMember)
   * [cattle.createCow()](#module_cattle.createCow)
-  * [cattle~innerFuction()](#module_cattle.innerFuction)
-  * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+  * [cattle~innerFuction()](#module_cattle..innerFuction)
+  * [~~cattle~anotherInnerFuction()~~](#module_cattle..anotherInnerFuction)
 * [one-member](#module_one-member)
   * [object.three(four, five)](#module_one-member.three)
 * [heaven](#module_heaven)
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
-  * [const: heaven~FACT](#module_heaven.FACT)
-  * [class: heaven~Cloud](#module_heaven.Cloud)
-    * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
-    * [cloud.size](#module_heaven.Cloud#size)
-    * [cloud.rain](#module_heaven.Cloud#rain)
-    * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-    * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+  * [const: heaven~FACT](#module_heaven..FACT)
+  * [class: heaven~Cloud](#module_heaven..Cloud)
+    * [new heaven~Cloud(options)](#new_module_heaven..Cloud)
+    * [cloud.size](#module_heaven..Cloud#size)
+    * [cloud.rain](#module_heaven..Cloud#rain)
+    * [Cloud.classMethod()](#module_heaven..Cloud.classMethod)
+    * [const: Cloud.SPACES](#module_heaven..Cloud.SPACES)
 * [private](#module_private)
   * [private.notprivate](#module_private.notprivate)
 * [commonjs/single-value](#module_commonjs/single-value)
-  * [module.exports ⏏](#module_commonjs/single-value)
+  * [module.exports ⏏](#exp_module_commonjs/single-value)
 
 **Classes**
 
@@ -62,7 +64,7 @@
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
-    * [allThings~some](#All#allThings.some)
+    * [allThings~some](#All#allThings..some)
 * [class: Person](#Person)
   * [new Person()](#new_Person)
 * [class: Car](#Car)
@@ -165,19 +167,19 @@ this module returns a pet of files
 var cowFiles = FilePet("cow/*");
 ```
 
-<a name="module_file-pet"></a>
+<a name="exp_module_file-pet"></a>
 ##class: FilePet ⏏
 this class returns a pet of files
 
 **Members**
 
-* [class: FilePet ⏏](#module_file-pet)
-  * [new FilePet(num)](#new_module_file-pet)
+* [class: FilePet ⏏](#exp_module_file-pet)
+  * [new FilePet(num)](#exp_new_module_file-pet)
   * [filePet.instie](#module_file-pet#instie)
   * [filePet.files](#module_file-pet#files)
   * [filePet.delete(paths)](#module_file-pet#delete)
 
-<a name="new_module_file-pet"></a>
+<a name="exp_new_module_file-pet"></a>
 ###new FilePet(num)
 this is the contructor
 
@@ -213,11 +215,11 @@ A prototype instance methy meth
 #jacket
 A module representing a jacket.
 
-<a name="module_jacket"></a>
+<a name="exp_module_jacket"></a>
 ##class: Jacket ⏏
 **Members**
 
-* [class: Jacket ⏏](#module_jacket)
+* [class: Jacket ⏏](#exp_module_jacket)
   * [jacket.zip()](#module_jacket#zip)
 
 <a name="module_jacket#zip"></a>
@@ -233,18 +235,18 @@ this module exports a class constructor
 var FileSet = require("file-set");
 ```
 
-<a name="module_file-set"></a>
+<a name="exp_module_file-set"></a>
 ##class: FileSet ⏏
 this class returns a set of files
 
 **Members**
 
-* [class: FileSet ⏏](#module_file-set)
-  * [new FileSet()](#new_module_file-set)
+* [class: FileSet ⏏](#exp_module_file-set)
+  * [new FileSet()](#exp_new_module_file-set)
   * [file-set.files](#module_file-set#files)
   * [file-set.delete(paths)](#module_file-set#delete)
 
-<a name="new_module_file-set"></a>
+<a name="exp_new_module_file-set"></a>
 ###new FileSet()
 Takes a list of path patterns
 
@@ -278,7 +280,7 @@ This module exports a simple maths function
 var sum = require("sum-alias");
 ```
 
-<a name="module_sum-alias"></a>
+<a name="exp_module_sum-alias"></a>
 ##sum(a, b) ⏏
 Sums two numbers together
 
@@ -299,7 +301,7 @@ This is the module description
 
 **Since**: v0.10.28  
 **Author**: Lloyd <75pound@gmail.com>  
-<a name="module_commonjs/function"></a>
+<a name="exp_module_commonjs/function"></a>
 ##module.exports(one, two) ⏏
 the main function description
 
@@ -352,33 +354,33 @@ var cyber = require("cyberdyne");
 **Members**
 
 * [cyberdyne](#module_cyberdyne)
-  * [cyber~something](#module_cyberdyne.something)
+  * [cyber~something](#module_cyberdyne..something)
   * [cyber.createMachine()](#module_cyberdyne.createMachine)
-  * [class: cyber~Machine](#module_cyberdyne.Machine)
-    * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
-    * [machine.eyes](#module_cyberdyne.Machine#eyes)
-    * [machine.vibe](#module_cyberdyne.Machine#vibe)
+  * [class: cyber~Machine](#module_cyberdyne..Machine)
+    * [new cyber~Machine(options)](#new_module_cyberdyne..Machine)
+    * [machine.eyes](#module_cyberdyne..Machine#eyes)
+    * [machine.vibe](#module_cyberdyne..Machine#vibe)
 
-<a name="module_cyberdyne.something"></a>
+<a name="module_cyberdyne..something"></a>
 ##cyber~something
 random
 
 **Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.createMachine"></a>
 ##cyber.createMachine()
-**Returns**: [Machine](#new_module_cyberdyne.Machine)  
-<a name="module_cyberdyne.Machine"></a>
+**Returns**: [Machine](#new_module_cyberdyne..Machine)  
+<a name="module_cyberdyne..Machine"></a>
 ##class: cyber~Machine
 The main class of machine
 
 **Members**
 
-* [class: cyber~Machine](#module_cyberdyne.Machine)
-  * [new cyber~Machine(options)](#new_module_cyberdyne.Machine)
-  * [machine.eyes](#module_cyberdyne.Machine#eyes)
-  * [machine.vibe](#module_cyberdyne.Machine#vibe)
+* [class: cyber~Machine](#module_cyberdyne..Machine)
+  * [new cyber~Machine(options)](#new_module_cyberdyne..Machine)
+  * [machine.eyes](#module_cyberdyne..Machine#eyes)
+  * [machine.vibe](#module_cyberdyne..Machine#vibe)
 
-<a name="new_module_cyberdyne.Machine"></a>
+<a name="new_module_cyberdyne..Machine"></a>
 ###new cyber~Machine(options)
 the Machine constructor
 
@@ -387,10 +389,10 @@ the Machine constructor
 - options `object` - constructor options
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
-<a name="module_cyberdyne.Machine#eyes"></a>
+<a name="module_cyberdyne..Machine#eyes"></a>
 ###machine.eyes
 **Type**: `number`  
-<a name="module_cyberdyne.Machine#vibe"></a>
+<a name="module_cyberdyne..Machine#vibe"></a>
 ###machine.vibe
 **Type**: `string`  
 <a name="module_cattle"></a>
@@ -400,12 +402,12 @@ exported object, with-inner-members
 **Members**
 
 * [cattle](#module_cattle)
-  * [cattle~innerMember](#module_cattle.innerMember)
+  * [cattle~innerMember](#module_cattle..innerMember)
   * [cattle.createCow()](#module_cattle.createCow)
-  * [cattle~innerFuction()](#module_cattle.innerFuction)
-  * [~~cattle~anotherInnerFuction()~~](#module_cattle.anotherInnerFuction)
+  * [cattle~innerFuction()](#module_cattle..innerFuction)
+  * [~~cattle~anotherInnerFuction()~~](#module_cattle..anotherInnerFuction)
 
-<a name="module_cattle.innerMember"></a>
+<a name="module_cattle..innerMember"></a>
 ##cattle~innerMember
 the inner member
 
@@ -413,12 +415,12 @@ the inner member
 <a name="module_cattle.createCow"></a>
 ##cattle.createCow()
 **Returns**: `boolean`  
-<a name="module_cattle.innerFuction"></a>
+<a name="module_cattle..innerFuction"></a>
 ##cattle~innerFuction()
 the inner function
 
 **Scope**: inner function of [cattle](#module_cattle)  
-<a name="module_cattle.anotherInnerFuction"></a>
+<a name="module_cattle..anotherInnerFuction"></a>
 ##~~cattle~anotherInnerFuction()~~
 another inner function
 
@@ -454,42 +456,42 @@ factory module creating dodgy cloud. object-with-static-class.
 * [heaven](#module_heaven)
   * [heaven.Cloud](#module_heaven.Cloud)
   * [heaven.createCloud()](#module_heaven.createCloud)
-  * [const: heaven~FACT](#module_heaven.FACT)
-  * [class: heaven~Cloud](#module_heaven.Cloud)
-    * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
-    * [cloud.size](#module_heaven.Cloud#size)
-    * [cloud.rain](#module_heaven.Cloud#rain)
-    * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-    * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+  * [const: heaven~FACT](#module_heaven..FACT)
+  * [class: heaven~Cloud](#module_heaven..Cloud)
+    * [new heaven~Cloud(options)](#new_module_heaven..Cloud)
+    * [cloud.size](#module_heaven..Cloud#size)
+    * [cloud.rain](#module_heaven..Cloud#rain)
+    * [Cloud.classMethod()](#module_heaven..Cloud.classMethod)
+    * [const: Cloud.SPACES](#module_heaven..Cloud.SPACES)
 
 <a name="module_heaven.Cloud"></a>
 ##heaven.Cloud
 access to the Cloud class
 
-**Type**: [Cloud](#new_module_heaven.Cloud)  
+**Type**: [Cloud](#new_module_heaven..Cloud)  
 <a name="module_heaven.createCloud"></a>
 ##heaven.createCloud()
-**Returns**: [Cloud](#new_module_heaven.Cloud)  
-<a name="module_heaven.FACT"></a>
+**Returns**: [Cloud](#new_module_heaven..Cloud)  
+<a name="module_heaven..FACT"></a>
 ##const: heaven~FACT
 an inner constant
 
 **Scope**: inner constant of [heaven](#module_heaven)  
 **Type**: `boolean`  
-<a name="module_heaven.Cloud"></a>
+<a name="module_heaven..Cloud"></a>
 ##class: heaven~Cloud
 The main class for a cloud
 
 **Members**
 
-* [class: heaven~Cloud](#module_heaven.Cloud)
-  * [new heaven~Cloud(options)](#new_module_heaven.Cloud)
-  * [cloud.size](#module_heaven.Cloud#size)
-  * [cloud.rain](#module_heaven.Cloud#rain)
-  * [Cloud.classMethod()](#module_heaven.Cloud.classMethod)
-  * [const: Cloud.SPACES](#module_heaven.Cloud.SPACES)
+* [class: heaven~Cloud](#module_heaven..Cloud)
+  * [new heaven~Cloud(options)](#new_module_heaven..Cloud)
+  * [cloud.size](#module_heaven..Cloud#size)
+  * [cloud.rain](#module_heaven..Cloud#rain)
+  * [Cloud.classMethod()](#module_heaven..Cloud.classMethod)
+  * [const: Cloud.SPACES](#module_heaven..Cloud.SPACES)
 
-<a name="new_module_heaven.Cloud"></a>
+<a name="new_module_heaven..Cloud"></a>
 ###new heaven~Cloud(options)
 cloud constructor
 
@@ -498,19 +500,19 @@ cloud constructor
 - options `object` - the options
 
 **Scope**: inner class of [heaven](#module_heaven)  
-<a name="module_heaven.Cloud#size"></a>
+<a name="module_heaven..Cloud#size"></a>
 ###cloud.size
 **Type**: `number`  
 **Default**: `4`  
-<a name="module_heaven.Cloud#rain"></a>
+<a name="module_heaven..Cloud#rain"></a>
 ###cloud.rain
 **Type**: `boolean`  
 **Default**: `false`  
-<a name="module_heaven.Cloud.classMethod"></a>
+<a name="module_heaven..Cloud.classMethod"></a>
 ###Cloud.classMethod()
 a class method
 
-<a name="module_heaven.Cloud.SPACES"></a>
+<a name="module_heaven..Cloud.SPACES"></a>
 ###const: Cloud.SPACES
 a class constant
 
@@ -539,7 +541,7 @@ a class with all of the things
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
-    * [allThings~some](#All#allThings.some)
+    * [allThings~some](#All#allThings..some)
 
 <a name="new_All"></a>
 ##~~new All(input, [options])~~

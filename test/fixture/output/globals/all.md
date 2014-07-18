@@ -8,7 +8,7 @@
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
-    * [allThings~some](#All#allThings.some)
+    * [allThings~some](#All#allThings..some)
 * [class: Person](#Person)
   * [new Person()](#new_Person)
 * [class: Car](#Car)
@@ -106,7 +106,7 @@ a class with all of the things
   * [all.topping](#All#topping)
   * [all.size](#All#size)
   * [~~all.allThings(one, two)~~](#All#allThings)
-    * [allThings~some](#All#allThings.some)
+    * [allThings~some](#All#allThings..some)
 
 <a name="new_All"></a>
 ##~~new All(input, [options])~~
