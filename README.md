@@ -55,6 +55,10 @@ These projects have readme files rendered by `jsdoc2md`:
 ##Usage
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
 
+***warning***: when piping concatenated source code files into `jsdoc2md` (with a command like `$ cat *.js | jsdoc2md` the input will be treated as a **single file** by the jsdoc parser.. this is not always what you want, especially when the input contains multiple @modules.. Use this method of input only for casual testing / checking / manipulation.
+
+> The @module tag marks the current file as being its own module. All symbols in the file are assumed to be members of the module unless documented otherwise.
+
 ###Command-line tool
 Install `jsdoc2md` globally:
 ```sh
@@ -88,7 +92,7 @@ $ jsdoc2md -h
 Some typical use cases: 
 
 ```sh
-$ # dump everything you have in a single file
+$ # dump everything you have into a single file
 $ jsdoc src/**/*.js > api.md
 ```
 
@@ -99,7 +103,7 @@ $ jsdoc src/important-class.js > important-class.md
 ```
 
 ```sh
-$ # embed documentation in your README.md
+$ # embed documentation into a template you made
 $ jsdoc src/**/*.js --template readme.hbs > README.md
 ```
 
@@ -153,11 +157,11 @@ var jsdoc2md = require("jsdoc-to-markdown");
 
 <a name="module_jsdoc-to-markdown.render"></a>
 ####jsdoc2md.render(src, options)
-Transforms jsdoc into markdown documentation
+Transforms jsdoc into markdown documentation.
 
 **Params**
 
-- src `string` | `Array.<string>` - The javascript source file(s) - required.
+- src `string` | `Array.<string>` - The javascript source file(s).
 - options `object` - The render options
   - [template] `string` - A custom handlebars template to insert the rendered documentation into.
   - [json] `boolean` - Output the parsed jsdoc data only
@@ -168,11 +172,17 @@ Transforms jsdoc into markdown documentation
   - [helper] `string` | `Array.<string>` - handlebars helper files to override or extend the default set
   - [partial] `string` | `Array.<string>` - handlebars partial files to override or extend the default set
 
-**Returns**: `stream` - A readable stream containing the rendered markdown  
+**Returns**: `stream` - A transform stream containing the rendered markdown  
 **Example**  
-this code:
+Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
-> jsdoc2md.render("lib/*.js").pipe(process.stdout);
+> jsdoc2md.render().pipe(process.stdout);
+```
+or pipe in source code from another source:
+```js
+> fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
+```
+output looks something like: 
 ```
 generates:
 ```markdown
