@@ -38,10 +38,8 @@ a quite wonderful function
 **Returns**: `survival`
 ```
 
-these commands achieve the same result: 
+this command achieves the same result: 
 ```sh
-$ cat example/function.js | jsdoc2md
-$ cat example/function.js | jsdoc-parse | dmd
 $ jsdoc-parse example/function.js | dmd
 ```
 
@@ -58,10 +56,6 @@ Tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 ##Usage
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
 
-***warning***: when piping concatenated source code files into `jsdoc2md` (with a command like `$ cat *.js | jsdoc2md` the input will be treated as a **single file** by the jsdoc parser.. this is not always what you want, especially when the input contains multiple @modules.. Use this method of input only for casual testing / checking / manipulation.
-
-> The @module tag marks the current file as being its own module. All symbols in the file are assumed to be members of the module unless documented otherwise.
-
 ###Command-line tool
 Install `jsdoc2md` globally:
 ```sh
@@ -77,7 +71,6 @@ $ jsdoc2md -h
 
   Usage
   $ jsdoc2md [<options>] <source_files>
-  $ cat <source_files> | jsdoc2md [<options>]
 
   --src <array>             A list of javascript source files or glob expressions
   -t, --template <string>   A custom handlebars template to insert the rendered documentation into
