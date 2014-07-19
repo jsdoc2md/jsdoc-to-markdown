@@ -129,7 +129,7 @@ $ npm run docs
 See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
 
 ####As a gulp task
-Currently, the most reliable and natural way of using jsdoc with gulp. If your source code contains `@module` tags, use this method *only* ([reason](https://github.com/75lb/gulp-jsdoc-to-markdown#warning)). You should only need to edit `src`, `dest` and `options`: 
+Currently, the most reliable and natural way of using jsdoc2md with gulp. If your source code contains `@module` tags, use this method *only* ([reason](https://github.com/75lb/gulp-jsdoc-to-markdown#warning)). You should only need to edit `src`, `dest` and `options`: 
 
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
