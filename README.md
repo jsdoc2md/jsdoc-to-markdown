@@ -9,7 +9,7 @@
 #jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown out.
 
-Essentially, this app connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). This README covers the tools to make that connection. For information about the markdown templates, customising output etc. please read the [dmd](https://github.com/75lb/dmd) docs. 
+This module connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). For information about the markdown output, customising templates etc. please read the [dmd](https://github.com/75lb/dmd) docs. 
 
 ##Synopsis
 write documented code:
