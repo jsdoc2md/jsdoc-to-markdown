@@ -1,4 +1,3 @@
-
 <a name="Pizza"></a>
 #class: Pizza
 **Members**
@@ -17,5 +16,4 @@ the ingredients on top
 <a name="Pizza#size"></a>
 ##pizza.size
 the general size
-
 

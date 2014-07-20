@@ -1036,5 +1036,3 @@ This variable has all tags set
 var CONST_TWO = true;
 ```
 
-
-  

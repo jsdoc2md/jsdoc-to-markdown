@@ -1,4 +1,3 @@
-
 <a name="All"></a>
 #~~class: All~~
 a class with all of the things
@@ -59,5 +58,4 @@ This function has all tags set
 ```js
 all.allTogether(true);
 ```
-
 

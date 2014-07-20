@@ -1,6 +1,5 @@
 #Index
 
-
 **Classes**
 
 * [class: Person](#Person)
@@ -10,8 +9,6 @@
 * [class: Pipe](#Pipe)
 * [~~class: Everything~~](#Everything)
   * [~~new Everything(input, [options])~~](#new_Everything)
-
-
 <a name="Person"></a>
 #class: Person
 simple class description
@@ -78,5 +75,4 @@ the constructor description
 ```js
 var yeah = new Everything(true);
 ```
-
 

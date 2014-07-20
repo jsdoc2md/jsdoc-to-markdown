@@ -1,4 +1,3 @@
-
 <a name="module_cattle"></a>
 #cattle
 exported object, with-inner-members
@@ -30,4 +29,3 @@ another inner function
 
 ***Deprecated***  
 **Scope**: inner function of [cattle](#module_cattle)  
-

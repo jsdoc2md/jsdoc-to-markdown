@@ -1,7 +1,6 @@
 #Index
 
-
-**Vars**
+**Members**
 
 * [variable](#variable)
 * [typed](#typed)
@@ -15,8 +14,6 @@
 * [~~deprecated~~](#deprecated)
 * [readOnly](#readOnly)
 * [hasSince](#hasSince)
-
-
 <a name="variable"></a>
 #variable
 a global variable
@@ -71,4 +68,3 @@ var next = "p";
 <a name="hasSince"></a>
 #hasSince
 **Since**: v0.10.28  
-

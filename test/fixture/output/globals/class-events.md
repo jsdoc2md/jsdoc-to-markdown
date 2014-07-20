@@ -1,4 +1,3 @@
-
 <a name="Rice"></a>
 #class: Rice
 **Members**
@@ -14,5 +13,4 @@ Fired when rice is ready
 <a name="Rice#event_cooking"></a>
 ##event: "cooking"
 Fired when rice is cooking
-
 

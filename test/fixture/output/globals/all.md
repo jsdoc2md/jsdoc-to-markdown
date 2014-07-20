@@ -1,6 +1,5 @@
 #Index
 
-
 **Classes**
 
 * [~~class: All~~](#All)
@@ -68,7 +67,7 @@
 * [setMagicNumber(x)](#setMagicNumber)
 * [doSomething(options)](#doSomething)
 
-**Vars**
+**Members**
 
 * [enum: eFileType](#eFileType)
   * [eFileType.NOEXIST](#eFileType.NOEXIST)
@@ -92,8 +91,6 @@
 
 * [callback: onComplete](#onComplete)
 * [type: NumberLike](#NumberLike)
-
-
 <a name="All"></a>
 #~~class: All~~
 a class with all of the things
@@ -584,4 +581,22 @@ Called when an async operation completes
 A number, or a string containing a number.
 
 **Type**: `number` | `string`  
+<a name="CONST_ONE"></a>
+#const: CONST_ONE
+the first important constant
+
+**Type**: `number`  
+<a name="CONST_TWO"></a>
+#~~const: CONST_TWO~~
+This variable has all tags set
+
+***Deprecated***  
+**Type**: `boolean`  
+**Read only**: true  
+**Since**: v0.10.28  
+**Author**: Lloyd Brookes <lloyd@brookes.com>  
+**Example**  
+```js
+var CONST_TWO = true;
+```
 

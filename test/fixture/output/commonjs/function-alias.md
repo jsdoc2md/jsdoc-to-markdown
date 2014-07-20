@@ -1,4 +1,3 @@
-
 <a name="module_sum-alias"></a>
 #sum-alias
 This module exports a simple maths function
@@ -22,5 +21,4 @@ Sums two numbers together
 ```js
 var result = sum(1, 1);
 ```
-
 

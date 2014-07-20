@@ -1,6 +1,5 @@
 #Index
 
-
 **Classes**
 
 * [class: Plucker](#Plucker)
@@ -9,8 +8,6 @@
 **Functions**
 
 * [pluck(...prop)](#pluck)
-
-
 <a name="Plucker"></a>
 #class: Plucker
 **Members**
@@ -35,5 +32,4 @@ This function takes variable input
 **Params**
 
 - ...prop `string` - the property(s) as input
-
 

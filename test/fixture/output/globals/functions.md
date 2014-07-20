@@ -1,6 +1,5 @@
 #Index
 
-
 **Functions**
 
 * [globalFunc()](#globalFunc)
@@ -18,8 +17,6 @@
 * [returnsSomethingDesc()](#returnsSomethingDesc)
 * [returnsSeveral()](#returnsSeveral)
 * [~~allTogether(one, two)~~](#allTogether)
-
-
 <a name="globalFunc"></a>
 #globalFunc()
 a global function
@@ -119,5 +116,4 @@ This function has all tags set
 ```js
 allTogether(true);
 ```
-
 

@@ -1,4 +1,3 @@
-
 <a name="car"></a>
 #car
 **Members**
@@ -50,4 +49,3 @@ road condition
 
 **Type**: `string`  
 **Default**: `wet`  
-

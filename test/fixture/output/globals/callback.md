@@ -1,6 +1,5 @@
 #Index
 
-
 **Functions**
 
 * [read(filename, done)](#read)
@@ -8,8 +7,6 @@
 **Typedefs**
 
 * [callback: onComplete](#onComplete)
-
-
 <a name="read"></a>
 #read(filename, done)
 **Params**
@@ -27,4 +24,3 @@ Called when an async operation completes
 - result `string` - the result info
 
 **Type**: `function`  
-

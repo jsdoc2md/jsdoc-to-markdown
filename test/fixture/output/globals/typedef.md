@@ -1,6 +1,5 @@
 #Index
 
-
 **Functions**
 
 * [setMagicNumber(x)](#setMagicNumber)
@@ -8,8 +7,6 @@
 **Typedefs**
 
 * [type: NumberLike](#NumberLike)
-
-
 <a name="setMagicNumber"></a>
 #setMagicNumber(x)
 Set the magic number.
@@ -23,4 +20,3 @@ Set the magic number.
 A number, or a string containing a number.
 
 **Type**: `number` | `string`  
-

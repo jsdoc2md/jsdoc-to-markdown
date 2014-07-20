@@ -1,4 +1,3 @@
-
 <a name="module_object-alias"></a>
 #object-alias
 simple object export
@@ -21,5 +20,4 @@ second property
 <a name="module_object-alias.three"></a>
 ##_.three()
 a function
-
 
