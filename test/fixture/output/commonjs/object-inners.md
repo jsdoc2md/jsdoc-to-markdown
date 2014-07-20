@@ -1,4 +1,3 @@
- 
 <a name="module_cattle"></a>
 #cattle
 exported object, with-inner-members

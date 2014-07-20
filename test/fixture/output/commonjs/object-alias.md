@@ -1,4 +1,3 @@
- 
 <a name="module_object-alias"></a>
 #object-alias
 simple object export

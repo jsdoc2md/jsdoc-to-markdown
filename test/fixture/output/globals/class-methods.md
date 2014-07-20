@@ -1,4 +1,3 @@
- 
 <a name="Something"></a>
 #class: Something
 **Members**

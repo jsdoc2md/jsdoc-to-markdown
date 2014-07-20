@@ -1,4 +1,3 @@
- 
 <a name="module_file-pet"></a>
 #file-pet
 this module returns a pet of files

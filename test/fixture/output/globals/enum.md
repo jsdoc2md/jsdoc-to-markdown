@@ -1,4 +1,3 @@
- 
 <a name="eFileType"></a>
 #enum: eFileType
 Enum for the `type` value
