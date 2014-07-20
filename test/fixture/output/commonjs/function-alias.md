@@ -1,3 +1,4 @@
+ 
 <a name="module_sum-alias"></a>
 #sum-alias
 This module exports a simple maths function

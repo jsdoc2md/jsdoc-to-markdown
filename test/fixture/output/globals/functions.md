@@ -17,6 +17,7 @@
 * [returnsSomethingDesc()](#returnsSomethingDesc)
 * [returnsSeveral()](#returnsSeveral)
 * [~~allTogether(one, two)~~](#allTogether)
+ 
 <a name="globalFunc"></a>
 #globalFunc()
 a global function

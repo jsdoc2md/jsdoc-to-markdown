@@ -8,6 +8,7 @@
 **Functions**
 
 * [pluck(...prop)](#pluck)
+ 
 <a name="Plucker"></a>
 #class: Plucker
 **Members**

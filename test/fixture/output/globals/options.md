@@ -4,6 +4,7 @@
 
 * [doSomething(options)](#doSomething)
 * [doAnother(options)](#doAnother)
+ 
 <a name="doSomething"></a>
 #doSomething(options)
 **Params**

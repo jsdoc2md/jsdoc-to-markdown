@@ -14,6 +14,7 @@
 * [~~deprecated~~](#deprecated)
 * [readOnly](#readOnly)
 * [hasSince](#hasSince)
+ 
 <a name="variable"></a>
 #variable
 a global variable

@@ -148,6 +148,7 @@
 
 * [callback: onComplete](#onComplete)
 * [type: NumberLike](#NumberLike)
+ 
 <a name="module_amd/export-object"></a>
 #amd/export-object
 A module that says hello!
