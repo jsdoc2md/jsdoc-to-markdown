@@ -24,7 +24,7 @@ Takes a list of path patterns
 
 **Params**
 
--  `Array.<string>` - a list of file patterns
+-  `Array.<string>` - a list of file patterns  
 
 **Example**  
 ```js
@@ -41,5 +41,5 @@ A prototype instance methy meth
 
 **Params**
 
-- paths `array` - the paths to delete
+- paths `array` - the paths to delete  
 

@@ -38,7 +38,7 @@ a constructor with args
 
 **Params**
 
-- [options] `object` - optional shit
+- \[options\] `object` - optional shit  
 
 <a name="Pipe"></a>
 #class: Pipe
@@ -65,8 +65,8 @@ the constructor description
 
 **Params**
 
-- input `object` - an input
-- [options] `object` - optional shit
+- input `object` - an input  
+- \[options\] `object` - optional shit  
 
 ***Deprecated***  
 **Extends**: `Pipe`  

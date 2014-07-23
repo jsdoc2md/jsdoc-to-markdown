@@ -166,16 +166,16 @@ Transforms jsdoc into markdown documentation.
 
 **Params**
 
-- src `string` | `Array.<string>` - The javascript source file(s).
-- options `object` - The render options
-  - [template] `string` - A custom handlebars template to insert the rendered documentation into.
-  - [json] `boolean` - Output the parsed jsdoc data only
-  - [private] `boolean` - Include symbols marked @private in the output
-  - [stats] `boolean` - Print a few stats about the doclets parsed
-  - [heading-depth] `number` - root heading depth, defaults to 1 (`#`)
-  - [plugin] `string` | `Array.<string>` - Use an installed package containing helper and/or partial overrides
-  - [helper] `string` | `Array.<string>` - handlebars helper files to override or extend the default set
-  - [partial] `string` | `Array.<string>` - handlebars partial files to override or extend the default set
+- src `string` | `Array.<string>` - The javascript source file(s).  
+- options `object` - The render options  
+  - \[template\] `string` - A custom handlebars template to insert the rendered documentation into.  
+  - \[json\] `boolean` - Output the parsed jsdoc data only  
+  - \[private\] `boolean` - Include symbols marked @private in the output  
+  - \[stats\] `boolean` - Print a few stats about the doclets parsed  
+  - \[heading-depth\] `number` - root heading depth, defaults to 1 (`#`)  
+  - \[plugin\] `string` | `Array.<string>` - Use an installed package containing helper and/or partial overrides  
+  - \[helper\] `string` | `Array.<string>` - handlebars helper files to override or extend the default set  
+  - \[partial\] `string` | `Array.<string>` - handlebars partial files to override or extend the default set  
 
 **Returns**: `stream` - A transform stream containing the rendered markdown  
 **Example**  

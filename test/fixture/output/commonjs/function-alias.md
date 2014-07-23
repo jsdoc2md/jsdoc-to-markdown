@@ -13,8 +13,8 @@ Sums two numbers together
 
 **Params**
 
-- a `number` - first number
-- b `number` - second number
+- a `number` - first number  
+- b `number` - second number  
 
 **Returns**: `number` - the result  
 **Example**  

@@ -42,7 +42,7 @@ the Machine constructor
 
 **Params**
 
-- options `object` - constructor options
+- options `object` - constructor options  
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne..Machine#eyes"></a>

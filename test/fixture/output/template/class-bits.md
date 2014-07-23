@@ -18,7 +18,7 @@ cloud constructor
 
 **Params**
 
-- options `object` - the options
+- options `object` - the options  
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven..Cloud#size"></a>
@@ -74,7 +74,7 @@ cloud constructor
 
 **Params**
 
-- options `object` - the options
+- options `object` - the options  
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven..Cloud#size"></a>

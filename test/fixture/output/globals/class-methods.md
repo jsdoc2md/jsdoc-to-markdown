@@ -16,8 +16,8 @@ This function has all tags set
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  

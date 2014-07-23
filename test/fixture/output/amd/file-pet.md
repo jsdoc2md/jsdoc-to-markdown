@@ -25,7 +25,7 @@ this is the contructor
 
 **Params**
 
-- num `number` - the input number
+- num `number` - the input number  
 
 **Example**  
 ```js
@@ -49,5 +49,5 @@ A prototype instance methy meth
 
 **Params**
 
-- paths `array` - the paths to delete
+- paths `array` - the paths to delete  
 

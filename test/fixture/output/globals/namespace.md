@@ -24,8 +24,8 @@ start the car
 
 **Params**
 
--  `string`
--  `function`
+-  `string`  
+-  `function`  
 
 <a name="car#env"></a>
 ##car.env

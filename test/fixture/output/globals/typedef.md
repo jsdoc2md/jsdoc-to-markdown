@@ -14,7 +14,7 @@ Set the magic number.
 
 **Params**
 
-- x [NumberLike](#NumberLike) - The magic number.
+- x <code>[NumberLike](#NumberLike)</code> - The magic number.  
 
 <a name="NumberLike"></a>
 #type: NumberLike

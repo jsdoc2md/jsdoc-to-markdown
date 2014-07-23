@@ -8,8 +8,8 @@ a function
 
 **Params**
 
-- four `string` - The input string
-- five `object` - a second input
+- four `string` - The input string  
+- five `object` - a second input  
 
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  

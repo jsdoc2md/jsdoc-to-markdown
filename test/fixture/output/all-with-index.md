@@ -191,7 +191,7 @@ this is the contructor
 
 **Params**
 
-- num `number` - the input number
+- num `number` - the input number  
 
 **Example**  
 ```js
@@ -215,7 +215,7 @@ A prototype instance methy meth
 
 **Params**
 
-- paths `array` - the paths to delete
+- paths `array` - the paths to delete  
 
 <a name="module_jacket"></a>
 #jacket
@@ -258,7 +258,7 @@ Takes a list of path patterns
 
 **Params**
 
--  `Array.<string>` - a list of file patterns
+-  `Array.<string>` - a list of file patterns  
 
 **Example**  
 ```js
@@ -275,7 +275,7 @@ A prototype instance methy meth
 
 **Params**
 
-- paths `array` - the paths to delete
+- paths `array` - the paths to delete  
 
 <a name="module_sum-alias"></a>
 #sum-alias
@@ -292,8 +292,8 @@ Sums two numbers together
 
 **Params**
 
-- a `number` - first number
-- b `number` - second number
+- a `number` - first number  
+- b `number` - second number  
 
 **Returns**: `number` - the result  
 **Example**  
@@ -313,8 +313,8 @@ the main function description
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 **Returns**: `object` | `string` - this return has several types  
 <a name="module_commonjs/ignore"></a>
@@ -392,7 +392,7 @@ the Machine constructor
 
 **Params**
 
-- options `object` - constructor options
+- options `object` - constructor options  
 
 **Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne..Machine#eyes"></a>
@@ -442,8 +442,8 @@ a function
 
 **Params**
 
-- four `string` - The input string
-- five `object` - a second input
+- four `string` - The input string  
+- five `object` - a second input  
 
 **Returns**: `object` | `string` - this return has several types  
 **Since**: v0.10.28  
@@ -503,7 +503,7 @@ cloud constructor
 
 **Params**
 
-- options `object` - the options
+- options `object` - the options  
 
 **Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven..Cloud#size"></a>
@@ -596,8 +596,8 @@ the constructor description
 
 **Params**
 
-- input `object` - an input
-- [options] `object` - optional shit
+- input `object` - an input  
+- \[options\] `object` - optional shit  
 
 ***Deprecated***  
 **Extends**: `Number`  
@@ -625,8 +625,8 @@ This function has all tags set
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
@@ -665,7 +665,7 @@ a constructor with args
 
 **Params**
 
-- [options] `object` - optional shit
+- \[options\] `object` - optional shit  
 
 <a name="Pipe"></a>
 #class: Pipe
@@ -692,8 +692,8 @@ the constructor description
 
 **Params**
 
-- input `object` - an input
-- [options] `object` - optional shit
+- input `object` - an input  
+- \[options\] `object` - optional shit  
 
 ***Deprecated***  
 **Extends**: `Pipe`  
@@ -738,8 +738,8 @@ This function has all tags set
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
@@ -782,9 +782,9 @@ This function takes variable input
 
 **Params**
 
-- one `string` - an input
-- ...args `string` - the property(s) as input
-- ...three `string` - more input
+- one `string` - an input  
+- ...args `string` - the property(s) as input  
+- ...three `string` - more input  
 
 <a name="car"></a>
 #car
@@ -812,8 +812,8 @@ start the car
 
 **Params**
 
--  `string`
--  `function`
+-  `string`  
+-  `function`  
 
 <a name="car#env"></a>
 ##car.env
@@ -841,8 +841,8 @@ road condition
 #read(filename, done)
 **Params**
 
-- filename `string` - the filename
-- done [onComplete](#onComplete) - the callback
+- filename `string` - the filename  
+- done <code>[onComplete](#onComplete)</code> - the callback  
 
 <a name="globalFunc"></a>
 #globalFunc()
@@ -887,21 +887,21 @@ var next = "p";
 #withParam(one)
 **Params**
 
-- one `string` - The input string
+- one `string` - The input string  
 
 <a name="withParams"></a>
 #withParams(one, two)
 **Params**
 
-- one `string` - The input string
-- two `object`
+- one `string` - The input string  
+- two `object`  
 
 <a name="withOptional"></a>
 #withOptional(one, [two])
 **Params**
 
-- one `string` - The input string
-- [two] `object` - this one is optional
+- one `string` - The input string  
+- \[two\] `object` - this one is optional  
 
 <a name="withBullets"></a>
 #withBullets(one, two)
@@ -914,8 +914,8 @@ and needs this line to separate the above list from the below
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 <a name="returnsSomething"></a>
 #returnsSomething()
@@ -932,8 +932,8 @@ This function has all tags set
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  
@@ -948,15 +948,15 @@ allTogether(true);
 #doSomething(options)
 **Params**
 
-- options `object` - the function options
-  - one `string` - first option
-  - two `string` - second option
+- options `object` - the function options  
+  - one `string` - first option  
+  - two `string` - second option  
 
 <a name="doAnother"></a>
 #doAnother(options)
 **Params**
 
-- options `Object` - the function options
+- options `Object` - the function options  
 
 <a name="pluck"></a>
 #pluck(...prop)
@@ -964,7 +964,7 @@ This function takes variable input
 
 **Params**
 
-- ...prop `string` - the property(s) as input
+- ...prop `string` - the property(s) as input  
 
 <a name="requirer"></a>
 #requirer()
@@ -976,15 +976,15 @@ Set the magic number.
 
 **Params**
 
-- x [NumberLike](#NumberLike) - The magic number.
+- x <code>[NumberLike](#NumberLike)</code> - The magic number.  
 
 <a name="doSomething"></a>
 #doSomething(options)
 **Params**
 
-- options `object` - the function options
-  - one `string` - first option
-  - two `string` - second option
+- options `object` - the function options  
+  - one `string` - first option  
+  - two `string` - second option  
 
 <a name="eFileType"></a>
 #enum: eFileType
@@ -1057,8 +1057,8 @@ Called when an async operation completes
 
 **Params**
 
-- err `object` - an error, or `null`
-- result `string` - the result info
+- err `object` - an error, or `null`  
+- result `string` - the result info  
 
 **Type**: `function`  
 <a name="NumberLike"></a>

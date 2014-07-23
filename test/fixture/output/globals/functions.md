@@ -61,21 +61,21 @@ var next = "p";
 #withParam(one)
 **Params**
 
-- one `string` - The input string
+- one `string` - The input string  
 
 <a name="withParams"></a>
 #withParams(one, two)
 **Params**
 
-- one `string` - The input string
-- two `object`
+- one `string` - The input string  
+- two `object`  
 
 <a name="withOptional"></a>
 #withOptional(one, [two])
 **Params**
 
-- one `string` - The input string
-- [two] `object` - this one is optional
+- one `string` - The input string  
+- \[two\] `object` - this one is optional  
 
 <a name="withBullets"></a>
 #withBullets(one, two)
@@ -88,8 +88,8 @@ and needs this line to separate the above list from the below
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 <a name="returnsSomething"></a>
 #returnsSomething()
@@ -106,8 +106,8 @@ This function has all tags set
 
 **Params**
 
-- one `string` - The input string
-- two `object` - a second input
+- one `string` - The input string  
+- two `object` - a second input  
 
 ***Deprecated***  
 **Returns**: `object` | `string` - this return has several types  

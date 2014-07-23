@@ -12,8 +12,8 @@
 #read(filename, done)
 **Params**
 
-- filename `string` - the filename
-- done [onComplete](#onComplete) - the callback
+- filename `string` - the filename  
+- done <code>[onComplete](#onComplete)</code> - the callback  
 
 <a name="onComplete"></a>
 #callback: onComplete
@@ -21,7 +21,7 @@ Called when an async operation completes
 
 **Params**
 
-- err `object` - an error, or `null`
-- result `string` - the result info
+- err `object` - an error, or `null`  
+- result `string` - the result info  
 
 **Type**: `function`  
