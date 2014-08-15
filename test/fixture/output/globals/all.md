@@ -55,6 +55,7 @@
 **Functions**
 
 * [read(filename, done)](#read)
+* [customTaggedFunction()](#customTaggedFunction)
 * [globalFunc()](#globalFunc)
 * [exampled()](#exampled)
 * [multiExampled()](#multiExampled)
@@ -410,6 +411,10 @@ road condition
 
 - filename `string` - the filename  
 - done <code>[onComplete](#onComplete)</code> - the callback  
+
+<a name="customTaggedFunction"></a>
+#customTaggedFunction()
+this function has a wonderful custom tag
 
 <a name="globalFunc"></a>
 #globalFunc()
