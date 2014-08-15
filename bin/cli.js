@@ -74,7 +74,12 @@ function halt(err){
     if (err.code === "EPIPE") process.exit(0); /* no big deal */
     
     if (argv){
-        dope.red.error(argv.verbose ? (err.stack || err) : err.message);
+        if (argv.verbose){
+            dope.red.error(err.stack || err);
+        } else {
+            dope.red.error("Error: " + err.message);
+            dope.red.error("(run jsdoc2md with --verbose for a stack trace)");
+        }
     } else {
         dope.red.error(err.stack);
     }
