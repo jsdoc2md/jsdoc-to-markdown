@@ -25,11 +25,11 @@
     "generator"
   ],
   "dependencies": {
-    "command-line-args": "^0.5.0",
-    "console-dope": "^0.3.3",
+    "command-line-args": "~0.5.0",
+    "console-dope": "~0.3.3",
     "dmd": "^0.2",
-    "jsdoc-parse": "^0.2.7",
-    "more-fs": "^0.5.0",
+    "jsdoc-parse": "~0.2.7",
+    "more-fs": "~0.5.0",
     "typical": "^1.0.0"
   },
   "devDependencies": {
