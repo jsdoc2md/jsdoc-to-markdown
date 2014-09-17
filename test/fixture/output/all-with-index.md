@@ -18,6 +18,8 @@
     * [new FileSet()](#exp_new_module_file-set)
     * [file-set.files](#module_file-set#files)
     * [file-set.delete(paths)](#module_file-set#delete)
+* [function-tools](#module_function-tools)
+  * [function-tools.one()](#module_function-tools.one)
 * [sum-alias](#module_sum-alias)
   * [sum(a, b) ⏏](#exp_module_sum-alias)
 * [commonjs/function](#module_commonjs/function)
@@ -151,6 +153,8 @@
 * [~~deprecated~~](#deprecated)
 * [readOnly](#readOnly)
 * [hasSince](#hasSince)
+* [something](#something)
+* [another](#another)
 
 **Typedefs**
 
@@ -277,6 +281,14 @@ A prototype instance methy meth
 **Params**
 
 - paths `array` - the paths to delete  
+
+<a name="module_function-tools"></a>
+#function-tools
+This is the module description
+
+<a name="module_function-tools.one"></a>
+##function-tools.one()
+the main function description
 
 <a name="module_sum-alias"></a>
 #sum-alias
@@ -1056,6 +1068,16 @@ var next = "p";
 <a name="hasSince"></a>
 #hasSince
 **Since**: v0.10.28  
+<a name="something"></a>
+#something
+this is for something
+
+**Type**: `string`  
+<a name="another"></a>
+#another
+this is for something else
+
+**Type**: `string`  
 <a name="onComplete"></a>
 #callback: onComplete
 Called when an async operation completes
