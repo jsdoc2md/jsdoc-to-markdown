@@ -90,6 +90,9 @@
 * [class: Pizza](#Pizza)
   * [pizza.topping](#Pizza#topping)
   * [pizza.size](#Pizza#size)
+* [class: Hurl](#Hurl)
+  * [hurl.snowball()](#Hurl#snowball)
+  * [event: "snowball"](#Hurl#event_snowball)
 * [class: Plucker](#Plucker)
   * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
 
@@ -102,6 +105,7 @@
   * [car.env](#car#env)
     * [env.weather](#car#env.weather)
     * [env.roads](#car#env.roads)
+* [config](#config)
 
 **Constants**
 
@@ -782,6 +786,27 @@ the ingredients on top
 ##pizza.size
 the general size
 
+<a name="Hurl"></a>
+#class: Hurl
+**Members**
+
+* [class: Hurl](#Hurl)
+  * [hurl.snowball()](#Hurl#snowball)
+  * [event: "snowball"](#Hurl#event_snowball)
+
+<a name="Hurl#snowball"></a>
+##hurl.snowball()
+Throw a snowball.
+
+<a name="Hurl#event_snowball"></a>
+##event: "snowball"
+Snowball event.
+
+**Properties**
+
+- isPacked `boolean` - Indicates whether the snowball is tightly packed.  
+
+**Type**: `object`  
 <a name="Plucker"></a>
 #class: Plucker
 **Members**
@@ -850,6 +875,20 @@ road condition
 
 **Type**: `string`  
 **Default**: `wet`  
+<a name="config"></a>
+#config
+**Properties**
+
+- defaults `object` - The default values for parties.  
+  - defaults.players `number` - The default number of players.  
+  - defaults.level `string` - The default level for the party.  
+  - defaults.treasure `object` - The default treasure.  
+  - defaults.treasure.gold `number` - How much gold the party starts with.  
+
+**Members**
+
+* [config](#config)
+
 <a name="read"></a>
 #read(filename, done)
 **Params**
