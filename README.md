@@ -154,30 +154,31 @@ gulp.task("docs", function(done){
 See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 
 ###Library
+<a name="module_jsdoc-to-markdown"></a>
+##jsdoc-to-markdown
 **Example**  
 
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
-
 <a name="module_jsdoc-to-markdown.render"></a>
-####jsdoc2md.render(src, options)
+###jsdoc-to-markdown.render(src, options) ⇒ <code>stream</code>
 Transforms jsdoc into markdown documentation.
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| src | <code>string</code> \| <code>Array.&lt;string&gt;</code> | The javascript source file(s). |
+| options | <code>object</code> | The render options |
+| \[options.template\] | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
+| \[options.json\] | <code>boolean</code> | Output the parsed jsdoc data only |
+| \[options.private\] | <code>boolean</code> | Include symbols marked @private in the output |
+| \[options.stats\] | <code>boolean</code> | Print a few stats about the doclets parsed |
+| \[options.heading-depth\] | <code>number</code> | root heading depth, defaults to 1 (`#`) |
+| \[options.plugin\] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
+| \[options.helper\] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
+| \[options.partial\] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
 
-- src `string` | `Array.<string>` - The javascript source file(s).  
-- options `object` - The render options  
-  - \[template\] `string` - A custom handlebars template to insert the rendered documentation into.  
-  - \[json\] `boolean` - Output the parsed jsdoc data only  
-  - \[private\] `boolean` - Include symbols marked @private in the output  
-  - \[stats\] `boolean` - Print a few stats about the doclets parsed  
-  - \[heading-depth\] `number` - root heading depth, defaults to 1 (`#`)  
-  - \[plugin\] `string` | `Array.<string>` - Use an installed package containing helper and/or partial overrides  
-  - \[helper\] `string` | `Array.<string>` - handlebars helper files to override or extend the default set  
-  - \[partial\] `string` | `Array.<string>` - handlebars partial files to override or extend the default set  
-
-**Returns**: `stream` - A transform stream containing the rendered markdown  
+**Returns**: <code>stream</code> - A transform stream containing the rendered markdown  
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
@@ -213,5 +214,4 @@ Renders the jsdoc documentation from the specified source files as markdown.
 etc.
 etc.
 ```
-
 
