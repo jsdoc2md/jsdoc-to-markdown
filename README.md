@@ -162,7 +162,7 @@ See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 <a name="module_jsdoc-to-markdown.render"></a>
-###jsdoc-to-markdown.render(src, options) ⇒ <code>stream</code>
+###jsdoc2md.render(src, options) ⇒ <code>stream</code>
 Transforms jsdoc into markdown documentation.
 
 | Param | Type | Description |
