@@ -14,6 +14,9 @@ var args = [
     },
     { name: "help", alias: "h", type: Boolean,
       description: "Print usage information"
+    },
+    { name: "json", alias: "j", type: Boolean,
+      description: "Output the parsed jsdoc data only"
     }
 ];
 
