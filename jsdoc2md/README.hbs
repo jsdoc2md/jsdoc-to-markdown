@@ -11,7 +11,7 @@
 
 This tool aims to promote quality documentation of Javascript modules.
 
-Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  For information about the markdown output, customising templates etc. please read the [dmd](https://github.com/75lb/dmd) docs. 
+For information about the markdown output, customising templates etc. please read the [dmd](https://github.com/75lb/dmd) docs. 
 
 ##Synopsis
 write documented code:
@@ -54,6 +54,9 @@ These projects have readme files rendered by `jsdoc2md`:
 
 ##Compatible Platforms
 Tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
+
+##New tags
+* @todo (--github option)
 
 ##Usage
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
@@ -163,7 +166,10 @@ gulp.task("docs", function(done){
 ####As a gulp plug-in
 See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 
-###API Reference
+##Composition
+Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  
+
+##API Reference
 {{#module name="jsdoc-to-markdown"~}}
   {{>body~}}
   {{>member-index~}}
