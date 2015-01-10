@@ -24,14 +24,14 @@ var cli = cliArgs(args.concat(jsdocParse.cliOptions).concat(dmd.cliOptions));
 
 var usage = cli.getUsage({
     title: "jsdoc-to-markdown",
-    header: "Markdown API documentation generator, good for Github projects",
+    header: "Markdown API documentation generator",
     forms: [
         "$ jsdoc2md [<options>] <source_files>"
     ]
 });
 
 try{
-    var argv = cli.parse({ unexpectedType: "string" });
+    var argv = cli.parse();
 } catch(err){
     halt(err);
 }

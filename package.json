@@ -2,7 +2,7 @@
   "name": "jsdoc-to-markdown",
   "author": "Lloyd Brookes",
   "version": "0.6.2",
-  "description": "Markdown API documentation generator, good for Github projects",
+  "description": "Markdown API documentation generator",
   "repository": "https://github.com/75lb/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "scripts": {

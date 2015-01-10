@@ -11,7 +11,7 @@
 
 This tool aims to promote quality documentation of Javascript modules.
 
-Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  For information about the markdown output, customising templates etc. please read the [dmd](https://github.com/75lb/dmd) docs. 
+For information about the markdown output, customising templates etc. please read the [dmd](https://github.com/75lb/dmd) docs. 
 
 ##Synopsis
 write documented code:
@@ -74,25 +74,29 @@ $ jsdoc2md -h
   Usage
   $ jsdoc2md [<options>] <source_files>
 
-  --src <array>             A list of javascript source files or glob expressions
-  -v, --verbose             More verbose error reporting
-  -h, --help                Print usage information
-  -j, --json                Output the parsed jsdoc data only
-  --private                 Include symbols marked @private in the output
-  -s, --stats               Print a few stats about the doclets parsed.
-  -t, --template <string>   A custom handlebars template to insert the rendered documentation into
-  --heading-depth <number>  root heading depth to begin the documentation from, defaults to 1 (`#`).
-  -p, --plugin <array>      Use an installed package containing helper and/or partial overrides
-  --helper <array>          handlebars helper files to override or extend the default set
-  --partial <array>         handlebars partial files to override or extend the default set
-  --sort-by <string>           none | kind | scope | kind,scope | scope,kind | <field_name>
-  --example-code               Display all examples as code block
-  --example-code-gfm <string>  Display all examples as GFM fenced code block with highlighting
-  --code-names                 Format identifier names as code
-  --github                     Use github only features
-  --param-format <string>   list or table
-  --property-format <string>   list or table
-  --index-format            grouped or npm
+  -v, --verbose                    More verbose error reporting
+  -h, --help                       Print usage information
+  -j, --json                       Output the parsed jsdoc data only
+  --private                        Include identifiers marked @private in the output
+  --stats                          Print a few stats about the doclets parsed
+  --html                           Enable experimental parsing of .html files
+  --src <array>                    A list of javascript source files or glob expressions
+  -t, --template <string>          A custom handlebars template to insert the rendered documentation into
+  --heading-depth <number>         root heading depth, defaults to 2 (`##`).
+  -p, --plugin <array>             Use an installed package containing helper and/or partial overrides
+  --helper <array>                 handlebars helper files to override or extend the default set
+  --partial <array>                handlebars partial files to override or extend the default set
+  --sort-by <string>               none | kind | scope | kind,scope | scope,kind | <field_name>. Defaults to 'none'.
+  --example-code                   Display all examples as code block
+  --example-code-gfm <string>      Wraps each @example in a GFM fenced-code block(if not already done
+                                   so in the source).. specify a language, e.g. `--example-code-gfm js`
+  --name-format                    Format identifier names as code
+  --github                         Use github-specific markdown for improved rendering on @todo and @deprecated
+  --separators                     Put <hr> breaks between identifiers. Improves readability on bulky docs.
+  --module-index-format <string>   list, table, dl
+  --global-index-format <string>   list, table, dl
+  --param-list-format <string>     list, table
+  --property-list-format <string>  list, table  
 ```
 
 Some typical use cases: 
@@ -163,9 +167,11 @@ gulp.task("docs", function(done){
 ####As a gulp plug-in
 See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 
-###API Reference
-**Example**  
+##Composition
+Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  
 
+##API Reference
+**Example**  
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
@@ -222,3 +228,4 @@ Renders the jsdoc documentation from the specified source files as markdown.
 etc.
 etc.
 ```
+&copy; 2015 Lloyd Brookes <75pound@gmail.com>
