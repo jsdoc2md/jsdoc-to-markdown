@@ -4,7 +4,19 @@
 [![Dependency Status](https://david-dm.org/75lb/jsdoc-to-markdown.svg)](https://david-dm.org/75lb/jsdoc-to-markdown)
 ![Analytics](https://ga-beacon.appspot.com/UA-27725889-32/jsdoc-to-markdown/README.md?pixel)
 
-***Preview release, massive update in progress..***
+#Feedback please!
+I am close to finishing the next version, so feedback is welcome at this point!
+
+Install the preview release:
+`$ npm install -g jsdoc-to-markdown@next`
+
+try it for yourself: 
+`$ jsdoc2md your-code.js`
+
+take a look at, and experiment with some new options:
+`$ jsdoc2md --help`
+
+Anyway, back to the regular documentation: 
 
 #jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown out.
