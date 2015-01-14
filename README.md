@@ -8,12 +8,15 @@
 I am close to finishing the next version, so feedback is welcome at this point!
 
 Install the preview release:
+
 `$ npm install -g jsdoc-to-markdown@next`
 
 try it for yourself: 
+
 `$ jsdoc2md your-code.js`
 
 take a look at, and experiment with some new options:
+
 `$ jsdoc2md --help`
 
 Anyway, back to the regular documentation: 
