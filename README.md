@@ -25,7 +25,7 @@ function protection(cloak, dagger){}
 
 run a command:
 ```
-$ jsdoc2md example/function.js`
+$ jsdoc2md example/src/protection.js`
 ```
 
 get markdown docs!
@@ -43,6 +43,10 @@ a quite wonderful function
 this command achieves the same result: 
 ```sh
 $ jsdoc-parse example/function.js | dmd
+```
+or you could work with a fork if you prefer
+```sh
+$ jsdoc-parse example/function.js | dmd-fork
 ```
 
 ##Examples
@@ -74,7 +78,6 @@ Some examples of projects with `jsdoc2md` documentation.
   </tbody>
 </table>
 
-* [array-tools](https://github.com/75lb/array-tools) (exports a object)
 * [file-set](https://github.com/75lb/file-set) (exports a class)
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
@@ -197,8 +200,6 @@ See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  
 
 ##API Reference
-<a name="module_jsdoc-to-markdown"></a>
-##jsdoc-to-markdown
 **Todo**
 
 - [ ] Internationalisation
