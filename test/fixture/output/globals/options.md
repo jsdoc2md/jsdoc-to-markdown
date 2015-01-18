@@ -1,21 +1,21 @@
-#Index
-
-**Functions**
-
-* [doSomething(options)](#doSomething)
-* [doAnother(options)](#doAnother)
- 
+##Globals
+<dl>
+<dt><a href="#doSomething">doSomething(options)</a></dt>
+<dd></dd>
+<dt><a href="#doAnother">doAnother(options)</a></dt>
+<dd></dd>
+</dl>
 <a name="doSomething"></a>
-#doSomething(options)
-**Params**
-
-- options `object` - the function options  
-  - one `string` - first option  
-  - two `string` - second option  
+##doSomething(options)
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| options | <code>object</code> | the function options |
+| options.one | <code>string</code> | first option |
+| options.two | <code>string</code> | second option |
 
 <a name="doAnother"></a>
-#doAnother(options)
-**Params**
-
-- options `Object` - the function options  
+##doAnother(options)
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| options | <code>Object</code> | the function options |
 

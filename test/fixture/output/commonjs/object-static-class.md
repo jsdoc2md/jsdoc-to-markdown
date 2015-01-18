@@ -1,70 +1,64 @@
 <a name="module_heaven"></a>
-#heaven
+##heaven
 factory module creating dodgy cloud. object-with-static-class.
 
-**Members**
 
 * [heaven](#module_heaven)
-  * [heaven.Cloud](#module_heaven.Cloud)
-  * [heaven.createCloud()](#module_heaven.createCloud)
-  * [const: heaven~FACT](#module_heaven..FACT)
-  * [class: heaven~Cloud](#module_heaven..Cloud)
-    * [new heaven~Cloud(options)](#new_module_heaven..Cloud)
-    * [cloud.size](#module_heaven..Cloud#size)
-    * [cloud.rain](#module_heaven..Cloud#rain)
-    * [Cloud.classMethod()](#module_heaven..Cloud.classMethod)
-    * [const: Cloud.SPACES](#module_heaven..Cloud.SPACES)
+  * [.Cloud](#module_heaven.Cloud) → <code>[Cloud](#module_heaven..Cloud)</code>
+  * [.createCloud()](#module_heaven.createCloud) ⇒ <code>[Cloud](#module_heaven..Cloud)</code>
+  * [class: ~Cloud](#module_heaven..Cloud)
+    * [new Cloud(options)](#new_module_heaven..Cloud_new)
+    * _instance_
+      * [.size](#module_heaven..Cloud#size) → <code>number</code>
+      * [.rain](#module_heaven..Cloud#rain) → <code>boolean</code>
+    * _static_
+      * [.classMethod()](#module_heaven..Cloud.classMethod)
+      * [const: .SPACES](#module_heaven..Cloud.SPACES) → <code>number</code>
+  * [const: ~FACT](#module_heaven..FACT) → <code>boolean</code>
 
 <a name="module_heaven.Cloud"></a>
-##heaven.Cloud
+###heaven.Cloud → <code>[Cloud](#module_heaven..Cloud)</code>
 access to the Cloud class
 
-**Type**: [Cloud](#module_heaven..Cloud)  
 <a name="module_heaven.createCloud"></a>
-##heaven.createCloud()
-**Returns**: [Cloud](#module_heaven..Cloud)  
-<a name="module_heaven..FACT"></a>
-##const: heaven~FACT
-an inner constant
-
-**Scope**: inner constant of [heaven](#module_heaven)  
-**Type**: `boolean`  
+###heaven.createCloud() ⇒ <code>[Cloud](#module_heaven..Cloud)</code>
 <a name="module_heaven..Cloud"></a>
-##class: heaven~Cloud
+###class: heaven~Cloud
 The main class for a cloud
 
-**Members**
 
-* [class: heaven~Cloud](#module_heaven..Cloud)
-  * [new heaven~Cloud(options)](#new_module_heaven..Cloud)
-  * [cloud.size](#module_heaven..Cloud#size)
-  * [cloud.rain](#module_heaven..Cloud#rain)
-  * [Cloud.classMethod()](#module_heaven..Cloud.classMethod)
-  * [const: Cloud.SPACES](#module_heaven..Cloud.SPACES)
+* [class: ~Cloud](#module_heaven..Cloud)
+  * [new Cloud(options)](#new_module_heaven..Cloud_new)
+  * _instance_
+    * [.size](#module_heaven..Cloud#size) → <code>number</code>
+    * [.rain](#module_heaven..Cloud#rain) → <code>boolean</code>
+  * _static_
+    * [.classMethod()](#module_heaven..Cloud.classMethod)
+    * [const: .SPACES](#module_heaven..Cloud.SPACES) → <code>number</code>
 
-<a name="new_module_heaven..Cloud"></a>
-###new heaven~Cloud(options)
+<a name="new_module_heaven..Cloud_new"></a>
+####new Cloud(options)
 cloud constructor
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| options | <code>object</code> | the options |
 
-- options `object` - the options  
-
-**Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven..Cloud#size"></a>
-###cloud.size
-**Type**: `number`  
+####cloud.size → <code>number</code>
 **Default**: `4`  
 <a name="module_heaven..Cloud#rain"></a>
-###cloud.rain
-**Type**: `boolean`  
+####cloud.rain → <code>boolean</code>
 **Default**: `false`  
 <a name="module_heaven..Cloud.classMethod"></a>
-###Cloud.classMethod()
+####Cloud.classMethod()
 a class method
 
 <a name="module_heaven..Cloud.SPACES"></a>
-###const: Cloud.SPACES
+####const: Cloud.SPACES → <code>number</code>
 a class constant
 
-**Type**: `number`  
+<a name="module_heaven..FACT"></a>
+###const: heaven~FACT → <code>boolean</code>
+an inner constant
+

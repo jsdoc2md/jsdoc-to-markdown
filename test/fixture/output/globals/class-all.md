@@ -1,61 +1,63 @@
 <a name="All"></a>
-#~~class: All~~
+##~~class: All ⇐ <code>Number</code>~~
+***Deprecated:*** true  
+
 a class with all of the things
 
-**Extends**: `Number`  
-**Members**
+**Extends:** <code>Number</code>  
+**Since**: v0.10.28  
+**Author:** 75lb <75pound@gmail.com>  
 
-* [~~class: All~~](#All)
-  * [~~new All(input, [options])~~](#new_All)
-  * [all.topping](#All#topping)
-  * [all.size](#All#size)
-  * [~~all.allThings(one, two)~~](#All#allThings)
-    * [allThings~some](#All#allThings..some)
+* ~~[class: All](#All) ⇐ <code>Number</code>~~
+  * [new All(input, [options])](#new_All_new)
+  * _instance_
+    * [.topping](#All#topping) → <code>string</code>
+    * [.size](#All#size)
+    * ~~[.allThings(one, two)](#All#allThings) ⇒ <code>object</code> \| <code>string</code>~~
+      * [~some](#All#allThings..some)
 
-<a name="new_All"></a>
-##~~new All(input, [options])~~
+<a name="new_All_new"></a>
+###new All(input, [options])
 the constructor description
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| input | <code>object</code> | an input |
+| \[options\] | <code>object</code> | optional shit |
 
-- input `object` - an input  
-- \[options\] `object` - optional shit  
-
-***Deprecated***  
-**Extends**: `Number`  
-**Since**: v0.10.28  
-**Author**: 75lb <75pound@gmail.com>  
 **Example**  
 ```js
 var yeah = new Everything(true);
 ```
-
 <a name="All#topping"></a>
-##all.topping
+###all.topping → <code>string</code>
 the ingredients on top
 
-**Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-##all.size
+###all.size
 the general size
 
 <a name="All#allThings"></a>
-##~~all.allThings(one, two)~~
+###~~all.allThings(one, two) ⇒ <code>object</code> \| <code>string</code>~~
+***Deprecated:*** true  
+
 This function has all tags set
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
 
-- one `string` - The input string  
-- two `object` - a second input  
-
-***Deprecated***  
-**Returns**: `object` | `string` - this return has several types  
+**Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
+**Author:** Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 all.allTogether(true);
 ```
+<a name="All#allThings..some"></a>
+####allThings~some
+a rarseclart inner
 

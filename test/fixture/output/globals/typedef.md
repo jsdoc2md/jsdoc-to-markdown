@@ -1,23 +1,21 @@
-#Index
-
-**Functions**
-
-* [setMagicNumber(x)](#setMagicNumber)
-
-**Typedefs**
-
-* [type: NumberLike](#NumberLike)
- 
+##Globals
+<dl>
+<dt><a href="#setMagicNumber">setMagicNumber(x)</a></dt>
+<dd><p>Set the magic number.</p>
+</dd>
+<dt><a href="#NumberLike">type: NumberLike</a> → <code>number</code> | <code>string</code></dt>
+<dd><p>A number, or a string containing a number.</p>
+</dd>
+</dl>
 <a name="setMagicNumber"></a>
-#setMagicNumber(x)
+##setMagicNumber(x)
 Set the magic number.
 
-**Params**
-
-- x <code>[NumberLike](#NumberLike)</code> - The magic number.  
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| x | <code>[NumberLike](#NumberLike)</code> | The magic number. |
 
 <a name="NumberLike"></a>
-#type: NumberLike
+##type: NumberLike → <code>number</code> \| <code>string</code>
 A number, or a string containing a number.
 
-**Type**: `number` | `string`  

@@ -1,21 +1,24 @@
 <a name="Hurl"></a>
-#class: Hurl
-**Members**
+##class: Hurl
 
 * [class: Hurl](#Hurl)
-  * [hurl.snowball()](#Hurl#snowball)
-  * [event: "snowball"](#Hurl#event_snowball)
+  * _instance_
+    * [.snowball()](#Hurl#snowball)
+  * _events_
+    * ["snowball"](#Hurl#event_snowball)
 
 <a name="Hurl#snowball"></a>
-##hurl.snowball()
+###hurl.snowball()
 Throw a snowball.
 
+**Emits**: <code>[snowball](#Hurl#event_snowball)</code>  
 <a name="Hurl#event_snowball"></a>
-##event: "snowball"
+###event: "snowball"
 Snowball event.
 
 **Properties**
 
-- isPacked `boolean` - Indicates whether the snowball is tightly packed.  
+| Name | Type | Description |
+| --- | --- | --- |
+| isPacked | <code>boolean</code> | Indicates whether the snowball is tightly packed. |
 
-**Type**: `object`  

@@ -1,16 +1,16 @@
 <a name="module_function"></a>
-#function
+##function
 This is the module description
 
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
-<a name="exp_module_function"></a>
-##module.exports(one, two) ⏏
+**Author:** Lloyd <75pound@gmail.com>  
+<a name="exp_module_function--module.exports"></a>
+###module.exports(one, two) ⇒ <code>object</code> \| <code>string</code> ⏏
 the main function description
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
 
-- one `string` - The input string  
-- two `object` - a second input  
-
-**Returns**: `object` | `string` - this return has several types  
+**Returns**: <code>object</code> \| <code>string</code> - this return has several types  

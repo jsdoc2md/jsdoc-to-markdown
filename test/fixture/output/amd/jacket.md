@@ -1,15 +1,16 @@
 <a name="module_jacket"></a>
-#jacket
+##jacket
 A module representing a jacket.
 
-<a name="exp_module_jacket"></a>
-##class: Jacket ⏏
-**Members**
 
-* [class: Jacket ⏏](#exp_module_jacket)
-  * [jacket.zip()](#module_jacket#zip)
+* [jacket](#module_jacket)
+  * [class: Jacket](#exp_module_jacket--Jacket) ⏏
+    * _instance_
+      * [.zip()](#module_jacket--Jacket#zip)
 
-<a name="module_jacket#zip"></a>
-###jacket.zip()
+<a name="exp_module_jacket--Jacket"></a>
+###class: Jacket ⏏
+<a name="module_jacket--Jacket#zip"></a>
+####jacket.zip()
 Open and close your Jacket.
 

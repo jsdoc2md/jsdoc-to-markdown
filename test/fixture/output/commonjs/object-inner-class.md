@@ -1,5 +1,5 @@
 <a name="module_cyberdyne"></a>
-#cyberdyne
+##cyberdyne
 exports an object.. has an inner class.
 
 **Example**  
@@ -7,47 +7,41 @@ exports an object.. has an inner class.
 var cyber = require("cyberdyne");
 ```
 
-**Members**
-
 * [cyberdyne](#module_cyberdyne)
-  * [cyber~something](#module_cyberdyne..something)
-  * [cyber.createMachine()](#module_cyberdyne.createMachine)
-  * [class: cyber~Machine](#module_cyberdyne..Machine)
-    * [new cyber~Machine(options)](#new_module_cyberdyne..Machine)
-    * [machine.eyes](#module_cyberdyne..Machine#eyes)
-    * [machine.vibe](#module_cyberdyne..Machine#vibe)
+  * [.createMachine()](#module_cyberdyne.createMachine) ⇒ <code>[Machine](#module_cyberdyne..Machine)</code>
+  * [class: ~Machine](#module_cyberdyne..Machine)
+    * [new Machine(options)](#new_module_cyberdyne..Machine_new)
+    * _instance_
+      * [.eyes](#module_cyberdyne..Machine#eyes) → <code>number</code>
+      * [.vibe](#module_cyberdyne..Machine#vibe) → <code>string</code>
+  * [~something](#module_cyberdyne..something)
 
-<a name="module_cyberdyne..something"></a>
-##cyber~something
-random
-
-**Scope**: inner member of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne.createMachine"></a>
-##cyber.createMachine()
-**Returns**: [Machine](#module_cyberdyne..Machine)  
+###cyberdyne.createMachine() ⇒ <code>[Machine](#module_cyberdyne..Machine)</code>
 <a name="module_cyberdyne..Machine"></a>
-##class: cyber~Machine
+###class: cyberdyne~Machine
 The main class of machine
 
-**Members**
 
-* [class: cyber~Machine](#module_cyberdyne..Machine)
-  * [new cyber~Machine(options)](#new_module_cyberdyne..Machine)
-  * [machine.eyes](#module_cyberdyne..Machine#eyes)
-  * [machine.vibe](#module_cyberdyne..Machine#vibe)
+* [class: ~Machine](#module_cyberdyne..Machine)
+  * [new Machine(options)](#new_module_cyberdyne..Machine_new)
+  * _instance_
+    * [.eyes](#module_cyberdyne..Machine#eyes) → <code>number</code>
+    * [.vibe](#module_cyberdyne..Machine#vibe) → <code>string</code>
 
-<a name="new_module_cyberdyne..Machine"></a>
-###new cyber~Machine(options)
+<a name="new_module_cyberdyne..Machine_new"></a>
+####new Machine(options)
 the Machine constructor
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| options | <code>object</code> | constructor options |
 
-- options `object` - constructor options  
-
-**Scope**: inner class of [cyberdyne](#module_cyberdyne)  
 <a name="module_cyberdyne..Machine#eyes"></a>
-###machine.eyes
-**Type**: `number`  
+####machine.eyes → <code>number</code>
 <a name="module_cyberdyne..Machine#vibe"></a>
-###machine.vibe
-**Type**: `string`  
+####machine.vibe → <code>string</code>
+<a name="module_cyberdyne..something"></a>
+###cyberdyne~something
+random
+

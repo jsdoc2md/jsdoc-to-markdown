@@ -1,19 +1,18 @@
 <a name="Pizza"></a>
-#class: Pizza
-**Members**
+##class: Pizza
 
 * [class: Pizza](#Pizza)
-  * [pizza.topping](#Pizza#topping)
-  * [pizza.size](#Pizza#size)
+  * _instance_
+    * [.topping](#Pizza#topping) → <code>string</code>
+    * [.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-##pizza.topping
+###pizza.topping → <code>string</code>
 the ingredients on top
 
-**Type**: `string`  
 **Default**: `mud, lettuce`  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-##pizza.size
+###pizza.size
 the general size
 

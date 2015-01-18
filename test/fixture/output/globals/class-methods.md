@@ -1,30 +1,30 @@
 <a name="Something"></a>
-#class: Something
-**Members**
+##class: Something
 
 * [class: Something](#Something)
-  * [something.methodOne()](#Something#methodOne)
-  * [~~something.allTogether(one, two)~~](#Something#allTogether)
+  * _instance_
+    * [.methodOne()](#Something#methodOne)
+    * ~~[.allTogether(one, two)](#Something#allTogether) ⇒ <code>object</code> \| <code>string</code>~~
 
 <a name="Something#methodOne"></a>
-##something.methodOne()
+###something.methodOne()
 method description
 
 <a name="Something#allTogether"></a>
-##~~something.allTogether(one, two)~~
+###~~something.allTogether(one, two) ⇒ <code>object</code> \| <code>string</code>~~
+***Deprecated:*** true  
+
 This function has all tags set
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
 
-- one `string` - The input string  
-- two `object` - a second input  
-
-***Deprecated***  
-**Returns**: `object` | `string` - this return has several types  
+**Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
+**Author:** Lloyd <75pound@gmail.com>  
 **Example**  
 ```js
 something.allTogether(true);
 ```
-

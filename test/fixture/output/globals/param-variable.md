@@ -1,36 +1,28 @@
-#Index
-
-**Classes**
-
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
-**Functions**
-
-* [pluck(...prop)](#pluck)
- 
+##Globals
+<dl>
+<dt><a href="#Plucker">class: Plucker</a></dt>
+<dd></dd>
+<dt><a href="#pluck">pluck(...prop)</a></dt>
+<dd><p>This function takes variable input</p>
+</dd>
+</dl>
 <a name="Plucker"></a>
-#class: Plucker
-**Members**
-
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
+##class: Plucker
 <a name="Plucker#doPluck"></a>
-##plucker.doPluck(one, ...args, ...three)
+###plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
-**Params**
-
-- one `string` - an input  
-- ...args `string` - the property(s) as input  
-- ...three `string` - more input  
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| one | <code>string</code> | an input |
+| ...args | <code>string</code> | the property(s) as input |
+| ...three | <code>string</code> | more input |
 
 <a name="pluck"></a>
-#pluck(...prop)
+##pluck(...prop)
 This function takes variable input
 
-**Params**
-
-- ...prop `string` - the property(s) as input  
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| ...prop | <code>string</code> | the property(s) as input |
 

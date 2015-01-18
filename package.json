@@ -12,8 +12,7 @@
     "watch": "baldrick --do 'npm run docs' --when test/input/*/*.js partials/* --change --speak",
     "lint": "jshint bin/*.js lib/*.js test/*.js; echo",
     "index": "jsdoc2md test/fixture/input/**/*.js -v > test/fixture/output/all-with-index.md; echo",
-    "templates": "node test/fixture/templates.js; echo",
-    "all": "npm run render && npm run docs && npm run index && npm run templates;"
+    "all": "npm run render && npm run docs && npm run index; echo"
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"
