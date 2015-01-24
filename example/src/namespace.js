@@ -10,11 +10,14 @@ var missle = {
     range: 100000,
 
     /**
-    ballasitic
+    ballistic
     @default true
     @type {boolean}
     */
-    ballastic: true,
+    ballistic: true,
+    /**
+    hydrogen bomb?
+    */
     hydrogen: true,
 
     /**

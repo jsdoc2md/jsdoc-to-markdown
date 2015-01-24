@@ -1,9 +1,13 @@
-#member-index-list
+#class-member-index = list
 {{#classes}}
 {{>member-index-list~}}
 {{/classes}}
 
-#member-index-grouped
+{{#namespace name="missle"}}{{>member-index-list~}}{{/namespace}}
+
+#class-member-index = grouped
 {{#classes}}
 {{>member-index-grouped~}}
 {{/classes}}
+
+{{#namespace name="missle"}}{{>member-index-grouped~}}{{/namespace}}

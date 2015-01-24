@@ -10,7 +10,7 @@
 <dt><a href="#builder">mixin: builder</a></dt>
 <dd><p>Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.</p>
 </dd>
-<dt><a href="#missle">enum: missle</a></dt>
+<dt><a href="#eType">enum: eType</a></dt>
 <dd></dd>
 <dt><a href="#missle">missle</a> → <code>object</code></dt>
 <dd></dd>
@@ -41,8 +41,12 @@
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
-* [enum: missle](#missle)
+* [enum: eType](#eType)
 * [missle](#missle) → <code>object</code>
+  * [.range](#missle.range) → <code>number</code>
+  * [.ballistic](#missle.ballistic) → <code>boolean</code>
+  * [.hydrogen](#missle.hydrogen)
+  * [.megaton](#missle.megaton) → <code>number</code>
 * [taze(victim, [options], [done])](#taze)
 * [protection(cloak, dagger)](#protection) ⇒ <code>survival</code>
 
@@ -55,7 +59,7 @@
 | [class: Animal](#Animal) | Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph). |
 | [class: Species](#Species) | In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into "infraspecific taxa" such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae). |
 | [mixin: builder](#builder) | Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla. |
-| [enum: missle](#missle) |  |
+| [enum: eType](#eType) |  |
 | [missle](#missle) → <code>object</code> |  |
 | [taze(victim, [options], [done])](#taze) | Pump an idiot full of volts |
 | [protection(cloak, dagger)](#protection) ⇒ <code>survival</code> | a quite wonderful function |

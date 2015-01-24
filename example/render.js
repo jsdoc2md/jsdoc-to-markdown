@@ -21,3 +21,8 @@ jsdoc2md
 jsdoc2md
     .render("example/src/enum.js", { template: "example/template/property-list-format.hbs"})
     .pipe(fs.createWriteStream("example/md/property-list-format.md"));
+
+/* class-member-index */
+jsdoc2md
+    .render("example/src/*.js", { template: "example/template/class-member-index.hbs"})
+    .pipe(fs.createWriteStream("example/md/class-member-index.md"));

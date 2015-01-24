@@ -1,4 +1,4 @@
-#member-index-list
+#class-member-index = list
 
 * [class: Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
@@ -12,7 +12,14 @@
   * [Species.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
 
-#member-index-grouped
+* [missle](#missle) → <code>object</code>
+  * [.range](#missle.range) → <code>number</code>
+  * [.ballistic](#missle.ballistic) → <code>boolean</code>
+  * [.hydrogen](#missle.hydrogen)
+  * [.megaton](#missle.megaton) → <code>number</code>
+
+
+#class-member-index = grouped
 
 * [class: Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
@@ -29,3 +36,9 @@
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
+
+* [missle](#missle) → <code>object</code>
+  * [.range](#missle.range) → <code>number</code>
+  * [.ballistic](#missle.ballistic) → <code>boolean</code>
+  * [.hydrogen](#missle.hydrogen)
+  * [.megaton](#missle.megaton) → <code>number</code>
