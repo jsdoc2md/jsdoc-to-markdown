@@ -26,3 +26,8 @@ jsdoc2md
 jsdoc2md
     .render("example/src/*.js", { template: "example/template/class-member-index.hbs"})
     .pipe(fs.createWriteStream("example/md/class-member-index.md"));
+
+/* separators */
+jsdoc2md
+    .render("example/src/commonJS/*.js", { separators: true })
+    .pipe(fs.createWriteStream("example/md/separators.md"));
