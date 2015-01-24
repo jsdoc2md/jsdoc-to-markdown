@@ -13,6 +13,9 @@
 <dt><a href="#protection">protection(cloak, dagger)</a> ⇒ <code>survival</code></dt>
 <dd><p>a quite wonderful function</p>
 </dd>
+<dt><a href="#taze">taze(victim, [options], [done])</a></dt>
+<dd><p>Pacify an idiot with 10,000 volts</p>
+</dd>
 </dl>
 
 
@@ -35,6 +38,7 @@
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
 * [protection(cloak, dagger)](#protection) ⇒ <code>survival</code>
+* [taze(victim, [options], [done])](#taze)
 
 
 
@@ -46,5 +50,6 @@
 | [class: Species](#Species) | In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into "infraspecific taxa" such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae). |
 | [mixin: builder](#builder) | Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla. |
 | [protection(cloak, dagger)](#protection) ⇒ <code>survival</code> | a quite wonderful function |
+| [taze(victim, [options], [done])](#taze) | Pacify an idiot with 10,000 volts |
 
 
