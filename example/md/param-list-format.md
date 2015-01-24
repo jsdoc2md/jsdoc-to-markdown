@@ -1,7 +1,7 @@
 #param-list-format = list
 <a name="taze"></a>
 ##taze(victim, [options], [done])
-Pacify an idiot with 10,000 volts
+Pump an idiot full of volts
 
 **Params**
 
@@ -16,7 +16,7 @@ Pacify an idiot with 10,000 volts
 #param-list-format = table
 <a name="taze"></a>
 ##taze(victim, [options], [done])
-Pacify an idiot with 10,000 volts
+Pump an idiot full of volts
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |

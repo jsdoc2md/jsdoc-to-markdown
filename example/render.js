@@ -14,5 +14,10 @@ jsdoc2md
 
 /* param-list-format */
 jsdoc2md
-    .render("example/src/taze.js", { template: "example/template/param-list-format.hbs"})
+    .render("example/src/function.js", { template: "example/template/param-list-format.hbs"})
     .pipe(fs.createWriteStream("example/md/param-list-format.md"));
+
+/* property-list-format */
+jsdoc2md
+    .render("example/src/enum.js", { template: "example/template/property-list-format.hbs"})
+    .pipe(fs.createWriteStream("example/md/property-list-format.md"));

@@ -1,5 +1,5 @@
 /**
-Pacify an idiot with 10,000 volts
+Pump an idiot full of volts
 @param {object} - the victim to electricute
 @param [options] {object} - electricution options
 @param [options.strength=11] {number} - strength
