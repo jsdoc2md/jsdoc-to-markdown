@@ -37,3 +37,8 @@ jsdoc2md
     .render("example/src/commonJS/*.js", { "name-format": true, template: "example/format-options/template/name-format.hbs" })
     .pipe(fs.createWriteStream("example/format-options/md/name-format.md"));
 
+/* no-gfm */
+jsdoc2md
+    .render("example/src/function.js", { template: "example/format-options/template/no-gfm.hbs" })
+    .pipe(fs.createWriteStream("example/format-options/md/no-gfm.md"));
+
