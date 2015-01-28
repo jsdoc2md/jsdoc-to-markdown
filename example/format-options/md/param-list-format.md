@@ -22,8 +22,8 @@ Pump an idiot full of volts
 | --- | --- | --- | --- |
 | victim | <code>object</code> |  | the victim to electricute |
 | \[options\] | <code>object</code> |  | electricution options |
-| \[options.strength\] | <code>number</code> | `<code>11</code>` | strength |
-| \[options.crazyHair\] | <code>number</code> | `<code>true</code>` | optional spikey hair effect |
+| \[options.strength\] | <code>number</code> | <code>11</code> | strength |
+| \[options.crazyHair\] | <code>number</code> | <code>true</code> | optional spikey hair effect |
 | \[done\] | <code>function</code> |  | callback on taze |
 
 
