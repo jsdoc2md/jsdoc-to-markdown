@@ -34,6 +34,6 @@ jsdoc2md
 
 /* name-format */
 jsdoc2md
-    .render("example/src/commonJS/*.js", { "name-format": true })
+    .render("example/src/commonJS/*.js", { "name-format": true, template: "example/format-options/template/name-format.hbs" })
     .pipe(fs.createWriteStream("example/format-options/md/name-format.md"));
 

@@ -1,3 +1,6 @@
+#name-format
+This demonstrates how docs look using the `--name-format` flag - all identifier names are formatted as code.
+
 ##Modules
 <dl>
 <dt><a href="#module_animal">animal</a></dt>
@@ -126,4 +129,5 @@ merge two species into a new one
 | ----- | ---- | ----------- |
 | one | <code>Species</code> | first |
 | two | <code>Species</code> | second |
+
 
