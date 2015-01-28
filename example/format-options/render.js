@@ -31,3 +31,9 @@ jsdoc2md
 jsdoc2md
     .render("example/src/commonJS/*.js", { separators: true })
     .pipe(fs.createWriteStream("example/format-options/md/separators.md"));
+
+/* name-format */
+jsdoc2md
+    .render("example/src/commonJS/*.js", { "name-format": true })
+    .pipe(fs.createWriteStream("example/format-options/md/name-format.md"));
+
