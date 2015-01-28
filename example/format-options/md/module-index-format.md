@@ -13,7 +13,7 @@
 </dl>
 
 
-#module-index-format = list
+#module-index-format = grouped
 ##Modules
 * [animal](#module_animal)
   * [class: ~Animal](#module_animal..Animal)
