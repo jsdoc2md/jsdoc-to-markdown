@@ -34,7 +34,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 <a name="new_Animal_new"></a>
 ###new Animal(species, parents)
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
 
