@@ -9,7 +9,7 @@ Pump an idiot full of volts
 - \[options\] <code>object</code> - electricution options  
   - \[strength =<code>11</code>\] <code>number</code> - strength  
   - \[crazyHair =<code>true</code>\] <code>number</code> - optional spikey hair effect  
-- \[done\] <code>function</code> - callback on taze  
+- \[done\] <code>function</code> - callback on slump  
 
 
 
@@ -24,6 +24,6 @@ Pump an idiot full of volts
 | [options] | <code>object</code> |  | electricution options |
 | [options.strength] | <code>number</code> | <code>11</code> | strength |
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
-| [done] | <code>function</code> |  | callback on taze |
+| [done] | <code>function</code> |  | callback on slump |
 
 

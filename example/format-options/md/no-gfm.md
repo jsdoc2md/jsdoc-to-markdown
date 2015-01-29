@@ -9,7 +9,7 @@ Pump an idiot full of volts
 | [options] | <code>object</code> |  | electricution options |
 | [options.strength] | <code>number</code> | <code>11</code> | strength |
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
-| [done] | <code>function</code> |  | callback on taze |
+| [done] | <code>function</code> |  | callback on slump |
 
 
 
@@ -32,7 +32,7 @@ Pump an idiot full of volts
 <table>
   <thead>
     <tr>
-      <td>Param</td><td>Type</td><td>Default</td><td>Description</td>
+      <th>Param</th><th>Type</th><th>Default</th><th>Description</th>
     </tr>
   </thead>
   <tbody>
@@ -45,7 +45,7 @@ Pump an idiot full of volts
     </tr><tr>
     <td>[options.crazyHair]</td><td><code>number</code></td><td><code>true</code></td><td>optional spikey hair effect</td>
     </tr><tr>
-    <td>[done]</td><td><code>function</code></td><td></td><td>callback on taze</td>
+    <td>[done]</td><td><code>function</code></td><td></td><td>callback on slump</td>
     </tr>
   </tbody>
 </table>
@@ -59,7 +59,7 @@ Pump an idiot full of volts
 <table>
   <thead>
     <tr>
-      <td>Name</td><td>Default</td><td>Description</td>
+      <th>Name</th><th>Default</th><th>Description</th>
     </tr>
   </thead>
   <tbody>

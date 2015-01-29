@@ -5,6 +5,28 @@ This demonstrates how docs look using the `--name-format` flag - all identifier 
 <dl>
 <dt><a href="#module_animal">animal</a></dt>
 <dd><p>Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).</p>
+<table>
+<thead>
+<tr>
+<th>yeah</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>some</td>
+<td>markdown</td>
+</tr>
+<tr>
+<td>in the</td>
+<td>module</td>
+</tr>
+<tr>
+<td>description</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </dd>
 <dt><a href="#module_builder">builder</a></dt>
 <dd><p>Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.</p>
@@ -16,6 +38,12 @@ This demonstrates how docs look using the `--name-format` flag - all identifier 
 <a name="module_animal"></a>
 ##animal
 Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).
+
+| yeah | desc |
+| ---- | ---- |
+| some | markdown |
+| in the | module |
+| description | |
 
 **Example**  
 var animal = require("animal");
