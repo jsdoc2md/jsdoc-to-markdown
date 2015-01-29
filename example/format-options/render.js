@@ -39,6 +39,6 @@ jsdoc2md
 
 /* no-gfm */
 jsdoc2md
-    .render("example/src/function.js", { template: "example/format-options/template/no-gfm.hbs" })
+    .render(["example/src/function.js", "example/src/enum.js"], { template: "example/format-options/template/no-gfm.hbs" })
     .pipe(fs.createWriteStream("example/format-options/md/no-gfm.md"));
 

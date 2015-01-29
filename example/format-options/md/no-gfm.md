@@ -13,6 +13,17 @@ Pump an idiot full of volts
 
 
 
+<a name="eType"></a>
+##enum: eType
+**Properties**
+
+| Name | Default | Description |
+| --- | --- | --- |
+| ONE | `1` | type one |
+| TWO | `2` | type two |
+
+
+
 #no-gfm
 <a name="taze"></a>
 ##taze(victim, [options], [done])
@@ -35,6 +46,27 @@ Pump an idiot full of volts
     <td>[options.crazyHair]</td><td><code>number</code></td><td><code>true</code></td><td>optional spikey hair effect</td>
     </tr><tr>
     <td>[done]</td><td><code>function</code></td><td></td><td>callback on taze</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<a name="eType"></a>
+##enum: eType
+**Properties**
+
+<table>
+  <thead>
+    <tr>
+      <td>Name</td><td>Default</td><td>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>ONE</td><td><code>1</code></td><td>type one</td>
+    </tr><tr>
+    <td>TWO</td><td><code>2</code></td><td>type two</td>
     </tr>
   </tbody>
 </table>
