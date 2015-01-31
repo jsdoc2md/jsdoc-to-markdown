@@ -5,6 +5,7 @@
 
 /**
 She's an Uzi lover. 
+
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
 @class
@@ -31,14 +32,17 @@ function UZILover(){
     
     /**
     @const {string}
+    @default
     */
     this.LOVE = "UZI";
     
     /**
     @type {string}
-    @default "a big testicle gland"
+    @default
+    @see "Uzi like a metal dick in my hand."
+    @see "Magazine like a big testicle gland."
     */
-    this.magazineLike= "a big testicle gland";
+    this.wannaTryIt= "bitch";
 }
 
 /**

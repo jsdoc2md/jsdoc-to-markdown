@@ -52,7 +52,7 @@
 * [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
   * [new UZILover()](#new_UZILover_new)
   * _instance_
-    * [.magazineLike](#UZILover#magazineLike) → <code>string</code>
+    * [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
     * [.kill()](#UZILover#kill)
     * [.respect(done)](#UZILover#respect)
     * [.punch()](#UZILover#punch)

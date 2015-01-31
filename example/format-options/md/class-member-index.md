@@ -17,7 +17,7 @@
 
 * [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
   * [new UZILover()](#new_UZILover_new)
-  * [uziLover.magazineLike](#UZILover#magazineLike) → <code>string</code>
+  * [uziLover.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
   * [uziLover.age](#UZILover#age) → <code>number</code>
   * [uziLover.species](#UZILover#species) → <code>[Species](#Species)</code>
   * [uziLover.kill()](#UZILover#kill)
@@ -60,7 +60,7 @@
 * [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
   * [new UZILover()](#new_UZILover_new)
   * _instance_
-    * [.magazineLike](#UZILover#magazineLike) → <code>string</code>
+    * [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
     * [.kill()](#UZILover#kill)
     * [.respect(done)](#UZILover#respect)
     * [.punch()](#UZILover#punch)
