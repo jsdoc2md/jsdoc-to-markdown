@@ -34,7 +34,7 @@
 </dl>
 
 
-#global-index-format = list
+#global-index-format = grouped
 ##Global
 * [class: Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
