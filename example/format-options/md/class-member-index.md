@@ -15,6 +15,19 @@
 
 -
 
+* [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
+  * [new UZILover()](#new_UZILover_new)
+  * [uziLover.magazineLike](#UZILover#magazineLike) → <code>string</code>
+  * [uziLover.age](#UZILover#age) → <code>number</code>
+  * [uziLover.species](#UZILover#species) → <code>[Species](#Species)</code>
+  * [uziLover.kill()](#UZILover#kill)
+  * [uziLover.respect(done)](#UZILover#respect)
+  * [uziLover.punch()](#UZILover#punch)
+  * [const: uziLover.LOVE](#UZILover#LOVE) → <code>string</code>
+  * [callback: UZILover~onRespect](#UZILover..onRespect) → <code>function</code>
+
+-
+
 
 * [missle](#missle) → <code>object</code>
   * [.range](#missle.range) → <code>number</code>
@@ -41,6 +54,22 @@
     * [.species](#Species#species) → <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
+
+-
+
+* [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
+  * [new UZILover()](#new_UZILover_new)
+  * _instance_
+    * [.magazineLike](#UZILover#magazineLike) → <code>string</code>
+    * [.kill()](#UZILover#kill)
+    * [.respect(done)](#UZILover#respect)
+    * [.punch()](#UZILover#punch)
+    * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
+  * _inherits_
+    * [.age](#Animal#age) → <code>number</code>
+    * [.species](#Animal#species) → <code>[Species](#Species)</code>
+  * _inner_
+    * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
 
 -
 
