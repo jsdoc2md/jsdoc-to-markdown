@@ -19,25 +19,33 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Author:** Chris Morris  
 
-[class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>  
-&nbsp;&nbsp;&nbsp;&nbsp;❉ [new UZILover()](#new_UZILover_new)  
-&nbsp;&nbsp;&nbsp;&nbsp;❉ _instance_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◇ [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.kill()](#UZILover#kill)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.respect(done)](#UZILover#respect)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.punch()](#UZILover#punch)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❉ [const: .LOVE](#UZILover#LOVE) → <code>string</code>  
-&nbsp;&nbsp;&nbsp;&nbsp;❉ _inherits_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.spit()](#Rapper#spit)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.battle()](#Rapper#battle)  
-&nbsp;&nbsp;&nbsp;&nbsp;❉ _static_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❉ [enum: .enemy](#UZILover.enemy) → <code>number</code>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❉ ~~[.peace()](#UZILover.peace)~~  
-&nbsp;&nbsp;&nbsp;&nbsp;❉ _inner_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❉ [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>  
-&nbsp;&nbsp;&nbsp;&nbsp;❉ _events_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❉ ["pop" (zoop)](#UZILover#event_pop)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❉ ["slap"](#UZILover#event_slap)  
+✠ [UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• [new UZILover()](#new_UZILover_new)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• _instance_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◇ [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.kill()](#UZILover#kill)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.respect(done)](#UZILover#respect)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.punch()](#UZILover#punch)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;■ [.LOVE](#UZILover#LOVE) → <code>string</code>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• _inherits_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.spit()](#Rapper#spit)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [.battle()](#Rapper#battle)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• _static_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✢ [.enemy](#UZILover.enemy) → <code>number</code>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ ~~[.peace()](#UZILover.peace)~~  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• _inner_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✧ [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• _events_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↯ ["pop" (zoop)](#UZILover#event_pop)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↯ ["slap"](#UZILover#event_slap)  
+
+<pre>
+one
+    two
+    three
+        four
+        five
+</pre>
 
 <a name="new_UZILover_new"></a>
 ###new UZILover()
@@ -50,7 +58,7 @@ She's an Uzi lover.
 var uziLover = require("UZILover");
 ```
 <a name="UZILover#wannaTryIt"></a>
-###uziLover.wannaTryIt → <code>string</code>
+###◇ uziLover.wannaTryIt → <code>string</code>
 **Default**: `bitch`  
 **See**
 
@@ -58,7 +66,7 @@ var uziLover = require("UZILover");
 - "Magazine like a big testicle gland."
 
 <a name="UZILover#kill"></a>
-###uziLover.kill()
+###✧ uziLover.kill()
 kill
 
 **Example**  
@@ -71,7 +79,7 @@ var kill = uziLover.kill();
 uziLover.kill();
 ```
 <a name="UZILover#respect"></a>
-###uziLover.respect(done)
+###✧ uziLover.respect(done)
 respect
 
 | Param | Type | Description |
@@ -85,14 +93,14 @@ uziLover.respect(function(err, gain){
 });
 ```
 <a name="UZILover#punch"></a>
-###uziLover.punch()
+###✧ uziLover.punch()
 to plant ones fist in a buster's mush
 
 <a name="UZILover#LOVE"></a>
-###const: uziLover.LOVE → <code>string</code>
+###■ uziLover.LOVE → <code>string</code>
 **Default**: `UZI`  
 <a name="UZILover#event_pop"></a>
-###event: "pop" (zoop)
+###↯ "pop" (zoop)
 fire weapon
 
 | Param | Type | Description |
@@ -100,11 +108,11 @@ fire weapon
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
 
 <a name="UZILover#event_slap"></a>
-###event: "slap"
+###↯ "slap"
 slap man
 
 <a name="UZILover.enemy"></a>
-###enum: UZILover.enemy → <code>number</code>
+###✢ UZILover.enemy → <code>number</code>
 FUR-Q enemy types
 
 **Properties**
@@ -117,7 +125,7 @@ FUR-Q enemy types
 
 **Read only**: true  
 <a name="UZILover.peace"></a>
-###~~UZILover.peace()~~
+###~~✧ UZILover.peace()~~
 ***Deprecated***
 
 check if at peace
@@ -127,7 +135,7 @@ check if at peace
 var peace = UZILover.peace();
 ```
 <a name="UZILover..onRespect"></a>
-###callback: UZILover~onRespect → <code>function</code>
+###✧ UZILover~onRespect → <code>function</code>
 Passed to [respect](#UZILover#respect)
 
 | Param | Type | Description |
@@ -144,14 +152,14 @@ Passed to [respect](#UZILover#respect)
     * [.battle()](#Rapper#battle)
 
 <a name="Rapper#spit"></a>
-###rapper.spit()
+###✧ rapper.spit()
 spit
 
 <a name="Rapper#battle"></a>
-###rapper.battle()
+###✧ rapper.battle()
 battle
 
 <a name="plant"></a>
-##plant()
+##✧ plant()
 to plant ones fist in a buster's mush
 
