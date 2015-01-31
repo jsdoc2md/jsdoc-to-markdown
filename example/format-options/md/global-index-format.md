@@ -58,12 +58,16 @@
     * [.punch()](#UZILover#punch)
     * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
   * _static_
+    * [enum: .enemy](#UZILover.enemy) → <code>number</code>
     * ~~[.peace()](#UZILover.peace)~~
   * _inherits_
     * [.age](#Animal#age) → <code>number</code>
     * [.species](#Animal#species) → <code>[Species](#Species)</code>
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
+  * _events_
+    * ["pop"](#UZILover#event_pop)
+    * ["slap"](#UZILover#event_slap)
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)

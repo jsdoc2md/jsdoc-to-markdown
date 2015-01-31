@@ -15,7 +15,8 @@ She's an Uzi lover.
 @extends Animal
 @author Chris Morris
 @borrows plant as #punch
-
+@fires UZILover#pop
+@fires UZILover#slap
 */
 function UZILover(){
     /**
@@ -43,6 +44,15 @@ function UZILover(){
     @see "Magazine like a big testicle gland."
     */
     this.wannaTryIt= "bitch";
+    
+    /**
+    fire weapon
+    @event UZILover#pop
+    */
+    /**
+    slap man 
+    @event UZILover#slap
+    */
 }
 
 /**
@@ -50,6 +60,20 @@ check if at peace
 @deprecated
 */
 UZILover.peace = function(){};
+
+/**
+FUR-Q enemy types
+@enum {number}
+@readonly
+*/
+UZILover.enemy = {
+    /**
+    an awful individual
+    */
+    COCK: 0,
+    BITCH: 1,
+    MUTHAFUCKA: 2
+};
 
 
 /**

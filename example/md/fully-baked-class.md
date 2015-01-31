@@ -12,6 +12,7 @@
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
 **Extends:** <code>Animal</code>  
+**Emits**: <code>[pop](#UZILover#event_pop)</code>, <code>[slap](#UZILover#event_slap)</code>  
 **Access:** public  
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Author:** Chris Morris  
@@ -25,9 +26,13 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
     * [.punch()](#UZILover#punch)
     * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
   * _static_
+    * [enum: .enemy](#UZILover.enemy) → <code>number</code>
     * ~~[.peace()](#UZILover.peace)~~
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
+  * _events_
+    * ["pop"](#UZILover#event_pop)
+    * ["slap"](#UZILover#event_slap)
 
 <a name="new_UZILover_new"></a>
 ###new UZILover()
@@ -62,6 +67,27 @@ to plant ones fist in a buster's mush
 <a name="UZILover#LOVE"></a>
 ###const: uziLover.LOVE → <code>string</code>
 **Default**: `UZI`  
+<a name="UZILover#event_pop"></a>
+###event: "pop"
+fire weapon
+
+<a name="UZILover#event_slap"></a>
+###event: "slap"
+slap man
+
+<a name="UZILover.enemy"></a>
+###enum: UZILover.enemy → <code>number</code>
+FUR-Q enemy types
+
+**Properties**
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| COCK | <code>number</code> | `0` | an awful individual |
+| BITCH | <code>number</code> | `1` |  |
+| MUTHAFUCKA | <code>number</code> | `2` |  |
+
+**Read only**: true  
 <a name="UZILover.peace"></a>
 ###~~UZILover.peace()~~
 ***Deprecated***
