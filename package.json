@@ -5,6 +5,9 @@
   "description": "Markdown API documentation generator, good for Github projects",
   "repository": "https://github.com/75lb/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
+  "files": [
+      "bin", "lib", "LICENSE"
+  ],
   "scripts": {
     "test": "tape test/*.js",
     "render": "node test/fixture/render.js; echo",
