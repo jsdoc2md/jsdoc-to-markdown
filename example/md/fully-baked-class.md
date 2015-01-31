@@ -31,7 +31,7 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
   * _events_
-    * ["pop"](#UZILover#event_pop)
+    * ["pop" (zoop)](#UZILover#event_pop)
     * ["slap"](#UZILover#event_slap)
 
 <a name="new_UZILover_new"></a>
@@ -39,6 +39,9 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 She's an Uzi lover. 
 
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
+
+**Example**  
+var uziLover = require("UZILover");
 
 <a name="UZILover#wannaTryIt"></a>
 ###uziLover.wannaTryIt → <code>string</code>
@@ -52,6 +55,9 @@ She's an Uzi lover.
 ###uziLover.kill()
 kill
 
+**Example**  
+var kill = uziLover.kill;
+
 <a name="UZILover#respect"></a>
 ###uziLover.respect(done)
 respect
@@ -59,6 +65,11 @@ respect
 | Param | Type | Description |
 | --- | --- | --- |
 | done | <code>[onRespect](#UZILover..onRespect)</code> | called on reciprocation of respect |
+
+**Example**  
+uziLover.respect(function(err, gain){
+        console.log(gain);
+    });
 
 <a name="UZILover#punch"></a>
 ###uziLover.punch()
@@ -68,8 +79,12 @@ to plant ones fist in a buster's mush
 ###const: uziLover.LOVE → <code>string</code>
 **Default**: `UZI`  
 <a name="UZILover#event_pop"></a>
-###event: "pop"
+###event: "pop" (zoop)
 fire weapon
+
+| Param | Type | Description |
+| --- | --- | --- |
+| zoop | <code>boolean</code> | make 'zooping' sound as you fire |
 
 <a name="UZILover#event_slap"></a>
 ###event: "slap"
@@ -94,14 +109,17 @@ FUR-Q enemy types
 
 check if at peace
 
+**Example**  
+var peace = UZILover.peace();
+
 <a name="UZILover..onRespect"></a>
 ###callback: UZILover~onRespect → <code>function</code>
 Passed to [respect](#UZILover#respect)
 
-| Type | Description |
-| --- | --- |
-| <code>Error</code> | an issue with the punch |
-| <code>number</code> | the respect percentage gained |
+| Param | Type | Description |
+| --- | --- | --- |
+| err | <code>Error</code> | an issue with the punch |
+| gain | <code>number</code> | the respect percentage gained |
 
 <a name="plant"></a>
 ##plant()

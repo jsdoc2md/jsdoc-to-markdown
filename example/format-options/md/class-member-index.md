@@ -24,7 +24,7 @@
   * [uziLover.respect(done)](#UZILover#respect)
   * [uziLover.punch()](#UZILover#punch)
   * [const: uziLover.LOVE](#UZILover#LOVE) → <code>string</code>
-  * [event: "pop"](#UZILover#event_pop)
+  * [event: "pop" (zoop)](#UZILover#event_pop)
   * [event: "slap"](#UZILover#event_slap)
   * [enum: UZILover.enemy](#UZILover.enemy) → <code>number</code>
   * [~~UZILover.peace()~~](#UZILover.peace)
@@ -78,7 +78,7 @@
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
   * _events_
-    * ["pop"](#UZILover#event_pop)
+    * ["pop" (zoop)](#UZILover#event_pop)
     * ["slap"](#UZILover#event_slap)
 
 -

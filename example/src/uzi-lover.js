@@ -17,15 +17,21 @@ She's an Uzi lover.
 @borrows plant as #punch
 @fires UZILover#pop
 @fires UZILover#slap
+@example var uziLover = require("UZILover");
 */
 function UZILover(){
     /**
     kill
+    @example var kill = uziLover.kill;
     */
     this.kill = function(){};
     /**
-    respect
-    @param {UZILover~onRespect} - called on reciprocation of respect
+    * respect
+    * @param {UZILover~onRespect} - called on reciprocation of respect
+    * @example 
+    * uziLover.respect(function(err, gain){
+    *     console.log(gain);
+    * });
     */
     this.respect = function(done){};
     
@@ -48,6 +54,7 @@ function UZILover(){
     /**
     fire weapon
     @event UZILover#pop
+    @param zoop {boolean} - make 'zooping' sound as you fire
     */
     /**
     slap man 
@@ -58,6 +65,7 @@ function UZILover(){
 /**
 check if at peace
 @deprecated
+@example var peace = UZILover.peace();
 */
 UZILover.peace = function(){};
 
@@ -84,6 +92,6 @@ function plant(){};
 /**
 Passed to {@link UZILover#respect}
 @callback UZILover~onRespect
-@param {Error} - an issue with the punch
-@param {number} - the respect percentage gained
+@param err {Error} - an issue with the punch
+@param gain {number} - the respect percentage gained
 */

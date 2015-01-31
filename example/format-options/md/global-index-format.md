@@ -66,7 +66,7 @@
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
   * _events_
-    * ["pop"](#UZILover#event_pop)
+    * ["pop" (zoop)](#UZILover#event_pop)
     * ["slap"](#UZILover#event_slap)
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
