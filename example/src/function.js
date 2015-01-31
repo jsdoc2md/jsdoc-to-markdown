@@ -1,5 +1,6 @@
 /**
 Pump an idiot full of volts
+@deprecated
 @param {object | array} - the victim(s) to fry
 @param [options] {object} - electricution options
 @param [options.strength=11] {number} - strength

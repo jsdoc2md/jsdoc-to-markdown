@@ -24,6 +24,7 @@
   * [uziLover.respect(done)](#UZILover#respect)
   * [uziLover.punch()](#UZILover#punch)
   * [const: uziLover.LOVE](#UZILover#LOVE) → <code>string</code>
+  * [~~UZILover.peace()~~](#UZILover.peace)
   * [callback: UZILover~onRespect](#UZILover..onRespect) → <code>function</code>
 
 -
@@ -65,6 +66,8 @@
     * [.respect(done)](#UZILover#respect)
     * [.punch()](#UZILover#punch)
     * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
+  * _static_
+    * ~~[.peace()](#UZILover.peace)~~
   * _inherits_
     * [.age](#Animal#age) → <code>number</code>
     * [.species](#Animal#species) → <code>[Species](#Species)</code>

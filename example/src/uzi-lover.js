@@ -46,6 +46,13 @@ function UZILover(){
 }
 
 /**
+check if at peace
+@deprecated
+*/
+UZILover.peace = function(){};
+
+
+/**
 to plant ones fist in a buster's mush
 */
 function plant(){};

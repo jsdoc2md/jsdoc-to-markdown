@@ -22,7 +22,7 @@
 <dd></dd>
 <dt><a href="#missle">missle</a> → <code>object</code></dt>
 <dd></dd>
-<dt><a href="#taze">taze(victim, [options], [done])</a></dt>
+<dt><del><a href="#taze">taze(victim, [options], [done])</a></del></dt>
 <dd><p>Pump an idiot full of volts</p>
 </dd>
 <dt><a href="#protection">protection(cloak, dagger)</a> ⇒ <code>survival</code></dt>
@@ -57,6 +57,8 @@
     * [.respect(done)](#UZILover#respect)
     * [.punch()](#UZILover#punch)
     * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
+  * _static_
+    * ~~[.peace()](#UZILover.peace)~~
   * _inherits_
     * [.age](#Animal#age) → <code>number</code>
     * [.species](#Animal#species) → <code>[Species](#Species)</code>
@@ -71,7 +73,7 @@
   * [.ballistic](#missle.ballistic) → <code>boolean</code>
   * [.hydrogen](#missle.hydrogen)
   * [.megaton](#missle.megaton) → <code>number</code>
-* [taze(victim, [options], [done])](#taze)
+* ~~[taze(victim, [options], [done])](#taze)~~
 * [protection(cloak, dagger)](#protection) ⇒ <code>survival</code>
 * [plant()](#plant)
 
@@ -120,7 +122,7 @@
     <td></td>
     </tr>
 <tr>
-    <td><a href="#taze">taze(victim, [options], [done])</a></td>
+    <td><del><a href="#taze">taze(victim, [options], [done])</a></del></td>
     <td><p>Pump an idiot full of volts</p>
 </td>
     </tr>

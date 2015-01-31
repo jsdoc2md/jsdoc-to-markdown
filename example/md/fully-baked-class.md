@@ -24,6 +24,8 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
     * [.respect(done)](#UZILover#respect)
     * [.punch()](#UZILover#punch)
     * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
+  * _static_
+    * ~~[.peace()](#UZILover.peace)~~
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
 
@@ -60,6 +62,12 @@ to plant ones fist in a buster's mush
 <a name="UZILover#LOVE"></a>
 ###const: uziLover.LOVE → <code>string</code>
 **Default**: `UZI`  
+<a name="UZILover.peace"></a>
+###~~UZILover.peace()~~
+***Deprecated***
+
+check if at peace
+
 <a name="UZILover..onRespect"></a>
 ###callback: UZILover~onRespect → <code>function</code>
 Passed to [respect](#UZILover#respect)
