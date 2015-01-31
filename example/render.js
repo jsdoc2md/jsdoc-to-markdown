@@ -4,5 +4,5 @@ var fs = require("fs");
 
 /* fully-baked class */
 jsdoc2md
-    .render("example/src/uzi-lover.js")
+    .render("example/src/uzi-lover.js", { "example-lang": "js" })
     .pipe(fs.createWriteStream("example/md/fully-baked-class.md"));

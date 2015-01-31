@@ -15,13 +15,13 @@
 
 -
 
-* [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
+* [class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>
   * [new UZILover()](#new_UZILover_new)
   * [uziLover.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
-  * [uziLover.age](#UZILover#age) → <code>number</code>
-  * [uziLover.species](#UZILover#species) → <code>[Species](#Species)</code>
   * [uziLover.kill()](#UZILover#kill)
   * [uziLover.respect(done)](#UZILover#respect)
+  * [uziLover.spit()](#UZILover#spit)
+  * [uziLover.battle()](#UZILover#battle)
   * [uziLover.punch()](#UZILover#punch)
   * [const: uziLover.LOVE](#UZILover#LOVE) → <code>string</code>
   * [event: "pop" (zoop)](#UZILover#event_pop)
@@ -29,6 +29,12 @@
   * [enum: UZILover.enemy](#UZILover.enemy) → <code>number</code>
   * [~~UZILover.peace()~~](#UZILover.peace)
   * [callback: UZILover~onRespect](#UZILover..onRespect) → <code>function</code>
+
+-
+
+* [class: Rapper](#Rapper)
+  * [rapper.spit()](#Rapper#spit)
+  * [rapper.battle()](#Rapper#battle)
 
 -
 
@@ -61,7 +67,7 @@
 
 -
 
-* [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
+* [class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>
   * [new UZILover()](#new_UZILover_new)
   * _instance_
     * [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
@@ -73,13 +79,20 @@
     * [enum: .enemy](#UZILover.enemy) → <code>number</code>
     * ~~[.peace()](#UZILover.peace)~~
   * _inherits_
-    * [.age](#Animal#age) → <code>number</code>
-    * [.species](#Animal#species) → <code>[Species](#Species)</code>
+    * [.spit()](#Rapper#spit)
+    * [.battle()](#Rapper#battle)
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
   * _events_
     * ["pop" (zoop)](#UZILover#event_pop)
     * ["slap"](#UZILover#event_slap)
+
+-
+
+* [class: Rapper](#Rapper)
+  * _instance_
+    * [.spit()](#Rapper#spit)
+    * [.battle()](#Rapper#battle)
 
 -
 

@@ -1,23 +1,25 @@
 ##Globals
 <dl>
-<dt><a href="#UZILover">class: UZILover</a> ⇐ <code>Animal</code></dt>
+<dt><a href="#UZILover">class: UZILover</a> ⇐ <code><a href="#Rapper">Rapper</a></code></dt>
 <dd><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
 </dd>
+<dt><a href="#Rapper">class: Rapper</a></dt>
+<dd></dd>
 <dt><a href="#plant">plant()</a></dt>
 <dd><p>to plant ones fist in a buster&#39;s mush</p>
 </dd>
 </dl>
 <a name="UZILover"></a>
-##class: UZILover ⇐ <code>Animal</code>
+##class: UZILover ⇐ <code>[Rapper](#Rapper)</code>
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
-**Extends:** <code>Animal</code>  
+**Extends:** <code>[Rapper](#Rapper)</code>  
 **Emits**: <code>[pop](#UZILover#event_pop)</code>, <code>[slap](#UZILover#event_slap)</code>  
 **Access:** public  
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Author:** Chris Morris  
 
-* [class: UZILover](#UZILover) ⇐ <code>Animal</code>
+* [class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>
   * [new UZILover()](#new_UZILover_new)
   * _instance_
     * [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
@@ -28,6 +30,9 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * _static_
     * [enum: .enemy](#UZILover.enemy) → <code>number</code>
     * ~~[.peace()](#UZILover.peace)~~
+  * _inherits_
+    * [.spit()](#Rapper#spit)
+    * [.battle()](#Rapper#battle)
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
   * _events_
@@ -41,8 +46,9 @@ She's an Uzi lover.
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
 **Example**  
+```js
 var uziLover = require("UZILover");
-
+```
 <a name="UZILover#wannaTryIt"></a>
 ###uziLover.wannaTryIt → <code>string</code>
 **Default**: `bitch`  
@@ -56,8 +62,14 @@ var uziLover = require("UZILover");
 kill
 
 **Example**  
-var kill = uziLover.kill;
-
+```js
+var kill = uziLover.kill();
+    
+```
+**Example**  
+```js
+uziLover.kill();
+```
 <a name="UZILover#respect"></a>
 ###uziLover.respect(done)
 respect
@@ -67,10 +79,11 @@ respect
 | done | <code>[onRespect](#UZILover..onRespect)</code> | called on reciprocation of respect |
 
 **Example**  
+```js
 uziLover.respect(function(err, gain){
-        console.log(gain);
-    });
-
+    console.log(gain);
+});
+```
 <a name="UZILover#punch"></a>
 ###uziLover.punch()
 to plant ones fist in a buster's mush
@@ -110,8 +123,9 @@ FUR-Q enemy types
 check if at peace
 
 **Example**  
+```js
 var peace = UZILover.peace();
-
+```
 <a name="UZILover..onRespect"></a>
 ###callback: UZILover~onRespect → <code>function</code>
 Passed to [respect](#UZILover#respect)
@@ -120,6 +134,22 @@ Passed to [respect](#UZILover#respect)
 | --- | --- | --- |
 | err | <code>Error</code> | an issue with the punch |
 | gain | <code>number</code> | the respect percentage gained |
+
+<a name="Rapper"></a>
+##class: Rapper
+
+* [class: Rapper](#Rapper)
+  * _instance_
+    * [.spit()](#Rapper#spit)
+    * [.battle()](#Rapper#battle)
+
+<a name="Rapper#spit"></a>
+###rapper.spit()
+spit
+
+<a name="Rapper#battle"></a>
+###rapper.battle()
+battle
 
 <a name="plant"></a>
 ##plant()

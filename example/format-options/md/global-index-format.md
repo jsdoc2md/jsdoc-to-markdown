@@ -12,9 +12,11 @@
 <dt><a href="#Species">class: Species</a></dt>
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
-<dt><a href="#UZILover">class: UZILover</a> ⇐ <code><a href="#Animal">Animal</a></code></dt>
+<dt><a href="#UZILover">class: UZILover</a> ⇐ <code><a href="#Rapper">Rapper</a></code></dt>
 <dd><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
 </dd>
+<dt><a href="#Rapper">class: Rapper</a></dt>
+<dd></dd>
 <dt><a href="#builder">mixin: builder</a></dt>
 <dd><p>Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.</p>
 </dd>
@@ -49,7 +51,7 @@
     * [.species](#Species#species) → <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
-* [class: UZILover](#UZILover) ⇐ <code>[Animal](#Animal)</code>
+* [class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>
   * [new UZILover()](#new_UZILover_new)
   * _instance_
     * [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
@@ -61,13 +63,17 @@
     * [enum: .enemy](#UZILover.enemy) → <code>number</code>
     * ~~[.peace()](#UZILover.peace)~~
   * _inherits_
-    * [.age](#Animal#age) → <code>number</code>
-    * [.species](#Animal#species) → <code>[Species](#Species)</code>
+    * [.spit()](#Rapper#spit)
+    * [.battle()](#Rapper#battle)
   * _inner_
     * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
   * _events_
     * ["pop" (zoop)](#UZILover#event_pop)
     * ["slap"](#UZILover#event_slap)
+* [class: Rapper](#Rapper)
+  * _instance_
+    * [.spit()](#Rapper#spit)
+    * [.battle()](#Rapper#battle)
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
@@ -108,9 +114,13 @@
 </td>
     </tr>
 <tr>
-    <td><a href="#UZILover">class: UZILover</a> ⇐ <code><a href="#Animal">Animal</a></code></td>
+    <td><a href="#UZILover">class: UZILover</a> ⇐ <code><a href="#Rapper">Rapper</a></code></td>
     <td><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
 </td>
+    </tr>
+<tr>
+    <td><a href="#Rapper">class: Rapper</a></td>
+    <td></td>
     </tr>
 <tr>
     <td><a href="#builder">mixin: builder</a></td>

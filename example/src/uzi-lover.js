@@ -12,7 +12,7 @@ She's an Uzi lover.
 @classdesc C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 @see https://www.youtube.com/watch?v=1sxZ4tsp8gc
 @public
-@extends Animal
+@extends Rapper
 @author Chris Morris
 @borrows plant as #punch
 @fires UZILover#pop
@@ -22,7 +22,8 @@ She's an Uzi lover.
 function UZILover(){
     /**
     kill
-    @example var kill = uziLover.kill;
+    @example var kill = uziLover.kill();
+    @example uziLover.kill();
     */
     this.kill = function(){};
     /**
@@ -95,3 +96,18 @@ Passed to {@link UZILover#respect}
 @param err {Error} - an issue with the punch
 @param gain {number} - the respect percentage gained
 */
+
+
+/**
+@class
+*/
+function Rapper(){
+    /**
+    spit
+    */
+    this.spit = function(){};
+    /**
+    battle
+    */
+    this.battle = function(){};
+}
