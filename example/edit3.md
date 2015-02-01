@@ -10,16 +10,17 @@
 </dd>
 </dl>
 <a name="FurQ"></a>
-## class: FurQ ⇐ <code>[Rapper](#Rapper)</code>
+## FurQ ⇐ <code>[Rapper](#Rapper)</code>
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
+**Kind:** class  
 **Extends:** <code>[Rapper](#Rapper)</code>  
 **Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
 **Access:** public  
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Author:** Chris Morris  
 
-* [FurQ](#FurQ) → <code>class</code>  ⇐ <code>[Rapper](#Rapper)</code>
+* [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
 	  * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
 	  * [.LOVE](#FurQ#LOVE) → <code>string</code>
@@ -30,11 +31,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 	  * [.battle()](#Rapper#battle) 
 	  * ["pop" (zoop)](#FurQ#event_pop)
 	  * ["slap"](#FurQ#event_slap)    
-	  * _inner_
-	    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
   * [.enemy](#FurQ.enemy) → <code>number</code>
   * ~~[.peace()](#FurQ.peace)~~
-
+  * _inner_
+    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
 <a name="new_FurQ_new"></a>
 ### new FurQ()
 She's an Uzi lover. 
