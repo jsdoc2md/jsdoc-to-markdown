@@ -23,7 +23,7 @@ test("stdin check", function(t){
     });
     handle.on("close", function(){
         var md = fs.readFileSync("tmp/ignore.md", "utf8");
-        if (md) t.ok(/#visible/.test(md.toString()));
+        if (md) t.ok(/# visible/.test(md.toString()));
     });
 });
 
