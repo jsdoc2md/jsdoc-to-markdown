@@ -21,19 +21,19 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 
 * [FurQ](#FurQ) → <code>class</code>  ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
-  * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
-  * [.LOVE](#FurQ#LOVE) → <code>string</code>
-  * [.kill()](#FurQ#kill)
-  * [.respect(done)](#FurQ#respect)
-  * [.punch()](#FurQ#punch)
-  * [.spit()](#FurQ#spit)
-  * [.battle()](#Rapper#battle) 
-  * ["pop" (zoop)](#FurQ#event_pop)
-  * ["slap"](#FurQ#event_slap)    
-* [FurQ.enemy](#FurQ.enemy) → <code>number</code>
-* ~~[FurQ.peace()](#FurQ.peace)~~
-  * _inner_
-    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
+	  * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+	  * [.LOVE](#FurQ#LOVE) → <code>string</code>
+	  * [.kill()](#FurQ#kill)
+	  * [.respect(done)](#FurQ#respect)
+	  * [.punch()](#FurQ#punch)
+	  * [.spit()](#FurQ#spit)
+	  * [.battle()](#Rapper#battle) 
+	  * ["pop" (zoop)](#FurQ#event_pop)
+	  * ["slap"](#FurQ#event_slap)    
+	  * _inner_
+	    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
+  * [.enemy](#FurQ.enemy) → <code>number</code>
+  * ~~[.peace()](#FurQ.peace)~~
 
 <a name="new_FurQ_new"></a>
 ### new FurQ()
@@ -83,6 +83,8 @@ FurQ.respect(function(err, gain){
 <a name="FurQ#spit"></a>
 ### FurQ.spit()
 override
+
+**overridden from**: `Rapper.spit`
 
 <a name="FurQ#punch"></a>
 ### FurQ.punch()

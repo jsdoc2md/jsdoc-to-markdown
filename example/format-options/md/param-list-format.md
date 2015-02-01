@@ -15,6 +15,10 @@ Pump an idiot full of volts
 
 
 
+-
+
+
+
 #param-list-format = table
 <a name="taze"></a>
 ## ~~taze(victim, [options], [done])~~
@@ -29,5 +33,9 @@ Pump an idiot full of volts
 | [options.strength] | <code>number</code> | <code>11</code> | strength |
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
 | [done] | <code>function</code> |  | callback on slump |
+
+
+
+-
 
 

@@ -15,6 +15,10 @@ Pump an idiot full of volts
 
 
 
+-
+
+
+
 <a name="eType"></a>
 ## enum: eType
 **Properties**
@@ -23,6 +27,10 @@ Pump an idiot full of volts
 | --- | --- | --- |
 | ONE | `1` | type one |
 | TWO | `2` | type two |
+
+
+
+-
 
 
 
@@ -56,6 +64,10 @@ Pump an idiot full of volts
 
 
 
+-
+
+
+
 <a name="eType"></a>
 ## enum: eType
 **Properties**
@@ -74,5 +86,9 @@ Pump an idiot full of volts
     </tr>
   </tbody>
 </table>
+
+
+
+-
 
 
