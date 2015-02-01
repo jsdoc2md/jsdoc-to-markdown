@@ -19,7 +19,7 @@ this is equivalent to:
 ```
 
 <a name="Animal"></a>
-##class: Animal
+## class: Animal
 Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).
 
 - some markdown
@@ -36,21 +36,21 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
     * [enum: .eMood](#Animal.eMood)
 
 <a name="new_Animal_new"></a>
-###new Animal(species, parents)
+### new Animal(species, parents)
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
 
 <a name="Animal#age"></a>
-###animal.age → <code>number</code>
+### animal.age → <code>number</code>
 the current age
 
 **Default**: `0`  
 <a name="Animal#species"></a>
-###animal.species → <code>[Species](#Species)</code>
+### animal.species → <code>[Species](#Species)</code>
 <a name="Animal.eMood"></a>
-###enum: Animal.eMood
+### enum: Animal.eMood
 Animal moods
 
 **Properties**
@@ -75,7 +75,7 @@ The template looks like this:
 ```
 
 <a name="Animal"></a>
-##class: Animal
+## class: Animal
 Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).
 
 - some markdown

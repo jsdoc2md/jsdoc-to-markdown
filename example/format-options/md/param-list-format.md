@@ -1,6 +1,6 @@
 #param-list-format = list
 <a name="taze"></a>
-##~~taze(victim, [options], [done])~~
+## ~~taze(victim, [options], [done])~~
 ***Deprecated***
 
 Pump an idiot full of volts
@@ -17,7 +17,7 @@ Pump an idiot full of volts
 
 #param-list-format = table
 <a name="taze"></a>
-##~~taze(victim, [options], [done])~~
+## ~~taze(victim, [options], [done])~~
 ***Deprecated***
 
 Pump an idiot full of volts

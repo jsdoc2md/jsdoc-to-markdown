@@ -1,5 +1,5 @@
 #module-index-format = dl
-##Modules
+## Modules
 <dl>
 <dt><a href="#module_animal">animal</a></dt>
 <dd><p>Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).</p>
@@ -36,7 +36,7 @@
 
 
 #module-index-format = grouped
-##Modules
+## Modules
 * [animal](#module_animal)
   * [class: ~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
@@ -60,7 +60,7 @@
 
 
 #module-index-format = table
-##Modules
+## Modules
 <table>
   <thead>
     <tr>

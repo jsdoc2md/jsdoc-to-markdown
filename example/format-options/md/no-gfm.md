@@ -1,6 +1,6 @@
 #without no-gfm set
 <a name="taze"></a>
-##~~taze(victim, [options], [done])~~
+## ~~taze(victim, [options], [done])~~
 ***Deprecated***
 
 Pump an idiot full of volts
@@ -16,7 +16,7 @@ Pump an idiot full of volts
 
 
 <a name="eType"></a>
-##enum: eType
+## enum: eType
 **Properties**
 
 | Name | Default | Description |
@@ -28,7 +28,7 @@ Pump an idiot full of volts
 
 #no-gfm
 <a name="taze"></a>
-##<del>taze(victim, [options], [done])</del>
+## <del>taze(victim, [options], [done])</del>
 ***Deprecated***
 
 Pump an idiot full of volts
@@ -57,7 +57,7 @@ Pump an idiot full of volts
 
 
 <a name="eType"></a>
-##enum: eType
+## enum: eType
 **Properties**
 
 <table>

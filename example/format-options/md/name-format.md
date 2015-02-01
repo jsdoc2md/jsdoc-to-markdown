@@ -1,7 +1,7 @@
 #name-format
 This demonstrates how docs look using the `--name-format` flag - all identifier names are formatted as code.
 
-##Modules
+## Modules
 <dl>
 <dt><a href="#module_animal">animal</a></dt>
 <dd><p>Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).</p>
@@ -36,7 +36,7 @@ This demonstrates how docs look using the `--name-format` flag - all identifier 
 </dd>
 </dl>
 <a name="module_animal"></a>
-##animal
+## animal
 Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).
 
 | yeah | desc |
@@ -59,7 +59,7 @@ var animal = require("animal");
       * [`enum: .eMood`](#module_animal..Animal.eMood)
 
 <a name="module_animal..Animal"></a>
-###class: animal~Animal
+### class: animal~Animal
 
 * [class: ~Animal](#module_animal..Animal)
   * [`new Animal(species, parents)`](#new_module_animal..Animal_new)
@@ -70,21 +70,21 @@ var animal = require("animal");
     * [`enum: .eMood`](#module_animal..Animal.eMood)
 
 <a name="new_module_animal..Animal_new"></a>
-####`new Animal(species, parents)`
+#### `new Animal(species, parents)`
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
 
 <a name="module_animal..Animal#age"></a>
-####`animal.age` → <code>number</code>
+#### `animal.age` → <code>number</code>
 the current age
 
 **Default**: `0`  
 <a name="module_animal..Animal#species"></a>
-####`animal.species` → <code>Species</code>
+#### `animal.species` → <code>Species</code>
 <a name="module_animal..Animal.eMood"></a>
-####`enum: Animal.eMood`
+#### `enum: Animal.eMood`
 Animal moods
 
 **Properties**
@@ -96,7 +96,7 @@ Animal moods
 | hungry | `2` | need to eat |
 
 <a name="module_builder"></a>
-##builder
+## builder
 Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.
 
 
@@ -106,22 +106,22 @@ Aside from humans, who are the most prolific and versatile builders, building be
     * [`.repair()`](#module_builder..builder.repair)
 
 <a name="module_builder..builder"></a>
-###`mixin: builder~builder`
+### `mixin: builder~builder`
 
 * [`mixin: ~builder`](#module_builder..builder)
   * [`.construct()`](#module_builder..builder.construct)
   * [`.repair()`](#module_builder..builder.repair)
 
 <a name="module_builder..builder.construct"></a>
-####`builder.construct()`
+#### `builder.construct()`
 construct something
 
 <a name="module_builder..builder.repair"></a>
-####`builder.repair()`
+#### `builder.repair()`
 repair something
 
 <a name="module_species"></a>
-##species
+## species
 In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into "infraspecific taxa" such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).
 
 
@@ -134,7 +134,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
       * [`.merge(one, two)`](#module_species..Species.merge) ⇒ <code>Species</code>
 
 <a name="module_species..Species"></a>
-###class: species~Species
+### class: species~Species
 
 * [class: ~Species](#module_species..Species)
   * _instance_
@@ -144,13 +144,13 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
     * [`.merge(one, two)`](#module_species..Species.merge) ⇒ <code>Species</code>
 
 <a name="module_species..Species#name"></a>
-####`species.name` → <code>string</code>
+#### `species.name` → <code>string</code>
 the species name
 
 <a name="module_species..Species#species"></a>
-####`species.species` → <code>Species</code>
+#### `species.species` → <code>Species</code>
 <a name="module_species..Species.merge"></a>
-####`Species.merge(one, two)` ⇒ <code>Species</code>
+#### `Species.merge(one, two)` ⇒ <code>Species</code>
 merge two species into a new one
 
 | Param | Type | Description |

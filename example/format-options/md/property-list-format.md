@@ -1,6 +1,6 @@
 #property-list-format = list
 <a name="eType"></a>
-##enum: eType
+## enum: eType
 **Properties**
 
 - ONE  - type one  
@@ -10,7 +10,7 @@
 
 #property-list-format = table
 <a name="eType"></a>
-##enum: eType
+## enum: eType
 **Properties**
 
 | Name | Default | Description |
