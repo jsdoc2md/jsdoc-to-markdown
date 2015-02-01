@@ -35,10 +35,6 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
   * _static_
     * [enum: .eMood](#Animal.eMood)
 
-
-
--
-
 <a name="new_Animal_new"></a>
 ### new Animal(species, parents)
 | Param | Type | Description |
@@ -46,25 +42,13 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
 
-
-
--
-
 <a name="Animal#age"></a>
 ### animal.age → <code>number</code>
 the current age
 
 **Default**: `0`  
-
-
--
-
 <a name="Animal#species"></a>
 ### animal.species → <code>[Species](#Species)</code>
-
-
--
-
 <a name="Animal.eMood"></a>
 ### enum: Animal.eMood
 Animal moods
@@ -76,10 +60,6 @@ Animal moods
 | satisfied | `0` | chilling |
 | angry | `1` | pissed off |
 | hungry | `2` | need to eat |
-
-
-
--
 
 
 

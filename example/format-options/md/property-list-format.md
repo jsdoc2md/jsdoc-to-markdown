@@ -8,10 +8,6 @@
 
 
 
--
-
-
-
 #property-list-format = table
 <a name="eType"></a>
 ## enum: eType
@@ -21,9 +17,5 @@
 | --- | --- | --- |
 | ONE | `1` | type one |
 | TWO | `2` | type two |
-
-
-
--
 
 

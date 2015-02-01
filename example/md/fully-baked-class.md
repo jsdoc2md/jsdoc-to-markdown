@@ -40,10 +40,6 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
     * ["pop" (zoop)](#FurQ#event_pop)
     * ["slap"](#FurQ#event_slap)
 
-
-
--
-
 <a name="new_FurQ_new"></a>
 ### new FurQ()
 She's an Uzi lover. 
@@ -54,10 +50,6 @@ She's an Uzi lover.
 ```js
 var uziLover = require("FurQ");
 ```
-
-
--
-
 <a name="FurQ#wannaTryIt"></a>
 ### furQ.wannaTryIt → <code>string</code>
 **Default**: `bitch`  
@@ -65,10 +57,6 @@ var uziLover = require("FurQ");
 
 - "Uzi like a metal dick in my hand."
 - "Magazine like a big testicle gland."
-
-
-
--
 
 <a name="FurQ#kill"></a>
 ### furQ.kill()
@@ -83,10 +71,6 @@ var kill = uziLover.kill();
 ```js
 uziLover.kill();
 ```
-
-
--
-
 <a name="FurQ#respect"></a>
 ### furQ.respect(done)
 respect
@@ -101,33 +85,17 @@ uziLover.respect(function(err, gain){
     console.log(gain);
 });
 ```
-
-
--
-
 <a name="FurQ#spit"></a>
 ### furQ.spit()
 override
-
-
-
--
 
 <a name="FurQ#punch"></a>
 ### furQ.punch()
 to plant ones fist in a buster's mush
 
-
-
--
-
 <a name="FurQ#LOVE"></a>
 ### const: furQ.LOVE → <code>string</code>
 **Default**: `UZI`  
-
-
--
-
 <a name="FurQ#event_pop"></a>
 ### event: "pop" (zoop)
 fire weapon
@@ -136,17 +104,9 @@ fire weapon
 | --- | --- | --- |
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
 
-
-
--
-
 <a name="FurQ#event_slap"></a>
 ### event: "slap"
 slap man
-
-
-
--
 
 <a name="FurQ.enemy"></a>
 ### enum: FurQ.enemy → <code>number</code>
@@ -161,10 +121,6 @@ FUR-Q enemy types
 | BITCH | <code>number</code> | `1` |  |
 | MUTHAFUCKA | <code>number</code> | `2` |  |
 
-
-
--
-
 <a name="FurQ.peace"></a>
 ### ~~FurQ.peace()~~
 ***Deprecated***
@@ -175,10 +131,6 @@ check if at peace
 ```js
 var peace = FurQ.peace();
 ```
-
-
--
-
 <a name="FurQ..onRespect"></a>
 ### callback: FurQ~onRespect → <code>function</code>
 Passed to [respect](#FurQ#respect)
@@ -187,10 +139,6 @@ Passed to [respect](#FurQ#respect)
 | --- | --- | --- |
 | err | <code>Error</code> | an issue with the punch |
 | gain | <code>\*</code> | the respect percentage gained |
-
-
-
--
 
 <a name="Rapper"></a>
 ## class: Rapper
@@ -204,25 +152,13 @@ Passed to [respect](#FurQ#respect)
       * [class: ~School](#Rapper.train..School)
         * [new School()](#new_Rapper.train..School_new)
 
-
-
--
-
 <a name="Rapper#spit"></a>
 ### rapper.spit()
 spit
 
-
-
--
-
 <a name="Rapper#battle"></a>
 ### rapper.battle()
 battle
-
-
-
--
 
 <a name="Rapper.train"></a>
 ### Rapper.train()
@@ -233,29 +169,13 @@ train new rappers
   * [class: ~School](#Rapper.train..School)
     * [new School()](#new_Rapper.train..School_new)
 
-
-
--
-
 <a name="Rapper.train..School"></a>
 #### class: train~School
-
-
--
-
 <a name="new_Rapper.train..School_new"></a>
 ##### new School()
 rap school
 
-
-
--
-
 <a name="plant"></a>
 ## plant()
 to plant ones fist in a buster's mush
-
-
-
--
 

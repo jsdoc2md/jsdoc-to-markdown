@@ -3,8 +3,24 @@
 
 {{#enum name="eType"}}{{>docs}}{{/enum}}
 
+{{optionSet "separators" true ~}}
+separator  
+{{>separator~}}
+with  
+{{>separator~}}
+gfm  
+{{optionSet "separators" false ~}}
+
 {{optionSet "no-gfm" true ~}}
 #no-gfm
 {{#function name="taze"}}{{>docs}}{{/function}}
 
 {{#enum name="eType"}}{{>docs}}{{/enum}}
+
+{{optionSet "separators" true ~}}
+separator  
+{{>separator~}}
+with-out  
+{{>separator~}}
+gfm  
+{{optionSet "separators" false ~}}

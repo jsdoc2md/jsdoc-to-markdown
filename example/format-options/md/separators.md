@@ -55,8 +55,6 @@ var animal = require("animal");
     * _static_
       * [enum: .eMood](#module_animal..Animal.eMood)
 
-* * *
-
 
 -
 
@@ -71,8 +69,6 @@ var animal = require("animal");
   * _static_
     * [enum: .eMood](#module_animal..Animal.eMood)
 
-* * *
-
 
 -
 
@@ -83,8 +79,6 @@ var animal = require("animal");
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
 
-* * *
-
 
 -
 
@@ -93,15 +87,11 @@ var animal = require("animal");
 the current age
 
 **Default**: `0`  
-* * *
-
 
 -
 
 <a name="module_animal..Animal#species"></a>
 #### animal.species → <code>Species</code>
-* * *
-
 
 -
 
@@ -117,8 +107,6 @@ Animal moods
 | angry | `1` | pissed off |
 | hungry | `2` | need to eat |
 
-* * *
-
 
 -
 
@@ -132,8 +120,6 @@ Aside from humans, who are the most prolific and versatile builders, building be
     * [.construct()](#module_builder..builder.construct)
     * [.repair()](#module_builder..builder.repair)
 
-* * *
-
 
 -
 
@@ -144,8 +130,6 @@ Aside from humans, who are the most prolific and versatile builders, building be
   * [.construct()](#module_builder..builder.construct)
   * [.repair()](#module_builder..builder.repair)
 
-* * *
-
 
 -
 
@@ -153,16 +137,12 @@ Aside from humans, who are the most prolific and versatile builders, building be
 #### builder.construct()
 construct something
 
-* * *
-
 
 -
 
 <a name="module_builder..builder.repair"></a>
 #### builder.repair()
 repair something
-
-* * *
 
 
 -
@@ -180,8 +160,6 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
     * _static_
       * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
-* * *
-
 
 -
 
@@ -195,8 +173,6 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
   * _static_
     * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
-* * *
-
 
 -
 
@@ -204,15 +180,11 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 #### species.name → <code>string</code>
 the species name
 
-* * *
-
 
 -
 
 <a name="module_species..Species#species"></a>
 #### species.species → <code>Species</code>
-* * *
-
 
 -
 
@@ -224,8 +196,6 @@ merge two species into a new one
 | --- | --- | --- |
 | one | <code>Species</code> | first |
 | two | <code>Species</code> | second |
-
-* * *
 
 
 -

@@ -15,10 +15,6 @@ Pump an idiot full of volts
 
 
 
--
-
-
-
 <a name="eType"></a>
 ## enum: eType
 **Properties**
@@ -30,10 +26,15 @@ Pump an idiot full of volts
 
 
 
+separator  
+
 -
 
+with  
 
+-
 
+gfm  
 #no-gfm
 <a name="taze"></a>
 ## <del>taze(victim, [options], [done])</del>
@@ -64,10 +65,6 @@ Pump an idiot full of volts
 
 
 
--
-
-
-
 <a name="eType"></a>
 ## enum: eType
 **Properties**
@@ -89,6 +86,12 @@ Pump an idiot full of volts
 
 
 
--
+separator  
 
+* * *
 
+with-out  
+
+* * *
+
+gfm  

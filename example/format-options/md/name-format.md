@@ -58,10 +58,6 @@ var animal = require("animal");
     * _static_
       * [`enum: .eMood`](#module_animal..Animal.eMood)
 
-
-
--
-
 <a name="module_animal..Animal"></a>
 ### class: animal~Animal
 
@@ -73,10 +69,6 @@ var animal = require("animal");
   * _static_
     * [`enum: .eMood`](#module_animal..Animal.eMood)
 
-
-
--
-
 <a name="new_module_animal..Animal_new"></a>
 #### `new Animal(species, parents)`
 | Param | Type | Description |
@@ -84,25 +76,13 @@ var animal = require("animal");
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
 
-
-
--
-
 <a name="module_animal..Animal#age"></a>
 #### `animal.age` → <code>number</code>
 the current age
 
 **Default**: `0`  
-
-
--
-
 <a name="module_animal..Animal#species"></a>
 #### `animal.species` → <code>Species</code>
-
-
--
-
 <a name="module_animal..Animal.eMood"></a>
 #### `enum: Animal.eMood`
 Animal moods
@@ -115,10 +95,6 @@ Animal moods
 | angry | `1` | pissed off |
 | hungry | `2` | need to eat |
 
-
-
--
-
 <a name="module_builder"></a>
 ## builder
 Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.
@@ -129,10 +105,6 @@ Aside from humans, who are the most prolific and versatile builders, building be
     * [`.construct()`](#module_builder..builder.construct)
     * [`.repair()`](#module_builder..builder.repair)
 
-
-
--
-
 <a name="module_builder..builder"></a>
 ### `mixin: builder~builder`
 
@@ -140,25 +112,13 @@ Aside from humans, who are the most prolific and versatile builders, building be
   * [`.construct()`](#module_builder..builder.construct)
   * [`.repair()`](#module_builder..builder.repair)
 
-
-
--
-
 <a name="module_builder..builder.construct"></a>
 #### `builder.construct()`
 construct something
 
-
-
--
-
 <a name="module_builder..builder.repair"></a>
 #### `builder.repair()`
 repair something
-
-
-
--
 
 <a name="module_species"></a>
 ## species
@@ -173,10 +133,6 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
     * _static_
       * [`.merge(one, two)`](#module_species..Species.merge) ⇒ <code>Species</code>
 
-
-
--
-
 <a name="module_species..Species"></a>
 ### class: species~Species
 
@@ -187,24 +143,12 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
   * _static_
     * [`.merge(one, two)`](#module_species..Species.merge) ⇒ <code>Species</code>
 
-
-
--
-
 <a name="module_species..Species#name"></a>
 #### `species.name` → <code>string</code>
 the species name
 
-
-
--
-
 <a name="module_species..Species#species"></a>
 #### `species.species` → <code>Species</code>
-
-
--
-
 <a name="module_species..Species.merge"></a>
 #### `Species.merge(one, two)` ⇒ <code>Species</code>
 merge two species into a new one
@@ -213,9 +157,5 @@ merge two species into a new one
 | --- | --- | --- |
 | one | <code>Species</code> | first |
 | two | <code>Species</code> | second |
-
-
-
--
 
 
