@@ -19,26 +19,21 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Author:** Chris Morris  
 
-* [class: FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
+* [FurQ](#FurQ) → <code>class</code>  ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
-  * _instance_
-    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
-    * [.kill()](#FurQ#kill)
-    * [.respect(done)](#FurQ#respect)
-    * [.punch()](#FurQ#punch)
-    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
-  * _static_
-    * [enum: .enemy](#FurQ.enemy) → <code>number</code>
-    * ~~[.peace()](#FurQ.peace)~~
-  * _overrides_
-    * [.spit()](#FurQ#spit)
-  * _inherits_
-    * [.battle()](#Rapper#battle)
+  * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+  * [.LOVE](#FurQ#LOVE) → <code>string</code>
+  * [.kill()](#FurQ#kill)
+  * [.respect(done)](#FurQ#respect)
+  * [.punch()](#FurQ#punch)
+  * [.spit()](#FurQ#spit)
+  * [.battle()](#Rapper#battle) 
+  * ["pop" (zoop)](#FurQ#event_pop)
+  * ["slap"](#FurQ#event_slap)    
+* [FurQ.enemy](#FurQ.enemy) → <code>number</code>
+* ~~[FurQ.peace()](#FurQ.peace)~~
   * _inner_
     * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
-  * _events_
-    * ["pop" (zoop)](#FurQ#event_pop)
-    * ["slap"](#FurQ#event_slap)
 
 <a name="new_FurQ_new"></a>
 ### new FurQ()
@@ -48,10 +43,10 @@ She's an Uzi lover.
 
 **Example**  
 ```js
-var uziLover = require("FurQ");
+var FurQ = require("FurQ");
 ```
 <a name="FurQ#wannaTryIt"></a>
-### furQ.wannaTryIt → <code>string</code>
+### FurQ.wannaTryIt → <code>string</code>
 **Default**: `bitch`  
 **See**
 
@@ -59,20 +54,20 @@ var uziLover = require("FurQ");
 - "Magazine like a big testicle gland."
 
 <a name="FurQ#kill"></a>
-### furQ.kill()
+### FurQ.kill()
 kill
 
 **Example**  
 ```js
-var kill = uziLover.kill();
+var kill = FurQ.kill();
     
 ```
 **Example**  
 ```js
-uziLover.kill();
+FurQ.kill();
 ```
 <a name="FurQ#respect"></a>
-### furQ.respect(done)
+### FurQ.respect(done)
 respect
 
 | Param | Type | Description |
@@ -81,21 +76,23 @@ respect
 
 **Example**  
 ```js
-uziLover.respect(function(err, gain){
+FurQ.respect(function(err, gain){
     console.log(gain);
 });
 ```
 <a name="FurQ#spit"></a>
-### furQ.spit()
+### FurQ.spit()
 override
 
 <a name="FurQ#punch"></a>
-### furQ.punch()
+### FurQ.punch()
 to plant ones fist in a buster's mush
 
 <a name="FurQ#LOVE"></a>
-### const: furQ.LOVE → <code>string</code>
+### FurQ.LOVE → <code>string</code>
 **Default**: `UZI`  
+**Kind**: Constant  
+
 <a name="FurQ#event_pop"></a>
 ### event: "pop" (zoop)
 fire weapon
@@ -109,10 +106,11 @@ fire weapon
 slap man
 
 <a name="FurQ.enemy"></a>
-### enum: FurQ.enemy → <code>number</code>
+### FurQ.enemy → <code>number</code>
 FUR-Q enemy types
 
 **Read only**: true  
+**Kind**: enum  
 **Properties**
 
 | Name | Type | Default | Description |
@@ -147,10 +145,6 @@ Passed to [respect](#FurQ#respect)
   * _instance_
     * [.spit()](#Rapper#spit)
     * [.battle()](#Rapper#battle)
-  * _static_
-    * [.train()](#Rapper.train)
-      * [class: ~School](#Rapper.train..School)
-        * [new School()](#new_Rapper.train..School_new)
 
 <a name="Rapper#spit"></a>
 ### rapper.spit()
@@ -159,21 +153,6 @@ spit
 <a name="Rapper#battle"></a>
 ### rapper.battle()
 battle
-
-<a name="Rapper.train"></a>
-### Rapper.train()
-train new rappers
-
-
-* [.train()](#Rapper.train)
-  * [class: ~School](#Rapper.train..School)
-    * [new School()](#new_Rapper.train..School_new)
-
-<a name="Rapper.train..School"></a>
-#### class: train~School
-<a name="new_Rapper.train..School_new"></a>
-##### new School()
-rap school
 
 <a name="plant"></a>
 ## plant()

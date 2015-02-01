@@ -15,11 +15,11 @@ She's an Uzi lover.
 @extends Rapper
 @author Chris Morris
 @borrows plant as #punch
-@fires UZILover#pop
-@fires UZILover#slap
-@example var uziLover = require("UZILover");
+@fires FurQ#pop
+@fires FurQ#slap
+@example var uziLover = require("FurQ");
 */
-function UZILover(){
+function FurQ(){
     /**
     kill
     @example var kill = uziLover.kill();
@@ -28,7 +28,7 @@ function UZILover(){
     this.kill = function(){};
     /**
     * respect
-    * @param {UZILover~onRespect} - called on reciprocation of respect
+    * @param {FurQ~onRespect} - called on reciprocation of respect
     * @example 
     * uziLover.respect(function(err, gain){
     *     console.log(gain);
@@ -53,29 +53,34 @@ function UZILover(){
     this.wannaTryIt= "bitch";
     
     /**
+    override
+    */
+    this.spit = function(){};
+    
+    /**
     fire weapon
-    @event UZILover#pop
+    @event FurQ#pop
     @param zoop {boolean} - make 'zooping' sound as you fire
     */
     /**
     slap man 
-    @event UZILover#slap
+    @event FurQ#slap
     */
 }
 
 /**
 check if at peace
 @deprecated
-@example var peace = UZILover.peace();
+@example var peace = FurQ.peace();
 */
-UZILover.peace = function(){};
+FurQ.peace = function(){};
 
 /**
 FUR-Q enemy types
 @enum {number}
 @readonly
 */
-UZILover.enemy = {
+FurQ.enemy = {
     /**
     an awful individual
     */
@@ -91,10 +96,10 @@ to plant ones fist in a buster's mush
 function plant(){};
 
 /**
-Passed to {@link UZILover#respect}
-@callback UZILover~onRespect
+Passed to {@link FurQ#respect}
+@callback FurQ~onRespect
 @param err {Error} - an issue with the punch
-@param gain {number} - the respect percentage gained
+@param gain {*} - the respect percentage gained
 */
 
 
@@ -111,3 +116,14 @@ function Rapper(){
     */
     this.battle = function(){};
 }
+/**
+train new rappers
+*/
+Rapper.train = function(){
+    /**
+    rap school
+    @class
+    */
+    function School(){}
+    return new School();
+};

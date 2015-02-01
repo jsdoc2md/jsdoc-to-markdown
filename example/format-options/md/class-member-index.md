@@ -15,26 +15,34 @@
 
 -
 
-* [class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>
-  * [new UZILover()](#new_UZILover_new)
-  * [uziLover.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
-  * [uziLover.kill()](#UZILover#kill)
-  * [uziLover.respect(done)](#UZILover#respect)
-  * [uziLover.spit()](#UZILover#spit)
-  * [uziLover.battle()](#UZILover#battle)
-  * [uziLover.punch()](#UZILover#punch)
-  * [const: uziLover.LOVE](#UZILover#LOVE) → <code>string</code>
-  * [event: "pop" (zoop)](#UZILover#event_pop)
-  * [event: "slap"](#UZILover#event_slap)
-  * [enum: UZILover.enemy](#UZILover.enemy) → <code>number</code>
-  * [~~UZILover.peace()~~](#UZILover.peace)
-  * [callback: UZILover~onRespect](#UZILover..onRespect) → <code>function</code>
+* [class: FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
+  * [new FurQ()](#new_FurQ_new)
+  * [furQ.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+  * [furQ.kill()](#FurQ#kill)
+  * [furQ.respect(done)](#FurQ#respect)
+  * [furQ.spit()](#FurQ#spit)
+  * [furQ.battle()](#FurQ#battle)
+  * [furQ.punch()](#FurQ#punch)
+  * [const: furQ.LOVE](#FurQ#LOVE) → <code>string</code>
+  * [event: "pop" (zoop)](#FurQ#event_pop)
+  * [event: "slap"](#FurQ#event_slap)
+  * [enum: FurQ.enemy](#FurQ.enemy) → <code>number</code>
+  * [~~FurQ.peace()~~](#FurQ.peace)
+  * [callback: FurQ~onRespect](#FurQ..onRespect) → <code>function</code>
 
 -
 
 * [class: Rapper](#Rapper)
   * [rapper.spit()](#Rapper#spit)
   * [rapper.battle()](#Rapper#battle)
+  * [Rapper.train()](#Rapper.train)
+    * [class: ~School](#Rapper.train..School)
+      * [new School()](#new_Rapper.train..School_new)
+
+-
+
+* [class: ~School](#Rapper.train..School)
+  * [new School()](#new_Rapper.train..School_new)
 
 -
 
@@ -67,25 +75,26 @@
 
 -
 
-* [class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>
-  * [new UZILover()](#new_UZILover_new)
+* [class: FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
+  * [new FurQ()](#new_FurQ_new)
   * _instance_
-    * [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
-    * [.kill()](#UZILover#kill)
-    * [.respect(done)](#UZILover#respect)
-    * [.punch()](#UZILover#punch)
-    * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
+    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [.kill()](#FurQ#kill)
+    * [.respect(done)](#FurQ#respect)
+    * [.punch()](#FurQ#punch)
+    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
   * _static_
-    * [enum: .enemy](#UZILover.enemy) → <code>number</code>
-    * ~~[.peace()](#UZILover.peace)~~
+    * [enum: .enemy](#FurQ.enemy) → <code>number</code>
+    * ~~[.peace()](#FurQ.peace)~~
+  * _overrides_
+    * [.spit()](#FurQ#spit)
   * _inherits_
-    * [.spit()](#Rapper#spit)
     * [.battle()](#Rapper#battle)
   * _inner_
-    * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
+    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
   * _events_
-    * ["pop" (zoop)](#UZILover#event_pop)
-    * ["slap"](#UZILover#event_slap)
+    * ["pop" (zoop)](#FurQ#event_pop)
+    * ["slap"](#FurQ#event_slap)
 
 -
 
@@ -93,6 +102,15 @@
   * _instance_
     * [.spit()](#Rapper#spit)
     * [.battle()](#Rapper#battle)
+  * _static_
+    * [.train()](#Rapper.train)
+      * [class: ~School](#Rapper.train..School)
+        * [new School()](#new_Rapper.train..School_new)
+
+-
+
+* [class: ~School](#Rapper.train..School)
+  * [new School()](#new_Rapper.train..School_new)
 
 -
 

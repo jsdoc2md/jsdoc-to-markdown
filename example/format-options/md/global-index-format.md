@@ -12,7 +12,7 @@
 <dt><a href="#Species">class: Species</a></dt>
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
-<dt><a href="#UZILover">class: UZILover</a> ⇐ <code><a href="#Rapper">Rapper</a></code></dt>
+<dt><a href="#FurQ">class: FurQ</a> ⇐ <code><a href="#Rapper">Rapper</a></code></dt>
 <dd><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
 </dd>
 <dt><a href="#Rapper">class: Rapper</a></dt>
@@ -23,6 +23,8 @@
 <dt><a href="#eType">enum: eType</a></dt>
 <dd></dd>
 <dt><a href="#missle">missle</a> → <code>object</code></dt>
+<dd></dd>
+<dt><a href="#personality">personality</a> → <code>object</code></dt>
 <dd></dd>
 <dt><del><a href="#taze">taze(victim, [options], [done])</a></del></dt>
 <dd><p>Pump an idiot full of volts</p>
@@ -51,29 +53,34 @@
     * [.species](#Species#species) → <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
-* [class: UZILover](#UZILover) ⇐ <code>[Rapper](#Rapper)</code>
-  * [new UZILover()](#new_UZILover_new)
+* [class: FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
+  * [new FurQ()](#new_FurQ_new)
   * _instance_
-    * [.wannaTryIt](#UZILover#wannaTryIt) → <code>string</code>
-    * [.kill()](#UZILover#kill)
-    * [.respect(done)](#UZILover#respect)
-    * [.punch()](#UZILover#punch)
-    * [const: .LOVE](#UZILover#LOVE) → <code>string</code>
+    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [.kill()](#FurQ#kill)
+    * [.respect(done)](#FurQ#respect)
+    * [.punch()](#FurQ#punch)
+    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
   * _static_
-    * [enum: .enemy](#UZILover.enemy) → <code>number</code>
-    * ~~[.peace()](#UZILover.peace)~~
+    * [enum: .enemy](#FurQ.enemy) → <code>number</code>
+    * ~~[.peace()](#FurQ.peace)~~
+  * _overrides_
+    * [.spit()](#FurQ#spit)
   * _inherits_
-    * [.spit()](#Rapper#spit)
     * [.battle()](#Rapper#battle)
   * _inner_
-    * [callback: ~onRespect](#UZILover..onRespect) → <code>function</code>
+    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
   * _events_
-    * ["pop" (zoop)](#UZILover#event_pop)
-    * ["slap"](#UZILover#event_slap)
+    * ["pop" (zoop)](#FurQ#event_pop)
+    * ["slap"](#FurQ#event_slap)
 * [class: Rapper](#Rapper)
   * _instance_
     * [.spit()](#Rapper#spit)
     * [.battle()](#Rapper#battle)
+  * _static_
+    * [.train()](#Rapper.train)
+      * [class: ~School](#Rapper.train..School)
+        * [new School()](#new_Rapper.train..School_new)
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
@@ -83,6 +90,7 @@
   * [.ballistic](#missle.ballistic) → <code>boolean</code>
   * [.hydrogen](#missle.hydrogen)
   * [.megaton](#missle.megaton) → <code>number</code>
+* [personality](#personality) → <code>object</code>
 * ~~[taze(victim, [options], [done])](#taze)~~
 * [protection(cloak, dagger)](#protection) ⇒ <code>survival</code>
 * [plant()](#plant)
@@ -114,7 +122,7 @@
 </td>
     </tr>
 <tr>
-    <td><a href="#UZILover">class: UZILover</a> ⇐ <code><a href="#Rapper">Rapper</a></code></td>
+    <td><a href="#FurQ">class: FurQ</a> ⇐ <code><a href="#Rapper">Rapper</a></code></td>
     <td><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
 </td>
     </tr>
@@ -133,6 +141,10 @@
     </tr>
 <tr>
     <td><a href="#missle">missle</a> → <code>object</code></td>
+    <td></td>
+    </tr>
+<tr>
+    <td><a href="#personality">personality</a> → <code>object</code></td>
     <td></td>
     </tr>
 <tr>

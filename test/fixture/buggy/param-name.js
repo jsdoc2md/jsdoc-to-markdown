@@ -1,6 +1,15 @@
 /**
-@param {object} - The options
-@param {string} - An option
-@param {function} - a callback invoked on completion
+@param {object}
 */
-function operate(options, callback){}
+function operate(options){}
+
+/**
+an object
+*/
+var yeah = {
+    /**
+    a method
+    @param {string}
+    */
+    one: function(thing){}
+};

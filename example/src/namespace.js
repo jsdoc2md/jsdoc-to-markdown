@@ -28,3 +28,19 @@ var missle = {
     megaton: 200,
     destruction: "total"
 };
+
+/**
+@namespace
+@property openness {object} - openness
+@property conscientiousness {object} - conscientiousness
+@property extraversion {*} - extraversion
+@property agreeableness {object} - agreeableness
+@property neuroticism {object} - neuroticism
+*/
+var personality = {
+    openness: "",
+    conscientiousness: "", 
+    extraversion: "", 
+    agreeableness: "", 
+    neuroticism: ""
+};
