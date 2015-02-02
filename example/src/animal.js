@@ -14,7 +14,7 @@ function Animal(species, parents){
     /**
     the current age
     @type {number}
-    @default 0
+    @default
     */
     this.age = 0;
 

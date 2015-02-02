@@ -272,7 +272,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 ### animal.age → <code>number</code>
 the current age
 
-**Default**: <code>&quot;0&quot;</code>  
+**Default**: <code>0</code>  
 
 -
 
@@ -612,7 +612,7 @@ repair something
 ### missle.range → <code>number</code>
 missile range
 
-**Default**: <code>&quot;100000&quot;</code>  
+**Default**: <code>100000</code>  
 
 -
 
@@ -620,7 +620,7 @@ missile range
 ### missle.ballistic → <code>boolean</code>
 ballistic
 
-**Default**: <code>&quot;true&quot;</code>  
+**Default**: <code>true</code>  
 
 -
 
@@ -635,7 +635,7 @@ hydrogen bomb?
 ### missle.megaton → <code>number</code>
 number of megatons
 
-**Default**: <code>&quot;200&quot;</code>  
+**Default**: <code>200</code>  
 
 -
 

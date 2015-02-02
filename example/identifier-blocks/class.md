@@ -46,7 +46,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 ### animal.age → <code>number</code>
 the current age
 
-**Default**: <code>&quot;0&quot;</code>  
+**Default**: <code>0</code>  
 <a name="Animal#species"></a>
 ### animal.species → <code>[Species](#Species)</code>
 <a name="Animal.eMood"></a>

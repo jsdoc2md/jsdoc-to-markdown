@@ -4,14 +4,14 @@
 var missle = {
     /**
     missile range
-    @default 100000
+    @default
     @type {number}
     */
     range: 100000,
 
     /**
     ballistic
-    @default true
+    @default
     @type {boolean}
     */
     ballistic: true,
@@ -22,7 +22,7 @@ var missle = {
 
     /**
     number of megatons
-    @default 200
+    @default
     @type {number}
     */
     megaton: 200,
