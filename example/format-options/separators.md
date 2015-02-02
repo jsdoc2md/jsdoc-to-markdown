@@ -86,7 +86,7 @@ var animal = require("animal");
 #### animal.age → <code>number</code>
 the current age
 
-**Default**: `0`  
+**Default**: <code>&quot;0&quot;</code>  
 
 -
 
@@ -103,9 +103,9 @@ Animal moods
 
 | Name | Default | Description |
 | --- | --- | --- |
-| satisfied | `0` | chilling |
-| angry | `1` | pissed off |
-| hungry | `2` | need to eat |
+| satisfied | <code>0</code> | chilling |
+| angry | <code>1</code> | pissed off |
+| hungry | <code>2</code> | need to eat |
 
 
 -

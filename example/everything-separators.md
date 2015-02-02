@@ -124,7 +124,7 @@ var animal = require("animal");
 #### animal.age → <code>number</code>
 the current age
 
-**Default**: `0`  
+**Default**: <code>&quot;0&quot;</code>  
 
 -
 
@@ -141,9 +141,9 @@ Animal moods
 
 | Name | Default | Description |
 | --- | --- | --- |
-| satisfied | `0` | chilling |
-| angry | `1` | pissed off |
-| hungry | `2` | need to eat |
+| satisfied | <code>0</code> | chilling |
+| angry | <code>1</code> | pissed off |
+| hungry | <code>2</code> | need to eat |
 
 
 -
@@ -272,7 +272,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 ### animal.age → <code>number</code>
 the current age
 
-**Default**: `0`  
+**Default**: <code>&quot;0&quot;</code>  
 
 -
 
@@ -289,9 +289,9 @@ Animal moods
 
 | Name | Default | Description |
 | --- | --- | --- |
-| satisfied | `0` | chilling |
-| angry | `1` | pissed off |
-| hungry | `2` | need to eat |
+| satisfied | <code>0</code> | chilling |
+| angry | <code>1</code> | pissed off |
+| hungry | <code>2</code> | need to eat |
 
 
 -
@@ -384,7 +384,7 @@ var uziLover = require("FurQ");
 
 <a name="FurQ#wannaTryIt"></a>
 ### furQ.wannaTryIt → <code>string</code>
-**Default**: `bitch`  
+**Default**: <code>&quot;bitch&quot;</code>  
 **See**
 
 - "Uzi like a metal dick in my hand."
@@ -442,7 +442,7 @@ to plant ones fist in a buster's mush
 
 <a name="FurQ#LOVE"></a>
 ### const: furQ.LOVE → <code>string</code>
-**Default**: `UZI`  
+**Default**: <code>&quot;UZI&quot;</code>  
 
 -
 
@@ -473,9 +473,9 @@ FUR-Q enemy types
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| COCK | <code>number</code> | `0` | an awful individual |
-| BITCH | <code>number</code> | `1` |  |
-| MUTHAFUCKA | <code>number</code> | `2` |  |
+| COCK | <code>number</code> | <code>0</code> | an awful individual |
+| BITCH | <code>number</code> | <code>1</code> |  |
+| MUTHAFUCKA | <code>number</code> | <code>2</code> |  |
 
 
 -
@@ -590,8 +590,8 @@ repair something
 
 | Name | Default | Description |
 | --- | --- | --- |
-| ONE | `1` | type one |
-| TWO | `2` | type two |
+| ONE | <code>1</code> | type one |
+| TWO | <code>2</code> | type two |
 
 
 -
@@ -612,7 +612,7 @@ repair something
 ### missle.range → <code>number</code>
 missile range
 
-**Default**: `100000`  
+**Default**: <code>&quot;100000&quot;</code>  
 
 -
 
@@ -620,7 +620,7 @@ missile range
 ### missle.ballistic → <code>boolean</code>
 ballistic
 
-**Default**: `true`  
+**Default**: <code>&quot;true&quot;</code>  
 
 -
 
@@ -635,7 +635,7 @@ hydrogen bomb?
 ### missle.megaton → <code>number</code>
 number of megatons
 
-**Default**: `200`  
+**Default**: <code>&quot;200&quot;</code>  
 
 -
 
@@ -664,8 +664,8 @@ Pump an idiot full of volts
 | --- | --- | --- | --- |
 | victim | <code>object</code> \| <code>array</code> |  | the victim(s) to fry |
 | [options] | <code>object</code> |  | electricution options |
-| [options.strength] | <code>number</code> | <code>11</code> | strength |
-| [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
+| [options.strength] | <code>number</code> | <code>&quot;11&quot;</code> | strength |
+| [options.crazyHair] | <code>number</code> | <code>&quot;true&quot;</code> | optional spikey hair effect |
 | [done] | <code>function</code> |  | callback on slump |
 
 

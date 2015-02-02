@@ -52,7 +52,7 @@ var uziLover = require("FurQ");
 ```
 <a name="FurQ#wannaTryIt"></a>
 ### furQ.wannaTryIt → <code>string</code>
-**Default**: `bitch`  
+**Default**: <code>&quot;bitch&quot;</code>  
 **See**
 
 - "Uzi like a metal dick in my hand."
@@ -95,7 +95,7 @@ to plant ones fist in a buster's mush
 
 <a name="FurQ#LOVE"></a>
 ### const: furQ.LOVE → <code>string</code>
-**Default**: `UZI`  
+**Default**: <code>&quot;UZI&quot;</code>  
 <a name="FurQ#event_pop"></a>
 ### event: "pop" (zoop)
 fire weapon
@@ -117,9 +117,9 @@ FUR-Q enemy types
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| COCK | <code>number</code> | `0` | an awful individual |
-| BITCH | <code>number</code> | `1` |  |
-| MUTHAFUCKA | <code>number</code> | `2` |  |
+| COCK | <code>number</code> | <code>0</code> | an awful individual |
+| BITCH | <code>number</code> | <code>1</code> |  |
+| MUTHAFUCKA | <code>number</code> | <code>2</code> |  |
 
 <a name="FurQ.peace"></a>
 ### ~~FurQ.peace()~~

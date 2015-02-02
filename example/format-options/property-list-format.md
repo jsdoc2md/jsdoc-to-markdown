@@ -15,7 +15,7 @@
 
 | Name | Default | Description |
 | --- | --- | --- |
-| ONE | `1` | type one |
-| TWO | `2` | type two |
+| ONE | <code>1</code> | type one |
+| TWO | <code>2</code> | type two |
 
 
