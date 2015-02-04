@@ -112,6 +112,7 @@ var animal = require("animal");
 
 <a name="new_module_animal..Animal_new"></a>
 #### new Animal(species, parents)
+
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
@@ -124,7 +125,7 @@ var animal = require("animal");
 #### animal.age → <code>number</code>
 the current age
 
-**Default**: <code>&quot;0&quot;</code>  
+**Default**: <code>0</code>  
 
 -
 
@@ -230,6 +231,7 @@ the species name
 #### Species.merge(one, two) ⇒ <code>[Species](#Species)</code>
 merge two species into a new one
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | one | <code>[Species](#Species)</code> | first |
@@ -260,6 +262,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 <a name="new_Animal_new"></a>
 ### new Animal(species, parents)
+
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
@@ -326,6 +329,7 @@ the species name
 <a name="Species.merge"></a>
 ### Species.merge(one, two) ⇒ <code>[Species](#Species)</code>
 merge two species into a new one
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -413,6 +417,7 @@ uziLover.kill();
 ### furQ.respect(done)
 respect
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
@@ -449,6 +454,7 @@ to plant ones fist in a buster's mush
 <a name="FurQ#event_pop"></a>
 ### event: "pop" (zoop)
 fire weapon
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -496,6 +502,7 @@ var peace = FurQ.peace();
 <a name="FurQ..onRespect"></a>
 ### callback: FurQ~onRespect → <code>function</code>
 Passed to [respect](#FurQ#respect)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -660,12 +667,13 @@ number of megatons
 
 Pump an idiot full of volts
 
+
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | victim | <code>object</code> \| <code>array</code> |  | the victim(s) to fry |
 | [options] | <code>object</code> |  | electricution options |
-| [options.strength] | <code>number</code> | <code>&quot;11&quot;</code> | strength |
-| [options.crazyHair] | <code>number</code> | <code>&quot;true&quot;</code> | optional spikey hair effect |
+| [options.strength] | <code>number</code> | <code>11</code> | strength |
+| [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
 | [done] | <code>function</code> |  | callback on slump |
 
 
@@ -674,6 +682,7 @@ Pump an idiot full of volts
 <a name="protection"></a>
 ## protection(cloak, dagger) ⇒ <code>survival</code>
 a quite wonderful function
+
 
 | Param | Type | Description |
 | --- | --- | --- |

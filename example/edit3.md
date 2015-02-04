@@ -22,6 +22,7 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
+  * _instance_
 	  * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
 	  * [.LOVE](#FurQ#LOVE) → <code>string</code>
 	  * [.kill()](#FurQ#kill)
@@ -31,10 +32,12 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 	  * [.battle()](#Rapper#battle) 
 	  * ["pop" (zoop)](#FurQ#event_pop)
 	  * ["slap"](#FurQ#event_slap)    
-  * [.enemy](#FurQ.enemy) → <code>number</code>
-  * ~~[.peace()](#FurQ.peace)~~
+  * _static_
+    * [.enemy](#FurQ.enemy) → <code>number</code>
+    * ~~[.peace()](#FurQ.peace)~~
   * _inner_
     * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
+    
 <a name="new_FurQ_new"></a>
 ### new FurQ()
 She's an Uzi lover. 
@@ -96,16 +99,20 @@ to plant ones fist in a buster's mush
 **Kind**: Constant  
 
 <a name="FurQ#event_pop"></a>
-### event: "pop" (zoop)
+### "pop" (zoop)
 fire weapon
+
+**Kind: **event emitted by [FurQ]()
 
 | Param | Type | Description |
 | --- | --- | --- |
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
 
 <a name="FurQ#event_slap"></a>
-### event: "slap"
+### "slap"
 slap man
+
+**Kind: **event emitted by [FurQ]()
 
 <a name="FurQ.enemy"></a>
 ### FurQ.enemy → <code>number</code>
@@ -132,8 +139,10 @@ check if at peace
 var peace = FurQ.peace();
 ```
 <a name="FurQ..onRespect"></a>
-### callback: FurQ~onRespect → <code>function</code>
+### FurQ~onRespect → <code>function</code>
 Passed to [respect](#FurQ#respect)
+
+**Kind:** callback
 
 | Param | Type | Description |
 | --- | --- | --- |

@@ -109,3 +109,5 @@
 </table>
 
 
+
+#module-index-format = none

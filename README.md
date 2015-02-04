@@ -210,23 +210,24 @@ Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsd
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 <a name="module_jsdoc-to-markdown.render"></a>
-###jsdoc2md.render(src, options) ⇒ <code>stream</code>
+### jsdoc2md.render(src, options) ⇒ <code>stream</code>
 Transforms jsdoc into markdown documentation.
 
+**Returns**: <code>stream</code> - A transform stream containing the rendered markdown  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | src | <code>string</code> \| <code>Array.&lt;string&gt;</code> | The javascript source file(s). |
 | options | <code>object</code> | The render options |
-| \[options.template\] | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
-| \[options.json\] | <code>boolean</code> | Output the parsed jsdoc data only |
-| \[options.private\] | <code>boolean</code> | Include symbols marked @private in the output |
-| \[options.stats\] | <code>boolean</code> | Print a few stats about the doclets parsed |
-| \[options.heading-depth\] | <code>number</code> | root heading depth, defaults to 1 (`#`) |
-| \[options.plugin\] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
-| \[options.helper\] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
-| \[options.partial\] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
+| [options.template] | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
+| [options.json] | <code>boolean</code> | Output the parsed jsdoc data only |
+| [options.private] | <code>boolean</code> | Include symbols marked @private in the output |
+| [options.stats] | <code>boolean</code> | Print a few stats about the doclets parsed |
+| [options.heading-depth] | <code>number</code> | root heading depth, defaults to 1 (`#`) |
+| [options.plugin] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
+| [options.helper] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
+| [options.partial] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
 
-**Returns**: <code>stream</code> - A transform stream containing the rendered markdown  
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js

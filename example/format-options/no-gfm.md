@@ -5,12 +5,13 @@
 
 Pump an idiot full of volts
 
+
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | victim | <code>object</code> \| <code>array</code> |  | the victim(s) to fry |
 | [options] | <code>object</code> |  | electricution options |
-| [options.strength] | <code>number</code> | <code>&quot;11&quot;</code> | strength |
-| [options.crazyHair] | <code>number</code> | <code>&quot;true&quot;</code> | optional spikey hair effect |
+| [options.strength] | <code>number</code> | <code>11</code> | strength |
+| [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
 | [done] | <code>function</code> |  | callback on slump |
 
 
@@ -42,6 +43,7 @@ gfm
 
 Pump an idiot full of volts
 
+
 <table>
   <thead>
     <tr>
@@ -54,9 +56,9 @@ Pump an idiot full of volts
     </tr><tr>
     <td>[options]</td><td><code>object</code></td><td></td><td>electricution options</td>
     </tr><tr>
-    <td>[options.strength]</td><td><code>number</code></td><td><code>&quot;11&quot;</code></td><td>strength</td>
+    <td>[options.strength]</td><td><code>number</code></td><td><code>11</code></td><td>strength</td>
     </tr><tr>
-    <td>[options.crazyHair]</td><td><code>number</code></td><td><code>&quot;true&quot;</code></td><td>optional spikey hair effect</td>
+    <td>[options.crazyHair]</td><td><code>number</code></td><td><code>true</code></td><td>optional spikey hair effect</td>
     </tr><tr>
     <td>[done]</td><td><code>function</code></td><td></td><td>callback on slump</td>
     </tr>

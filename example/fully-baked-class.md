@@ -75,6 +75,7 @@ uziLover.kill();
 ### furQ.respect(done)
 respect
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
@@ -99,6 +100,7 @@ to plant ones fist in a buster's mush
 <a name="FurQ#event_pop"></a>
 ### event: "pop" (zoop)
 fire weapon
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -134,6 +136,7 @@ var peace = FurQ.peace();
 <a name="FurQ..onRespect"></a>
 ### callback: FurQ~onRespect → <code>function</code>
 Passed to [respect](#FurQ#respect)
+
 
 | Param | Type | Description |
 | --- | --- | --- |

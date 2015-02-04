@@ -71,6 +71,7 @@ var animal = require("animal");
 
 <a name="new_module_animal..Animal_new"></a>
 #### `new Animal(species, parents)`
+
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
@@ -80,7 +81,7 @@ var animal = require("animal");
 #### `animal.age` → <code>number</code>
 the current age
 
-**Default**: <code>&quot;0&quot;</code>  
+**Default**: <code>0</code>  
 <a name="module_animal..Animal#species"></a>
 #### `animal.species` → <code>Species</code>
 <a name="module_animal..Animal.eMood"></a>
@@ -152,6 +153,7 @@ the species name
 <a name="module_species..Species.merge"></a>
 #### `Species.merge(one, two)` ⇒ <code>Species</code>
 merge two species into a new one
+
 
 | Param | Type | Description |
 | --- | --- | --- |

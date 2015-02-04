@@ -166,3 +166,5 @@
 </table>
 
 
+
+#global-index-format = none
