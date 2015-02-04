@@ -9,8 +9,8 @@ Pump an idiot full of volts
 
 - victim <code>object</code> | <code>array</code> - the victim(s) to fry  
 - \[options\] <code>object</code> - electricution options  
-  - \[strength =<code></code>\] <code>number</code> - strength  
-  - \[crazyHair =<code></code>\] <code>number</code> - optional spikey hair effect  
+  - \[strength =<code>11</code>\] <code>number</code> - strength  
+  - \[crazyHair =<code>true</code>\] <code>number</code> - optional spikey hair effect  
 - \[done\] <code>function</code> - callback on slump  
 
 
