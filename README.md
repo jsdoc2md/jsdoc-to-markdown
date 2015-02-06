@@ -104,18 +104,18 @@ Some typical use cases:
 
 ```sh
 $ # dump everything you have into a single file
-$ jsdoc src/**/*.js > api.md
+$ jsdoc2md src/**/*.js > api.md
 ```
 
 ```sh
 $ # split into separate files
-$ jsdoc src/main-module.js > main-module.md
-$ jsdoc src/important-class.js > important-class.md
+$ jsdoc2md src/main-module.js > main-module.md
+$ jsdoc2md src/important-class.js > important-class.md
 ```
 
 ```sh
 $ # embed documentation into a template you made
-$ jsdoc src/**/*.js --template readme.hbs > README.md
+$ jsdoc2md src/**/*.js --template readme.hbs > README.md
 ```
 
 ### Bundled with your project
