@@ -22,12 +22,14 @@ She's an Uzi lover.
 function FurQ(){
     /**
     kill
+    @category standard
     @example var kill = uziLover.kill();
     @example uziLover.kill();
     */
     this.kill = function(){};
     /**
     * respect
+    * @category standard
     * @param {FurQ~onRespect} - called on reciprocation of respect
     * @example 
     * uziLover.respect(function(err, gain){

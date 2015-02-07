@@ -25,9 +25,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * _instance_
 	  * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
 	  * [.LOVE](#FurQ#LOVE) → <code>string</code>
-	  * [.kill()](#FurQ#kill)
-	  * [.respect(done)](#FurQ#respect)
-	  * [.punch()](#FurQ#punch)
+    * _standard_
+  	  * [.kill()](#FurQ#kill)
+  	  * [.respect(done)](#FurQ#respect)
+    * [.punch()](#FurQ#punch)
 	  * [.spit()](#FurQ#spit)
 	  * [.battle()](#Rapper#battle) 
 	  * ["pop" (zoop)](#FurQ#event_pop)
@@ -153,9 +154,8 @@ Passed to [respect](#FurQ#respect)
 ## class: Rapper
 
 * [class: Rapper](#Rapper)
-  * _instance_
-    * [.spit()](#Rapper#spit)
-    * [.battle()](#Rapper#battle)
+  * [.spit()](#Rapper#spit)
+  * [.battle()](#Rapper#battle)
 
 <a name="Rapper#spit"></a>
 ### rapper.spit()
