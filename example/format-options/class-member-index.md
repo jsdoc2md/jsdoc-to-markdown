@@ -8,6 +8,11 @@
 
 -
 
+* [class: six](#six)
+  * [new six()](#new_six_new)
+
+-
+
 * [class: Species](#Species)
   * [species.name](#Species#name) → <code>string</code>
   * [species.species](#Species#species) → <code>[Species](#Species)</code>
@@ -63,6 +68,11 @@
     * [.species](#Animal#species) → <code>[Species](#Species)</code>
   * _static_
     * [enum: .eMood](#Animal.eMood)
+
+-
+
+* [class: six](#six)
+  * [new six()](#new_six_new)
 
 -
 

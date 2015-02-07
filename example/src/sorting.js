@@ -1,14 +1,27 @@
 /**
 one
-@type {number}
+@typedef {(number|string)} numberOrString
 */
-var one = 1;
 
 /**
 two
 @mixin
 */
-var two = {};
+var two = {
+    /**
+    two_one
+    */
+    two_one: function(){},
+    /**
+    two_two
+    */
+    two_two: 1,
+    /**
+    two_three
+    @namespace
+    */
+    two_three: {},
+};
 
 /**
 three
@@ -61,3 +74,9 @@ eleven
 
 /** twelve */
 var twelve = function(){};
+
+/**
+thirteen
+@type {number}
+*/
+var thirteen = 1;

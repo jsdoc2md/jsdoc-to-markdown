@@ -2,14 +2,18 @@
 * [class: six](#six)
   * [new six()](#new_six_new)
 * [mixin: two](#two)
-* [one](#one) → <code>number</code>
+  * [.two_two](#two.two_two)
+  * [.two_three](#two.two_three) → <code>object</code>
+  * [.two_one()](#two.two_one)
 * [enum: three](#three)
 * [seven](#seven) → <code>number</code>
+* [thirteen](#thirteen) → <code>number</code>
 * [eight](#eight) → <code>object</code>
 * [four()](#four)
 * [nine()](#nine)
 * [twelve()](#twelve)
 * [const: five](#five) → <code>number</code>
+* [type: numberOrString](#numberOrString) → <code>number</code> \| <code>string</code>
 * ["ten"](#event_ten)
 * [external: eleven](#external_eleven)
 
@@ -23,9 +27,23 @@ six
 ## mixin: two
 two
 
-<a name="one"></a>
-## one → <code>number</code>
-one
+
+* [mixin: two](#two)
+  * [.two_two](#two.two_two)
+  * [.two_three](#two.two_three) → <code>object</code>
+  * [.two_one()](#two.two_one)
+
+<a name="two.two_two"></a>
+### two.two_two
+two_two
+
+<a name="two.two_three"></a>
+### two.two_three → <code>object</code>
+two_three
+
+<a name="two.two_one"></a>
+### two.two_one()
+two_one
 
 <a name="three"></a>
 ## enum: three
@@ -41,6 +59,10 @@ three
 <a name="seven"></a>
 ## seven → <code>number</code>
 seven
+
+<a name="thirteen"></a>
+## thirteen → <code>number</code>
+thirteen
 
 <a name="eight"></a>
 ## eight → <code>object</code>
@@ -61,6 +83,10 @@ twelve
 <a name="five"></a>
 ## const: five → <code>number</code>
 five
+
+<a name="numberOrString"></a>
+## type: numberOrString → <code>number</code> \| <code>string</code>
+one
 
 <a name="event_ten"></a>
 ## event: "ten"

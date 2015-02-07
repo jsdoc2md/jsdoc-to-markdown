@@ -42,6 +42,8 @@
 <li>description</li>
 </ul>
 </dd>
+<dt><a href="#six">class: six</a></dt>
+<dd></dd>
 <dt><a href="#Species">class: Species</a></dt>
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
@@ -53,20 +55,56 @@
 <dt><a href="#builder">mixin: builder</a></dt>
 <dd><p>Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.</p>
 </dd>
+<dt><a href="#two">mixin: two</a></dt>
+<dd><p>two</p>
+</dd>
 <dt><a href="#eType">enum: eType</a></dt>
 <dd></dd>
+<dt><a href="#three">enum: three</a></dt>
+<dd><p>three</p>
+</dd>
+<dt><a href="#seven">seven</a> → <code>number</code></dt>
+<dd><p>seven</p>
+</dd>
+<dt><a href="#thirteen">thirteen</a> → <code>number</code></dt>
+<dd><p>thirteen</p>
+</dd>
 <dt><a href="#missle">missle</a> → <code>object</code></dt>
 <dd></dd>
 <dt><a href="#personality">personality</a> → <code>object</code></dt>
 <dd></dd>
+<dt><a href="#eight">eight</a> → <code>object</code></dt>
+<dd><p>eight</p>
+</dd>
 <dt><del><a href="#taze">taze(victim, [options], [done])</a></del></dt>
 <dd><p>Pump an idiot full of volts</p>
 </dd>
 <dt><a href="#protection">protection(cloak, dagger)</a> ⇒ <code>survival</code></dt>
 <dd><p>a quite wonderful function</p>
 </dd>
+<dt><a href="#four">four()</a></dt>
+<dd><p>four</p>
+</dd>
+<dt><a href="#nine">nine()</a></dt>
+<dd><p>nine</p>
+</dd>
+<dt><a href="#twelve">twelve()</a></dt>
+<dd><p>twelve</p>
+</dd>
 <dt><a href="#plant">plant()</a></dt>
 <dd><p>to plant ones fist in a buster&#39;s mush</p>
+</dd>
+<dt><a href="#five">const: five</a> → <code>number</code></dt>
+<dd><p>five</p>
+</dd>
+<dt><a href="#numberOrString">type: numberOrString</a> → <code>number</code> | <code>string</code></dt>
+<dd><p>one</p>
+</dd>
+<dt><a href="#event_ten">"ten"</a></dt>
+<dd><p>ten</p>
+</dd>
+<dt><a href="#external_eleven">external: eleven</a></dt>
+<dd><p>eleven</p>
 </dd>
 </dl>
 <a name="module_animal"></a>
@@ -295,6 +333,18 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
+
+
+-
+
+<a name="six"></a>
+## class: six
+
+-
+
+<a name="new_six_new"></a>
+### new six()
+six
 
 
 -
@@ -593,6 +643,40 @@ repair something
 
 -
 
+<a name="two"></a>
+## mixin: two
+two
+
+
+* [mixin: two](#two)
+  * [.two_two](#two.two_two)
+  * [.two_three](#two.two_three) → <code>object</code>
+  * [.two_one()](#two.two_one)
+
+
+-
+
+<a name="two.two_two"></a>
+### two.two_two
+two_two
+
+
+-
+
+<a name="two.two_three"></a>
+### two.two_three → <code>object</code>
+two_three
+
+
+-
+
+<a name="two.two_one"></a>
+### two.two_one()
+two_one
+
+
+-
+
 <a name="eType"></a>
 ## enum: eType
 **Properties**
@@ -601,6 +685,34 @@ repair something
 | --- | --- | --- |
 | ONE | <code>1</code> | type one |
 | TWO | <code>2</code> | type two |
+
+
+-
+
+<a name="three"></a>
+## enum: three
+three
+
+**Properties**
+
+| Name | Default |
+| --- | --- |
+| THIS | <code>0</code> | 
+| THAT | <code>1</code> | 
+
+
+-
+
+<a name="seven"></a>
+## seven → <code>number</code>
+seven
+
+
+-
+
+<a name="thirteen"></a>
+## thirteen → <code>number</code>
+thirteen
 
 
 -
@@ -663,6 +775,13 @@ number of megatons
 
 -
 
+<a name="eight"></a>
+## eight → <code>object</code>
+eight
+
+
+-
+
 <a name="taze"></a>
 ## ~~taze(victim, [options], [done])~~
 ***Deprecated***
@@ -694,9 +813,58 @@ a quite wonderful function
 
 -
 
+<a name="four"></a>
+## four()
+four
+
+
+-
+
+<a name="nine"></a>
+## nine()
+nine
+
+
+-
+
+<a name="twelve"></a>
+## twelve()
+twelve
+
+
+-
+
 <a name="plant"></a>
 ## plant()
 to plant ones fist in a buster's mush
+
+
+-
+
+<a name="five"></a>
+## const: five → <code>number</code>
+five
+
+
+-
+
+<a name="numberOrString"></a>
+## type: numberOrString → <code>number</code> \| <code>string</code>
+one
+
+
+-
+
+<a name="event_ten"></a>
+## event: "ten"
+ten
+
+
+-
+
+<a name="external_eleven"></a>
+## external: eleven
+eleven
 
 
 -

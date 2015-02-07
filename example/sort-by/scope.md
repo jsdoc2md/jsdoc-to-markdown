@@ -1,6 +1,9 @@
 ## Global
-* [one](#one) → <code>number</code>
+* [type: numberOrString](#numberOrString) → <code>number</code> \| <code>string</code>
 * [mixin: two](#two)
+  * [.two_one()](#two.two_one)
+  * [.two_two](#two.two_two)
+  * [.two_three](#two.two_three) → <code>object</code>
 * [enum: three](#three)
 * [four()](#four)
 * [const: five](#five) → <code>number</code>
@@ -12,14 +15,33 @@
 * ["ten"](#event_ten)
 * [external: eleven](#external_eleven)
 * [twelve()](#twelve)
+* [thirteen](#thirteen) → <code>number</code>
 
-<a name="one"></a>
-## one → <code>number</code>
+<a name="numberOrString"></a>
+## type: numberOrString → <code>number</code> \| <code>string</code>
 one
 
 <a name="two"></a>
 ## mixin: two
 two
+
+
+* [mixin: two](#two)
+  * [.two_one()](#two.two_one)
+  * [.two_two](#two.two_two)
+  * [.two_three](#two.two_three) → <code>object</code>
+
+<a name="two.two_one"></a>
+### two.two_one()
+two_one
+
+<a name="two.two_two"></a>
+### two.two_two
+two_two
+
+<a name="two.two_three"></a>
+### two.two_three → <code>object</code>
+two_three
 
 <a name="three"></a>
 ## enum: three
@@ -69,4 +91,8 @@ eleven
 <a name="twelve"></a>
 ## twelve()
 twelve
+
+<a name="thirteen"></a>
+## thirteen → <code>number</code>
+thirteen
 

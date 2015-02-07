@@ -9,6 +9,8 @@
 <li>description</li>
 </ul>
 </dd>
+<dt><a href="#six">class: six</a></dt>
+<dd></dd>
 <dt><a href="#Species">class: Species</a></dt>
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
@@ -20,20 +22,56 @@
 <dt><a href="#builder">mixin: builder</a></dt>
 <dd><p>Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.</p>
 </dd>
+<dt><a href="#two">mixin: two</a></dt>
+<dd><p>two</p>
+</dd>
 <dt><a href="#eType">enum: eType</a></dt>
 <dd></dd>
+<dt><a href="#three">enum: three</a></dt>
+<dd><p>three</p>
+</dd>
+<dt><a href="#seven">seven</a> → <code>number</code></dt>
+<dd><p>seven</p>
+</dd>
+<dt><a href="#thirteen">thirteen</a> → <code>number</code></dt>
+<dd><p>thirteen</p>
+</dd>
 <dt><a href="#missle">missle</a> → <code>object</code></dt>
 <dd></dd>
 <dt><a href="#personality">personality</a> → <code>object</code></dt>
 <dd></dd>
+<dt><a href="#eight">eight</a> → <code>object</code></dt>
+<dd><p>eight</p>
+</dd>
 <dt><del><a href="#taze">taze(victim, [options], [done])</a></del></dt>
 <dd><p>Pump an idiot full of volts</p>
 </dd>
 <dt><a href="#protection">protection(cloak, dagger)</a> ⇒ <code>survival</code></dt>
 <dd><p>a quite wonderful function</p>
 </dd>
+<dt><a href="#four">four()</a></dt>
+<dd><p>four</p>
+</dd>
+<dt><a href="#nine">nine()</a></dt>
+<dd><p>nine</p>
+</dd>
+<dt><a href="#twelve">twelve()</a></dt>
+<dd><p>twelve</p>
+</dd>
 <dt><a href="#plant">plant()</a></dt>
 <dd><p>to plant ones fist in a buster&#39;s mush</p>
+</dd>
+<dt><a href="#five">const: five</a> → <code>number</code></dt>
+<dd><p>five</p>
+</dd>
+<dt><a href="#numberOrString">type: numberOrString</a> → <code>number</code> | <code>string</code></dt>
+<dd><p>one</p>
+</dd>
+<dt><a href="#event_ten">"ten"</a></dt>
+<dd><p>ten</p>
+</dd>
+<dt><a href="#external_eleven">external: eleven</a></dt>
+<dd><p>eleven</p>
 </dd>
 </dl>
 
@@ -47,6 +85,8 @@
     * [.species](#Animal#species) → <code>[Species](#Species)</code>
   * _static_
     * [enum: .eMood](#Animal.eMood)
+* [class: six](#six)
+  * [new six()](#new_six_new)
 * [class: Species](#Species)
   * _instance_
     * [.name](#Species#name) → <code>string</code>
@@ -84,16 +124,31 @@
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
+* [mixin: two](#two)
+  * [.two_two](#two.two_two)
+  * [.two_three](#two.two_three) → <code>object</code>
+  * [.two_one()](#two.two_one)
 * [enum: eType](#eType)
+* [enum: three](#three)
+* [seven](#seven) → <code>number</code>
+* [thirteen](#thirteen) → <code>number</code>
 * [missle](#missle) → <code>object</code>
   * [.range](#missle.range) → <code>number</code>
   * [.ballistic](#missle.ballistic) → <code>boolean</code>
   * [.hydrogen](#missle.hydrogen)
   * [.megaton](#missle.megaton) → <code>number</code>
 * [personality](#personality) → <code>object</code>
+* [eight](#eight) → <code>object</code>
 * ~~[taze(victim, [options], [done])](#taze)~~
 * [protection(cloak, dagger)](#protection) ⇒ <code>survival</code>
+* [four()](#four)
+* [nine()](#nine)
+* [twelve()](#twelve)
 * [plant()](#plant)
+* [const: five](#five) → <code>number</code>
+* [type: numberOrString](#numberOrString) → <code>number</code> \| <code>string</code>
+* ["ten"](#event_ten)
+* [external: eleven](#external_eleven)
 
 
 
@@ -117,6 +172,10 @@
 </td>
     </tr>
 <tr>
+    <td><a href="#six">class: six</a></td>
+    <td></td>
+    </tr>
+<tr>
     <td><a href="#Species">class: Species</a></td>
     <td><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </td>
@@ -136,8 +195,28 @@
 </td>
     </tr>
 <tr>
+    <td><a href="#two">mixin: two</a></td>
+    <td><p>two</p>
+</td>
+    </tr>
+<tr>
     <td><a href="#eType">enum: eType</a></td>
     <td></td>
+    </tr>
+<tr>
+    <td><a href="#three">enum: three</a></td>
+    <td><p>three</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#seven">seven</a> → <code>number</code></td>
+    <td><p>seven</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#thirteen">thirteen</a> → <code>number</code></td>
+    <td><p>thirteen</p>
+</td>
     </tr>
 <tr>
     <td><a href="#missle">missle</a> → <code>object</code></td>
@@ -146,6 +225,11 @@
 <tr>
     <td><a href="#personality">personality</a> → <code>object</code></td>
     <td></td>
+    </tr>
+<tr>
+    <td><a href="#eight">eight</a> → <code>object</code></td>
+    <td><p>eight</p>
+</td>
     </tr>
 <tr>
     <td><del><a href="#taze">taze(victim, [options], [done])</a></del></td>
@@ -158,8 +242,43 @@
 </td>
     </tr>
 <tr>
+    <td><a href="#four">four()</a></td>
+    <td><p>four</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#nine">nine()</a></td>
+    <td><p>nine</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#twelve">twelve()</a></td>
+    <td><p>twelve</p>
+</td>
+    </tr>
+<tr>
     <td><a href="#plant">plant()</a></td>
     <td><p>to plant ones fist in a buster&#39;s mush</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#five">const: five</a> → <code>number</code></td>
+    <td><p>five</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#numberOrString">type: numberOrString</a> → <code>number</code> | <code>string</code></td>
+    <td><p>one</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#event_ten">"ten"</a></td>
+    <td><p>ten</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#external_eleven">external: eleven</a></td>
+    <td><p>eleven</p>
 </td>
     </tr>
 </tbody>
