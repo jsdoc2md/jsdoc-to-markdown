@@ -23,12 +23,12 @@
 * [class: FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * [furQ.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+  * [const: furQ.LOVE](#FurQ#LOVE) → <code>string</code>
   * [furQ.kill()](#FurQ#kill)
   * [furQ.respect(done)](#FurQ#respect)
   * [furQ.spit()](#FurQ#spit)
   * [furQ.battle()](#FurQ#battle)
   * [furQ.punch()](#FurQ#punch)
-  * [const: furQ.LOVE](#FurQ#LOVE) → <code>string</code>
   * [event: "pop" (zoop)](#FurQ#event_pop)
   * [event: "slap"](#FurQ#event_slap)
   * [enum: FurQ.enemy](#FurQ.enemy) → <code>number</code>
@@ -89,10 +89,10 @@
   * [new FurQ()](#new_FurQ_new)
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
     * [.kill()](#FurQ#kill)
     * [.respect(done)](#FurQ#respect)
     * [.punch()](#FurQ#punch)
-    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
   * _static_
     * [enum: .enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~

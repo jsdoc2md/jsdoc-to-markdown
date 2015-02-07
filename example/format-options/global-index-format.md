@@ -43,16 +43,19 @@
 <dt><a href="#eight">eight</a> → <code>object</code></dt>
 <dd><p>eight</p>
 </dd>
+<dt><a href="#five">const: five</a> → <code>number</code></dt>
+<dd><p>five</p>
+</dd>
 <dt><del><a href="#taze">taze(victim, [options], [done])</a></del></dt>
 <dd><p>Pump an idiot full of volts</p>
 </dd>
 <dt><a href="#protection">protection(cloak, dagger)</a> ⇒ <code>survival</code></dt>
 <dd><p>a quite wonderful function</p>
 </dd>
-<dt><a href="#four">four()</a></dt>
+<dt><a href="#four">four()</a> ⇒ <code>number</code></dt>
 <dd><p>four</p>
 </dd>
-<dt><a href="#nine">nine()</a></dt>
+<dt><a href="#nine">nine()</a> ⇒ <code>number</code></dt>
 <dd><p>nine</p>
 </dd>
 <dt><a href="#twelve">twelve()</a></dt>
@@ -61,14 +64,11 @@
 <dt><a href="#plant">plant()</a></dt>
 <dd><p>to plant ones fist in a buster&#39;s mush</p>
 </dd>
-<dt><a href="#five">const: five</a> → <code>number</code></dt>
-<dd><p>five</p>
-</dd>
-<dt><a href="#numberOrString">type: numberOrString</a> → <code>number</code> | <code>string</code></dt>
-<dd><p>one</p>
-</dd>
 <dt><a href="#event_ten">"ten"</a></dt>
 <dd><p>ten</p>
+</dd>
+<dt><a href="#one">type: one</a> → <code>number</code> | <code>string</code></dt>
+<dd><p>one</p>
 </dd>
 <dt><a href="#external_eleven">external: eleven</a></dt>
 <dd><p>eleven</p>
@@ -97,10 +97,10 @@
   * [new FurQ()](#new_FurQ_new)
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
     * [.kill()](#FurQ#kill)
     * [.respect(done)](#FurQ#respect)
     * [.punch()](#FurQ#punch)
-    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
   * _static_
     * [enum: .enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
@@ -125,9 +125,10 @@
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
 * [mixin: two](#two)
-  * [.two_two](#two.two_two)
+  * [.two_two](#two.two_two) → <code>number</code>
   * [.two_three](#two.two_three) → <code>object</code>
-  * [.two_one()](#two.two_one)
+  * [const: .two_four](#two.two_four) → <code>number</code>
+  * [.two_one()](#two.two_one) ⇒ <code>number</code>
 * [enum: eType](#eType)
 * [enum: three](#three)
 * [seven](#seven) → <code>number</code>
@@ -139,15 +140,15 @@
   * [.megaton](#missle.megaton) → <code>number</code>
 * [personality](#personality) → <code>object</code>
 * [eight](#eight) → <code>object</code>
+* [const: five](#five) → <code>number</code>
 * ~~[taze(victim, [options], [done])](#taze)~~
 * [protection(cloak, dagger)](#protection) ⇒ <code>survival</code>
-* [four()](#four)
-* [nine()](#nine)
+* [four()](#four) ⇒ <code>number</code>
+* [nine()](#nine) ⇒ <code>number</code>
 * [twelve()](#twelve)
 * [plant()](#plant)
-* [const: five](#five) → <code>number</code>
-* [type: numberOrString](#numberOrString) → <code>number</code> \| <code>string</code>
 * ["ten"](#event_ten)
+* [type: one](#one) → <code>number</code> \| <code>string</code>
 * [external: eleven](#external_eleven)
 
 
@@ -232,6 +233,11 @@
 </td>
     </tr>
 <tr>
+    <td><a href="#five">const: five</a> → <code>number</code></td>
+    <td><p>five</p>
+</td>
+    </tr>
+<tr>
     <td><del><a href="#taze">taze(victim, [options], [done])</a></del></td>
     <td><p>Pump an idiot full of volts</p>
 </td>
@@ -242,12 +248,12 @@
 </td>
     </tr>
 <tr>
-    <td><a href="#four">four()</a></td>
+    <td><a href="#four">four()</a> ⇒ <code>number</code></td>
     <td><p>four</p>
 </td>
     </tr>
 <tr>
-    <td><a href="#nine">nine()</a></td>
+    <td><a href="#nine">nine()</a> ⇒ <code>number</code></td>
     <td><p>nine</p>
 </td>
     </tr>
@@ -262,18 +268,13 @@
 </td>
     </tr>
 <tr>
-    <td><a href="#five">const: five</a> → <code>number</code></td>
-    <td><p>five</p>
-</td>
-    </tr>
-<tr>
-    <td><a href="#numberOrString">type: numberOrString</a> → <code>number</code> | <code>string</code></td>
-    <td><p>one</p>
-</td>
-    </tr>
-<tr>
     <td><a href="#event_ten">"ten"</a></td>
     <td><p>ten</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#one">type: one</a> → <code>number</code> | <code>string</code></td>
+    <td><p>one</p>
 </td>
     </tr>
 <tr>

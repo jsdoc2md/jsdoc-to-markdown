@@ -23,10 +23,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * [new FurQ()](#new_FurQ_new)
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
     * [.kill()](#FurQ#kill)
     * [.respect(done)](#FurQ#respect)
     * [.punch()](#FurQ#punch)
-    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
   * _static_
     * [enum: .enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
@@ -58,6 +58,9 @@ var uziLover = require("FurQ");
 - "Uzi like a metal dick in my hand."
 - "Magazine like a big testicle gland."
 
+<a name="FurQ#LOVE"></a>
+### const: furQ.LOVE → <code>string</code>
+**Default**: <code>&quot;UZI&quot;</code>  
 <a name="FurQ#kill"></a>
 ### furQ.kill()
 kill
@@ -96,9 +99,6 @@ override
 ### furQ.punch()
 to plant ones fist in a buster's mush
 
-<a name="FurQ#LOVE"></a>
-### const: furQ.LOVE → <code>string</code>
-**Default**: <code>&quot;UZI&quot;</code>  
 <a name="FurQ#event_pop"></a>
 ### event: "pop" (zoop)
 fire weapon

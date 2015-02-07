@@ -4,18 +4,18 @@
 * [mixin: two](#two)
   * [.two_two](#two.two_two) → <code>number</code>
   * [.two_three](#two.two_three) → <code>object</code>
-  * [.two_one()](#two.two_one) ⇒ <code>number</code>
   * [const: .two_four](#two.two_four) → <code>number</code>
+  * [.two_one()](#two.two_one) ⇒ <code>number</code>
 * [enum: three](#three)
 * [seven](#seven) → <code>number</code>
 * [thirteen](#thirteen) → <code>number</code>
 * [eight](#eight) → <code>object</code>
+* [const: five](#five) → <code>number</code>
 * [four()](#four) ⇒ <code>number</code>
 * [nine()](#nine) ⇒ <code>number</code>
 * [twelve()](#twelve)
-* [const: five](#five) → <code>number</code>
-* [type: one](#one) → <code>number</code> \| <code>string</code>
 * ["ten"](#event_ten)
+* [type: one](#one) → <code>number</code> \| <code>string</code>
 * [external: eleven](#external_eleven)
 
 <a name="six"></a>
@@ -32,8 +32,8 @@ two
 * [mixin: two](#two)
   * [.two_two](#two.two_two) → <code>number</code>
   * [.two_three](#two.two_three) → <code>object</code>
-  * [.two_one()](#two.two_one) ⇒ <code>number</code>
   * [const: .two_four](#two.two_four) → <code>number</code>
+  * [.two_one()](#two.two_one) ⇒ <code>number</code>
 
 <a name="two.two_two"></a>
 ### two.two_two → <code>number</code>
@@ -43,13 +43,13 @@ two_two
 ### two.two_three → <code>object</code>
 two_three
 
-<a name="two.two_one"></a>
-### two.two_one() ⇒ <code>number</code>
-two_one
-
 <a name="two.two_four"></a>
 ### const: two.two_four → <code>number</code>
 two_four
+
+<a name="two.two_one"></a>
+### two.two_one() ⇒ <code>number</code>
+two_one
 
 <a name="three"></a>
 ## enum: three
@@ -74,6 +74,10 @@ thirteen
 ## eight → <code>object</code>
 eight
 
+<a name="five"></a>
+## const: five → <code>number</code>
+five
+
 <a name="four"></a>
 ## four() ⇒ <code>number</code>
 four
@@ -86,17 +90,13 @@ nine
 ## twelve()
 twelve
 
-<a name="five"></a>
-## const: five → <code>number</code>
-five
+<a name="event_ten"></a>
+## event: "ten"
+ten
 
 <a name="one"></a>
 ## type: one → <code>number</code> \| <code>string</code>
 one
-
-<a name="event_ten"></a>
-## event: "ten"
-ten
 
 <a name="external_eleven"></a>
 ## external: eleven

@@ -76,16 +76,19 @@
 <dt><a href="#eight">eight</a> → <code>object</code></dt>
 <dd><p>eight</p>
 </dd>
+<dt><a href="#five">const: five</a> → <code>number</code></dt>
+<dd><p>five</p>
+</dd>
 <dt><del><a href="#taze">taze(victim, [options], [done])</a></del></dt>
 <dd><p>Pump an idiot full of volts</p>
 </dd>
 <dt><a href="#protection">protection(cloak, dagger)</a> ⇒ <code>survival</code></dt>
 <dd><p>a quite wonderful function</p>
 </dd>
-<dt><a href="#four">four()</a></dt>
+<dt><a href="#four">four()</a> ⇒ <code>number</code></dt>
 <dd><p>four</p>
 </dd>
-<dt><a href="#nine">nine()</a></dt>
+<dt><a href="#nine">nine()</a> ⇒ <code>number</code></dt>
 <dd><p>nine</p>
 </dd>
 <dt><a href="#twelve">twelve()</a></dt>
@@ -94,14 +97,11 @@
 <dt><a href="#plant">plant()</a></dt>
 <dd><p>to plant ones fist in a buster&#39;s mush</p>
 </dd>
-<dt><a href="#five">const: five</a> → <code>number</code></dt>
-<dd><p>five</p>
-</dd>
-<dt><a href="#numberOrString">type: numberOrString</a> → <code>number</code> | <code>string</code></dt>
-<dd><p>one</p>
-</dd>
 <dt><a href="#event_ten">"ten"</a></dt>
 <dd><p>ten</p>
+</dd>
+<dt><a href="#one">type: one</a> → <code>number</code> | <code>string</code></dt>
+<dd><p>one</p>
 </dd>
 <dt><a href="#external_eleven">external: eleven</a></dt>
 <dd><p>eleven</p>
@@ -403,10 +403,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * [new FurQ()](#new_FurQ_new)
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
     * [.kill()](#FurQ#kill)
     * [.respect(done)](#FurQ#respect)
     * [.punch()](#FurQ#punch)
-    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
   * _static_
     * [enum: .enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
@@ -444,6 +444,12 @@ var uziLover = require("FurQ");
 - "Uzi like a metal dick in my hand."
 - "Magazine like a big testicle gland."
 
+
+-
+
+<a name="FurQ#LOVE"></a>
+### const: furQ.LOVE → <code>string</code>
+**Default**: <code>&quot;UZI&quot;</code>  
 
 -
 
@@ -494,12 +500,6 @@ override
 ### furQ.punch()
 to plant ones fist in a buster's mush
 
-
--
-
-<a name="FurQ#LOVE"></a>
-### const: furQ.LOVE → <code>string</code>
-**Default**: <code>&quot;UZI&quot;</code>  
 
 -
 
@@ -649,15 +649,16 @@ two
 
 
 * [mixin: two](#two)
-  * [.two_two](#two.two_two)
+  * [.two_two](#two.two_two) → <code>number</code>
   * [.two_three](#two.two_three) → <code>object</code>
-  * [.two_one()](#two.two_one)
+  * [const: .two_four](#two.two_four) → <code>number</code>
+  * [.two_one()](#two.two_one) ⇒ <code>number</code>
 
 
 -
 
 <a name="two.two_two"></a>
-### two.two_two
+### two.two_two → <code>number</code>
 two_two
 
 
@@ -670,8 +671,15 @@ two_three
 
 -
 
+<a name="two.two_four"></a>
+### const: two.two_four → <code>number</code>
+two_four
+
+
+-
+
 <a name="two.two_one"></a>
-### two.two_one()
+### two.two_one() ⇒ <code>number</code>
 two_one
 
 
@@ -782,6 +790,13 @@ eight
 
 -
 
+<a name="five"></a>
+## const: five → <code>number</code>
+five
+
+
+-
+
 <a name="taze"></a>
 ## ~~taze(victim, [options], [done])~~
 ***Deprecated***
@@ -814,14 +829,14 @@ a quite wonderful function
 -
 
 <a name="four"></a>
-## four()
+## four() ⇒ <code>number</code>
 four
 
 
 -
 
 <a name="nine"></a>
-## nine()
+## nine() ⇒ <code>number</code>
 nine
 
 
@@ -841,23 +856,16 @@ to plant ones fist in a buster's mush
 
 -
 
-<a name="five"></a>
-## const: five → <code>number</code>
-five
-
-
--
-
-<a name="numberOrString"></a>
-## type: numberOrString → <code>number</code> \| <code>string</code>
-one
-
-
--
-
 <a name="event_ten"></a>
 ## event: "ten"
 ten
+
+
+-
+
+<a name="one"></a>
+## type: one → <code>number</code> \| <code>string</code>
+one
 
 
 -
