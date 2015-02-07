@@ -10,6 +10,13 @@
 * [const: five](#five) → <code>number</code>
 * [class: six](#six)
   * [new six()](#new_six_new)
+  * _instance_
+    * [const: .six_one](#six#six_one) → <code>number</code>
+    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+  * _static_
+    * [.six_static_one](#six.six_static_one) → <code>object</code>
+    * [mixin: .six_static_two](#six.six_static_two)
+    * [.six_static_three](#six.six_static_three) → <code>number</code>
 * [seven](#seven) → <code>number</code>
 * [eight](#eight) → <code>object</code>
 * [nine()](#nine) ⇒ <code>number</code>
@@ -70,9 +77,40 @@ five
 
 <a name="six"></a>
 ## class: six
+
+* [class: six](#six)
+  * [new six()](#new_six_new)
+  * _instance_
+    * [const: .six_one](#six#six_one) → <code>number</code>
+    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+  * _static_
+    * [.six_static_one](#six.six_static_one) → <code>object</code>
+    * [mixin: .six_static_two](#six.six_static_two)
+    * [.six_static_three](#six.six_static_three) → <code>number</code>
+
 <a name="new_six_new"></a>
 ### new six()
 six
+
+<a name="six#six_one"></a>
+### const: six.six_one → <code>number</code>
+six_one
+
+<a name="six#six_two"></a>
+### six.six_two() ⇒ <code>number</code>
+six_two
+
+<a name="six.six_static_one"></a>
+### six.six_static_one → <code>object</code>
+six_static_one
+
+<a name="six.six_static_two"></a>
+### mixin: six.six_static_two
+six_static_two
+
+<a name="six.six_static_three"></a>
+### six.six_static_three → <code>number</code>
+six_static_three
 
 <a name="seven"></a>
 ## seven → <code>number</code>

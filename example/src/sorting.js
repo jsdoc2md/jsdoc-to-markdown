@@ -56,7 +56,36 @@ var five = 5;
 six
 @class
 */
-function six(){}
+function six(){
+    /**
+    six_one
+    @const {number}
+    */
+    this.six_one = 1;
+
+    /**
+    six_two
+    @returns {number}
+    */
+    this.six_two = function(){};
+}
+/**
+six_static_one
+@namespace
+*/
+six.six_static_one = {};
+
+/**
+six_static_two
+@mixin
+*/
+six.six_static_two = {};
+
+/**
+six_static_three
+@type {number}
+*/
+six.six_static_three = 1;
 
 /**
 seven
