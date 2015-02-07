@@ -13,45 +13,45 @@
 ## FurQ ⇐ <code>[Rapper](#Rapper)</code>
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
-**Kind:** class  
-**Extends:** <code>[Rapper](#Rapper)</code>  
-**Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
-**Access:** public  
-**See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
-**Author:** Chris Morris  
+**Kind:** class
+**Extends:** <code>[Rapper](#Rapper)</code>
+**Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>
+**Access:** public
+**See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc
+**Author:** Chris Morris
 
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
-	  * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
-	  * [.LOVE](#FurQ#LOVE) → <code>string</code>
-    * _standard_
-  	  * [.kill()](#FurQ#kill)
-  	  * [.respect(done)](#FurQ#respect)
+    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [.LOVE](#FurQ#LOVE) → <code>string</code>
+    * standard
+      * [.kill()](#FurQ#kill)
+      * [.respect(done)](#FurQ#respect)
     * [.punch()](#FurQ#punch)
-	  * [.spit()](#FurQ#spit)
-	  * [.battle()](#Rapper#battle) 
-	  * ["pop" (zoop)](#FurQ#event_pop)
-	  * ["slap"](#FurQ#event_slap)    
+    * [.spit()](#FurQ#spit)
+    * [.battle()](#Rapper#battle)
+    * ["pop" (zoop)](#FurQ#event_pop)
+    * ["slap"](#FurQ#event_slap)
   * _static_
     * [.enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
     * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
-    
+
 <a name="new_FurQ_new"></a>
 ### new FurQ()
-She's an Uzi lover. 
+She's an Uzi lover.
 
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
-**Example**  
+**Example**
 ```js
 var FurQ = require("FurQ");
 ```
 <a name="FurQ#wannaTryIt"></a>
 ### FurQ.wannaTryIt → <code>string</code>
-**Default**: `bitch`  
+**Default**: `bitch`
 **See**
 
 - "Uzi like a metal dick in my hand."
@@ -61,12 +61,12 @@ var FurQ = require("FurQ");
 ### FurQ.kill()
 kill
 
-**Example**  
+**Example**
 ```js
 var kill = FurQ.kill();
-    
+
 ```
-**Example**  
+**Example**
 ```js
 FurQ.kill();
 ```
@@ -78,7 +78,7 @@ respect
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
 
-**Example**  
+**Example**
 ```js
 FurQ.respect(function(err, gain){
     console.log(gain);
@@ -96,8 +96,8 @@ to plant ones fist in a buster's mush
 
 <a name="FurQ#LOVE"></a>
 ### FurQ.LOVE → <code>string</code>
-**Default**: `UZI`  
-**Kind**: Constant  
+**Default**: `UZI`
+**Kind**: Constant
 
 <a name="FurQ#event_pop"></a>
 ### "pop" (zoop)
@@ -119,8 +119,8 @@ slap man
 ### FurQ.enemy → <code>number</code>
 FUR-Q enemy types
 
-**Read only**: true  
-**Kind**: enum  
+**Read only**: true
+**Kind**: enum
 **Properties**
 
 | Name | Type | Default | Description |
@@ -135,7 +135,7 @@ FUR-Q enemy types
 
 check if at peace
 
-**Example**  
+**Example**
 ```js
 var peace = FurQ.peace();
 ```
