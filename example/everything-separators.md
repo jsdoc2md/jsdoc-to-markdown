@@ -401,6 +401,7 @@ var uziLover = require("FurQ");
 ### furQ.kill()
 kill
 
+**Category**: standard  
 **Example**  
 ```js
 var kill = uziLover.kill();
@@ -417,6 +418,7 @@ uziLover.kill();
 ### furQ.respect(done)
 respect
 
+**Category**: standard  
 
 | Param | Type | Description |
 | --- | --- | --- |

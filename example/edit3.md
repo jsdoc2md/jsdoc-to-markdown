@@ -13,21 +13,21 @@
 ## FurQ ⇐ <code>[Rapper](#Rapper)</code>
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
-**Kind:** class
-**Extends:** <code>[Rapper](#Rapper)</code>
-**Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>
-**Access:** public
-**See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc
-**Author:** Chris Morris
+**Kind:** class  
+**Extends:** <code>[Rapper](#Rapper)</code>  
+**Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
+**Access:** public  
+**See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
+**Author:** Chris Morris  
 
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
-    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
-    * [.LOVE](#FurQ#LOVE) → <code>string</code>
     * standard
       * [.kill()](#FurQ#kill)
       * [.respect(done)](#FurQ#respect)
+    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
+    * [.LOVE](#FurQ#LOVE) → <code>string</code>
     * [.punch()](#FurQ#punch)
     * [.spit()](#FurQ#spit)
     * [.battle()](#Rapper#battle)
@@ -37,7 +37,7 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
     * [.enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
-    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
+    * [~onRespect](#FurQ..onRespect) → <code>function</code>
 
 <a name="new_FurQ_new"></a>
 ### new FurQ()
@@ -51,8 +51,8 @@ var FurQ = require("FurQ");
 ```
 <a name="FurQ#wannaTryIt"></a>
 ### FurQ.wannaTryIt → <code>string</code>
-**Default**: `bitch`
-**See**
+**Default**: `bitch`  
+**See**  
 
 - "Uzi like a metal dick in my hand."
 - "Magazine like a big testicle gland."
@@ -88,7 +88,7 @@ FurQ.respect(function(err, gain){
 ### FurQ.spit()
 override
 
-**overridden from**: `Rapper.spit`
+**overridden from**: `Rapper.spit`  
 
 <a name="FurQ#punch"></a>
 ### FurQ.punch()
@@ -96,14 +96,14 @@ to plant ones fist in a buster's mush
 
 <a name="FurQ#LOVE"></a>
 ### FurQ.LOVE → <code>string</code>
-**Default**: `UZI`
-**Kind**: Constant
+**Default**: `UZI`  
+**Kind**: Constant  
 
 <a name="FurQ#event_pop"></a>
 ### "pop" (zoop)
 fire weapon
 
-**Kind: **event emitted by [FurQ]()
+**Kind: **event emitted by [FurQ]()  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -113,15 +113,15 @@ fire weapon
 ### "slap"
 slap man
 
-**Kind: **event emitted by [FurQ]()
+**Kind: **event emitted by [FurQ]()  
 
 <a name="FurQ.enemy"></a>
 ### FurQ.enemy → <code>number</code>
 FUR-Q enemy types
 
-**Read only**: true
-**Kind**: enum
-**Properties**
+**Read only**: true  
+**Kind**: enum  
+**Properties**  
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -135,7 +135,7 @@ FUR-Q enemy types
 
 check if at peace
 
-**Example**
+**Example**  
 ```js
 var peace = FurQ.peace();
 ```
@@ -143,7 +143,7 @@ var peace = FurQ.peace();
 ### FurQ~onRespect → <code>function</code>
 Passed to [respect](#FurQ#respect)
 
-**Kind:** callback
+**Kind:** callback  
 
 | Param | Type | Description |
 | --- | --- | --- |
