@@ -1,6 +1,6 @@
 /**
 one
-@typedef {(number|string)} numberOrString
+@typedef {(number|string)} one
 */
 
 /**
@@ -10,10 +10,12 @@ two
 var two = {
     /**
     two_one
+    @returns {number}
     */
     two_one: function(){},
     /**
     two_two
+    @type {number}
     */
     two_two: 1,
     /**
@@ -21,6 +23,12 @@ var two = {
     @namespace
     */
     two_three: {},
+    
+    /**
+    two_four
+    @const {number}
+    */
+    two_four: 1
 };
 
 /**
@@ -32,7 +40,10 @@ var three = {
     THAT: 1
 };
 
-/** four */
+/**
+four
+@returns {number}
+*/
 var four = function(){};
 
 /**
@@ -59,7 +70,10 @@ eight
 */
 var eight = {};
 
-/** nine */
+/**
+nine
+@returns {number}
+*/
 var nine = function(){};
 
 /**
