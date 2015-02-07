@@ -6,12 +6,12 @@
 
 ***Please note this tool is still under development, feedback encouraged! ***
 
-#jsdoc-to-markdown
+# jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown documentation out.
 
 For information about the generation templates, customising output etc. please read the [dmd](https://github.com/75lb/dmd) docs.
 
-##Synopsis
+## Synopsis
 write documented code:
 ```js
 /**
@@ -49,7 +49,7 @@ or you could work with a fork if you prefer
 $ jsdoc-parse example/function.js | dmd-fork
 ```
 
-##Examples
+## Examples
 Some examples of projects with `jsdoc2md` documentation.
 
 <table>
@@ -81,13 +81,13 @@ Some examples of projects with `jsdoc2md` documentation.
 * [file-set](https://github.com/75lb/file-set) (exports a class)
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
-##Compatible Platforms
+## Compatible Platforms
 Tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 
-##Usage
+## Usage
 Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
 
-###Command-line tool
+### Command-line tool
 Install `jsdoc2md` globally:
 ```sh
 $ npm install -g jsdoc-to-markdown
@@ -132,22 +132,22 @@ Some typical use cases:
 
 ```sh
 $ # dump everything you have into a single file
-$ jsdoc src/**/*.js > api.md
+$ jsdoc2md src/**/*.js > api.md
 ```
 
 ```sh
 $ # split into separate files
-$ jsdoc src/main-module.js > main-module.md
-$ jsdoc src/important-class.js > important-class.md
+$ jsdoc2md src/main-module.js > main-module.md
+$ jsdoc2md src/important-class.js > important-class.md
 ```
 
 ```sh
 $ # embed documentation into a template you made
-$ jsdoc src/**/*.js --template readme.hbs > README.md
+$ jsdoc2md src/**/*.js --template readme.hbs > README.md
 ```
 
-###Bundled with your project
-####As an `npm run` task
+### Bundled with your project
+#### As an `npm run` task
 ```sh
 $ npm install jsdoc-to-markdown --save-dev
 ```
@@ -168,10 +168,10 @@ Docs are generated like so:
 $ npm run docs
 ```
 
-####As a grunt plug-in
+#### As a grunt plug-in
 See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
 
-####As a gulp task
+#### As a gulp task
 Currently, the most reliable and natural way of using jsdoc2md with gulp. If your source code contains `@module` tags, use this method *only* ([reason](https://github.com/75lb/gulp-jsdoc-to-markdown#warning)). You should only need to edit `src`, `dest` and `options`: 
 
 ```js
@@ -193,13 +193,13 @@ gulp.task("docs", function(done){
 });
 ```
 
-####As a gulp plug-in
+#### As a gulp plug-in
 See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 
-##Composition
+## Composition
 Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  
 
-##API Reference
+## API Reference
 **Todo**
 
 - [ ] Internationalisation
