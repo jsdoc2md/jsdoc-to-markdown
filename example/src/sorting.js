@@ -115,7 +115,10 @@ eleven
 @external eleven
 */
 
-/** twelve */
+/**
+twelve
+@returns {function}
+*/
 var twelve = function(){};
 
 /**

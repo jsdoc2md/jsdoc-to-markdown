@@ -26,3 +26,8 @@ jsdoc2md
 jsdoc2md
     .render("example/src/sorting.js", { "sort-by": "kind,scope", "global-index-format": "grouped" })
     .pipe(fs.createWriteStream("example/sort-by/kind,scope.md"));
+
+/* name */
+jsdoc2md
+    .render("example/src/sorting.js", { "sort-by": "name", "global-index-format": "grouped" })
+    .pipe(fs.createWriteStream("example/sort-by/name.md"));

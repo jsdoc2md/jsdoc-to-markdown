@@ -20,7 +20,7 @@
 * [const: five](#five) → <code>number</code>
 * [four()](#four) ⇒ <code>number</code>
 * [nine()](#nine) ⇒ <code>number</code>
-* [twelve()](#twelve)
+* [twelve()](#twelve) ⇒ <code>function</code>
 * ["ten"](#event_ten)
 * [type: one](#one) → <code>number</code> \| <code>string</code>
 * [external: eleven](#external_eleven)
@@ -125,7 +125,7 @@ four
 nine
 
 <a name="twelve"></a>
-## twelve()
+## twelve() ⇒ <code>function</code>
 twelve
 
 <a name="event_ten"></a>

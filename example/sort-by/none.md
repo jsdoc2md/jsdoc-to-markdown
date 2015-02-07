@@ -22,7 +22,7 @@
 * [nine()](#nine) ⇒ <code>number</code>
 * ["ten"](#event_ten)
 * [external: eleven](#external_eleven)
-* [twelve()](#twelve)
+* [twelve()](#twelve) ⇒ <code>function</code>
 * [thirteen](#thirteen) → <code>number</code>
 
 <a name="one"></a>
@@ -133,7 +133,7 @@ ten
 eleven
 
 <a name="twelve"></a>
-## twelve()
+## twelve() ⇒ <code>function</code>
 twelve
 
 <a name="thirteen"></a>
