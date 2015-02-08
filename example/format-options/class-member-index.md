@@ -10,6 +10,11 @@
 
 * [class: six](#six)
   * [new six()](#new_six_new)
+  * [const: six.six_one](#six#six_one) → <code>number</code>
+  * [six.six_two()](#six#six_two) ⇒ <code>number</code>
+  * [mixin: six.six_static_two](#six.six_static_two)
+  * [six.six_static_three](#six.six_static_three) → <code>number</code>
+  * [six.six_static_one](#six.six_static_one) → <code>object</code>
 
 -
 
@@ -73,6 +78,13 @@
 
 * [class: six](#six)
   * [new six()](#new_six_new)
+  * _instance_
+    * [const: .six_one](#six#six_one) → <code>number</code>
+    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+  * _static_
+    * [mixin: .six_static_two](#six.six_static_two)
+    * [.six_static_three](#six.six_static_three) → <code>number</code>
+    * [.six_static_one](#six.six_static_one) → <code>object</code>
 
 -
 

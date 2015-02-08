@@ -58,7 +58,7 @@
 <dt><a href="#nine">nine()</a> ⇒ <code>number</code></dt>
 <dd><p>nine</p>
 </dd>
-<dt><a href="#twelve">twelve()</a></dt>
+<dt><a href="#twelve">twelve()</a> ⇒ <code>function</code></dt>
 <dd><p>twelve</p>
 </dd>
 <dt><a href="#plant">plant()</a></dt>
@@ -87,6 +87,13 @@
     * [enum: .eMood](#Animal.eMood)
 * [class: six](#six)
   * [new six()](#new_six_new)
+  * _instance_
+    * [const: .six_one](#six#six_one) → <code>number</code>
+    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+  * _static_
+    * [mixin: .six_static_two](#six.six_static_two)
+    * [.six_static_three](#six.six_static_three) → <code>number</code>
+    * [.six_static_one](#six.six_static_one) → <code>object</code>
 * [class: Species](#Species)
   * _instance_
     * [.name](#Species#name) → <code>string</code>
@@ -145,7 +152,7 @@
 * [protection(cloak, dagger)](#protection) ⇒ <code>survival</code>
 * [four()](#four) ⇒ <code>number</code>
 * [nine()](#nine) ⇒ <code>number</code>
-* [twelve()](#twelve)
+* [twelve()](#twelve) ⇒ <code>function</code>
 * [plant()](#plant)
 * ["ten"](#event_ten)
 * [type: one](#one) → <code>number</code> \| <code>string</code>
@@ -258,7 +265,7 @@
 </td>
     </tr>
 <tr>
-    <td><a href="#twelve">twelve()</a></td>
+    <td><a href="#twelve">twelve()</a> ⇒ <code>function</code></td>
     <td><p>twelve</p>
 </td>
     </tr>
