@@ -38,13 +38,13 @@
     * [.six_static_three](#six.six_static_three) → <code>number</code>
     * [.six_static_one](#six.six_static_one) → <code>object</code>
 
-<a name="six.six_static_two"></a>
-### mixin: six.six_static_two
-six_static_two
-
 <a name="new_six_new"></a>
 ### new six()
 six
+
+<a name="six.six_static_two"></a>
+### mixin: six.six_static_two
+six_static_two
 
 <a name="six.six_static_three"></a>
 ### six.six_static_three → <code>number</code>
