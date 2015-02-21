@@ -32,7 +32,6 @@
     "console-dope": "~0.3.3",
     "dmd": "next",
     "jsdoc-parse": "next",
-    "more-fs": "~0.5.0",
     "typical": "^1.0.0"
   },
   "devDependencies": {

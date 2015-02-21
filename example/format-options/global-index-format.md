@@ -105,9 +105,9 @@
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
     * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
+    * [.punch()](#FurQ#punch)
     * [.kill()](#FurQ#kill)
     * [.respect(done)](#FurQ#respect)
-    * [.punch()](#FurQ#punch)
   * _static_
     * [enum: .enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~

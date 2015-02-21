@@ -1,4 +1,4 @@
-## Modules
+I## Modules
 <dl>
 <dt><a href="#module_animal">animal</a></dt>
 <dd><p>Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).</p>
@@ -450,14 +450,14 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
     * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
-    * _standard_
-      * [.kill()](#FurQ#kill)
-      * [.respect(done)](#FurQ#respect)
     * [.spit()](#FurQ#spit)
     * [.battle()](#FurQ#battle)
     * [.punch()](#FurQ#punch)
     * ["pop" (zoop)](#FurQ#event_pop)
     * ["slap"](#FurQ#event_slap)
+    * _standard_
+      * [.kill()](#FurQ#kill)
+      * [.respect(done)](#FurQ#respect)
   * _static_
     * [enum: .enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
@@ -497,6 +497,39 @@ var uziLover = require("FurQ");
 
 -
 
+<a name="FurQ#spit"></a>
+### furQ.spit()
+override
+
+
+-
+
+<a name="FurQ#punch"></a>
+### furQ.punch()
+to plant ones fist in a buster's mush
+
+
+-
+
+<a name="FurQ#event_pop"></a>
+### event: "pop" (zoop)
+fire weapon
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| zoop | <code>boolean</code> | make 'zooping' sound as you fire |
+
+
+-
+
+<a name="FurQ#event_slap"></a>
+### event: "slap"
+slap man
+
+
+-
+
 <a name="FurQ#kill"></a>
 ### furQ.kill()
 kill
@@ -530,39 +563,6 @@ uziLover.respect(function(err, gain){
     console.log(gain);
 });
 ```
-
--
-
-<a name="FurQ#spit"></a>
-### furQ.spit()
-override
-
-
--
-
-<a name="FurQ#punch"></a>
-### furQ.punch()
-to plant ones fist in a buster's mush
-
-
--
-
-<a name="FurQ#event_pop"></a>
-### event: "pop" (zoop)
-fire weapon
-
-
-| Param | Type | Description |
-| --- | --- | --- |
-| zoop | <code>boolean</code> | make 'zooping' sound as you fire |
-
-
--
-
-<a name="FurQ#event_slap"></a>
-### event: "slap"
-slap man
-
 
 -
 
