@@ -60,11 +60,12 @@ seven
   * [new six()](#new_six_new)
   * _instance_
     * [const: .six_one](#six#six_one) → <code>number</code>
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
   * _static_
     * [.six_static_one](#six.six_static_one) → <code>object</code>
     * [.six_static_three](#six.six_static_three) → <code>number</code>
     * [mixin: .six_static_two](#six.six_static_two)
+  * _instance_
+    * [.six_two()](#six#six_two) ⇒ <code>number</code>
 
 <a name="new_six_new"></a>
 ### new six()

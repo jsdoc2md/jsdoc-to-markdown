@@ -24,21 +24,19 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
     * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
-    * [.kill()](#FurQ#kill)
-    * [.respect(done)](#FurQ#respect)
+    * _standard_
+      * [.kill()](#FurQ#kill)
+      * [.respect(done)](#FurQ#respect)
+    * [.spit()](#FurQ#spit)
+    * [.battle()](#FurQ#battle)
     * [.punch()](#FurQ#punch)
+    * ["pop" (zoop)](#FurQ#event_pop)
+    * ["slap"](#FurQ#event_slap)
   * _static_
     * [enum: .enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
-  * _overrides_
-    * [.spit()](#FurQ#spit)
-  * _inherits_
-    * [.battle()](#Rapper#battle)
   * _inner_
     * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
-  * _events_
-    * ["pop" (zoop)](#FurQ#event_pop)
-    * ["slap"](#FurQ#event_slap)
 
 <a name="new_FurQ_new"></a>
 ### new FurQ()
@@ -170,9 +168,9 @@ battle
 train new rappers
 
 
-* [.train()](#Rapper.train)
-  * [class: ~School](#Rapper.train..School)
-    * [new School()](#new_Rapper.train..School_new)
+  * [.train()](#Rapper.train)
+    * [class: ~School](#Rapper.train..School)
+      * [new School()](#new_Rapper.train..School_new)
 
 <a name="Rapper.train..School"></a>
 #### class: train~School
