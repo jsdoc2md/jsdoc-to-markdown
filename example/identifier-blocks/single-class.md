@@ -19,22 +19,22 @@ this is equivalent to:
 ```
 
 <a name="Animal"></a>
-## class: Animal
+## Animal
 Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).
 
 - some markdown
 - in the module
 - description
 
-**Scope**: global  
+**Scope**: global class  
 
-* [class: Animal](#Animal)
+* [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
     * [.age](#Animal#age) → <code>number</code>
     * [.species](#Animal#species) → <code>[Species](#Species)</code>
   * _static_
-    * [enum: .eMood](#Animal.eMood)
+    * [.eMood](#Animal.eMood)
 
 <a name="new_Animal_new"></a>
 ### new Animal(species, parents)
@@ -49,15 +49,15 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 the current age
 
 **Default**: <code>0</code>  
-**Scope**: instance member of <code>[Animal](#Animal)</code>  
+**Scope**: instance property of <code>[Animal](#Animal)</code>  
 <a name="Animal#species"></a>
 ### animal.species → <code>[Species](#Species)</code>
-**Scope**: instance member of <code>[Animal](#Animal)</code>  
+**Scope**: instance property of <code>[Animal](#Animal)</code>  
 <a name="Animal.eMood"></a>
-### enum: Animal.eMood
+### Animal.eMood
 Animal moods
 
-**Scope**: static member of <code>[Animal](#Animal)</code>  
+**Scope**: static enum property of <code>[Animal](#Animal)</code>  
 **Properties**
 
 | Name | Default | Description |
@@ -80,11 +80,11 @@ The template looks like this:
 ```
 
 <a name="Animal"></a>
-## class: Animal
+## Animal
 Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).
 
 - some markdown
 - in the module
 - description
 
-**Scope**: global  
+**Scope**: global class  

@@ -37,19 +37,19 @@
 #module-index-format = grouped
 ## Modules
 * [animal](#module_animal)
-  * [class: ~Animal](#module_animal..Animal)
+  * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
       * [.age](#module_animal..Animal#age) → <code>number</code>
       * [.species](#module_animal..Animal#species) → <code>Species</code>
     * _static_
-      * [enum: .eMood](#module_animal..Animal.eMood)
+      * [.eMood](#module_animal..Animal.eMood)
 * [builder](#module_builder)
-  * [mixin: ~builder](#module_builder..builder)
+  * [~builder](#module_builder..builder)
     * [.construct()](#module_builder..builder.construct)
     * [.repair()](#module_builder..builder.repair)
 * [species](#module_species)
-  * [class: ~Species](#module_species..Species)
+  * [~Species](#module_species..Species)
     * _instance_
       * [.name](#module_species..Species#name) → <code>string</code>
       * [.species](#module_species..Species#species) → <code>Species</code>

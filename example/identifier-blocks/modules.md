@@ -33,25 +33,25 @@ var animal = require("animal");
 
 
 * [animal](#module_animal)
-  * [class: ~Animal](#module_animal..Animal)
+  * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
       * [.age](#module_animal..Animal#age) → <code>number</code>
       * [.species](#module_animal..Animal#species) → <code>Species</code>
     * _static_
-      * [enum: .eMood](#module_animal..Animal.eMood)
+      * [.eMood](#module_animal..Animal.eMood)
 
 <a name="module_animal..Animal"></a>
-### class: animal~Animal
-**Scope**: inner member of <code>[animal](#module_animal)</code>  
+### animal~Animal
+**Scope**: inner class of <code>[animal](#module_animal)</code>  
 
-* [class: ~Animal](#module_animal..Animal)
+* [~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
     * [.age](#module_animal..Animal#age) → <code>number</code>
     * [.species](#module_animal..Animal#species) → <code>Species</code>
   * _static_
-    * [enum: .eMood](#module_animal..Animal.eMood)
+    * [.eMood](#module_animal..Animal.eMood)
 
 <a name="new_module_animal..Animal_new"></a>
 #### new Animal(species, parents)
@@ -66,15 +66,15 @@ var animal = require("animal");
 the current age
 
 **Default**: <code>0</code>  
-**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal#species"></a>
 #### animal.species → <code>Species</code>
-**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal.eMood"></a>
-#### enum: Animal.eMood
+#### Animal.eMood
 Animal moods
 
-**Scope**: static member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: static enum property of <code>[Animal](#module_animal..Animal)</code>  
 **Properties**
 
 | Name | Default | Description |

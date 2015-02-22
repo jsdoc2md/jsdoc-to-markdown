@@ -47,28 +47,28 @@ var animal = require("animal");
 
 
 * [animal](#module_animal)
-  * [class: ~Animal](#module_animal..Animal)
+  * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
       * [.age](#module_animal..Animal#age) → <code>number</code>
       * [.species](#module_animal..Animal#species) → <code>Species</code>
     * _static_
-      * [enum: .eMood](#module_animal..Animal.eMood)
+      * [.eMood](#module_animal..Animal.eMood)
 
 
 -
 
 <a name="module_animal..Animal"></a>
-### class: animal~Animal
-**Scope**: inner member of <code>[animal](#module_animal)</code>  
+### animal~Animal
+**Scope**: inner class of <code>[animal](#module_animal)</code>  
 
-* [class: ~Animal](#module_animal..Animal)
+* [~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
     * [.age](#module_animal..Animal#age) → <code>number</code>
     * [.species](#module_animal..Animal#species) → <code>Species</code>
   * _static_
-    * [enum: .eMood](#module_animal..Animal.eMood)
+    * [.eMood](#module_animal..Animal.eMood)
 
 
 -
@@ -89,21 +89,21 @@ var animal = require("animal");
 the current age
 
 **Default**: <code>0</code>  
-**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 
 -
 
 <a name="module_animal..Animal#species"></a>
 #### animal.species → <code>Species</code>
-**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 
 -
 
 <a name="module_animal..Animal.eMood"></a>
-#### enum: Animal.eMood
+#### Animal.eMood
 Animal moods
 
-**Scope**: static member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: static enum property of <code>[Animal](#module_animal..Animal)</code>  
 **Properties**
 
 | Name | Default | Description |
@@ -121,7 +121,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 
 
 * [builder](#module_builder)
-  * [mixin: ~builder](#module_builder..builder)
+  * [~builder](#module_builder..builder)
     * [.construct()](#module_builder..builder.construct)
     * [.repair()](#module_builder..builder.repair)
 
@@ -129,10 +129,10 @@ Aside from humans, who are the most prolific and versatile builders, building be
 -
 
 <a name="module_builder..builder"></a>
-### mixin: builder~builder
-**Scope**: inner member of <code>[builder](#module_builder)</code>  
+### builder~builder
+**Scope**: inner mixin of <code>[builder](#module_builder)</code>  
 
-* [mixin: ~builder](#module_builder..builder)
+* [~builder](#module_builder..builder)
   * [.construct()](#module_builder..builder.construct)
   * [.repair()](#module_builder..builder.repair)
 
@@ -143,7 +143,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 #### builder.construct()
 construct something
 
-**Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+**Scope**: static method of <code>[builder](#module_builder..builder)</code>  
 
 -
 
@@ -151,7 +151,7 @@ construct something
 #### builder.repair()
 repair something
 
-**Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+**Scope**: static method of <code>[builder](#module_builder..builder)</code>  
 
 -
 
@@ -161,7 +161,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 
 * [species](#module_species)
-  * [class: ~Species](#module_species..Species)
+  * [~Species](#module_species..Species)
     * _instance_
       * [.name](#module_species..Species#name) → <code>string</code>
       * [.species](#module_species..Species#species) → <code>Species</code>
@@ -172,10 +172,10 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 -
 
 <a name="module_species..Species"></a>
-### class: species~Species
-**Scope**: inner member of <code>[species](#module_species)</code>  
+### species~Species
+**Scope**: inner class of <code>[species](#module_species)</code>  
 
-* [class: ~Species](#module_species..Species)
+* [~Species](#module_species..Species)
   * _instance_
     * [.name](#module_species..Species#name) → <code>string</code>
     * [.species](#module_species..Species#species) → <code>Species</code>
@@ -189,13 +189,13 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 #### species.name → <code>string</code>
 the species name
 
-**Scope**: instance member of <code>[Species](#module_species..Species)</code>  
+**Scope**: instance property of <code>[Species](#module_species..Species)</code>  
 
 -
 
 <a name="module_species..Species#species"></a>
 #### species.species → <code>Species</code>
-**Scope**: instance member of <code>[Species](#module_species..Species)</code>  
+**Scope**: instance property of <code>[Species](#module_species..Species)</code>  
 
 -
 
@@ -203,7 +203,7 @@ the species name
 #### Species.merge(one, two) ⇒ <code>Species</code>
 merge two species into a new one
 
-**Scope**: static member of <code>[Species](#module_species..Species)</code>  
+**Scope**: static method of <code>[Species](#module_species..Species)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |

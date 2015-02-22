@@ -32,9 +32,9 @@
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
 </dl>
-## Globals
+## Classes
 <dl>
-<dt><a href="#Animal">class: Animal</a></dt>
+<dt><a href="#Animal">Animal</a></dt>
 <dd><p>Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).</p>
 <ul>
 <li>some markdown</li>
@@ -42,25 +42,31 @@
 <li>description</li>
 </ul>
 </dd>
-<dt><a href="#six">class: six</a></dt>
+<dt><a href="#six">six</a></dt>
 <dd></dd>
-<dt><a href="#Species">class: Species</a></dt>
+<dt><a href="#Species">Species</a></dt>
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
-<dt><a href="#FurQ">class: FurQ</a> ⇐ <code><a href="#Rapper">Rapper</a></code></dt>
+<dt><a href="#FurQ">FurQ</a> ⇐ <code><a href="#Rapper">Rapper</a></code></dt>
 <dd><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
 </dd>
-<dt><a href="#Rapper">class: Rapper</a></dt>
+<dt><a href="#Rapper">Rapper</a></dt>
 <dd></dd>
-<dt><a href="#builder">mixin: builder</a></dt>
+</dl>
+## Mixins
+<dl>
+<dt><a href="#builder">builder</a></dt>
 <dd><p>Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.</p>
 </dd>
-<dt><a href="#two">mixin: two</a></dt>
+<dt><a href="#two">two</a></dt>
 <dd><p>two</p>
 </dd>
-<dt><a href="#eType">enum: eType</a></dt>
+</dl>
+## Members
+<dl>
+<dt><a href="#eType">eType</a></dt>
 <dd></dd>
-<dt><a href="#three">enum: three</a></dt>
+<dt><a href="#three">three</a></dt>
 <dd><p>three</p>
 </dd>
 <dt><a href="#seven">seven</a> → <code>number</code></dt>
@@ -69,6 +75,9 @@
 <dt><a href="#thirteen">thirteen</a> → <code>number</code></dt>
 <dd><p>thirteen</p>
 </dd>
+</dl>
+## Objects
+<dl>
 <dt><a href="#missle">missle</a> → <code>object</code></dt>
 <dd></dd>
 <dt><a href="#personality">personality</a> → <code>object</code></dt>
@@ -76,9 +85,15 @@
 <dt><a href="#eight">eight</a> → <code>object</code></dt>
 <dd><p>eight</p>
 </dd>
-<dt><a href="#five">const: five</a> → <code>number</code></dt>
+</dl>
+## Constants
+<dl>
+<dt><a href="#five">five</a> → <code>number</code></dt>
 <dd><p>five</p>
 </dd>
+</dl>
+## Functions
+<dl>
 <dt><del><a href="#taze">taze(victim, [options], [done])</a></del></dt>
 <dd><p>Pump an idiot full of volts</p>
 </dd>
@@ -97,13 +112,22 @@
 <dt><a href="#plant">plant()</a></dt>
 <dd><p>to plant ones fist in a buster&#39;s mush</p>
 </dd>
+</dl>
+## Events
+<dl>
 <dt><a href="#event_ten">"ten"</a></dt>
 <dd><p>ten</p>
 </dd>
-<dt><a href="#one">type: one</a> → <code>number</code> | <code>string</code></dt>
+</dl>
+## Typedefs
+<dl>
+<dt><a href="#one">one</a> → <code>number</code> | <code>string</code></dt>
 <dd><p>one</p>
 </dd>
-<dt><a href="#external_eleven">external: eleven</a></dt>
+</dl>
+## External
+<dl>
+<dt><a href="#external_eleven">eleven</a></dt>
 <dd><p>eleven</p>
 </dd>
 </dl>
@@ -123,28 +147,28 @@ var animal = require("animal");
 ```
 
 * [animal](#module_animal)
-  * [class: ~Animal](#module_animal..Animal)
+  * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
       * [.age](#module_animal..Animal#age) → <code>number</code>
       * [.species](#module_animal..Animal#species) → <code>[Species](#Species)</code>
     * _static_
-      * [enum: .eMood](#module_animal..Animal.eMood)
+      * [.eMood](#module_animal..Animal.eMood)
 
 
 -
 
 <a name="module_animal..Animal"></a>
-### class: animal~Animal
-**Scope**: inner member of <code>[animal](#module_animal)</code>  
+### animal~Animal
+**Scope**: inner class of <code>[animal](#module_animal)</code>  
 
-* [class: ~Animal](#module_animal..Animal)
+* [~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
     * [.age](#module_animal..Animal#age) → <code>number</code>
     * [.species](#module_animal..Animal#species) → <code>[Species](#Species)</code>
   * _static_
-    * [enum: .eMood](#module_animal..Animal.eMood)
+    * [.eMood](#module_animal..Animal.eMood)
 
 
 -
@@ -165,21 +189,21 @@ var animal = require("animal");
 the current age
 
 **Default**: <code>0</code>  
-**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 
 -
 
 <a name="module_animal..Animal#species"></a>
 #### animal.species → <code>[Species](#Species)</code>
-**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 
 -
 
 <a name="module_animal..Animal.eMood"></a>
-#### enum: Animal.eMood
+#### Animal.eMood
 Animal moods
 
-**Scope**: static member of <code>[Animal](#module_animal..Animal)</code>  
+**Scope**: static enum property of <code>[Animal](#module_animal..Animal)</code>  
 **Properties**
 
 | Name | Default | Description |
@@ -197,7 +221,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 
 
 * [builder](#module_builder)
-  * [mixin: ~builder](#module_builder..builder)
+  * [~builder](#module_builder..builder)
     * [.construct()](#module_builder..builder.construct)
     * [.repair()](#module_builder..builder.repair)
 
@@ -205,10 +229,10 @@ Aside from humans, who are the most prolific and versatile builders, building be
 -
 
 <a name="module_builder..builder"></a>
-### mixin: builder~builder
-**Scope**: inner member of <code>[builder](#module_builder)</code>  
+### builder~builder
+**Scope**: inner mixin of <code>[builder](#module_builder)</code>  
 
-* [mixin: ~builder](#module_builder..builder)
+* [~builder](#module_builder..builder)
   * [.construct()](#module_builder..builder.construct)
   * [.repair()](#module_builder..builder.repair)
 
@@ -219,7 +243,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 #### builder.construct()
 construct something
 
-**Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+**Scope**: static method of <code>[builder](#module_builder..builder)</code>  
 
 -
 
@@ -227,7 +251,7 @@ construct something
 #### builder.repair()
 repair something
 
-**Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+**Scope**: static method of <code>[builder](#module_builder..builder)</code>  
 
 -
 
@@ -237,7 +261,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 
 * [commonJS/species](#module_commonJS/species)
-  * [class: ~Species](#module_commonJS/species..Species)
+  * [~Species](#module_commonJS/species..Species)
     * _instance_
       * [.name](#module_commonJS/species..Species#name) → <code>string</code>
       * [.species](#module_commonJS/species..Species#species) → <code>[Species](#Species)</code>
@@ -248,10 +272,10 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 -
 
 <a name="module_commonJS/species..Species"></a>
-### class: commonJS/species~Species
-**Scope**: inner member of <code>[commonJS/species](#module_commonJS/species)</code>  
+### commonJS/species~Species
+**Scope**: inner class of <code>[commonJS/species](#module_commonJS/species)</code>  
 
-* [class: ~Species](#module_commonJS/species..Species)
+* [~Species](#module_commonJS/species..Species)
   * _instance_
     * [.name](#module_commonJS/species..Species#name) → <code>string</code>
     * [.species](#module_commonJS/species..Species#species) → <code>[Species](#Species)</code>
@@ -265,13 +289,13 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 #### species.name → <code>string</code>
 the species name
 
-**Scope**: instance member of <code>[Species](#module_commonJS/species..Species)</code>  
+**Scope**: instance property of <code>[Species](#module_commonJS/species..Species)</code>  
 
 -
 
 <a name="module_commonJS/species..Species#species"></a>
 #### species.species → <code>[Species](#Species)</code>
-**Scope**: instance member of <code>[Species](#module_commonJS/species..Species)</code>  
+**Scope**: instance property of <code>[Species](#module_commonJS/species..Species)</code>  
 
 -
 
@@ -279,7 +303,7 @@ the species name
 #### Species.merge(one, two) ⇒ <code>[Species](#Species)</code>
 merge two species into a new one
 
-**Scope**: static member of <code>[Species](#module_commonJS/species..Species)</code>  
+**Scope**: static method of <code>[Species](#module_commonJS/species..Species)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -290,22 +314,22 @@ merge two species into a new one
 -
 
 <a name="Animal"></a>
-## class: Animal
+## Animal
 Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).
 
 - some markdown
 - in the module
 - description
 
-**Scope**: global  
+**Scope**: global class  
 
-* [class: Animal](#Animal)
+* [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
     * [.age](#Animal#age) → <code>number</code>
     * [.species](#Animal#species) → <code>[Species](#Species)</code>
   * _static_
-    * [enum: .eMood](#Animal.eMood)
+    * [.eMood](#Animal.eMood)
 
 
 -
@@ -326,21 +350,21 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 the current age
 
 **Default**: <code>0</code>  
-**Scope**: instance member of <code>[Animal](#Animal)</code>  
+**Scope**: instance property of <code>[Animal](#Animal)</code>  
 
 -
 
 <a name="Animal#species"></a>
 ### animal.species → <code>[Species](#Species)</code>
-**Scope**: instance member of <code>[Animal](#Animal)</code>  
+**Scope**: instance property of <code>[Animal](#Animal)</code>  
 
 -
 
 <a name="Animal.eMood"></a>
-### enum: Animal.eMood
+### Animal.eMood
 Animal moods
 
-**Scope**: static member of <code>[Animal](#Animal)</code>  
+**Scope**: static enum property of <code>[Animal](#Animal)</code>  
 **Properties**
 
 | Name | Default | Description |
@@ -353,16 +377,16 @@ Animal moods
 -
 
 <a name="six"></a>
-## class: six
-**Scope**: global  
+## six
+**Scope**: global class  
 
-* [class: six](#six)
+* [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [const: .six_one](#six#six_one) → <code>number</code>
+    * [.six_one](#six#six_one) → <code>number</code>
     * [.six_two()](#six#six_two) ⇒ <code>number</code>
   * _static_
-    * [mixin: .six_static_two](#six.six_static_two)
+    * [.six_static_two](#six.six_static_two)
     * [.six_static_three](#six.six_static_three) → <code>number</code>
     * [.six_static_one](#six.six_static_one) → <code>object</code>
 
@@ -377,10 +401,10 @@ six
 -
 
 <a name="six#six_one"></a>
-### const: six.six_one → <code>number</code>
+### six.six_one → <code>number</code>
 six_one
 
-**Scope**: instance member of <code>[six](#six)</code>  
+**Scope**: instance constant of <code>[six](#six)</code>  
 
 -
 
@@ -388,15 +412,15 @@ six_one
 ### six.six_two() ⇒ <code>number</code>
 six_two
 
-**Scope**: instance member of <code>[six](#six)</code>  
+**Scope**: instance method of <code>[six](#six)</code>  
 
 -
 
 <a name="six.six_static_two"></a>
-### mixin: six.six_static_two
+### six.six_static_two
 six_static_two
 
-**Scope**: static member of <code>[six](#six)</code>  
+**Scope**: static mixin of <code>[six](#six)</code>  
 
 -
 
@@ -404,7 +428,7 @@ six_static_two
 ### six.six_static_three → <code>number</code>
 six_static_three
 
-**Scope**: static member of <code>[six](#six)</code>  
+**Scope**: static property of <code>[six](#six)</code>  
 
 -
 
@@ -412,17 +436,17 @@ six_static_three
 ### six.six_static_one → <code>object</code>
 six_static_one
 
-**Scope**: static member of <code>[six](#six)</code>  
+**Scope**: static namespace of <code>[six](#six)</code>  
 
 -
 
 <a name="Species"></a>
-## class: Species
+## Species
 In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into "infraspecific taxa" such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).
 
-**Scope**: global  
+**Scope**: global class  
 
-* [class: Species](#Species)
+* [Species](#Species)
   * _instance_
     * [.name](#Species#name) → <code>string</code>
     * [.species](#Species#species) → <code>[Species](#Species)</code>
@@ -436,13 +460,13 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 ### species.name → <code>string</code>
 the species name
 
-**Scope**: instance member of <code>[Species](#Species)</code>  
+**Scope**: instance property of <code>[Species](#Species)</code>  
 
 -
 
 <a name="Species#species"></a>
 ### species.species → <code>[Species](#Species)</code>
-**Scope**: instance member of <code>[Species](#Species)</code>  
+**Scope**: instance property of <code>[Species](#Species)</code>  
 
 -
 
@@ -450,7 +474,7 @@ the species name
 ### Species.merge(one, two) ⇒ <code>[Species](#Species)</code>
 merge two species into a new one
 
-**Scope**: static member of <code>[Species](#Species)</code>  
+**Scope**: static method of <code>[Species](#Species)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -461,21 +485,21 @@ merge two species into a new one
 -
 
 <a name="FurQ"></a>
-## class: FurQ ⇐ <code>[Rapper](#Rapper)</code>
+## FurQ ⇐ <code>[Rapper](#Rapper)</code>
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
 **Extends:** <code>[Rapper](#Rapper)</code>  
-**Scope**: global  
+**Scope**: global class  
 **Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
 **Access:** public  
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Author:** Chris Morris  
 
-* [class: FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
+* [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
     * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
-    * [const: .LOVE](#FurQ#LOVE) → <code>string</code>
+    * [.LOVE](#FurQ#LOVE) → <code>string</code>
     * [.spit()](#FurQ#spit)
     * [.battle()](#FurQ#battle)
     * [.punch()](#FurQ#punch)
@@ -485,10 +509,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
       * [.kill()](#FurQ#kill)
       * [.respect(done)](#FurQ#respect)
   * _static_
-    * [enum: .enemy](#FurQ.enemy) → <code>number</code>
+    * [.enemy](#FurQ.enemy) → <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
-    * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
+    * [~onRespect](#FurQ..onRespect) → <code>function</code>
 
 
 -
@@ -509,7 +533,7 @@ var uziLover = require("FurQ");
 <a name="FurQ#wannaTryIt"></a>
 ### furQ.wannaTryIt → <code>string</code>
 **Default**: <code>&quot;bitch&quot;</code>  
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: instance property of <code>[FurQ](#FurQ)</code>  
 **See**
 
 - "Uzi like a metal dick in my hand."
@@ -519,9 +543,9 @@ var uziLover = require("FurQ");
 -
 
 <a name="FurQ#LOVE"></a>
-### const: furQ.LOVE → <code>string</code>
+### furQ.LOVE → <code>string</code>
 **Default**: <code>&quot;UZI&quot;</code>  
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: instance constant of <code>[FurQ](#FurQ)</code>  
 
 -
 
@@ -529,7 +553,7 @@ var uziLover = require("FurQ");
 ### furQ.spit()
 override
 
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: instance method of <code>[FurQ](#FurQ)</code>  
 
 -
 
@@ -537,15 +561,15 @@ override
 ### furQ.punch()
 to plant ones fist in a buster's mush
 
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: instance method of <code>[FurQ](#FurQ)</code>  
 
 -
 
 <a name="FurQ#event_pop"></a>
-### event: "pop" (zoop)
+### "pop" (zoop)
 fire weapon
 
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: event emitted by <code>[FurQ](#FurQ)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -555,10 +579,10 @@ fire weapon
 -
 
 <a name="FurQ#event_slap"></a>
-### event: "slap"
+### "slap"
 slap man
 
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: event emitted by <code>[FurQ](#FurQ)</code>  
 
 -
 
@@ -566,7 +590,7 @@ slap man
 ### furQ.kill()
 kill
 
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: instance method of <code>[FurQ](#FurQ)</code>  
 **Category**: standard  
 **Example**  
 ```js
@@ -584,7 +608,7 @@ uziLover.kill();
 ### furQ.respect(done)
 respect
 
-**Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+**Scope**: instance method of <code>[FurQ](#FurQ)</code>  
 **Category**: standard  
 
 | Param | Type | Description |
@@ -601,10 +625,10 @@ uziLover.respect(function(err, gain){
 -
 
 <a name="FurQ.enemy"></a>
-### enum: FurQ.enemy → <code>number</code>
+### FurQ.enemy → <code>number</code>
 FUR-Q enemy types
 
-**Scope**: static member of <code>[FurQ](#FurQ)</code>  
+**Scope**: static enum property of <code>[FurQ](#FurQ)</code>  
 **Read only**: true  
 **Properties**
 
@@ -623,7 +647,7 @@ FUR-Q enemy types
 
 check if at peace
 
-**Scope**: static member of <code>[FurQ](#FurQ)</code>  
+**Scope**: static method of <code>[FurQ](#FurQ)</code>  
 **Example**  
 ```js
 var peace = FurQ.peace();
@@ -632,10 +656,10 @@ var peace = FurQ.peace();
 -
 
 <a name="FurQ..onRespect"></a>
-### callback: FurQ~onRespect → <code>function</code>
+### FurQ~onRespect → <code>function</code>
 Passed to [respect](#FurQ#respect)
 
-**Scope**: inner member of <code>[FurQ](#FurQ)</code>  
+**Scope**: inner typedef of <code>[FurQ](#FurQ)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -646,16 +670,16 @@ Passed to [respect](#FurQ#respect)
 -
 
 <a name="Rapper"></a>
-## class: Rapper
-**Scope**: global  
+## Rapper
+**Scope**: global class  
 
-* [class: Rapper](#Rapper)
+* [Rapper](#Rapper)
   * _instance_
     * [.spit()](#Rapper#spit)
     * [.battle()](#Rapper#battle)
   * _static_
     * [.train()](#Rapper.train)
-      * [class: ~School](#Rapper.train..School)
+      * [~School](#Rapper.train..School)
         * [new School()](#new_Rapper.train..School_new)
         * [.bestStudent](#Rapper.train..School#bestStudent)
 
@@ -666,7 +690,7 @@ Passed to [respect](#FurQ#respect)
 ### rapper.spit()
 spit
 
-**Scope**: instance member of <code>[Rapper](#Rapper)</code>  
+**Scope**: instance method of <code>[Rapper](#Rapper)</code>  
 
 -
 
@@ -674,7 +698,7 @@ spit
 ### rapper.battle()
 battle
 
-**Scope**: instance member of <code>[Rapper](#Rapper)</code>  
+**Scope**: instance method of <code>[Rapper](#Rapper)</code>  
 
 -
 
@@ -682,10 +706,10 @@ battle
 ### Rapper.train()
 train new rappers
 
-**Scope**: static member of <code>[Rapper](#Rapper)</code>  
+**Scope**: static method of <code>[Rapper](#Rapper)</code>  
 
   * [.train()](#Rapper.train)
-    * [class: ~School](#Rapper.train..School)
+    * [~School](#Rapper.train..School)
       * [new School()](#new_Rapper.train..School_new)
       * [.bestStudent](#Rapper.train..School#bestStudent)
 
@@ -693,10 +717,10 @@ train new rappers
 -
 
 <a name="Rapper.train..School"></a>
-#### class: train~School
-**Scope**: inner member of <code>[train](#Rapper.train)</code>  
+#### train~School
+**Scope**: inner class of <code>[train](#Rapper.train)</code>  
 
-* [class: ~School](#Rapper.train..School)
+* [~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
   * [.bestStudent](#Rapper.train..School#bestStudent)
 
@@ -714,17 +738,17 @@ rap school
 ##### school.bestStudent
 best student
 
-**Scope**: instance member of <code>[School](#Rapper.train..School)</code>  
+**Scope**: instance property of <code>[School](#Rapper.train..School)</code>  
 
 -
 
 <a name="builder"></a>
-## mixin: builder
+## builder
 Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.
 
-**Scope**: global  
+**Scope**: global mixin  
 
-* [mixin: builder](#builder)
+* [builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
 
@@ -735,7 +759,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 ### builder.construct()
 construct something
 
-**Scope**: static member of <code>[builder](#builder)</code>  
+**Scope**: static method of <code>[builder](#builder)</code>  
 
 -
 
@@ -743,20 +767,20 @@ construct something
 ### builder.repair()
 repair something
 
-**Scope**: static member of <code>[builder](#builder)</code>  
+**Scope**: static method of <code>[builder](#builder)</code>  
 
 -
 
 <a name="two"></a>
-## mixin: two
+## two
 two
 
-**Scope**: global  
+**Scope**: global mixin  
 
-* [mixin: two](#two)
+* [two](#two)
   * [.two_two](#two.two_two) → <code>number</code>
   * [.two_three](#two.two_three) → <code>object</code>
-  * [const: .two_four](#two.two_four) → <code>number</code>
+  * [.two_four](#two.two_four) → <code>number</code>
   * [.two_one()](#two.two_one) ⇒ <code>number</code>
 
 
@@ -766,7 +790,7 @@ two
 ### two.two_two → <code>number</code>
 two_two
 
-**Scope**: static member of <code>[two](#two)</code>  
+**Scope**: static property of <code>[two](#two)</code>  
 
 -
 
@@ -774,15 +798,15 @@ two_two
 ### two.two_three → <code>object</code>
 two_three
 
-**Scope**: static member of <code>[two](#two)</code>  
+**Scope**: static namespace of <code>[two](#two)</code>  
 
 -
 
 <a name="two.two_four"></a>
-### const: two.two_four → <code>number</code>
+### two.two_four → <code>number</code>
 two_four
 
-**Scope**: static member of <code>[two](#two)</code>  
+**Scope**: static constant of <code>[two](#two)</code>  
 
 -
 
@@ -790,13 +814,13 @@ two_four
 ### two.two_one() ⇒ <code>number</code>
 two_one
 
-**Scope**: static member of <code>[two](#two)</code>  
+**Scope**: static method of <code>[two](#two)</code>  
 
 -
 
 <a name="eType"></a>
-## enum: eType
-**Scope**: global  
+## eType
+**Scope**: global enum  
 **Properties**
 
 | Name | Default | Description |
@@ -808,10 +832,10 @@ two_one
 -
 
 <a name="three"></a>
-## enum: three
+## three
 three
 
-**Scope**: global  
+**Scope**: global enum  
 **Properties**
 
 | Name | Default |
@@ -826,7 +850,7 @@ three
 ## seven → <code>number</code>
 seven
 
-**Scope**: global  
+**Scope**: global member  
 
 -
 
@@ -834,13 +858,13 @@ seven
 ## thirteen → <code>number</code>
 thirteen
 
-**Scope**: global  
+**Scope**: global member  
 
 -
 
 <a name="missle"></a>
 ## missle → <code>object</code>
-**Scope**: global  
+**Scope**: global namespace  
 
 * [missle](#missle) → <code>object</code>
   * [.range](#missle.range) → <code>number</code>
@@ -856,7 +880,7 @@ thirteen
 missile range
 
 **Default**: <code>100000</code>  
-**Scope**: static member of <code>[missle](#missle)</code>  
+**Scope**: static property of <code>[missle](#missle)</code>  
 
 -
 
@@ -865,7 +889,7 @@ missile range
 ballistic
 
 **Default**: <code>true</code>  
-**Scope**: static member of <code>[missle](#missle)</code>  
+**Scope**: static property of <code>[missle](#missle)</code>  
 
 -
 
@@ -873,7 +897,7 @@ ballistic
 ### missle.hydrogen
 hydrogen bomb?
 
-**Scope**: static member of <code>[missle](#missle)</code>  
+**Scope**: static property of <code>[missle](#missle)</code>  
 
 -
 
@@ -882,13 +906,13 @@ hydrogen bomb?
 number of megatons
 
 **Default**: <code>200</code>  
-**Scope**: static member of <code>[missle](#missle)</code>  
+**Scope**: static property of <code>[missle](#missle)</code>  
 
 -
 
 <a name="personality"></a>
 ## personality → <code>object</code>
-**Scope**: global  
+**Scope**: global namespace  
 **Properties**
 
 | Name | Type | Description |
@@ -906,15 +930,15 @@ number of megatons
 ## eight → <code>object</code>
 eight
 
-**Scope**: global  
+**Scope**: global namespace  
 
 -
 
 <a name="five"></a>
-## const: five → <code>number</code>
+## five → <code>number</code>
 five
 
-**Scope**: global  
+**Scope**: global constant  
 
 -
 
@@ -924,7 +948,7 @@ five
 
 Pump an idiot full of volts
 
-**Scope**: global  
+**Scope**: global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -941,7 +965,7 @@ Pump an idiot full of volts
 ## protection(cloak, dagger) ⇒ <code>survival</code>
 a quite wonderful function
 
-**Scope**: global  
+**Scope**: global function  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -955,7 +979,7 @@ a quite wonderful function
 ## four() ⇒ <code>number</code>
 four
 
-**Scope**: global  
+**Scope**: global function  
 
 -
 
@@ -963,7 +987,7 @@ four
 ## nine() ⇒ <code>number</code>
 nine
 
-**Scope**: global  
+**Scope**: global function  
 
 -
 
@@ -971,7 +995,7 @@ nine
 ## twelve() ⇒ <code>function</code>
 twelve
 
-**Scope**: global  
+**Scope**: global function  
 
 -
 
@@ -979,31 +1003,31 @@ twelve
 ## plant()
 to plant ones fist in a buster's mush
 
-**Scope**: global  
+**Scope**: global function  
 
 -
 
 <a name="event_ten"></a>
-## event: "ten"
+## "ten"
 ten
 
-**Scope**: global  
+**Scope**: event emitted  
 
 -
 
 <a name="one"></a>
-## type: one → <code>number</code> \| <code>string</code>
+## one → <code>number</code> \| <code>string</code>
 one
 
-**Scope**: global  
+**Scope**: global typedef  
 
 -
 
 <a name="external_eleven"></a>
-## external: eleven
+## eleven
 eleven
 
-**Scope**: global  
+**Scope**: global external  
 
 -
 
