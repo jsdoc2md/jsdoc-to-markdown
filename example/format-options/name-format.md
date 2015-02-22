@@ -53,8 +53,8 @@ var animal = require("animal");
   * [~Animal](#module_animal..Animal)
     * [`new Animal(species, parents)`](#new_module_animal..Animal_new)
     * _instance_
-      * [`.age`](#module_animal..Animal#age) → <code>number</code>
-      * [`.species`](#module_animal..Animal#species) → <code>Species</code>
+      * [`.age`](#module_animal..Animal#age) : <code>number</code>
+      * [`.species`](#module_animal..Animal#species) : <code>Species</code>
     * _static_
       * [`.eMood`](#module_animal..Animal.eMood)
 
@@ -65,8 +65,8 @@ var animal = require("animal");
 * [~Animal](#module_animal..Animal)
   * [`new Animal(species, parents)`](#new_module_animal..Animal_new)
   * _instance_
-    * [`.age`](#module_animal..Animal#age) → <code>number</code>
-    * [`.species`](#module_animal..Animal#species) → <code>Species</code>
+    * [`.age`](#module_animal..Animal#age) : <code>number</code>
+    * [`.species`](#module_animal..Animal#species) : <code>Species</code>
   * _static_
     * [`.eMood`](#module_animal..Animal.eMood)
 
@@ -79,13 +79,13 @@ var animal = require("animal");
 | parents | <code>Species</code> | the species |
 
 <a name="module_animal..Animal#age"></a>
-#### `animal.age` → <code>number</code>
+#### `animal.age` : <code>number</code>
 the current age
 
 **Default**: <code>0</code>  
 **Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal#species"></a>
-#### `animal.species` → <code>Species</code>
+#### `animal.species` : <code>Species</code>
 **Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal.eMood"></a>
 #### `Animal.eMood`
@@ -136,8 +136,8 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 * [species](#module_species)
   * [~Species](#module_species..Species)
     * _instance_
-      * [`.name`](#module_species..Species#name) → <code>string</code>
-      * [`.species`](#module_species..Species#species) → <code>Species</code>
+      * [`.name`](#module_species..Species#name) : <code>string</code>
+      * [`.species`](#module_species..Species#species) : <code>Species</code>
     * _static_
       * [`.merge(one, two)`](#module_species..Species.merge) ⇒ <code>Species</code>
 
@@ -147,18 +147,18 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 * [~Species](#module_species..Species)
   * _instance_
-    * [`.name`](#module_species..Species#name) → <code>string</code>
-    * [`.species`](#module_species..Species#species) → <code>Species</code>
+    * [`.name`](#module_species..Species#name) : <code>string</code>
+    * [`.species`](#module_species..Species#species) : <code>Species</code>
   * _static_
     * [`.merge(one, two)`](#module_species..Species.merge) ⇒ <code>Species</code>
 
 <a name="module_species..Species#name"></a>
-#### `species.name` → <code>string</code>
+#### `species.name` : <code>string</code>
 the species name
 
 **Scope**: instance property of <code>[Species](#module_species..Species)</code>  
 <a name="module_species..Species#species"></a>
-#### `species.species` → <code>Species</code>
+#### `species.species` : <code>Species</code>
 **Scope**: instance property of <code>[Species](#module_species..Species)</code>  
 <a name="module_species..Species.merge"></a>
 #### `Species.merge(one, two)` ⇒ <code>Species</code>

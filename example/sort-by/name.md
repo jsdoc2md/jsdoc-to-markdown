@@ -2,27 +2,27 @@
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [.six_one](#six#six_one) → <code>number</code>
+    * [.six_one](#six#six_one) : <code>number</code>
   * _static_
-    * [.six_static_one](#six.six_static_one) → <code>object</code>
-    * [.six_static_three](#six.six_static_three) → <code>number</code>
+    * [.six_static_one](#six.six_static_one) : <code>object</code>
+    * [.six_static_three](#six.six_static_three) : <code>number</code>
     * [.six_static_two](#six.six_static_two)
   * _instance_
     * [.six_two()](#six#six_two) ⇒ <code>number</code>
 ## 
 * [two](#two)
-  * [.two_four](#two.two_four) → <code>number</code>
+  * [.two_four](#two.two_four) : <code>number</code>
   * [.two_one()](#two.two_one) ⇒ <code>number</code>
-  * [.two_three](#two.two_three) → <code>object</code>
-  * [.two_two](#two.two_two) → <code>number</code>
+  * [.two_three](#two.two_three) : <code>object</code>
+  * [.two_two](#two.two_two) : <code>number</code>
 ## 
-* [seven](#seven) → <code>number</code>
-* [thirteen](#thirteen) → <code>number</code>
+* [seven](#seven) : <code>number</code>
+* [thirteen](#thirteen) : <code>number</code>
 * [three](#three)
 ## 
-* [eight](#eight) → <code>object</code>
+* [eight](#eight) : <code>object</code>
 ## 
-* [five](#five) → <code>number</code>
+* [five](#five) : <code>number</code>
 ## 
 * [four()](#four) ⇒ <code>number</code>
 * [nine()](#nine) ⇒ <code>number</code>
@@ -30,11 +30,11 @@
 ## 
 * ["ten"](#event_ten)
 ## 
-* [one](#one) → <code>number</code> \| <code>string</code>
+* [one](#one) : <code>number</code> \| <code>string</code>
 ## 
 * [eleven](#external_eleven)
 <a name="eight"></a>
-## eight → <code>object</code>
+## eight : <code>object</code>
 eight
 
 **Scope**: global namespace  
@@ -44,7 +44,7 @@ eleven
 
 **Scope**: global external  
 <a name="five"></a>
-## five → <code>number</code>
+## five : <code>number</code>
 five
 
 **Scope**: global constant  
@@ -59,12 +59,12 @@ nine
 
 **Scope**: global function  
 <a name="one"></a>
-## one → <code>number</code> \| <code>string</code>
+## one : <code>number</code> \| <code>string</code>
 one
 
 **Scope**: global typedef  
 <a name="seven"></a>
-## seven → <code>number</code>
+## seven : <code>number</code>
 seven
 
 **Scope**: global member  
@@ -75,10 +75,10 @@ seven
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [.six_one](#six#six_one) → <code>number</code>
+    * [.six_one](#six#six_one) : <code>number</code>
   * _static_
-    * [.six_static_one](#six.six_static_one) → <code>object</code>
-    * [.six_static_three](#six.six_static_three) → <code>number</code>
+    * [.six_static_one](#six.six_static_one) : <code>object</code>
+    * [.six_static_three](#six.six_static_three) : <code>number</code>
     * [.six_static_two](#six.six_static_two)
   * _instance_
     * [.six_two()](#six#six_two) ⇒ <code>number</code>
@@ -88,17 +88,17 @@ seven
 six
 
 <a name="six#six_one"></a>
-### six.six_one → <code>number</code>
+### six.six_one : <code>number</code>
 six_one
 
 **Scope**: instance constant of <code>[six](#six)</code>  
 <a name="six.six_static_one"></a>
-### six.six_static_one → <code>object</code>
+### six.six_static_one : <code>object</code>
 six_static_one
 
 **Scope**: static namespace of <code>[six](#six)</code>  
 <a name="six.six_static_three"></a>
-### six.six_static_three → <code>number</code>
+### six.six_static_three : <code>number</code>
 six_static_three
 
 **Scope**: static property of <code>[six](#six)</code>  
@@ -118,7 +118,7 @@ ten
 
 **Scope**: event emitted  
 <a name="thirteen"></a>
-## thirteen → <code>number</code>
+## thirteen : <code>number</code>
 thirteen
 
 **Scope**: global member  
@@ -146,13 +146,13 @@ two
 **Scope**: global mixin  
 
 * [two](#two)
-  * [.two_four](#two.two_four) → <code>number</code>
+  * [.two_four](#two.two_four) : <code>number</code>
   * [.two_one()](#two.two_one) ⇒ <code>number</code>
-  * [.two_three](#two.two_three) → <code>object</code>
-  * [.two_two](#two.two_two) → <code>number</code>
+  * [.two_three](#two.two_three) : <code>object</code>
+  * [.two_two](#two.two_two) : <code>number</code>
 
 <a name="two.two_four"></a>
-### two.two_four → <code>number</code>
+### two.two_four : <code>number</code>
 two_four
 
 **Scope**: static constant of <code>[two](#two)</code>  
@@ -162,12 +162,12 @@ two_one
 
 **Scope**: static method of <code>[two](#two)</code>  
 <a name="two.two_three"></a>
-### two.two_three → <code>object</code>
+### two.two_three : <code>object</code>
 two_three
 
 **Scope**: static namespace of <code>[two](#two)</code>  
 <a name="two.two_two"></a>
-### two.two_two → <code>number</code>
+### two.two_two : <code>number</code>
 two_two
 
 **Scope**: static property of <code>[two](#two)</code>  

@@ -26,10 +26,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
-    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
-    * [.LOVE](#FurQ#LOVE) → <code>string</code>
+    * [.wannaTryIt](#FurQ#wannaTryIt) : <code>string</code>
+    * [.LOVE](#FurQ#LOVE) : <code>string</code>
     * [.spit()](#FurQ#spit)
-    * [.battle()](#FurQ#battle)
+    * [.battle()](#Rapper#battle)
     * [.punch()](#FurQ#punch)
     * ["pop" (zoop)](#FurQ#event_pop)
     * ["slap"](#FurQ#event_slap)
@@ -37,10 +37,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
       * [.kill()](#FurQ#kill)
       * [.respect(done)](#FurQ#respect)
   * _static_
-    * [.enemy](#FurQ.enemy) → <code>number</code>
+    * [.enemy](#FurQ.enemy) : <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
-    * [~onRespect](#FurQ..onRespect) → <code>function</code>
+    * [~onRespect](#FurQ..onRespect) : <code>function</code>
 
 <a name="new_FurQ_new"></a>
 ### new FurQ()
@@ -53,7 +53,7 @@ She's an Uzi lover.
 var uziLover = require("FurQ");
 ```
 <a name="FurQ#wannaTryIt"></a>
-### furQ.wannaTryIt → <code>string</code>
+### furQ.wannaTryIt : <code>string</code>
 **Default**: <code>&quot;bitch&quot;</code>  
 **Scope**: instance property of <code>[FurQ](#FurQ)</code>  
 **See**
@@ -62,7 +62,7 @@ var uziLover = require("FurQ");
 - "Magazine like a big testicle gland."
 
 <a name="FurQ#LOVE"></a>
-### furQ.LOVE → <code>string</code>
+### furQ.LOVE : <code>string</code>
 **Default**: <code>&quot;UZI&quot;</code>  
 **Scope**: instance constant of <code>[FurQ](#FurQ)</code>  
 <a name="FurQ#spit"></a>
@@ -70,6 +70,7 @@ var uziLover = require("FurQ");
 override
 
 **Scope**: instance method of <code>[FurQ](#FurQ)</code>  
+**Overrides:** <code>[spit](#Rapper#spit)</code>  
 <a name="FurQ#punch"></a>
 ### furQ.punch()
 to plant ones fist in a buster's mush
@@ -123,7 +124,7 @@ uziLover.respect(function(err, gain){
 });
 ```
 <a name="FurQ.enemy"></a>
-### FurQ.enemy → <code>number</code>
+### FurQ.enemy : <code>number</code>
 FUR-Q enemy types
 
 **Scope**: static enum property of <code>[FurQ](#FurQ)</code>  
@@ -148,7 +149,7 @@ check if at peace
 var peace = FurQ.peace();
 ```
 <a name="FurQ..onRespect"></a>
-### FurQ~onRespect → <code>function</code>
+### FurQ~onRespect : <code>function</code>
 Passed to [respect](#FurQ#respect)
 
 **Scope**: inner typedef of <code>[FurQ](#FurQ)</code>  

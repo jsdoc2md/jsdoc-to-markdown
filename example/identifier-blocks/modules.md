@@ -36,8 +36,8 @@ var animal = require("animal");
   * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
-      * [.age](#module_animal..Animal#age) → <code>number</code>
-      * [.species](#module_animal..Animal#species) → <code>Species</code>
+      * [.age](#module_animal..Animal#age) : <code>number</code>
+      * [.species](#module_animal..Animal#species) : <code>Species</code>
     * _static_
       * [.eMood](#module_animal..Animal.eMood)
 
@@ -48,8 +48,8 @@ var animal = require("animal");
 * [~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
-    * [.age](#module_animal..Animal#age) → <code>number</code>
-    * [.species](#module_animal..Animal#species) → <code>Species</code>
+    * [.age](#module_animal..Animal#age) : <code>number</code>
+    * [.species](#module_animal..Animal#species) : <code>Species</code>
   * _static_
     * [.eMood](#module_animal..Animal.eMood)
 
@@ -62,13 +62,13 @@ var animal = require("animal");
 | parents | <code>Species</code> | the species |
 
 <a name="module_animal..Animal#age"></a>
-#### animal.age → <code>number</code>
+#### animal.age : <code>number</code>
 the current age
 
 **Default**: <code>0</code>  
 **Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal#species"></a>
-#### animal.species → <code>Species</code>
+#### animal.species : <code>Species</code>
 **Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal.eMood"></a>
 #### Animal.eMood

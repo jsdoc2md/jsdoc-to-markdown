@@ -40,8 +40,8 @@
   * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
-      * [.age](#module_animal..Animal#age) → <code>number</code>
-      * [.species](#module_animal..Animal#species) → <code>Species</code>
+      * [.age](#module_animal..Animal#age) : <code>number</code>
+      * [.species](#module_animal..Animal#species) : <code>Species</code>
     * _static_
       * [.eMood](#module_animal..Animal.eMood)
 * [builder](#module_builder)
@@ -51,8 +51,8 @@
 * [species](#module_species)
   * [~Species](#module_species..Species)
     * _instance_
-      * [.name](#module_species..Species#name) → <code>string</code>
-      * [.species](#module_species..Species#species) → <code>Species</code>
+      * [.name](#module_species..Species#name) : <code>string</code>
+      * [.species](#module_species..Species#species) : <code>Species</code>
     * _static_
       * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 

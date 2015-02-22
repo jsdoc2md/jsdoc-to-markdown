@@ -69,26 +69,26 @@
 <dt><a href="#three">three</a></dt>
 <dd><p>three</p>
 </dd>
-<dt><a href="#seven">seven</a> → <code>number</code></dt>
+<dt><a href="#seven">seven</a> : <code>number</code></dt>
 <dd><p>seven</p>
 </dd>
-<dt><a href="#thirteen">thirteen</a> → <code>number</code></dt>
+<dt><a href="#thirteen">thirteen</a> : <code>number</code></dt>
 <dd><p>thirteen</p>
 </dd>
 </dl>
 ## Objects
 <dl>
-<dt><a href="#missle">missle</a> → <code>object</code></dt>
+<dt><a href="#missle">missle</a> : <code>object</code></dt>
 <dd></dd>
-<dt><a href="#personality">personality</a> → <code>object</code></dt>
+<dt><a href="#personality">personality</a> : <code>object</code></dt>
 <dd></dd>
-<dt><a href="#eight">eight</a> → <code>object</code></dt>
+<dt><a href="#eight">eight</a> : <code>object</code></dt>
 <dd><p>eight</p>
 </dd>
 </dl>
 ## Constants
 <dl>
-<dt><a href="#five">five</a> → <code>number</code></dt>
+<dt><a href="#five">five</a> : <code>number</code></dt>
 <dd><p>five</p>
 </dd>
 </dl>
@@ -121,7 +121,7 @@
 </dl>
 ## Typedefs
 <dl>
-<dt><a href="#one">one</a> → <code>number</code> | <code>string</code></dt>
+<dt><a href="#one">one</a> : <code>number</code> | <code>string</code></dt>
 <dd><p>one</p>
 </dd>
 </dl>
@@ -150,8 +150,8 @@ var animal = require("animal");
   * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
-      * [.age](#module_animal..Animal#age) → <code>number</code>
-      * [.species](#module_animal..Animal#species) → <code>[Species](#Species)</code>
+      * [.age](#module_animal..Animal#age) : <code>number</code>
+      * [.species](#module_animal..Animal#species) : <code>[Species](#Species)</code>
     * _static_
       * [.eMood](#module_animal..Animal.eMood)
 
@@ -165,8 +165,8 @@ var animal = require("animal");
 * [~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
-    * [.age](#module_animal..Animal#age) → <code>number</code>
-    * [.species](#module_animal..Animal#species) → <code>[Species](#Species)</code>
+    * [.age](#module_animal..Animal#age) : <code>number</code>
+    * [.species](#module_animal..Animal#species) : <code>[Species](#Species)</code>
   * _static_
     * [.eMood](#module_animal..Animal.eMood)
 
@@ -185,7 +185,7 @@ var animal = require("animal");
 -
 
 <a name="module_animal..Animal#age"></a>
-#### animal.age → <code>number</code>
+#### animal.age : <code>number</code>
 the current age
 
 **Default**: <code>0</code>  
@@ -194,7 +194,7 @@ the current age
 -
 
 <a name="module_animal..Animal#species"></a>
-#### animal.species → <code>[Species](#Species)</code>
+#### animal.species : <code>[Species](#Species)</code>
 **Scope**: instance property of <code>[Animal](#module_animal..Animal)</code>  
 
 -
@@ -263,8 +263,8 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 * [commonJS/species](#module_commonJS/species)
   * [~Species](#module_commonJS/species..Species)
     * _instance_
-      * [.name](#module_commonJS/species..Species#name) → <code>string</code>
-      * [.species](#module_commonJS/species..Species#species) → <code>[Species](#Species)</code>
+      * [.name](#module_commonJS/species..Species#name) : <code>string</code>
+      * [.species](#module_commonJS/species..Species#species) : <code>[Species](#Species)</code>
     * _static_
       * [.merge(one, two)](#module_commonJS/species..Species.merge) ⇒ <code>[Species](#Species)</code>
 
@@ -277,8 +277,8 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 * [~Species](#module_commonJS/species..Species)
   * _instance_
-    * [.name](#module_commonJS/species..Species#name) → <code>string</code>
-    * [.species](#module_commonJS/species..Species#species) → <code>[Species](#Species)</code>
+    * [.name](#module_commonJS/species..Species#name) : <code>string</code>
+    * [.species](#module_commonJS/species..Species#species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#module_commonJS/species..Species.merge) ⇒ <code>[Species](#Species)</code>
 
@@ -286,7 +286,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 -
 
 <a name="module_commonJS/species..Species#name"></a>
-#### species.name → <code>string</code>
+#### species.name : <code>string</code>
 the species name
 
 **Scope**: instance property of <code>[Species](#module_commonJS/species..Species)</code>  
@@ -294,7 +294,7 @@ the species name
 -
 
 <a name="module_commonJS/species..Species#species"></a>
-#### species.species → <code>[Species](#Species)</code>
+#### species.species : <code>[Species](#Species)</code>
 **Scope**: instance property of <code>[Species](#module_commonJS/species..Species)</code>  
 
 -
@@ -326,8 +326,8 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
-    * [.age](#Animal#age) → <code>number</code>
-    * [.species](#Animal#species) → <code>[Species](#Species)</code>
+    * [.age](#Animal#age) : <code>number</code>
+    * [.species](#Animal#species) : <code>[Species](#Species)</code>
   * _static_
     * [.eMood](#Animal.eMood)
 
@@ -346,7 +346,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 -
 
 <a name="Animal#age"></a>
-### animal.age → <code>number</code>
+### animal.age : <code>number</code>
 the current age
 
 **Default**: <code>0</code>  
@@ -355,7 +355,7 @@ the current age
 -
 
 <a name="Animal#species"></a>
-### animal.species → <code>[Species](#Species)</code>
+### animal.species : <code>[Species](#Species)</code>
 **Scope**: instance property of <code>[Animal](#Animal)</code>  
 
 -
@@ -383,12 +383,12 @@ Animal moods
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [.six_one](#six#six_one) → <code>number</code>
+    * [.six_one](#six#six_one) : <code>number</code>
     * [.six_two()](#six#six_two) ⇒ <code>number</code>
   * _static_
     * [.six_static_two](#six.six_static_two)
-    * [.six_static_three](#six.six_static_three) → <code>number</code>
-    * [.six_static_one](#six.six_static_one) → <code>object</code>
+    * [.six_static_three](#six.six_static_three) : <code>number</code>
+    * [.six_static_one](#six.six_static_one) : <code>object</code>
 
 
 -
@@ -401,7 +401,7 @@ six
 -
 
 <a name="six#six_one"></a>
-### six.six_one → <code>number</code>
+### six.six_one : <code>number</code>
 six_one
 
 **Scope**: instance constant of <code>[six](#six)</code>  
@@ -425,7 +425,7 @@ six_static_two
 -
 
 <a name="six.six_static_three"></a>
-### six.six_static_three → <code>number</code>
+### six.six_static_three : <code>number</code>
 six_static_three
 
 **Scope**: static property of <code>[six](#six)</code>  
@@ -433,7 +433,7 @@ six_static_three
 -
 
 <a name="six.six_static_one"></a>
-### six.six_static_one → <code>object</code>
+### six.six_static_one : <code>object</code>
 six_static_one
 
 **Scope**: static namespace of <code>[six](#six)</code>  
@@ -448,8 +448,8 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 * [Species](#Species)
   * _instance_
-    * [.name](#Species#name) → <code>string</code>
-    * [.species](#Species#species) → <code>[Species](#Species)</code>
+    * [.name](#Species#name) : <code>string</code>
+    * [.species](#Species#species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
@@ -457,7 +457,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 -
 
 <a name="Species#name"></a>
-### species.name → <code>string</code>
+### species.name : <code>string</code>
 the species name
 
 **Scope**: instance property of <code>[Species](#Species)</code>  
@@ -465,7 +465,7 @@ the species name
 -
 
 <a name="Species#species"></a>
-### species.species → <code>[Species](#Species)</code>
+### species.species : <code>[Species](#Species)</code>
 **Scope**: instance property of <code>[Species](#Species)</code>  
 
 -
@@ -498,10 +498,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
-    * [.wannaTryIt](#FurQ#wannaTryIt) → <code>string</code>
-    * [.LOVE](#FurQ#LOVE) → <code>string</code>
+    * [.wannaTryIt](#FurQ#wannaTryIt) : <code>string</code>
+    * [.LOVE](#FurQ#LOVE) : <code>string</code>
     * [.spit()](#FurQ#spit)
-    * [.battle()](#FurQ#battle)
+    * [.battle()](#Rapper#battle)
     * [.punch()](#FurQ#punch)
     * ["pop" (zoop)](#FurQ#event_pop)
     * ["slap"](#FurQ#event_slap)
@@ -509,10 +509,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
       * [.kill()](#FurQ#kill)
       * [.respect(done)](#FurQ#respect)
   * _static_
-    * [.enemy](#FurQ.enemy) → <code>number</code>
+    * [.enemy](#FurQ.enemy) : <code>number</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
-    * [~onRespect](#FurQ..onRespect) → <code>function</code>
+    * [~onRespect](#FurQ..onRespect) : <code>function</code>
 
 
 -
@@ -531,7 +531,7 @@ var uziLover = require("FurQ");
 -
 
 <a name="FurQ#wannaTryIt"></a>
-### furQ.wannaTryIt → <code>string</code>
+### furQ.wannaTryIt : <code>string</code>
 **Default**: <code>&quot;bitch&quot;</code>  
 **Scope**: instance property of <code>[FurQ](#FurQ)</code>  
 **See**
@@ -543,7 +543,7 @@ var uziLover = require("FurQ");
 -
 
 <a name="FurQ#LOVE"></a>
-### furQ.LOVE → <code>string</code>
+### furQ.LOVE : <code>string</code>
 **Default**: <code>&quot;UZI&quot;</code>  
 **Scope**: instance constant of <code>[FurQ](#FurQ)</code>  
 
@@ -554,6 +554,7 @@ var uziLover = require("FurQ");
 override
 
 **Scope**: instance method of <code>[FurQ](#FurQ)</code>  
+**Overrides:** <code>[spit](#Rapper#spit)</code>  
 
 -
 
@@ -625,7 +626,7 @@ uziLover.respect(function(err, gain){
 -
 
 <a name="FurQ.enemy"></a>
-### FurQ.enemy → <code>number</code>
+### FurQ.enemy : <code>number</code>
 FUR-Q enemy types
 
 **Scope**: static enum property of <code>[FurQ](#FurQ)</code>  
@@ -656,7 +657,7 @@ var peace = FurQ.peace();
 -
 
 <a name="FurQ..onRespect"></a>
-### FurQ~onRespect → <code>function</code>
+### FurQ~onRespect : <code>function</code>
 Passed to [respect](#FurQ#respect)
 
 **Scope**: inner typedef of <code>[FurQ](#FurQ)</code>  
@@ -778,16 +779,16 @@ two
 **Scope**: global mixin  
 
 * [two](#two)
-  * [.two_two](#two.two_two) → <code>number</code>
-  * [.two_three](#two.two_three) → <code>object</code>
-  * [.two_four](#two.two_four) → <code>number</code>
+  * [.two_two](#two.two_two) : <code>number</code>
+  * [.two_three](#two.two_three) : <code>object</code>
+  * [.two_four](#two.two_four) : <code>number</code>
   * [.two_one()](#two.two_one) ⇒ <code>number</code>
 
 
 -
 
 <a name="two.two_two"></a>
-### two.two_two → <code>number</code>
+### two.two_two : <code>number</code>
 two_two
 
 **Scope**: static property of <code>[two](#two)</code>  
@@ -795,7 +796,7 @@ two_two
 -
 
 <a name="two.two_three"></a>
-### two.two_three → <code>object</code>
+### two.two_three : <code>object</code>
 two_three
 
 **Scope**: static namespace of <code>[two](#two)</code>  
@@ -803,7 +804,7 @@ two_three
 -
 
 <a name="two.two_four"></a>
-### two.two_four → <code>number</code>
+### two.two_four : <code>number</code>
 two_four
 
 **Scope**: static constant of <code>[two](#two)</code>  
@@ -847,7 +848,7 @@ three
 -
 
 <a name="seven"></a>
-## seven → <code>number</code>
+## seven : <code>number</code>
 seven
 
 **Scope**: global member  
@@ -855,7 +856,7 @@ seven
 -
 
 <a name="thirteen"></a>
-## thirteen → <code>number</code>
+## thirteen : <code>number</code>
 thirteen
 
 **Scope**: global member  
@@ -863,20 +864,20 @@ thirteen
 -
 
 <a name="missle"></a>
-## missle → <code>object</code>
+## missle : <code>object</code>
 **Scope**: global namespace  
 
-* [missle](#missle) → <code>object</code>
-  * [.range](#missle.range) → <code>number</code>
-  * [.ballistic](#missle.ballistic) → <code>boolean</code>
+* [missle](#missle) : <code>object</code>
+  * [.range](#missle.range) : <code>number</code>
+  * [.ballistic](#missle.ballistic) : <code>boolean</code>
   * [.hydrogen](#missle.hydrogen)
-  * [.megaton](#missle.megaton) → <code>number</code>
+  * [.megaton](#missle.megaton) : <code>number</code>
 
 
 -
 
 <a name="missle.range"></a>
-### missle.range → <code>number</code>
+### missle.range : <code>number</code>
 missile range
 
 **Default**: <code>100000</code>  
@@ -885,7 +886,7 @@ missile range
 -
 
 <a name="missle.ballistic"></a>
-### missle.ballistic → <code>boolean</code>
+### missle.ballistic : <code>boolean</code>
 ballistic
 
 **Default**: <code>true</code>  
@@ -902,7 +903,7 @@ hydrogen bomb?
 -
 
 <a name="missle.megaton"></a>
-### missle.megaton → <code>number</code>
+### missle.megaton : <code>number</code>
 number of megatons
 
 **Default**: <code>200</code>  
@@ -911,7 +912,7 @@ number of megatons
 -
 
 <a name="personality"></a>
-## personality → <code>object</code>
+## personality : <code>object</code>
 **Scope**: global namespace  
 **Properties**
 
@@ -927,7 +928,7 @@ number of megatons
 -
 
 <a name="eight"></a>
-## eight → <code>object</code>
+## eight : <code>object</code>
 eight
 
 **Scope**: global namespace  
@@ -935,7 +936,7 @@ eight
 -
 
 <a name="five"></a>
-## five → <code>number</code>
+## five : <code>number</code>
 five
 
 **Scope**: global constant  
@@ -1016,7 +1017,7 @@ ten
 -
 
 <a name="one"></a>
-## one → <code>number</code> \| <code>string</code>
+## one : <code>number</code> \| <code>string</code>
 one
 
 **Scope**: global typedef  

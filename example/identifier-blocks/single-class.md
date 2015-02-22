@@ -31,8 +31,8 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
-    * [.age](#Animal#age) → <code>number</code>
-    * [.species](#Animal#species) → <code>[Species](#Species)</code>
+    * [.age](#Animal#age) : <code>number</code>
+    * [.species](#Animal#species) : <code>[Species](#Species)</code>
   * _static_
     * [.eMood](#Animal.eMood)
 
@@ -45,13 +45,13 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | parents | <code>[Species](#Species)</code> | the species |
 
 <a name="Animal#age"></a>
-### animal.age → <code>number</code>
+### animal.age : <code>number</code>
 the current age
 
 **Default**: <code>0</code>  
 **Scope**: instance property of <code>[Animal](#Animal)</code>  
 <a name="Animal#species"></a>
-### animal.species → <code>[Species](#Species)</code>
+### animal.species : <code>[Species](#Species)</code>
 **Scope**: instance property of <code>[Animal](#Animal)</code>  
 <a name="Animal.eMood"></a>
 ### Animal.eMood
