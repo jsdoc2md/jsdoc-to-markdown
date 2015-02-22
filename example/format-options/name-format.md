@@ -70,6 +70,7 @@ var animal = require("animal");
 
 <a name="new_module_animal..Animal_new"></a>
 #### `new Animal(species, parents)`
+
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
@@ -156,6 +157,7 @@ the species name
 merge two species into a new one
 
 **Scope**: static member of <code>[Species](#module_species..Species)</code>  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | one | <code>Species</code> | first |

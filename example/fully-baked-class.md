@@ -75,6 +75,7 @@ to plant ones fist in a buster's mush
 fire weapon
 
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
@@ -104,6 +105,7 @@ respect
 
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
 **Category**: standard  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
@@ -142,6 +144,7 @@ var peace = FurQ.peace();
 Passed to [respect](#FurQ#respect)
 
 **Scope**: inner member of <code>[FurQ](#FurQ)</code>  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | err | <code>Error</code> | an issue with the punch |

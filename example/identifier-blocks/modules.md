@@ -53,6 +53,7 @@ var animal = require("animal");
 
 <a name="new_module_animal..Animal_new"></a>
 #### new Animal(species, parents)
+
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |

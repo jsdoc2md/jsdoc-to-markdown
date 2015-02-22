@@ -147,6 +147,7 @@ var animal = require("animal");
 
 <a name="new_module_animal..Animal_new"></a>
 #### new Animal(species, parents)
+
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
@@ -257,6 +258,7 @@ the species name
 merge two species into a new one
 
 **Scope**: static member of <code>[Species](#module_commonJS/species..Species)</code>  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | one | <code>[Species](#Species)</code> | first |
@@ -284,6 +286,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 <a name="new_Animal_new"></a>
 ### new Animal(species, parents)
+
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
@@ -404,6 +407,7 @@ the species name
 merge two species into a new one
 
 **Scope**: static member of <code>[Species](#Species)</code>  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | one | <code>[Species](#Species)</code> | first |
@@ -488,6 +492,7 @@ to plant ones fist in a buster's mush
 fire weapon
 
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
@@ -523,6 +528,7 @@ respect
 
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
 **Category**: standard  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
@@ -567,6 +573,7 @@ var peace = FurQ.peace();
 Passed to [respect](#FurQ#respect)
 
 **Scope**: inner member of <code>[FurQ](#FurQ)</code>  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | err | <code>Error</code> | an issue with the punch |
@@ -817,6 +824,7 @@ five
 Pump an idiot full of volts
 
 **Scope**: global  
+
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | victim | <code>object</code> \| <code>array</code> |  | the victim(s) to fry |
@@ -831,6 +839,7 @@ Pump an idiot full of volts
 a quite wonderful function
 
 **Scope**: global  
+
 | Param | Type | Description |
 | --- | --- | --- |
 | cloak | <code>object</code> | privacy gown |

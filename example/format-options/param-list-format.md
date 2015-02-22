@@ -25,6 +25,7 @@ Pump an idiot full of volts
 Pump an idiot full of volts
 
 **Scope**: global  
+
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | victim | <code>object</code> \| <code>array</code> |  | the victim(s) to fry |
