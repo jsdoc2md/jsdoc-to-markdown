@@ -75,7 +75,6 @@
 </dd>
 </dl>
 
-
 #global-index-format = grouped
 ## Global
 * [class: Animal](#Animal)
@@ -126,6 +125,7 @@
     * [.train()](#Rapper.train)
       * [class: ~School](#Rapper.train..School)
         * [new School()](#new_Rapper.train..School_new)
+        * [.bestStudent](#Rapper.train..School#bestStudent)
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
@@ -155,8 +155,6 @@
 * ["ten"](#event_ten)
 * [type: one](#one) → <code>number</code> \| <code>string</code>
 * [external: eleven](#external_eleven)
-
-
 
 #global-index-format = table
 ## Globals
@@ -289,7 +287,5 @@
     </tr>
 </tbody>
 </table>
-
-
 
 #global-index-format = none

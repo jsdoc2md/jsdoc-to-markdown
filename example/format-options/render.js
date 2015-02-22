@@ -22,10 +22,10 @@ jsdoc2md
     .render("example/src/enum.js", { template: "example/format-options/template/property-list-format.hbs"})
     .pipe(fs.createWriteStream("example/format-options/property-list-format.md"));
 
-/* class-member-index */
+/* member-index */
 jsdoc2md
-    .render("example/src/*.js", { template: "example/format-options/template/class-member-index.hbs"})
-    .pipe(fs.createWriteStream("example/format-options/class-member-index.md"));
+    .render("example/src/*.js", { template: "example/format-options/template/member-index.hbs"})
+    .pipe(fs.createWriteStream("example/format-options/member-index.md"));
 
 /* separators */
 jsdoc2md

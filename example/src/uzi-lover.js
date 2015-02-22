@@ -126,6 +126,11 @@ Rapper.train = function(){
     rap school
     @class
     */
-    function School(){}
+    function School(){
+        /**
+        best student
+        */
+        this.bestStudent = null;
+    }
     return new School();
 };

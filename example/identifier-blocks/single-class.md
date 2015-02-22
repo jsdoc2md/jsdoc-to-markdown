@@ -26,7 +26,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - in the module
 - description
 
-
+**Scope**: global  
 * [class: Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
@@ -37,23 +37,24 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 <a name="new_Animal_new"></a>
 ### new Animal(species, parents)
-
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
-
 <a name="Animal#age"></a>
 ### animal.age → <code>number</code>
 the current age
 
 **Default**: <code>0</code>  
+**Scope**: instance member of <code>[Animal](#Animal)</code>  
 <a name="Animal#species"></a>
 ### animal.species → <code>[Species](#Species)</code>
+**Scope**: instance member of <code>[Animal](#Animal)</code>  
 <a name="Animal.eMood"></a>
 ### enum: Animal.eMood
 Animal moods
 
+**Scope**: static member of <code>[Animal](#Animal)</code>  
 **Properties**
 
 | Name | Default | Description |
@@ -61,7 +62,6 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
-
 
 
 ##Show only part of the Class docs
@@ -83,4 +83,4 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - in the module
 - description
 
-
+**Scope**: global  

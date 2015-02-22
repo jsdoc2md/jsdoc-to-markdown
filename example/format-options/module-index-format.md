@@ -34,7 +34,6 @@
 </dd>
 </dl>
 
-
 #module-index-format = grouped
 ## Modules
 * [animal](#module_animal)
@@ -56,8 +55,6 @@
       * [.species](#module_species..Species#species) → <code>Species</code>
     * _static_
       * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
-
-
 
 #module-index-format = table
 ## Modules
@@ -107,7 +104,5 @@
     </tr>
 </tbody>
 </table>
-
-
 
 #module-index-format = none

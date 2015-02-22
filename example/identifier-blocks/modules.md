@@ -31,7 +31,6 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 **Example**  
 var animal = require("animal");
 
-
 * [animal](#module_animal)
   * [class: ~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
@@ -43,7 +42,7 @@ var animal = require("animal");
 
 <a name="module_animal..Animal"></a>
 ### class: animal~Animal
-
+**Scope**: inner member of <code>[animal](#module_animal)</code>  
 * [class: ~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
@@ -54,23 +53,24 @@ var animal = require("animal");
 
 <a name="new_module_animal..Animal_new"></a>
 #### new Animal(species, parents)
-
 | Param | Type | Description |
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
-
 <a name="module_animal..Animal#age"></a>
 #### animal.age → <code>number</code>
 the current age
 
 **Default**: <code>0</code>  
+**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal#species"></a>
 #### animal.species → <code>Species</code>
+**Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal.eMood"></a>
 #### enum: Animal.eMood
 Animal moods
 
+**Scope**: static member of <code>[Animal](#module_animal..Animal)</code>  
 **Properties**
 
 | Name | Default | Description |
@@ -78,7 +78,6 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
-
 
 
 ## Show only part of the module docs
@@ -106,7 +105,6 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 var animal = require("animal");
 
 
-
 ## List all the module names
 The `{{#modules}}` block helper renders once per module. To output all documention, instead of just the names swap `{{name}}` for `{{>docs}}`.
 
@@ -121,4 +119,3 @@ Outputs:
 - animal
 - builder
 - species
-
