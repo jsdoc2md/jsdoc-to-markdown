@@ -4,9 +4,10 @@
 * [four()](#four) ⇒ <code>number</code>
 * [const: five](#five) → <code>number</code>
 * [class: six](#six)
-  * [new six()](#new_six_new)
   * _instance_
     * [const: .six_one](#six#six_one) → <code>number</code>
+  * [new six()](#new_six_new)
+  * _instance_
     * [.six_two()](#six#six_two) ⇒ <code>number</code>
   * _static_
     * [.six_static_one](#six.six_static_one) → <code>object</code>
