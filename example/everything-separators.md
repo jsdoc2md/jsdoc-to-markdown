@@ -130,6 +130,7 @@ var animal = require("animal");
     * _static_
       * [enum: .eMood](#module_animal..Animal.eMood)
 
+
 -
 
 <a name="module_animal..Animal"></a>
@@ -143,6 +144,7 @@ var animal = require("animal");
   * _static_
     * [enum: .eMood](#module_animal..Animal.eMood)
 
+
 -
 
 <a name="new_module_animal..Animal_new"></a>
@@ -152,6 +154,7 @@ var animal = require("animal");
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
+
 -
 
 <a name="module_animal..Animal#age"></a>
@@ -160,11 +163,13 @@ the current age
 
 **Default**: <code>0</code>  
 **Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+
 -
 
 <a name="module_animal..Animal#species"></a>
 #### animal.species → <code>[Species](#Species)</code>
 **Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+
 -
 
 <a name="module_animal..Animal.eMood"></a>
@@ -179,6 +184,7 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
+
 -
 
 <a name="module_builder"></a>
@@ -190,6 +196,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
     * [.construct()](#module_builder..builder.construct)
     * [.repair()](#module_builder..builder.repair)
 
+
 -
 
 <a name="module_builder..builder"></a>
@@ -199,6 +206,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
   * [.construct()](#module_builder..builder.construct)
   * [.repair()](#module_builder..builder.repair)
 
+
 -
 
 <a name="module_builder..builder.construct"></a>
@@ -206,6 +214,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 construct something
 
 **Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+
 -
 
 <a name="module_builder..builder.repair"></a>
@@ -213,6 +222,7 @@ construct something
 repair something
 
 **Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+
 -
 
 <a name="module_commonJS/species"></a>
@@ -227,6 +237,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
     * _static_
       * [.merge(one, two)](#module_commonJS/species..Species.merge) ⇒ <code>[Species](#Species)</code>
 
+
 -
 
 <a name="module_commonJS/species..Species"></a>
@@ -239,6 +250,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
   * _static_
     * [.merge(one, two)](#module_commonJS/species..Species.merge) ⇒ <code>[Species](#Species)</code>
 
+
 -
 
 <a name="module_commonJS/species..Species#name"></a>
@@ -246,11 +258,13 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 the species name
 
 **Scope**: instance member of <code>[Species](#module_commonJS/species..Species)</code>  
+
 -
 
 <a name="module_commonJS/species..Species#species"></a>
 #### species.species → <code>[Species](#Species)</code>
 **Scope**: instance member of <code>[Species](#module_commonJS/species..Species)</code>  
+
 -
 
 <a name="module_commonJS/species..Species.merge"></a>
@@ -263,6 +277,7 @@ merge two species into a new one
 | --- | --- | --- |
 | one | <code>[Species](#Species)</code> | first |
 | two | <code>[Species](#Species)</code> | second |
+
 -
 
 <a name="Animal"></a>
@@ -282,6 +297,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
   * _static_
     * [enum: .eMood](#Animal.eMood)
 
+
 -
 
 <a name="new_Animal_new"></a>
@@ -291,6 +307,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
+
 -
 
 <a name="Animal#age"></a>
@@ -299,11 +316,13 @@ the current age
 
 **Default**: <code>0</code>  
 **Scope**: instance member of <code>[Animal](#Animal)</code>  
+
 -
 
 <a name="Animal#species"></a>
 ### animal.species → <code>[Species](#Species)</code>
 **Scope**: instance member of <code>[Animal](#Animal)</code>  
+
 -
 
 <a name="Animal.eMood"></a>
@@ -318,6 +337,7 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
+
 -
 
 <a name="six"></a>
@@ -333,11 +353,13 @@ Animal moods
     * [.six_static_three](#six.six_static_three) → <code>number</code>
     * [.six_static_one](#six.six_static_one) → <code>object</code>
 
+
 -
 
 <a name="new_six_new"></a>
 ### new six()
 six
+
 
 -
 
@@ -346,6 +368,7 @@ six
 six_one
 
 **Scope**: instance member of <code>[six](#six)</code>  
+
 -
 
 <a name="six#six_two"></a>
@@ -353,6 +376,7 @@ six_one
 six_two
 
 **Scope**: instance member of <code>[six](#six)</code>  
+
 -
 
 <a name="six.six_static_two"></a>
@@ -360,6 +384,7 @@ six_two
 six_static_two
 
 **Scope**: static member of <code>[six](#six)</code>  
+
 -
 
 <a name="six.six_static_three"></a>
@@ -367,6 +392,7 @@ six_static_two
 six_static_three
 
 **Scope**: static member of <code>[six](#six)</code>  
+
 -
 
 <a name="six.six_static_one"></a>
@@ -374,6 +400,7 @@ six_static_three
 six_static_one
 
 **Scope**: static member of <code>[six](#six)</code>  
+
 -
 
 <a name="Species"></a>
@@ -388,6 +415,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
+
 -
 
 <a name="Species#name"></a>
@@ -395,11 +423,13 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 the species name
 
 **Scope**: instance member of <code>[Species](#Species)</code>  
+
 -
 
 <a name="Species#species"></a>
 ### species.species → <code>[Species](#Species)</code>
 **Scope**: instance member of <code>[Species](#Species)</code>  
+
 -
 
 <a name="Species.merge"></a>
@@ -412,6 +442,7 @@ merge two species into a new one
 | --- | --- | --- |
 | one | <code>[Species](#Species)</code> | first |
 | two | <code>[Species](#Species)</code> | second |
+
 -
 
 <a name="FurQ"></a>
@@ -443,6 +474,7 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
   * _inner_
     * [callback: ~onRespect](#FurQ..onRespect) → <code>function</code>
 
+
 -
 
 <a name="new_FurQ_new"></a>
@@ -455,6 +487,7 @@ She's an Uzi lover.
 ```js
 var uziLover = require("FurQ");
 ```
+
 -
 
 <a name="FurQ#wannaTryIt"></a>
@@ -465,12 +498,14 @@ var uziLover = require("FurQ");
 
 - "Uzi like a metal dick in my hand."
 - "Magazine like a big testicle gland."
+
 -
 
 <a name="FurQ#LOVE"></a>
 ### const: furQ.LOVE → <code>string</code>
 **Default**: <code>&quot;UZI&quot;</code>  
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+
 -
 
 <a name="FurQ#spit"></a>
@@ -478,6 +513,7 @@ var uziLover = require("FurQ");
 override
 
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+
 -
 
 <a name="FurQ#punch"></a>
@@ -485,6 +521,7 @@ override
 to plant ones fist in a buster's mush
 
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+
 -
 
 <a name="FurQ#event_pop"></a>
@@ -496,6 +533,7 @@ fire weapon
 | Param | Type | Description |
 | --- | --- | --- |
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
+
 -
 
 <a name="FurQ#event_slap"></a>
@@ -503,6 +541,7 @@ fire weapon
 slap man
 
 **Scope**: instance member of <code>[FurQ](#FurQ)</code>  
+
 -
 
 <a name="FurQ#kill"></a>
@@ -520,6 +559,7 @@ var kill = uziLover.kill();
 ```js
 uziLover.kill();
 ```
+
 -
 
 <a name="FurQ#respect"></a>
@@ -538,6 +578,7 @@ uziLover.respect(function(err, gain){
     console.log(gain);
 });
 ```
+
 -
 
 <a name="FurQ.enemy"></a>
@@ -553,6 +594,7 @@ FUR-Q enemy types
 | COCK | <code>number</code> | <code>0</code> | an awful individual |
 | BITCH | <code>number</code> | <code>1</code> |  |
 | MUTHAFUCKA | <code>number</code> | <code>2</code> |  |
+
 -
 
 <a name="FurQ.peace"></a>
@@ -566,6 +608,7 @@ check if at peace
 ```js
 var peace = FurQ.peace();
 ```
+
 -
 
 <a name="FurQ..onRespect"></a>
@@ -578,6 +621,7 @@ Passed to [respect](#FurQ#respect)
 | --- | --- | --- |
 | err | <code>Error</code> | an issue with the punch |
 | gain | <code>\*</code> | the respect percentage gained |
+
 -
 
 <a name="Rapper"></a>
@@ -593,6 +637,7 @@ Passed to [respect](#FurQ#respect)
         * [new School()](#new_Rapper.train..School_new)
         * [.bestStudent](#Rapper.train..School#bestStudent)
 
+
 -
 
 <a name="Rapper#spit"></a>
@@ -600,6 +645,7 @@ Passed to [respect](#FurQ#respect)
 spit
 
 **Scope**: instance member of <code>[Rapper](#Rapper)</code>  
+
 -
 
 <a name="Rapper#battle"></a>
@@ -607,6 +653,7 @@ spit
 battle
 
 **Scope**: instance member of <code>[Rapper](#Rapper)</code>  
+
 -
 
 <a name="Rapper.train"></a>
@@ -619,6 +666,7 @@ train new rappers
       * [new School()](#new_Rapper.train..School_new)
       * [.bestStudent](#Rapper.train..School#bestStudent)
 
+
 -
 
 <a name="Rapper.train..School"></a>
@@ -628,11 +676,13 @@ train new rappers
   * [new School()](#new_Rapper.train..School_new)
   * [.bestStudent](#Rapper.train..School#bestStudent)
 
+
 -
 
 <a name="new_Rapper.train..School_new"></a>
 ##### new School()
 rap school
+
 
 -
 
@@ -641,6 +691,7 @@ rap school
 best student
 
 **Scope**: instance member of <code>[School](#Rapper.train..School)</code>  
+
 -
 
 <a name="builder"></a>
@@ -652,6 +703,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
 
+
 -
 
 <a name="builder.construct"></a>
@@ -659,6 +711,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 construct something
 
 **Scope**: static member of <code>[builder](#builder)</code>  
+
 -
 
 <a name="builder.repair"></a>
@@ -666,6 +719,7 @@ construct something
 repair something
 
 **Scope**: static member of <code>[builder](#builder)</code>  
+
 -
 
 <a name="two"></a>
@@ -679,6 +733,7 @@ two
   * [const: .two_four](#two.two_four) → <code>number</code>
   * [.two_one()](#two.two_one) ⇒ <code>number</code>
 
+
 -
 
 <a name="two.two_two"></a>
@@ -686,6 +741,7 @@ two
 two_two
 
 **Scope**: static member of <code>[two](#two)</code>  
+
 -
 
 <a name="two.two_three"></a>
@@ -693,6 +749,7 @@ two_two
 two_three
 
 **Scope**: static member of <code>[two](#two)</code>  
+
 -
 
 <a name="two.two_four"></a>
@@ -700,6 +757,7 @@ two_three
 two_four
 
 **Scope**: static member of <code>[two](#two)</code>  
+
 -
 
 <a name="two.two_one"></a>
@@ -707,6 +765,7 @@ two_four
 two_one
 
 **Scope**: static member of <code>[two](#two)</code>  
+
 -
 
 <a name="eType"></a>
@@ -718,6 +777,7 @@ two_one
 | --- | --- | --- |
 | ONE | <code>1</code> | type one |
 | TWO | <code>2</code> | type two |
+
 -
 
 <a name="three"></a>
@@ -731,6 +791,7 @@ three
 | --- | --- |
 | THIS | <code>0</code> | 
 | THAT | <code>1</code> | 
+
 -
 
 <a name="seven"></a>
@@ -738,6 +799,7 @@ three
 seven
 
 **Scope**: global  
+
 -
 
 <a name="thirteen"></a>
@@ -745,6 +807,7 @@ seven
 thirteen
 
 **Scope**: global  
+
 -
 
 <a name="missle"></a>
@@ -756,6 +819,7 @@ thirteen
   * [.hydrogen](#missle.hydrogen)
   * [.megaton](#missle.megaton) → <code>number</code>
 
+
 -
 
 <a name="missle.range"></a>
@@ -764,6 +828,7 @@ missile range
 
 **Default**: <code>100000</code>  
 **Scope**: static member of <code>[missle](#missle)</code>  
+
 -
 
 <a name="missle.ballistic"></a>
@@ -772,6 +837,7 @@ ballistic
 
 **Default**: <code>true</code>  
 **Scope**: static member of <code>[missle](#missle)</code>  
+
 -
 
 <a name="missle.hydrogen"></a>
@@ -779,6 +845,7 @@ ballistic
 hydrogen bomb?
 
 **Scope**: static member of <code>[missle](#missle)</code>  
+
 -
 
 <a name="missle.megaton"></a>
@@ -787,6 +854,7 @@ number of megatons
 
 **Default**: <code>200</code>  
 **Scope**: static member of <code>[missle](#missle)</code>  
+
 -
 
 <a name="personality"></a>
@@ -801,6 +869,7 @@ number of megatons
 | extraversion | <code>\*</code> | extraversion |
 | agreeableness | <code>object</code> | agreeableness |
 | neuroticism | <code>object</code> | neuroticism |
+
 -
 
 <a name="eight"></a>
@@ -808,6 +877,7 @@ number of megatons
 eight
 
 **Scope**: global  
+
 -
 
 <a name="five"></a>
@@ -815,6 +885,7 @@ eight
 five
 
 **Scope**: global  
+
 -
 
 <a name="taze"></a>
@@ -832,6 +903,7 @@ Pump an idiot full of volts
 | [options.strength] | <code>number</code> | <code>11</code> | strength |
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
 | [done] | <code>function</code> |  | callback on slump, which has: - devestating power - an unusual aftertaste |
+
 -
 
 <a name="protection"></a>
@@ -844,6 +916,7 @@ a quite wonderful function
 | --- | --- | --- |
 | cloak | <code>object</code> | privacy gown |
 | dagger | <code>object</code> | security |
+
 -
 
 <a name="four"></a>
@@ -851,6 +924,7 @@ a quite wonderful function
 four
 
 **Scope**: global  
+
 -
 
 <a name="nine"></a>
@@ -858,6 +932,7 @@ four
 nine
 
 **Scope**: global  
+
 -
 
 <a name="twelve"></a>
@@ -865,6 +940,7 @@ nine
 twelve
 
 **Scope**: global  
+
 -
 
 <a name="plant"></a>
@@ -872,6 +948,7 @@ twelve
 to plant ones fist in a buster's mush
 
 **Scope**: global  
+
 -
 
 <a name="event_ten"></a>
@@ -879,6 +956,7 @@ to plant ones fist in a buster's mush
 ten
 
 **Scope**: global  
+
 -
 
 <a name="one"></a>
@@ -886,6 +964,7 @@ ten
 one
 
 **Scope**: global  
+
 -
 
 <a name="external_eleven"></a>
@@ -893,5 +972,6 @@ one
 eleven
 
 **Scope**: global  
+
 -
 

@@ -54,6 +54,7 @@ var animal = require("animal");
     * _static_
       * [enum: .eMood](#module_animal..Animal.eMood)
 
+
 -
 
 <a name="module_animal..Animal"></a>
@@ -67,6 +68,7 @@ var animal = require("animal");
   * _static_
     * [enum: .eMood](#module_animal..Animal.eMood)
 
+
 -
 
 <a name="new_module_animal..Animal_new"></a>
@@ -76,6 +78,7 @@ var animal = require("animal");
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
+
 -
 
 <a name="module_animal..Animal#age"></a>
@@ -84,11 +87,13 @@ the current age
 
 **Default**: <code>0</code>  
 **Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+
 -
 
 <a name="module_animal..Animal#species"></a>
 #### animal.species → <code>Species</code>
 **Scope**: instance member of <code>[Animal](#module_animal..Animal)</code>  
+
 -
 
 <a name="module_animal..Animal.eMood"></a>
@@ -103,6 +108,7 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
+
 -
 
 <a name="module_builder"></a>
@@ -114,6 +120,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
     * [.construct()](#module_builder..builder.construct)
     * [.repair()](#module_builder..builder.repair)
 
+
 -
 
 <a name="module_builder..builder"></a>
@@ -123,6 +130,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
   * [.construct()](#module_builder..builder.construct)
   * [.repair()](#module_builder..builder.repair)
 
+
 -
 
 <a name="module_builder..builder.construct"></a>
@@ -130,6 +138,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 construct something
 
 **Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+
 -
 
 <a name="module_builder..builder.repair"></a>
@@ -137,6 +146,7 @@ construct something
 repair something
 
 **Scope**: static member of <code>[builder](#module_builder..builder)</code>  
+
 -
 
 <a name="module_species"></a>
@@ -151,6 +161,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
     * _static_
       * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
+
 -
 
 <a name="module_species..Species"></a>
@@ -163,6 +174,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
   * _static_
     * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
+
 -
 
 <a name="module_species..Species#name"></a>
@@ -170,11 +182,13 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 the species name
 
 **Scope**: instance member of <code>[Species](#module_species..Species)</code>  
+
 -
 
 <a name="module_species..Species#species"></a>
 #### species.species → <code>Species</code>
 **Scope**: instance member of <code>[Species](#module_species..Species)</code>  
+
 -
 
 <a name="module_species..Species.merge"></a>
@@ -187,5 +201,6 @@ merge two species into a new one
 | --- | --- | --- |
 | one | <code>Species</code> | first |
 | two | <code>Species</code> | second |
+
 -
 
