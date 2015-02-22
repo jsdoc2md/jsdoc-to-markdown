@@ -63,6 +63,7 @@ seven
 <a name="six"></a>
 ## class: six
 **Scope**: global  
+
 * [class: six](#six)
   * [new six()](#new_six_new)
   * _instance_
@@ -124,6 +125,7 @@ three
 | --- | --- |
 | THIS | <code>0</code> | 
 | THAT | <code>1</code> | 
+
 <a name="twelve"></a>
 ## twelve() ⇒ <code>function</code>
 twelve
@@ -134,6 +136,7 @@ twelve
 two
 
 **Scope**: global  
+
 * [mixin: two](#two)
   * [const: .two_four](#two.two_four) → <code>number</code>
   * [.two_one()](#two.two_one) ⇒ <code>number</code>

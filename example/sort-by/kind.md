@@ -27,6 +27,7 @@
 <a name="six"></a>
 ## class: six
 **Scope**: global  
+
 * [class: six](#six)
   * [new six()](#new_six_new)
   * _static_
@@ -71,6 +72,7 @@ six_two
 two
 
 **Scope**: global  
+
 * [mixin: two](#two)
   * [.two_two](#two.two_two) → <code>number</code>
   * [.two_three](#two.two_three) → <code>object</code>
@@ -108,6 +110,7 @@ three
 | --- | --- |
 | THIS | <code>0</code> | 
 | THAT | <code>1</code> | 
+
 <a name="seven"></a>
 ## seven → <code>number</code>
 seven

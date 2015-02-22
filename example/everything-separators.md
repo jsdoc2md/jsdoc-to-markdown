@@ -121,6 +121,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 ```js
 var animal = require("animal");
 ```
+
 * [animal](#module_animal)
   * [class: ~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
@@ -136,6 +137,7 @@ var animal = require("animal");
 <a name="module_animal..Animal"></a>
 ### class: animal~Animal
 **Scope**: inner member of <code>[animal](#module_animal)</code>  
+
 * [class: ~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
@@ -154,6 +156,7 @@ var animal = require("animal");
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
+
 
 -
 
@@ -185,11 +188,13 @@ Animal moods
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
 
+
 -
 
 <a name="module_builder"></a>
 ## builder
 Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.
+
 
 * [builder](#module_builder)
   * [mixin: ~builder](#module_builder..builder)
@@ -202,6 +207,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 <a name="module_builder..builder"></a>
 ### mixin: builder~builder
 **Scope**: inner member of <code>[builder](#module_builder)</code>  
+
 * [mixin: ~builder](#module_builder..builder)
   * [.construct()](#module_builder..builder.construct)
   * [.repair()](#module_builder..builder.repair)
@@ -229,6 +235,7 @@ repair something
 ## commonJS/species
 In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into "infraspecific taxa" such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).
 
+
 * [commonJS/species](#module_commonJS/species)
   * [class: ~Species](#module_commonJS/species..Species)
     * _instance_
@@ -243,6 +250,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 <a name="module_commonJS/species..Species"></a>
 ### class: commonJS/species~Species
 **Scope**: inner member of <code>[commonJS/species](#module_commonJS/species)</code>  
+
 * [class: ~Species](#module_commonJS/species..Species)
   * _instance_
     * [.name](#module_commonJS/species..Species#name) → <code>string</code>
@@ -278,6 +286,7 @@ merge two species into a new one
 | one | <code>[Species](#Species)</code> | first |
 | two | <code>[Species](#Species)</code> | second |
 
+
 -
 
 <a name="Animal"></a>
@@ -289,6 +298,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - description
 
 **Scope**: global  
+
 * [class: Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
@@ -307,6 +317,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
+
 
 -
 
@@ -338,11 +349,13 @@ Animal moods
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
 
+
 -
 
 <a name="six"></a>
 ## class: six
 **Scope**: global  
+
 * [class: six](#six)
   * [new six()](#new_six_new)
   * _instance_
@@ -408,6 +421,7 @@ six_static_one
 In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into "infraspecific taxa" such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).
 
 **Scope**: global  
+
 * [class: Species](#Species)
   * _instance_
     * [.name](#Species#name) → <code>string</code>
@@ -443,6 +457,7 @@ merge two species into a new one
 | one | <code>[Species](#Species)</code> | first |
 | two | <code>[Species](#Species)</code> | second |
 
+
 -
 
 <a name="FurQ"></a>
@@ -455,6 +470,7 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 **Access:** public  
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Author:** Chris Morris  
+
 * [class: FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
@@ -499,6 +515,7 @@ var uziLover = require("FurQ");
 - "Uzi like a metal dick in my hand."
 - "Magazine like a big testicle gland."
 
+
 -
 
 <a name="FurQ#LOVE"></a>
@@ -533,6 +550,7 @@ fire weapon
 | Param | Type | Description |
 | --- | --- | --- |
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
+
 
 -
 
@@ -572,6 +590,7 @@ respect
 | Param | Type | Description |
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
+
 **Example**  
 ```js
 uziLover.respect(function(err, gain){
@@ -594,6 +613,7 @@ FUR-Q enemy types
 | COCK | <code>number</code> | <code>0</code> | an awful individual |
 | BITCH | <code>number</code> | <code>1</code> |  |
 | MUTHAFUCKA | <code>number</code> | <code>2</code> |  |
+
 
 -
 
@@ -622,11 +642,13 @@ Passed to [respect](#FurQ#respect)
 | err | <code>Error</code> | an issue with the punch |
 | gain | <code>\*</code> | the respect percentage gained |
 
+
 -
 
 <a name="Rapper"></a>
 ## class: Rapper
 **Scope**: global  
+
 * [class: Rapper](#Rapper)
   * _instance_
     * [.spit()](#Rapper#spit)
@@ -661,6 +683,7 @@ battle
 train new rappers
 
 **Scope**: static member of <code>[Rapper](#Rapper)</code>  
+
   * [.train()](#Rapper.train)
     * [class: ~School](#Rapper.train..School)
       * [new School()](#new_Rapper.train..School_new)
@@ -672,6 +695,7 @@ train new rappers
 <a name="Rapper.train..School"></a>
 #### class: train~School
 **Scope**: inner member of <code>[train](#Rapper.train)</code>  
+
 * [class: ~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
   * [.bestStudent](#Rapper.train..School#bestStudent)
@@ -699,6 +723,7 @@ best student
 Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.
 
 **Scope**: global  
+
 * [mixin: builder](#builder)
   * [.construct()](#builder.construct)
   * [.repair()](#builder.repair)
@@ -727,6 +752,7 @@ repair something
 two
 
 **Scope**: global  
+
 * [mixin: two](#two)
   * [.two_two](#two.two_two) → <code>number</code>
   * [.two_three](#two.two_three) → <code>object</code>
@@ -778,6 +804,7 @@ two_one
 | ONE | <code>1</code> | type one |
 | TWO | <code>2</code> | type two |
 
+
 -
 
 <a name="three"></a>
@@ -791,6 +818,7 @@ three
 | --- | --- |
 | THIS | <code>0</code> | 
 | THAT | <code>1</code> | 
+
 
 -
 
@@ -813,6 +841,7 @@ thirteen
 <a name="missle"></a>
 ## missle → <code>object</code>
 **Scope**: global  
+
 * [missle](#missle) → <code>object</code>
   * [.range](#missle.range) → <code>number</code>
   * [.ballistic](#missle.ballistic) → <code>boolean</code>
@@ -870,6 +899,7 @@ number of megatons
 | agreeableness | <code>object</code> | agreeableness |
 | neuroticism | <code>object</code> | neuroticism |
 
+
 -
 
 <a name="eight"></a>
@@ -904,6 +934,7 @@ Pump an idiot full of volts
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
 | [done] | <code>function</code> |  | callback on slump, which has: - devestating power - an unusual aftertaste |
 
+
 -
 
 <a name="protection"></a>
@@ -916,6 +947,7 @@ a quite wonderful function
 | --- | --- | --- |
 | cloak | <code>object</code> | privacy gown |
 | dagger | <code>object</code> | security |
+
 
 -
 

@@ -16,6 +16,7 @@ Pump an idiot full of volts
 | [done] | <code>function</code> |  | callback on slump, which has: - devestating power - an unusual aftertaste |
 
 
+
 <a name="eType"></a>
 ## enum: eType
 **Scope**: global  
@@ -25,6 +26,7 @@ Pump an idiot full of volts
 | --- | --- | --- |
 | ONE | <code>1</code> | type one |
 | TWO | <code>2</code> | type two |
+
 
 
 separator  

@@ -27,6 +27,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - description
 
 **Scope**: global  
+
 * [class: Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
@@ -42,6 +43,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](#Animal) objects |
 | parents | <code>[Species](#Species)</code> | the species |
+
 <a name="Animal#age"></a>
 ### animal.age → <code>number</code>
 the current age
@@ -63,6 +65,7 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
+
 
 
 ##Show only part of the Class docs

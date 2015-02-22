@@ -45,6 +45,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 **Example**  
 var animal = require("animal");
 
+
 * [animal](#module_animal)
   * [class: ~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
@@ -60,6 +61,7 @@ var animal = require("animal");
 <a name="module_animal..Animal"></a>
 ### class: animal~Animal
 **Scope**: inner member of <code>[animal](#module_animal)</code>  
+
 * [class: ~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
@@ -78,6 +80,7 @@ var animal = require("animal");
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
+
 
 -
 
@@ -109,11 +112,13 @@ Animal moods
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
 
+
 -
 
 <a name="module_builder"></a>
 ## builder
 Aside from humans, who are the most prolific and versatile builders, building behaviour is common in many mammals, birds, insects and arachnids. It is also seen in a few species of fish, reptiles, amphibians, molluscs, urochordates, crustaceans, annelids and some other arthropods. It is virtually absent from all the other animal phyla.
+
 
 * [builder](#module_builder)
   * [mixin: ~builder](#module_builder..builder)
@@ -126,6 +131,7 @@ Aside from humans, who are the most prolific and versatile builders, building be
 <a name="module_builder..builder"></a>
 ### mixin: builder~builder
 **Scope**: inner member of <code>[builder](#module_builder)</code>  
+
 * [mixin: ~builder](#module_builder..builder)
   * [.construct()](#module_builder..builder.construct)
   * [.repair()](#module_builder..builder.repair)
@@ -153,6 +159,7 @@ repair something
 ## species
 In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into "infraspecific taxa" such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).
 
+
 * [species](#module_species)
   * [class: ~Species](#module_species..Species)
     * _instance_
@@ -167,6 +174,7 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 <a name="module_species..Species"></a>
 ### class: species~Species
 **Scope**: inner member of <code>[species](#module_species)</code>  
+
 * [class: ~Species](#module_species..Species)
   * _instance_
     * [.name](#module_species..Species#name) → <code>string</code>
@@ -201,6 +209,7 @@ merge two species into a new one
 | --- | --- | --- |
 | one | <code>Species</code> | first |
 | two | <code>Species</code> | second |
+
 
 -
 

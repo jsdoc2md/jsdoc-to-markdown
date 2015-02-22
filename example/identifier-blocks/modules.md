@@ -31,6 +31,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 **Example**  
 var animal = require("animal");
 
+
 * [animal](#module_animal)
   * [class: ~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
@@ -43,6 +44,7 @@ var animal = require("animal");
 <a name="module_animal..Animal"></a>
 ### class: animal~Animal
 **Scope**: inner member of <code>[animal](#module_animal)</code>  
+
 * [class: ~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
@@ -58,6 +60,7 @@ var animal = require("animal");
 | --- | --- | --- |
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
+
 <a name="module_animal..Animal#age"></a>
 #### animal.age → <code>number</code>
 the current age
@@ -79,6 +82,7 @@ Animal moods
 | satisfied | <code>0</code> | chilling |
 | angry | <code>1</code> | pissed off |
 | hungry | <code>2</code> | need to eat |
+
 
 
 ## Show only part of the module docs
