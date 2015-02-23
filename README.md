@@ -196,42 +196,40 @@ See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  
 
 ## API Reference
-  <a name="module_jsdoc-to-markdown"></a>
-  ## jsdoc-to-markdown
-  **Todo**
-  
-  - [ ] Internationalisation
-  
-  **Example**  
-  ```js
-  var jsdoc2md = require("jsdoc-to-markdown");
-  ```
-  <a name="module_jsdoc-to-markdown.render"></a>
-  ### jsdoc2md.render(src, options) ⇒ <code>stream</code>
-  Transforms jsdoc into markdown documentation.
-  
-  **Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
-  
-  | Param | Type | Description |
-  | --- | --- | --- |
-  | src | <code>string</code> \| <code>Array.&lt;string&gt;</code> | The javascript source file(s). |
-  | options | <code>object</code> | The render options |
-  | [options.template] | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
-  | [options.json] | <code>boolean</code> | Output the parsed jsdoc data only |
-  | [options.private] | <code>boolean</code> | Include symbols marked @private in the output |
-  | [options.stats] | <code>boolean</code> | Print a few stats about the doclets parsed |
-  | [options.heading-depth] | <code>number</code> | root heading depth, defaults to 1 (`#`) |
-  | [options.plugin] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
-  | [options.helper] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
-  | [options.partial] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
-  
-  **Example**  
-  Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
-  ```js
-  > jsdoc2md.render("lib/*.js").pipe(process.stdout);
-  ```
-  or pipe in source code from another source:
-  ```js
-  > fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
-  ```
+**Todo**
+
+- [ ] Internationalisation
+
+**Example**  
+```js
+var jsdoc2md = require("jsdoc-to-markdown");
+```
+<a name="module_jsdoc-to-markdown.render"></a>
+### jsdoc2md.render(src, options) ⇒ <code>stream</code>
+Transforms jsdoc into markdown documentation.
+
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| src | <code>string</code> \| <code>Array.&lt;string&gt;</code> | The javascript source file(s). |
+| options | <code>object</code> | The render options |
+| [options.template] | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
+| [options.json] | <code>boolean</code> | Output the parsed jsdoc data only |
+| [options.private] | <code>boolean</code> | Include symbols marked @private in the output |
+| [options.stats] | <code>boolean</code> | Print a few stats about the doclets parsed |
+| [options.heading-depth] | <code>number</code> | root heading depth, defaults to 1 (`#`) |
+| [options.plugin] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
+| [options.helper] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
+| [options.partial] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
+
+**Example**  
+Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
+```js
+> jsdoc2md.render("lib/*.js").pipe(process.stdout);
+```
+or pipe in source code from another source:
+```js
+> fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
+```
 &copy; 2015 Lloyd Brookes <75pound@gmail.com>
