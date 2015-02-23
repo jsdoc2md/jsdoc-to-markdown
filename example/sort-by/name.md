@@ -37,40 +37,40 @@
 ## eight : <code>object</code>
 eight
 
-**Scope**: global namespace  
+**Kind**: global namespace  
 <a name="external_eleven"></a>
 ## eleven
 eleven
 
-**Scope**: global external  
+**Kind**: global external  
 <a name="five"></a>
 ## five : <code>number</code>
 five
 
-**Scope**: global constant  
+**Kind**: global constant  
 <a name="four"></a>
 ## four() ⇒ <code>number</code>
 four
 
-**Scope**: global function  
+**Kind**: global function  
 <a name="nine"></a>
 ## nine() ⇒ <code>number</code>
 nine
 
-**Scope**: global function  
+**Kind**: global function  
 <a name="one"></a>
 ## one : <code>number</code> \| <code>string</code>
 one
 
-**Scope**: global typedef  
+**Kind**: global typedef  
 <a name="seven"></a>
 ## seven : <code>number</code>
 seven
 
-**Scope**: global member  
+**Kind**: global member  
 <a name="six"></a>
 ## six
-**Scope**: global class  
+**Kind**: global class  
 
 * [six](#six)
   * [new six()](#new_six_new)
@@ -91,42 +91,42 @@ six
 ### six.six_one : <code>number</code>
 six_one
 
-**Scope**: instance constant of <code>[six](#six)</code>  
+**Kind**: instance constant of <code>[six](#six)</code>  
 <a name="six.six_static_one"></a>
 ### six.six_static_one : <code>object</code>
 six_static_one
 
-**Scope**: static namespace of <code>[six](#six)</code>  
+**Kind**: static namespace of <code>[six](#six)</code>  
 <a name="six.six_static_three"></a>
 ### six.six_static_three : <code>number</code>
 six_static_three
 
-**Scope**: static property of <code>[six](#six)</code>  
+**Kind**: static property of <code>[six](#six)</code>  
 <a name="six.six_static_two"></a>
 ### six.six_static_two
 six_static_two
 
-**Scope**: static mixin of <code>[six](#six)</code>  
+**Kind**: static mixin of <code>[six](#six)</code>  
 <a name="six#six_two"></a>
 ### six.six_two() ⇒ <code>number</code>
 six_two
 
-**Scope**: instance method of <code>[six](#six)</code>  
+**Kind**: instance method of <code>[six](#six)</code>  
 <a name="event_ten"></a>
 ## "ten"
 ten
 
-**Scope**: event emitted  
+**Kind**: event emitted  
 <a name="thirteen"></a>
 ## thirteen : <code>number</code>
 thirteen
 
-**Scope**: global member  
+**Kind**: global member  
 <a name="three"></a>
 ## three
 three
 
-**Scope**: global enum  
+**Kind**: global enum  
 **Properties**
 
 | Name | Default |
@@ -138,12 +138,12 @@ three
 ## twelve() ⇒ <code>function</code>
 twelve
 
-**Scope**: global function  
+**Kind**: global function  
 <a name="two"></a>
 ## two
 two
 
-**Scope**: global mixin  
+**Kind**: global mixin  
 
 * [two](#two)
   * [.two_four](#two.two_four) : <code>number</code>
@@ -155,19 +155,19 @@ two
 ### two.two_four : <code>number</code>
 two_four
 
-**Scope**: static constant of <code>[two](#two)</code>  
+**Kind**: static constant of <code>[two](#two)</code>  
 <a name="two.two_one"></a>
 ### two.two_one() ⇒ <code>number</code>
 two_one
 
-**Scope**: static method of <code>[two](#two)</code>  
+**Kind**: static method of <code>[two](#two)</code>  
 <a name="two.two_three"></a>
 ### two.two_three : <code>object</code>
 two_three
 
-**Scope**: static namespace of <code>[two](#two)</code>  
+**Kind**: static namespace of <code>[two](#two)</code>  
 <a name="two.two_two"></a>
 ### two.two_two : <code>number</code>
 two_two
 
-**Scope**: static property of <code>[two](#two)</code>  
+**Kind**: static property of <code>[two](#two)</code>  

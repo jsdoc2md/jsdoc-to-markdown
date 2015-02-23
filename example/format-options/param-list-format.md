@@ -5,7 +5,7 @@
 
 Pump an idiot full of volts
 
-**Scope**: global function  
+**Kind**: global function  
 **Params**
 
 - victim <code>object</code> | <code>array</code> - the victim(s) to fry  
@@ -24,7 +24,7 @@ Pump an idiot full of volts
 
 Pump an idiot full of volts
 
-**Scope**: global function  
+**Kind**: global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

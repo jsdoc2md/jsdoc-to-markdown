@@ -5,7 +5,7 @@
 
 Pump an idiot full of volts
 
-**Scope**: global function  
+**Kind**: global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ Pump an idiot full of volts
 
 <a name="eType"></a>
 ## eType
-**Scope**: global enum  
+**Kind**: global enum  
 **Properties**
 
 | Name | Default | Description |
@@ -45,7 +45,7 @@ gfm
 
 Pump an idiot full of volts
 
-**Scope**: global function  
+**Kind**: global function  
 <table>
   <thead>
     <tr>
@@ -79,7 +79,7 @@ Pump an idiot full of volts
 
 <a name="eType"></a>
 ## eType
-**Scope**: global enum  
+**Kind**: global enum  
 **Properties**
 
 <table>

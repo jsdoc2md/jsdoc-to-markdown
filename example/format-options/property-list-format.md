@@ -1,7 +1,7 @@
 #property-list-format = list
 <a name="eType"></a>
 ## eType
-**Scope**: global enum  
+**Kind**: global enum  
 **Properties**
 
 - ONE  - type one  
@@ -11,7 +11,7 @@
 #property-list-format = table
 <a name="eType"></a>
 ## eType
-**Scope**: global enum  
+**Kind**: global enum  
 **Properties**
 
 | Name | Default | Description |

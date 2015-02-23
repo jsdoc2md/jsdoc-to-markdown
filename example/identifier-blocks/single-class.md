@@ -26,7 +26,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - in the module
 - description
 
-**Scope**: global class  
+**Kind**: global class  
 
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
@@ -49,15 +49,15 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 the current age
 
 **Default**: <code>0</code>  
-**Scope**: instance property of <code>[Animal](#Animal)</code>  
+**Kind**: instance property of <code>[Animal](#Animal)</code>  
 <a name="Animal#species"></a>
 ### animal.species : <code>[Species](#Species)</code>
-**Scope**: instance property of <code>[Animal](#Animal)</code>  
+**Kind**: instance property of <code>[Animal](#Animal)</code>  
 <a name="Animal.eMood"></a>
 ### Animal.eMood
 Animal moods
 
-**Scope**: static enum property of <code>[Animal](#Animal)</code>  
+**Kind**: static enum property of <code>[Animal](#Animal)</code>  
 **Properties**
 
 | Name | Default | Description |
@@ -87,4 +87,4 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - in the module
 - description
 
-**Scope**: global class  
+**Kind**: global class  
