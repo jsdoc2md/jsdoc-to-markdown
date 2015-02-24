@@ -60,8 +60,8 @@ Some examples of projects with `jsdoc2md` documentation.
     <tr>
       <td><a href="https://github.com/75lb/handbrake-js">handbrake-js</a></td>
       <td>
-        <p>A module exposing two methods and an inner class. The API docs are inserted into <a href="https://github.com/75lb/handbrake-js/tree/master/jsdoc2md">this README template</a> by this command: </p>
-        <p><code>$ jsdoc2md --template jsdoc2md/README.hbs lib/*.js</code></p>
+        <p>A module exposing two methods and an inner class. The API docs are inserted into <a href="https://github.com/75lb/handbrake-js/tree/master/jsdoc2md">this README template</a> by this command: <br>
+        <code>$ jsdoc2md --template jsdoc2md/README.hbs lib/*.js</code></p>
       </td>
     </tr>
     <tr>
@@ -94,34 +94,37 @@ Options:
 $ jsdoc2md -h
 
   jsdoc-to-markdown
-  Markdown API documentation generator, good for Github projects
+  Markdown API documentation generator
 
   Usage
   $ jsdoc2md [<options>] <source_files>
 
-  -v, --verbose                    More verbose error reporting
-  -h, --help                       Print usage information
-  -j, --json                       Output the parsed jsdoc data only
-  --private                        Include identifiers marked @private in the output
-  --stats                          Print a few stats about the doclets parsed
-  --html                           Enable experimental parsing of .html files
-  --src <array>                    A list of javascript source files or glob expressions
-  -t, --template <string>          A custom handlebars template to insert the rendered documentation into
-  --heading-depth <number>         root heading depth, defaults to 2 (`##`).
-  -p, --plugin <array>             Use an installed package containing helper and/or partial overrides
-  --helper <array>                 handlebars helper files to override or extend the default set
-  --partial <array>                handlebars partial files to override or extend the default set
-  --sort-by <string>               none | kind | scope | kind,scope | scope,kind | <field_name>. Defaults to 'none'.
-  --example-code                   Display all examples as code block
-  --example-code-gfm <string>      Wraps each @example in a GFM fenced-code block(if not already done
-                                   so in the source).. specify a language, e.g. `--example-code-gfm js`
-  --name-format                    Format identifier names as code
-  --github                         Use github-specific markdown for improved rendering on @todo and @deprecated
-  --separators                     Put <hr> breaks between identifiers. Improves readability on bulky docs.
-  --module-index-format <string>   list, table, dl
-  --global-index-format <string>   list, table, dl
-  --param-list-format <string>     list, table
-  --property-list-format <string>  list, table  
+  -v, --verbose                        More verbose error reporting
+  -h, --help                           Print usage information
+  -j, --json                           Output the parsed jsdoc data only
+  --private                            Include identifiers marked @private in the output
+  --stats                              Print a few stats about the doclets parsed
+  --html                               Enable experimental parsing of .html files
+  --src <array>                        A list of javascript source files or glob expressions
+  -s, --sort-by <array>                Sort by one of more fields, e.g. `--sort-by kind category`. Defaults to 'scope kind'.
+  -t, --template <string>              A custom handlebars template to insert the rendered documentation into
+  -d, --heading-depth <number>         root heading depth, defaults to 2 (`##`).
+  -p, --plugin <array>                 Use an installed package containing helper and/or partial overrides
+  --helper <array>                     handlebars helper files to override or extend the default set
+  --partial <array>                    handlebars partial files to override or extend the default set
+  -l, --example-lang <string>          Specifies the default language for @example blocks. In gfm mode,
+                                       each @example is wrapped in a fenced-code block (```js var clive = 'yeah?'; ```).
+                                       Example usage: `--example-lang js`.
+                                       Use the special value `none` for no specific language.
+  --name-format                        Format identifier names as code
+  --no-gfm                             set this to avoid using github-specific markdown
+  --separators                         Put <hr> breaks between identifiers. Improves readability on bulky docs.
+  -m, --module-index-format <string>   none, grouped, table, dl
+  -g, --global-index-format <string>   none, grouped, table, dl
+  -p, --param-list-format <string>     list, table
+  -r, --property-list-format <string>  list, table
+  -c, --member-index-format <string>   grouped, list
+  --group-by <array>                   a list of fields to group member indexes by
 ```
 
 Some typical use cases: 

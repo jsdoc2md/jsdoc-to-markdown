@@ -6,6 +6,7 @@
 - in the module
 - description
 
+@summary It's an animal, yeah? 
 @param {array} - an array of two parent {@link Animal} objects
 @param {Species} - the species
 */
