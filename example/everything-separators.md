@@ -852,7 +852,7 @@ three
 ## seven : <code>number</code>
 seven
 
-**Kind**: global member  
+**Kind**: global variable  
 
 -
 
@@ -860,7 +860,7 @@ seven
 ## thirteen : <code>number</code>
 thirteen
 
-**Kind**: global member  
+**Kind**: global variable  
 
 -
 

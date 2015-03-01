@@ -123,12 +123,12 @@ three
 ## seven : <code>number</code>
 seven
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="thirteen"></a>
 ## thirteen : <code>number</code>
 thirteen
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="eight"></a>
 ## eight : <code>object</code>
 eight

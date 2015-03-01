@@ -140,7 +140,7 @@ two_four
 ## seven : <code>number</code>
 seven
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="eight"></a>
 ## eight : <code>object</code>
 eight
@@ -170,4 +170,4 @@ twelve
 ## thirteen : <code>number</code>
 thirteen
 
-**Kind**: global member  
+**Kind**: global variable  

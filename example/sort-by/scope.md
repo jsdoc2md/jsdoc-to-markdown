@@ -126,7 +126,7 @@ six_static_one
 ## thirteen : <code>number</code>
 thirteen
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="two"></a>
 ## two
 two
@@ -168,4 +168,4 @@ eight
 ## seven : <code>number</code>
 seven
 
-**Kind**: global member  
+**Kind**: global variable  

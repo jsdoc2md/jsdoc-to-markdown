@@ -67,7 +67,7 @@ one
 ## seven : <code>number</code>
 seven
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="six"></a>
 ## six
 **Kind**: global class  
@@ -121,7 +121,7 @@ ten
 ## thirteen : <code>number</code>
 thirteen
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="three"></a>
 ## three
 three

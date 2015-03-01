@@ -17,12 +17,12 @@
 ## headVar : <code>number</code>
 something in the head
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="bodyGlobal"></a>
 ## bodyGlobal
 body global
 
-**Kind**: global member  
+**Kind**: global variable  
 <a name="headObj"></a>
 ## headObj : <code>object</code>
 a head obj
