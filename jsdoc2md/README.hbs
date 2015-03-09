@@ -184,7 +184,7 @@ gulp.task("docs", function(done){
     var options = {};
     
     gutil.log("writing documentation to " + dest);
-    jsdoc2md.render(src, options)
+    return jsdoc2md.render(src, options)
         .on("error", function(err){
             gutil.log(gutil.colors.red("jsdoc2md failed"), err.message);
         })
