@@ -45,7 +45,7 @@ $ jsdoc-parse example/function.js | dmd
 * Insert API documention into a README, or any arbitrary document.
 * Customisable to a granular level. If the output doesn't suit you, change it.
 * Consume and publish plug-ins.
-* Works on html input files (experimental)
+* Works with html input files (experimental)
 
 Jsdoc-to-markdown extends the jsdoc with some new tags
 
@@ -53,7 +53,7 @@ Jsdoc-to-markdown extends the jsdoc with some new tags
 * @todo and @done
 
 
-## Examples
+## Example output
 Some examples of projects with `jsdoc2md` documentation.
 
 <table>
