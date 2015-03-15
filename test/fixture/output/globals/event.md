@@ -1,21 +1,22 @@
 <a name="Hurl"></a>
-##class: Hurl
+## Hurl
+**Kind**: global class  
 
-* [class: Hurl](#Hurl)
-  * _instance_
-    * [.snowball()](#Hurl#snowball)
-  * _events_
-    * ["snowball"](#Hurl#event_snowball)
+* [Hurl](#Hurl)
+  * [.snowball()](#Hurl#snowball)
+  * ["snowball"](#Hurl#event_snowball)
 
 <a name="Hurl#snowball"></a>
-###hurl.snowball()
+### hurl.snowball()
 Throw a snowball.
 
+**Kind**: instance method of <code>[Hurl](#Hurl)</code>  
 **Emits**: <code>[snowball](#Hurl#event_snowball)</code>  
 <a name="Hurl#event_snowball"></a>
-###event: "snowball"
+### "snowball"
 Snowball event.
 
+**Kind**: event emitted by <code>[Hurl](#Hurl)</code>  
 **Properties**
 
 | Name | Type | Description |

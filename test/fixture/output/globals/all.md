@@ -1,36 +1,39 @@
-##Modules
+## Modules
 <dl>
 <dt><a href="#module_foo/bar">foo/bar</a></dt>
 <dd><p>A module. Refer to it using <a href="#module_foo/bar">foo/bar</a>.</p>
 </dd>
 </dl>
-##Globals
+## Classes
 <dl>
-<dt>~~<a href="#All">class: All</a> ⇐ <code>Number</code>~~</dt>
+<dt><del><a href="#All">All</a> ⇐ <code>Number</code></del></dt>
 <dd><p>a class with all of the things</p>
 </dd>
-<dt><a href="#Person">class: Person</a> ⇐ <code>Object</code></dt>
+<dt><a href="#Person">Person</a> ⇐ <code>Object</code></dt>
 <dd><p>simple class description</p>
 </dd>
-<dt><a href="#Car">class: Car</a></dt>
+<dt><a href="#Car">Car</a></dt>
 <dd></dd>
-<dt><a href="#Pipe">class: Pipe</a> ⇐ <code><a href="#Pipe">Pipe</a></code></dt>
+<dt><a href="#Pipe">Pipe</a> ⇐ <code><a href="#Pipe">Pipe</a></code></dt>
 <dd><p>a class which extends</p>
 </dd>
-<dt>~~<a href="#Everything">class: Everything</a> ⇐ <code><a href="#Pipe">Pipe</a></code>~~</dt>
+<dt><del><a href="#Everything">Everything</a> ⇐ <code><a href="#Pipe">Pipe</a></code></del></dt>
 <dd><p>a class with all trimmings</p>
 </dd>
-<dt><a href="#Rice">class: Rice</a></dt>
+<dt><a href="#Rice">Rice</a></dt>
 <dd></dd>
-<dt><a href="#Something">class: Something</a></dt>
+<dt><a href="#Something">Something</a></dt>
 <dd></dd>
-<dt><a href="#Pizza">class: Pizza</a></dt>
+<dt><a href="#Pizza">Pizza</a></dt>
 <dd></dd>
-<dt><a href="#Hurl">class: Hurl</a></dt>
+<dt><a href="#Hurl">Hurl</a></dt>
 <dd></dd>
-<dt><a href="#Plucker">class: Plucker</a></dt>
+<dt><a href="#Plucker">Plucker</a></dt>
 <dd></dd>
-<dt><a href="#eFileType">enum: eFileType</a> → <code>number</code></dt>
+</dl>
+## Members
+<dl>
+<dt><a href="#eFileType">eFileType</a> : <code>number</code></dt>
 <dd><p>Enum for the <code>type</code> value</p>
 </dd>
 <dt><a href="#visible">visible</a></dt>
@@ -39,9 +42,9 @@
 <dt><a href="#variable">variable</a></dt>
 <dd><p>a global variable</p>
 </dd>
-<dt><a href="#typed">typed</a> → <code>string</code></dt>
+<dt><a href="#typed">typed</a> : <code>string</code></dt>
 <dd></dd>
-<dt><a href="#types">types</a> → <code>string</code> | <code>number</code></dt>
+<dt><a href="#types">types</a> : <code>string</code> | <code>number</code></dt>
 <dd></dd>
 <dt><a href="#exampled">exampled</a></dt>
 <dd><p>a var with an example</p>
@@ -57,16 +60,31 @@
 <dd></dd>
 <dt><a href="#hasDefaultObject">hasDefaultObject</a></dt>
 <dd></dd>
-<dt>~~<a href="#deprecated">deprecated</a>~~</dt>
+<dt><del><a href="#deprecated">deprecated</a></del></dt>
 <dd></dd>
 <dt><a href="#readOnly">readOnly</a></dt>
 <dd></dd>
 <dt><a href="#hasSince">hasSince</a></dt>
 <dd></dd>
-<dt><a href="#car">car</a> → <code>object</code></dt>
+</dl>
+## Objects
+<dl>
+<dt><a href="#car">car</a> : <code>object</code></dt>
 <dd></dd>
-<dt><a href="#config">config</a> → <code>object</code></dt>
+<dt><a href="#config">config</a> : <code>object</code></dt>
 <dd></dd>
+</dl>
+## Constants
+<dl>
+<dt><a href="#CONST_ONE">CONST_ONE</a> : <code>number</code></dt>
+<dd><p>the first important constant</p>
+</dd>
+<dt><del><a href="#CONST_TWO">CONST_TWO</a> : <code>boolean</code></del></dt>
+<dd><p>This variable has all tags set</p>
+</dd>
+</dl>
+## Functions
+<dl>
 <dt><a href="#read">read(filename, done)</a></dt>
 <dd></dd>
 <dt><a href="#customTaggedFunction">customTaggedFunction()</a></dt>
@@ -85,7 +103,7 @@
 <dd></dd>
 <dt><a href="#withAuthor">withAuthor()</a></dt>
 <dd></dd>
-<dt>~~<a href="#oldFunction">oldFunction()</a>~~</dt>
+<dt><del><a href="#oldFunction">oldFunction()</a></del></dt>
 <dd></dd>
 <dt><a href="#newFunction">newFunction()</a></dt>
 <dd></dd>
@@ -109,7 +127,7 @@
 <dd></dd>
 <dt><a href="#returnsSeveral">returnsSeveral()</a> ⇒ <code>object</code> | <code>string</code></dt>
 <dd></dd>
-<dt>~~<a href="#allTogether">allTogether(one, two)</a> ⇒ <code>object</code> | <code>string</code>~~</dt>
+<dt><del><a href="#allTogether">allTogether(one, two)</a> ⇒ <code>object</code> | <code>string</code></del></dt>
 <dd><p>This function has all tags set</p>
 </dd>
 <dt><a href="#doSomething">doSomething(options)</a></dt>
@@ -127,253 +145,275 @@
 </dd>
 <dt><a href="#doSomething">doSomething(options)</a></dt>
 <dd></dd>
-<dt><a href="#CONST_ONE">const: CONST_ONE</a> → <code>number</code></dt>
-<dd><p>the first important constant</p>
-</dd>
-<dt>~~<a href="#CONST_TWO">const: CONST_TWO</a> → <code>boolean</code>~~</dt>
-<dd><p>This variable has all tags set</p>
-</dd>
-<dt><a href="#onComplete">callback: onComplete</a> → <code>function</code></dt>
+</dl>
+## Typedefs
+<dl>
+<dt><a href="#onComplete">onComplete</a> : <code>function</code></dt>
 <dd><p>Called when an async operation completes</p>
 </dd>
-<dt><a href="#NumberLike">type: NumberLike</a> → <code>number</code> | <code>string</code></dt>
+<dt><a href="#NumberLike">NumberLike</a> : <code>number</code> | <code>string</code></dt>
 <dd><p>A number, or a string containing a number.</p>
 </dd>
 </dl>
 <a name="module_foo/bar"></a>
-##foo/bar
+## foo/bar
 A module. Refer to it using [foo/bar](#module_foo/bar).
 
 
 * [foo/bar](#module_foo/bar)
-  * ["event:MyEvent"](#module_foo/bar.event_MyEvent)
-  * [class: ~LinkClass](#module_foo/bar..LinkClass)
-    * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
-    * _instance_
+  * _static_
+    * ["event:MyEvent"](#module_foo/bar.event_MyEvent)
+  * _inner_
+    * [~LinkClass](#module_foo/bar..LinkClass)
+      * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
       * [.foo](#module_foo/bar..LinkClass#foo)
-  * [~linkFunction()](#module_foo/bar..linkFunction)
-  * [external: ~String](#external_String)
+    * [~linkFunction()](#module_foo/bar..linkFunction)
+    * [~String](#external_String)
 
 <a name="module_foo/bar.event_MyEvent"></a>
-###event: "event:MyEvent"
+### "event:MyEvent"
 An event. Refer to with [event:MyEvent](#module_foo/bar.event_MyEvent).
 
+**Kind**: event emitted by <code>[foo/bar](#module_foo/bar)</code>  
 <a name="module_foo/bar..LinkClass"></a>
-###class: foo/bar~LinkClass
+### foo/bar~LinkClass
+**Kind**: inner class of <code>[foo/bar](#module_foo/bar)</code>  
 
-* [class: ~LinkClass](#module_foo/bar..LinkClass)
-  * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
-  * _instance_
+  * [~LinkClass](#module_foo/bar..LinkClass)
+    * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
     * [.foo](#module_foo/bar..LinkClass#foo)
 
 <a name="new_module_foo/bar..LinkClass_new"></a>
-####new LinkClass()
+#### new LinkClass()
 A class.
 
 <a name="module_foo/bar..LinkClass#foo"></a>
-####linkClass.foo
+#### linkClass.foo
 foo property
 
+**Kind**: instance property of <code>[LinkClass](#module_foo/bar..LinkClass)</code>  
 <a name="module_foo/bar..linkFunction"></a>
-###foo/bar~linkFunction()
+### foo/bar~linkFunction()
 See [LinkClass](LinkClass) and [LinkClass's foo property](LinkClass#foo).
 Also check out [Google](http://www.google.com) and [GitHub](http://github.com).
 
+**Kind**: inner method of <code>[foo/bar](#module_foo/bar)</code>  
 <a name="external_String"></a>
-###external: foo/bar~String
+### foo/bar~String
 The built in string object. Refer to it with [String](#external_String).
 
+**Kind**: inner external of <code>[foo/bar](#module_foo/bar)</code>  
 <a name="All"></a>
-##~~class: All ⇐ <code>Number</code>~~
-***Deprecated:*** true  
+## ~~All ⇐ <code>Number</code>~~
+***Deprecated***
 
 a class with all of the things
 
 **Extends:** <code>Number</code>  
+**Kind**: global class  
 **Since**: v0.10.28  
 **Author:** 75lb <75pound@gmail.com>  
 
-* ~~[class: All](#All) ⇐ <code>Number</code>~~
+* ~~[All](#All) ⇐ <code>Number</code>~~
   * [new All(input, [options])](#new_All_new)
-  * _instance_
-    * [.topping](#All#topping) → <code>string</code>
-    * [.size](#All#size)
-    * ~~[.allThings(one, two)](#All#allThings) ⇒ <code>object</code> \| <code>string</code>~~
-      * [~some](#All#allThings..some)
+  * [.topping](#All#topping) : <code>string</code>
+  * [.size](#All#size)
+  * ~~[.allThings(one, two)](#All#allThings) ⇒ <code>object</code> \| <code>string</code>~~
+    * [~some](#All#allThings..some)
 
 <a name="new_All_new"></a>
-###new All(input, [options])
+### new All(input, [options])
 the constructor description
 
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | input | <code>object</code> | an input |
-| \[options\] | <code>object</code> | optional shit |
+| [options] | <code>object</code> | optional shit |
 
 **Example**  
 ```js
 var yeah = new Everything(true);
 ```
 <a name="All#topping"></a>
-###all.topping → <code>string</code>
+### all.topping : <code>string</code>
 the ingredients on top
 
-**Default**: `mud, lettuce`  
+**Default**: <code>&quot;mud, lettuce&quot;</code>  
+**Kind**: instance property of <code>[All](#All)</code>  
 **Since**: v1.0.0  
 <a name="All#size"></a>
-###all.size
+### all.size
 the general size
 
+**Kind**: instance property of <code>[All](#All)</code>  
 <a name="All#allThings"></a>
-###~~all.allThings(one, two) ⇒ <code>object</code> \| <code>string</code>~~
-***Deprecated:*** true  
+### ~~all.allThings(one, two) ⇒ <code>object</code> \| <code>string</code>~~
+***Deprecated***
 
 This function has all tags set
 
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| one | <code>string</code> | The input string |
-| two | <code>object</code> | a second input |
-
+**Kind**: instance method of <code>[All](#All)</code>  
 **Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 **Since**: v0.10.28  
 **Author:** Lloyd <75pound@gmail.com>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
+
 **Example**  
 ```js
 all.allTogether(true);
 ```
 <a name="All#allThings..some"></a>
-####allThings~some
+#### allThings~some
 a rarseclart inner
 
+**Kind**: inner property of <code>[allThings](#All#allThings)</code>  
 <a name="Person"></a>
-##class: Person ⇐ <code>Object</code>
+## Person ⇐ <code>Object</code>
 simple class description
 
 **Extends:** <code>Object</code>  
+**Kind**: global class  
 <a name="new_Person_new"></a>
-###new Person()
+### new Person()
 a constructor description
 
 <a name="Car"></a>
-##class: Car
+## Car
+**Kind**: global class  
 <a name="new_Car_new"></a>
-###new Car([options])
+### new Car([options])
 a constructor with args
 
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
-| \[options\] | <code>object</code> | optional shit |
+| --- | --- | --- |
+| [options] | <code>object</code> | optional shit |
 
 <a name="Pipe"></a>
-##class: Pipe ⇐ <code>[Pipe](#Pipe)</code>
+## Pipe ⇐ <code>[Pipe](#Pipe)</code>
 a class which extends
 
 **Extends:** <code>[Pipe](#Pipe)</code>  
+**Kind**: global class  
 <a name="Everything"></a>
-##~~class: Everything ⇐ <code>[Pipe](#Pipe)</code>~~
-***Deprecated:*** true  
+## ~~Everything ⇐ <code>[Pipe](#Pipe)</code>~~
+***Deprecated***
 
 a class with all trimmings
 
 **Extends:** <code>[Pipe](#Pipe)</code>  
+**Kind**: global class  
 **Since**: v0.10.28  
 **Author:** 75lb <75pound@gmail.com>  
 <a name="new_Everything_new"></a>
-###new Everything(input, [options])
+### new Everything(input, [options])
 the constructor description
 
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | input | <code>object</code> | an input |
-| \[options\] | <code>object</code> | optional shit |
+| [options] | <code>object</code> | optional shit |
 
 **Example**  
 ```js
 var yeah = new Everything(true);
 ```
 <a name="Rice"></a>
-##class: Rice
+## Rice
+**Kind**: global class  
 
-* [class: Rice](#Rice)
-  * _events_
-    * ["cooked"](#Rice#event_cooked)
-    * ["cooking"](#Rice#event_cooking)
+* [Rice](#Rice)
+  * ["cooked"](#Rice#event_cooked)
+  * ["cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
-###event: "cooked"
+### "cooked"
 Fired when rice is ready
 
+**Kind**: event emitted by <code>[Rice](#Rice)</code>  
 <a name="Rice#event_cooking"></a>
-###event: "cooking"
+### "cooking"
 Fired when rice is cooking
 
+**Kind**: event emitted by <code>[Rice](#Rice)</code>  
 <a name="Something"></a>
-##class: Something
+## Something
+**Kind**: global class  
 
-* [class: Something](#Something)
-  * _instance_
-    * [.methodOne()](#Something#methodOne)
-    * ~~[.allTogether(one, two)](#Something#allTogether) ⇒ <code>object</code> \| <code>string</code>~~
+* [Something](#Something)
+  * [.methodOne()](#Something#methodOne)
+  * ~~[.allTogether(one, two)](#Something#allTogether) ⇒ <code>object</code> \| <code>string</code>~~
 
 <a name="Something#methodOne"></a>
-###something.methodOne()
+### something.methodOne()
 method description
 
+**Kind**: instance method of <code>[Something](#Something)</code>  
 <a name="Something#allTogether"></a>
-###~~something.allTogether(one, two) ⇒ <code>object</code> \| <code>string</code>~~
-***Deprecated:*** true  
+### ~~something.allTogether(one, two) ⇒ <code>object</code> \| <code>string</code>~~
+***Deprecated***
 
 This function has all tags set
 
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| one | <code>string</code> | The input string |
-| two | <code>object</code> | a second input |
-
+**Kind**: instance method of <code>[Something](#Something)</code>  
 **Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 **Since**: v0.10.28  
 **Author:** Lloyd <75pound@gmail.com>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
+
 **Example**  
 ```js
 something.allTogether(true);
 ```
 <a name="Pizza"></a>
-##class: Pizza
+## Pizza
+**Kind**: global class  
 
-* [class: Pizza](#Pizza)
-  * _instance_
-    * [.topping](#Pizza#topping) → <code>string</code>
-    * [.size](#Pizza#size)
+* [Pizza](#Pizza)
+  * [.topping](#Pizza#topping) : <code>string</code>
+  * [.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-###pizza.topping → <code>string</code>
+### pizza.topping : <code>string</code>
 the ingredients on top
 
-**Default**: `mud, lettuce`  
+**Default**: <code>&quot;mud, lettuce&quot;</code>  
+**Kind**: instance property of <code>[Pizza](#Pizza)</code>  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-###pizza.size
+### pizza.size
 the general size
 
+**Kind**: instance property of <code>[Pizza](#Pizza)</code>  
 <a name="Hurl"></a>
-##class: Hurl
+## Hurl
+**Kind**: global class  
 
-* [class: Hurl](#Hurl)
-  * _instance_
-    * [.snowball()](#Hurl#snowball)
-  * _events_
-    * ["snowball"](#Hurl#event_snowball)
+* [Hurl](#Hurl)
+  * [.snowball()](#Hurl#snowball)
+  * ["snowball"](#Hurl#event_snowball)
 
 <a name="Hurl#snowball"></a>
-###hurl.snowball()
+### hurl.snowball()
 Throw a snowball.
 
+**Kind**: instance method of <code>[Hurl](#Hurl)</code>  
 **Emits**: <code>[snowball](#Hurl#event_snowball)</code>  
 <a name="Hurl#event_snowball"></a>
-###event: "snowball"
+### "snowball"
 Snowball event.
 
+**Kind**: event emitted by <code>[Hurl](#Hurl)</code>  
 **Properties**
 
 | Name | Type | Description |
@@ -381,54 +421,64 @@ Snowball event.
 | isPacked | <code>boolean</code> | Indicates whether the snowball is tightly packed. |
 
 <a name="Plucker"></a>
-##class: Plucker
+## Plucker
+**Kind**: global class  
 <a name="Plucker#doPluck"></a>
-###plucker.doPluck(one, ...args, ...three)
+### plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
+**Kind**: instance method of <code>[Plucker](#Plucker)</code>  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | one | <code>string</code> | an input |
 | ...args | <code>string</code> | the property(s) as input |
 | ...three | <code>string</code> | more input |
 
 <a name="eFileType"></a>
-##enum: eFileType → <code>number</code>
+## eFileType : <code>number</code>
 Enum for the `type` value
 
+**Kind**: global enum  
+**Read only**: true  
 **Properties**
 
 | Name | Type | Default |
 | --- | --- | --- |
-| NOEXIST | <code>number</code> | `0` | 
-| FILE | <code>number</code> | `1` | 
-| DIR | <code>number</code> | `2` | 
+| NOEXIST | <code>number</code> | <code>0</code> | 
+| FILE | <code>number</code> | <code>1</code> | 
+| DIR | <code>number</code> | <code>2</code> | 
 
-**Read only**: true  
 <a name="visible"></a>
-##visible
+## visible
 a visible global
 
+**Kind**: global variable  
 <a name="variable"></a>
-##variable
+## variable
 a global variable
 
+**Kind**: global variable  
 <a name="typed"></a>
-##typed → <code>string</code>
+## typed : <code>string</code>
+**Kind**: global variable  
 <a name="types"></a>
-##types → <code>string</code> \| <code>number</code>
+## types : <code>string</code> \| <code>number</code>
+**Kind**: global variable  
 <a name="exampled"></a>
-##exampled
+## exampled
 a var with an example
 
+**Kind**: global variable  
 **Example**  
 ```js
 var another = 100;
 ```
 <a name="examples"></a>
-##examples
+## examples
 a var with multiple examples
 
+**Kind**: global variable  
 **Example**  
 ```js
 var another = 100;
@@ -438,76 +488,98 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected
+## _protected
+**Kind**: global variable  
 **Access:** protected  
 <a name="withAuthor"></a>
-##withAuthor
+## withAuthor
+**Kind**: global variable  
 **Author:** Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-##hasDefault
-**Default**: `23`  
+## hasDefault
+**Default**: <code>23</code>  
+**Kind**: global variable  
 <a name="hasDefaultObject"></a>
-##hasDefaultObject
-**Default**: `{"one":1,"two":2}`  
+## hasDefaultObject
+**Default**: <code>{&quot;one&quot;:1,&quot;two&quot;:2}</code>  
+**Kind**: global variable  
 <a name="deprecated"></a>
-##~~deprecated~~
-***Deprecated:*** true  
+## ~~deprecated~~
+***Deprecated***
 
+**Kind**: global variable  
 <a name="readOnly"></a>
-##readOnly
+## readOnly
+**Kind**: global variable  
 **Read only**: true  
 <a name="hasSince"></a>
-##hasSince
+## hasSince
+**Kind**: global variable  
 **Since**: v0.10.28  
 <a name="car"></a>
-##car → <code>object</code>
+## car : <code>object</code>
+**Kind**: global namespace  
 
-* [car](#car) → <code>object</code>
-  * [.env](#car#env) → <code>object</code>
-    * [.weather](#car#env.weather) → <code>string</code>
-    * [.roads](#car#env.roads) → <code>string</code>
+* [car](#car) : <code>object</code>
   * [.wheels](#car.wheels)
   * [.sensors](#car.sensors)
   * [.start()](#car.start)
+    * [.env](#car.start#env) : <code>object</code>
+      * [.weather](#car.start#env.weather) : <code>string</code>
+      * [.roads](#car.start#env.roads) : <code>string</code>
 
-<a name="car#env"></a>
-###car.env → <code>object</code>
-decribes the current conditions
-
-
-* [.env](#car#env) → <code>object</code>
-  * [.weather](#car#env.weather) → <code>string</code>
-  * [.roads](#car#env.roads) → <code>string</code>
-
-<a name="car#env.weather"></a>
-####env.weather → <code>string</code>
-what kind of day is it
-
-**Default**: `choppy`  
-<a name="car#env.roads"></a>
-####env.roads → <code>string</code>
-road condition
-
-**Default**: `wet`  
 <a name="car.wheels"></a>
-###car.wheels
+### car.wheels
 the round things
 
+**Kind**: static property of <code>[car](#car)</code>  
 <a name="car.sensors"></a>
-###car.sensors
+### car.sensors
 the electronics that always go wrong
 
+**Kind**: static property of <code>[car](#car)</code>  
 <a name="car.start"></a>
-###car.start()
+### car.start()
 start the car
 
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-|  | <code>string</code> |  |
-|  | <code>function</code> |  |
+**Kind**: static method of <code>[car](#car)</code>  
 
+| Type |
+| --- |
+| <code>string</code> | 
+| <code>function</code> | 
+
+
+* [.start()](#car.start)
+  * [.env](#car.start#env) : <code>object</code>
+    * [.weather](#car.start#env.weather) : <code>string</code>
+    * [.roads](#car.start#env.roads) : <code>string</code>
+
+<a name="car.start#env"></a>
+#### start.env : <code>object</code>
+decribes the current conditions
+
+**Kind**: instance namespace of <code>[start](#car.start)</code>  
+
+* [.env](#car.start#env) : <code>object</code>
+  * [.weather](#car.start#env.weather) : <code>string</code>
+  * [.roads](#car.start#env.roads) : <code>string</code>
+
+<a name="car.start#env.weather"></a>
+##### env.weather : <code>string</code>
+what kind of day is it
+
+**Default**: <code>&quot;choppy&quot;</code>  
+**Kind**: static property of <code>[env](#car.start#env)</code>  
+<a name="car.start#env.roads"></a>
+##### env.roads : <code>string</code>
+road condition
+
+**Default**: <code>&quot;wet&quot;</code>  
+**Kind**: static property of <code>[env](#car.start#env)</code>  
 <a name="config"></a>
-##config → <code>object</code>
+## config : <code>object</code>
+**Kind**: global namespace  
 **Properties**
 
 | Name | Type | Description |
@@ -518,34 +590,59 @@ start the car
 | defaults.treasure | <code>object</code> | The default treasure. |
 | defaults.treasure.gold | <code>number</code> | How much gold the party starts with. |
 
+<a name="CONST_ONE"></a>
+## CONST_ONE : <code>number</code>
+the first important constant
+
+**Kind**: global constant  
+<a name="CONST_TWO"></a>
+## ~~CONST_TWO : <code>boolean</code>~~
+***Deprecated***
+
+This variable has all tags set
+
+**Kind**: global constant  
+**Read only**: true  
+**Since**: v0.10.28  
+**Author:** Lloyd Brookes <lloyd@brookes.com>  
+**Example**  
+```js
+var CONST_TWO = true;
+```
 <a name="read"></a>
-##read(filename, done)
+## read(filename, done)
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | filename | <code>string</code> | the filename |
 | done | <code>[onComplete](#onComplete)</code> | the callback |
 
 <a name="customTaggedFunction"></a>
-##customTaggedFunction()
+## customTaggedFunction()
 this function has a wonderful custom tag
 
+**Kind**: global function  
 **createdin**: Nigeria  
 <a name="globalFunc"></a>
-##globalFunc()
+## globalFunc()
 a global function
 
+**Kind**: global function  
 <a name="exampled"></a>
-##exampled()
+## exampled()
 a function with an example
 
+**Kind**: global function  
 **Example**  
 ```js
 var result = exampled();
 ```
 <a name="multiExampled"></a>
-##multiExampled()
+## multiExampled()
 a function with multiple examples
 
+**Kind**: global function  
 **Example**  
 ```js
 var another = 100;
@@ -555,40 +652,50 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected()
+## _protected()
+**Kind**: global function  
 **Access:** protected  
 <a name="withAuthor"></a>
-##withAuthor()
+## withAuthor()
+**Kind**: global function  
 **Author:** Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-##~~oldFunction()~~
-***Deprecated:*** true  
+## ~~oldFunction()~~
+***Deprecated***
 
+**Kind**: global function  
 <a name="newFunction"></a>
-##newFunction()
+## newFunction()
+**Kind**: global function  
 **Since**: v0.10.28  
 <a name="withParam"></a>
-##withParam(one)
+## withParam(one)
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | one | <code>string</code> | The input string |
 
 <a name="withParams"></a>
-##withParams(one, two)
+## withParams(one, two)
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | one | <code>string</code> | The input string |
 | two | <code>object</code> |  |
 
 <a name="withOptional"></a>
-##withOptional(one, [two])
+## withOptional(one, [two])
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | one | <code>string</code> | The input string |
-| \[two\] | <code>object</code> | this one is optional |
+| [two] | <code>object</code> | this one is optional |
 
 <a name="withBullets"></a>
-##withBullets(one, two)
+## withBullets(one, two)
 this description has 
 
 - bullet
@@ -596,106 +703,110 @@ this description has
 
 and needs this line to separate the above list from the below
 
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | one | <code>string</code> | The input string |
 | two | <code>object</code> | a second input |
 
 <a name="returnsSomething"></a>
-##returnsSomething() ⇒ <code>string</code>
+## returnsSomething() ⇒ <code>string</code>
+**Kind**: global function  
 <a name="returnsSomethingDesc"></a>
-##returnsSomethingDesc() ⇒ <code>object</code>
+## returnsSomethingDesc() ⇒ <code>object</code>
+**Kind**: global function  
 **Returns**: <code>object</code> - this return has a description  
 <a name="returnsSeveral"></a>
-##returnsSeveral() ⇒ <code>object</code> \| <code>string</code>
+## returnsSeveral() ⇒ <code>object</code> \| <code>string</code>
+**Kind**: global function  
 **Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 <a name="allTogether"></a>
-##~~allTogether(one, two) ⇒ <code>object</code> \| <code>string</code>~~
-***Deprecated:*** true  
+## ~~allTogether(one, two) ⇒ <code>object</code> \| <code>string</code>~~
+***Deprecated***
 
 This function has all tags set
 
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| one | <code>string</code> | The input string |
-| two | <code>object</code> | a second input |
-
+**Kind**: global function  
 **Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 **Since**: v0.10.28  
 **Author:** Lloyd <75pound@gmail.com>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
+
 **Example**  
 ```js
 allTogether(true);
 ```
 <a name="doSomething"></a>
-##doSomething(options)
+## doSomething(options)
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | options | <code>object</code> | the function options |
 | options.one | <code>string</code> | first option |
 | options.two | <code>string</code> | second option |
 
 <a name="doAnother"></a>
-##doAnother(options)
+## doAnother(options)
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | options | <code>Object</code> | the function options |
 
 <a name="pluck"></a>
-##pluck(...prop)
+## pluck(...prop)
 This function takes variable input
 
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | ...prop | <code>string</code> | the property(s) as input |
 
 <a name="requirer"></a>
-##requirer()
+## requirer()
 ensure you have some-module installed
 
+**Kind**: global function  
 <a name="setMagicNumber"></a>
-##setMagicNumber(x)
+## setMagicNumber(x)
 Set the magic number.
 
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | x | <code>[NumberLike](#NumberLike)</code> | The magic number. |
 
 <a name="doSomething"></a>
-##doSomething(options)
+## doSomething(options)
+**Kind**: global function  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | options | <code>object</code> | the function options |
 | options.one | <code>string</code> | first option |
 | options.two | <code>string</code> | second option |
 
-<a name="CONST_ONE"></a>
-##const: CONST_ONE → <code>number</code>
-the first important constant
-
-<a name="CONST_TWO"></a>
-##~~const: CONST_TWO → <code>boolean</code>~~
-***Deprecated:*** true  
-
-This variable has all tags set
-
-**Read only**: true  
-**Since**: v0.10.28  
-**Author:** Lloyd Brookes <lloyd@brookes.com>  
-**Example**  
-```js
-var CONST_TWO = true;
-```
 <a name="onComplete"></a>
-##callback: onComplete → <code>function</code>
+## onComplete : <code>function</code>
 Called when an async operation completes
 
+**Kind**: global typedef  
+
 | Param | Type | Description |
-| ----- | ---- | ----------- |
+| --- | --- | --- |
 | err | <code>object</code> | an error, or `null` |
 | result | <code>string</code> | the result info |
 
 <a name="NumberLike"></a>
-##type: NumberLike → <code>number</code> \| <code>string</code>
+## NumberLike : <code>number</code> \| <code>string</code>
 A number, or a string containing a number.
 
+**Kind**: global typedef  

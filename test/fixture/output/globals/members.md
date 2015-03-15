@@ -1,11 +1,11 @@
-##Globals
+## Members
 <dl>
 <dt><a href="#variable">variable</a></dt>
 <dd><p>a global variable</p>
 </dd>
-<dt><a href="#typed">typed</a> → <code>string</code></dt>
+<dt><a href="#typed">typed</a> : <code>string</code></dt>
 <dd></dd>
-<dt><a href="#types">types</a> → <code>string</code> | <code>number</code></dt>
+<dt><a href="#types">types</a> : <code>string</code> | <code>number</code></dt>
 <dd></dd>
 <dt><a href="#exampled">exampled</a></dt>
 <dd><p>a var with an example</p>
@@ -21,7 +21,7 @@
 <dd></dd>
 <dt><a href="#hasDefaultObject">hasDefaultObject</a></dt>
 <dd></dd>
-<dt>~~<a href="#deprecated">deprecated</a>~~</dt>
+<dt><del><a href="#deprecated">deprecated</a></del></dt>
 <dd></dd>
 <dt><a href="#readOnly">readOnly</a></dt>
 <dd></dd>
@@ -29,25 +29,30 @@
 <dd></dd>
 </dl>
 <a name="variable"></a>
-##variable
+## variable
 a global variable
 
+**Kind**: global variable  
 <a name="typed"></a>
-##typed → <code>string</code>
+## typed : <code>string</code>
+**Kind**: global variable  
 <a name="types"></a>
-##types → <code>string</code> \| <code>number</code>
+## types : <code>string</code> \| <code>number</code>
+**Kind**: global variable  
 <a name="exampled"></a>
-##exampled
+## exampled
 a var with an example
 
+**Kind**: global variable  
 **Example**  
 ```js
 var another = 100;
 ```
 <a name="examples"></a>
-##examples
+## examples
 a var with multiple examples
 
+**Kind**: global variable  
 **Example**  
 ```js
 var another = 100;
@@ -57,24 +62,31 @@ var another = 100;
 var next = "p";
 ```
 <a name="_protected"></a>
-##_protected
+## _protected
+**Kind**: global variable  
 **Access:** protected  
 <a name="withAuthor"></a>
-##withAuthor
+## withAuthor
+**Kind**: global variable  
 **Author:** Clive Jones <clive@jones.com>  
 <a name="hasDefault"></a>
-##hasDefault
-**Default**: `23`  
+## hasDefault
+**Default**: <code>23</code>  
+**Kind**: global variable  
 <a name="hasDefaultObject"></a>
-##hasDefaultObject
-**Default**: `{"one":1,"two":2}`  
+## hasDefaultObject
+**Default**: <code>{&quot;one&quot;:1,&quot;two&quot;:2}</code>  
+**Kind**: global variable  
 <a name="deprecated"></a>
-##~~deprecated~~
-***Deprecated:*** true  
+## ~~deprecated~~
+***Deprecated***
 
+**Kind**: global variable  
 <a name="readOnly"></a>
-##readOnly
+## readOnly
+**Kind**: global variable  
 **Read only**: true  
 <a name="hasSince"></a>
-##hasSince
+## hasSince
+**Kind**: global variable  
 **Since**: v0.10.28  

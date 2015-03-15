@@ -1,8 +1,7 @@
 "use strict";
-var jsdoc2md = require("../../"),
-    fs = require("fs"),
-    path = require("path"),
-    mfs = require("more-fs");
+var jsdoc2md = require("../../");
+var fs = require("fs");
+var path = require("path");
 
 function halt(err){
     console.error(err.stack || "Error: " + err.message);
@@ -10,7 +9,7 @@ function halt(err){
 }
 
 function render(input, outputPath){
-    jsdoc2md.render(input).pipe(mfs.writeStream(outputPath));
+    jsdoc2md.render(input).pipe(fs.createWriteStream(outputPath));
 }
 
 fs.readdirSync("test/fixture/input/commonjs").forEach(function(file){

@@ -1,43 +1,48 @@
 <a name="module_foo/bar"></a>
-##foo/bar
+## foo/bar
 A module. Refer to it using [foo/bar](#module_foo/bar).
 
 
 * [foo/bar](#module_foo/bar)
-  * ["event:MyEvent"](#module_foo/bar.event_MyEvent)
-  * [class: ~LinkClass](#module_foo/bar..LinkClass)
-    * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
-    * _instance_
+  * _static_
+    * ["event:MyEvent"](#module_foo/bar.event_MyEvent)
+  * _inner_
+    * [~LinkClass](#module_foo/bar..LinkClass)
+      * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
       * [.foo](#module_foo/bar..LinkClass#foo)
-  * [~linkFunction()](#module_foo/bar..linkFunction)
-  * [external: ~String](#external_String)
+    * [~linkFunction()](#module_foo/bar..linkFunction)
+    * [~String](#external_String)
 
 <a name="module_foo/bar.event_MyEvent"></a>
-###event: "event:MyEvent"
+### "event:MyEvent"
 An event. Refer to with [event:MyEvent](#module_foo/bar.event_MyEvent).
 
+**Kind**: event emitted by <code>[foo/bar](#module_foo/bar)</code>  
 <a name="module_foo/bar..LinkClass"></a>
-###class: foo/bar~LinkClass
+### foo/bar~LinkClass
+**Kind**: inner class of <code>[foo/bar](#module_foo/bar)</code>  
 
-* [class: ~LinkClass](#module_foo/bar..LinkClass)
-  * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
-  * _instance_
+  * [~LinkClass](#module_foo/bar..LinkClass)
+    * [new LinkClass()](#new_module_foo/bar..LinkClass_new)
     * [.foo](#module_foo/bar..LinkClass#foo)
 
 <a name="new_module_foo/bar..LinkClass_new"></a>
-####new LinkClass()
+#### new LinkClass()
 A class.
 
 <a name="module_foo/bar..LinkClass#foo"></a>
-####linkClass.foo
+#### linkClass.foo
 foo property
 
+**Kind**: instance property of <code>[LinkClass](#module_foo/bar..LinkClass)</code>  
 <a name="module_foo/bar..linkFunction"></a>
-###foo/bar~linkFunction()
+### foo/bar~linkFunction()
 See [LinkClass](LinkClass) and [LinkClass's foo property](LinkClass#foo).
 Also check out [Google](http://www.google.com) and [GitHub](http://github.com).
 
+**Kind**: inner method of <code>[foo/bar](#module_foo/bar)</code>  
 <a name="external_String"></a>
-###external: foo/bar~String
+### foo/bar~String
 The built in string object. Refer to it with [String](#external_String).
 
+**Kind**: inner external of <code>[foo/bar](#module_foo/bar)</code>  

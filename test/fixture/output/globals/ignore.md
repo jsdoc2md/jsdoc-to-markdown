@@ -1,4 +1,5 @@
 <a name="visible"></a>
-##visible
+## visible
 a visible global
 
+**Kind**: global variable  

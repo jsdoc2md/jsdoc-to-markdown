@@ -7,14 +7,6 @@
 # jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown API documentation out. 
 
-Features:
-
-* Insert the output into a README, or any arbitrary document.
-* Customisable to a granular level. If the output doesn't suit you, override it. 
-* Works on html input files (experimental)
-
-For information about the generation templates, customising output etc. please read the [dmd](https://github.com/75lb/dmd) docs.
-
 ## Synopsis
 write documented code:
 ```js
@@ -48,6 +40,18 @@ this command achieves the same result:
 ```sh
 $ jsdoc-parse example/function.js | dmd
 ```
+## Features
+
+* Insert API documention into a README, or any arbitrary document.
+* Customisable to a granular level. If the output doesn't suit you, change it.
+* Consume and publish plug-ins.
+* Works on html input files (experimental)
+
+Jsdoc-to-markdown extends the jsdoc with some new tags
+
+* @category
+* @todo and @done
+
 
 ## Examples
 Some examples of projects with `jsdoc2md` documentation.
@@ -80,18 +84,14 @@ Some examples of projects with `jsdoc2md` documentation.
 ## Compatible Platforms
 Tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 
-## Usage
-Document your source code using [correct jsdoc syntax](http://usejsdoc.org), then run it through `jsdoc2md`.
+## Install and use
+First, document your source code using [correct jsdoc syntax](http://usejsdoc.org) then run it through jsdoc-to-markdown using one of the following methods.
 
 ### Command-line tool
-Install `jsdoc2md` globally:
-```sh
+To install the `jsdoc2md` command-line tool globally, run:
+```
 $ npm install -g jsdoc-to-markdown
-```
-
-Options:
-```
-$ jsdoc2md -h
+$ jsdoc2md --help
 
   jsdoc-to-markdown
   Markdown API documentation generator
@@ -205,4 +205,6 @@ Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsd
 {{>members~}}
 {{/module~}}
 
-&copy; 2015 Lloyd Brookes <75pound@gmail.com>
+* * *
+
+&copy; 2015 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown).

@@ -1,5 +1,6 @@
 <a name="config"></a>
-##config → <code>object</code>
+## config : <code>object</code>
+**Kind**: global namespace  
 **Properties**
 
 | Name | Type | Description |

@@ -1,16 +1,17 @@
 <a name="module_jacket"></a>
-##jacket
+## jacket
 A module representing a jacket.
 
 
 * [jacket](#module_jacket)
-  * [class: Jacket](#exp_module_jacket--Jacket) ⏏
-    * _instance_
-      * [.zip()](#module_jacket--Jacket#zip)
+  * [Jacket](#exp_module_jacket--Jacket) ⏏
+    * [.zip()](#module_jacket--Jacket#zip)
 
 <a name="exp_module_jacket--Jacket"></a>
-###class: Jacket ⏏
+### Jacket ⏏
+**Kind**: Exported class  
 <a name="module_jacket--Jacket#zip"></a>
-####jacket.zip()
+#### jacket.zip()
 Open and close your Jacket.
 
+**Kind**: instance method of <code>[Jacket](#exp_module_jacket--Jacket)</code>  
