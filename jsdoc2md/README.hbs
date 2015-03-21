@@ -110,7 +110,7 @@ $ jsdoc2md --help
 
   dmd
   -t, --template <string>                A custom handlebars template file to insert documentation into. The default template
-                                         is `{{>main}}`.
+                                         is `\{{>main}}`.
   -d, --heading-depth <number>           root heading depth, defaults to 2 (`##`).
   --plugin <array>                       Use an installed package containing helper and/or partial overrides
   --helper <array>                       handlebars helper files to override or extend the default set
@@ -156,7 +156,6 @@ $ npm install jsdoc-to-markdown --save-dev
 Then, in the `"scripts"` section of `package.json`, add a `docs` task. For example:
 ```json
 {
-  ...
   "scripts": {
     "docs": "jsdoc2md lib/*.js > api.md"
   }

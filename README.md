@@ -110,44 +110,7 @@ $ jsdoc2md --help
 
   dmd
   -t, --template <string>                A custom handlebars template file to insert documentation into. The default template
-                                         is `<a name="module_jsdoc-to-markdown"></a>
-## jsdoc-to-markdown
-**Todo**
-
-- [ ] Internationalisation
-
-**Example**  
-```js
-var jsdoc2md = require("jsdoc-to-markdown");
-```
-<a name="module_jsdoc-to-markdown.render"></a>
-### jsdoc2md.render(src, options) ⇒ <code>stream</code>
-Transforms jsdoc into markdown documentation.
-
-**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
-**Params**
-
-- src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- options <code>object</code> - The render options  
-  - [.template] <code>string</code> - A custom handlebars template to insert the rendered documentation into.  
-  - [.json] <code>boolean</code> - Output the parsed jsdoc data only  
-  - [.private] <code>boolean</code> - Include symbols marked @private in the output  
-  - [.stats] <code>boolean</code> - Print a few stats about the doclets parsed  
-  - [.heading-depth] <code>number</code> - root heading depth, defaults to 1 (`#`)  
-  - [.plugin] <code>string</code> | <code>Array.&lt;string&gt;</code> - Use an installed package containing helper and/or partial overrides  
-  - [.helper] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars helper files to override or extend the default set  
-  - [.partial] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars partial files to override or extend the default set  
-
-**Example**  
-Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
-```js
-> jsdoc2md.render("lib/*.js").pipe(process.stdout);
-```
-or pipe in source code from another source:
-```js
-> fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
-```
-`.
+                                         is `{{>main}}`.
   -d, --heading-depth <number>           root heading depth, defaults to 2 (`##`).
   --plugin <array>                       Use an installed package containing helper and/or partial overrides
   --helper <array>                       handlebars helper files to override or extend the default set
@@ -193,7 +156,6 @@ $ npm install jsdoc-to-markdown --save-dev
 Then, in the `"scripts"` section of `package.json`, add a `docs` task. For example:
 ```json
 {
-  ...
   "scripts": {
     "docs": "jsdoc2md lib/*.js > api.md"
   }
@@ -246,14 +208,14 @@ Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsd
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 <a name="module_jsdoc-to-markdown.render"></a>
-### jsdoc2md.render(src, options) ⇒ <code>stream</code>
+### jsdoc2md.render(src, [options]) ⇒ <code>stream</code>
 Transforms jsdoc into markdown documentation.
 
 **Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
 **Params**
 
 - src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- options <code>object</code> - The render options  
+- [options] <code>object</code> - The render options  
   - [.template] <code>string</code> - A custom handlebars template to insert the rendered documentation into.  
   - [.json] <code>boolean</code> - Output the parsed jsdoc data only  
   - [.private] <code>boolean</code> - Include symbols marked @private in the output  
