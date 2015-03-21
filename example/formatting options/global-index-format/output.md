@@ -19,8 +19,6 @@
 </dd>
 <dt><a href="#TransparentColor">TransparentColor</a></dt>
 <dd></dd>
-<dt><a href="#six">six</a></dt>
-<dd></dd>
 </dl>
 
 #global-index-format = grouped
@@ -69,15 +67,6 @@
   * [new TransparentColor()](#new_TransparentColor_new)
   * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
   * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
-* [six](#six)
-  * [new six()](#new_six_new)
-  * _instance_
-    * [.six_one](#six#six_one) : <code>number</code>
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
-  * _static_
-    * [.six_static_two](#six.six_static_two)
-    * [.six_static_three](#six.six_static_three) : <code>number</code>
-    * [.six_static_one](#six.six_static_one) : <code>object</code>
 
 #global-index-format = table
 ## 
@@ -114,10 +103,6 @@
     </tr>
 <tr>
     <td><a href="#TransparentColor">TransparentColor</a></td>
-    <td></td>
-    </tr>
-<tr>
-    <td><a href="#six">six</a></td>
     <td></td>
     </tr>
 </tbody>

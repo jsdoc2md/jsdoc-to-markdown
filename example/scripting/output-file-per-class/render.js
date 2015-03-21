@@ -18,16 +18,16 @@ jsdoc2md
     .on("close", dataReady);
 
 function dataReady(){
-    /* parse the json */
+    /* parse the jsdoc-parse output.. */
     var data = require(p.json);
     
-    /* get a list of class names */
+    /* ..because we want an array of class names */
     var classes = data.reduce(function(prev, curr){
         if (curr.kind === "class") prev.push(curr.name);
         return prev;
     }, []);
 
-    /* create a template per class, render each with dmd */
+    /* render an output file for each class */
     renderMarkdown(classes, 0);
 }
 

@@ -1,4 +1,5 @@
-require("./format-options/render");
-require("./identifier-blocks/render");
-require("./sort-by/render");
-require("./render");
+require("./formatting options/render");
+require("./html input/render");
+require("./parse options/render");
+require("./scripting/render");
+require("./selector blocks/render");
