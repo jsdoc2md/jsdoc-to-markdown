@@ -9,17 +9,17 @@
 <li>description</li>
 </ul>
 </dd>
-<dt><a href="#TransparentColor">TransparentColor</a></dt>
-<dd></dd>
-<dt><a href="#six">six</a></dt>
-<dd></dd>
-<dt><a href="#Species">Species</a></dt>
-<dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
-</dd>
 <dt><a href="#FurQ">FurQ</a> ⇐ <code><a href="#Rapper">Rapper</a></code></dt>
 <dd><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
 </dd>
 <dt><a href="#Rapper">Rapper</a></dt>
+<dd></dd>
+<dt><a href="#Species">Species</a></dt>
+<dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
+</dd>
+<dt><a href="#TransparentColor">TransparentColor</a></dt>
+<dd></dd>
+<dt><a href="#six">six</a></dt>
 <dd></dd>
 </dl>
 
@@ -32,25 +32,6 @@
     * [.species](#Animal#species) : <code>[Species](#Species)</code>
   * _static_
     * [.eMood](#Animal.eMood)
-* [TransparentColor](#TransparentColor)
-  * [new TransparentColor()](#new_TransparentColor_new)
-  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
-  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
-* [six](#six)
-  * [new six()](#new_six_new)
-  * _instance_
-    * [.six_one](#six#six_one) : <code>number</code>
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
-  * _static_
-    * [.six_static_two](#six.six_static_two)
-    * [.six_static_three](#six.six_static_three) : <code>number</code>
-    * [.six_static_one](#six.six_static_one) : <code>object</code>
-* [Species](#Species)
-  * _instance_
-    * [.name](#Species#name) : <code>string</code>
-    * [.species](#Species#species) : <code>[Species](#Species)</code>
-  * _static_
-    * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
@@ -78,6 +59,25 @@
       * [~School](#Rapper.train..School)
         * [new School()](#new_Rapper.train..School_new)
         * [.bestStudent](#Rapper.train..School#bestStudent)
+* [Species](#Species)
+  * _instance_
+    * [.name](#Species#name) : <code>string</code>
+    * [.species](#Species#species) : <code>[Species](#Species)</code>
+  * _static_
+    * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
+* [TransparentColor](#TransparentColor)
+  * [new TransparentColor()](#new_TransparentColor_new)
+  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
+  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
+* [six](#six)
+  * [new six()](#new_six_new)
+  * _instance_
+    * [.six_one](#six#six_one) : <code>number</code>
+    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+  * _static_
+    * [.six_static_two](#six.six_static_two)
+    * [.six_static_three](#six.six_static_three) : <code>number</code>
+    * [.six_static_one](#six.six_static_one) : <code>object</code>
 
 #global-index-format = table
 ## 
@@ -99,11 +99,12 @@
 </td>
     </tr>
 <tr>
-    <td><a href="#TransparentColor">TransparentColor</a></td>
-    <td></td>
+    <td><a href="#FurQ">FurQ</a> ⇐ <code><a href="#Rapper">Rapper</a></code></td>
+    <td><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
+</td>
     </tr>
 <tr>
-    <td><a href="#six">six</a></td>
+    <td><a href="#Rapper">Rapper</a></td>
     <td></td>
     </tr>
 <tr>
@@ -112,12 +113,11 @@
 </td>
     </tr>
 <tr>
-    <td><a href="#FurQ">FurQ</a> ⇐ <code><a href="#Rapper">Rapper</a></code></td>
-    <td><p>C*ck, b!tch, c*ck, b!tch, m*therf!cker. You gotta kill people, to respect people.</p>
-</td>
+    <td><a href="#TransparentColor">TransparentColor</a></td>
+    <td></td>
     </tr>
 <tr>
-    <td><a href="#Rapper">Rapper</a></td>
+    <td><a href="#six">six</a></td>
     <td></td>
     </tr>
 </tbody>

@@ -1,4 +1,5 @@
 /**
+A missle object, with separate docs for each property.
 @namespace missle
 */
 var missle = {
@@ -30,6 +31,7 @@ var missle = {
 };
 
 /**
+A personality object, documented using the more concise `@property` notation.
 @namespace
 @property openness {object} - openness
 @property conscientiousness {object} - conscientiousness
