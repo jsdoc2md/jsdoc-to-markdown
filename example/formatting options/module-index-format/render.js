@@ -3,7 +3,7 @@ var jsdoc2md = require("../../../");
 var fs = require("fs");
 
 var p = {
-    input: __dirname + "/../../src/*.js",
+    input: __dirname + "/../../src/commonJS/*.js",
     template: __dirname + "/template.hbs",
     output: __dirname + "/output.md"
 };

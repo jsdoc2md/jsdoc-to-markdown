@@ -9,6 +9,6 @@ var p = {
 };
 
 jsdoc2md
-    .render(p.input, { template: p.template })
+    .render(p.input, { template: p.template, "no-gfm": true })
     .on("error", console.error)
     .pipe(fs.createWriteStream(p.output));
