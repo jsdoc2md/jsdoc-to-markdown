@@ -9,6 +9,8 @@
 <li>description</li>
 </ul>
 </dd>
+<dt><a href="#TransparentColor">TransparentColor</a></dt>
+<dd></dd>
 <dt><a href="#six">six</a></dt>
 <dd></dd>
 <dt><a href="#Species">Species</a></dt>
@@ -30,6 +32,10 @@
     * [.species](#Animal#species) : <code>[Species](#Species)</code>
   * _static_
     * [.eMood](#Animal.eMood)
+* [TransparentColor](#TransparentColor)
+  * [new TransparentColor()](#new_TransparentColor_new)
+  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
+  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
@@ -91,6 +97,10 @@
 <li>description</li>
 </ul>
 </td>
+    </tr>
+<tr>
+    <td><a href="#TransparentColor">TransparentColor</a></td>
+    <td></td>
     </tr>
 <tr>
     <td><a href="#six">six</a></td>

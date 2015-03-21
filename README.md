@@ -21,10 +21,10 @@ function protection(cloak, dagger){}
 
 run a command:
 ```
-$ jsdoc2md example/src/protection.js`
+$ jsdoc2md example/src/protection.js
 ```
 
-get markdown docs!
+get markdown docs! (in [github-flavored-markdown](https://help.github.com/articles/github-flavored-markdown/) by default)
 ```handlebars
 <a name="protection"></a>
 ##protection(cloak, dagger) ⇒ <code>survival</code>
@@ -81,11 +81,11 @@ Some examples of projects with `jsdoc2md` documentation.
 
 * [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
 
-## Compatible Platforms
-Tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
-
 ## Install and use
 First, document your source code using [correct jsdoc syntax](http://usejsdoc.org) then run it through jsdoc-to-markdown using one of the following methods.
+
+## Compatible Platforms
+All these methods are tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 
 ### Command-line tool
 To install the `jsdoc2md` command-line tool globally, run:
@@ -96,35 +96,74 @@ $ jsdoc2md --help
   jsdoc-to-markdown
   Markdown API documentation generator
 
-  Usage
-  $ jsdoc2md [<options>] <source_files>
+  jsdoc2md
+  -v, --verbose                          More verbose error reporting
+  -h, --help                             Print usage information
+  -j, --json                             Output the jsdoc-parse json only
 
-  -v, --verbose                        More verbose error reporting
-  -h, --help                           Print usage information
-  -j, --json                           Output the parsed jsdoc data only
-  --private                            Include identifiers marked @private in the output
-  --stats                              Print a few stats about the doclets parsed
-  --html                               Enable experimental parsing of .html files
-  --src <array>                        A list of javascript source files or glob expressions
-  -s, --sort-by <array>                Sort by one of more fields, e.g. `--sort-by kind category`. Defaults to 'scope kind'.
-  -t, --template <string>              A custom handlebars template to insert the rendered documentation into
-  -d, --heading-depth <number>         root heading depth, defaults to 2 (`##`).
-  -p, --plugin <array>                 Use an installed package containing helper and/or partial overrides
-  --helper <array>                     handlebars helper files to override or extend the default set
-  --partial <array>                    handlebars partial files to override or extend the default set
-  -l, --example-lang <string>          Specifies the default language for @example blocks. In gfm mode,
-                                       each @example is wrapped in a fenced-code block (```js var clive = 'yeah?'; ```).
-                                       Example usage: `--example-lang js`.
-                                       Use the special value `none` for no specific language.
-  --name-format                        Format identifier names as code
-  --no-gfm                             set this to avoid using github-specific markdown
-  --separators                         Put <hr> breaks between identifiers. Improves readability on bulky docs.
-  -m, --module-index-format <string>   none, grouped, table, dl
-  -g, --global-index-format <string>   none, grouped, table, dl
-  -p, --param-list-format <string>     list, table
-  -r, --property-list-format <string>  list, table
-  -c, --member-index-format <string>   grouped, list
-  --group-by <array>                   a list of fields to group member indexes by
+  jsdoc-parse
+  --private                              Include identifiers marked @private in the output
+  --stats                                Print a few stats about the doclets parsed
+  --html                                 Enable experimental parsing of .html files
+  --src <array>                          A list of javascript source files (or glob expressions) to parse for documentation
+  -s, --sort-by <array>                  Sort by one of more fields, e.g. `--sort-by kind category`. Defaults to 'scope kind'.
+
+  dmd
+  -t, --template <string>                A custom handlebars template file to insert documentation into. The default template
+                                         is `<a name="module_jsdoc-to-markdown"></a>
+## jsdoc-to-markdown
+**Todo**
+
+- [ ] Internationalisation
+
+**Example**  
+```js
+var jsdoc2md = require("jsdoc-to-markdown");
+```
+<a name="module_jsdoc-to-markdown.render"></a>
+### jsdoc2md.render(src, options) ⇒ <code>stream</code>
+Transforms jsdoc into markdown documentation.
+
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Params**
+
+- src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
+- options <code>object</code> - The render options  
+  - [.template] <code>string</code> - A custom handlebars template to insert the rendered documentation into.  
+  - [.json] <code>boolean</code> - Output the parsed jsdoc data only  
+  - [.private] <code>boolean</code> - Include symbols marked @private in the output  
+  - [.stats] <code>boolean</code> - Print a few stats about the doclets parsed  
+  - [.heading-depth] <code>number</code> - root heading depth, defaults to 1 (`#`)  
+  - [.plugin] <code>string</code> | <code>Array.&lt;string&gt;</code> - Use an installed package containing helper and/or partial overrides  
+  - [.helper] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars helper files to override or extend the default set  
+  - [.partial] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars partial files to override or extend the default set  
+
+**Example**  
+Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
+```js
+> jsdoc2md.render("lib/*.js").pipe(process.stdout);
+```
+or pipe in source code from another source:
+```js
+> fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
+```
+`.
+  -d, --heading-depth <number>           root heading depth, defaults to 2 (`##`).
+  --plugin <array>                       Use an installed package containing helper and/or partial overrides
+  --helper <array>                       handlebars helper files to override or extend the default set
+  --partial <array>                      handlebars partial files to override or extend the default set
+  -l, --example-lang <string>            Specifies the default language for @example blocks. In gfm mode, each @example is
+                                         wrapped in a fenced-code block (```js var clive = 'yeah?'; ```). Example usage:
+                                         `--example-lang js`. Use the special value `none` for no specific language.
+  --name-format                          Format identifier names as code
+  --no-gfm                               set this to avoid using github-specific markdown
+  --separators                           Put <hr> breaks between identifiers. Improves readability on bulky docs.
+  -m, --module-index-format <string>     none, grouped, table, dl
+  -g, --global-index-format <string>     none, grouped, table, dl
+  -p, --param-list-format <string>       list, table
+  -r, --property-list-format <string>    list, table
+  -c, --member-index-format <string>     grouped, list
+  --group-by <array>                     a list of fields to group member indexes by
 ```
 
 Some typical use cases: 
@@ -151,17 +190,16 @@ $ jsdoc2md src/**/*.js --template readme.hbs > README.md
 $ npm install jsdoc-to-markdown --save-dev
 ```
 
-Then add a `docs` build script to your `package.json`, e.g.:
+Then, in the `"scripts"` section of `package.json`, add a `docs` task. For example:
 ```json
 {
-  "name": "my-web-app",
-  "version": "1.0.0",
+  ...
   "scripts": {
     "docs": "jsdoc2md lib/*.js > api.md"
   }
 }
 ```
-Docs are generated like so:
+Now, project documentation is generated like so:
 
 ```sh
 $ npm run docs
@@ -212,19 +250,18 @@ var jsdoc2md = require("jsdoc-to-markdown");
 Transforms jsdoc into markdown documentation.
 
 **Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Params**
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>string</code> \| <code>Array.&lt;string&gt;</code> | The javascript source file(s). |
-| options | <code>object</code> | The render options |
-| [options.template] | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
-| [options.json] | <code>boolean</code> | Output the parsed jsdoc data only |
-| [options.private] | <code>boolean</code> | Include symbols marked @private in the output |
-| [options.stats] | <code>boolean</code> | Print a few stats about the doclets parsed |
-| [options.heading-depth] | <code>number</code> | root heading depth, defaults to 1 (`#`) |
-| [options.plugin] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
-| [options.helper] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
-| [options.partial] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
+- src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
+- options <code>object</code> - The render options  
+  - [.template] <code>string</code> - A custom handlebars template to insert the rendered documentation into.  
+  - [.json] <code>boolean</code> - Output the parsed jsdoc data only  
+  - [.private] <code>boolean</code> - Include symbols marked @private in the output  
+  - [.stats] <code>boolean</code> - Print a few stats about the doclets parsed  
+  - [.heading-depth] <code>number</code> - root heading depth, defaults to 1 (`#`)  
+  - [.plugin] <code>string</code> | <code>Array.&lt;string&gt;</code> - Use an installed package containing helper and/or partial overrides  
+  - [.helper] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars helper files to override or extend the default set  
+  - [.partial] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars partial files to override or extend the default set  
 
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:

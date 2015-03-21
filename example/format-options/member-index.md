@@ -7,6 +7,13 @@
 
 -
 
+* [TransparentColor](#TransparentColor)
+  * [new TransparentColor()](#new_TransparentColor_new)
+  * [transparentColor.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
+  * [transparentColor.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
+
+-
+
 * [six](#six)
   * [new six()](#new_six_new)
   * [six.six_one](#six#six_one) : <code>number</code>
@@ -73,6 +80,13 @@
     * [.species](#Animal#species) : <code>[Species](#Species)</code>
   * _static_
     * [.eMood](#Animal.eMood)
+
+-
+
+* [TransparentColor](#TransparentColor)
+  * [new TransparentColor()](#new_TransparentColor_new)
+  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
+  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
 
 -
 

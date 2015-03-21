@@ -9,7 +9,7 @@ var jsdocParse = require("jsdoc-parse");
 
 var cliOptions = [
     { 
-        groups: ["jsdoc2md options", "all"],
+        groups: ["jsdoc2md", "all"],
         options: [
             { name: "verbose", alias: "v", type: Boolean,
               description: "More verbose error reporting"
@@ -18,16 +18,16 @@ var cliOptions = [
               description: "Print usage information"
             },
             { name: "json", alias: "j", type: Boolean,
-              description: "Output the parsed jsdoc data only"
+              description: "Output the jsdoc-parse json only"
             }
         ]
     },
     { 
-        groups: ["jsdoc-parse options", "all"],
+        groups: ["jsdoc-parse", "all"],
         options: jsdocParse.cliOptions
     },
     { 
-        groups: ["dmd options", "all"],
+        groups: ["dmd", "all"],
         options: dmd.cliOptions
     }
 ];
@@ -40,7 +40,7 @@ var usage = cli.getUsage({
     forms: [
         "$ jsdoc2md [<options>] <source_files>"
     ],
-    groups: [ "jsdoc2md options", "jsdoc-parse options", "dmd options" ]
+    groups: [ "jsdoc2md", "jsdoc-parse", "dmd" ]
 });
 
 try{
