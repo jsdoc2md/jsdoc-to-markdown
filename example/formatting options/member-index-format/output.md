@@ -7,30 +7,6 @@
 
 -
 
-* [TransparentColor](#TransparentColor)
-  * [new TransparentColor()](#new_TransparentColor_new)
-  * [transparentColor.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
-  * [transparentColor.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
-
--
-
-* [six](#six)
-  * [new six()](#new_six_new)
-  * [six.six_one](#six#six_one) : <code>number</code>
-  * [six.six_two()](#six#six_two) ⇒ <code>number</code>
-  * [six.six_static_two](#six.six_static_two)
-  * [six.six_static_three](#six.six_static_three) : <code>number</code>
-  * [six.six_static_one](#six.six_static_one) : <code>object</code>
-
--
-
-* [Species](#Species)
-  * [species.name](#Species#name) : <code>string</code>
-  * [species.species](#Species#species) : <code>[Species](#Species)</code>
-  * [Species.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
-
--
-
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * [furQ.wannaTryIt](#FurQ#wannaTryIt) : <code>string</code>
@@ -58,6 +34,30 @@
 
 -
 
+* [Species](#Species)
+  * [species.name](#Species#name) : <code>string</code>
+  * [species.species](#Species#species) : <code>[Species](#Species)</code>
+  * [Species.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
+
+-
+
+* [TransparentColor](#TransparentColor)
+  * [new TransparentColor()](#new_TransparentColor_new)
+  * [transparentColor.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
+  * [transparentColor.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
+
+-
+
+* [six](#six)
+  * [new six()](#new_six_new)
+  * [six.six_one](#six#six_one) : <code>number</code>
+  * [six.six_two()](#six#six_two) ⇒ <code>number</code>
+  * [six.six_static_two](#six.six_static_two)
+  * [six.six_static_three](#six.six_static_three) : <code>number</code>
+  * [six.six_static_one](#six.six_static_one) : <code>object</code>
+
+-
+
 * [~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
   * [school.bestStudent](#Rapper.train..School#bestStudent)
@@ -80,34 +80,6 @@
     * [.species](#Animal#species) : <code>[Species](#Species)</code>
   * _static_
     * [.eMood](#Animal.eMood)
-
--
-
-* [TransparentColor](#TransparentColor)
-  * [new TransparentColor()](#new_TransparentColor_new)
-  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
-  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
-
--
-
-* [six](#six)
-  * [new six()](#new_six_new)
-  * _instance_
-    * [.six_one](#six#six_one) : <code>number</code>
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
-  * _static_
-    * [.six_static_two](#six.six_static_two)
-    * [.six_static_three](#six.six_static_three) : <code>number</code>
-    * [.six_static_one](#six.six_static_one) : <code>object</code>
-
--
-
-* [Species](#Species)
-  * _instance_
-    * [.name](#Species#name) : <code>string</code>
-    * [.species](#Species#species) : <code>[Species](#Species)</code>
-  * _static_
-    * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
 -
 
@@ -141,6 +113,34 @@
       * [~School](#Rapper.train..School)
         * [new School()](#new_Rapper.train..School_new)
         * [.bestStudent](#Rapper.train..School#bestStudent)
+
+-
+
+* [Species](#Species)
+  * _instance_
+    * [.name](#Species#name) : <code>string</code>
+    * [.species](#Species#species) : <code>[Species](#Species)</code>
+  * _static_
+    * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
+
+-
+
+* [TransparentColor](#TransparentColor)
+  * [new TransparentColor()](#new_TransparentColor_new)
+  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
+  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
+
+-
+
+* [six](#six)
+  * [new six()](#new_six_new)
+  * _instance_
+    * [.six_one](#six#six_one) : <code>number</code>
+    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+  * _static_
+    * [.six_static_two](#six.six_static_two)
+    * [.six_static_three](#six.six_static_three) : <code>number</code>
+    * [.six_static_one](#six.six_static_one) : <code>object</code>
 
 -
 
