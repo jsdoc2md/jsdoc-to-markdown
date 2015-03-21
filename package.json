@@ -18,7 +18,7 @@
     "lint": "jshint bin/*.js lib/*.js test/*.js; echo",
     "index": "jsdoc2md test/fixture/input/**/*.js -v > test/fixture/output/all-with-index.md; echo",
     "all": "npm run render && npm run docs && npm run index; echo",
-    "eg": "node example/render-all.js; echo"
+    "eg": "node example/render.js; echo"
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"

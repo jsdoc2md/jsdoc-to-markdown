@@ -1,8 +1,8 @@
 # Module cherry-picking
 
-Just the docs for the Animal module. The command to generate this markdown output would be (from the root directory): 
+Just the docs for the Animal module. The command to generate this markdown output would be (from this directory): 
 ```
-$ jsdoc2md example/src/*.js --template example/identifier-blocks/template/modules.hbs > example/identifier-blocks/md/modules.md
+$ jsdoc2md -t template.hbs ../../src/commonJS/*.js > output.md
 ```
 The template looks like this: 
 ```handlebars

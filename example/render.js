@@ -1,15 +1,5 @@
-"use strict";
-var jsdoc2md = require("../");
-var fs = require("fs");
-
-/* fully-baked class */
-jsdoc2md
-    .render("example/src/uzi-lover.js", { "example-lang": "js" })
-    .on("error", console.log)
-    .pipe(fs.createWriteStream("example/fully-baked-class.md"));
-
-/* everything with separators */
-jsdoc2md
-    .render("example/src/**/*.js", { "example-lang": "js", separators: true })
-    .on("error", console.log)
-    .pipe(fs.createWriteStream("example/everything-separators.md"));
+require("./formatting options/render");
+require("./html input/render");
+require("./parse options/render");
+require("./scripting/render");
+require("./selector blocks/render");
