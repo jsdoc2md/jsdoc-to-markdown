@@ -16,6 +16,7 @@ var speech = {
 /**
 a synth, that also implements speech
 @implements {speech}
+@namespace
 */
 var synth = {
     /**
@@ -47,10 +48,10 @@ what to say
 | <code>string</code> | the text to speak |
 
 <a name="synth"></a>
-## synth
+## synth : <code>object</code>
 a synth, that also implements speech
 
-**Kind**: global variable  
+**Kind**: global namespace  
 <a name="synth.demo"></a>
 ### synth.demo()
 play a demo piece, Beethoven or something..
@@ -77,10 +78,10 @@ what to say
 | <code>string</code> | the text to speak |
 
 <a name="synth"></a>
-## synth
+## synth : <code>object</code>
 a synth, that also implements speech
 
-**Kind**: global variable  
+**Kind**: global namespace  
 <a name="synth.demo"></a>
 ### synth.demo()
 play a demo piece, Beethoven or something..

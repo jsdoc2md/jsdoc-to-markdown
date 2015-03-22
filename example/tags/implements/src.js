@@ -1,6 +1,7 @@
 /**
 a synth, that also implements speech
 @implements {speech}
+@namespace
 */
 var synth = {
     /**
