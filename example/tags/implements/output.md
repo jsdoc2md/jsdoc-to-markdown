@@ -13,6 +13,16 @@ var speech = {
     */
     say: function(text){}   
 };
+/**
+a synth, that also implements speech
+@implements speech
+*/
+var synth = {
+    /**
+    play a demo piece, Beethoven or something.. 
+    */
+    demo: function(){}
+}
 
 ```
 
@@ -35,6 +45,16 @@ what to say
 | --- | --- |
 | <code>string</code> | the text to speak |
 
+<a name="synth"></a>
+## synth
+a synth, that also implements speech
+
+**Kind**: global variable  
+<a name="synth.demo"></a>
+### synth.demo()
+play a demo piece, Beethoven or something..
+
+**Kind**: static method of <code>[synth](#synth)</code>  
 ```
 
 # Rendered
@@ -55,3 +75,13 @@ what to say
 | --- | --- |
 | <code>string</code> | the text to speak |
 
+<a name="synth"></a>
+## synth
+a synth, that also implements speech
+
+**Kind**: global variable  
+<a name="synth.demo"></a>
+### synth.demo()
+play a demo piece, Beethoven or something..
+
+**Kind**: static method of <code>[synth](#synth)</code>  

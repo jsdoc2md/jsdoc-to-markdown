@@ -1,13 +1,13 @@
 /**
-Interface for classes that represent a color.
-@interface Colour
-*/
+Interface for a Currah Speech Synth
 
-/**
-Get the color as an array of red, green, and blue values, represented as
-decimal numbers between 0 and 1.
-@function
-@name Colour#rgb
-@returns {Array<number>} An array containing the red, green, and blue values,
-in that order.
+![currah](http://s20.postimg.org/6fsnsil8d/2013_05_07_17_48_35.jpg)
+@interface
 */
+var speech = {
+    /**
+    what to say
+    @param {string} - the text to speak
+    */
+    say: function(text){}   
+};
