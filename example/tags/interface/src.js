@@ -1,7 +1,7 @@
 /**
 Interface for a Currah Speech Synth
 
-![currah](http://s20.postimg.org/6fsnsil8d/2013_05_07_17_48_35.jpg)
+![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 @interface
 */
 var speech = {

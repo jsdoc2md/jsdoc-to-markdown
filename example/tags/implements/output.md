@@ -3,7 +3,7 @@
 /**
 Interface for a Currah Speech Synth
 
-![currah](http://s20.postimg.org/6fsnsil8d/2013_05_07_17_48_35.jpg)
+![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 @interface
 */
 var speech = {
@@ -15,14 +15,15 @@ var speech = {
 };
 /**
 a synth, that also implements speech
-@implements speech
+@implements {speech}
 */
 var synth = {
     /**
     play a demo piece, Beethoven or something.. 
     */
-    demo: function(){}
-}
+    demo: function(){},
+    say: function(text){}
+};
 
 ```
 
@@ -32,7 +33,7 @@ var synth = {
 ## speech
 Interface for a Currah Speech Synth
 
-![currah](http://s20.postimg.org/6fsnsil8d/2013_05_07_17_48_35.jpg)
+![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
 <a name="speech.say"></a>
@@ -62,7 +63,7 @@ play a demo piece, Beethoven or something..
 ## speech
 Interface for a Currah Speech Synth
 
-![currah](http://s20.postimg.org/6fsnsil8d/2013_05_07_17_48_35.jpg)
+![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
 <a name="speech.say"></a>
