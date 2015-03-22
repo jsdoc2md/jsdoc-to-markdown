@@ -41,13 +41,6 @@
 
 -
 
-* [TransparentColor](#TransparentColor)
-  * [new TransparentColor()](#new_TransparentColor_new)
-  * [transparentColor.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
-  * [transparentColor.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
-
--
-
 * [~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
   * [school.bestStudent](#Rapper.train..School#bestStudent)
@@ -112,13 +105,6 @@
     * [.species](#Species#species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
-
--
-
-* [TransparentColor](#TransparentColor)
-  * [new TransparentColor()](#new_TransparentColor_new)
-  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
-  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
 
 -
 

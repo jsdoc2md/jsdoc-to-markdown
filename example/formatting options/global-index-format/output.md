@@ -17,8 +17,6 @@
 <dt><a href="#Species">Species</a></dt>
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
-<dt><a href="#TransparentColor">TransparentColor</a></dt>
-<dd></dd>
 </dl>
 
 #global-index-format = grouped
@@ -63,10 +61,6 @@
     * [.species](#Species#species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
-* [TransparentColor](#TransparentColor)
-  * [new TransparentColor()](#new_TransparentColor_new)
-  * [.rgba()](#TransparentColor#rgba) ⇒ <code>Array.&lt;number&gt;</code>
-  * [.rgb()](#TransparentColor#rgb) ⇒ <code>Array.&lt;number&gt;</code>
 
 #global-index-format = table
 ## 
@@ -100,10 +94,6 @@
     <td><a href="#Species">Species</a></td>
     <td><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </td>
-    </tr>
-<tr>
-    <td><a href="#TransparentColor">TransparentColor</a></td>
-    <td></td>
     </tr>
 </tbody>
 </table>
