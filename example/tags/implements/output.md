@@ -6,84 +6,114 @@ Interface for a Currah Speech Synth
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 @interface
 */
-var speech = {
-    /**
-    what to say
-    @param {string} - the text to speak
-    */
-    say: function(text){}   
-};
+function Speech(){}
+
 /**
-a synth, that also implements speech
-@implements {speech}
-@namespace
+what to say
+@param {string} - the text to speak
 */
-var synth = {
+Speech.prototype.say = function(text){};
+/**
+@implements {Speech}
+@class
+@classdesc a synth, that also implements speech
+*/
+function Synth(){
     /**
     play a demo piece, Beethoven or something.. 
     */
-    demo: function(){},
-    say: function(text){}
-};
+    this.demo = function(){};
+    this.say = function(text){};
+}
 
 ```
 
 # jsdoc2md output
 ```markdown
-<a name="speech"></a>
-## speech
+<a name="Speech"></a>
+## Speech
 Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
-<a name="speech.say"></a>
-### speech.say()
+<a name="Speech#say"></a>
+### speech.say(text)
 what to say
 
-**Kind**: static method of <code>[speech](#speech)</code>  
+**Kind**: instance method of <code>[Speech](#Speech)</code>  
 
-| Type | Description |
-| --- | --- |
-| <code>string</code> | the text to speak |
+| Param | Type | Description |
+| --- | --- | --- |
+| text | <code>string</code> | the text to speak |
 
-<a name="synth"></a>
-## synth : <code>object</code>
+<a name="Synth"></a>
+## Synth
 a synth, that also implements speech
 
-**Kind**: global namespace  
-<a name="synth.demo"></a>
+**Kind**: global class  
+
+* [Synth](#Synth)
+  * [.demo()](#Synth#demo)
+  * [.say(text)](#Synth#say)
+
+<a name="Synth#demo"></a>
 ### synth.demo()
 play a demo piece, Beethoven or something..
 
-**Kind**: static method of <code>[synth](#synth)</code>  
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
+<a name="Synth#say"></a>
+### synth.say(text)
+what to say
+
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| text | <code>string</code> | the text to speak |
+
 ```
 
 # Rendered
-<a name="speech"></a>
-## speech
+<a name="Speech"></a>
+## Speech
 Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
-<a name="speech.say"></a>
-### speech.say()
+<a name="Speech#say"></a>
+### speech.say(text)
 what to say
 
-**Kind**: static method of <code>[speech](#speech)</code>  
+**Kind**: instance method of <code>[Speech](#Speech)</code>  
 
-| Type | Description |
-| --- | --- |
-| <code>string</code> | the text to speak |
+| Param | Type | Description |
+| --- | --- | --- |
+| text | <code>string</code> | the text to speak |
 
-<a name="synth"></a>
-## synth : <code>object</code>
+<a name="Synth"></a>
+## Synth
 a synth, that also implements speech
 
-**Kind**: global namespace  
-<a name="synth.demo"></a>
+**Kind**: global class  
+
+* [Synth](#Synth)
+  * [.demo()](#Synth#demo)
+  * [.say(text)](#Synth#say)
+
+<a name="Synth#demo"></a>
 ### synth.demo()
 play a demo piece, Beethoven or something..
 
-**Kind**: static method of <code>[synth](#synth)</code>  
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
+<a name="Synth#say"></a>
+### synth.say(text)
+what to say
+
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| text | <code>string</code> | the text to speak |
+

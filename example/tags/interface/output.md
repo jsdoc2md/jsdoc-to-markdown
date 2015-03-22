@@ -6,52 +6,52 @@ Interface for a Currah Speech Synth
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 @interface
 */
-var speech = {
-    /**
-    what to say
-    @param {string} - the text to speak
-    */
-    say: function(text){}   
-};
+function Speech(){}
+
+/**
+what to say
+@param {string} - the text to speak
+*/
+Speech.prototype.say = function(text){};
 
 ```
 
 # jsdoc2md output
 ```markdown
-<a name="speech"></a>
-## speech
+<a name="Speech"></a>
+## Speech
 Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
-<a name="speech.say"></a>
-### speech.say()
+<a name="Speech#say"></a>
+### speech.say(text)
 what to say
 
-**Kind**: static method of <code>[speech](#speech)</code>  
+**Kind**: instance method of <code>[Speech](#Speech)</code>  
 
-| Type | Description |
-| --- | --- |
-| <code>string</code> | the text to speak |
+| Param | Type | Description |
+| --- | --- | --- |
+| text | <code>string</code> | the text to speak |
 
 ```
 
 # Rendered
-<a name="speech"></a>
-## speech
+<a name="Speech"></a>
+## Speech
 Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
-<a name="speech.say"></a>
-### speech.say()
+<a name="Speech#say"></a>
+### speech.say(text)
 what to say
 
-**Kind**: static method of <code>[speech](#speech)</code>  
+**Kind**: instance method of <code>[Speech](#Speech)</code>  
 
-| Type | Description |
-| --- | --- |
-| <code>string</code> | the text to speak |
+| Param | Type | Description |
+| --- | --- | --- |
+| text | <code>string</code> | the text to speak |
 

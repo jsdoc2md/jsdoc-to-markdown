@@ -1,12 +1,12 @@
 /**
-a synth, that also implements speech
-@implements {speech}
-@namespace
+@implements {Speech}
+@class
+@classdesc a synth, that also implements speech
 */
-var synth = {
+function Synth(){
     /**
     play a demo piece, Beethoven or something.. 
     */
-    demo: function(){},
-    say: function(text){}
-};
+    this.demo = function(){};
+    this.say = function(text){};
+}
