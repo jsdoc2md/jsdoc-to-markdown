@@ -623,7 +623,7 @@ var CONST_TWO = true;
 this function has a wonderful custom tag
 
 **Kind**: global function  
-**createdin**: Nigeria  
+**Createdin**: Nigeria  
 <a name="globalFunc"></a>
 ## globalFunc()
 a global function

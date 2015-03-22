@@ -2,8 +2,8 @@
 ## function-tools
 This is the module description
 
-**variablename**: f  
-**context**: {customContext}  
+**Variablename**: f  
+**Context**: <code>customContext</code>  
 <a name="module_function-tools.one"></a>
 ### function-tools.one()
 the main function description

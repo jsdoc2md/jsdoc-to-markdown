@@ -3,4 +3,4 @@
 this function has a wonderful custom tag
 
 **Kind**: global function  
-**createdin**: Nigeria  
+**Createdin**: Nigeria  
