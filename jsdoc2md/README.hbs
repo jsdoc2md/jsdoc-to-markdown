@@ -133,7 +133,7 @@ Some typical use cases:
 
 ```sh
 $ # dump everything you have into a single file
-$ jsdoc2md src/**/*.js > api.md
+$ jsdoc2md "src/**/*.js" > api.md
 ```
 
 ```sh
@@ -144,8 +144,10 @@ $ jsdoc2md src/important-class.js > important-class.md
 
 ```sh
 $ # embed documentation into a template you made
-$ jsdoc2md src/**/*.js --template readme.hbs > README.md
+$ jsdoc2md "src/**/*.js" --template readme.hbs > README.md
 ```
+
+**note: if your file expression contains `**`, and your shell does not support globstar, then wrap the expression in quotes (jsdoc2md will expand it internally)*
 
 ### Bundled with your project
 #### As an `npm run` task

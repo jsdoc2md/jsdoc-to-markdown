@@ -30,7 +30,7 @@
 ## 
 * ["ten"](#event_ten)
 ## 
-* [one](#one) : <code>number</code> \| <code>string</code>
+* [one](#one) : <code>number</code> &#124; <code>string</code>
 ## 
 * [eleven](#external_eleven)
 <a name="eight"></a>
@@ -59,7 +59,7 @@ nine
 
 **Kind**: global function  
 <a name="one"></a>
-## one : <code>number</code> \| <code>string</code>
+## one : <code>number</code> &#124; <code>string</code>
 one
 
 **Kind**: global typedef  

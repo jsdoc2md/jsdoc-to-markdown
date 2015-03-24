@@ -29,7 +29,7 @@ Pump an idiot full of volts
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| victim | <code>object</code> \| <code>array</code> |  | the victim(s) to fry |
+| victim | <code>object</code> &#124; <code>array</code> |  | the victim(s) to fry |
 | [options] | <code>object</code> |  | electricution options |
 | [options.strength] | <code>number</code> | <code>11</code> | strength |
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |

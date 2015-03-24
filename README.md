@@ -24,7 +24,7 @@ run a command:
 $ jsdoc2md example/src/protection.js
 ```
 
-get markdown docs! (in [github-flavored-markdown](https://help.github.com/articles/github-flavored-markdown/) by default)
+get markdown docs! (in [github-flavored-markdown](https://help.github.com/articles/github-flavored-markdown/) format by default)
 ```handlebars
 <a name="protection"></a>
 ##protection(cloak, dagger) ⇒ <code>survival</code>
@@ -133,7 +133,7 @@ Some typical use cases:
 
 ```sh
 $ # dump everything you have into a single file
-$ jsdoc2md src/**/*.js > api.md
+$ jsdoc2md "src/**/*.js" > api.md
 ```
 
 ```sh
@@ -144,8 +144,10 @@ $ jsdoc2md src/important-class.js > important-class.md
 
 ```sh
 $ # embed documentation into a template you made
-$ jsdoc2md src/**/*.js --template readme.hbs > README.md
+$ jsdoc2md "src/**/*.js" --template readme.hbs > README.md
 ```
+
+**note: if your file expression contains `**`, and your shell does not support globstar, then wrap the expression in quotes (jsdoc2md will expand it internally)*
 
 ### Bundled with your project
 #### As an `npm run` task
@@ -215,7 +217,7 @@ Transforms jsdoc into markdown documentation.
 **Params**
 
 - src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- [options] <code>object</code> - The render options  
+- [options] <code>object</code> - The render options, also passed to dmd and jsdoc-parse.  
   - [.template] <code>string</code> - A custom handlebars template to insert the rendered documentation into.  
   - [.json] <code>boolean</code> - Output the parsed jsdoc data only  
   - [.private] <code>boolean</code> - Include symbols marked @private in the output  
