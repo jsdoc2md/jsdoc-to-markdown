@@ -1,10 +1,10 @@
 [![view on npm](http://img.shields.io/npm/v/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
 [![npm module downloads per month](http://img.shields.io/npm/dm/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
-[![Build Status](https://travis-ci.org/75lb/jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/75lb/jsdoc-to-markdown)
+[![Build Status](https://travis-ci.org/75lb/jsdoc-to-markdown.svg?branch=next)](https://travis-ci.org/75lb/jsdoc-to-markdown)
 [![Dependency Status](https://david-dm.org/75lb/jsdoc-to-markdown.svg)](https://david-dm.org/75lb/jsdoc-to-markdown)
 ![Analytics](https://ga-beacon.appspot.com/UA-27725889-32/jsdoc-to-markdown/README.md?pixel)
 
-# jsdoc-to-markdown
+# jsdoc-to-markdown@next
 [jsdoc](http://usejsdoc.org) documented source code in, markdown API documentation out. 
 
 ## Synopsis
@@ -120,7 +120,7 @@ All these methods are tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 ### Command-line tool
 To install the `jsdoc2md` command-line tool globally, run:
 ```
-$ npm install -g jsdoc-to-markdown
+$ npm install -g jsdoc-to-markdown@next
 ```
 
 Some typical use cases: 
@@ -142,14 +142,14 @@ $ jsdoc2md "src/**/*.js" --template readme.hbs > README.md
 ```
 
 #### Note on globbing
-General rule: if your file expression contains `\*\*` yet recursion is failing wrap the expression in quotes, e.g. `"lib/**/*.js"`.
+General rule: if your file expression contains `**` yet recursion is failing wrap the expression in quotes, e.g. `"lib/**/*.js"`.
 
 If wrapped in quotes, bash (or your shell) will not attempt file-name expansion on the expression. If you do not use quotes you will require bash version 4+ with globstar enabled for recursion to work. 
 
 ### Bundled with your project
 #### As an `npm run` task
 ```sh
-$ npm install jsdoc-to-markdown --save-dev
+$ npm install jsdoc-to-markdown@next --save-dev
 ```
 
 Then, in the `"scripts"` section of `package.json`, add a `docs` task. For example:
@@ -167,10 +167,10 @@ $ npm run docs
 ```
 
 #### As a grunt plug-in
-See [grunt-jsdoc-to-markdown](https://github.com/75lb/grunt-jsdoc-to-markdown).
+See [grunt-jsdoc-to-markdown](https://github.com/jsdoc2md/grunt-jsdoc-to-markdown).
 
 #### As a gulp task
-Currently, the most reliable and natural way of using jsdoc2md with gulp. If your source code contains `@module` tags, use this method *only* ([reason](https://github.com/75lb/gulp-jsdoc-to-markdown#warning)). You should only need to edit `src`, `dest` and `options`: 
+Currently, the most reliable and natural way of using jsdoc2md with gulp. If your source code contains `@module` tags, use this method *only* ([reason](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown#warning)). You should only need to edit `src`, `dest` and `options`: 
 
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
@@ -192,13 +192,13 @@ gulp.task("docs", function(done){
 ```
 
 #### As a gulp plug-in
-See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
+See [gulp-jsdoc-to-markdown](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown).
 
 ## Contributing
 Issue reports and patches are encouraged. I would welcome an additional maintainer.
 
 ### Composition
-Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). dmd uses the ddata helper library (also shared by dhtml) and stream-handlebars to generate the output. 
+Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
 
 ## API Reference
 **Todo**
@@ -226,6 +226,12 @@ Transforms jsdoc into markdown documentation.
   - [.plugin] <code>string</code> | <code>Array.&lt;string&gt;</code> - Use an installed package containing helper and/or partial overrides  
   - [.helper] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars helper files to override or extend the default set  
   - [.partial] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars partial files to override or extend the default set  
+  - [.module-index-format] <code>string</code> - -  
+  - [.global-index-format] <code>string</code> - -  
+  - [.param-list-format] <code>string</code> - -  
+  - [.property-list-format] <code>string</code> - -  
+  - [.member-index-format] <code>string</code> - -  
+  - [.group-by] <code>Array.&lt;string&gt;</code> - -  
 
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -238,4 +244,4 @@ or pipe in source code from another source:
 ```
 * * *
 
-&copy; 2015 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown).
+&copy; 2015 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
