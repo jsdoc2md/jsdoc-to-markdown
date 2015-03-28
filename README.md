@@ -1,19 +1,22 @@
 [![view on npm](http://img.shields.io/npm/v/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
 [![npm module downloads per month](http://img.shields.io/npm/dm/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
 [![Build Status](https://travis-ci.org/75lb/jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/75lb/jsdoc-to-markdown)
-[![Dependency Status](https://david-dm.org/75lb/jsdoc-to-markdown.svg)](https://david-dm.org/75lb/jsdoc-to-markdown)
+[![Dependency Status](https://david-dm.org/jsdoc2md/jsdoc-to-markdown.svg)](https://david-dm.org/75lb/jsdoc-to-markdown)
 ![Analytics](https://ga-beacon.appspot.com/UA-27725889-32/jsdoc-to-markdown/README.md?pixel)
 
 # Feedback please!
 I am close to finishing the next version, so feedback is welcome at this point!
 
 Install the preview release:
+
 `$ npm install -g jsdoc-to-markdown@next`
 
 try it for yourself:
+
 `$ jsdoc2md your-code.js`
 
 take a look at, and experiment with the new options:
+
 `$ jsdoc2md --help`
 
 **Please see the [next branch](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next) for more information.**
