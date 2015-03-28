@@ -19,9 +19,7 @@ take a look at, and experiment with the new options:
 
 `$ jsdoc2md --help`
 
-**Please see the [next branch](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next) for more information.**
-
-Anyway, back to the regular documentation:
+Please see the [next branch](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next) for more information. Anyway, back to the regular documentation:
 
 # jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown out.
