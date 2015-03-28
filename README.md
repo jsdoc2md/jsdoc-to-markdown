@@ -56,7 +56,7 @@ Jsdoc-to-markdown extends the jsdoc with some new tags
 ## Example output
 Some examples of projects with `jsdoc2md` documentation.
 
-### README files
+### Generated README files
 
 <table>
   <thead>
@@ -81,7 +81,7 @@ Some examples of projects with `jsdoc2md` documentation.
   </tbody>
 </table>
 
-### Examples demonstrating the various options
+### Examples demonstrating various options
 
 To get an idea of the affects the various options have: 
 
@@ -121,42 +121,6 @@ All these methods are tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 To install the `jsdoc2md` command-line tool globally, run:
 ```
 $ npm install -g jsdoc-to-markdown
-$ jsdoc2md --help
-
-  jsdoc-to-markdown
-  Markdown API documentation generator
-
-  jsdoc2md
-  -v, --verbose                          More verbose error reporting
-  -h, --help                             Print usage information
-  -j, --json                             Output the jsdoc-parse json only
-
-  jsdoc-parse
-  --private                              Include identifiers marked @private in the output
-  --stats                                Print a few stats about the doclets parsed
-  --html                                 Enable experimental parsing of .html files
-  --src <array>                          A list of javascript source files (or glob expressions) to parse for documentation
-  -s, --sort-by <array>                  Sort by one of more fields, e.g. `--sort-by kind category`. Defaults to 'scope kind'.
-
-  dmd
-  -t, --template <string>                A custom handlebars template file to insert documentation into. The default template
-                                         is `{{>main}}`.
-  -d, --heading-depth <number>           root heading depth, defaults to 2 (`##`).
-  --plugin <array>                       Use an installed package containing helper and/or partial overrides
-  --helper <array>                       handlebars helper files to override or extend the default set
-  --partial <array>                      handlebars partial files to override or extend the default set
-  -l, --example-lang <string>            Specifies the default language for @example blocks. In gfm mode, each @example is
-                                         wrapped in a fenced-code block (```js var clive = 'yeah?'; ```). Example usage:
-                                         `--example-lang js`. Use the special value `none` for no specific language.
-  --name-format                          Format identifier names as code
-  --no-gfm                               set this to avoid using github-specific markdown
-  --separators                           Put <hr> breaks between identifiers. Improves readability on bulky docs.
-  -m, --module-index-format <string>     none, grouped, table, dl
-  -g, --global-index-format <string>     none, grouped, table, dl
-  -p, --param-list-format <string>       list, table
-  -r, --property-list-format <string>    list, table
-  -c, --member-index-format <string>     grouped, list
-  --group-by <array>                     a list of fields to group member indexes by
 ```
 
 Some typical use cases: 
@@ -177,7 +141,10 @@ $ # embed documentation into a template you made
 $ jsdoc2md "src/**/*.js" --template readme.hbs > README.md
 ```
 
-**note: if your file expression contains `**`, and your shell does not support globstar, then wrap the expression in quotes (jsdoc2md will expand it internally)*
+#### Note on globbing
+General rule: if your file expression contains `\*\*` yet recursion is failing wrap the expression in quotes, e.g. `"lib/**/*.js"`.
+
+If wrapped in quotes, bash (or your shell) will not attempt file-name expansion on the expression. If you do not use quotes you will require bash version 4+ with globstar enabled for recursion to work. 
 
 ### Bundled with your project
 #### As an `npm run` task
@@ -227,8 +194,11 @@ gulp.task("docs", function(done){
 #### As a gulp plug-in
 See [gulp-jsdoc-to-markdown](https://github.com/75lb/gulp-jsdoc-to-markdown).
 
-## Composition
-Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd).  
+## Contributing
+Issue reports and patches are encouraged. I would welcome an additional maintainer.
+
+### Composition
+Essentially, it connects the output of [jsdoc-parse](https://github.com/75lb/jsdoc-parse) to the input of [dmd](https://github.com/75lb/dmd). dmd uses the ddata helper library (also shared by dhtml) and stream-handlebars to generate the output. 
 
 ## API Reference
 **Todo**
