@@ -56,6 +56,8 @@ Jsdoc-to-markdown extends the jsdoc with some new tags
 ## Example output
 Some examples of projects with `jsdoc2md` documentation.
 
+### README files
+
 <table>
   <thead>
     <tr><th>Project</th><th>Notes</th></tr>
@@ -79,12 +81,40 @@ Some examples of projects with `jsdoc2md` documentation.
   </tbody>
 </table>
 
-* [command-line-args](https://github.com/75lb/command-line-args)  (exports a class)
+### Examples demonstrating the various options
+
+To get an idea of the affects the various options have: 
+
+- formating options 
+- html input
+- parse options
+
+### Scripting examples
+
+- generate one markdown file per class in your documentation
+
+### Templating examples
+
+#### Selectors
+Cherry-pick what appears in the output using selector helpers. 
+
+#### Anatomy of the default dmd template
+- \{{>main}}
+  - \{{>main-index}}
+    - \{{>module-index~}}
+    - \{{>global-index~}}
+  - \{{>all-docs}}
+    - \{{>docs}} 
+      - \{{>header~}}
+      - \{{>body}}
+      - \{{>member-index~}}
+      - \{{>separator~}}
+      - \{{>members~}}
 
 ## Install and use
 First, document your source code using [correct jsdoc syntax](http://usejsdoc.org) then run it through jsdoc-to-markdown using one of the following methods.
 
-## Compatible Platforms
+### Compatible Platforms
 All these methods are tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 
 ### Command-line tool

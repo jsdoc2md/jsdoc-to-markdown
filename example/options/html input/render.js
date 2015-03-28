@@ -1,5 +1,5 @@
 "use strict";
-var jsdoc2md = require("../../");
+var jsdoc2md = require("../../../");
 var fs = require("fs");
 
 var p = {

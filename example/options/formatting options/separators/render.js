@@ -1,9 +1,9 @@
 "use strict";
-var jsdoc2md = require("../../../");
+var jsdoc2md = require("../../../../");
 var fs = require("fs");
 
 var p = {
-    input: __dirname + "/../../src/commonJS/*.js",
+    input: __dirname + "/../../../src/commonJS/*.js",
     output: __dirname + "/output.md"
 };
 
