@@ -4,7 +4,7 @@ var fs = require("fs");
 
 var p = {
     input: __dirname + "/../../../src/commonJS/*.js",
-    output: __dirname + "/output.md"
+    output: __dirname + "/readme.md"
 };
 
 jsdoc2md

@@ -5,7 +5,7 @@ var fs = require("fs");
 var p = {
     input: __dirname + "/../../../src/class-furq.js",
     template: __dirname + "/template.hbs",
-    output: __dirname + "/output.md"
+    output: __dirname + "/readme.md"
 };
 
 jsdoc2md
