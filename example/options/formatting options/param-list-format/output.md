@@ -1,4 +1,4 @@
-#param-list-format = list
+## `jsdoc2md --param-list-format list`
 <a name="taze"></a>
 ## ~~taze(victim, [options], [done])~~
 ***Deprecated***
@@ -18,7 +18,7 @@ Pump an idiot full of volts
 
 
 
-#param-list-format = table
+## `jsdoc2md --param-list-format table`
 <a name="taze"></a>
 ## ~~taze(victim, [options], [done])~~
 ***Deprecated***

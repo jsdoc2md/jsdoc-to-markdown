@@ -1,4 +1,4 @@
-#module-index-format = dl
+## `jsdoc2md --module-index-format dl`
 ## Modules
 <dl>
 <dt><a href="#module_animal">animal</a></dt>
@@ -34,7 +34,7 @@
 </dd>
 </dl>
 
-#module-index-format = grouped
+## `jsdoc2md --module-index-format grouped`
 ## Modules
 * [animal](#module_animal)
   * [~Animal](#module_animal..Animal)
@@ -56,7 +56,7 @@
     * _static_
       * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
-#module-index-format = table
+## `jsdoc2md --module-index-format table`
 ## Modules
 <table>
   <thead>
@@ -105,4 +105,4 @@
 </tbody>
 </table>
 
-#module-index-format = none
+## `jsdoc2md --module-index-format none`

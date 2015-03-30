@@ -1,4 +1,4 @@
-#name-format
+## `jsdoc2md --name-format code`
 This demonstrates how docs look using the `--name-format` flag - all identifier names are formatted as code.
 
 ## Classes

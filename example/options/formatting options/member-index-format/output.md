@@ -1,4 +1,4 @@
-#member-index = list
+## `jsdoc2md --member-index-format list`
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * [animal.age](#Animal#age) : <code>number</code>
@@ -55,7 +55,7 @@
   * [.megaton](#missle.megaton) : <code>number</code>
 
 
-#member-index = grouped
+## `jsdoc2md --member-index-format grouped`
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_

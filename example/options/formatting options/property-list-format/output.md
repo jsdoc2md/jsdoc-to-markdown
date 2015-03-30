@@ -1,4 +1,4 @@
-#property-list-format = list
+## `jsdoc2md --property-list-format list`
 <a name="eType"></a>
 ## eType
 **Kind**: global enum  
@@ -8,7 +8,7 @@
 - TWO  - type two  
 
 
-#property-list-format = table
+## `jsdoc2md --property-list-format table`
 <a name="eType"></a>
 ## eType
 **Kind**: global enum  

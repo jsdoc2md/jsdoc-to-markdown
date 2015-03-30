@@ -1,4 +1,4 @@
-#without no-gfm set
+## without `--no-gfm` set
 <a name="taze"></a>
 ## <del>taze(victim, [options], [done])</del>
 ***Deprecated***
@@ -67,7 +67,7 @@ with
 * * *
 
 gfm  
-#no-gfm
+## `jsdoc2md --no-gfm`
 <a name="taze"></a>
 ## <del>taze(victim, [options], [done])</del>
 ***Deprecated***
