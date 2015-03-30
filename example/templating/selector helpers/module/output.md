@@ -65,8 +65,8 @@ var animal = require("animal");
 #### animal.age : <code>number</code>
 the current age
 
-**Default**: <code>0</code>  
 **Kind**: instance property of <code>[Animal](#module_animal..Animal)</code>  
+**Default**: <code>0</code>  
 <a name="module_animal..Animal#species"></a>
 #### animal.species : <code>Species</code>
 **Kind**: instance property of <code>[Animal](#module_animal..Animal)</code>  

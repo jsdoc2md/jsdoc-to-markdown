@@ -53,6 +53,7 @@ what to say
 a synth, that also implements speech
 
 **Kind**: global class  
+**Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
   * [.demo()](#Synth#demo)
@@ -68,6 +69,7 @@ play a demo piece, Beethoven or something..
 what to say
 
 **Kind**: instance method of <code>[Synth](#Synth)</code>  
+**Implements:** <code>[say](#Speech#say)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -98,6 +100,7 @@ what to say
 a synth, that also implements speech
 
 **Kind**: global class  
+**Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
   * [.demo()](#Synth#demo)
@@ -113,6 +116,7 @@ play a demo piece, Beethoven or something..
 what to say
 
 **Kind**: instance method of <code>[Synth](#Synth)</code>  
+**Implements:** <code>[say](#Speech#say)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |

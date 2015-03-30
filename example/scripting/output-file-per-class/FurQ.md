@@ -2,8 +2,8 @@
 ## FurQ ⇐ <code>[Rapper](#Rapper)</code>
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
-**Extends:** <code>[Rapper](#Rapper)</code>  
 **Kind**: global class  
+**Extends:** <code>[Rapper](#Rapper)</code>  
 **Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
 **Access:** public  
 **See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
@@ -39,8 +39,8 @@ var uziLover = require("FurQ");
 
 <a name="FurQ#wannaTryIt"></a>
 ### furQ.wannaTryIt : <code>string</code>
-**Default**: <code>&quot;bitch&quot;</code>  
 **Kind**: instance property of <code>[FurQ](#FurQ)</code>  
+**Default**: <code>&quot;bitch&quot;</code>  
 **See**
 
 - "Uzi like a metal dick in my hand."
@@ -48,8 +48,8 @@ var uziLover = require("FurQ");
 
 <a name="FurQ#LOVE"></a>
 ### furQ.LOVE : <code>string</code>
-**Default**: <code>&quot;UZI&quot;</code>  
 **Kind**: instance constant of <code>[FurQ](#FurQ)</code>  
+**Default**: <code>&quot;UZI&quot;</code>  
 <a name="FurQ#spit"></a>
 ### furQ.spit()
 override
