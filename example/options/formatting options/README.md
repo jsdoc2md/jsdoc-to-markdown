@@ -1,0 +1,1 @@
+Highlights the affects of the various jsdoc2md options.. 

@@ -1,4 +1,4 @@
-#global-index-format = dl
+## `jsdoc2md --global-index-format dl`
 ## Classes
 <dl>
 <dt><a href="#Animal">Animal</a></dt>
@@ -19,7 +19,7 @@
 </dd>
 </dl>
 
-#global-index-format = grouped
+## `jsdoc2md --global-index-format grouped`
 ## 
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
@@ -62,7 +62,7 @@
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
-#global-index-format = table
+## `jsdoc2md --global-index-format table`
 ## 
 <table>
   <thead>
@@ -98,4 +98,4 @@
 </tbody>
 </table>
 
-#global-index-format = none
+## `jsdoc2md --global-index-format none`

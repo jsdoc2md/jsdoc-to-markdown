@@ -42,15 +42,11 @@ $ jsdoc-parse example/function.js | dmd
 ```
 ## Features
 
-* Insert API documention into a README, or any arbitrary document.
-* Customisable to a granular level. If the output doesn't suit you, change it.
-* Consume and publish plug-ins.
-* Works with html input files (experimental)
-
-Jsdoc-to-markdown extends the jsdoc with some new tags (see [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse/tree/next))
-
-* @category
-* @todo and @done
+- Insert API documention into a README, or any arbitrary document.
+- Customisable to a granular level. If the output doesn't suit you, change it.
+- Consume and publish plug-ins.
+- Also documents javascript within html input files (experimental - ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/next)))
+- Extends the jsdoc with some new tags ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/next))
 
 ## Example output
 Some examples of projects with `jsdoc2md` documentation.
@@ -194,7 +190,7 @@ gulp.task("docs", function(done){
 See [gulp-jsdoc-to-markdown](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown).
 
 ## Contributing
-Issue reports and patches are encouraged. I would welcome an additional maintainer.
+Issue reports and patches are encouraged. The project would benefit from an additional maintainer, don't be shy.. 
 
 ### Composition
 Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
