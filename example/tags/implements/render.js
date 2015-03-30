@@ -6,7 +6,7 @@ var path = require("path");
 var p = {
     input: [ path.resolve(__dirname, "../interface/src.js"), __dirname + "/src.js" ],
     template: __dirname + "/template.hbs",
-    output: __dirname + "/output.md"
+    output: __dirname + "/readme.md"
 };
 
 var source = "";
