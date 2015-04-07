@@ -44,8 +44,8 @@ $ jsdoc-parse example/function.js | dmd
 
 - Insert API documention into a README, or any arbitrary document.
 - Customisable to a granular level. If the output doesn't suit you, change it.
-- Consume and publish plug-ins.
-- Also documents javascript within html input files (experimental - ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/next)))
+- Package your modifications, publish to npm and share with others
+- Also documents javascript within html input files (experimental - [more](https://github.com/jsdoc2md/jsdoc-parse/tree/next))
 - Extends the jsdoc with some new tags ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/next))
 
 ## Example output
@@ -67,7 +67,7 @@ Some examples of projects with `jsdoc2md` documentation.
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/array-tools">array-tools</a></td>
-      <td>Very simple module exporting a collection of methods. Demonstrates use of the <code>@category</code> tag to group identifiers in the member-list.</td>
+      <td>Very simple module exporting a collection of static methods. Demonstrates use of the <code>@category</code> tag to group identifiers in the member-list.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/file-set">file-set</a></td>
@@ -80,9 +80,9 @@ Some examples of projects with `jsdoc2md` documentation.
 
 To get an idea of the affects the various options have: 
 
-- formating options 
-- html input
-- parse options
+- [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/formatting%20options)
+- [html input](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/html%20input)
+- [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/parse%20options)
 
 ### Scripting examples
 
@@ -190,7 +190,7 @@ gulp.task("docs", function(done){
 See [gulp-jsdoc-to-markdown](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown).
 
 ## Contributing
-Issue reports and patches are encouraged. The project would benefit from an additional maintainer, don't be shy.. 
+Issue reports and patches are encouraged. And the project would benefit from an additional maintainer.. 
 
 ### Composition
 Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 

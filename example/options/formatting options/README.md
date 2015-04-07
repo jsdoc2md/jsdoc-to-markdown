@@ -1,4 +1,4 @@
-Highlights the affects of the various jsdoc2md options.. 
+Highlights the affects of the various jsdoc2md options.. These options are passed to dmd. 
 
 - global-index-format
 - member-index-format
