@@ -79,6 +79,9 @@ These projects insert jsdoc2md output into a readme template.
   </tbody>
 </table>
 
+### Tags
+You can see an example of how each [jsdoc tag](http://usejsdoc.org) looks when rendered [here](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/tags).
+
 ### Examples demonstrating various options
 
 To get an idea of the affects the various options have: 
@@ -203,29 +206,22 @@ Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
+
+* [jsdoc-to-markdown](#module_jsdoc-to-markdown)
+  * _static_
+    * [.render(src, options)](#module_jsdoc-to-markdown.render) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code>
+  * _inner_
+    * [~renderOptions](#module_jsdoc-to-markdown..renderOptions) : <code>object</code>
+
 <a name="module_jsdoc-to-markdown.render"></a>
-### jsdoc2md.render(src, [options]) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code>
+### jsdoc2md.render(src, options) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code>
 Transforms jsdoc into markdown documentation.
 
 **Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
 **Params**
 
 - src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- [options] <code>object</code> - The render options, also passed to dmd and jsdoc-parse.  
-  - [.template] <code>string</code> - A custom handlebars template to insert the rendered documentation into.  
-  - [.json] <code>boolean</code> - Output the parsed jsdoc data only  
-  - [.private] <code>boolean</code> - Include symbols marked @private in the output  
-  - [.stats] <code>boolean</code> - Print a few stats about the doclets parsed  
-  - [.heading-depth] <code>number</code> - root heading depth, defaults to 1 (`#`)  
-  - [.plugin] <code>string</code> | <code>Array.&lt;string&gt;</code> - Use an installed package containing helper and/or partial overrides  
-  - [.helper] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars helper files to override or extend the default set  
-  - [.partial] <code>string</code> | <code>Array.&lt;string&gt;</code> - handlebars partial files to override or extend the default set  
-  - [.module-index-format] <code>string</code> - -  
-  - [.global-index-format] <code>string</code> - -  
-  - [.param-list-format] <code>string</code> - -  
-  - [.property-list-format] <code>string</code> - -  
-  - [.member-index-format] <code>string</code> - -  
-  - [.group-by] <code>Array.&lt;string&gt;</code> - -  
+- options <code>[renderOptions](#module_jsdoc-to-markdown..renderOptions)</code> - the options  
 
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -236,6 +232,28 @@ or pipe in source code from another source:
 ```js
 > fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
 ```
+<a name="module_jsdoc-to-markdown..renderOptions"></a>
+### jsdoc2md~renderOptions : <code>object</code>
+**Kind**: inner typedef of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| template | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
+| json | <code>boolean</code> | Output the parsed jsdoc data only |
+| private | <code>boolean</code> | Include symbols marked @private in the output |
+| stats | <code>boolean</code> | Print a few stats about the doclets parsed |
+| heading-depth | <code>number</code> | root heading depth, defaults to 1 (`#`) |
+| plugin | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
+| helper | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
+| partial | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
+| module-index-format | <code>string</code> | - |
+| global-index-format | <code>string</code> | - |
+| param-list-format | <code>string</code> | - |
+| property-list-format | <code>string</code> | - |
+| member-index-format | <code>string</code> | - |
+| group-by | <code>Array.&lt;string&gt;</code> | - |
+
 * * *
 
 &copy; 2015 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
