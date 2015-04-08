@@ -1,10 +1,10 @@
 # Source
 ```html
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf8&quot;&gt;
-    &lt;script&gt;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <script>
     /**
     something in the head
     @type {number}
@@ -18,18 +18,18 @@
     @property age {number}
     */
     var headObj = {};
-    &lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body class=&quot;main&quot;&gt;
-    &lt;script&gt;
+    </script>
+  </head>
+  <body class="main">
+    <script>
     /**
     body global
     */
     var bodyGlobal = 1;
     
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+    </script>
+  </body>
+</html>
 
 ```
 
