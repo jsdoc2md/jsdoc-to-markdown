@@ -28,11 +28,11 @@
   "dependencies": {
     "command-line-args": "~0.5.0",
     "console-dope": "~0.3.3",
-    "dmd": "next",
-    "jsdoc-parse": "next",
+    "dmd": "~0.3",
+    "jsdoc-parse": "~0.3",
     "typical": "^1.0.0"
   },
   "devDependencies": {
-    "tape": "^3"
+    "tape": "^4"
   }
 }

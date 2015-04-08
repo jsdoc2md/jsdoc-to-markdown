@@ -2,7 +2,7 @@
 
 Just the docs for the Animal class. The command to generate this markdown output would be (from the root directory): 
 ```
-$ jsdoc2md -t template.hbs ../../src/*.js > output.md
+$ jsdoc2md -t template.hbs ../../src/*.js > readme.md
 ```
 The template looks like this: 
 ```handlebars
