@@ -4,7 +4,9 @@
 [![Dependency Status](https://david-dm.org/jsdoc2md/jsdoc-to-markdown.svg)](https://david-dm.org/75lb/jsdoc-to-markdown)
 ![Analytics](https://ga-beacon.appspot.com/UA-27725889-32/jsdoc-to-markdown/README.md?pixel)
 
-# jsdoc-to-markdown@next
+***This documentation is a work-in-progress***
+
+# jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown format API documentation out. 
 
 ## Synopsis
@@ -52,6 +54,7 @@ $ jsdoc-parse example/function.js | dmd
 Some examples of projects with `jsdoc2md` documentation.
 
 ### Generated README files
+These projects insert jsdoc2md output into a readme template. 
 
 <table>
   <thead>
@@ -67,7 +70,7 @@ Some examples of projects with `jsdoc2md` documentation.
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/array-tools">array-tools</a></td>
-      <td>Very simple module exporting a collection of static methods. Demonstrates use of the <code>@category</code> tag to group identifiers in the member-list.</td>
+      <td>Very simple module exporting a collection of static methods. Demonstrates use of <code>@typicalname</code> (set to <code>a</code>) and the <code>@category</code> tag to group identifiers in the member-list.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/file-set">file-set</a></td>
@@ -81,30 +84,30 @@ Some examples of projects with `jsdoc2md` documentation.
 To get an idea of the affects the various options have: 
 
 - [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/formatting%20options)
-- [html input](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/html%20input)
+  - [global-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/formatting%20options/global-index-format)
+  - [no-gfm](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/no-gfm/readme.md)
+  - [separators](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/separators/readme.md)
+  - [name format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/name-format/readme.md)
+  - [param-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/param-list-format/readme.md)
+  - [member-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/member-index-format/readme.md)
+  - [module-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/module-index-format/readme.md)
+  - [property-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/property-list-format/readme.md)
 - [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/parse%20options)
+  - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/html%20input)
+  - [sort-by](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/parse%20options/sort-by)
 
 ### Scripting examples
+If you can't achieve what you need using the command-line tool you can write a custom script.
 
-- generate one markdown file per class in your documentation
+- [generate one markdown file per class in your documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/scripting/output-file-per-class)
 
 ### Templating examples
+The default jsdoc2md output might not always suit you. You can supply your using own template using the `template` option. 
 
 #### Selectors
-Cherry-pick what appears in the output using selector helpers. 
-
-#### Anatomy of the default dmd template
-- \{{>main}}
-  - \{{>main-index}}
-    - \{{>module-index~}}
-    - \{{>global-index~}}
-  - \{{>all-docs}}
-    - \{{>docs}} 
-      - \{{>header~}}
-      - \{{>body}}
-      - \{{>member-index~}}
-      - \{{>separator~}}
-      - \{{>members~}}
+Cherry-pick which documentation appears in the output using selector helpers.
+- module
+- class
 
 ## Install and use
 First, document your source code using [correct jsdoc syntax](http://usejsdoc.org) then run it through jsdoc-to-markdown using one of the following methods.
@@ -115,7 +118,7 @@ All these methods are tested on Mac OSX, Linux, Windows 8.1 and Windows XP.
 ### Command-line tool
 To install the `jsdoc2md` command-line tool globally, run:
 ```
-$ npm install -g jsdoc-to-markdown@next
+$ npm install -g jsdoc-to-markdown
 ```
 
 Some typical use cases: 
@@ -144,7 +147,7 @@ If wrapped in quotes, bash (or your shell) will not attempt file-name expansion 
 ### Bundled with your project
 #### As an `npm run` task
 ```sh
-$ npm install jsdoc-to-markdown@next --save-dev
+$ npm install jsdoc-to-markdown --save-dev
 ```
 
 Then, in the `"scripts"` section of `package.json`, add a `docs` task. For example:
