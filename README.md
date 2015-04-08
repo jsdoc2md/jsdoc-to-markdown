@@ -51,7 +51,7 @@ $ jsdoc-parse example/function.js | dmd
 - Extends the jsdoc with some new tags ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/next))
 
 ## Example output
-Some examples of projects with `jsdoc2md` documentation.
+Some example output creating using `jsdoc2md`.
 
 ### Generated README files
 These projects insert jsdoc2md output into a readme template. 
@@ -84,14 +84,14 @@ These projects insert jsdoc2md output into a readme template.
 To get an idea of the affects the various options have: 
 
 - [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/formatting%20options)
+  - [module-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/module-index-format/readme.md)
   - [global-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/formatting%20options/global-index-format)
+  - [member-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/member-index-format/readme.md)
+  - [param-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/param-list-format/readme.md)
+  - [property-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/property-list-format/readme.md)
   - [no-gfm](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/no-gfm/readme.md)
   - [separators](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/separators/readme.md)
   - [name format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/name-format/readme.md)
-  - [param-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/param-list-format/readme.md)
-  - [member-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/member-index-format/readme.md)
-  - [module-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/module-index-format/readme.md)
-  - [property-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/property-list-format/readme.md)
 - [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/parse%20options)
   - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/html%20input)
   - [sort-by](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/parse%20options/sort-by)
@@ -199,16 +199,12 @@ Issue reports and patches are encouraged. And the project would benefit from an 
 Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
 
 ## API Reference
-**Todo**
-
-- [ ] Internationalisation
-
 **Example**  
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
 <a name="module_jsdoc-to-markdown.render"></a>
-### jsdoc2md.render(src, [options]) ⇒ <code>stream</code>
+### jsdoc2md.render(src, [options]) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code>
 Transforms jsdoc into markdown documentation.
 
 **Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
