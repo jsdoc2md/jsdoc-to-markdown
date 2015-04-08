@@ -108,9 +108,9 @@ If you can't achieve what you need using the command-line tool you can write a c
 The default jsdoc2md output might not always suit you. You can supply your using own template using the `template` option. 
 
 #### Selectors
-Cherry-pick which documentation appears in the output using selector helpers.
-- module
-- class
+- Cherry-pick which documentation appears in the output using [selector helpers](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/templating/selector%20helpers).
+  - [{{#module}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/templating/selector%20helpers/module)
+  - [{{#class}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/templating/selector%20helpers/class)
 
 ## Install and use
 First, document your source code using [correct jsdoc syntax](http://usejsdoc.org) then run it through jsdoc-to-markdown using one of the following methods.
@@ -221,7 +221,7 @@ Transforms jsdoc into markdown documentation.
 **Params**
 
 - src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- options <code>[renderOptions](#module_jsdoc-to-markdown..renderOptions)</code> - the options  
+- options <code>[renderOptions](#module_jsdoc-to-markdown..renderOptions)</code> | <code>[parseOptions](#module_jsdoc-parse--parse..parseOptions)</code> - the options  
 
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -240,9 +240,6 @@ or pipe in source code from another source:
 | Name | Type | Description |
 | --- | --- | --- |
 | template | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
-| json | <code>boolean</code> | Output the parsed jsdoc data only |
-| private | <code>boolean</code> | Include symbols marked @private in the output |
-| stats | <code>boolean</code> | Print a few stats about the doclets parsed |
 | heading-depth | <code>number</code> | root heading depth, defaults to 1 (`#`) |
 | plugin | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
 | helper | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
