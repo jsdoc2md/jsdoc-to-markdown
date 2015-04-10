@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "test": "tape test/*.js",
-    "docs": "node bin/cli.js -t jsdoc2md/README.hbs -p list lib/jsdoc-to-markdown.js node_modules/jsdoc-parse/lib/jsdoc-parse.js > README.md; echo ",
+    "docs": "node bin/cli.js -t jsdoc2md/README.hbs -p list lib/jsdoc-to-markdown.js node_modules/jsdoc-parse/lib/jsdoc-parse.js node_modules/dmd/lib/dmd.js > README.md; echo ",
     "lint": "jshint bin/*.js lib/*.js test/*.js; echo",
     "eg": "node example/render.js; echo"
   },

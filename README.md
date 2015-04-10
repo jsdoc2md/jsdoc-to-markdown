@@ -206,13 +206,6 @@ Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
-
-* [jsdoc-to-markdown](#module_jsdoc-to-markdown)
-  * _static_
-    * [.render(src, options)](#module_jsdoc-to-markdown.render) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code>
-  * _inner_
-    * [~renderOptions](#module_jsdoc-to-markdown..renderOptions) : <code>object</code>
-
 <a name="module_jsdoc-to-markdown.render"></a>
 ### jsdoc2md.render(src, options) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code>
 Transforms jsdoc into markdown documentation.
@@ -221,7 +214,7 @@ Transforms jsdoc into markdown documentation.
 **Params**
 
 - src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- options <code>[renderOptions](#module_jsdoc-to-markdown..renderOptions)</code> | <code>[parseOptions](#module_jsdoc-parse--parse..parseOptions)</code> - the options  
+- options <code>[dmdOptions](#module_dmd--dmd..dmdOptions)</code> | <code>[parseOptions](#module_jsdoc-parse--parse..parseOptions)</code> - the options  
 
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -232,24 +225,31 @@ or pipe in source code from another source:
 ```js
 > fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
 ```
-<a name="module_jsdoc-to-markdown..renderOptions"></a>
-### jsdoc2md~renderOptions : <code>object</code>
-**Kind**: inner typedef of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+
+
+<a name="module_dmd--dmd..dmdOptions"></a>
+### dmd~dmdOptions : <code>object</code>
+**Kind**: inner typedef of <code>[dmd](#exp_module_dmd--dmd)</code>  
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| template | <code>string</code> | A custom handlebars template to insert the rendered documentation into. |
-| heading-depth | <code>number</code> | root heading depth, defaults to 1 (`#`) |
+| template | <code>string</code> | A handlebars template to insert your documentation into, the default is <code>"{{>main}}"</code>. |
+| heading-depth | <code>number</code> | the heading depth to begin the docs from. For example, <code>2</code> (the default) starts from a markdown heading of <code>"##"</code>). |
 | plugin | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides |
 | helper | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set |
 | partial | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set |
+| example-lang | <code>string</code> | the language to use in fenced-code blocks |
+| name-format | <code>string</code> | specify <code>code</code> to format identifier names as code |
+| no-gfm | <code>boolean</code> | By default, dmd generates github-flavoured markdown. Not all markdown parsers render gfm correctly. If your generated docs look incorrect on sites other than Github (e.g. npmjs.org) try enabling this option to disable Github-specific syntax. |
+| separators | <code>boolean</code> | Put <code>&lt;hr&gt;</code> breaks between identifiers. Improves readability on bulky docs. |
 | module-index-format | <code>string</code> | - |
 | global-index-format | <code>string</code> | - |
 | param-list-format | <code>string</code> | - |
 | property-list-format | <code>string</code> | - |
 | member-index-format | <code>string</code> | - |
-| group-by | <code>Array.&lt;string&gt;</code> | - |
+| group-by | <code>Array.&lt;string&gt;</code> | group member index |
+
 
 * * *
 
