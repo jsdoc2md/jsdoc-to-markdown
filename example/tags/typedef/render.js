@@ -1,21 +1,14 @@
 "use strict";
-var jsdoc2md = require("../../../");
-var fs = require("fs");
+var render = require("../../render");
 
-var p = {
-    input: __dirname + "/src.js",
-    template: __dirname + "/template.hbs",
-    output: __dirname + "/readme.md"
-};
-
-var source = fs.readFileSync(p.input, "utf8");
-
-jsdoc2md
-    .render(p.input, {
+var src = __dirname + "/src.js";
+render(
+    { 
+        src: src,
+        template: __dirname + "/template.hbs",
         "global-index-format": "none",
         "heading-depth": 3,
-        template: p.template,
-        source: source
-    })
-    .on("error", console.error)
-    .pipe(fs.createWriteStream(p.output));
+        source: src
+    },
+    __dirname + "/readme.md"
+);

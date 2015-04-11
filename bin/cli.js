@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+var fs = require("fs");
 var cliArgs = require("command-line-args");
 var dope = require("console-dope");
 var jsdoc2md = require("../");
