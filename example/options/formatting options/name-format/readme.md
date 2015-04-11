@@ -52,8 +52,9 @@ She's an Uzi lover.
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
 **Example**  
+```js
 var uziLover = require("FurQ");
-
+```
 <a name="FurQ#wannaTryIt"></a>
 ### `furQ.wannaTryIt` : <code>string</code>
 **Kind**: instance property of <code>[FurQ](#FurQ)</code>  
@@ -100,12 +101,14 @@ kill
 **Kind**: instance method of <code>[FurQ](#FurQ)</code>  
 **Category**: standard  
 **Example**  
+```js
 var kill = uziLover.kill();
     
-
+```
 **Example**  
+```js
 uziLover.kill();
-
+```
 <a name="FurQ#respect"></a>
 ### `furQ.respect(done)`
 respect
@@ -118,10 +121,11 @@ respect
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
 
 **Example**  
+```js
 uziLover.respect(function(err, gain){
     console.log(gain);
 });
-
+```
 <a name="FurQ.enemy"></a>
 ### `FurQ.enemy` : <code>number</code>
 FUR-Q enemy types
@@ -144,8 +148,9 @@ check if at peace
 
 **Kind**: static method of <code>[FurQ](#FurQ)</code>  
 **Example**  
+```js
 var peace = FurQ.peace();
-
+```
 <a name="FurQ..onRespect"></a>
 ### `FurQ~onRespect` : <code>function</code>
 Passed to [respect](#FurQ#respect)

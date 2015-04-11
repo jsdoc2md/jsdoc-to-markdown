@@ -43,8 +43,9 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | description | |
 
 **Example**  
+```js
 var animal = require("animal");
-
+```
 
 * [animal](#module_animal)
   * [~Animal](#module_animal..Animal)

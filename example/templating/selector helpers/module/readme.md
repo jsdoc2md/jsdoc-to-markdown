@@ -29,8 +29,9 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | description | |
 
 **Example**  
+```js
 var animal = require("animal");
-
+```
 
 * [animal](#module_animal)
   * [~Animal](#module_animal..Animal)
@@ -107,8 +108,9 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | description | |
 
 **Example**  
+```js
 var animal = require("animal");
-
+```
 
 ## List all the module names
 The `{{#modules}}` block helper renders once per module. To output all documention, instead of just the names swap `{{name}}` for `{{>docs}}`.
