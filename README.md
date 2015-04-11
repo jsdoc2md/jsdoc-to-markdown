@@ -251,6 +251,19 @@ or pipe in source code from another source:
 | group-by | <code>Array.&lt;string&gt;</code> | group member index |
 
 
+<a name="module_jsdoc-parse--parse..parseOptions"></a>
+### parse~parseOptions : <code>object</code>
+**Kind**: inner typedef of <code>[parse](#exp_module_jsdoc-parse--parse)</code>  
+**Properties**
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| stats | <code>boolean</code> | <code>false</code> | Return stats about the doclets parsed |
+| private | <code>boolean</code> | <code>false</code> | include @private members in the output |
+| html | <code>boolean</code> | <code>false</code> | if set, you can parse jsdoc from html files |
+| sort-by | <code>Array</code> | <code>\[ &quot;scope&quot;, &quot;category&quot;, &quot;kind&quot;, &quot;order&quot; \]</code> | sort the output |
+
+
 * * *
 
 &copy; 2015 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
