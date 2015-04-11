@@ -206,24 +206,23 @@ Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
-<a name="module_jsdoc-to-markdown.render"></a>
-### jsdoc2md.render(src, options) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code>
+<a name="exp_module_jsdoc-to-markdown--render"></a>
+### render([options]) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code> ⏏
 Transforms jsdoc into markdown documentation.
 
-**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Kind**: Exported function  
 **Params**
 
-- src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- options <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>module:jsdoc-parse~parseOptions</code> - the options  
+- [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options  
 
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
-> jsdoc2md.render("lib/*.js").pipe(process.stdout);
+> jsdoc2md({ src: "lib/*.js" }).pipe(process.stdout);
 ```
 or pipe in source code from another source:
 ```js
-> fs.createReadStream("lib/main.js").pipe(jsdoc2md.render()).pipe(process.stdout);
+> fs.createReadStream("lib/main.js").pipe(jsdoc2md()).pipe(process.stdout);
 ```
 
 
@@ -356,11 +355,26 @@ All options for jsdoc-parse, including defaults
 **Kind**: inner class of <code>[jsdocParse](#exp_module_jsdoc-parse--jsdocParse)</code>  
 
 * [~ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)
+  * [.src](#module_jsdoc-parse--jsdocParse..ParseOptions#src) : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
   * [.private](#module_jsdoc-parse--jsdocParse..ParseOptions#private) : <code>boolean</code>
   * [.stats](#module_jsdoc-parse--jsdocParse..ParseOptions#stats) : <code>boolean</code>
   * [.html](#module_jsdoc-parse--jsdocParse..ParseOptions#html) : <code>boolean</code>
   * [.sort-by](#module_jsdoc-parse--jsdocParse..ParseOptions#sort-by) : <code>array</code>
 
+<a name="module_jsdoc-parse--jsdocParse..ParseOptions#src"></a>
+#### parseOptions.src : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
+The source files to parse. If this option is not set jsdoc-parse will wait for input to be streamed in.
+
+**Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
+**Example**  
+```js
+var parse = require("jsdoc-parse");
+parse({ src: "example.js" }).pipe(process.stdout);
+
+// or pipe in source code
+var fs = require("fs");
+fs.createReadStream("example.js").parse().pipe(process.stdout);
+```
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions#private"></a>
 #### parseOptions.private : <code>boolean</code>
 Include identifier documentation marked as `@private` in the output

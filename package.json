@@ -14,7 +14,7 @@
     "test": "tape test/*.js",
     "docs": "node bin/cli.js -t jsdoc2md/README.hbs -p list lib/jsdoc-to-markdown.js node_modules/jsdoc-parse/lib/jsdoc-parse.js node_modules/dmd/lib/dmd.js > README.md; echo ",
     "lint": "jshint bin/*.js lib/*.js test/*.js; echo",
-    "eg": "node example/render.js; echo"
+    "eg": "node example/renderDirs.js; echo"
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"
@@ -29,8 +29,7 @@
     "command-line-args": "~0.5.0",
     "console-dope": "~0.3.3",
     "dmd": "~0.3",
-    "jsdoc-parse": "~0.3",
-    "typical": "^1.0.0"
+    "jsdoc-parse": "~0.3"
   },
   "devDependencies": {
     "tape": "^4"

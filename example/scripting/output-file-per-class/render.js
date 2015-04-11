@@ -12,8 +12,7 @@ var p = {
 }
 
 /* we only need to parse the source code once.. cache it */
-jsdoc2md
-    .render(p.src, { json: true })
+jsdoc2md({ src: p.src, json: true })
     .pipe(fs.createWriteStream(p.json))
     .on("close", dataReady);
 

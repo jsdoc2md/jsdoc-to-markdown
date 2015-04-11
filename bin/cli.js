@@ -49,6 +49,10 @@ try{
     halt(err);
 }
 
+if (argv.all.template){
+    argv.all.template = fs.readFileSync(argv.all.template, "utf8");
+}
+
 if (argv.all.help){
     dope.log(usage);
     process.exit(0);
@@ -58,9 +62,9 @@ var d = domain.create();
 d.on("error", halt);
 d.run(function(){
     if(argv.all.src){
-        jsdoc2md.render(argv.all.src, argv.all).pipe(process.stdout);
+        jsdoc2md(argv.all).pipe(process.stdout);
     } else {
-        process.stdin.pipe(jsdoc2md.render(argv.all)).pipe(process.stdout);
+        process.stdin.pipe(jsdoc2md(argv.all)).pipe(process.stdout);
     }
 });
 
