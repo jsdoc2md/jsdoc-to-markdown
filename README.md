@@ -214,7 +214,7 @@ Transforms jsdoc into markdown documentation.
 **Params**
 
 - src <code>string</code> | <code>Array.&lt;string&gt;</code> - The javascript source file(s).  
-- options <code>module:dmd~dmdOptions</code> | <code>[parseOptions](#module_jsdoc-parse--parse..parseOptions)</code> - the options  
+- options <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>module:jsdoc-parse~parseOptions</code> - the options  
 
 **Example**  
 Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -277,13 +277,13 @@ $ dmd --template template.hbs --src my-class.json
 ```
 <a name="module_dmd--dmd..DmdOptions#heading-depth"></a>
 #### dmdOptions.heading-depth : <code>number</code>
-The initial heading depth. For example, with a value of `2` the markdown headings begin from `"## The heading"`.
+The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>2</code>  
 <a name="module_dmd--dmd..DmdOptions#example-lang"></a>
 #### dmdOptions.example-lang : <code>string</code>
-The default language to use when [syntax highlighting fenced-code blocks](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting).
+The default language to use when [syntax highlighting fenced-code blocks](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) in `@example` tags.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;js&quot;</code>  
@@ -314,7 +314,7 @@ By default, dmd generates github-flavoured markdown. Not all markdown parsers re
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 <a name="module_dmd--dmd..DmdOptions#separators"></a>
 #### dmdOptions.separators : <code>boolean</code>
-Put <hr> breaks between identifiers. Improves readability on bulky docs.
+Put `<hr>` breaks between identifiers. Improves readability on bulky docs.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>false</code>  
@@ -349,18 +349,41 @@ a list of fields to group member indexes by
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 
-<a name="module_jsdoc-parse--parse..parseOptions"></a>
-### parse~parseOptions : <code>object</code>
-**Kind**: inner typedef of <code>[parse](#exp_module_jsdoc-parse--parse)</code>  
-**Properties**
+<a name="module_jsdoc-parse--jsdocParse..ParseOptions"></a>
+### jsdocParse~ParseOptions
+All options for jsdoc-parse, including defaults
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| stats | <code>boolean</code> | <code>false</code> | Return stats about the doclets parsed |
-| private | <code>boolean</code> | <code>false</code> | include @private members in the output |
-| html | <code>boolean</code> | <code>false</code> | if set, you can parse jsdoc from html files |
-| sort-by | <code>Array</code> | <code>\[ &quot;scope&quot;, &quot;category&quot;, &quot;kind&quot;, &quot;order&quot; \]</code> | sort the output |
+**Kind**: inner class of <code>[jsdocParse](#exp_module_jsdoc-parse--jsdocParse)</code>  
 
+* [~ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)
+  * [.private](#module_jsdoc-parse--jsdocParse..ParseOptions#private) : <code>boolean</code>
+  * [.stats](#module_jsdoc-parse--jsdocParse..ParseOptions#stats) : <code>boolean</code>
+  * [.html](#module_jsdoc-parse--jsdocParse..ParseOptions#html) : <code>boolean</code>
+  * [.sort-by](#module_jsdoc-parse--jsdocParse..ParseOptions#sort-by) : <code>array</code>
+
+<a name="module_jsdoc-parse--jsdocParse..ParseOptions#private"></a>
+#### parseOptions.private : <code>boolean</code>
+Include identifier documentation marked as `@private` in the output
+
+**Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
+**Default**: <code>false</code>  
+<a name="module_jsdoc-parse--jsdocParse..ParseOptions#stats"></a>
+#### parseOptions.stats : <code>boolean</code>
+Print a few stats about the doclets parsed
+
+**Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
+<a name="module_jsdoc-parse--jsdocParse..ParseOptions#html"></a>
+#### parseOptions.html : <code>boolean</code>
+Enable experimental parsing of .html files.
+
+**Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
+**Default**: <code>false</code>  
+<a name="module_jsdoc-parse--jsdocParse..ParseOptions#sort-by"></a>
+#### parseOptions.sort-by : <code>array</code>
+Sort by one of more fields, e.g. `--sort-by kind category`.
+
+**Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
+**Default**: <code>[&quot;scope&quot;,&quot;category&quot;,&quot;kind&quot;,&quot;order&quot;]</code>  
 
 * * *
 
