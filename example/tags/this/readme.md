@@ -58,7 +58,8 @@ a great name
 <a name="setName"></a>
 ## setName()
 **Kind**: global function  
-**this**: <code>[Greeter](#Greeter)</code>```
+**this**: <code>[Greeter](#Greeter)</code>  
+```
 
 # Rendered
 <a name="Greeter"></a>
@@ -72,4 +73,4 @@ a great name
 <a name="setName"></a>
 ## setName()
 **Kind**: global function  
-**this**: <code>[Greeter](#Greeter)</code>
+**this**: <code>[Greeter](#Greeter)</code>  
