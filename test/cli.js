@@ -23,7 +23,7 @@ test("stdin check", function(t){
     });
     handle.on("close", function(){
         var md = fs.readFileSync("tmp/ignore.md", "utf8");
-        if (md) t.ok(/#visible/.test(md.toString()));
+        if (md) t.ok(/# visible/.test(md.toString()));
     });
 });
 
@@ -39,6 +39,6 @@ test("json option", function(t){
     );
     handle.on("close", function(){
         var json = fs.readFileSync("tmp/ignore.json", "utf8");
-        if (json) t.ok(/"longname": "visible"/.test(json.toString()));
+        if (json) t.ok(/"id": "visible"/.test(json.toString()));
     });
 });

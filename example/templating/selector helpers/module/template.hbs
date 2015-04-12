@@ -1,0 +1,52 @@
+# Module cherry-picking
+
+Just the docs for the Animal module. The command to generate this markdown output would be (from this directory): 
+```
+$ jsdoc2md -t template.hbs ../../src/commonJS/*.js > readme.md
+```
+The template looks like this: 
+```handlebars
+\{{#module name="animal"}}\{{>docs}}\{{/module}}
+```
+this is equivalent to: 
+```handlebars
+\{{#module name="animal"~}}
+\{{>header~}}
+\{{>body~}}
+\{{>member-index~}}
+\{{>members~}}
+\{{/module}}
+```
+
+{{#module name="animal"}}{{>docs}}{{/module}}
+
+## Show only part of the module docs
+E.g. just show the `header` and `body` if you like (skipping the `member-index` and `members`)
+
+The template looks like this: 
+```handlebars
+\{{#module name="animal"~}}
+\{{>header~}}
+\{{>body~}}
+\{{/module}}
+```
+
+{{#module name="animal"~}}
+{{>header~}}
+{{>body~}}
+{{/module}}
+
+## List all the module names
+The `\{{#modules}}` block helper renders once per module. To output all documention, instead of just the names swap `\{{name}}` for `\{{>docs}}`.
+
+```hbs
+\{{#modules~}}
+- \{{name}}
+\{{/modules}}
+```
+
+Outputs:
+
+{{#modules~}}
+- {{name}}
+{{/modules}}

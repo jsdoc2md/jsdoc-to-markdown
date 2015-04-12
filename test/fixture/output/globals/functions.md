@@ -1,84 +1,118 @@
-#Index
-
-**Functions**
-
-* [globalFunc()](#globalFunc)
-* [exampled()](#exampled)
-* [multiExampled()](#multiExampled)
-* [_protected()](#_protected)
-* [withAuthor()](#withAuthor)
-* [~~oldFunction()~~](#oldFunction)
-* [newFunction()](#newFunction)
-* [withParam(one)](#withParam)
-* [withParams(one, two)](#withParams)
-* [withOptional(one, [two])](#withOptional)
-* [withBullets(one, two)](#withBullets)
-* [returnsSomething()](#returnsSomething)
-* [returnsSomethingDesc()](#returnsSomethingDesc)
-* [returnsSeveral()](#returnsSeveral)
-* [~~allTogether(one, two)~~](#allTogether)
- 
+## Functions
+<dl>
+<dt><a href="#globalFunc">globalFunc()</a></dt>
+<dd><p>a global function</p>
+</dd>
+<dt><a href="#exampled">exampled()</a></dt>
+<dd><p>a function with an example</p>
+</dd>
+<dt><a href="#multiExampled">multiExampled()</a></dt>
+<dd><p>a function with multiple examples</p>
+</dd>
+<dt><a href="#_protected">_protected()</a></dt>
+<dd></dd>
+<dt><a href="#withAuthor">withAuthor()</a></dt>
+<dd></dd>
+<dt><del><a href="#oldFunction">oldFunction()</a></del></dt>
+<dd></dd>
+<dt><a href="#newFunction">newFunction()</a></dt>
+<dd></dd>
+<dt><a href="#withParam">withParam(one)</a></dt>
+<dd></dd>
+<dt><a href="#withParams">withParams(one, two)</a></dt>
+<dd></dd>
+<dt><a href="#withOptional">withOptional(one, [two])</a></dt>
+<dd></dd>
+<dt><a href="#withBullets">withBullets(one, two)</a></dt>
+<dd><p>this description has </p>
+<ul>
+<li>bullet</li>
+<li>points</li>
+</ul>
+<p>and needs this line to separate the above list from the below</p>
+</dd>
+<dt><a href="#returnsSomething">returnsSomething()</a> ⇒ <code>string</code></dt>
+<dd></dd>
+<dt><a href="#returnsSomethingDesc">returnsSomethingDesc()</a> ⇒ <code>object</code></dt>
+<dd></dd>
+<dt><a href="#returnsSeveral">returnsSeveral()</a> ⇒ <code>object</code> | <code>string</code></dt>
+<dd></dd>
+<dt><del><a href="#allTogether">allTogether(one, two)</a> ⇒ <code>object</code> | <code>string</code></del></dt>
+<dd><p>This function has all tags set</p>
+</dd>
+</dl>
 <a name="globalFunc"></a>
-#globalFunc()
+## globalFunc()
 a global function
 
+**Kind**: global function  
 <a name="exampled"></a>
-#exampled()
+## exampled()
 a function with an example
 
+**Kind**: global function  
 **Example**  
 ```js
 var result = exampled();
 ```
-
 <a name="multiExampled"></a>
-#multiExampled()
+## multiExampled()
 a function with multiple examples
 
+**Kind**: global function  
 **Example**  
 ```js
 var another = 100;
 ```
-
 **Example**  
 ```js
 var next = "p";
 ```
-
 <a name="_protected"></a>
-#_protected()
-**Access**: protected  
+## _protected()
+**Kind**: global function  
+**Access:** protected  
 <a name="withAuthor"></a>
-#withAuthor()
-**Author**: Clive Jones <clive@jones.com>  
+## withAuthor()
+**Kind**: global function  
+**Author:** Clive Jones <clive@jones.com>  
 <a name="oldFunction"></a>
-#~~oldFunction()~~
-***Deprecated***  
+## ~~oldFunction()~~
+***Deprecated***
+
+**Kind**: global function  
 <a name="newFunction"></a>
-#newFunction()
+## newFunction()
+**Kind**: global function  
 **Since**: v0.10.28  
 <a name="withParam"></a>
-#withParam(one)
-**Params**
+## withParam(one)
+**Kind**: global function  
 
-- one `string` - The input string  
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
 
 <a name="withParams"></a>
-#withParams(one, two)
-**Params**
+## withParams(one, two)
+**Kind**: global function  
 
-- one `string` - The input string  
-- two `object`  
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> |  |
 
 <a name="withOptional"></a>
-#withOptional(one, [two])
-**Params**
+## withOptional(one, [two])
+**Kind**: global function  
 
-- one `string` - The input string  
-- \[two\] `object` - this one is optional  
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
+| [two] | <code>object</code> | this one is optional |
 
 <a name="withBullets"></a>
-#withBullets(one, two)
+## withBullets(one, two)
 this description has 
 
 - bullet
@@ -86,35 +120,41 @@ this description has
 
 and needs this line to separate the above list from the below
 
-**Params**
+**Kind**: global function  
 
-- one `string` - The input string  
-- two `object` - a second input  
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
 
 <a name="returnsSomething"></a>
-#returnsSomething()
-**Returns**: `string`  
+## returnsSomething() ⇒ <code>string</code>
+**Kind**: global function  
 <a name="returnsSomethingDesc"></a>
-#returnsSomethingDesc()
-**Returns**: `object` - this return has a description  
+## returnsSomethingDesc() ⇒ <code>object</code>
+**Kind**: global function  
+**Returns**: <code>object</code> - this return has a description  
 <a name="returnsSeveral"></a>
-#returnsSeveral()
-**Returns**: `object` | `string` - this return has several types  
+## returnsSeveral() ⇒ <code>object</code> \| <code>string</code>
+**Kind**: global function  
+**Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 <a name="allTogether"></a>
-#~~allTogether(one, two)~~
+## ~~allTogether(one, two) ⇒ <code>object</code> \| <code>string</code>~~
+***Deprecated***
+
 This function has all tags set
 
-**Params**
-
-- one `string` - The input string  
-- two `object` - a second input  
-
-***Deprecated***  
-**Returns**: `object` | `string` - this return has several types  
+**Kind**: global function  
+**Returns**: <code>object</code> \| <code>string</code> - this return has several types  
 **Since**: v0.10.28  
-**Author**: Lloyd <75pound@gmail.com>  
+**Author:** Lloyd <75pound@gmail.com>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | The input string |
+| two | <code>object</code> | a second input |
+
 **Example**  
 ```js
 allTogether(true);
 ```
-

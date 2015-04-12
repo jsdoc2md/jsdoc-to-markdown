@@ -1,24 +1,24 @@
 <a name="module_sum-alias"></a>
-#sum-alias
+## sum-alias
 This module exports a simple maths function
 
 **Example**  
 ```js
 var sum = require("sum-alias");
 ```
-
-<a name="exp_module_sum-alias"></a>
-##sum(a, b) ⏏
+<a name="exp_module_sum-alias--sum"></a>
+### sum(a, b) ⇒ <code>number</code> ⏏
 Sums two numbers together
 
-**Params**
+**Kind**: Exported function  
+**Returns**: <code>number</code> - the result  
 
-- a `number` - first number  
-- b `number` - second number  
+| Param | Type | Description |
+| --- | --- | --- |
+| a | <code>number</code> | first number |
+| b | <code>number</code> | second number |
 
-**Returns**: `number` - the result  
 **Example**  
 ```js
 var result = sum(1, 1);
 ```
-

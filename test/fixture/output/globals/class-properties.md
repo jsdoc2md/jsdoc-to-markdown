@@ -1,19 +1,20 @@
 <a name="Pizza"></a>
-#class: Pizza
-**Members**
+## Pizza
+**Kind**: global class  
 
-* [class: Pizza](#Pizza)
-  * [pizza.topping](#Pizza#topping)
-  * [pizza.size](#Pizza#size)
+* [Pizza](#Pizza)
+  * [.topping](#Pizza#topping) : <code>string</code>
+  * [.size](#Pizza#size)
 
 <a name="Pizza#topping"></a>
-##pizza.topping
+### pizza.topping : <code>string</code>
 the ingredients on top
 
-**Type**: `string`  
-**Default**: `mud, lettuce`  
+**Default**: <code>&quot;mud, lettuce&quot;</code>  
+**Kind**: instance property of <code>[Pizza](#Pizza)</code>  
 **Since**: v1.0.0  
 <a name="Pizza#size"></a>
-##pizza.size
+### pizza.size
 the general size
 
+**Kind**: instance property of <code>[Pizza](#Pizza)</code>  

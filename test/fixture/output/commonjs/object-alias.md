@@ -1,23 +1,25 @@
 <a name="module_object-alias"></a>
-#object-alias
+## object-alias
 simple object export
 
-**Members**
 
 * [object-alias](#module_object-alias)
-  * [_.one](#module_object-alias.one)
-  * [_.two](#module_object-alias.two)
-  * [_.three()](#module_object-alias.three)
+  * [.one](#module_object-alias.one)
+  * [.two](#module_object-alias.two)
+  * [.three()](#module_object-alias.three)
 
 <a name="module_object-alias.one"></a>
-##_.one
+### object-alias.one
 first property
 
+**Kind**: static property of <code>[object-alias](#module_object-alias)</code>  
 <a name="module_object-alias.two"></a>
-##_.two
+### object-alias.two
 second property
 
+**Kind**: static property of <code>[object-alias](#module_object-alias)</code>  
 <a name="module_object-alias.three"></a>
-##_.three()
+### object-alias.three()
 a function
 
+**Kind**: static method of <code>[object-alias](#module_object-alias)</code>  

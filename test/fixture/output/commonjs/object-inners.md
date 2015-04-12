@@ -1,31 +1,33 @@
 <a name="module_cattle"></a>
-#cattle
+## cattle
 exported object, with-inner-members
 
-**Members**
 
 * [cattle](#module_cattle)
-  * [cattle~innerMember](#module_cattle..innerMember)
-  * [cattle.createCow()](#module_cattle.createCow)
-  * [cattle~innerFuction()](#module_cattle..innerFuction)
-  * [~~cattle~anotherInnerFuction()~~](#module_cattle..anotherInnerFuction)
+  * _static_
+    * [.createCow()](#module_cattle.createCow) ⇒ <code>boolean</code>
+  * _inner_
+    * [~innerMember](#module_cattle..innerMember)
+    * [~innerFuction()](#module_cattle..innerFuction)
+    * ~~[~anotherInnerFuction()](#module_cattle..anotherInnerFuction)~~
 
+<a name="module_cattle.createCow"></a>
+### cattle.createCow() ⇒ <code>boolean</code>
+**Kind**: static method of <code>[cattle](#module_cattle)</code>  
 <a name="module_cattle..innerMember"></a>
-##cattle~innerMember
+### cattle~innerMember
 the inner member
 
-**Scope**: inner member of [cattle](#module_cattle)  
-<a name="module_cattle.createCow"></a>
-##cattle.createCow()
-**Returns**: `boolean`  
+**Kind**: inner property of <code>[cattle](#module_cattle)</code>  
 <a name="module_cattle..innerFuction"></a>
-##cattle~innerFuction()
+### cattle~innerFuction()
 the inner function
 
-**Scope**: inner function of [cattle](#module_cattle)  
+**Kind**: inner method of <code>[cattle](#module_cattle)</code>  
 <a name="module_cattle..anotherInnerFuction"></a>
-##~~cattle~anotherInnerFuction()~~
+### ~~cattle~anotherInnerFuction()~~
+***Deprecated***
+
 another inner function
 
-***Deprecated***  
-**Scope**: inner function of [cattle](#module_cattle)  
+**Kind**: inner method of <code>[cattle](#module_cattle)</code>  

@@ -1,27 +1,31 @@
-#Index
-
-**Functions**
-
-* [read(filename, done)](#read)
-
-**Typedefs**
-
-* [callback: onComplete](#onComplete)
- 
+## Functions
+<dl>
+<dt><a href="#read">read(filename, done)</a></dt>
+<dd></dd>
+</dl>
+## Typedefs
+<dl>
+<dt><a href="#onComplete">onComplete</a> : <code>function</code></dt>
+<dd><p>Called when an async operation completes</p>
+</dd>
+</dl>
 <a name="read"></a>
-#read(filename, done)
-**Params**
+## read(filename, done)
+**Kind**: global function  
 
-- filename `string` - the filename  
-- done <code>[onComplete](#onComplete)</code> - the callback  
+| Param | Type | Description |
+| --- | --- | --- |
+| filename | <code>string</code> | the filename |
+| done | <code>[onComplete](#onComplete)</code> | the callback |
 
 <a name="onComplete"></a>
-#callback: onComplete
+## onComplete : <code>function</code>
 Called when an async operation completes
 
-**Params**
+**Kind**: global typedef  
 
-- err `object` - an error, or `null`  
-- result `string` - the result info  
+| Param | Type | Description |
+| --- | --- | --- |
+| err | <code>object</code> | an error, or `null` |
+| result | <code>string</code> | the result info |
 
-**Type**: `function`  

@@ -1,36 +1,36 @@
-#Index
-
-**Classes**
-
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
-**Functions**
-
-* [pluck(...prop)](#pluck)
- 
+## Classes
+<dl>
+<dt><a href="#Plucker">Plucker</a></dt>
+<dd></dd>
+</dl>
+## Functions
+<dl>
+<dt><a href="#pluck">pluck(...prop)</a></dt>
+<dd><p>This function takes variable input</p>
+</dd>
+</dl>
 <a name="Plucker"></a>
-#class: Plucker
-**Members**
-
-* [class: Plucker](#Plucker)
-  * [plucker.doPluck(one, ...args, ...three)](#Plucker#doPluck)
-
+## Plucker
+**Kind**: global class  
 <a name="Plucker#doPluck"></a>
-##plucker.doPluck(one, ...args, ...three)
+### plucker.doPluck(one, ...args, ...three)
 This function takes variable input
 
-**Params**
+**Kind**: instance method of <code>[Plucker](#Plucker)</code>  
 
-- one `string` - an input  
-- ...args `string` - the property(s) as input  
-- ...three `string` - more input  
+| Param | Type | Description |
+| --- | --- | --- |
+| one | <code>string</code> | an input |
+| ...args | <code>string</code> | the property(s) as input |
+| ...three | <code>string</code> | more input |
 
 <a name="pluck"></a>
-#pluck(...prop)
+## pluck(...prop)
 This function takes variable input
 
-**Params**
+**Kind**: global function  
 
-- ...prop `string` - the property(s) as input  
+| Param | Type | Description |
+| --- | --- | --- |
+| ...prop | <code>string</code> | the property(s) as input |
 

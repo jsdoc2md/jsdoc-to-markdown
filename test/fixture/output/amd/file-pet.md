@@ -1,5 +1,5 @@
 <a name="module_file-pet"></a>
-#file-pet
+## file-pet
 this module returns a pet of files
 
 **Example**  
@@ -7,47 +7,50 @@ this module returns a pet of files
 var cowFiles = FilePet("cow/*");
 ```
 
-<a name="exp_module_file-pet"></a>
-##class: FilePet ⏏
+* [file-pet](#module_file-pet)
+  * [FilePet](#exp_module_file-pet--FilePet) ⏏
+    * [new FilePet(num)](#new_module_file-pet--FilePet_new)
+    * [.instie](#module_file-pet--FilePet#instie)
+    * [.files](#module_file-pet--FilePet#files) : <code>boolean</code>
+    * [.delete(paths)](#module_file-pet--FilePet#delete)
+
+<a name="exp_module_file-pet--FilePet"></a>
+### FilePet ⏏
 this class returns a pet of files
 
-**Members**
-
-* [class: FilePet ⏏](#exp_module_file-pet)
-  * [new FilePet(num)](#exp_new_module_file-pet)
-  * [filePet.instie](#module_file-pet#instie)
-  * [filePet.files](#module_file-pet#files)
-  * [filePet.delete(paths)](#module_file-pet#delete)
-
-<a name="exp_new_module_file-pet"></a>
-###new FilePet(num)
+**Kind**: Exported class  
+<a name="new_module_file-pet--FilePet_new"></a>
+#### new FilePet(num)
 this is the contructor
 
-**Params**
 
-- num `number` - the input number  
+| Param | Type | Description |
+| --- | --- | --- |
+| num | <code>number</code> | the input number |
 
 **Example**  
 ```js
-var cowFiles = FilePet("cow/*");
-```
-
-
-<a name="module_file-pet#instie"></a>
-###filePet.instie
+    var cowFiles = FilePet("cow/*");
+    ```
+    
+<a name="module_file-pet--FilePet#instie"></a>
+#### filePet.instie
 an instance ting
 
-<a name="module_file-pet#files"></a>
-###filePet.files
+**Kind**: instance property of <code>[FilePet](#exp_module_file-pet--FilePet)</code>  
+<a name="module_file-pet--FilePet#files"></a>
+#### filePet.files : <code>boolean</code>
 the prototype instance property
 
-**Type**: `boolean`  
-**Default**: `true`  
-<a name="module_file-pet#delete"></a>
-###filePet.delete(paths)
+**Default**: <code>true</code>  
+**Kind**: instance property of <code>[FilePet](#exp_module_file-pet--FilePet)</code>  
+<a name="module_file-pet--FilePet#delete"></a>
+#### filePet.delete(paths)
 A prototype instance methy meth
 
-**Params**
+**Kind**: instance method of <code>[FilePet](#exp_module_file-pet--FilePet)</code>  
 
-- paths `array` - the paths to delete  
+| Param | Type | Description |
+| --- | --- | --- |
+| paths | <code>array</code> | the paths to delete |
 

@@ -1,16 +1,18 @@
 <a name="Rice"></a>
-#class: Rice
-**Members**
+## Rice
+**Kind**: global class  
 
-* [class: Rice](#Rice)
-  * [event: "cooked"](#Rice#event_cooked)
-  * [event: "cooking"](#Rice#event_cooking)
+* [Rice](#Rice)
+  * ["cooked"](#Rice#event_cooked)
+  * ["cooking"](#Rice#event_cooking)
 
 <a name="Rice#event_cooked"></a>
-##event: "cooked"
+### "cooked"
 Fired when rice is ready
 
+**Kind**: event emitted by <code>[Rice](#Rice)</code>  
 <a name="Rice#event_cooking"></a>
-##event: "cooking"
+### "cooking"
 Fired when rice is cooking
 
+**Kind**: event emitted by <code>[Rice](#Rice)</code>  

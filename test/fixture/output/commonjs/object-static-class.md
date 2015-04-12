@@ -1,70 +1,75 @@
 <a name="module_heaven"></a>
-#heaven
+## heaven
 factory module creating dodgy cloud. object-with-static-class.
 
-**Members**
 
 * [heaven](#module_heaven)
-  * [heaven.Cloud](#module_heaven.Cloud)
-  * [heaven.createCloud()](#module_heaven.createCloud)
-  * [const: heaven~FACT](#module_heaven..FACT)
-  * [class: heaven~Cloud](#module_heaven..Cloud)
-    * [new heaven~Cloud(options)](#new_module_heaven..Cloud)
-    * [cloud.size](#module_heaven..Cloud#size)
-    * [cloud.rain](#module_heaven..Cloud#rain)
-    * [Cloud.classMethod()](#module_heaven..Cloud.classMethod)
-    * [const: Cloud.SPACES](#module_heaven..Cloud.SPACES)
+  * _static_
+    * [.Cloud](#module_heaven.Cloud) : <code>[Cloud](#module_heaven..Cloud)</code>
+    * [.createCloud()](#module_heaven.createCloud) ⇒ <code>[Cloud](#module_heaven..Cloud)</code>
+  * _inner_
+    * [~Cloud](#module_heaven..Cloud)
+      * [new Cloud(options)](#new_module_heaven..Cloud_new)
+      * _instance_
+        * [.size](#module_heaven..Cloud#size) : <code>number</code>
+        * [.rain](#module_heaven..Cloud#rain) : <code>boolean</code>
+      * _static_
+        * [.SPACES](#module_heaven..Cloud.SPACES) : <code>number</code>
+        * [.classMethod()](#module_heaven..Cloud.classMethod)
+    * [~FACT](#module_heaven..FACT) : <code>boolean</code>
 
 <a name="module_heaven.Cloud"></a>
-##heaven.Cloud
+### heaven.Cloud : <code>[Cloud](#module_heaven..Cloud)</code>
 access to the Cloud class
 
-**Type**: [Cloud](#module_heaven..Cloud)  
+**Kind**: static property of <code>[heaven](#module_heaven)</code>  
 <a name="module_heaven.createCloud"></a>
-##heaven.createCloud()
-**Returns**: [Cloud](#module_heaven..Cloud)  
-<a name="module_heaven..FACT"></a>
-##const: heaven~FACT
-an inner constant
-
-**Scope**: inner constant of [heaven](#module_heaven)  
-**Type**: `boolean`  
+### heaven.createCloud() ⇒ <code>[Cloud](#module_heaven..Cloud)</code>
+**Kind**: static method of <code>[heaven](#module_heaven)</code>  
 <a name="module_heaven..Cloud"></a>
-##class: heaven~Cloud
+### heaven~Cloud
 The main class for a cloud
 
-**Members**
+**Kind**: inner class of <code>[heaven](#module_heaven)</code>  
 
-* [class: heaven~Cloud](#module_heaven..Cloud)
-  * [new heaven~Cloud(options)](#new_module_heaven..Cloud)
-  * [cloud.size](#module_heaven..Cloud#size)
-  * [cloud.rain](#module_heaven..Cloud#rain)
-  * [Cloud.classMethod()](#module_heaven..Cloud.classMethod)
-  * [const: Cloud.SPACES](#module_heaven..Cloud.SPACES)
+  * [~Cloud](#module_heaven..Cloud)
+    * [new Cloud(options)](#new_module_heaven..Cloud_new)
+    * _instance_
+      * [.size](#module_heaven..Cloud#size) : <code>number</code>
+      * [.rain](#module_heaven..Cloud#rain) : <code>boolean</code>
+    * _static_
+      * [.SPACES](#module_heaven..Cloud.SPACES) : <code>number</code>
+      * [.classMethod()](#module_heaven..Cloud.classMethod)
 
-<a name="new_module_heaven..Cloud"></a>
-###new heaven~Cloud(options)
+<a name="new_module_heaven..Cloud_new"></a>
+#### new Cloud(options)
 cloud constructor
 
-**Params**
 
-- options `object` - the options  
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> | the options |
 
-**Scope**: inner class of [heaven](#module_heaven)  
 <a name="module_heaven..Cloud#size"></a>
-###cloud.size
-**Type**: `number`  
-**Default**: `4`  
+#### cloud.size : <code>number</code>
+**Default**: <code>4</code>  
+**Kind**: instance property of <code>[Cloud](#module_heaven..Cloud)</code>  
 <a name="module_heaven..Cloud#rain"></a>
-###cloud.rain
-**Type**: `boolean`  
-**Default**: `false`  
-<a name="module_heaven..Cloud.classMethod"></a>
-###Cloud.classMethod()
-a class method
-
+#### cloud.rain : <code>boolean</code>
+**Default**: <code>false</code>  
+**Kind**: instance property of <code>[Cloud](#module_heaven..Cloud)</code>  
 <a name="module_heaven..Cloud.SPACES"></a>
-###const: Cloud.SPACES
+#### Cloud.SPACES : <code>number</code>
 a class constant
 
-**Type**: `number`  
+**Kind**: static constant of <code>[Cloud](#module_heaven..Cloud)</code>  
+<a name="module_heaven..Cloud.classMethod"></a>
+#### Cloud.classMethod()
+a class method
+
+**Kind**: static method of <code>[Cloud](#module_heaven..Cloud)</code>  
+<a name="module_heaven..FACT"></a>
+### heaven~FACT : <code>boolean</code>
+an inner constant
+
+**Kind**: inner constant of <code>[heaven](#module_heaven)</code>  

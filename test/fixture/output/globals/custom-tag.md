@@ -1,4 +1,6 @@
 <a name="customTaggedFunction"></a>
-#customTaggedFunction()
+## customTaggedFunction()
 this function has a wonderful custom tag
 
+**Kind**: global function  
+**Createdin**: Nigeria  
