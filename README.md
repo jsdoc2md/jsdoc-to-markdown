@@ -1,6 +1,6 @@
 [![view on npm](http://img.shields.io/npm/v/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
 [![npm module downloads per month](http://img.shields.io/npm/dm/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
-[![Build Status](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown.svg?branch=next)](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown)
+[![Build Status](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown)
 [![Dependency Status](https://david-dm.org/jsdoc2md/jsdoc-to-markdown.svg)](https://david-dm.org/jsdoc2md/jsdoc-to-markdown)
 ![Analytics](https://ga-beacon.appspot.com/UA-27725889-32/jsdoc-to-markdown/README.md?pixel)
 
@@ -47,8 +47,8 @@ $ jsdoc-parse example/function.js | dmd
 - Insert API documention into a README, or any arbitrary document.
 - Customisable to a granular level. If the output doesn't suit you, change it.
 - Package your modifications, publish to npm and share with others
-- Also documents javascript within html input files (experimental - [more](https://github.com/jsdoc2md/jsdoc-parse/tree/next))
-- Extends the jsdoc with some new tags ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/next))
+- Also documents javascript within html input files (experimental - [more](https://github.com/jsdoc2md/jsdoc-parse/tree/master))
+- Extends the jsdoc with some new tags ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/master))
 
 ## Example output
 Some example output creating using `jsdoc2md`.
@@ -80,37 +80,37 @@ These projects insert jsdoc2md output into a readme template.
 </table>
 
 ### Tags
-You can see an example of how each [jsdoc tag](http://usejsdoc.org) looks when rendered [here](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/tags).
+You can see an example of how each [jsdoc tag](http://usejsdoc.org) looks when rendered [here](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/tags).
 
 ### Examples demonstrating various options
 
 To get an idea of the affects the various options have: 
 
-- [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/formatting%20options)
+- [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options)
   - [module-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/module-index-format/readme.md)
-  - [global-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/formatting%20options/global-index-format)
+  - [global-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options/global-index-format)
   - [member-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/member-index-format/readme.md)
   - [param-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/param-list-format/readme.md)
   - [property-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/property-list-format/readme.md)
   - [no-gfm](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/no-gfm/readme.md)
   - [separators](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/separators/readme.md)
   - [name format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/example/options/formatting%20options/name-format/readme.md)
-- [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/parse%20options)
-  - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/html%20input)
-  - [sort-by](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/options/parse%20options/sort-by)
+- [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options)
+  - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/html%20input)
+  - [sort-by](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options/sort-by)
 
 ### Scripting examples
 If you can't achieve what you need using the command-line tool you can write a custom script.
 
-- [generate one markdown file per class in your documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/scripting/output-file-per-class)
+- [generate one markdown file per class in your documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/scripting/output-file-per-class)
 
 ### Templating examples
 The default jsdoc2md output might not always suit you. You can supply your using own template using the `template` option. 
 
 #### Selectors
-- Cherry-pick which documentation appears in the output using [selector helpers](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/templating/selector%20helpers).
-  - [{{#module}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/templating/selector%20helpers/module)
-  - [{{#class}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/next/example/templating/selector%20helpers/class)
+- Cherry-pick which documentation appears in the output using [selector helpers](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers).
+  - [{{#module}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers/module)
+  - [{{#class}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers/class)
 
 ## Install and use
 First, document your source code using [correct jsdoc syntax](http://usejsdoc.org) then run it through jsdoc-to-markdown using one of the following methods.
