@@ -3,7 +3,7 @@
 /** @namespace */
 var SomeObject = {
     /**
-     * yeah is now &#x60;SomeObject#yeah&#x60; rather than &#x60;SomeObject.yeah&#x60;.
+     * yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.
      * @instance
      */
     yeah: null
