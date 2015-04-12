@@ -1,7 +1,6 @@
 "use strict";
 var test = require("tape");
 var jsdoc2md = require("../");
-var path = require("path");
 
 var inputFile = "test/fixture/input/globals/ignore.js";
 

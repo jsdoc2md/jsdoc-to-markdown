@@ -1,7 +1,5 @@
 var test = require("tape");
-var jsdoc2md = require("../");
 var fs = require("fs");
-var path = require("path");
 var spawn = require("child_process").spawn;
 
 var inputPath = "test/fixture/input/globals/ignore.js";

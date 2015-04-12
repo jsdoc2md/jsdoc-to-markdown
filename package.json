@@ -3,7 +3,7 @@
   "author": "Lloyd Brookes",
   "version": "1.0.0",
   "description": "Markdown API documentation generator",
-  "repository": "https://github.com/75lb/jsdoc-to-markdown",
+  "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "files": [
     "bin",
@@ -28,8 +28,8 @@
   "dependencies": {
     "command-line-args": "~0.5.0",
     "console-dope": "~0.3.3",
-    "dmd": "~0.3",
-    "jsdoc-parse": "~0.3"
+    "dmd": "^1",
+    "jsdoc-parse": "^1"
   },
   "devDependencies": {
     "tape": "^4"
