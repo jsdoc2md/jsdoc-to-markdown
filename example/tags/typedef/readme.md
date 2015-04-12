@@ -1,4 +1,4 @@
-# Source
+# Input source code
 ```js
 /**
 A number, or a string containing a number.
@@ -24,8 +24,101 @@ Some options
 function doSomething(option){}
 
 ```
+# jsdoc-parse output
+```json
+[
+  {
+    "id": "setMagicNumber",
+    "longname": "setMagicNumber",
+    "name": "setMagicNumber",
+    "scope": "global",
+    "kind": "function",
+    "description": "Set the magic number.",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "NumberLike"
+          ]
+        },
+        "description": "The magic number.",
+        "name": "x"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "doSomething",
+    "longname": "doSomething",
+    "name": "doSomething",
+    "scope": "global",
+    "kind": "function",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "someOptions"
+          ]
+        },
+        "description": "the input options",
+        "name": "option"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "NumberLike",
+    "longname": "NumberLike",
+    "name": "NumberLike",
+    "scope": "global",
+    "kind": "typedef",
+    "description": "A number, or a string containing a number.",
+    "type": {
+      "names": [
+        "number",
+        "string"
+      ]
+    },
+    "order": 0
+  },
+  {
+    "id": "someOptions",
+    "longname": "someOptions",
+    "name": "someOptions",
+    "scope": "global",
+    "kind": "typedef",
+    "description": "Some options",
+    "type": {
+      "names": [
+        "object"
+      ]
+    },
+    "properties": [
+      {
+        "type": {
+          "names": [
+            "boolean"
+          ]
+        },
+        "description": "flag",
+        "name": "a"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "text",
+        "name": "some"
+      }
+    ],
+    "order": 2
+  }
+]
+```
 
-# jsdoc2md output
+# dmd output
 ```markdown
 <a name="setMagicNumber"></a>
 ### setMagicNumber(x)

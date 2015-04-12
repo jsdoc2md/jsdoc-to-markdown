@@ -1,4 +1,4 @@
-# Source
+# Input source code
 ```js
 /**
 Interface for a Currah Speech Synth
@@ -28,8 +28,89 @@ function Synth(){
 }
 
 ```
+# jsdoc-parse output
+```json
+[
+  {
+    "id": "Speech",
+    "longname": "Speech",
+    "name": "Speech",
+    "scope": "global",
+    "kind": "interface",
+    "description": "Interface for a Currah Speech Synth\n\n![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)",
+    "order": 0
+  },
+  {
+    "id": "Synth",
+    "longname": "Synth",
+    "name": "Synth",
+    "scope": "global",
+    "kind": "class",
+    "description": "a synth, that also implements speech",
+    "implements": [
+      "Speech"
+    ],
+    "order": 2
+  },
+  {
+    "id": "Speech#say",
+    "longname": "Speech#say",
+    "name": "say",
+    "scope": "instance",
+    "kind": "function",
+    "description": "what to say",
+    "memberof": "Speech",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "the text to speak",
+        "name": "text"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "Synth#demo",
+    "longname": "Synth#demo",
+    "name": "demo",
+    "scope": "instance",
+    "kind": "function",
+    "description": "play a demo piece, Beethoven or something..",
+    "memberof": "Synth",
+    "order": 3
+  },
+  {
+    "id": "Synth#say",
+    "implements": [
+      "Speech#say"
+    ],
+    "longname": "Synth#say",
+    "name": "say",
+    "scope": "instance",
+    "kind": "function",
+    "description": "what to say",
+    "memberof": "Synth",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "the text to speak",
+        "name": "text"
+      }
+    ],
+    "order": 4
+  }
+]
+```
 
-# jsdoc2md output
+# dmd output
 ```markdown
 <a name="Speech"></a>
 ## Speech

@@ -5,7 +5,7 @@ var src = __dirname + "/src.js";
 render(
     { 
         src: src,
-        template: __dirname + "/template.hbs",
+        template: __dirname + "/../template.hbs",
         "global-index-format": "none",
         "heading-depth": 3,
         source: src
