@@ -206,8 +206,8 @@ Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
-<a name="exp_module_jsdoc-to-markdown--render"></a>
-### render([options]) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code> ⏏
+<a name="exp_module_jsdoc-to-markdown--jsdoc2md"></a>
+### jsdoc2md([options]) ⇒ <code>[Transform](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code> ⏏
 Transforms jsdoc into markdown documentation.
 
 **Kind**: Exported function  
@@ -216,7 +216,7 @@ Transforms jsdoc into markdown documentation.
 - [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options  
 
 **Example**  
-Two ways to use `render`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
+Two ways to use `jsdoc2md`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
 > jsdoc2md({ src: "lib/*.js" }).pipe(process.stdout);
 ```
@@ -369,10 +369,12 @@ The source files to parse. If this option is not set jsdoc-parse will wait for i
 **Example**  
 ```js
 var parse = require("jsdoc-parse");
+var fs = require("fs");
+
+// either supply one or more file names
 parse({ src: "example.js" }).pipe(process.stdout);
 
 // or pipe in source code
-var fs = require("fs");
 fs.createReadStream("example.js").parse().pipe(process.stdout);
 ```
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions#private"></a>
