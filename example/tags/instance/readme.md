@@ -1,9 +1,9 @@
-# Source
+# Input source code
 ```js
 /** @namespace */
 var SomeObject = {
     /**
-     * yeah is now SomeObject#yeah rather than SomeObject.yeah.
+     * yeah is now &#x60;SomeObject#yeah&#x60; rather than &#x60;SomeObject.yeah&#x60;.
      * @instance
      */
     yeah: null
@@ -42,7 +42,7 @@ function yeahFactory(yeahValue) {
     "name": "yeah",
     "scope": "instance",
     "kind": "member",
-    "description": "yeah is now SomeObject#yeah rather than SomeObject.yeah.",
+    "description": "yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.",
     "memberof": "SomeObject",
     "order": 1
   }
@@ -56,7 +56,7 @@ function yeahFactory(yeahValue) {
 **Kind**: global namespace  
 <a name="SomeObject#yeah"></a>
 ### someObject.yeah
-yeah is now SomeObject#yeah rather than SomeObject.yeah.
+yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.
 
 **Kind**: instance property of <code>[SomeObject](#SomeObject)</code>  
 <a name="yeahFactory"></a>
@@ -72,7 +72,7 @@ Generates SomeObject instances.
 **Kind**: global namespace  
 <a name="SomeObject#yeah"></a>
 ### someObject.yeah
-yeah is now SomeObject#yeah rather than SomeObject.yeah.
+yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.
 
 **Kind**: instance property of <code>[SomeObject](#SomeObject)</code>  
 <a name="yeahFactory"></a>
