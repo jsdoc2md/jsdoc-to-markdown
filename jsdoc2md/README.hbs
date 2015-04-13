@@ -46,7 +46,7 @@ $ jsdoc-parse example/function.js | dmd
 
 - Insert API documention into a README, or any arbitrary document.
 - Customisable to a granular level. If the output doesn't suit you, change it.
-- Package your modifications, publish to npm and share with others
+- Package your modifications, publish to npm and share with others (e.g. [dmd-bitbucket](https://github.com/jsdoc2md/dmd-bitbucket))
 - Also documents javascript within html input files (experimental - [more](https://github.com/jsdoc2md/jsdoc-parse/tree/master))
 - Extends the jsdoc with some new tags ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/master))
 
@@ -151,7 +151,7 @@ General rule: if your file expression contains `**` yet recursion is failing wra
 
 If wrapped in quotes, bash (or your shell) will not attempt file-name expansion on the expression. If you do not use quotes you will require bash version 4+ with globstar enabled for recursion to work. 
 
-### Bundled with your project
+### Distribute with your project
 #### As an `npm run` task
 ```sh
 $ npm install jsdoc-to-markdown --save-dev
@@ -181,7 +181,7 @@ See [gulp-jsdoc-to-markdown](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown)
 Issue reports and patches are encouraged. And the project would benefit from an additional maintainer.. 
 
 ### Composition
-Essentially, it connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
+Essentially, jsdocm2d connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
 
 ## API Reference
 {{#module name="jsdoc-to-markdown"~}}
