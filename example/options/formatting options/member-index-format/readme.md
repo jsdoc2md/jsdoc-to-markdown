@@ -20,7 +20,7 @@ This format is inspired by the [node docs](http://nodejs.org/api/).
   * ["slap"](#FurQ#event_slap)
   * [furQ.kill()](#FurQ#kill)
   * [furQ.respect(done)](#FurQ#respect)
-  * [FurQ.enemy](#FurQ.enemy) : <code>number</code>
+  * [FurQ.enemy](#FurQ.enemy) : <code>enum</code>
   * ~~[FurQ.peace()](#FurQ.peace)~~
   * [FurQ~onRespect](#FurQ..onRespect) : <code>function</code>
 
@@ -84,7 +84,7 @@ If an object has members within two of more distinct scopes (instance, static or
       * [.kill()](#FurQ#kill)
       * [.respect(done)](#FurQ#respect)
   * _static_
-    * [.enemy](#FurQ.enemy) : <code>number</code>
+    * [.enemy](#FurQ.enemy) : <code>enum</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
     * [~onRespect](#FurQ..onRespect) : <code>function</code>

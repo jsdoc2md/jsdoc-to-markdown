@@ -74,7 +74,7 @@ These projects insert jsdoc2md output into a readme template.
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/ansi-escape-sequences">ansi-escape-sequences</a></td>
-      <td>Demonstrates usage of `@enum {type}` (in table format).</td>
+      <td>Demonstrates usage of <code>@enum {type}</code> (rendered in table format).</td>
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/file-set">file-set</a></td>

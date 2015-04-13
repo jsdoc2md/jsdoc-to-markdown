@@ -23,7 +23,7 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
       * [.kill()](#FurQ#kill)
       * [.respect(done)](#FurQ#respect)
   * _static_
-    * [.enemy](#FurQ.enemy) : <code>number</code>
+    * [.enemy](#FurQ.enemy) : <code>enum</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
     * [~onRespect](#FurQ..onRespect) : <code>function</code>
@@ -110,7 +110,7 @@ uziLover.respect(function(err, gain){
 });
 ```
 <a name="FurQ.enemy"></a>
-### FurQ.enemy : <code>number</code>
+### FurQ.enemy : <code>enum</code>
 FUR-Q enemy types
 
 **Kind**: static enum property of <code>[FurQ](#FurQ)</code>  

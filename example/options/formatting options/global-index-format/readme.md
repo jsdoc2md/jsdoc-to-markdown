@@ -42,7 +42,7 @@
       * [.kill()](#FurQ#kill)
       * [.respect(done)](#FurQ#respect)
   * _static_
-    * [.enemy](#FurQ.enemy) : <code>number</code>
+    * [.enemy](#FurQ.enemy) : <code>enum</code>
     * ~~[.peace()](#FurQ.peace)~~
   * _inner_
     * [~onRespect](#FurQ..onRespect) : <code>function</code>
