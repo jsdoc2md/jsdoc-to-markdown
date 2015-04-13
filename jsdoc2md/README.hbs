@@ -73,6 +73,10 @@ These projects insert jsdoc2md output into a readme template.
       <td>Very simple module exporting a collection of static methods. Demonstrates use of <code>@typicalname</code> (set to <code>a</code>) and the <code>@category</code> tag to group identifiers in the member-list.</td>
     </tr>
     <tr>
+      <td><a href="https://github.com/75lb/ansi-escape-sequences">ansi-escape-sequences</a></td>
+      <td>Demonstrates usage of `@enum {type}` (in table format).</td>
+    </tr>
+    <tr>
       <td><a href="https://github.com/75lb/file-set">file-set</a></td>
       <td>Simple module exporting a class.</td>
     </tr>
