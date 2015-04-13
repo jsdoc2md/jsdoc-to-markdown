@@ -29,7 +29,7 @@ $ jsdoc2md example/src/protection.js
 get markdown docs! (in [github-flavored-markdown](https://help.github.com/articles/github-flavored-markdown/) format by default)
 ```handlebars
 <a name="protection"></a>
-##protection(cloak, dagger) ⇒ <code>survival</code>
+## protection(cloak, dagger) ⇒ <code>survival</code>
 a quite wonderful function
 
 | Param  | Type                | Description  |
