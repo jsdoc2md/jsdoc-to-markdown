@@ -100,7 +100,7 @@ To get an idea of the affects the various options have:
   - [separators](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/separators/readme.md)
   - [name format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/name-format/readme.md)
 - [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options)
-  - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/html%20input)
+  - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options/html)
   - [sort-by](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options/sort-by)
 
 ### Scripting examples
