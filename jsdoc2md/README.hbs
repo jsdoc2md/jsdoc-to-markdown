@@ -147,12 +147,13 @@ $ jsdoc2md "src/**/*.js" --template readme.hbs > README.md
 ```
 
 #### Note on globbing
-General rule: if your file expression contains `**` yet recursion is failing wrap the expression in quotes, e.g. `"lib/**/*.js"`.
+General rule: if your file expression contains `**`, yet recursion is failing, wrap the expression in quotes (e.g. `"lib/**/*.js"`).
 
 If wrapped in quotes, bash (or your shell) will not attempt file-name expansion on the expression. If you do not use quotes you will require bash version 4+ with globstar enabled for recursion to work. 
 
-### Distribute with your project
+### Add a "generate docs" task to your project workflow
 #### As an `npm run` task
+This is the most lightweight way to add the task - no additional task-running software required.
 ```sh
 $ npm install jsdoc-to-markdown --save-dev
 ```
@@ -171,10 +172,10 @@ Now, project documentation is generated like so:
 $ npm run docs
 ```
 
-#### As a grunt plug-in
+#### As a grunt task
 See [grunt-jsdoc-to-markdown](https://github.com/jsdoc2md/grunt-jsdoc-to-markdown).
 
-#### As a gulp plug-in
+#### As a gulp task
 See [gulp-jsdoc-to-markdown](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown).
 
 ## Contributing
