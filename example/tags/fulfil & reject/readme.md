@@ -13,6 +13,9 @@ function promiseSomething(){}
 function Tree(){};
 
 ```
+
+* * * 
+
 # jsdoc-parse output
 ```json
 [
@@ -54,6 +57,8 @@ function Tree(){};
 ]
 ```
 
+* * * 
+
 # dmd output
 ```markdown
 <a name="Tree"></a>
@@ -65,6 +70,8 @@ function Tree(){};
 **Fulfil**: <code>[Tree](#Tree)</code>  
 **Reject**: <code>Error</code>  
 ```
+
+* * * 
 
 # Rendered
 <a name="Tree"></a>
