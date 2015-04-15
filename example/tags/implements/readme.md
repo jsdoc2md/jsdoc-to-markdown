@@ -28,6 +28,9 @@ function Synth(){
 }
 
 ```
+
+* * * 
+
 # jsdoc-parse output
 ```json
 [
@@ -110,6 +113,8 @@ function Synth(){
 ]
 ```
 
+* * * 
+
 # dmd output
 ```markdown
 <a name="Speech"></a>
@@ -157,6 +162,8 @@ what to say
 | text | <code>string</code> | the text to speak |
 
 ```
+
+* * * 
 
 # Rendered
 <a name="Speech"></a>

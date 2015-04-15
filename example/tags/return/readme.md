@@ -11,6 +11,9 @@ function returnsSomething(){}
 function returnsWithDesc(){}
 
 ```
+
+* * * 
+
 # jsdoc-parse output
 ```json
 [
@@ -52,6 +55,8 @@ function returnsWithDesc(){}
 ]
 ```
 
+* * * 
+
 # dmd output
 ```markdown
 <a name="returnsSomething"></a>
@@ -62,6 +67,8 @@ function returnsWithDesc(){}
 **Kind**: global function  
 **Returns**: <code>string</code> - returns a string  
 ```
+
+* * * 
 
 # Rendered
 <a name="returnsSomething"></a>

@@ -24,6 +24,9 @@ Some options
 function doSomething(option){}
 
 ```
+
+* * * 
+
 # jsdoc-parse output
 ```json
 [
@@ -118,6 +121,8 @@ function doSomething(option){}
 ]
 ```
 
+* * * 
+
 # dmd output
 ```markdown
 <a name="setMagicNumber"></a>
@@ -156,6 +161,8 @@ Some options
 | some | <code>string</code> | text |
 
 ```
+
+* * * 
 
 # Rendered
 <a name="setMagicNumber"></a>

@@ -12,6 +12,9 @@ function setName(name) {
 }
 
 ```
+
+* * * 
+
 # jsdoc-parse output
 ```json
 [
@@ -45,6 +48,8 @@ function setName(name) {
 ]
 ```
 
+* * * 
+
 # dmd output
 ```markdown
 <a name="Greeter"></a>
@@ -60,6 +65,8 @@ a great name
 **Kind**: global function  
 **this**: <code>[Greeter](#Greeter)</code>  
 ```
+
+* * * 
 
 # Rendered
 <a name="Greeter"></a>

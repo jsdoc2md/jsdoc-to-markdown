@@ -16,6 +16,9 @@ function yeahFactory(yeahValue) {
 }
 
 ```
+
+* * * 
+
 # jsdoc-parse output
 ```json
 [
@@ -49,6 +52,8 @@ function yeahFactory(yeahValue) {
 ]
 ```
 
+* * * 
+
 # dmd output
 ```markdown
 <a name="SomeObject"></a>
@@ -65,6 +70,8 @@ Generates SomeObject instances.
 
 **Kind**: global function  
 ```
+
+* * * 
 
 # Rendered
 <a name="SomeObject"></a>

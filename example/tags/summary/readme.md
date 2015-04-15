@@ -7,6 +7,9 @@ Among the Rastafari movement, whose followers are estimated at between 2,000,000
 function haileSelassie() {}
 
 ```
+
+* * * 
+
 # jsdoc-parse output
 ```json
 [
@@ -23,6 +26,8 @@ function haileSelassie() {}
 ]
 ```
 
+* * * 
+
 # dmd output
 ```markdown
 <a name="haileSelassie"></a>
@@ -32,6 +37,8 @@ Among the Rastafari movement, whose followers are estimated at between 2,000,000
 **Kind**: global function  
 **Summary**: Jah Rastafari  
 ```
+
+* * * 
 
 # Rendered
 <a name="haileSelassie"></a>
