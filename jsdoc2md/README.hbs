@@ -49,6 +49,7 @@ $ jsdoc-parse example/function.js | dmd
 - Package your modifications, publish to npm and share with others (e.g. [dmd-bitbucket](https://github.com/jsdoc2md/dmd-bitbucket))
 - Also documents javascript within html input files (experimental - [more](https://github.com/jsdoc2md/jsdoc-parse/tree/master))
 - Extends the jsdoc with some new tags ([more](https://github.com/jsdoc2md/jsdoc-parse/tree/master))
+- Use your own, arbitrary tags
 
 ## Example output
 Some example output creating using `jsdoc2md`.
