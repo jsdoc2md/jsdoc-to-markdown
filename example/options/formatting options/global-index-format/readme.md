@@ -17,6 +17,10 @@
 <dt><a href="#Species">Species</a></dt>
 <dd><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
 </dd>
+<dt><a href="#NewLines">NewLines</a></dt>
+<dd><p>A multi-line
+class description</p>
+</dd>
 </dl>
 
 ## `jsdoc2md --global-index-format grouped`
@@ -61,6 +65,9 @@
     * [.species](#Species#species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
+* [NewLines](#NewLines)
+  * [.numbers](#NewLines#numbers)
+  * [.method(input)](#NewLines#method) ⇒ <code>number</code>
 
 ## `jsdoc2md --global-index-format table`
 ## 
@@ -93,6 +100,12 @@
 <tr>
     <td><a href="#Species">Species</a></td>
     <td><p>In biology, a species (abbreviated sp., with the plural form species abbreviated spp.) is one of the basic units of biological classification and a taxonomic rank. A species is often defined as the largest group of organisms capable of interbreeding and producing fertile offspring. While in many cases this definition is adequate, the difficulty of defining species is known as the species problem. Differing measures are often used, such as similarity of DNA, morphology, or ecological niche. Presence of specific locally adapted traits may further subdivide species into &quot;infraspecific taxa&quot; such as subspecies (and in botany other taxa are used, such as varieties, subvarieties, and formae).</p>
+</td>
+    </tr>
+<tr>
+    <td><a href="#NewLines">NewLines</a></td>
+    <td><p>A multi-line
+class description</p>
 </td>
     </tr>
 </tbody>

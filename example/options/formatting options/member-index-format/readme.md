@@ -43,6 +43,12 @@ This format is inspired by the [node docs](http://nodejs.org/api/).
 
 -
 
+* [NewLines](#NewLines)
+  * [newLines.numbers](#NewLines#numbers)
+  * [newLines.method(input)](#NewLines#method) ⇒ <code>number</code>
+
+-
+
 * [~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
   * [school.bestStudent](#Rapper.train..School#bestStudent)
@@ -109,6 +115,12 @@ If an object has members within two of more distinct scopes (instance, static or
     * [.species](#Species#species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
+
+-
+
+* [NewLines](#NewLines)
+  * [.numbers](#NewLines#numbers)
+  * [.method(input)](#NewLines#method) ⇒ <code>number</code>
 
 -
 
