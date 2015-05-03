@@ -1,0 +1,33 @@
+{{depthIncrement~}}
+
+# Source
+```js
+{{{options.source}}}
+```
+
+# jsdoc-parse output
+```json
+{{{json-stringify @root null "  "}}}
+```
+
+# without `--no-gfm` set
+
+## dmd output
+```hbs
+{{#enum name="eType"}}{{>docs}}{{/enum}}
+```
+
+## rendered
+{{#enum name="eType"}}{{>docs}}{{/enum}}
+
+
+# with `--no-gfm` set
+{{optionSet "no-gfm" true ~}}
+
+## dmd output
+```hbs
+{{#enum name="eType"}}{{>docs}}{{/enum}}
+```
+
+## rendered
+{{#enum name="eType"}}{{>docs}}{{/enum}}

@@ -1,0 +1,33 @@
+{{depthIncrement~}}
+
+# Source
+```js
+{{{options.source}}}
+```
+
+# jsdoc-parse output
+```json
+{{{json-stringify @root null "  "}}}
+```
+
+# without `--no-gfm` set
+
+## dmd output
+```hbs
+{{#function name="taze"}}{{>docs}}{{/function}}
+```
+
+## rendered
+{{#function name="taze"}}{{>docs}}{{/function}}
+
+
+# with `--no-gfm` set
+{{optionSet "no-gfm" true ~}}
+
+## dmd output
+```hbs
+{{#function name="taze"}}{{>docs}}{{/function}}
+```
+
+## rendered
+{{#function name="taze"}}{{>docs}}{{/function}}
