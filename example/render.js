@@ -20,6 +20,8 @@ function render(options, output){
         }
     }
     jsdoc2md(options)
-        .on("error", console.error)
+        .on("error", function(err){
+            console.error(err.stack);
+        })
         .pipe(fs.createWriteStream(output));
 }

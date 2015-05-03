@@ -7,6 +7,8 @@ Pump an idiot full of volts
 @param [options] {object} - electricution options
 @param [options.strength=11] {number} - strength
 @param [options.crazyHair=true] {number} - optional spikey hair effect
+@param [options.origin] {object} - origin details
+@param [options.origin.country] {string} - the country of origin
 @param [done] {function} - callback on slump, which has:
 - devestating power
 - an unusual aftertaste
@@ -71,6 +73,26 @@ function taze(victim, options, done){}
       {
         "type": {
           "names": [
+            "object"
+          ]
+        },
+        "optional": true,
+        "description": "origin details",
+        "name": "options.origin"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "description": "the country of origin",
+        "name": "options.origin.country"
+      },
+      {
+        "type": {
+          "names": [
             "function"
           ]
         },
@@ -103,6 +125,8 @@ Pump an idiot full of volts
 | [options] | <code>object</code> |  | electricution options |
 | [options.strength] | <code>number</code> | <code>11</code> | strength |
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
+| [options.origin] | <code>object</code> |  | origin details |
+| [options.origin.country] | <code>string</code> |  | the country of origin |
 | [done] | <code>function</code> |  | callback on slump, which has: - devestating power - an unusual aftertaste |
 
 
@@ -123,6 +147,8 @@ Pump an idiot full of volts
 | [options] | <code>object</code> |  | electricution options |
 | [options.strength] | <code>number</code> | <code>11</code> | strength |
 | [options.crazyHair] | <code>number</code> | <code>true</code> | optional spikey hair effect |
+| [options.origin] | <code>object</code> |  | origin details |
+| [options.origin.country] | <code>string</code> |  | the country of origin |
 | [done] | <code>function</code> |  | callback on slump, which has: - devestating power - an unusual aftertaste |
 
 
@@ -156,6 +182,12 @@ Pump an idiot full of volts
 </td>
     </tr><tr>
     <td>[options.crazyHair]</td><td><code>number</code></td><td><code>true</code></td><td><p>optional spikey hair effect</p>
+</td>
+    </tr><tr>
+    <td>[options.origin]</td><td><code>object</code></td><td></td><td><p>origin details</p>
+</td>
+    </tr><tr>
+    <td>[options.origin.country]</td><td><code>string</code></td><td></td><td><p>the country of origin</p>
 </td>
     </tr><tr>
     <td>[done]</td><td><code>function</code></td><td></td><td><p>callback on slump, which has:</p>
@@ -196,6 +228,12 @@ Pump an idiot full of volts
 </td>
     </tr><tr>
     <td>[options.crazyHair]</td><td><code>number</code></td><td><code>true</code></td><td><p>optional spikey hair effect</p>
+</td>
+    </tr><tr>
+    <td>[options.origin]</td><td><code>object</code></td><td></td><td><p>origin details</p>
+</td>
+    </tr><tr>
+    <td>[options.origin.country]</td><td><code>string</code></td><td></td><td><p>the country of origin</p>
 </td>
     </tr><tr>
     <td>[done]</td><td><code>function</code></td><td></td><td><p>callback on slump, which has:</p>
