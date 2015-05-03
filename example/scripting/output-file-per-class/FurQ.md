@@ -57,6 +57,11 @@ override
 
 **Kind**: instance method of <code>[FurQ](#FurQ)</code>  
 **Overrides:** <code>[spit](#Rapper#spit)</code>  
+<a name="Rapper#battle"></a>
+### furQ.battle()
+battle
+
+**Kind**: instance method of <code>[FurQ](#FurQ)</code>  
 <a name="FurQ#punch"></a>
 ### furQ.punch()
 to plant ones fist in a buster's mush
