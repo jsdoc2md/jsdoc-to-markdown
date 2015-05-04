@@ -26,7 +26,7 @@ distinguishing whether example text is, or is not source code.
 function three() {}
 
 /**
-An example with no code, just text
+An example with no code, just text. The fenced code block lang is set to `none` in this case. 
 @example
 ```none
 This example is just plain text. Note that it's formatted as javascript
