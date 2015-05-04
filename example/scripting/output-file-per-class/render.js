@@ -5,13 +5,14 @@ var dmd = require("dmd");
 var util = require("util");
 var path = require("path");
 
+/* paths used by this script */
 var p = {
     src: path.resolve(__dirname, "../../src/*.js"),
     json: path.resolve(__dirname, "./source.json"),
     output: path.resolve(__dirname, "./%s.md")
 }
 
-/* we only need to parse the source code once.. cache it */
+/* we only need to parse the source code once, so cache it */
 jsdoc2md({ src: p.src, json: true })
     .pipe(fs.createWriteStream(p.json))
     .on("close", dataReady);

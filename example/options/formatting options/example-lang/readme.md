@@ -53,52 +53,6 @@
 ```
 
 # with `--example-lang none` set
-## dmd output
-```hbs
-<a name="one"></a>
-### one()
-A simple example written in the default `--example-lang` (javascript)
-
-**Kind**: global function  
-**Example**  
-```
-var result = one();
-```
-<a name="two"></a>
-### two()
-An example written in a different lang to the default (json)
-
-**Kind**: global function  
-**Example**  
-```json
-{
-    "clive": "yeah?"
-}
-```
-<a name="three"></a>
-### three()
-An example with no code, just text
-
-**Kind**: global function  
-**Example**  
-```
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether example text is, or is not source code.
-```
-<a name="four"></a>
-### four()
-An example with no code, just text
-
-**Kind**: global function  
-**Example**  
-```none
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether example text is, or is not source code.
-```
-```
-
 ## rendered
 <a name="one"></a>
 ### one()
