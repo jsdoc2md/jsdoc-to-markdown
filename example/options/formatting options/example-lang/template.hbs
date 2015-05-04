@@ -1,25 +1,22 @@
 {{depthIncrement~}}
 
-# Input source code
+# Source
 ```js
 {{{options.source}}}
 ```
-
-* * * 
 
 # jsdoc-parse output
 ```json
 {{{json-stringify @root null "  "}}}
 ```
 
-* * * 
+# with `--example-lang none` set
+{{optionSet "example-lang" "none" ~}}
 
-# dmd output
-```markdown
+## dmd output
+```hbs
 {{>main}}
 ```
 
-* * * 
-
-# Rendered
+## rendered
 {{>main}}

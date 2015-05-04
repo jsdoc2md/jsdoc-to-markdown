@@ -62,10 +62,10 @@ function Tree(){};
 # dmd output
 ```markdown
 <a name="Tree"></a>
-## Tree
+### Tree
 **Kind**: global class  
 <a name="promiseSomething"></a>
-## promiseSomething() ⇒ <code>Promise</code>
+### promiseSomething() ⇒ <code>Promise</code>
 **Kind**: global function  
 **Fulfil**: <code>[Tree](#Tree)</code>  
 **Reject**: <code>Error</code>  
@@ -75,10 +75,10 @@ function Tree(){};
 
 # Rendered
 <a name="Tree"></a>
-## Tree
+### Tree
 **Kind**: global class  
 <a name="promiseSomething"></a>
-## promiseSomething() ⇒ <code>Promise</code>
+### promiseSomething() ⇒ <code>Promise</code>
 **Kind**: global function  
 **Fulfil**: <code>[Tree](#Tree)</code>  
 **Reject**: <code>Error</code>  

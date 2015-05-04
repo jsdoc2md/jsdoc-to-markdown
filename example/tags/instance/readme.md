@@ -57,15 +57,15 @@ function yeahFactory(yeahValue) {
 # dmd output
 ```markdown
 <a name="SomeObject"></a>
-## SomeObject : <code>object</code>
+### SomeObject : <code>object</code>
 **Kind**: global namespace  
 <a name="SomeObject#yeah"></a>
-### someObject.yeah
+#### someObject.yeah
 yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.
 
 **Kind**: instance property of <code>[SomeObject](#SomeObject)</code>  
 <a name="yeahFactory"></a>
-## yeahFactory()
+### yeahFactory()
 Generates SomeObject instances.
 
 **Kind**: global function  
@@ -75,15 +75,15 @@ Generates SomeObject instances.
 
 # Rendered
 <a name="SomeObject"></a>
-## SomeObject : <code>object</code>
+### SomeObject : <code>object</code>
 **Kind**: global namespace  
 <a name="SomeObject#yeah"></a>
-### someObject.yeah
+#### someObject.yeah
 yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.
 
 **Kind**: instance property of <code>[SomeObject](#SomeObject)</code>  
 <a name="yeahFactory"></a>
-## yeahFactory()
+### yeahFactory()
 Generates SomeObject instances.
 
 **Kind**: global function  

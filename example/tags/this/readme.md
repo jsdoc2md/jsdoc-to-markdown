@@ -53,15 +53,15 @@ function setName(name) {
 # dmd output
 ```markdown
 <a name="Greeter"></a>
-## Greeter
+### Greeter
 **Kind**: global class  
 <a name="Greeter#name"></a>
-### greeter.name
+#### greeter.name
 a great name
 
 **Kind**: instance property of <code>[Greeter](#Greeter)</code>  
 <a name="setName"></a>
-## setName()
+### setName()
 **Kind**: global function  
 **this**: <code>[Greeter](#Greeter)</code>  
 ```
@@ -70,14 +70,14 @@ a great name
 
 # Rendered
 <a name="Greeter"></a>
-## Greeter
+### Greeter
 **Kind**: global class  
 <a name="Greeter#name"></a>
-### greeter.name
+#### greeter.name
 a great name
 
 **Kind**: instance property of <code>[Greeter](#Greeter)</code>  
 <a name="setName"></a>
-## setName()
+### setName()
 **Kind**: global function  
 **this**: <code>[Greeter](#Greeter)</code>  

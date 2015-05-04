@@ -118,14 +118,14 @@ function Synth(){
 # dmd output
 ```markdown
 <a name="Speech"></a>
-## Speech
+### Speech
 Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
 <a name="Speech#say"></a>
-### speech.say(text)
+#### speech.say(text)
 what to say
 
 **Kind**: instance method of <code>[Speech](#Speech)</code>  
@@ -135,7 +135,7 @@ what to say
 | text | <code>string</code> | the text to speak |
 
 <a name="Synth"></a>
-## Synth
+### Synth
 a synth, that also implements speech
 
 **Kind**: global class  
@@ -146,12 +146,12 @@ a synth, that also implements speech
   * [.say(text)](#Synth#say)
 
 <a name="Synth#demo"></a>
-### synth.demo()
+#### synth.demo()
 play a demo piece, Beethoven or something..
 
 **Kind**: instance method of <code>[Synth](#Synth)</code>  
 <a name="Synth#say"></a>
-### synth.say(text)
+#### synth.say(text)
 what to say
 
 **Kind**: instance method of <code>[Synth](#Synth)</code>  
@@ -167,14 +167,14 @@ what to say
 
 # Rendered
 <a name="Speech"></a>
-## Speech
+### Speech
 Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind**: global interface  
 <a name="Speech#say"></a>
-### speech.say(text)
+#### speech.say(text)
 what to say
 
 **Kind**: instance method of <code>[Speech](#Speech)</code>  
@@ -184,7 +184,7 @@ what to say
 | text | <code>string</code> | the text to speak |
 
 <a name="Synth"></a>
-## Synth
+### Synth
 a synth, that also implements speech
 
 **Kind**: global class  
@@ -195,12 +195,12 @@ a synth, that also implements speech
   * [.say(text)](#Synth#say)
 
 <a name="Synth#demo"></a>
-### synth.demo()
+#### synth.demo()
 play a demo piece, Beethoven or something..
 
 **Kind**: instance method of <code>[Synth](#Synth)</code>  
 <a name="Synth#say"></a>
-### synth.say(text)
+#### synth.say(text)
 what to say
 
 **Kind**: instance method of <code>[Synth](#Synth)</code>  

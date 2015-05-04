@@ -1,5 +1,5 @@
 "use strict";
-var render = require("../../render");
+var render = require("../../../render");
 
 var src = __dirname + "/src.js";
 render(
