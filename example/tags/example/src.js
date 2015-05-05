@@ -26,13 +26,10 @@ distinguishing whether the example text is, or is not source code.
 function three() {}
 
 /**
-An example with no code, just text. The fenced code block lang is set to `none` in this case. 
-@example
-```none
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether the example text is, or is not source code.
-```
+Another text example, using the `@lang off` sub-tag..
+@example @lang off
+This example is plain text but it has not been formatted using the default 
+`--example-lang` of javascript because the `@example @lang off` was used..
 */
 function four() {}
 
@@ -70,7 +67,7 @@ function seven() {}
 /**
 An example with text and code, with fenced-code block and `json` lang set
 @example
-Here, i introduce example data for `seven`: 
+this function returns data like:
 
 ```json
 {
@@ -78,4 +75,4 @@ Here, i introduce example data for `seven`:
 }
 ```
 */
-var seven = {};
+function eight() {}

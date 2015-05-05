@@ -7,7 +7,7 @@
     "name": "one",
     "scope": "global",
     "kind": "function",
-    "description": "A simple example written in the default `--example-lang` (javascript)",
+    "description": "A simple example with some code.. it will format using the language specified by `--example-lang`",
     "examples": [
       "var result = one();"
     ],
@@ -19,9 +19,9 @@
     "name": "two",
     "scope": "global",
     "kind": "function",
-    "description": "An example written in a different lang to the default (json)",
+    "description": "An example that already contains a fenced-code block (language `json`)",
     "examples": [
-      "```json\n{\n    \"clive\": \"yeah?\"\n}\n```"
+      "here is the example:\n```json\n{\n    \"clive\": \"yeah?\"\n}\n```"
     ],
     "order": 1
   },
@@ -33,7 +33,7 @@
     "kind": "function",
     "description": "An example with no code, just text",
     "examples": [
-      "This example is just plain text. Note that it's formatted as javascript\nas that's the default `--example-lang` value and dmd has no way of \ndistinguishing whether example text is, or is not source code."
+      "This example is just some plain text, no code format or syntax highlighting required here."
     ],
     "order": 2
   },
@@ -43,32 +43,45 @@
     "name": "four",
     "scope": "global",
     "kind": "function",
-    "description": "An example with no code, just text",
+    "description": "Another text example, using the `@lang off` sub-tag..",
     "examples": [
-      "```none\nThis example is just plain text. Note that it's formatted as javascript\nas that's the default `--example-lang` value and dmd has no way of \ndistinguishing whether example text is, or is not source code.\n```"
+      "@lang off\nThis example is just some plain text, no code format or syntax highlighting required here."
     ],
     "order": 3
+  },
+  {
+    "id": "five",
+    "longname": "five",
+    "name": "five",
+    "scope": "global",
+    "kind": "function",
+    "description": "A simple example using the '@lang sub-tag to specify language",
+    "examples": [
+      "@lang hbs\nhello {{name}}, welcome to {{country}}."
+    ],
+    "order": 4
   }
 ]
 ```
 
-# with `--example-lang none` set
+# with `--example-lang js` set
 ## rendered
 <a name="one"></a>
 ### one()
-A simple example written in the default `--example-lang` (javascript)
+A simple example with some code.. it will format using the language specified by `--example-lang`
 
 **Kind**: global function  
 **Example**  
-```
+```js
 var result = one();
 ```
 <a name="two"></a>
 ### two()
-An example written in a different lang to the default (json)
+An example that already contains a fenced-code block (language `json`)
 
 **Kind**: global function  
 **Example**  
+here is the example:
 ```json
 {
     "clive": "yeah?"
@@ -80,19 +93,71 @@ An example with no code, just text
 
 **Kind**: global function  
 **Example**  
-```
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether example text is, or is not source code.
+```js
+This example is just some plain text, no code format or syntax highlighting required here.
 ```
 <a name="four"></a>
 ### four()
+Another text example, using the `@lang off` sub-tag..
+
+**Kind**: global function  
+**Example**  
+This example is just some plain text, no code format or syntax highlighting required here.
+<a name="five"></a>
+### five()
+A simple example using the '@lang sub-tag to specify language
+
+**Kind**: global function  
+**Example**  
+```hbs
+hello {{name}}, welcome to {{country}}.
+```
+
+# with `--example-lang none` set
+## rendered
+<a name="one"></a>
+### one()
+A simple example with some code.. it will format using the language specified by `--example-lang`
+
+**Kind**: global function  
+**Example**  
+```none
+var result = one();
+```
+<a name="two"></a>
+### two()
+An example that already contains a fenced-code block (language `json`)
+
+**Kind**: global function  
+**Example**  
+here is the example:
+```json
+{
+    "clive": "yeah?"
+}
+```
+<a name="three"></a>
+### three()
 An example with no code, just text
 
 **Kind**: global function  
 **Example**  
 ```none
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether example text is, or is not source code.
+This example is just some plain text, no code format or syntax highlighting required here.
+```
+<a name="four"></a>
+### four()
+Another text example, using the `@lang off` sub-tag..
+
+**Kind**: global function  
+**Example**  
+This example is just some plain text, no code format or syntax highlighting required here.
+<a name="five"></a>
+### five()
+A simple example using the '@lang sub-tag to specify language
+
+**Kind**: global function  
+**Example**  
+```hbs
+hello {{name}}, welcome to {{country}}.
 ```

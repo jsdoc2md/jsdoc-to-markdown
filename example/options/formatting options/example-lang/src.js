@@ -1,13 +1,14 @@
 /**
-A simple example written in the default `--example-lang` (javascript)
+A simple example with some code.. it will format using the language specified by `--example-lang`
 @example
 var result = one();
 */
 function one() {}
 
 /**
-An example written in a different lang to the default (json)
+An example that already contains a fenced-code block (language `json`)
 @example
+here is the example:
 ```json
 {
     "clive": "yeah?"
@@ -19,19 +20,20 @@ function two() {}
 /**
 An example with no code, just text
 @example
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether example text is, or is not source code.
+This example is just some plain text, no code format or syntax highlighting required here.
 */
 function three() {}
 
 /**
-An example with no code, just text
-@example
-```none
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether example text is, or is not source code.
-```
+Another text example, using the `@lang off` sub-tag..
+@example @lang off
+This example is just some plain text, no code format or syntax highlighting required here.
 */
 function four() {}
+
+/**
+A simple example using the '@lang sub-tag to specify language
+@example @lang hbs
+hello {{name}}, welcome to {{country}}.
+*/
+function five() {}

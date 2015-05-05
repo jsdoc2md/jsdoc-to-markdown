@@ -196,8 +196,7 @@ Transforms jsdoc into markdown documentation.
 
 **Kind**: Exported function  
 **Params**
-
-- [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options  
+- [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options
 
 **Example**  
 Two ways to use `jsdoc2md`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -266,7 +265,7 @@ The initial heading depth. For example, with a value of `2` the top-level markdo
 **Default**: <code>2</code>  
 <a name="module_dmd--dmd..DmdOptions#example-lang"></a>
 #### dmdOptions.example-lang : <code>string</code>
-The default language to use when [syntax highlighting fenced-code blocks](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) in `@example` tags.
+Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;js&quot;</code>  

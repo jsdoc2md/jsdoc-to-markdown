@@ -4,18 +4,6 @@
 ```json
 [
   {
-    "id": "seven",
-    "longname": "seven",
-    "name": "seven",
-    "scope": "global",
-    "kind": "member",
-    "description": "An example with text and code, with fenced-code block and `json` lang set",
-    "examples": [
-      "Here, i introduce example data for `seven`: \n\n```json\n{\n    \"yeah\": \"gets?\"\n}\n```"
-    ],
-    "order": 7
-  },
-  {
     "id": "one",
     "longname": "one",
     "name": "one",
@@ -57,9 +45,9 @@
     "name": "four",
     "scope": "global",
     "kind": "function",
-    "description": "An example with no code, just text. The fenced code block lang is set to `none` in this case.",
+    "description": "Another text example, using the `@lang off` sub-tag..",
     "examples": [
-      "```none\nThis example is just plain text. Note that it's formatted as javascript\nas that's the default `--example-lang` value and dmd has no way of \ndistinguishing whether the example text is, or is not source code.\n```"
+      "@lang off\nThis example is plain text but it has not been formatted using the default \n`--example-lang` of javascript because the `@example @lang off` was used.."
     ],
     "order": 3
   },
@@ -98,6 +86,18 @@
       "Here, i introduce the example: \n\n```js\nvar result = seven();\n```"
     ],
     "order": 6
+  },
+  {
+    "id": "eight",
+    "longname": "eight",
+    "name": "eight",
+    "scope": "global",
+    "kind": "function",
+    "description": "An example with text and code, with fenced-code block and `json` lang set",
+    "examples": [
+      "this function returns data like:\n\n```json\n{\n    \"yeah\": \"gets?\"\n}\n```"
+    ],
+    "order": 7
   }
 ]
 ```
@@ -105,19 +105,6 @@
 * * * 
 
 # Rendered
-<a name="seven"></a>
-## seven
-An example with text and code, with fenced-code block and `json` lang set
-
-**Kind**: global variable  
-**Example**  
-Here, i introduce example data for `seven`: 
-
-```json
-{
-    "yeah": "gets?"
-}
-```
 <a name="one"></a>
 ## one()
 A simple example written in the default `--example-lang` (javascript)
@@ -151,15 +138,12 @@ distinguishing whether the example text is, or is not source code.
 ```
 <a name="four"></a>
 ## four()
-An example with no code, just text. The fenced code block lang is set to `none` in this case.
+Another text example, using the `@lang off` sub-tag..
 
 **Kind**: global function  
 **Example**  
-```none
-This example is just plain text. Note that it's formatted as javascript
-as that's the default `--example-lang` value and dmd has no way of 
-distinguishing whether the example text is, or is not source code.
-```
+This example is plain text but it has not been formatted using the default 
+`--example-lang` of javascript because the `@example @lang off` was used..
 <a name="five"></a>
 ## five()
 An example with text and code, with no fenced-code blocks
@@ -192,4 +176,17 @@ Here, i introduce the example:
 
 ```js
 var result = seven();
+```
+<a name="eight"></a>
+## eight()
+An example with text and code, with fenced-code block and `json` lang set
+
+**Kind**: global function  
+**Example**  
+this function returns data like:
+
+```json
+{
+    "yeah": "gets?"
+}
 ```
