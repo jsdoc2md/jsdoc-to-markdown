@@ -92,6 +92,7 @@ You can see an example of how each [jsdoc tag](http://usejsdoc.org) looks when r
 To get an idea of the affects the various options have: 
 
 - [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options)
+  - [example-lang](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options/example-lang)
   - [module-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/module-index-format)
   - [global-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options/global-index-format)
   - [member-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/member-index-format)

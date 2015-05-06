@@ -32,7 +32,7 @@ This example is just some plain text, no code format or syntax highlighting requ
 function four() {}
 
 /**
-A simple example using the '@lang sub-tag to specify language
+A simple example using `@example @lang hbs` to specify handlebars as the language
 @example @lang hbs
 hello {{name}}, welcome to {{country}}.
 */

@@ -1,3 +1,5 @@
+***note:*** I can't show the source code and dmd output in this example, because nested fenced-code blocks [do not render correctly](https://github.com/vmg/redcarpet/issues/208).. 
+
 # jsdoc-parse output
 ```json
 [
@@ -55,7 +57,7 @@
     "name": "five",
     "scope": "global",
     "kind": "function",
-    "description": "A simple example using the '@lang sub-tag to specify language",
+    "description": "A simple example using `@example @lang hbs` to specify handlebars as the language",
     "examples": [
       "@lang hbs\nhello {{name}}, welcome to {{country}}."
     ],
@@ -105,7 +107,7 @@ Another text example, using the `@lang off` sub-tag..
 This example is just some plain text, no code format or syntax highlighting required here.
 <a name="five"></a>
 ### five()
-A simple example using the '@lang sub-tag to specify language
+A simple example using `@example @lang hbs` to specify handlebars as the language
 
 **Kind**: global function  
 **Example**  
@@ -154,7 +156,7 @@ Another text example, using the `@lang off` sub-tag..
 This example is just some plain text, no code format or syntax highlighting required here.
 <a name="five"></a>
 ### five()
-A simple example using the '@lang sub-tag to specify language
+A simple example using `@example @lang hbs` to specify handlebars as the language
 
 **Kind**: global function  
 **Example**  
