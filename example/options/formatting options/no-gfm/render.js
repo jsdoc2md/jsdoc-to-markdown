@@ -20,3 +20,15 @@ render(
     },
     __dirname + "/properties.md"
 );
+
+src = __dirname + "/../../../src/class-animal.js";
+render(
+    { 
+        src: src,
+        template: __dirname + "/separator.hbs",
+        "global-index-format": "none",
+        "separators": true,
+        source: src
+    },
+    __dirname + "/separator.md"
+);

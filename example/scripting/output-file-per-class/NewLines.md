@@ -3,7 +3,7 @@
 A multi-line
 class description
 
-**Kind**: global class  
+**Kind:** global class  
 
 * [NewLines](#NewLines)
   * [.numbers](#NewLines#numbers)
@@ -11,7 +11,7 @@ class description
 
 <a name="NewLines#numbers"></a>
 ### newLines.numbers
-**Kind**: instance property of <code>[NewLines](#NewLines)</code>  
+**Kind:** instance property of <code>[NewLines](#NewLines)</code>  
 **Properties**
 
 | Name | Type | Description |
@@ -20,7 +20,7 @@ class description
 
 <a name="NewLines#method"></a>
 ### newLines.method(input) ⇒ <code>number</code>
-**Kind**: instance method of <code>[NewLines](#NewLines)</code>  
+**Kind:** instance method of <code>[NewLines](#NewLines)</code>  
 **Returns**: <code>number</code> - the returns
     description also 
     has newlines  

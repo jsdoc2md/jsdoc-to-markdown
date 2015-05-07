@@ -2,7 +2,7 @@
 ## FurQ ⇐ <code>[Rapper](#Rapper)</code>
 C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect people.
 
-**Kind**: global class  
+**Kind:** global class  
 **Extends:** <code>[Rapper](#Rapper)</code>  
 **Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
 **Access:** public  
@@ -40,7 +40,7 @@ var uziLover = require("FurQ");
 ```
 <a name="FurQ#wannaTryIt"></a>
 ### furQ.wannaTryIt : <code>string</code>
-**Kind**: instance property of <code>[FurQ](#FurQ)</code>  
+**Kind:** instance property of <code>[FurQ](#FurQ)</code>  
 **Default**: <code>&quot;bitch&quot;</code>  
 **See**
 
@@ -49,29 +49,29 @@ var uziLover = require("FurQ");
 
 <a name="FurQ#LOVE"></a>
 ### furQ.LOVE : <code>string</code>
-**Kind**: instance constant of <code>[FurQ](#FurQ)</code>  
+**Kind:** instance constant of <code>[FurQ](#FurQ)</code>  
 **Default**: <code>&quot;UZI&quot;</code>  
 <a name="FurQ#spit"></a>
 ### furQ.spit()
 override
 
-**Kind**: instance method of <code>[FurQ](#FurQ)</code>  
+**Kind:** instance method of <code>[FurQ](#FurQ)</code>  
 **Overrides:** <code>[spit](#Rapper#spit)</code>  
 <a name="Rapper#battle"></a>
 ### furQ.battle()
 battle
 
-**Kind**: instance method of <code>[FurQ](#FurQ)</code>  
+**Kind:** instance method of <code>[FurQ](#FurQ)</code>  
 <a name="FurQ#punch"></a>
 ### furQ.punch()
 to plant ones fist in a buster's mush
 
-**Kind**: instance method of <code>[FurQ](#FurQ)</code>  
+**Kind:** instance method of <code>[FurQ](#FurQ)</code>  
 <a name="FurQ#event_pop"></a>
 ### "pop" (zoop)
 fire weapon
 
-**Kind**: event emitted by <code>[FurQ](#FurQ)</code>  
+**Kind:** event emitted by <code>[FurQ](#FurQ)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -81,12 +81,12 @@ fire weapon
 ### "slap"
 slap man
 
-**Kind**: event emitted by <code>[FurQ](#FurQ)</code>  
+**Kind:** event emitted by <code>[FurQ](#FurQ)</code>  
 <a name="FurQ#kill"></a>
 ### furQ.kill()
 kill
 
-**Kind**: instance method of <code>[FurQ](#FurQ)</code>  
+**Kind:** instance method of <code>[FurQ](#FurQ)</code>  
 **Category**: standard  
 **Example**  
 ```js
@@ -101,7 +101,7 @@ uziLover.kill();
 ### furQ.respect(done)
 respect
 
-**Kind**: instance method of <code>[FurQ](#FurQ)</code>  
+**Kind:** instance method of <code>[FurQ](#FurQ)</code>  
 **Category**: standard  
 
 | Param | Type | Description |
@@ -118,7 +118,7 @@ uziLover.respect(function(err, gain){
 ### FurQ.enemy : <code>enum</code>
 FUR-Q enemy types
 
-**Kind**: static enum property of <code>[FurQ](#FurQ)</code>  
+**Kind:** static enum property of <code>[FurQ](#FurQ)</code>  
 **Read only**: true  
 **Properties**
 
@@ -134,7 +134,7 @@ FUR-Q enemy types
 
 check if at peace
 
-**Kind**: static method of <code>[FurQ](#FurQ)</code>  
+**Kind:** static method of <code>[FurQ](#FurQ)</code>  
 **Example**  
 ```js
 var peace = FurQ.peace();
@@ -143,7 +143,7 @@ var peace = FurQ.peace();
 ### FurQ~onRespect : <code>function</code>
 Passed to [respect](#FurQ#respect)
 
-**Kind**: inner typedef of <code>[FurQ](#FurQ)</code>  
+**Kind:** inner typedef of <code>[FurQ](#FurQ)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |

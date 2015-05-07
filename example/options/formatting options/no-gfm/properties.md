@@ -59,7 +59,7 @@ var eType = {
 ```hbs
 <a name="eType"></a>
 ### eType
-**Kind**: global enum  
+**Kind:** global enum  
 **Properties**
 
 | Name | Default | Description |
@@ -73,7 +73,7 @@ var eType = {
 ## rendered
 <a name="eType"></a>
 ### eType
-**Kind**: global enum  
+**Kind:** global enum  
 **Properties**
 
 | Name | Default | Description |
@@ -89,7 +89,7 @@ var eType = {
 ```hbs
 <a name="eType"></a>
 ### eType
-**Kind**: global enum  
+**Kind:** global enum  
 **Properties**
 
 <table>
@@ -112,7 +112,7 @@ var eType = {
 ## rendered
 <a name="eType"></a>
 ### eType
-**Kind**: global enum  
+**Kind:** global enum  
 **Properties**
 
 <table>

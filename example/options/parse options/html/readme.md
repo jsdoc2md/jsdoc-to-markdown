@@ -54,17 +54,17 @@
 ## headVar : <code>number</code>
 something in the head
 
-**Kind**: global variable  
+**Kind:** global variable  
 <a name="bodyGlobal"></a>
 ## bodyGlobal
 body global
 
-**Kind**: global variable  
+**Kind:** global variable  
 <a name="headObj"></a>
 ## headObj : <code>object</code>
 a head obj
 
-**Kind**: global namespace  
+**Kind:** global namespace  
 **Properties**
 
 | Name | Type |
@@ -94,17 +94,17 @@ a head obj
 ## headVar : <code>number</code>
 something in the head
 
-**Kind**: global variable  
+**Kind:** global variable  
 <a name="bodyGlobal"></a>
 ## bodyGlobal
 body global
 
-**Kind**: global variable  
+**Kind:** global variable  
 <a name="headObj"></a>
 ## headObj : <code>object</code>
 a head obj
 
-**Kind**: global namespace  
+**Kind:** global namespace  
 **Properties**
 
 | Name | Type |

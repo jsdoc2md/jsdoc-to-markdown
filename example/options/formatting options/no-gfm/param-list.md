@@ -117,7 +117,7 @@ function taze(victim, options, done){}
 
 Pump an idiot full of volts
 
-**Kind**: global function  
+**Kind:** global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -139,7 +139,7 @@ Pump an idiot full of volts
 
 Pump an idiot full of volts
 
-**Kind**: global function  
+**Kind:** global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -163,7 +163,7 @@ Pump an idiot full of volts
 
 Pump an idiot full of volts
 
-**Kind**: global function  
+**Kind:** global function  
 <table>
   <thead>
     <tr>
@@ -209,7 +209,7 @@ Pump an idiot full of volts
 
 Pump an idiot full of volts
 
-**Kind**: global function  
+**Kind:** global function  
 <table>
   <thead>
     <tr>

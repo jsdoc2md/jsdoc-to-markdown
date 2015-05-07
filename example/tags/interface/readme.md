@@ -65,12 +65,12 @@ Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
-**Kind**: global interface  
+**Kind:** global interface  
 <a name="Speech#say"></a>
 #### speech.say(text)
 what to say
 
-**Kind**: instance method of <code>[Speech](#Speech)</code>  
+**Kind:** instance method of <code>[Speech](#Speech)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -87,12 +87,12 @@ Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
-**Kind**: global interface  
+**Kind:** global interface  
 <a name="Speech#say"></a>
 #### speech.say(text)
 what to say
 
-**Kind**: instance method of <code>[Speech](#Speech)</code>  
+**Kind:** instance method of <code>[Speech](#Speech)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |

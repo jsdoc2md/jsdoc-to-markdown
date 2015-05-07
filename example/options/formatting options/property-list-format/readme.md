@@ -3,7 +3,7 @@
 ### personality : <code>object</code>
 A personality object, documented using the more concise `@property` notation.
 
-**Kind**: global namespace  
+**Kind:** global namespace  
 **Properties**
 
 - openness <code>object</code> - openness  
@@ -17,7 +17,7 @@ A personality object, documented using the more concise `@property` notation.
 ### FurQ.enemy : <code>enum</code>
 FUR-Q enemy types
 
-**Kind**: static enum property of <code>[FurQ](#FurQ)</code>  
+**Kind:** static enum property of <code>[FurQ](#FurQ)</code>  
 **Read only**: true  
 **Properties**
 
@@ -34,7 +34,7 @@ FUR-Q enemy types
 ### personality : <code>object</code>
 A personality object, documented using the more concise `@property` notation.
 
-**Kind**: global namespace  
+**Kind:** global namespace  
 **Properties**
 
 | Name | Type | Description |
@@ -50,7 +50,7 @@ A personality object, documented using the more concise `@property` notation.
 ### FurQ.enemy : <code>enum</code>
 FUR-Q enemy types
 
-**Kind**: static enum property of <code>[FurQ](#FurQ)</code>  
+**Kind:** static enum property of <code>[FurQ](#FurQ)</code>  
 **Read only**: true  
 **Properties**
 

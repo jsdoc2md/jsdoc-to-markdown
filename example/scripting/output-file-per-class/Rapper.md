@@ -1,6 +1,6 @@
 <a name="Rapper"></a>
 ## Rapper
-**Kind**: global class  
+**Kind:** global class  
 
 * [Rapper](#Rapper)
   * _instance_
@@ -16,17 +16,17 @@
 ### rapper.spit()
 spit
 
-**Kind**: instance method of <code>[Rapper](#Rapper)</code>  
+**Kind:** instance method of <code>[Rapper](#Rapper)</code>  
 <a name="Rapper#battle"></a>
 ### rapper.battle()
 battle
 
-**Kind**: instance method of <code>[Rapper](#Rapper)</code>  
+**Kind:** instance method of <code>[Rapper](#Rapper)</code>  
 <a name="Rapper.train"></a>
 ### Rapper.train()
 train new rappers
 
-**Kind**: static method of <code>[Rapper](#Rapper)</code>  
+**Kind:** static method of <code>[Rapper](#Rapper)</code>  
 
   * [.train()](#Rapper.train)
     * [~School](#Rapper.train..School)
@@ -35,7 +35,7 @@ train new rappers
 
 <a name="Rapper.train..School"></a>
 #### train~School
-**Kind**: inner class of <code>[train](#Rapper.train)</code>  
+**Kind:** inner class of <code>[train](#Rapper.train)</code>  
 
 * [~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
@@ -49,4 +49,4 @@ rap school
 ##### school.bestStudent
 best student
 
-**Kind**: instance property of <code>[School](#Rapper.train..School)</code>  
+**Kind:** instance property of <code>[School](#Rapper.train..School)</code>  
