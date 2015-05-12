@@ -21,7 +21,7 @@ class description
 <a name="NewLines#method"></a>
 ### newLines.method(input) ⇒ <code>number</code>
 **Kind:** instance method of <code>[NewLines](#NewLines)</code>  
-**Returns**: <code>number</code> - the returns
+**Returns:** <code>number</code> - the returns
     description also 
     has newlines  
 

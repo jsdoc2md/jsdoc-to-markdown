@@ -32,3 +32,14 @@ render(
     },
     __dirname + "/separator.md"
 );
+
+src = __dirname + "/../../../tags/todo and done/src.js";
+render(
+    { 
+        src: src,
+        template: __dirname + "/todo-and-done.hbs",
+        "global-index-format": "none",
+        source: src
+    },
+    __dirname + "/todo-and-done.md"
+);

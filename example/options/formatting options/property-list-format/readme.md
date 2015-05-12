@@ -18,7 +18,7 @@ A personality object, documented using the more concise `@property` notation.
 FUR-Q enemy types
 
 **Kind:** static enum property of <code>[FurQ](#FurQ)</code>  
-**Read only**: true  
+**Read only:** true  
 **Properties**
 
 - COCK <code>number</code> - an awful individual  
@@ -51,7 +51,7 @@ A personality object, documented using the more concise `@property` notation.
 FUR-Q enemy types
 
 **Kind:** static enum property of <code>[FurQ](#FurQ)</code>  
-**Read only**: true  
+**Read only:** true  
 **Properties**
 
 | Name | Type | Default | Description |

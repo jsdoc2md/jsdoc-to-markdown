@@ -63,7 +63,7 @@ a great name
 <a name="setName"></a>
 ### setName()
 **Kind:** global function  
-**this**: <code>[Greeter](#Greeter)</code>  
+**This:** <code>[Greeter](#Greeter)</code>  
 ```
 
 * * * 
@@ -80,4 +80,4 @@ a great name
 <a name="setName"></a>
 ### setName()
 **Kind:** global function  
-**this**: <code>[Greeter](#Greeter)</code>  
+**This:** <code>[Greeter](#Greeter)</code>  

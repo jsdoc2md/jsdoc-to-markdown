@@ -27,11 +27,19 @@
   ],
   "dependencies": {
     "command-line-args": "~0.5.0",
+    "config-master": "^1.0.0",
     "console-dope": "~0.3.3",
     "dmd": "^1",
-    "jsdoc-parse": "^1"
+    "home-path": "^0.1.1",
+    "jsdoc-parse": "^1",
+    "object-tools": "^1.2.3"
   },
   "devDependencies": {
     "tape": "^4"
+  },
+  "jsdoc2md": {
+      "locale": {
+          "separator-gfmx": "--"
+      }
   }
 }

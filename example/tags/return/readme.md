@@ -65,7 +65,7 @@ function returnsWithDesc(){}
 <a name="returnsWithDesc"></a>
 ### returnsWithDesc() ⇒ <code>string</code>
 **Kind:** global function  
-**Returns**: <code>string</code> - returns a string  
+**Returns:** <code>string</code> - returns a string  
 ```
 
 * * * 
@@ -77,4 +77,4 @@ function returnsWithDesc(){}
 <a name="returnsWithDesc"></a>
 ### returnsWithDesc() ⇒ <code>string</code>
 **Kind:** global function  
-**Returns**: <code>string</code> - returns a string  
+**Returns:** <code>string</code> - returns a string  

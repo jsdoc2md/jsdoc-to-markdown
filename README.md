@@ -52,7 +52,7 @@ $ jsdoc-parse example/function.js | dmd
 - Use any arbitrary tag, e.g. `@fulfil`, `@reject`, `@hatredlevel` etc.
 
 ## Example output
-Some example output creating using `jsdoc2md`.
+Some example output creating using `jsdoc2md`. 
 
 ### Generated README files
 These projects insert jsdoc2md output into a readme template. 
@@ -117,6 +117,10 @@ The default jsdoc2md output might not always suit you. You can supply your using
 - Cherry-pick which documentation appears in the output using [selector helpers](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers).
   - [{{#module}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers/module)
   - [{{#class}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers/class)
+  
+### Exemplary APIs
+See [the wiki](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki/Exemplary-APIs) for more great API examples. Feel free to add your own!
+
 
 ## Install and use
 First, document your source code using [correct jsdoc syntax](http://usejsdoc.org) then run it through jsdoc-to-markdown using one of the following methods (all tested on Mac OSX, Linux, Windows 8.1 and Windows XP):
@@ -184,7 +188,7 @@ Issue reports and patches are encouraged. And the project would benefit from an 
 Essentially, jsdoc2d connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
 
 ## API Reference
-**Example**  
+**Example:**  
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
@@ -192,11 +196,11 @@ var jsdoc2md = require("jsdoc-to-markdown");
 ### jsdoc2md([options]) ⇒ <code>[TransformStream](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code> ⏏
 Transforms jsdoc into markdown documentation.
 
-**Kind**: Exported function  
+**Kind:** Exported function  
 **Params**
 - [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options
 
-**Example**  
+**Example:**  
 Two ways to use `jsdoc2md`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
 > jsdoc2md({ src: "lib/*.js" }).pipe(process.stdout);
@@ -229,14 +233,15 @@ All dmd options and their defaults
   * [.property-list-format](#module_dmd--dmd..DmdOptions#property-list-format) : <code>string</code>
   * [.member-index-format](#module_dmd--dmd..DmdOptions#member-index-format) : <code>string</code>
   * [.group-by](#module_dmd--dmd..DmdOptions#group-by) : <code>array</code>
+  * [.locale](#module_dmd--dmd..DmdOptions#locale) : <code>object</code>
 
 <a name="module_dmd--dmd..DmdOptions#template"></a>
 #### dmdOptions.template : <code>string</code>
 The template the supplied documentation will be rendered into. Use the default or supply your own template for full control over the output.
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>&quot;{{&gt;main}}&quot;</code>  
-**Example**  
+**Default:** <code>&quot;{{&gt;main}}&quot;</code>  
+**Example:**  
 ```js
 var fs = require("fs");
 var dmd = require("../");
@@ -260,13 +265,13 @@ $ dmd --template template.hbs --src my-class.json
 The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`.
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>2</code>  
+**Default:** <code>2</code>  
 <a name="module_dmd--dmd..DmdOptions#example-lang"></a>
 #### dmdOptions.example-lang : <code>string</code>
 Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example.
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>&quot;js&quot;</code>  
+**Default:** <code>&quot;js&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions#plugin"></a>
 #### dmdOptions.plugin : <code>array</code>
 Use an installed package containing helper and/or partial overrides
@@ -297,43 +302,49 @@ By default, dmd generates github-flavoured markdown. Not all markdown parsers re
 Put `<hr>` breaks between identifiers. Improves readability on bulky docs.
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>false</code>  
+**Default:** <code>false</code>  
 <a name="module_dmd--dmd..DmdOptions#module-index-format"></a>
 #### dmdOptions.module-index-format : <code>string</code>
 none, grouped, table, dl
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>&quot;dl&quot;</code>  
+**Default:** <code>&quot;dl&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions#global-index-format"></a>
 #### dmdOptions.global-index-format : <code>string</code>
 none, grouped, table, dl
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>&quot;dl&quot;</code>  
+**Default:** <code>&quot;dl&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions#param-list-format"></a>
 #### dmdOptions.param-list-format : <code>string</code>
 Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed.
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>&quot;table&quot;</code>  
+**Default:** <code>&quot;table&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions#property-list-format"></a>
 #### dmdOptions.property-list-format : <code>string</code>
 list, table
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>&quot;table&quot;</code>  
+**Default:** <code>&quot;table&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions#member-index-format"></a>
 #### dmdOptions.member-index-format : <code>string</code>
 grouped, list
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>&quot;grouped&quot;</code>  
+**Default:** <code>&quot;grouped&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions#group-by"></a>
 #### dmdOptions.group-by : <code>array</code>
 a list of fields to group member indexes by
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>[&quot;scope&quot;,&quot;category&quot;]</code>  
+**Default:** <code>[&quot;scope&quot;,&quot;category&quot;]</code>  
+<a name="module_dmd--dmd..DmdOptions#locale"></a>
+#### dmdOptions.locale : <code>object</code>
+Overrides the default locale
+
+**Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
+**Default:** <code></code>  
 
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions"></a>
 ### jsdocParse~ParseOptions
@@ -353,7 +364,7 @@ All options for jsdoc-parse, including defaults
 The source files to parse. If this option is not set jsdoc-parse will wait for input to be streamed in.
 
 **Kind:** instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
-**Example**  
+**Example:**  
 ```js
 var parse = require("jsdoc-parse");
 var fs = require("fs");
@@ -369,7 +380,7 @@ fs.createReadStream("example.js").parse().pipe(process.stdout);
 Include identifier documentation marked as `@private` in the output
 
 **Kind:** instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
-**Default**: <code>false</code>  
+**Default:** <code>false</code>  
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions#stats"></a>
 #### parseOptions.stats : <code>boolean</code>
 Print a few stats about the doclets parsed
@@ -380,13 +391,13 @@ Print a few stats about the doclets parsed
 Enable experimental parsing of .html files.
 
 **Kind:** instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
-**Default**: <code>false</code>  
+**Default:** <code>false</code>  
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions#sort-by"></a>
 #### parseOptions.sort-by : <code>array</code>
 Sort by one of more fields, e.g. `--sort-by kind category`.
 
 **Kind:** instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
-**Default**: <code>[&quot;scope&quot;,&quot;category&quot;,&quot;kind&quot;,&quot;order&quot;]</code>  
+**Default:** <code>[&quot;scope&quot;,&quot;category&quot;,&quot;kind&quot;,&quot;order&quot;]</code>  
 
 * * *
 

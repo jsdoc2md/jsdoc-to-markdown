@@ -113,7 +113,7 @@ function taze(victim, options, done){}
 ```hbs
 <a name="taze"></a>
 ### ~~taze(victim, [options], [done])~~
-***Deprecated***
+***Deprecated:***
 
 Pump an idiot full of volts
 
@@ -135,7 +135,7 @@ Pump an idiot full of volts
 ## rendered
 <a name="taze"></a>
 ### ~~taze(victim, [options], [done])~~
-***Deprecated***
+***Deprecated:***
 
 Pump an idiot full of volts
 
@@ -159,7 +159,7 @@ Pump an idiot full of volts
 ```hbs
 <a name="taze"></a>
 ### <del>taze(victim, [options], [done])</del>
-***Deprecated***
+***Deprecated:***
 
 Pump an idiot full of volts
 
@@ -205,7 +205,7 @@ Pump an idiot full of volts
 ## rendered
 <a name="taze"></a>
 ### <del>taze(victim, [options], [done])</del>
-***Deprecated***
+***Deprecated:***
 
 Pump an idiot full of volts
 

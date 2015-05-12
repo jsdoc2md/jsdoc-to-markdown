@@ -4,10 +4,10 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 
 **Kind:** global class  
 **Extends:** <code>[Rapper](#Rapper)</code>  
-**Emits**: <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
+**Emits:** <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
 **Access:** public  
-**See**: https://www.youtube.com/watch?v=1sxZ4tsp8gc  
-**Author:** Chris Morris  
+**See:** https://www.youtube.com/watch?v=1sxZ4tsp8gc  
+**Access:** Chris Morris  
 
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
@@ -34,14 +34,14 @@ She's an Uzi lover.
 
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
-**Example**  
+**Example:**  
 ```js
 var uziLover = require("FurQ");
 ```
 <a name="FurQ#wannaTryIt"></a>
 ### furQ.wannaTryIt : <code>string</code>
 **Kind:** instance property of <code>[FurQ](#FurQ)</code>  
-**Default**: <code>&quot;bitch&quot;</code>  
+**Default:** <code>&quot;bitch&quot;</code>  
 **See**
 
 - "Uzi like a metal dick in my hand."
@@ -50,7 +50,7 @@ var uziLover = require("FurQ");
 <a name="FurQ#LOVE"></a>
 ### furQ.LOVE : <code>string</code>
 **Kind:** instance constant of <code>[FurQ](#FurQ)</code>  
-**Default**: <code>&quot;UZI&quot;</code>  
+**Default:** <code>&quot;UZI&quot;</code>  
 <a name="FurQ#spit"></a>
 ### furQ.spit()
 override
@@ -87,13 +87,13 @@ slap man
 kill
 
 **Kind:** instance method of <code>[FurQ](#FurQ)</code>  
-**Category**: standard  
-**Example**  
+**Category:** standard  
+**Example:**  
 ```js
 var kill = uziLover.kill();
     
 ```
-**Example**  
+**Example:**  
 ```js
 uziLover.kill();
 ```
@@ -102,13 +102,13 @@ uziLover.kill();
 respect
 
 **Kind:** instance method of <code>[FurQ](#FurQ)</code>  
-**Category**: standard  
+**Category:** standard  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
 
-**Example**  
+**Example:**  
 ```js
 uziLover.respect(function(err, gain){
     console.log(gain);
@@ -119,7 +119,7 @@ uziLover.respect(function(err, gain){
 FUR-Q enemy types
 
 **Kind:** static enum property of <code>[FurQ](#FurQ)</code>  
-**Read only**: true  
+**Read only:** true  
 **Properties**
 
 | Name | Type | Default | Description |
@@ -130,12 +130,12 @@ FUR-Q enemy types
 
 <a name="FurQ.peace"></a>
 ### ~~FurQ.peace()~~
-***Deprecated***
+***Deprecated:***
 
 check if at peace
 
 **Kind:** static method of <code>[FurQ](#FurQ)</code>  
-**Example**  
+**Example:**  
 ```js
 var peace = FurQ.peace();
 ```

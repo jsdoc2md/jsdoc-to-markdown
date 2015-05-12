@@ -28,7 +28,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | in the | module |
 | description | |
 
-**Example**  
+**Example:**  
 ```js
 var animal = require("animal");
 ```
@@ -67,7 +67,7 @@ var animal = require("animal");
 the current age
 
 **Kind:** instance property of <code>[Animal](#module_animal..Animal)</code>  
-**Default**: <code>0</code>  
+**Default:** <code>0</code>  
 <a name="module_animal..Animal#species"></a>
 #### animal.species : <code>Species</code>
 **Kind:** instance property of <code>[Animal](#module_animal..Animal)</code>  
@@ -107,7 +107,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | in the | module |
 | description | |
 
-**Example**  
+**Example:**  
 ```js
 var animal = require("animal");
 ```

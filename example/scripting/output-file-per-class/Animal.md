@@ -7,7 +7,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - description
 
 **Kind:** global class  
-**Summary**: It&#x27;s an animal, yeah?  
+**Summary:** It&#x27;s an animal, yeah?  
 
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
@@ -30,7 +30,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 the current age
 
 **Kind:** instance property of <code>[Animal](#Animal)</code>  
-**Default**: <code>0</code>  
+**Default:** <code>0</code>  
 <a name="Animal#species"></a>
 ### animal.species : <code>[Species](#Species)</code>
 **Kind:** instance property of <code>[Animal](#Animal)</code>  
