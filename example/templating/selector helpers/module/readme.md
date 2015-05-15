@@ -28,7 +28,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | in the | module |
 | description | |
 
-**Example:**  
+**Example**  
 ```js
 var animal = require("animal");
 ```
@@ -37,8 +37,8 @@ var animal = require("animal");
   * [~Animal](#module_animal..Animal)
     * [new Animal(species, parents)](#new_module_animal..Animal_new)
     * _instance_
-      * [.age](#module_animal..Animal#age) : <code>number</code>
-      * [.species](#module_animal..Animal#species) : <code>Species</code>
+      * [.age](#module_animal..Animal+age) : <code>number</code>
+      * [.species](#module_animal..Animal+species) : <code>Species</code>
     * _static_
       * [.eMood](#module_animal..Animal.eMood)
 
@@ -49,8 +49,8 @@ var animal = require("animal");
 * [~Animal](#module_animal..Animal)
   * [new Animal(species, parents)](#new_module_animal..Animal_new)
   * _instance_
-    * [.age](#module_animal..Animal#age) : <code>number</code>
-    * [.species](#module_animal..Animal#species) : <code>Species</code>
+    * [.age](#module_animal..Animal+age) : <code>number</code>
+    * [.species](#module_animal..Animal+species) : <code>Species</code>
   * _static_
     * [.eMood](#module_animal..Animal.eMood)
 
@@ -62,13 +62,13 @@ var animal = require("animal");
 | species | <code>array</code> | an array of two parent [Animal](Animal) objects |
 | parents | <code>Species</code> | the species |
 
-<a name="module_animal..Animal#age"></a>
+<a name="module_animal..Animal+age"></a>
 #### animal.age : <code>number</code>
 the current age
 
 **Kind:** instance property of <code>[Animal](#module_animal..Animal)</code>  
 **Default:** <code>0</code>  
-<a name="module_animal..Animal#species"></a>
+<a name="module_animal..Animal+species"></a>
 #### animal.species : <code>Species</code>
 **Kind:** instance property of <code>[Animal](#module_animal..Animal)</code>  
 <a name="module_animal..Animal.eMood"></a>
@@ -107,7 +107,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 | in the | module |
 | description | |
 
-**Example:**  
+**Example**  
 ```js
 var animal = require("animal");
 ```

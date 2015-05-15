@@ -4,7 +4,7 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 
 **Kind:** global class  
 **Extends:** <code>[Rapper](#Rapper)</code>  
-**Emits:** <code>[pop](#FurQ#event_pop)</code>, <code>[slap](#FurQ#event_slap)</code>  
+**Emits:** <code>[pop](#FurQ+event_pop)</code>, <code>[slap](#FurQ+event_slap)</code>  
 **Access:** public  
 **See:** https://www.youtube.com/watch?v=1sxZ4tsp8gc  
 **Access:** Chris Morris  
@@ -12,16 +12,16 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
   * [new FurQ()](#new_FurQ_new)
   * _instance_
-    * [.wannaTryIt](#FurQ#wannaTryIt) : <code>string</code>
-    * [.LOVE](#FurQ#LOVE) : <code>string</code>
-    * [.spit()](#FurQ#spit)
-    * [.battle()](#Rapper#battle)
-    * [.punch()](#FurQ#punch)
-    * ["pop" (zoop)](#FurQ#event_pop)
-    * ["slap"](#FurQ#event_slap)
+    * [.wannaTryIt](#FurQ+wannaTryIt) : <code>string</code>
+    * [.LOVE](#FurQ+LOVE) : <code>string</code>
+    * [.spit()](#FurQ+spit)
+    * [.battle()](#Rapper+battle)
+    * [.punch()](#FurQ+punch)
+    * ["pop" (zoop)](#FurQ+event_pop)
+    * ["slap"](#FurQ+event_slap)
     * _standard_
-      * [.kill()](#FurQ#kill)
-      * [.respect(done)](#FurQ#respect)
+      * [.kill()](#FurQ+kill)
+      * [.respect(done)](#FurQ+respect)
   * _static_
     * [.enemy](#FurQ.enemy) : <code>enum</code>
     * ~~[.peace()](#FurQ.peace)~~
@@ -34,11 +34,11 @@ She's an Uzi lover.
 
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
-**Example:**  
+**Example**  
 ```js
 var uziLover = require("FurQ");
 ```
-<a name="FurQ#wannaTryIt"></a>
+<a name="FurQ+wannaTryIt"></a>
 ### furQ.wannaTryIt : <code>string</code>
 **Kind:** instance property of <code>[FurQ](#FurQ)</code>  
 **Default:** <code>&quot;bitch&quot;</code>  
@@ -47,27 +47,27 @@ var uziLover = require("FurQ");
 - "Uzi like a metal dick in my hand."
 - "Magazine like a big testicle gland."
 
-<a name="FurQ#LOVE"></a>
+<a name="FurQ+LOVE"></a>
 ### furQ.LOVE : <code>string</code>
 **Kind:** instance constant of <code>[FurQ](#FurQ)</code>  
 **Default:** <code>&quot;UZI&quot;</code>  
-<a name="FurQ#spit"></a>
+<a name="FurQ+spit"></a>
 ### furQ.spit()
 override
 
 **Kind:** instance method of <code>[FurQ](#FurQ)</code>  
-**Overrides:** <code>[spit](#Rapper#spit)</code>  
-<a name="Rapper#battle"></a>
+**Overrides:** <code>[spit](#Rapper+spit)</code>  
+<a name="Rapper+battle"></a>
 ### furQ.battle()
 battle
 
 **Kind:** instance method of <code>[FurQ](#FurQ)</code>  
-<a name="FurQ#punch"></a>
+<a name="FurQ+punch"></a>
 ### furQ.punch()
 to plant ones fist in a buster's mush
 
 **Kind:** instance method of <code>[FurQ](#FurQ)</code>  
-<a name="FurQ#event_pop"></a>
+<a name="FurQ+event_pop"></a>
 ### "pop" (zoop)
 fire weapon
 
@@ -77,27 +77,27 @@ fire weapon
 | --- | --- | --- |
 | zoop | <code>boolean</code> | make 'zooping' sound as you fire |
 
-<a name="FurQ#event_slap"></a>
+<a name="FurQ+event_slap"></a>
 ### "slap"
 slap man
 
 **Kind:** event emitted by <code>[FurQ](#FurQ)</code>  
-<a name="FurQ#kill"></a>
+<a name="FurQ+kill"></a>
 ### furQ.kill()
 kill
 
 **Kind:** instance method of <code>[FurQ](#FurQ)</code>  
 **Category:** standard  
-**Example:**  
+**Example**  
 ```js
 var kill = uziLover.kill();
     
 ```
-**Example:**  
+**Example**  
 ```js
 uziLover.kill();
 ```
-<a name="FurQ#respect"></a>
+<a name="FurQ+respect"></a>
 ### furQ.respect(done)
 respect
 
@@ -108,7 +108,7 @@ respect
 | --- | --- | --- |
 | done | <code>[onRespect](#FurQ..onRespect)</code> | called on reciprocation of respect |
 
-**Example:**  
+**Example**  
 ```js
 uziLover.respect(function(err, gain){
     console.log(gain);
@@ -135,13 +135,13 @@ FUR-Q enemy types
 check if at peace
 
 **Kind:** static method of <code>[FurQ](#FurQ)</code>  
-**Example:**  
+**Example**  
 ```js
 var peace = FurQ.peace();
 ```
 <a name="FurQ..onRespect"></a>
 ### FurQ~onRespect : <code>function</code>
-Passed to [respect](#FurQ#respect)
+Passed to [respect](#FurQ+respect)
 
 **Kind:** inner typedef of <code>[FurQ](#FurQ)</code>  
 

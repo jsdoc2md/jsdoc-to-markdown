@@ -6,17 +6,17 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 * [Species](#Species)
   * _instance_
-    * [.name](#Species#name) : <code>string</code>
-    * [.species](#Species#species) : <code>[Species](#Species)</code>
+    * [.name](#Species+name) : <code>string</code>
+    * [.species](#Species+species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
-<a name="Species#name"></a>
+<a name="Species+name"></a>
 ### species.name : <code>string</code>
 the species name
 
 **Kind:** instance property of <code>[Species](#Species)</code>  
-<a name="Species#species"></a>
+<a name="Species+species"></a>
 ### species.species : <code>[Species](#Species)</code>
 **Kind:** instance property of <code>[Species](#Species)</code>  
 <a name="Species.merge"></a>

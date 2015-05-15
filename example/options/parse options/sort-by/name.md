@@ -2,13 +2,13 @@
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [.six_one](#six#six_one) : <code>number</code>
+    * [.six_one](#six+six_one) : <code>number</code>
   * _static_
     * [.six_static_one](#six.six_static_one) : <code>object</code>
     * [.six_static_three](#six.six_static_three) : <code>number</code>
     * [.six_static_two](#six.six_static_two)
   * _instance_
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+    * [.six_two()](#six+six_two) ⇒ <code>number</code>
 ## 
 * [two](#two)
   * [.two_four](#two.two_four) : <code>number</code>
@@ -75,19 +75,19 @@ seven
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [.six_one](#six#six_one) : <code>number</code>
+    * [.six_one](#six+six_one) : <code>number</code>
   * _static_
     * [.six_static_one](#six.six_static_one) : <code>object</code>
     * [.six_static_three](#six.six_static_three) : <code>number</code>
     * [.six_static_two](#six.six_static_two)
   * _instance_
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
+    * [.six_two()](#six+six_two) ⇒ <code>number</code>
 
 <a name="new_six_new"></a>
 ### new six()
 six
 
-<a name="six#six_one"></a>
+<a name="six+six_one"></a>
 ### six.six_one : <code>number</code>
 six_one
 
@@ -107,7 +107,7 @@ six_static_three
 six_static_two
 
 **Kind:** static mixin of <code>[six](#six)</code>  
-<a name="six#six_two"></a>
+<a name="six+six_two"></a>
 ### six.six_two() ⇒ <code>number</code>
 six_two
 

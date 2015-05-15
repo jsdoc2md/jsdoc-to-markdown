@@ -177,8 +177,8 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
-    * [.age](#Animal#age) : <code>number</code>
-    * [.species](#Animal#species) : <code>Species</code>
+    * [.age](#Animal+age) : <code>number</code>
+    * [.species](#Animal+species) : <code>Species</code>
   * _static_
     * [.eMood](#Animal.eMood)
 
@@ -196,7 +196,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 -
 
-<a name="Animal#age"></a>
+<a name="Animal+age"></a>
 #### animal.age : <code>number</code>
 the current age
 
@@ -205,7 +205,7 @@ the current age
 
 -
 
-<a name="Animal#species"></a>
+<a name="Animal+species"></a>
 #### animal.species : <code>Species</code>
 **Kind:** instance property of <code>[Animal](#Animal)</code>  
 
@@ -244,8 +244,8 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
-    * [.age](#Animal#age) : <code>number</code>
-    * [.species](#Animal#species) : <code>Species</code>
+    * [.age](#Animal+age) : <code>number</code>
+    * [.species](#Animal+species) : <code>Species</code>
   * _static_
     * [.eMood](#Animal.eMood)
 
@@ -263,7 +263,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 -
 
-<a name="Animal#age"></a>
+<a name="Animal+age"></a>
 #### animal.age : <code>number</code>
 the current age
 
@@ -272,7 +272,7 @@ the current age
 
 -
 
-<a name="Animal#species"></a>
+<a name="Animal+species"></a>
 #### animal.species : <code>Species</code>
 **Kind:** instance property of <code>[Animal](#Animal)</code>  
 
@@ -313,8 +313,8 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
-    * [.age](#Animal#age) : <code>number</code>
-    * [.species](#Animal#species) : <code>Species</code>
+    * [.age](#Animal+age) : <code>number</code>
+    * [.species](#Animal+species) : <code>Species</code>
   * _static_
     * [.eMood](#Animal.eMood)
 
@@ -342,7 +342,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 * * *
 
-<a name="Animal#age"></a>
+<a name="Animal+age"></a>
 #### animal.age : <code>number</code>
 the current age
 
@@ -351,7 +351,7 @@ the current age
 
 * * *
 
-<a name="Animal#species"></a>
+<a name="Animal+species"></a>
 #### animal.species : <code>Species</code>
 **Kind:** instance property of <code>[Animal](#Animal)</code>  
 
@@ -400,8 +400,8 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
   * _instance_
-    * [.age](#Animal#age) : <code>number</code>
-    * [.species](#Animal#species) : <code>Species</code>
+    * [.age](#Animal+age) : <code>number</code>
+    * [.species](#Animal+species) : <code>Species</code>
   * _static_
     * [.eMood](#Animal.eMood)
 
@@ -429,7 +429,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 * * *
 
-<a name="Animal#age"></a>
+<a name="Animal+age"></a>
 #### animal.age : <code>number</code>
 the current age
 
@@ -438,7 +438,7 @@ the current age
 
 * * *
 
-<a name="Animal#species"></a>
+<a name="Animal+species"></a>
 #### animal.species : <code>Species</code>
 **Kind:** instance property of <code>[Animal](#Animal)</code>  
 

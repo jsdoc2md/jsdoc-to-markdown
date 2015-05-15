@@ -2,8 +2,8 @@
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
-    * [.six_one](#six#six_one) : <code>number</code>
+    * [.six_two()](#six+six_two) ⇒ <code>number</code>
+    * [.six_one](#six+six_one) : <code>number</code>
   * _static_
     * [.six_static_two](#six.six_static_two)
     * [.six_static_three](#six.six_static_three) : <code>number</code>
@@ -86,8 +86,8 @@ five
 * [six](#six)
   * [new six()](#new_six_new)
   * _instance_
-    * [.six_two()](#six#six_two) ⇒ <code>number</code>
-    * [.six_one](#six#six_one) : <code>number</code>
+    * [.six_two()](#six+six_two) ⇒ <code>number</code>
+    * [.six_one](#six+six_one) : <code>number</code>
   * _static_
     * [.six_static_two](#six.six_static_two)
     * [.six_static_three](#six.six_static_three) : <code>number</code>
@@ -97,12 +97,12 @@ five
 ### new six()
 six
 
-<a name="six#six_two"></a>
+<a name="six+six_two"></a>
 ### six.six_two() ⇒ <code>number</code>
 six_two
 
 **Kind:** instance method of <code>[six](#six)</code>  
-<a name="six#six_one"></a>
+<a name="six+six_one"></a>
 ### six.six_one : <code>number</code>
 six_one
 

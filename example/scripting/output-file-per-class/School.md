@@ -4,13 +4,13 @@
 
 * [~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
-  * [.bestStudent](#Rapper.train..School#bestStudent)
+  * [.bestStudent](#Rapper.train..School+bestStudent)
 
 <a name="new_Rapper.train..School_new"></a>
 ### new School()
 rap school
 
-<a name="Rapper.train..School#bestStudent"></a>
+<a name="Rapper.train..School+bestStudent"></a>
 ### school.bestStudent
 best student
 

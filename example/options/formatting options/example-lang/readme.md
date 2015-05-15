@@ -73,7 +73,7 @@
 A simple example with some code.. it will format using the language specified by `--example-lang`
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 ```js
 var result = one();
 ```
@@ -82,7 +82,7 @@ var result = one();
 An example that already contains a fenced-code block (language `json`)
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 here is the example:
 ```json
 {
@@ -94,7 +94,7 @@ here is the example:
 An example with no code, just text
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 ```js
 This example is just some plain text, no code format or syntax highlighting required here.
 ```
@@ -103,14 +103,14 @@ This example is just some plain text, no code format or syntax highlighting requ
 Another text example, using the `@lang off` sub-tag..
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 This example is just some plain text, no code format or syntax highlighting required here.
 <a name="five"></a>
 ### five()
 A simple example using `@example @lang hbs` to specify handlebars as the language
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 ```hbs
 hello {{name}}, welcome to {{country}}.
 ```
@@ -122,7 +122,7 @@ hello {{name}}, welcome to {{country}}.
 A simple example with some code.. it will format using the language specified by `--example-lang`
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 ```none
 var result = one();
 ```
@@ -131,7 +131,7 @@ var result = one();
 An example that already contains a fenced-code block (language `json`)
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 here is the example:
 ```json
 {
@@ -143,7 +143,7 @@ here is the example:
 An example with no code, just text
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 ```none
 This example is just some plain text, no code format or syntax highlighting required here.
 ```
@@ -152,14 +152,14 @@ This example is just some plain text, no code format or syntax highlighting requ
 Another text example, using the `@lang off` sub-tag..
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 This example is just some plain text, no code format or syntax highlighting required here.
 <a name="five"></a>
 ### five()
 A simple example using `@example @lang hbs` to specify handlebars as the language
 
 **Kind:** global function  
-**Example:**  
+**Example**  
 ```hbs
 hello {{name}}, welcome to {{country}}.
 ```

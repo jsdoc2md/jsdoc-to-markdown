@@ -55,7 +55,7 @@ function setName(name) {
 <a name="Greeter"></a>
 ### Greeter
 **Kind:** global class  
-<a name="Greeter#name"></a>
+<a name="Greeter+name"></a>
 #### greeter.name
 a great name
 
@@ -72,7 +72,7 @@ a great name
 <a name="Greeter"></a>
 ### Greeter
 **Kind:** global class  
-<a name="Greeter#name"></a>
+<a name="Greeter+name"></a>
 #### greeter.name
 a great name
 

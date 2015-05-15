@@ -59,7 +59,7 @@ function yeahFactory(yeahValue) {
 <a name="SomeObject"></a>
 ### SomeObject : <code>object</code>
 **Kind:** global namespace  
-<a name="SomeObject#yeah"></a>
+<a name="SomeObject+yeah"></a>
 #### someObject.yeah
 yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.
 
@@ -77,7 +77,7 @@ Generates SomeObject instances.
 <a name="SomeObject"></a>
 ### SomeObject : <code>object</code>
 **Kind:** global namespace  
-<a name="SomeObject#yeah"></a>
+<a name="SomeObject+yeah"></a>
 #### someObject.yeah
 yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.
 

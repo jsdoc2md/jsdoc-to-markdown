@@ -124,7 +124,7 @@ Interface for a Currah Speech Synth
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind:** global interface  
-<a name="Speech#say"></a>
+<a name="Speech+say"></a>
 #### speech.say(text)
 what to say
 
@@ -142,20 +142,20 @@ a synth, that also implements speech
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
-  * [.demo()](#Synth#demo)
-  * [.say(text)](#Synth#say)
+  * [.demo()](#Synth+demo)
+  * [.say(text)](#Synth+say)
 
-<a name="Synth#demo"></a>
+<a name="Synth+demo"></a>
 #### synth.demo()
 play a demo piece, Beethoven or something..
 
 **Kind:** instance method of <code>[Synth](#Synth)</code>  
-<a name="Synth#say"></a>
+<a name="Synth+say"></a>
 #### synth.say(text)
 what to say
 
 **Kind:** instance method of <code>[Synth](#Synth)</code>  
-**Implements:** <code>[say](#Speech#say)</code>  
+**Implements:** <code>[say](#Speech+say)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -173,7 +173,7 @@ Interface for a Currah Speech Synth
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
 **Kind:** global interface  
-<a name="Speech#say"></a>
+<a name="Speech+say"></a>
 #### speech.say(text)
 what to say
 
@@ -191,20 +191,20 @@ a synth, that also implements speech
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
-  * [.demo()](#Synth#demo)
-  * [.say(text)](#Synth#say)
+  * [.demo()](#Synth+demo)
+  * [.say(text)](#Synth+say)
 
-<a name="Synth#demo"></a>
+<a name="Synth+demo"></a>
 #### synth.demo()
 play a demo piece, Beethoven or something..
 
 **Kind:** instance method of <code>[Synth](#Synth)</code>  
-<a name="Synth#say"></a>
+<a name="Synth+say"></a>
 #### synth.say(text)
 what to say
 
 **Kind:** instance method of <code>[Synth](#Synth)</code>  
-**Implements:** <code>[say](#Speech#say)</code>  
+**Implements:** <code>[say](#Speech+say)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |

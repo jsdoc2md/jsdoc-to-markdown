@@ -6,10 +6,10 @@ class description
 **Kind:** global class  
 
 * [NewLines](#NewLines)
-  * [.numbers](#NewLines#numbers)
-  * [.method(input)](#NewLines#method) ⇒ <code>number</code>
+  * [.numbers](#NewLines+numbers)
+  * [.method(input)](#NewLines+method) ⇒ <code>number</code>
 
-<a name="NewLines#numbers"></a>
+<a name="NewLines+numbers"></a>
 ### newLines.numbers
 **Kind:** instance property of <code>[NewLines](#NewLines)</code>  
 **Properties**
@@ -18,7 +18,7 @@ class description
 | --- | --- | --- |
 | one | <code>number</code> | a property     with newlines for      a change |
 
-<a name="NewLines#method"></a>
+<a name="NewLines+method"></a>
 ### newLines.method(input) ⇒ <code>number</code>
 **Kind:** instance method of <code>[NewLines](#NewLines)</code>  
 **Returns:** <code>number</code> - the returns

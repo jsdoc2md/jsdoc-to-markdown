@@ -4,20 +4,20 @@
 
 * [Rapper](#Rapper)
   * _instance_
-    * [.spit()](#Rapper#spit)
-    * [.battle()](#Rapper#battle)
+    * [.spit()](#Rapper+spit)
+    * [.battle()](#Rapper+battle)
   * _static_
     * [.train()](#Rapper.train)
       * [~School](#Rapper.train..School)
         * [new School()](#new_Rapper.train..School_new)
-        * [.bestStudent](#Rapper.train..School#bestStudent)
+        * [.bestStudent](#Rapper.train..School+bestStudent)
 
-<a name="Rapper#spit"></a>
+<a name="Rapper+spit"></a>
 ### rapper.spit()
 spit
 
 **Kind:** instance method of <code>[Rapper](#Rapper)</code>  
-<a name="Rapper#battle"></a>
+<a name="Rapper+battle"></a>
 ### rapper.battle()
 battle
 
@@ -31,7 +31,7 @@ train new rappers
   * [.train()](#Rapper.train)
     * [~School](#Rapper.train..School)
       * [new School()](#new_Rapper.train..School_new)
-      * [.bestStudent](#Rapper.train..School#bestStudent)
+      * [.bestStudent](#Rapper.train..School+bestStudent)
 
 <a name="Rapper.train..School"></a>
 #### train~School
@@ -39,13 +39,13 @@ train new rappers
 
 * [~School](#Rapper.train..School)
   * [new School()](#new_Rapper.train..School_new)
-  * [.bestStudent](#Rapper.train..School#bestStudent)
+  * [.bestStudent](#Rapper.train..School+bestStudent)
 
 <a name="new_Rapper.train..School_new"></a>
 ##### new School()
 rap school
 
-<a name="Rapper.train..School#bestStudent"></a>
+<a name="Rapper.train..School+bestStudent"></a>
 ##### school.bestStudent
 best student
 
