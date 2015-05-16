@@ -26,7 +26,7 @@ var cliOptions = [
               description: "Output the jsdoc-parse json only"
             },
             { name: "config", type: Boolean,
-              description: "Show the config"
+              description: "Print the stored config and exit"
             }
         ]
     },

@@ -36,10 +36,5 @@
   },
   "devDependencies": {
     "tape": "^4"
-  },
-  "jsdoc2md": {
-      "locale": {
-          "separator-gfmx": "--"
-      }
   }
 }

@@ -91,19 +91,19 @@ You can see an example of how each [jsdoc tag](http://usejsdoc.org) looks when r
 
 To get an idea of the affects the various options have: 
 
-- [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options)
-  - [example-lang](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options/example-lang)
-  - [module-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/module-index-format)
-  - [global-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options/global-index-format)
-  - [member-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/member-index-format)
-  - [param-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/param-list-format)
-  - [property-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/property-list-format)
-  - [no-gfm](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/formatting%20options/no-gfm)
-  - [separators](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/separators)
-  - [name format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/formatting%20options/name-format)
-- [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options)
-  - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options/html)
-  - [sort-by](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/parse%20options/sort-by)
+- [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/dmd%20options)
+  - [example-lang](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/dmd%20options/example-lang)
+  - [module-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/dmd%20options/module-index-format)
+  - [global-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/dmd%20options/global-index-format)
+  - [member-index-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/dmd%20options/member-index-format)
+  - [param-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/dmd%20options/param-list-format)
+  - [property-list-format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/dmd%20options/property-list-format)
+  - [no-gfm](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/dmd%20options/no-gfm)
+  - [separators](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/dmd%20options/separators)
+  - [name format](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/example/options/dmd%20options/name-format)
+- [parse options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/jsdoc-parse%20options)
+  - [html](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/jsdoc-parse%20options/html)
+  - [sort-by](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/jsdoc-parse%20options/sort-by)
 
 ### Scripting examples
 If you can't achieve what you need using the command-line tool you can write a custom script.
@@ -188,7 +188,7 @@ Issue reports and patches are encouraged. And the project would benefit from an 
 Essentially, jsdoc2d connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
 
 ## API Reference
-**Example:**  
+**Example**  
 ```js
 var jsdoc2md = require("jsdoc-to-markdown");
 ```
@@ -200,7 +200,7 @@ Transforms jsdoc into markdown documentation.
 **Params**
 - [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options
 
-**Example:**  
+**Example**  
 Two ways to use `jsdoc2md`. Either pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
 > jsdoc2md({ src: "lib/*.js" }).pipe(process.stdout);
@@ -241,7 +241,7 @@ The template the supplied documentation will be rendered into. Use the default o
 
 **Kind:** instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default:** <code>&quot;{{&gt;main}}&quot;</code>  
-**Example:**  
+**Example**  
 ```js
 var fs = require("fs");
 var dmd = require("../");
@@ -364,7 +364,7 @@ All options for jsdoc-parse, including defaults
 The source files to parse. If this option is not set jsdoc-parse will wait for input to be streamed in.
 
 **Kind:** instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
-**Example:**  
+**Example**  
 ```js
 var parse = require("jsdoc-parse");
 var fs = require("fs");

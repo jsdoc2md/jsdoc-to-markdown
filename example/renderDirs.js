@@ -14,8 +14,8 @@ function renderDir(dir){
     
 }
 
-renderDir(__dirname + "/options/formatting options");
-renderDir(__dirname + "/options/parse options");
+renderDir(__dirname + "/options/dmd options");
+renderDir(__dirname + "/options/jsdoc-parse options");
 renderDir(__dirname + "/scripting");
 renderDir(__dirname + "/templating/selector helpers");
 renderDir(__dirname + "/tags");
