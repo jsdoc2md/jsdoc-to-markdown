@@ -196,7 +196,7 @@ var jsdoc2md = require("jsdoc-to-markdown");
 ### jsdoc2md([options]) ⇒ <code>[TransformStream](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code> ⏏
 Transforms jsdoc into markdown documentation.
 
-**Kind:** Exported function  
+**Kind:** exported function  
 **Params**
 - [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options
 

@@ -116,7 +116,7 @@ six_two
 ## "ten"
 ten
 
-**Kind:** event emitted  
+**Kind:** event  
 <a name="thirteen"></a>
 ## thirteen : <code>number</code>
 thirteen

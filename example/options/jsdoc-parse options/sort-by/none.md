@@ -155,7 +155,7 @@ nine
 ## "ten"
 ten
 
-**Kind:** event emitted  
+**Kind:** event  
 <a name="external_eleven"></a>
 ## eleven
 eleven

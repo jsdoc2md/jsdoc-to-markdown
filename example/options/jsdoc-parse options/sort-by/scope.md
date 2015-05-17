@@ -51,7 +51,7 @@ eleven
 ## "ten"
 ten
 
-**Kind:** event emitted  
+**Kind:** event  
 <a name="nine"></a>
 ## nine() ⇒ <code>number</code>
 nine

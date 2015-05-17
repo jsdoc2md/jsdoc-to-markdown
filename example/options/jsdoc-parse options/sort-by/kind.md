@@ -158,7 +158,7 @@ twelve
 ## "ten"
 ten
 
-**Kind:** event emitted  
+**Kind:** event  
 <a name="one"></a>
 ## one : <code>number</code> &#124; <code>string</code>
 one
