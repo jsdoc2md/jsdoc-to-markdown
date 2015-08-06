@@ -11,45 +11,26 @@ var loadConfig = require("config-master");
 var homePath = require("home-path");
 var path = require("path");
 var o = require("object-tools");
-
-var cliOptions = [
-    { 
-        groups: ["jsdoc2md", "all"],
-        options: [
-            { name: "verbose", alias: "v", type: Boolean,
-              description: "More verbose error reporting"
-            },
-            { name: "help", alias: "h", type: Boolean,
-              description: "Print usage information"
-            },
-            { name: "json", alias: "j", type: Boolean,
-              description: "Output the jsdoc-parse json only"
-            },
-            { name: "config", type: Boolean,
-              description: "Print the stored config and exit"
-            }
-        ]
-    },
-    { 
-        groups: ["jsdoc-parse", "all"],
-        options: jsdocParse.cliOptions
-    },
-    { 
-        groups: ["dmd", "all"],
-        options: dmd.cliOptions
-    }
-];
+var cliOptions = require("../lib/cli-options");
 
 var cli = cliArgs(cliOptions);
 
 var usage = cli.getUsage({
-    title: "jsdoc-to-markdown",
-    header: "Markdown API documentation generator.",
-    footer: "\n  Project home: https://github.com/jsdoc2md/jsdoc-to-markdown",
+    title: "[bold]{jsdoc-to-markdown}",
+    description: "Markdown API documentation generator.",
+    footer: "Project home: [underline]{https://github.com/jsdoc2md/jsdoc-to-markdown}",
     forms: [
-        "$ jsdoc2md [<options>] <source_files>"
+        "$ jsdoc2md [<options>] --src <source_files>",
+        "$ jsdoc2md --help",
+        "$ jsdoc2md --config",
+        "$ jsdoc2md --stats <source_files>",
+        "$ jsdoc2md --json <source_files>"
     ],
-    groups: [ "jsdoc2md", "jsdoc-parse", "dmd" ]
+    groups: {
+        jsdoc2md: "jsdoc2md",
+        jsdocParse: "jsdoc-parse",
+        dmd: "dmd"
+    }
 });
 
 try{
@@ -74,7 +55,7 @@ var jsdoc2mdConfig = loadConfig(
     { jsonPath: path.join(process.cwd(), "package.json"), configProperty: "jsdoc2md" }
 );
 
-var config = o.extend(parseConfig, dmdConfig, jsdoc2mdConfig, argv.all);
+var config = o.extend(parseConfig, dmdConfig, jsdoc2mdConfig, argv._all);
 
 if (config.template){
     config.template = fs.readFileSync(config.template, "utf8");
