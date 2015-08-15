@@ -5,6 +5,7 @@
   "description": "Markdown API documentation generator",
   "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
+  "license": "MIT",
   "files": [
     "bin",
     "lib",
@@ -20,19 +21,22 @@
     "jsdoc2md": "bin/cli.js"
   },
   "keywords": [
-    "handlebars",
     "jsdoc",
     "markdown",
-    "generator"
+    "api",
+    "generator",
+    "javascript",
+    "js",
+    "documentation"
   ],
   "dependencies": {
-    "command-line-args": "^1.1.0-0",
+    "command-line-args": "^1",
     "config-master": "^1.0.0",
     "console-dope": "~0.3.3",
     "dmd": "^1",
     "home-path": "^1",
     "jsdoc-parse": "^1",
-    "object-tools": "^1.2.3",
+    "object-tools": "^2",
     "stream-connect": "~0.1.0"
   },
   "devDependencies": {

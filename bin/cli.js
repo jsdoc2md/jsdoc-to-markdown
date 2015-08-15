@@ -16,7 +16,7 @@ var cliOptions = require("../lib/cli-options");
 var cli = cliArgs(cliOptions);
 
 var usage = cli.getUsage({
-    title: "[bold]{jsdoc-to-markdown}",
+    title: "jsdoc-to-markdown",
     description: "Markdown API documentation generator.",
     footer: "Project home: [underline]{https://github.com/jsdoc2md/jsdoc-to-markdown}",
     forms: [
@@ -27,9 +27,17 @@ var usage = cli.getUsage({
         "$ jsdoc2md --json <source_files>"
     ],
     groups: {
-        jsdoc2md: "jsdoc2md",
-        jsdocParse: "jsdoc-parse",
-        dmd: "dmd"
+        jsdoc2md: { 
+            title: "jsdoc2md"
+        },
+        jsdocParse: { 
+            title: "jsdoc-parse",
+            description: "These options affect how the javascript source is parsed."
+        },
+        dmd: { 
+            title: "dmd",
+            description: "These options affect how the markdown output looks."
+        }
     }
 });
 
