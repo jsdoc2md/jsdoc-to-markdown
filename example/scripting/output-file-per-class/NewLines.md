@@ -3,15 +3,18 @@
 A multi-line
 class description
 
-**Kind:** global class  
+**Kind**: global class  
 
 * [NewLines](#NewLines)
+  * [new NewLines()](#new_NewLines_new)
   * [.numbers](#NewLines+numbers)
   * [.method(input)](#NewLines+method) ⇒ <code>number</code>
 
+<a name="new_NewLines_new"></a>
+### new NewLines()
 <a name="NewLines+numbers"></a>
 ### newLines.numbers
-**Kind:** instance property of <code>[NewLines](#NewLines)</code>  
+**Kind**: instance property of <code>[NewLines](#NewLines)</code>  
 **Properties**
 
 | Name | Type | Description |
@@ -20,8 +23,8 @@ class description
 
 <a name="NewLines+method"></a>
 ### newLines.method(input) ⇒ <code>number</code>
-**Kind:** instance method of <code>[NewLines](#NewLines)</code>  
-**Returns:** <code>number</code> - the returns
+**Kind**: instance method of <code>[NewLines](#NewLines)</code>  
+**Returns**: <code>number</code> - the returns
     description also 
     has newlines  
 

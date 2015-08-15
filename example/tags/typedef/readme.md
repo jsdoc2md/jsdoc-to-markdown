@@ -129,7 +129,7 @@ function doSomething(option){}
 #### setMagicNumber(x)
 Set the magic number.
 
-**Kind:** global function  
+**Kind**: global function  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -137,7 +137,7 @@ Set the magic number.
 
 <a name="doSomething"></a>
 #### doSomething(option)
-**Kind:** global function  
+**Kind**: global function  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -147,12 +147,12 @@ Set the magic number.
 #### NumberLike : <code>number</code> &#124; <code>string</code>
 A number, or a string containing a number.
 
-**Kind:** global typedef  
+**Kind**: global typedef  
 <a name="someOptions"></a>
 #### someOptions : <code>object</code>
 Some options
 
-**Kind:** global typedef  
+**Kind**: global typedef  
 **Properties**
 
 | Name | Type | Description |
@@ -169,7 +169,7 @@ Some options
 #### setMagicNumber(x)
 Set the magic number.
 
-**Kind:** global function  
+**Kind**: global function  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -177,7 +177,7 @@ Set the magic number.
 
 <a name="doSomething"></a>
 #### doSomething(option)
-**Kind:** global function  
+**Kind**: global function  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -187,12 +187,12 @@ Set the magic number.
 #### NumberLike : <code>number</code> &#124; <code>string</code>
 A number, or a string containing a number.
 
-**Kind:** global typedef  
+**Kind**: global typedef  
 <a name="someOptions"></a>
 #### someOptions : <code>object</code>
 Some options
 
-**Kind:** global typedef  
+**Kind**: global typedef  
 **Properties**
 
 | Name | Type | Description |

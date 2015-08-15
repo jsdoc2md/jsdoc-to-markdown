@@ -113,11 +113,11 @@ function taze(victim, options, done){}
 ```hbs
 <a name="taze"></a>
 ### ~~taze(victim, [options], [done])~~
-***Deprecated:***
+***Deprecated***
 
 Pump an idiot full of volts
 
-**Kind:** global function  
+**Kind**: global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -135,11 +135,11 @@ Pump an idiot full of volts
 ## rendered
 <a name="taze"></a>
 ### ~~taze(victim, [options], [done])~~
-***Deprecated:***
+***Deprecated***
 
 Pump an idiot full of volts
 
-**Kind:** global function  
+**Kind**: global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -159,11 +159,11 @@ Pump an idiot full of volts
 ```hbs
 <a name="taze"></a>
 ### <del>taze(victim, [options], [done])</del>
-***Deprecated:***
+***Deprecated***
 
 Pump an idiot full of volts
 
-**Kind:** global function  
+**Kind**: global function  
 <table>
   <thead>
     <tr>
@@ -205,11 +205,11 @@ Pump an idiot full of volts
 ## rendered
 <a name="taze"></a>
 ### <del>taze(victim, [options], [done])</del>
-***Deprecated:***
+***Deprecated***
 
 Pump an idiot full of volts
 
-**Kind:** global function  
+**Kind**: global function  
 <table>
   <thead>
     <tr>

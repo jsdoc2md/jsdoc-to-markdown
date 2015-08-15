@@ -19,6 +19,15 @@ function setName(name) {
 ```json
 [
   {
+    "id": "Greeter()",
+    "longname": "Greeter",
+    "name": "Greeter",
+    "kind": "constructor",
+    "memberof": "Greeter",
+    "params": [],
+    "order": 1
+  },
+  {
     "id": "Greeter",
     "longname": "Greeter",
     "name": "Greeter",
@@ -32,8 +41,9 @@ function setName(name) {
     "name": "setName",
     "scope": "global",
     "kind": "function",
+    "params": [],
     "thisvalue": "Greeter",
-    "order": 1
+    "order": 2
   },
   {
     "id": "Greeter#name",
@@ -43,7 +53,7 @@ function setName(name) {
     "kind": "member",
     "description": "a great name",
     "memberof": "Greeter",
-    "order": 2
+    "order": 3
   }
 ]
 ```
@@ -54,16 +64,23 @@ function setName(name) {
 ```markdown
 <a name="Greeter"></a>
 ### Greeter
-**Kind:** global class  
+**Kind**: global class  
+
+* [Greeter](#Greeter)
+  * [new Greeter()](#new_Greeter_new)
+  * [.name](#Greeter+name)
+
+<a name="new_Greeter_new"></a>
+#### new Greeter()
 <a name="Greeter+name"></a>
 #### greeter.name
 a great name
 
-**Kind:** instance property of <code>[Greeter](#Greeter)</code>  
+**Kind**: instance property of <code>[Greeter](#Greeter)</code>  
 <a name="setName"></a>
 ### setName()
-**Kind:** global function  
-**This:** <code>[Greeter](#Greeter)</code>  
+**Kind**: global function  
+**this**: <code>[Greeter](#Greeter)</code>  
 ```
 
 * * * 
@@ -71,13 +88,20 @@ a great name
 # Rendered
 <a name="Greeter"></a>
 ### Greeter
-**Kind:** global class  
+**Kind**: global class  
+
+* [Greeter](#Greeter)
+  * [new Greeter()](#new_Greeter_new)
+  * [.name](#Greeter+name)
+
+<a name="new_Greeter_new"></a>
+#### new Greeter()
 <a name="Greeter+name"></a>
 #### greeter.name
 a great name
 
-**Kind:** instance property of <code>[Greeter](#Greeter)</code>  
+**Kind**: instance property of <code>[Greeter](#Greeter)</code>  
 <a name="setName"></a>
 ### setName()
-**Kind:** global function  
-**This:** <code>[Greeter](#Greeter)</code>  
+**Kind**: global function  
+**this**: <code>[Greeter](#Greeter)</code>  

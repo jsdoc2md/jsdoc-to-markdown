@@ -35,12 +35,22 @@ function Synth(){
 ```json
 [
   {
+    "id": "Synth()",
+    "longname": "Synth",
+    "name": "Synth",
+    "kind": "constructor",
+    "memberof": "Synth",
+    "params": [],
+    "order": 3
+  },
+  {
     "id": "Speech",
     "longname": "Speech",
     "name": "Speech",
     "scope": "global",
     "kind": "interface",
     "description": "Interface for a Currah Speech Synth\n\n![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)",
+    "params": [],
     "order": 0
   },
   {
@@ -84,7 +94,7 @@ function Synth(){
     "kind": "function",
     "description": "play a demo piece, Beethoven or something..",
     "memberof": "Synth",
-    "order": 3
+    "order": 4
   },
   {
     "id": "Synth#say",
@@ -108,7 +118,7 @@ function Synth(){
         "name": "text"
       }
     ],
-    "order": 4
+    "order": 5
   }
 ]
 ```
@@ -123,12 +133,12 @@ Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
-**Kind:** global interface  
+**Kind**: global interface  
 <a name="Speech+say"></a>
 #### speech.say(text)
 what to say
 
-**Kind:** instance method of <code>[Speech](#Speech)</code>  
+**Kind**: instance method of <code>[Speech](#Speech)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -138,23 +148,26 @@ what to say
 ### Synth
 a synth, that also implements speech
 
-**Kind:** global class  
+**Kind**: global class  
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
+  * [new Synth()](#new_Synth_new)
   * [.demo()](#Synth+demo)
   * [.say(text)](#Synth+say)
 
+<a name="new_Synth_new"></a>
+#### new Synth()
 <a name="Synth+demo"></a>
 #### synth.demo()
 play a demo piece, Beethoven or something..
 
-**Kind:** instance method of <code>[Synth](#Synth)</code>  
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
 <a name="Synth+say"></a>
 #### synth.say(text)
 what to say
 
-**Kind:** instance method of <code>[Synth](#Synth)</code>  
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
 **Implements:** <code>[say](#Speech+say)</code>  
 
 | Param | Type | Description |
@@ -172,12 +185,12 @@ Interface for a Currah Speech Synth
 
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 
-**Kind:** global interface  
+**Kind**: global interface  
 <a name="Speech+say"></a>
 #### speech.say(text)
 what to say
 
-**Kind:** instance method of <code>[Speech](#Speech)</code>  
+**Kind**: instance method of <code>[Speech](#Speech)</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -187,23 +200,26 @@ what to say
 ### Synth
 a synth, that also implements speech
 
-**Kind:** global class  
+**Kind**: global class  
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
+  * [new Synth()](#new_Synth_new)
   * [.demo()](#Synth+demo)
   * [.say(text)](#Synth+say)
 
+<a name="new_Synth_new"></a>
+#### new Synth()
 <a name="Synth+demo"></a>
 #### synth.demo()
 play a demo piece, Beethoven or something..
 
-**Kind:** instance method of <code>[Synth](#Synth)</code>  
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
 <a name="Synth+say"></a>
 #### synth.say(text)
 what to say
 
-**Kind:** instance method of <code>[Synth](#Synth)</code>  
+**Kind**: instance method of <code>[Synth](#Synth)</code>  
 **Implements:** <code>[say](#Speech+say)</code>  
 
 | Param | Type | Description |

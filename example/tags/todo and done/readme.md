@@ -23,6 +23,7 @@ function Something() {}
     "scope": "global",
     "kind": "function",
     "description": "Something",
+    "params": [],
     "todoList": [
       {
         "done": false,
@@ -54,7 +55,7 @@ function Something() {}
 ### Something()
 Something
 
-**Kind:** global function  
+**Kind**: global function  
 **Todo**
 
 - [ ] first
@@ -71,7 +72,7 @@ Something
 ### Something()
 Something
 
-**Kind:** global function  
+**Kind**: global function  
 **Todo**
 
 - [ ] first

@@ -1,11 +1,11 @@
 ## `jsdoc2md --param-list-format list`
 <a name="taze"></a>
 ### ~~taze(victim, [options], [done])~~
-***Deprecated:***
+***Deprecated***
 
 Pump an idiot full of volts
 
-**Kind:** global function  
+**Kind**: global function  
 **Params**
 - victim <code>object</code> | <code>array</code> - the victim(s) to fry
 - [options] <code>object</code> - electricution options
@@ -24,11 +24,11 @@ Pump an idiot full of volts
 ## `jsdoc2md --param-list-format table`
 <a name="taze"></a>
 ### ~~taze(victim, [options], [done])~~
-***Deprecated:***
+***Deprecated***
 
 Pump an idiot full of volts
 
-**Kind:** global function  
+**Kind**: global function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |

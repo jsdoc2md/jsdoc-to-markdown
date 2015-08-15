@@ -10,6 +10,7 @@
     "scope": "global",
     "kind": "function",
     "description": "A simple example written in the default `--example-lang` (javascript)",
+    "params": [],
     "examples": [
       "var result = one();"
     ],
@@ -22,6 +23,7 @@
     "scope": "global",
     "kind": "function",
     "description": "An example written in a different lang to the default (json)",
+    "params": [],
     "examples": [
       "```json\n{\n    \"clive\": \"yeah?\"\n}\n```"
     ],
@@ -34,6 +36,7 @@
     "scope": "global",
     "kind": "function",
     "description": "An example with no code, just text",
+    "params": [],
     "examples": [
       "This example is just plain text. Note that it's formatted as javascript\nas that's the default `--example-lang` value and dmd has no way of \ndistinguishing whether the example text is, or is not source code."
     ],
@@ -46,6 +49,7 @@
     "scope": "global",
     "kind": "function",
     "description": "Another text example, using the `@lang off` sub-tag..",
+    "params": [],
     "examples": [
       "@lang off\nThis example is plain text but it has not been formatted using the default \n`--example-lang` of javascript because the `@example @lang off` was used.."
     ],
@@ -58,6 +62,7 @@
     "scope": "global",
     "kind": "function",
     "description": "An example with text and code, with no fenced-code blocks",
+    "params": [],
     "examples": [
       "Here, i introduce the example: \n\nvar result = five();"
     ],
@@ -70,6 +75,7 @@
     "scope": "global",
     "kind": "function",
     "description": "An example with text and code, with fenced-code block and no lang set",
+    "params": [],
     "examples": [
       "Here, i introduce the example: \n\n```\nvar result = six();\n```"
     ],
@@ -82,6 +88,7 @@
     "scope": "global",
     "kind": "function",
     "description": "An example with text and code, with fenced-code block and `js` lang set",
+    "params": [],
     "examples": [
       "Here, i introduce the example: \n\n```js\nvar result = seven();\n```"
     ],
@@ -94,6 +101,7 @@
     "scope": "global",
     "kind": "function",
     "description": "An example with text and code, with fenced-code block and `json` lang set",
+    "params": [],
     "examples": [
       "this function returns data like:\n\n```json\n{\n    \"yeah\": \"gets?\"\n}\n```"
     ],
@@ -109,7 +117,7 @@
 ## one()
 A simple example written in the default `--example-lang` (javascript)
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 ```js
 var result = one();
@@ -118,7 +126,7 @@ var result = one();
 ## two()
 An example written in a different lang to the default (json)
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 ```json
 {
@@ -129,7 +137,7 @@ An example written in a different lang to the default (json)
 ## three()
 An example with no code, just text
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 ```js
 This example is just plain text. Note that it's formatted as javascript
@@ -140,7 +148,7 @@ distinguishing whether the example text is, or is not source code.
 ## four()
 Another text example, using the `@lang off` sub-tag..
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 This example is plain text but it has not been formatted using the default 
 `--example-lang` of javascript because the `@example @lang off` was used..
@@ -148,7 +156,7 @@ This example is plain text but it has not been formatted using the default
 ## five()
 An example with text and code, with no fenced-code blocks
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 ```js
 Here, i introduce the example: 
@@ -159,7 +167,7 @@ var result = five();
 ## six()
 An example with text and code, with fenced-code block and no lang set
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 Here, i introduce the example: 
 
@@ -170,7 +178,7 @@ var result = six();
 ## seven()
 An example with text and code, with fenced-code block and `js` lang set
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 Here, i introduce the example: 
 
@@ -181,7 +189,7 @@ var result = seven();
 ## eight()
 An example with text and code, with fenced-code block and `json` lang set
 
-**Kind:** global function  
+**Kind**: global function  
 **Example**  
 this function returns data like:
 

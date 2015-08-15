@@ -23,6 +23,7 @@ function returnsWithDesc(){}
     "name": "returnsSomething",
     "scope": "global",
     "kind": "function",
+    "params": [],
     "returns": [
       {
         "type": {
@@ -40,6 +41,7 @@ function returnsWithDesc(){}
     "name": "returnsWithDesc",
     "scope": "global",
     "kind": "function",
+    "params": [],
     "returns": [
       {
         "type": {
@@ -61,11 +63,11 @@ function returnsWithDesc(){}
 ```markdown
 <a name="returnsSomething"></a>
 ### returnsSomething() ⇒ <code>string</code>
-**Kind:** global function  
+**Kind**: global function  
 <a name="returnsWithDesc"></a>
 ### returnsWithDesc() ⇒ <code>string</code>
-**Kind:** global function  
-**Returns:** <code>string</code> - returns a string  
+**Kind**: global function  
+**Returns**: <code>string</code> - returns a string  
 ```
 
 * * * 
@@ -73,8 +75,8 @@ function returnsWithDesc(){}
 # Rendered
 <a name="returnsSomething"></a>
 ### returnsSomething() ⇒ <code>string</code>
-**Kind:** global function  
+**Kind**: global function  
 <a name="returnsWithDesc"></a>
 ### returnsWithDesc() ⇒ <code>string</code>
-**Kind:** global function  
-**Returns:** <code>string</code> - returns a string  
+**Kind**: global function  
+**Returns**: <code>string</code> - returns a string  

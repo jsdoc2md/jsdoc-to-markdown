@@ -29,6 +29,15 @@ function Comedy(){}
 ```json
 [
   {
+    "id": "Tree()",
+    "longname": "Tree",
+    "name": "Tree",
+    "kind": "constructor",
+    "memberof": "Tree",
+    "params": [],
+    "order": 2
+  },
+  {
     "id": "Tree",
     "longname": "Tree",
     "name": "Tree",
@@ -42,6 +51,7 @@ function Comedy(){}
     "name": "promiseSomething",
     "scope": "global",
     "kind": "function",
+    "params": [],
     "returns": [
       {
         "type": {
@@ -69,13 +79,14 @@ function Comedy(){}
     "name": "Comedy",
     "scope": "global",
     "kind": "function",
+    "params": [],
     "customTags": [
       {
         "tag": "cast",
         "value": "in order of appearance:\n1. David Jason\n2. Nicholas Lyndhurst\n3. Buster Merryfield"
       }
     ],
-    "order": 2
+    "order": 3
   }
 ]
 ```
@@ -86,15 +97,17 @@ function Comedy(){}
 ```markdown
 <a name="Tree"></a>
 ### Tree
-**Kind:** global class  
+**Kind**: global class  
+<a name="new_Tree_new"></a>
+#### new Tree()
 <a name="promiseSomething"></a>
 ### promiseSomething() ⇒ <code>Promise</code>
-**Kind:** global function  
+**Kind**: global function  
 **Fulfil**: <code>[Tree](#Tree)</code> - Fulfils with a damn tree  
 **Reject**: <code>Error</code> This is an error which is passed back  
 <a name="Comedy"></a>
 ### Comedy()
-**Kind:** global function  
+**Kind**: global function  
 **Cast**: in order of appearance:
 1. David Jason
 2. Nicholas Lyndhurst
@@ -106,15 +119,17 @@ function Comedy(){}
 # Rendered
 <a name="Tree"></a>
 ### Tree
-**Kind:** global class  
+**Kind**: global class  
+<a name="new_Tree_new"></a>
+#### new Tree()
 <a name="promiseSomething"></a>
 ### promiseSomething() ⇒ <code>Promise</code>
-**Kind:** global function  
+**Kind**: global function  
 **Fulfil**: <code>[Tree](#Tree)</code> - Fulfils with a damn tree  
 **Reject**: <code>Error</code> This is an error which is passed back  
 <a name="Comedy"></a>
 ### Comedy()
-**Kind:** global function  
+**Kind**: global function  
 **Cast**: in order of appearance:
 1. David Jason
 2. Nicholas Lyndhurst
