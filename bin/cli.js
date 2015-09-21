@@ -28,7 +28,8 @@ var usage = cli.getUsage({
     ],
     groups: {
         jsdoc2md: { 
-            title: "jsdoc2md"
+            title: "jsdoc2md",
+            description: "General options."
         },
         jsdocParse: { 
             title: "jsdoc-parse",
