@@ -7,7 +7,7 @@ A number, or a string containing a number.
 Set the magic number.
 @param {NumberLike} x - The magic number.
 */
-function setMagicNumber(x) {}
+function setMagicNumber (x) {}
 
 /**
 Some options
@@ -19,4 +19,4 @@ Some options
 /**
 @param {someOptions} - the input options
 */
-function doSomething(option){}
+function doSomething (option) {}

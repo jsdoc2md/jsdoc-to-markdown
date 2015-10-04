@@ -11,4 +11,4 @@ Pump an idiot full of volts
 - devestating power
 - an unusual aftertaste
 */
-function taze(victim, options, done){}
+function taze (victim, options, done) {}

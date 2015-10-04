@@ -3,13 +3,12 @@
 @reject {Error} This is an error which is passed back
 @returns {Promise}
 */
-function promiseSomething(){}
+function promiseSomething () {}
 
 /**
 @class
 */
-function Tree(){}
-
+function Tree () {}
 
 /**
 @cast in order of appearance:
@@ -17,4 +16,4 @@ function Tree(){}
 2. Nicholas Lyndhurst
 3. Buster Merryfield
 */
-function Comedy(){}
+function Comedy () {}

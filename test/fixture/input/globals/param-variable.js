@@ -2,12 +2,12 @@
 This function takes variable input
 @param prop {...string} - the property(s) as input
 */
-function pluck(prop){}
+function pluck (prop) {}
 
 /**
 @class
 */
-function Plucker(){}
+function Plucker () {}
 
 /** 
 This function takes variable input
@@ -15,4 +15,4 @@ This function takes variable input
 @param {...string} - the property(s) as input
 @param three {...string} - more input
 */
-Plucker.prototype.doPluck = function(one, args){};
+Plucker.prototype.doPluck = function (one, args) {}

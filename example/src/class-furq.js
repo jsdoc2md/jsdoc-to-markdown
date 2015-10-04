@@ -4,7 +4,7 @@
 */
 
 /**
-She's an Uzi lover. 
+She's an Uzi lover.
 
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
@@ -17,65 +17,65 @@ She's an Uzi lover.
 @borrows plant as #punch
 @fires FurQ#pop
 @fires FurQ#slap
-@example var uziLover = require("FurQ");
+@example var uziLover = require("FurQ")
 */
-function FurQ(){
-    /**
-    kill
-    @category standard
-    @example var kill = uziLover.kill();
-    @example uziLover.kill();
-    */
-    this.kill = function(){};
-    /**
-    * respect
-    * @category standard
-    * @param {FurQ~onRespect} - called on reciprocation of respect
-    * @example 
-    * uziLover.respect(function(err, gain){
-    *     console.log(gain);
-    * });
-    */
-    this.respect = function(done){};
-    
-    this.punch = function(){};
-    
-    /**
-    @const {string}
-    @default
-    */
-    this.LOVE = "UZI";
-    
-    /**
-    @type {string}
-    @default
-    @see "Uzi like a metal dick in my hand."
-    @see "Magazine like a big testicle gland."
-    */
-    this.wannaTryIt= "bitch";
-    
-    /**
-    override
-    */
-    this.spit = function(){};
-    
-    /**
-    fire weapon
-    @event FurQ#pop
-    @param zoop {boolean} - make 'zooping' sound as you fire
-    */
-    /**
-    slap man 
-    @event FurQ#slap
-    */
+function FurQ () {
+  /**
+  kill
+  @category standard
+  @example var kill = uziLover.kill()
+  @example uziLover.kill()
+  */
+  this.kill = function () {}
+  /**
+  * respect
+  * @category standard
+  * @param {FurQ~onRespect} - called on reciprocation of respect
+  * @example
+  * uziLover.respect(function(err, gain){
+  *     console.log(gain)
+  * })
+  */
+  this.respect = function (done) {}
+
+  this.punch = function () {}
+
+  /**
+  @const {string}
+  @default
+  */
+  this.LOVE = 'UZI'
+
+  /**
+  @type {string}
+  @default
+  @see "Uzi like a metal dick in my hand."
+  @see "Magazine like a big testicle gland."
+  */
+  this.wannaTryIt = 'bitch'
+
+  /**
+  override
+  */
+  this.spit = function () {}
+
+/**
+fire weapon
+@event FurQ#pop
+@param zoop {boolean} - make 'zooping' sound as you fire
+*/
+/**
+slap man
+@event FurQ#slap
+*/
 }
 
 /**
 check if at peace
 @deprecated
-@example var peace = FurQ.peace();
+@example var peace = FurQ.peace()
 */
-FurQ.peace = function(){};
+FurQ.peace = function () {}
 
 /**
 FUR-Q enemy types
@@ -83,19 +83,18 @@ FUR-Q enemy types
 @readonly
 */
 FurQ.enemy = {
-    /**
-    an awful individual
-    */
-    COCK: 0,
-    BITCH: 1,
-    MUTHAFUCKA: 2
-};
-
+  /**
+  an awful individual
+  */
+  COCK: 0,
+  BITCH: 1,
+  MUTHAFUCKA: 2
+}
 
 /**
 to plant ones fist in a buster's mush
 */
-function plant(){};
+function plant () {}
 
 /**
 Passed to {@link FurQ#respect}
@@ -104,33 +103,32 @@ Passed to {@link FurQ#respect}
 @param gain {*} - the respect percentage gained
 */
 
-
 /**
 @class
 */
-function Rapper(){
-    /**
-    spit
-    */
-    this.spit = function(){};
-    /**
-    battle
-    */
-    this.battle = function(){};
+function Rapper () {
+  /**
+  spit
+  */
+  this.spit = function () {}
+  /**
+  battle
+  */
+  this.battle = function () {}
 }
 /**
 train new rappers
 */
-Rapper.train = function(){
+Rapper.train = function () {
+  /**
+  rap school
+  @class
+  */
+  function School () {
     /**
-    rap school
-    @class
+    best student
     */
-    function School(){
-        /**
-        best student
-        */
-        this.bestStudent = null;
-    }
-    return new School();
-};
+    this.bestStudent = null
+  }
+  return new School()
+}

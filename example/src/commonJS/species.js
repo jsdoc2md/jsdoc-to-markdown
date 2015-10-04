@@ -3,23 +3,22 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 @module
 */
 
-module.exports = Species;
+module.exports = Species
 
 /**
 @class
 */
-function Species(){
-    
-    /**
-    the species name
-    @type {string}
-    */
-    this.name = "";
+function Species () {
+  /**
+  the species name
+  @type {string}
+  */
+  this.name = ''
 
-    /**
-    @type {Species}
-    */
-    this.species = species;
+  /**
+  @type {Species}
+  */
+  this.species = species
 }
 
 /**
@@ -28,4 +27,4 @@ merge two species into a new one
 @param {Species} - second
 @returns {Species}
 */
-Species.merge = function(one, two){};
+Species.merge = function (one, two) {}

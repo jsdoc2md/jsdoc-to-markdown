@@ -3,10 +3,10 @@ this module exports a class constructor
 @module file-set
 @example
 ```js
-var FileSet = require("file-set");
+var FileSet = require("file-set")
 ```
 */
-module.exports = FileSet;
+module.exports = FileSet
 
 /**
 Takes a list of path patterns
@@ -16,20 +16,20 @@ Takes a list of path patterns
 @alias module:file-set
 @example
 ```js
-var cowFiles = new FileSet("cow/*");
+var cowFiles = new FileSet("cow/*")
 ```
 */
-var FileSet = function(num){
-    var the = "constructor";
-};
+var FileSet = function (num) {
+  var the = 'constructor'
+}
 
 /**
 the prototype instance property
 */
-FileSet.prototype.files = true;
+FileSet.prototype.files = true
 
 /**
 A prototype instance methy meth
 @param {array} - the paths to delete
 */
-FileSet.prototype.delete = function(paths){};
+FileSet.prototype.delete = function (paths) {}

@@ -1,9 +1,9 @@
 /**
 A simple example written in the default `--example-lang` (javascript)
 @example
-var result = one();
+var result = one()
 */
-function one() {}
+function one () {}
 
 /**
 An example written in a different lang to the default (json)
@@ -14,7 +14,7 @@ An example written in a different lang to the default (json)
 }
 ```
 */
-function two() {}
+function two () {}
 
 /**
 An example with no code, just text
@@ -23,7 +23,7 @@ This example is just plain text. Note that it's formatted as javascript
 as that's the default `--example-lang` value and dmd has no way of 
 distinguishing whether the example text is, or is not source code.
 */
-function three() {}
+function three () {}
 
 /**
 Another text example, using the `@lang off` sub-tag..
@@ -31,16 +31,16 @@ Another text example, using the `@lang off` sub-tag..
 This example is plain text but it has not been formatted using the default 
 `--example-lang` of javascript because the `@example @lang off` was used..
 */
-function four() {}
+function four () {}
 
 /**
 An example with text and code, with no fenced-code blocks
 @example
 Here, i introduce the example: 
 
-var result = five();
+var result = five()
 */
-function five() {}
+function five () {}
 
 /**
 An example with text and code, with fenced-code block and no lang set
@@ -48,10 +48,10 @@ An example with text and code, with fenced-code block and no lang set
 Here, i introduce the example: 
 
 ```
-var result = six();
+var result = six()
 ```
 */
-function six() {}
+function six () {}
 
 /**
 An example with text and code, with fenced-code block and `js` lang set
@@ -59,10 +59,10 @@ An example with text and code, with fenced-code block and `js` lang set
 Here, i introduce the example: 
 
 ```js
-var result = seven();
+var result = seven()
 ```
 */
-function seven() {}
+function seven () {}
 
 /**
 An example with text and code, with fenced-code block and `json` lang set
@@ -75,4 +75,4 @@ this function returns data like:
 }
 ```
 */
-function eight() {}
+function eight () {}

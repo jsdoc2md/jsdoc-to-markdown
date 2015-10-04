@@ -4,14 +4,14 @@ exports an object.. has an inner class.
 @alias cyber
 @example
 ```js
-var cyber = require("cyberdyne");
+var cyber = require("cyberdyne")
 ```
 */
 
 /**
 @returns {module:cyberdyne~Machine}
 */
-exports.createMachine = function(){};
+exports.createMachine = function () {}
 
 /**
 the Machine constructor
@@ -19,19 +19,19 @@ the Machine constructor
 @classdesc The main class of machine
 @param {object} - constructor options
 */
-function Machine(options){
-    /**
-    @type {number}
-    */
-    this.eyes = 4;
+function Machine (options) {
+  /**
+  @type {number}
+  */
+  this.eyes = 4
 
-    /**
-    @type {string}
-    */
-    this.vibe = "sinister";
+  /**
+  @type {string}
+  */
+  this.vibe = 'sinister'
 }
 
 /**
 random 
 */
-var something = 1;
+var something = 1

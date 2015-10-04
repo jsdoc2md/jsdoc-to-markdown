@@ -4,7 +4,7 @@ Enum for the `type` value
 @enum {number}
 */
 var eFileType = {
-    NOEXIST: 0,
-    FILE: 1,
-    DIR: 2
-};
+  NOEXIST: 0,
+  FILE: 1,
+  DIR: 2
+}

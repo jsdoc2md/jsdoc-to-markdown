@@ -6,10 +6,10 @@ module with private shiz
 /**
 visible property
 */
-exports.notprivate = 1;
+exports.notprivate = 1
 
 /**
 isprivate property
 @private
 */
-exports.isprivate = 2;
+exports.isprivate = 2

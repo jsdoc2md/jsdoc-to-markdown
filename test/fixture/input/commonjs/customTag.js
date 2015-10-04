@@ -8,4 +8,4 @@ This is the module description
 /**
 the main function description
 */
-exports.one = function(){};
+exports.one = function () {}

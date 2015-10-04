@@ -2,7 +2,7 @@
   "name": "jsdoc-to-markdown",
   "author": "Lloyd Brookes",
   "version": "1.2.0",
-  "description": "Markdown API documentation generator",
+  "description": "jsdoc-annotated source in, markdown API docs out.",
   "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "license": "MIT",
@@ -14,7 +14,6 @@
   "scripts": {
     "test": "tape test/*.js",
     "docs": "node bin/cli.js -t jsdoc2md/README.hbs -p list lib/jsdoc-to-markdown.js node_modules/jsdoc-parse/lib/jsdoc-parse.js node_modules/dmd/lib/dmd.js > README.md; echo ",
-    "lint": "jshint bin/*.js lib/*.js test/*.js; echo",
     "eg": "node example/renderDirs.js; echo"
   },
   "bin": {
@@ -41,5 +40,10 @@
   },
   "devDependencies": {
     "tape": "^4"
+  },
+  "standard": {
+    "ignore": [
+      "test", "example"
+    ]
   }
 }

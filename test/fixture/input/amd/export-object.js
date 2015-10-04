@@ -1,15 +1,14 @@
 define(function () {
+  /**
+   * A module that says hello!
+   * @exports amd/export-object
+   */
+  var ns = {}
 
-    /**
-     * A module that says hello!
-     * @exports amd/export-object
-     */
-    var ns = {};
+  /** Say hello. */
+  ns.sayHello = function () {
+    return 'Hello world'
+  }
 
-    /** Say hello. */
-    ns.sayHello = function() {
-        return 'Hello world';
-    };
-
-    return ns;
-});
+  return ns
+})

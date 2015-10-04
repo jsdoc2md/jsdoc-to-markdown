@@ -6,20 +6,20 @@ exported object, with-inner-members
 /**
 @returns {boolean}
 */
-exports.createCow = function(){};
+exports.createCow = function () {}
 
 /**
 the inner member
 */
-var innerMember = 1;
+var innerMember = 1
 
 /**
 the inner function
 */
-function innerFuction(){}
+function innerFuction () {}
 
 /**
 another inner function
 @deprecated
 */
-function anotherInnerFuction(){}
+function anotherInnerFuction () {}

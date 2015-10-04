@@ -4,23 +4,22 @@ a constructor description
 @classdesc simple class description
 @extends {Object}
 */
-function Person(){}
-Person.prototype.methodOne = function(){};
-
+function Person () {}
+Person.prototype.methodOne = function () {}
 
 /**
 a constructor with args
 @class
 @param [options] {object} - optional shit
 */
-function Car(options){}
+function Car (options) {}
 
 /**
 @class
 @classdesc a class which extends
 @extends Pipe
 */
-function Pipe(){}
+function Pipe () {}
 
 /**
 the constructor description
@@ -34,7 +33,7 @@ the constructor description
 @since v0.10.28
 @example
 ```js
-var yeah = new Everything(true);
+var yeah = new Everything(true)
 ```
 */
-function Everything(input, second){}
+function Everything (input, second) {}

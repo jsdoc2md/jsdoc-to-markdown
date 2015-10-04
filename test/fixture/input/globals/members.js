@@ -1,82 +1,82 @@
 /**
 a global variable
 */
-var variable = 1;
+var variable = 1
 
 /**
 @type {string}
 */
-var typed = 1;
+var typed = 1
 
 /**
 @type {string|number}
 */
-var types = 1;
+var types = 1
 
 /**
 a var with an example
 @example
 ```js
-var another = 100;
+var another = 100
 ```
 */
-var exampled = 1;
+var exampled = 1
 
 /**
 a var with multiple examples
 @example
 ```js
-var another = 100;
+var another = 100
 ```
 @example
 ```js
-var next = "p";
+var next = "p"
 ```
 */
-var examples = 1;
+var examples = 1
 
 /**
 @protected
 */
-var _protected = true;
+var _protected = true
 
 /**
 @private
 */
-var _private = true;
+var _private = true
 
 /**
 @author Clive Jones <clive@jones.com>
 */
-var withAuthor = true;
+var withAuthor = true
 
 /**
 @default
 */
-var hasDefault = 23;
+var hasDefault = 23
 
 /**
 @default
 */
-var hasDefaultObject = { 
-    one: 1, 
-    two: 2 
-};
+var hasDefaultObject = {
+  one: 1,
+  two: 2
+}
 
 /**
 @deprecated
 */
-var deprecated = true;
+var deprecated = true
 
 /**
 @readonly
 */
-var readOnly = true;
+var readOnly = true
 
 /**
 @since v0.10.28
 */
-var hasSince = true;
+var hasSince = true
 
 /**
 This variable has all tags set
@@ -89,7 +89,7 @@ This variable has all tags set
 @since v0.10.28
 @example
 ```js
-var allTogether = true;
+var allTogether = true
 ```
 */
-var allTogether = false;
+var allTogether = false

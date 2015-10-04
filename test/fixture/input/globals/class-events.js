@@ -1,7 +1,7 @@
 /**
 @class
 */
-function Rice(){}
+function Rice () {}
 
 /**
 Fired when rice is ready

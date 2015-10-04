@@ -3,32 +3,32 @@ A missle object, with separate docs for each property.
 @namespace missle
 */
 var missle = {
-    /**
-    missile range
-    @default
-    @type {number}
-    */
-    range: 100000,
+  /**
+  missile range
+  @default
+  @type {number}
+  */
+  range: 100000,
 
-    /**
-    ballistic
-    @default
-    @type {boolean}
-    */
-    ballistic: true,
-    /**
-    hydrogen bomb?
-    */
-    hydrogen: true,
+  /**
+  ballistic
+  @default
+  @type {boolean}
+  */
+  ballistic: true,
+  /**
+  hydrogen bomb?
+  */
+  hydrogen: true,
 
-    /**
-    number of megatons
-    @default
-    @type {number}
-    */
-    megaton: 200,
-    destruction: "total"
-};
+  /**
+  number of megatons
+  @default
+  @type {number}
+  */
+  megaton: 200,
+  destruction: 'total'
+}
 
 /**
 A personality object, documented using the more concise `@property` notation.
@@ -40,9 +40,9 @@ A personality object, documented using the more concise `@property` notation.
 @property neuroticism {object} - neuroticism
 */
 var personality = {
-    openness: "",
-    conscientiousness: "", 
-    extraversion: "", 
-    agreeableness: "", 
-    neuroticism: ""
-};
+  openness: '',
+  conscientiousness: '',
+  extraversion: '',
+  agreeableness: '',
+  neuroticism: ''
+}

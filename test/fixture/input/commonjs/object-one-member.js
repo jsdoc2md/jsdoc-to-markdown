@@ -13,7 +13,7 @@ a function
 @returns {object | string} this return has several types
 @example
 ```js
-allTogether(true);
+allTogether(true)
 ```
 */
-exports.three = function(four, five){};
+exports.three = function (four, five) {}

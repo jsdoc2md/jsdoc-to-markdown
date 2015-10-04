@@ -2,7 +2,7 @@
 @param {string} - the filename
 @param {onComplete} - the callback
 */
-function read(filename, done){}
+function read (filename, done) {}
 
 /**
 Called when an async operation completes

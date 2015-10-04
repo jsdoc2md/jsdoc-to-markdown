@@ -4,4 +4,4 @@ a quite wonderful function
 @param {object} - security
 @returns {survival}
 */
-function protection(cloak, dagger){}
+function protection (cloak, dagger) {}

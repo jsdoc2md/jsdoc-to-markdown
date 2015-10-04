@@ -7,14 +7,14 @@ simple object export
 /**
 first property
 */
-exports.one = 1;
+exports.one = 1
 
 /**
 second property
 */
-exports.two = 2;
+exports.two = 2
 
 /**
 a function
 */
-exports.three = function(four, five){};
+exports.three = function (four, five) {}

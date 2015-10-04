@@ -11,4 +11,4 @@ the main function description
 @param {object} - a second input
 @returns {object | string} this return has several types
 */
-module.exports = function(one, two){};
+module.exports = function (one, two) {}

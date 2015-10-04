@@ -11,11 +11,11 @@
 /** See {@link LinkClass} and [LinkClass's foo property]{@link LinkClass#foo}.
  * Also check out {@link http://www.google.com|Google} and {@link http://github.com GitHub}.
  */
-function linkFunction() {}
+function linkFunction () {}
 
 /** A class.
  * @class */
-function LinkClass() {
-    /** foo property */
-    this.foo = 1;
+function LinkClass () {
+  /** foo property */
+  this.foo = 1
 }

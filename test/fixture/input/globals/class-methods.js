@@ -1,12 +1,12 @@
 /**
 @class
 */
-function Something(){}
+function Something () {}
 
 /**
 method description
 */
-Something.prototype.methodOne = function(){};
+Something.prototype.methodOne = function () {}
 
 /**
 This function has all tags set
@@ -18,7 +18,7 @@ This function has all tags set
 @returns {object | string} this return has several types
 @example
 ```js
-something.allTogether(true);
+something.allTogether(true)
 ```
 */
-Something.prototype.allTogether = function(one, two){}
+Something.prototype.allTogether = function (one, two) {}

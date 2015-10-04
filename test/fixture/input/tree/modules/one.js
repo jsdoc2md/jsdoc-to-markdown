@@ -2,4 +2,4 @@
 module one yeah
 @module
 */
-exports.one = 1;
+exports.one = 1

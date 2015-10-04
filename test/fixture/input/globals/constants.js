@@ -2,7 +2,7 @@
 the first important constant
 @constant {number}
 */
-var CONST_ONE = 1; 
+var CONST_ONE = 1
 
 /**
 This variable has all tags set
@@ -13,7 +13,7 @@ This variable has all tags set
 @since v0.10.28
 @example
 ```js
-var CONST_TWO = true;
+var CONST_TWO = true
 ```
 */
-var CONST_TWO = false;
+var CONST_TWO = false

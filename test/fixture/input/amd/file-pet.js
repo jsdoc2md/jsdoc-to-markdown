@@ -4,41 +4,40 @@ this module returns a pet of files
 @alias filePet
 @example
 ```js
-var cowFiles = FilePet("cow/*");
+var cowFiles = FilePet("cow/*")
 ```
 */
 
-define("FilePet", function(){
-
+define('FilePet', function () {
+  /**
+  this is the contructor
+  @class this class returns a pet of files
+  @param {number} - the input number
+  @example
+  ```js
+  var cowFiles = FilePet("cow/*")
+  ```
+  @alias module:file-pet
+  */
+  function FilePet (num) {
     /**
-    this is the contructor
-    @class this class returns a pet of files
-    @param {number} - the input number
-    @example
-    ```js
-    var cowFiles = FilePet("cow/*");
-    ```
-    @alias module:file-pet
+    an instance ting
     */
-    function FilePet(num){
-        /**
-        an instance ting
-        */
-        this.instie = 0;
-    };
+    this.instie = 0
+  }
 
-    /**
-    the prototype instance property
-    @type {boolean}
-    @default
-    */
-    FilePet.prototype.files = true;
+  /**
+  the prototype instance property
+  @type {boolean}
+  @default
+  */
+  FilePet.prototype.files = true
 
-    /**
-    A prototype instance methy meth
-    @param {array} - the paths to delete
-    */
-    FilePet.prototype.delete = function(paths){};
-    
-    return FilePet;
-});
+  /**
+  A prototype instance methy meth
+  @param {array} - the paths to delete
+  */
+  FilePet.prototype.delete = function (paths) {}
+
+  return FilePet
+})

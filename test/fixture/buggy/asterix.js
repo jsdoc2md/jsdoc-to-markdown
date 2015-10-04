@@ -2,7 +2,7 @@
 a function returning markdown
 @example
 this code:
-var output = getMarkdown();
+var output = getMarkdown()
 
 will assign this markdown to `output`:
 
@@ -10,4 +10,4 @@ will assign this markdown to `output`:
 a paragraph of text
 
 */
-function getMarkdown(){}
+function getMarkdown () {}

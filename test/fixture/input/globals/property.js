@@ -7,11 +7,11 @@
  * @property {number}  defaults.treasure.gold - How much gold the party starts with.
  */
 var config = {
-    defaults: {
-        players: 1,
-        level:   'beginner',
-        treasure: {
-            gold: 0
-        }
+  defaults: {
+    players: 1,
+    level: 'beginner',
+    treasure: {
+      gold: 0
     }
-};
+  }
+}

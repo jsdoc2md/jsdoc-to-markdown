@@ -7,10 +7,10 @@ module with ignored shiz
 /**
 visible property
 */
-exports.visible = 1;
+exports.visible = 1
 
 /**
 invisible property
 @ignore
 */
-exports.invisible = 2;
+exports.invisible = 2

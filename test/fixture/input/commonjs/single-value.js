@@ -7,4 +7,4 @@ this module exports one value, that's it
 @type {boolean}
 @default
 */
-module.exports = true;
+module.exports = true

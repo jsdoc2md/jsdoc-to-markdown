@@ -3,12 +3,12 @@ Aside from humans, who are the most prolific and versatile builders, building be
 @mixin
 */
 var builder = {
-    /**
-    construct something
-    */
-    construct: function(){},
-    /**
-    repair something
-    */
-    repair: function(){}
-};
+  /**
+  construct something
+  */
+  construct: function () {},
+  /**
+  repair something
+  */
+  repair: function () {}
+}
