@@ -29,7 +29,7 @@
     "documentation"
   ],
   "dependencies": {
-    "command-line-args": "^1",
+    "command-line-args": "^2.0.2",
     "config-master": "^1.0.0",
     "console-dope": "~0.3.3",
     "dmd": "^1",
@@ -43,7 +43,8 @@
   },
   "standard": {
     "ignore": [
-      "test", "example"
+      "test",
+      "example"
     ]
   }
 }

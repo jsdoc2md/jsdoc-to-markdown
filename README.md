@@ -1,5 +1,5 @@
 [![view on npm](http://img.shields.io/npm/v/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
-[![npm module downloads per month](http://img.shields.io/npm/dm/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
+[![npm module downloads](http://img.shields.io/npm/dt/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
 [![Build Status](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown)
 [![Dependency Status](https://david-dm.org/jsdoc2md/jsdoc-to-markdown.svg)](https://david-dm.org/jsdoc2md/jsdoc-to-markdown)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
@@ -7,7 +7,7 @@
 ***This documentation is a work-in-progress***
 
 # jsdoc-to-markdown
-[jsdoc](http://usejsdoc.org) documented source code in, markdown format API documentation out. 
+[jsdoc](http://usejsdoc.org) documented source code in, markdown format API documentation out.
 
 ## Synopsis
 write documented code:
@@ -38,7 +38,7 @@ a quite wonderful function
 | dagger | <code>object</code> | security     |
 ```
 
-this command achieves the same result: 
+this command achieves the same result:
 ```sh
 $ jsdoc-parse example/function.js | dmd
 ```
@@ -52,10 +52,10 @@ $ jsdoc-parse example/function.js | dmd
 - Use any arbitrary tag, e.g. `@fulfil`, `@reject`, `@hatredlevel` etc.
 
 ## Example output
-Some example output creating using `jsdoc2md`. 
+Some example output creating using `jsdoc2md`.
 
 ### Generated README files
-These projects insert jsdoc2md output into a readme template. 
+These projects insert jsdoc2md output into a readme template.
 
 <table>
   <thead>
@@ -89,7 +89,7 @@ You can see an example of how each [jsdoc tag](http://usejsdoc.org) looks when r
 
 ### Examples demonstrating various options
 
-To get an idea of the affects the various options have: 
+To get an idea of the affects the various options have:
 
 - [formatting options](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/dmd%20options)
   - [example-lang](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/options/dmd%20options/example-lang)
@@ -111,13 +111,13 @@ If you can't achieve what you need using the command-line tool you can write a c
 - [generate one markdown file per class](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/scripting/output-file-per-class)
 
 ### Templating examples
-The default jsdoc2md output might not always suit you. You can supply your using own template using the `template` option. You can see the template used to generate this README [here](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/jsdoc2md/README.hbs). 
+The default jsdoc2md output might not always suit you. You can supply your using own template using the `template` option. You can see the template used to generate this README [here](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/jsdoc2md/README.hbs).
 
 #### Selectors
 - Cherry-pick which documentation appears in the output using [selector helpers](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers).
   - [{{#module}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers/module)
   - [{{#class}}](https://github.com/jsdoc2md/jsdoc-to-markdown/tree/master/example/templating/selector%20helpers/class)
-  
+
 ### Exemplary APIs
 See [the wiki](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki/Exemplary-APIs) for more great API examples. Feel free to add your own!
 
@@ -131,7 +131,7 @@ To install the `jsdoc2md` command-line tool globally, run:
 $ npm install -g jsdoc-to-markdown
 ```
 
-Some typical use cases: 
+Some typical use cases:
 
 ```sh
 $ # dump everything you have into a single file
@@ -152,7 +152,7 @@ $ jsdoc2md "src/**/*.js" --template readme.hbs > README.md
 #### Note on globbing
 General rule: if your file expression contains `**` yet recursion is failing, wrap the expression in quotes (e.g. `"lib/**/*.js"`).
 
-If wrapped in quotes, bash (or your shell) will not attempt file-name expansion on the expression. If you do not use quotes you will require bash version 4+ with globstar enabled for recursion to work. 
+If wrapped in quotes, bash (or your shell) will not attempt file-name expansion on the expression. If you do not use quotes you will require bash version 4+ with globstar enabled for recursion to work.
 
 ### Add a "generate docs" task to your project workflow
 #### As an `npm run` task
@@ -182,10 +182,10 @@ See [grunt-jsdoc-to-markdown](https://github.com/jsdoc2md/grunt-jsdoc-to-markdow
 See [gulp-jsdoc-to-markdown](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown).
 
 ## Contributing
-Issue reports and patches are encouraged. And the project would benefit from an additional maintainer.. 
+Issue reports and patches are encouraged. And the project would benefit from an additional maintainer..
 
 ### Composition
-Essentially, jsdoc2d connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output. 
+Essentially, jsdoc2d connects the output of [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse) to the input of [dmd](https://github.com/jsdoc2md/dmd). dmd uses the [ddata](https://github.com/jsdoc2md/ddata) helper library (also shared by [dhtml](https://github.com/jsdoc2md/dhtml)) and [stream-handlebars](https://github.com/75lb/stream-handlebars) to generate the output.
 
 ## API Reference
 **Example**  
