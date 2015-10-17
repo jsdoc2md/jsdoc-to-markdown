@@ -47,13 +47,13 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 
 <a name="new_FurQ_new"></a>
 ### `new FurQ()`
-She's an Uzi lover. 
+She's an Uzi lover.
 
 ![uzi](https://sampleface.co.uk/wp-content/uploads/2013/07/fur-q-uzi-lover.png)
 
 **Example**  
 ```js
-var uziLover = require("FurQ");
+var uziLover = require("FurQ")
 ```
 <a name="FurQ+wannaTryIt"></a>
 ### `furQ.wannaTryIt` : <code>string</code>
@@ -107,12 +107,12 @@ kill
 **Category**: standard  
 **Example**  
 ```js
-var kill = uziLover.kill();
-    
+var kill = uziLover.kill()
+  
 ```
 **Example**  
 ```js
-uziLover.kill();
+uziLover.kill()
 ```
 <a name="FurQ+respect"></a>
 ### `furQ.respect(done)`
@@ -128,8 +128,8 @@ respect
 **Example**  
 ```js
 uziLover.respect(function(err, gain){
-    console.log(gain);
-});
+    console.log(gain)
+})
 ```
 <a name="FurQ.enemy"></a>
 ### `FurQ.enemy` : <code>enum</code>
@@ -154,7 +154,7 @@ check if at peace
 **Kind**: static method of <code>[FurQ](#FurQ)</code>  
 **Example**  
 ```js
-var peace = FurQ.peace();
+var peace = FurQ.peace()
 ```
 <a name="FurQ..onRespect"></a>
 ### `FurQ~onRespect` : <code>function</code>
@@ -172,7 +172,6 @@ Passed to [respect](#FurQ+respect)
 **Kind**: global class  
 
 * [Rapper](#Rapper)
-  * [`new Rapper()`](#new_Rapper_new)
   * _instance_
     * [`.spit()`](#Rapper+spit)
     * [`.battle()`](#Rapper+battle)
@@ -182,8 +181,6 @@ Passed to [respect](#FurQ+respect)
         * [`new School()`](#new_Rapper.train..School_new)
         * [`.bestStudent`](#Rapper.train..School+bestStudent)
 
-<a name="new_Rapper_new"></a>
-### `new Rapper()`
 <a name="Rapper+spit"></a>
 ### `rapper.spit()`
 spit

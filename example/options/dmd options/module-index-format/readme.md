@@ -50,7 +50,6 @@
     * [.repair()](#module_builder..builder.repair)
 * [species](#module_species)
   * [~Species](#module_species..Species)
-    * [new Species()](#new_module_species..Species_new)
     * _instance_
       * [.name](#module_species..Species+name) : <code>string</code>
       * [.species](#module_species..Species+species) : <code>Species</code>

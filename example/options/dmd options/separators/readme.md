@@ -44,7 +44,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 **Example**  
 ```js
-var animal = require("animal");
+var animal = require("animal")
 ```
 
 * [animal](#module_animal)
@@ -163,7 +163,6 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 * [species](#module_species)
   * [~Species](#module_species..Species)
-    * [new Species()](#new_module_species..Species_new)
     * _instance_
       * [.name](#module_species..Species+name) : <code>string</code>
       * [.species](#module_species..Species+species) : <code>Species</code>
@@ -178,18 +177,12 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 **Kind**: inner class of <code>[species](#module_species)</code>  
 
 * [~Species](#module_species..Species)
-  * [new Species()](#new_module_species..Species_new)
   * _instance_
     * [.name](#module_species..Species+name) : <code>string</code>
     * [.species](#module_species..Species+species) : <code>Species</code>
   * _static_
     * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
-
--
-
-<a name="new_module_species..Species_new"></a>
-#### new Species()
 
 -
 

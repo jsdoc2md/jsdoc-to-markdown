@@ -6,25 +6,24 @@ Interface for a Currah Speech Synth
 ![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)
 @interface
 */
-function Speech(){}
+function Speech () {}
 
 /**
 what to say
 @param {string} - the text to speak
 */
-Speech.prototype.say = function(text){};
-
+Speech.prototype.say = function (text) {}
 /**
 @implements {Speech}
 @class
 @classdesc a synth, that also implements speech
 */
-function Synth(){
-    /**
-    play a demo piece, Beethoven or something.. 
-    */
-    this.demo = function(){};
-    this.say = function(text){};
+function Synth () {
+  /**
+  play a demo piece, Beethoven or something.. 
+  */
+  this.demo = function () {}
+  this.say = function (text) {}
 }
 
 ```
@@ -34,15 +33,6 @@ function Synth(){
 # jsdoc-parse output
 ```json
 [
-  {
-    "id": "Synth()",
-    "longname": "Synth",
-    "name": "Synth",
-    "kind": "constructor",
-    "memberof": "Synth",
-    "params": [],
-    "order": 3
-  },
   {
     "id": "Speech",
     "longname": "Speech",
@@ -94,7 +84,7 @@ function Synth(){
     "kind": "function",
     "description": "play a demo piece, Beethoven or something..",
     "memberof": "Synth",
-    "order": 4
+    "order": 3
   },
   {
     "id": "Synth#say",
@@ -118,7 +108,7 @@ function Synth(){
         "name": "text"
       }
     ],
-    "order": 5
+    "order": 4
   }
 ]
 ```
@@ -152,12 +142,9 @@ a synth, that also implements speech
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
-  * [new Synth()](#new_Synth_new)
   * [.demo()](#Synth+demo)
   * [.say(text)](#Synth+say)
 
-<a name="new_Synth_new"></a>
-#### new Synth()
 <a name="Synth+demo"></a>
 #### synth.demo()
 play a demo piece, Beethoven or something..
@@ -204,12 +191,9 @@ a synth, that also implements speech
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
-  * [new Synth()](#new_Synth_new)
   * [.demo()](#Synth+demo)
   * [.say(text)](#Synth+say)
 
-<a name="new_Synth_new"></a>
-#### new Synth()
 <a name="Synth+demo"></a>
 #### synth.demo()
 play a demo piece, Beethoven or something..

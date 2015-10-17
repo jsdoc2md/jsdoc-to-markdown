@@ -7,7 +7,7 @@ Something
 @done third
 @done fourth 
 */
-function Something() {}
+function Something () {}
 
 ```
 

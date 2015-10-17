@@ -5,13 +5,12 @@
 @reject {Error} This is an error which is passed back
 @returns {Promise}
 */
-function promiseSomething(){}
+function promiseSomething () {}
 
 /**
 @class
 */
-function Tree(){}
-
+function Tree () {}
 
 /**
 @cast in order of appearance:
@@ -19,7 +18,7 @@ function Tree(){}
 2. Nicholas Lyndhurst
 3. Buster Merryfield
 */
-function Comedy(){}
+function Comedy () {}
 
 ```
 
@@ -28,15 +27,6 @@ function Comedy(){}
 # jsdoc-parse output
 ```json
 [
-  {
-    "id": "Tree()",
-    "longname": "Tree",
-    "name": "Tree",
-    "kind": "constructor",
-    "memberof": "Tree",
-    "params": [],
-    "order": 2
-  },
   {
     "id": "Tree",
     "longname": "Tree",
@@ -86,7 +76,7 @@ function Comedy(){}
         "value": "in order of appearance:\n1. David Jason\n2. Nicholas Lyndhurst\n3. Buster Merryfield"
       }
     ],
-    "order": 3
+    "order": 2
   }
 ]
 ```
@@ -98,8 +88,6 @@ function Comedy(){}
 <a name="Tree"></a>
 ### Tree
 **Kind**: global class  
-<a name="new_Tree_new"></a>
-#### new Tree()
 <a name="promiseSomething"></a>
 ### promiseSomething() ⇒ <code>Promise</code>
 **Kind**: global function  
@@ -120,8 +108,6 @@ function Comedy(){}
 <a name="Tree"></a>
 ### Tree
 **Kind**: global class  
-<a name="new_Tree_new"></a>
-#### new Tree()
 <a name="promiseSomething"></a>
 ### promiseSomething() ⇒ <code>Promise</code>
 **Kind**: global function  

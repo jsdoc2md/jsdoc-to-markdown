@@ -12,7 +12,7 @@
     "description": "A simple example with some code.. it will format using the language specified by `--example-lang`",
     "params": [],
     "examples": [
-      "var result = one();"
+      "var result = one()"
     ],
     "order": 0
   },
@@ -80,7 +80,7 @@ A simple example with some code.. it will format using the language specified by
 **Kind**: global function  
 **Example**  
 ```js
-var result = one();
+var result = one()
 ```
 <a name="two"></a>
 ### two()
@@ -129,7 +129,7 @@ A simple example with some code.. it will format using the language specified by
 **Kind**: global function  
 **Example**  
 ```none
-var result = one();
+var result = one()
 ```
 <a name="two"></a>
 ### two()

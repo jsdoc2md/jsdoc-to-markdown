@@ -51,7 +51,6 @@ class description</p>
   * _inner_
     * [~onRespect](#FurQ..onRespect) : <code>function</code>
 * [Rapper](#Rapper)
-  * [new Rapper()](#new_Rapper_new)
   * _instance_
     * [.spit()](#Rapper+spit)
     * [.battle()](#Rapper+battle)
@@ -61,14 +60,12 @@ class description</p>
         * [new School()](#new_Rapper.train..School_new)
         * [.bestStudent](#Rapper.train..School+bestStudent)
 * [Species](#Species)
-  * [new Species()](#new_Species_new)
   * _instance_
     * [.name](#Species+name) : <code>string</code>
     * [.species](#Species+species) : <code>[Species](#Species)</code>
   * _static_
     * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 * [NewLines](#NewLines)
-  * [new NewLines()](#new_NewLines_new)
   * [.numbers](#NewLines+numbers)
   * [.method(input)](#NewLines+method) ⇒ <code>number</code>
 

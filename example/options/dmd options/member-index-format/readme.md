@@ -27,7 +27,6 @@ This format is inspired by the [node docs](http://nodejs.org/api/).
 -
 
 * [Rapper](#Rapper)
-  * [new Rapper()](#new_Rapper_new)
   * [rapper.spit()](#Rapper+spit)
   * [rapper.battle()](#Rapper+battle)
   * [Rapper.train()](#Rapper.train)
@@ -38,7 +37,6 @@ This format is inspired by the [node docs](http://nodejs.org/api/).
 -
 
 * [Species](#Species)
-  * [new Species()](#new_Species_new)
   * [species.name](#Species+name) : <code>string</code>
   * [species.species](#Species+species) : <code>[Species](#Species)</code>
   * [Species.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
@@ -46,7 +44,6 @@ This format is inspired by the [node docs](http://nodejs.org/api/).
 -
 
 * [NewLines](#NewLines)
-  * [new NewLines()](#new_NewLines_new)
   * [newLines.numbers](#NewLines+numbers)
   * [newLines.method(input)](#NewLines+method) ⇒ <code>number</code>
 
@@ -101,7 +98,6 @@ If an object has members within two of more distinct scopes (instance, static or
 -
 
 * [Rapper](#Rapper)
-  * [new Rapper()](#new_Rapper_new)
   * _instance_
     * [.spit()](#Rapper+spit)
     * [.battle()](#Rapper+battle)
@@ -114,7 +110,6 @@ If an object has members within two of more distinct scopes (instance, static or
 -
 
 * [Species](#Species)
-  * [new Species()](#new_Species_new)
   * _instance_
     * [.name](#Species+name) : <code>string</code>
     * [.species](#Species+species) : <code>[Species](#Species)</code>
@@ -124,7 +119,6 @@ If an object has members within two of more distinct scopes (instance, static or
 -
 
 * [NewLines](#NewLines)
-  * [new NewLines()](#new_NewLines_new)
   * [.numbers](#NewLines+numbers)
   * [.method(input)](#NewLines+method) ⇒ <code>number</code>
 

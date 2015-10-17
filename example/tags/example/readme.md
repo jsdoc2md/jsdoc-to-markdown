@@ -12,7 +12,7 @@
     "description": "A simple example written in the default `--example-lang` (javascript)",
     "params": [],
     "examples": [
-      "var result = one();"
+      "var result = one()"
     ],
     "order": 0
   },
@@ -64,7 +64,7 @@
     "description": "An example with text and code, with no fenced-code blocks",
     "params": [],
     "examples": [
-      "Here, i introduce the example: \n\nvar result = five();"
+      "Here, i introduce the example: \n\nvar result = five()"
     ],
     "order": 4
   },
@@ -77,7 +77,7 @@
     "description": "An example with text and code, with fenced-code block and no lang set",
     "params": [],
     "examples": [
-      "Here, i introduce the example: \n\n```\nvar result = six();\n```"
+      "Here, i introduce the example: \n\n```\nvar result = six()\n```"
     ],
     "order": 5
   },
@@ -90,7 +90,7 @@
     "description": "An example with text and code, with fenced-code block and `js` lang set",
     "params": [],
     "examples": [
-      "Here, i introduce the example: \n\n```js\nvar result = seven();\n```"
+      "Here, i introduce the example: \n\n```js\nvar result = seven()\n```"
     ],
     "order": 6
   },
@@ -120,7 +120,7 @@ A simple example written in the default `--example-lang` (javascript)
 **Kind**: global function  
 **Example**  
 ```js
-var result = one();
+var result = one()
 ```
 <a name="two"></a>
 ## two()
@@ -161,7 +161,7 @@ An example with text and code, with no fenced-code blocks
 ```js
 Here, i introduce the example: 
 
-var result = five();
+var result = five()
 ```
 <a name="six"></a>
 ## six()
@@ -172,7 +172,7 @@ An example with text and code, with fenced-code block and no lang set
 Here, i introduce the example: 
 
 ```
-var result = six();
+var result = six()
 ```
 <a name="seven"></a>
 ## seven()
@@ -183,7 +183,7 @@ An example with text and code, with fenced-code block and `js` lang set
 Here, i introduce the example: 
 
 ```js
-var result = seven();
+var result = seven()
 ```
 <a name="eight"></a>
 ## eight()

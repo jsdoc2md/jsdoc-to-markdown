@@ -3,12 +3,12 @@
 /**
 @returns {string}
 */
-function returnsSomething(){}
+function returnsSomething () {}
 
 /**
 @returns {string} returns a string
 */
-function returnsWithDesc(){}
+function returnsWithDesc () {}
 
 ```
 

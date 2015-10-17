@@ -12,19 +12,18 @@
 @param {array} - an array of two parent {@link Animal} objects
 @param {Species} - the species
 */
-function Animal(species, parents){
-    
-    /**
-    the current age
-    @type {number}
-    @default
-    */
-    this.age = 0;
+function Animal (species, parents) {
+  /**
+  the current age
+  @type {number}
+  @default
+  */
+  this.age = 0
 
-    /**
-    @type {Species}
-    */
-    this.species = species;
+  /**
+  @type {Species}
+  */
+  this.species = species
 }
 
 /**
@@ -32,13 +31,13 @@ Animal moods
 @enum 
 */
 Animal.eMood = {
-    /** chilling */
-    satisfied: 0,
-    /** pissed off */
-    angry: 1,
-    /** need to eat */
-    hungry: 2
-};
+  /** chilling */
+  satisfied: 0,
+  /** pissed off */
+  angry: 1,
+  /** need to eat */
+  hungry: 2
+}
 
 ```
 

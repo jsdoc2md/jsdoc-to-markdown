@@ -1,14 +1,14 @@
 # Input source code
 ```js
 /** @constructor */
-function Greeter(name) {
-    setName.apply(this, name);
+function Greeter (name) {
+  setName.apply(this, name)
 }
 
 /** @this Greeter */
-function setName(name) {
-    /** a great name */
-    this.name = name;
+function setName (name) {
+  /** a great name */
+  this.name = name
 }
 
 ```
@@ -18,15 +18,6 @@ function setName(name) {
 # jsdoc-parse output
 ```json
 [
-  {
-    "id": "Greeter()",
-    "longname": "Greeter",
-    "name": "Greeter",
-    "kind": "constructor",
-    "memberof": "Greeter",
-    "params": [],
-    "order": 1
-  },
   {
     "id": "Greeter",
     "longname": "Greeter",
@@ -43,7 +34,7 @@ function setName(name) {
     "kind": "function",
     "params": [],
     "thisvalue": "Greeter",
-    "order": 2
+    "order": 1
   },
   {
     "id": "Greeter#name",
@@ -53,7 +44,7 @@ function setName(name) {
     "kind": "member",
     "description": "a great name",
     "memberof": "Greeter",
-    "order": 3
+    "order": 2
   }
 ]
 ```
@@ -65,13 +56,6 @@ function setName(name) {
 <a name="Greeter"></a>
 ### Greeter
 **Kind**: global class  
-
-* [Greeter](#Greeter)
-  * [new Greeter()](#new_Greeter_new)
-  * [.name](#Greeter+name)
-
-<a name="new_Greeter_new"></a>
-#### new Greeter()
 <a name="Greeter+name"></a>
 #### greeter.name
 a great name
@@ -89,13 +73,6 @@ a great name
 <a name="Greeter"></a>
 ### Greeter
 **Kind**: global class  
-
-* [Greeter](#Greeter)
-  * [new Greeter()](#new_Greeter_new)
-  * [.name](#Greeter+name)
-
-<a name="new_Greeter_new"></a>
-#### new Greeter()
 <a name="Greeter+name"></a>
 #### greeter.name
 a great name

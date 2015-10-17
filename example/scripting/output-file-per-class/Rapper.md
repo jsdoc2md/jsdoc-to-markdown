@@ -3,7 +3,6 @@
 **Kind**: global class  
 
 * [Rapper](#Rapper)
-  * [new Rapper()](#new_Rapper_new)
   * _instance_
     * [.spit()](#Rapper+spit)
     * [.battle()](#Rapper+battle)
@@ -13,8 +12,6 @@
         * [new School()](#new_Rapper.train..School_new)
         * [.bestStudent](#Rapper.train..School+bestStudent)
 
-<a name="new_Rapper_new"></a>
-### new Rapper()
 <a name="Rapper+spit"></a>
 ### rapper.spit()
 spit

@@ -30,7 +30,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 **Example**  
 ```js
-var animal = require("animal");
+var animal = require("animal")
 ```
 
 * [animal](#module_animal)
@@ -109,7 +109,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 
 **Example**  
 ```js
-var animal = require("animal");
+var animal = require("animal")
 ```
 
 ## List all the module names
