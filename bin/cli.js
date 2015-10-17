@@ -99,7 +99,7 @@ function halt (err) {
       dope.red.error('(run jsdoc2md with --verbose for a stack trace)')
     }
   } else {
-    dope.red.error(err.stack)
+    dope.red.error(err.message)
   }
   dope.error(usage)
   process.exit(1)
