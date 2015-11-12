@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 var fs = require('fs')
-var cliArgs = require('command-line-args')
+var commandLineArgs = require('command-line-args')
 var dope = require('console-dope')
 var jsdoc2md = require('../')
 var domain = require('domain')
@@ -9,36 +9,10 @@ var loadConfig = require('config-master')
 var homePath = require('home-path')
 var path = require('path')
 var o = require('object-tools')
-var cliOptions = require('../lib/cli-options')
+var cliData = require('../lib/cli-data')
 
-var cli = cliArgs(cliOptions)
-
-var usage = cli.getUsage({
-  title: 'jsdoc-to-markdown',
-  description: 'Markdown API Documentation generator.',
-  footer: 'Project home: [underline]{https://github.com/jsdoc2md/jsdoc-to-markdown}',
-  synopsis: [
-    '$ jsdoc2md [options] [bold]{--src} [underline]{file} ...',
-    '$ jsdoc2md [bold]{--help}',
-    '$ jsdoc2md [bold]{--config}',
-    '$ jsdoc2md [bold]{--stats} [underline]{file} ...',
-    '$ jsdoc2md [bold]{--json} [underline]{file} ...'
-  ],
-  groups: {
-    jsdoc2md: {
-      title: 'jsdoc2md',
-      description: 'General options.'
-    },
-    jsdocParse: {
-      title: 'jsdoc-parse',
-      description: 'These options affect how the javascript source is parsed.'
-    },
-    dmd: {
-      title: 'dmd',
-      description: 'These options affect how the markdown output looks.'
-    }
-  }
-})
+var cli = commandLineArgs(cliData.definitions)
+var usage = cli.getUsage(cliData.usage)
 
 try {
   var argv = cli.parse()
