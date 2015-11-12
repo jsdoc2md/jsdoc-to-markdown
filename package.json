@@ -39,6 +39,7 @@
     "stream-connect": "~0.1.0"
   },
   "devDependencies": {
+    "collect-json": "^1.0.0",
     "tape": "^4"
   },
   "standard": {
