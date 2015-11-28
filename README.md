@@ -359,14 +359,14 @@ A list of javascript source files (or glob expressions) to parse for documentati
 **Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
 **Example**  
 ```js
-var parse = require("jsdoc-parse");
-var fs = require("fs");
+var parse = require("jsdoc-parse")
+var fs = require("fs")
 
 // either supply one or more file names
-parse({ src: "example.js" }).pipe(process.stdout);
+parse({ src: "example.js" }).pipe(process.stdout)
 
 // or pipe in source code
-fs.createReadStream("example.js").parse().pipe(process.stdout);
+fs.createReadStream("example.js").parse().pipe(process.stdout)
 ```
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions+private"></a>
 #### parseOptions.private : <code>boolean</code>
@@ -390,7 +390,6 @@ Enable experimental parsing of .html files.
 Sort by one of more fields, e.g. `--sort-by kind category`. Pass the special value `none` to remove the default sort order.
 
 **Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
-**Default**: <code>[&quot;scope&quot;,&quot;category&quot;,&quot;kind&quot;,&quot;order&quot;]</code>  
 
 * * *
 
