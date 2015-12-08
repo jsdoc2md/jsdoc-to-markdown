@@ -41,6 +41,21 @@ function Synth () {
     "kind": "interface",
     "description": "Interface for a Currah Speech Synth\n\n![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)",
     "params": [],
+    "meta": {
+      "range": [
+        130,
+        151
+      ],
+      "filename": "src.js",
+      "lineno": 7,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/interface",
+      "code": {
+        "id": "astnode100000001",
+        "name": "Speech",
+        "type": "FunctionDeclaration",
+        "paramnames": []
+      }
+    },
     "order": 0
   },
   {
@@ -49,10 +64,30 @@ function Synth () {
     "name": "Synth",
     "scope": "global",
     "kind": "class",
-    "description": "a synth, that also implements speech",
     "implements": [
       "Speech"
     ],
+    "description": "a synth, that also implements speech",
+    "meta": {
+      "range": [
+        83,
+        223
+      ],
+      "filename": "src.js",
+      "lineno": 6,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/implements",
+      "code": {
+        "id": "astnode100000015",
+        "name": "Synth",
+        "type": "FunctionDeclaration",
+        "paramnames": []
+      },
+      "vars": {
+        "this.demo": "Synth#demo",
+        "": null,
+        "this.say": "Synth#say"
+      }
+    },
     "order": 2
   },
   {
@@ -74,6 +109,23 @@ function Synth () {
         "name": "text"
       }
     ],
+    "meta": {
+      "range": [
+        208,
+        249
+      ],
+      "filename": "src.js",
+      "lineno": 13,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/interface",
+      "code": {
+        "id": "astnode100000005",
+        "name": "Speech.prototype.say",
+        "type": "FunctionExpression",
+        "paramnames": [
+          "text"
+        ]
+      }
+    },
     "order": 1
   },
   {
@@ -84,17 +136,32 @@ function Synth () {
     "kind": "function",
     "description": "play a demo piece, Beethoven or something..",
     "memberof": "Synth",
+    "meta": {
+      "range": [
+        163,
+        189
+      ],
+      "filename": "src.js",
+      "lineno": 10,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/implements",
+      "code": {
+        "id": "astnode100000019",
+        "name": "this.demo",
+        "type": "FunctionExpression",
+        "paramnames": []
+      }
+    },
     "order": 3
   },
   {
     "id": "Synth#say",
-    "implements": [
-      "Speech#say"
-    ],
     "longname": "Synth#say",
     "name": "say",
     "scope": "instance",
     "kind": "function",
+    "implements": [
+      "Speech#say"
+    ],
     "description": "what to say",
     "memberof": "Synth",
     "params": [
@@ -108,6 +175,23 @@ function Synth () {
         "name": "text"
       }
     ],
+    "meta": {
+      "range": [
+        208,
+        249
+      ],
+      "filename": "src.js",
+      "lineno": 13,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/interface",
+      "code": {
+        "id": "astnode100000005",
+        "name": "Speech.prototype.say",
+        "type": "FunctionExpression",
+        "paramnames": [
+          "text"
+        ]
+      }
+    },
     "order": 4
   }
 ]

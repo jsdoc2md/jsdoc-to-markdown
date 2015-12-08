@@ -102,6 +102,25 @@ function taze (victim, options, done) {}
       }
     ],
     "deprecated": true,
+    "meta": {
+      "range": [
+        480,
+        520
+      ],
+      "filename": "function-taze.js",
+      "lineno": 14,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/src",
+      "code": {
+        "id": "astnode100000001",
+        "name": "taze",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "victim",
+          "options",
+          "done"
+        ]
+      }
+    },
     "order": 0
   }
 ]

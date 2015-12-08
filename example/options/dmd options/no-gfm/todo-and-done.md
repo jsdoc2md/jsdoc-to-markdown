@@ -40,6 +40,21 @@ function Something () {}
         "task": "fourth"
       }
     ],
+    "meta": {
+      "range": [
+        68,
+        92
+      ],
+      "filename": "src.js",
+      "lineno": 8,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/todo and done",
+      "code": {
+        "id": "astnode100000001",
+        "name": "Something",
+        "type": "FunctionDeclaration",
+        "paramnames": []
+      }
+    },
     "order": 0
   }
 ]

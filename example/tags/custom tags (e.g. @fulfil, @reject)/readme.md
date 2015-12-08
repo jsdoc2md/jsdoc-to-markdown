@@ -33,6 +33,21 @@ function Comedy () {}
     "name": "Tree",
     "scope": "global",
     "kind": "class",
+    "meta": {
+      "range": [
+        169,
+        188
+      ],
+      "filename": "src.js",
+      "lineno": 11,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)",
+      "code": {
+        "id": "astnode100000004",
+        "name": "Tree",
+        "type": "FunctionDeclaration",
+        "paramnames": []
+      }
+    },
     "order": 1
   },
   {
@@ -61,6 +76,21 @@ function Comedy () {}
         "value": "{Error} This is an error which is passed back"
       }
     ],
+    "meta": {
+      "range": [
+        122,
+        153
+      ],
+      "filename": "src.js",
+      "lineno": 6,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)",
+      "code": {
+        "id": "astnode100000001",
+        "name": "promiseSomething",
+        "type": "FunctionDeclaration",
+        "paramnames": []
+      }
+    },
     "order": 0
   },
   {
@@ -76,6 +106,21 @@ function Comedy () {}
         "value": "in order of appearance:\n1. David Jason\n2. Nicholas Lyndhurst\n3. Buster Merryfield"
       }
     ],
+    "meta": {
+      "range": [
+        285,
+        306
+      ],
+      "filename": "src.js",
+      "lineno": 19,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)",
+      "code": {
+        "id": "astnode100000007",
+        "name": "Comedy",
+        "type": "FunctionDeclaration",
+        "paramnames": []
+      }
+    },
     "order": 2
   }
 ]

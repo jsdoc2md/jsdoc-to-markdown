@@ -80,6 +80,28 @@ Animal.eMood = {
     "summary": "It's an animal, yeah?",
     "kind": "class",
     "description": "Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).\n\n- some markdown\n- in the module\n- description",
+    "meta": {
+      "range": [
+        598,
+        763
+      ],
+      "filename": "class-animal.js",
+      "lineno": 13,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/src",
+      "code": {
+        "id": "astnode100000001",
+        "name": "Animal",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "species",
+          "parents"
+        ]
+      },
+      "vars": {
+        "this.age": "Animal#age",
+        "this.species": "Animal#species"
+      }
+    },
     "order": 0
   },
   {
@@ -96,6 +118,22 @@ Animal.eMood = {
       ]
     },
     "defaultvalue": 0,
+    "meta": {
+      "range": [
+        694,
+        706
+      ],
+      "filename": "class-animal.js",
+      "lineno": 19,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/src",
+      "code": {
+        "id": "astnode100000007",
+        "name": "this.age",
+        "type": "Literal",
+        "value": 0,
+        "paramnames": []
+      }
+    },
     "order": 2
   },
   {
@@ -109,6 +147,22 @@ Animal.eMood = {
       "names": [
         "Species"
       ]
+    },
+    "meta": {
+      "range": [
+        739,
+        761
+      ],
+      "filename": "class-animal.js",
+      "lineno": 24,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/src",
+      "code": {
+        "id": "astnode100000013",
+        "name": "this.species",
+        "type": "Identifier",
+        "value": "species",
+        "paramnames": []
+      }
     },
     "order": 3
   },
@@ -153,6 +207,22 @@ Animal.eMood = {
         "codeName": "hungry"
       }
     ],
+    "meta": {
+      "range": [
+        792,
+        909
+      ],
+      "filename": "class-animal.js",
+      "lineno": 31,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/src",
+      "code": {
+        "id": "astnode100000019",
+        "name": "Animal.eMood",
+        "type": "ObjectExpression",
+        "value": "{\"satisfied\":0,\"angry\":1,\"hungry\":2}",
+        "paramnames": []
+      }
+    },
     "order": 4
   }
 ]

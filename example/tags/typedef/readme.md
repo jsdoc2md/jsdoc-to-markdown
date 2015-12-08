@@ -48,6 +48,23 @@ function doSomething (option) {}
         "name": "x"
       }
     ],
+    "meta": {
+      "range": [
+        160,
+        190
+      ],
+      "filename": "src.js",
+      "lineno": 10,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/typedef",
+      "code": {
+        "id": "astnode100000001",
+        "name": "setMagicNumber",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "x"
+        ]
+      }
+    },
     "order": 1
   },
   {
@@ -67,6 +84,23 @@ function doSomething (option) {}
         "name": "option"
       }
     ],
+    "meta": {
+      "range": [
+        347,
+        379
+      ],
+      "filename": "src.js",
+      "lineno": 22,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/typedef",
+      "code": {
+        "id": "astnode100000005",
+        "name": "doSomething",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "option"
+        ]
+      }
+    },
     "order": 3
   },
   {
@@ -81,6 +115,16 @@ function doSomething (option) {}
         "number",
         "string"
       ]
+    },
+    "meta": {
+      "range": [
+        0,
+        87
+      ],
+      "filename": "src.js",
+      "lineno": 1,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/typedef",
+      "code": {}
     },
     "order": 0
   },
@@ -116,6 +160,16 @@ function doSomething (option) {}
         "name": "some"
       }
     ],
+    "meta": {
+      "range": [
+        192,
+        297
+      ],
+      "filename": "src.js",
+      "lineno": 12,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/typedef",
+      "code": {}
+    },
     "order": 2
   }
 ]

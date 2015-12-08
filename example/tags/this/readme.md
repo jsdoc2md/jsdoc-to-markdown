@@ -24,6 +24,23 @@ function setName (name) {
     "name": "Greeter",
     "scope": "global",
     "kind": "class",
+    "meta": {
+      "range": [
+        20,
+        75
+      ],
+      "filename": "src.js",
+      "lineno": 2,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/this",
+      "code": {
+        "id": "astnode100000001",
+        "name": "Greeter",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "name"
+        ]
+      }
+    },
     "order": 0
   },
   {
@@ -34,6 +51,26 @@ function setName (name) {
     "kind": "function",
     "params": [],
     "thisvalue": "Greeter",
+    "meta": {
+      "range": [
+        98,
+        166
+      ],
+      "filename": "src.js",
+      "lineno": 7,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/this",
+      "code": {
+        "id": "astnode100000012",
+        "name": "setName",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "name"
+        ]
+      },
+      "vars": {
+        "this.name": "Greeter#name"
+      }
+    },
     "order": 1
   },
   {
@@ -44,6 +81,22 @@ function setName (name) {
     "kind": "member",
     "description": "a great name",
     "memberof": "Greeter",
+    "meta": {
+      "range": [
+        148,
+        164
+      ],
+      "filename": "src.js",
+      "lineno": 9,
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/this",
+      "code": {
+        "id": "astnode100000017",
+        "name": "this.name",
+        "type": "Identifier",
+        "value": "name",
+        "paramnames": []
+      }
+    },
     "order": 2
   }
 ]
