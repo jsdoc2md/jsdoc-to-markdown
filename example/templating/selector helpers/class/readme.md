@@ -27,7 +27,7 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - description
 
 **Kind**: global class  
-**Summary**: It&#x27;s an animal, yeah?  
+**Summary**: It's an animal, yeah?  
 
 * [Animal](#Animal)
   * [new Animal(species, parents)](#new_Animal_new)
@@ -89,4 +89,4 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 - description
 
 **Kind**: global class  
-**Summary**: It&#x27;s an animal, yeah?  
+**Summary**: It's an animal, yeah?  
