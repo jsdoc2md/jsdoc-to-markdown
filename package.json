@@ -32,9 +32,9 @@
     "command-line-args": "^2.0.2",
     "config-master": "^2.0.0",
     "console-dope": "~0.3.3",
-    "dmd": "^1",
+    "dmd": "^1.3.2",
     "home-path": "^1",
-    "jsdoc-parse": "^1",
+    "jsdoc-parse": "^1.2.1",
     "object-tools": "^2",
     "stream-connect": "~0.1.0"
   },
