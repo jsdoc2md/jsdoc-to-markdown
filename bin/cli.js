@@ -20,21 +20,9 @@ try {
   halt(err)
 }
 
-var dmdConfig = loadConfig(
-  path.join(homePath(), '.dmd.json'),
-  path.join(process.cwd(), '.dmd.json'),
-  { jsonPath: path.join(process.cwd(), 'package.json'), configProperty: 'dmd' }
-)
-var parseConfig = loadConfig(
-  path.join(homePath(), '.jsdoc-parse.json'),
-  path.join(process.cwd(), '.jsdoc-parse.json'),
-  { jsonPath: path.join(process.cwd(), 'package.json'), configProperty: 'jsdoc-parse' }
-)
-var jsdoc2mdConfig = loadConfig(
-  path.join(homePath(), '.jsdoc2md.json'),
-  path.join(process.cwd(), '.jsdoc2md.json'),
-  { jsonPath: path.join(process.cwd(), 'package.json'), configProperty: 'jsdoc2md' }
-)
+var dmdConfig = loadConfig('dmd')
+var parseConfig = loadConfig('jsdoc-parse')
+var jsdoc2mdConfig = loadConfig('jsdoc2md')
 
 var config = o.extend(parseConfig, dmdConfig, jsdoc2mdConfig, argv._all)
 

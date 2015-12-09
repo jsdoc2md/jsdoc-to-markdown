@@ -70,16 +70,16 @@ These projects insert jsdoc2md output into a readme template.
       </td>
     </tr>
     <tr>
+      <td><a href="https://github.com/75lb/command-line-args">command-line-args</a></td>
+      <td>Demonstrates documentation of `@module`, ES2015 classes, `@typicalname`, `@throws` and `@alias`.</td>
+    </tr>
+    <tr>
       <td><a href="https://github.com/75lb/array-tools">array-tools</a></td>
       <td>Very simple module exporting a collection of static methods. Demonstrates use of <code>@typicalname</code> (set to <code>a</code>) and the <code>@category</code> tag to group identifiers in the member-list.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/ansi-escape-sequences">ansi-escape-sequences</a></td>
       <td>Demonstrates usage of <code>@enum {type}</code> (rendered in table format).</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/75lb/file-set">file-set</a></td>
-      <td>Simple module exporting a class.</td>
     </tr>
   </tbody>
 </table>
@@ -350,6 +350,7 @@ All options for jsdoc-parse, including defaults
   * [.private](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+private) : <code>boolean</code>
   * [.stats](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+stats) : <code>boolean</code>
   * [.html](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+html) : <code>boolean</code>
+  * [.conf](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+conf) : <code>boolean</code>
   * [.sort-by](#module_jsdoc-parse--jsdocParse..ParseOptions+sort-by) : <code>array</code>
 
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+src"></a>
@@ -385,6 +386,12 @@ Enable experimental parsing of .html files.
 
 **Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
 **Default**: <code>false</code>  
+<a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+conf"></a>
+#### parseOptions.conf : <code>boolean</code>
+Path to a jsdoc configuration file, passed directly to `jsdoc -c`.
+
+**Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
+**Default**: <code></code>  
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions+sort-by"></a>
 #### parseOptions.sort-by : <code>array</code>
 Sort by one of more fields, e.g. `--sort-by kind category`. Pass the special value `none` to remove the default sort order.

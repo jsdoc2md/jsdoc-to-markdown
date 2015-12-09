@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "command-line-args": "^2.0.2",
-    "config-master": "^1.0.0",
+    "config-master": "^2.0.0",
     "console-dope": "~0.3.3",
     "dmd": "^1",
     "home-path": "^1",
