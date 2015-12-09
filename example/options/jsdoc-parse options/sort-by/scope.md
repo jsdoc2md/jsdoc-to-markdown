@@ -1,19 +1,19 @@
 ## 
 * [six](#six)
-  * [new six()](#new_six_new)
-  * _instance_
-    * [.six_two()](#six+six_two) ⇒ <code>number</code>
-    * [.six_one](#six+six_one) : <code>number</code>
-  * _static_
-    * [.six_static_two](#six.six_static_two)
-    * [.six_static_three](#six.six_static_three) : <code>number</code>
-    * [.six_static_one](#six.six_static_one) : <code>object</code>
+    * [new six()](#new_six_new)
+    * _instance_
+        * [.six_two()](#six+six_two) ⇒ <code>number</code>
+        * [.six_one](#six+six_one) : <code>number</code>
+    * _static_
+        * [.six_static_two](#six.six_static_two)
+        * [.six_static_three](#six.six_static_three) : <code>number</code>
+        * [.six_static_one](#six.six_static_one) : <code>object</code>
 ## 
 * [two](#two)
-  * [.two_four](#two.two_four) : <code>number</code>
-  * [.two_three](#two.two_three) : <code>object</code>
-  * [.two_two](#two.two_two) : <code>number</code>
-  * [.two_one()](#two.two_one) ⇒ <code>number</code>
+    * [.two_four](#two.two_four) : <code>number</code>
+    * [.two_three](#two.two_three) : <code>object</code>
+    * [.two_two](#two.two_two) : <code>number</code>
+    * [.two_one()](#two.two_one) ⇒ <code>number</code>
 ## 
 * [three](#three)
 * [thirteen](#thirteen) : <code>number</code>
@@ -84,14 +84,14 @@ five
 **Kind**: global class  
 
 * [six](#six)
-  * [new six()](#new_six_new)
-  * _instance_
-    * [.six_two()](#six+six_two) ⇒ <code>number</code>
-    * [.six_one](#six+six_one) : <code>number</code>
-  * _static_
-    * [.six_static_two](#six.six_static_two)
-    * [.six_static_three](#six.six_static_three) : <code>number</code>
-    * [.six_static_one](#six.six_static_one) : <code>object</code>
+    * [new six()](#new_six_new)
+    * _instance_
+        * [.six_two()](#six+six_two) ⇒ <code>number</code>
+        * [.six_one](#six+six_one) : <code>number</code>
+    * _static_
+        * [.six_static_two](#six.six_static_two)
+        * [.six_static_three](#six.six_static_three) : <code>number</code>
+        * [.six_static_one](#six.six_static_one) : <code>object</code>
 
 <a name="new_six_new"></a>
 ### new six()
@@ -134,10 +134,10 @@ two
 **Kind**: global mixin  
 
 * [two](#two)
-  * [.two_four](#two.two_four) : <code>number</code>
-  * [.two_three](#two.two_three) : <code>object</code>
-  * [.two_two](#two.two_two) : <code>number</code>
-  * [.two_one()](#two.two_one) ⇒ <code>number</code>
+    * [.two_four](#two.two_four) : <code>number</code>
+    * [.two_three](#two.two_three) : <code>object</code>
+    * [.two_two](#two.two_two) : <code>number</code>
+    * [.two_one()](#two.two_one) ⇒ <code>number</code>
 
 <a name="two.two_four"></a>
 ### two.two_four : <code>number</code>

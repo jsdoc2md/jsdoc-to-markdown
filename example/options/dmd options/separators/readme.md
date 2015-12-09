@@ -48,13 +48,13 @@ var animal = require("animal")
 ```
 
 * [animal](#module_animal)
-  * [~Animal](#module_animal..Animal)
-    * [new Animal(species, parents)](#new_module_animal..Animal_new)
-    * _instance_
-      * [.age](#module_animal..Animal+age) : <code>number</code>
-      * [.species](#module_animal..Animal+species) : <code>Species</code>
-    * _static_
-      * [.eMood](#module_animal..Animal.eMood)
+    * [~Animal](#module_animal..Animal)
+        * [new Animal(species, parents)](#new_module_animal..Animal_new)
+        * _instance_
+            * [.age](#module_animal..Animal+age) : <code>number</code>
+            * [.species](#module_animal..Animal+species) : <code>Species</code>
+        * _static_
+            * [.eMood](#module_animal..Animal.eMood)
 
 
 -
@@ -64,12 +64,12 @@ var animal = require("animal")
 **Kind**: inner class of <code>[animal](#module_animal)</code>  
 
 * [~Animal](#module_animal..Animal)
-  * [new Animal(species, parents)](#new_module_animal..Animal_new)
-  * _instance_
-    * [.age](#module_animal..Animal+age) : <code>number</code>
-    * [.species](#module_animal..Animal+species) : <code>Species</code>
-  * _static_
-    * [.eMood](#module_animal..Animal.eMood)
+    * [new Animal(species, parents)](#new_module_animal..Animal_new)
+    * _instance_
+        * [.age](#module_animal..Animal+age) : <code>number</code>
+        * [.species](#module_animal..Animal+species) : <code>Species</code>
+    * _static_
+        * [.eMood](#module_animal..Animal.eMood)
 
 
 -
@@ -122,9 +122,9 @@ Aside from humans, who are the most prolific and versatile builders, building be
 
 
 * [builder](#module_builder)
-  * [~builder](#module_builder..builder)
-    * [.construct()](#module_builder..builder.construct)
-    * [.repair()](#module_builder..builder.repair)
+    * [~builder](#module_builder..builder)
+        * [.construct()](#module_builder..builder.construct)
+        * [.repair()](#module_builder..builder.repair)
 
 
 -
@@ -134,8 +134,8 @@ Aside from humans, who are the most prolific and versatile builders, building be
 **Kind**: inner mixin of <code>[builder](#module_builder)</code>  
 
 * [~builder](#module_builder..builder)
-  * [.construct()](#module_builder..builder.construct)
-  * [.repair()](#module_builder..builder.repair)
+    * [.construct()](#module_builder..builder.construct)
+    * [.repair()](#module_builder..builder.repair)
 
 
 -
@@ -162,12 +162,12 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 
 
 * [species](#module_species)
-  * [~Species](#module_species..Species)
-    * _instance_
-      * [.name](#module_species..Species+name) : <code>string</code>
-      * [.species](#module_species..Species+species) : <code>Species</code>
-    * _static_
-      * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
+    * [~Species](#module_species..Species)
+        * _instance_
+            * [.name](#module_species..Species+name) : <code>string</code>
+            * [.species](#module_species..Species+species) : <code>Species</code>
+        * _static_
+            * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
 
 -
@@ -177,11 +177,11 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 **Kind**: inner class of <code>[species](#module_species)</code>  
 
 * [~Species](#module_species..Species)
-  * _instance_
-    * [.name](#module_species..Species+name) : <code>string</code>
-    * [.species](#module_species..Species+species) : <code>Species</code>
-  * _static_
-    * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
+    * _instance_
+        * [.name](#module_species..Species+name) : <code>string</code>
+        * [.species](#module_species..Species+species) : <code>Species</code>
+    * _static_
+        * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
 
 -

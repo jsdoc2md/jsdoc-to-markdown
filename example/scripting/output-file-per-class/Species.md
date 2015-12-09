@@ -5,11 +5,11 @@ In biology, a species (abbreviated sp., with the plural form species abbreviated
 **Kind**: global class  
 
 * [Species](#Species)
-  * _instance_
-    * [.name](#Species+name) : <code>string</code>
-    * [.species](#Species+species) : <code>[Species](#Species)</code>
-  * _static_
-    * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
+    * _instance_
+        * [.name](#Species+name) : <code>string</code>
+        * [.species](#Species+species) : <code>[Species](#Species)</code>
+    * _static_
+        * [.merge(one, two)](#Species.merge) ⇒ <code>[Species](#Species)</code>
 
 <a name="Species+name"></a>
 ### species.name : <code>string</code>

@@ -6,8 +6,8 @@ class description
 **Kind**: global class  
 
 * [NewLines](#NewLines)
-  * [.numbers](#NewLines+numbers)
-  * [.method(input)](#NewLines+method) ⇒ <code>number</code>
+    * [.numbers](#NewLines+numbers)
+    * [.method(input)](#NewLines+method) ⇒ <code>number</code>
 
 <a name="NewLines+numbers"></a>
 ### newLines.numbers

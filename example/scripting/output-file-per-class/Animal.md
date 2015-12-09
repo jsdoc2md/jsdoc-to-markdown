@@ -10,12 +10,12 @@ Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also ca
 **Summary**: It's an animal, yeah?  
 
 * [Animal](#Animal)
-  * [new Animal(species, parents)](#new_Animal_new)
-  * _instance_
-    * [.age](#Animal+age) : <code>number</code>
-    * [.species](#Animal+species) : <code>[Species](#Species)</code>
-  * _static_
-    * [.eMood](#Animal.eMood)
+    * [new Animal(species, parents)](#new_Animal_new)
+    * _instance_
+        * [.age](#Animal+age) : <code>number</code>
+        * [.species](#Animal+species) : <code>[Species](#Species)</code>
+    * _static_
+        * [.eMood](#Animal.eMood)
 
 <a name="new_Animal_new"></a>
 ### new Animal(species, parents)

@@ -27,23 +27,23 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 **Author:** Chris Morris  
 
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
-  * [`new FurQ()`](#new_FurQ_new)
-  * _instance_
-    * [`.wannaTryIt`](#FurQ+wannaTryIt) : <code>string</code>
-    * [`.LOVE`](#FurQ+LOVE) : <code>string</code>
-    * [`.spit()`](#FurQ+spit)
-    * [`.battle()`](#Rapper+battle)
-    * [`.punch()`](#FurQ+punch)
-    * [`"pop" (zoop)`](#FurQ+event_pop)
-    * [`"slap"`](#FurQ+event_slap)
-    * _standard_
-      * [`.kill()`](#FurQ+kill)
-      * [`.respect(done)`](#FurQ+respect)
-  * _static_
-    * [`.enemy`](#FurQ.enemy) : <code>enum</code>
-    * ~~[`.peace()`](#FurQ.peace)~~
-  * _inner_
-    * [`~onRespect`](#FurQ..onRespect) : <code>function</code>
+    * [`new FurQ()`](#new_FurQ_new)
+    * _instance_
+        * [`.wannaTryIt`](#FurQ+wannaTryIt) : <code>string</code>
+        * [`.LOVE`](#FurQ+LOVE) : <code>string</code>
+        * [`.spit()`](#FurQ+spit)
+        * [`.battle()`](#Rapper+battle)
+        * [`.punch()`](#FurQ+punch)
+        * [`"pop" (zoop)`](#FurQ+event_pop)
+        * [`"slap"`](#FurQ+event_slap)
+        * _standard_
+            * [`.kill()`](#FurQ+kill)
+            * [`.respect(done)`](#FurQ+respect)
+    * _static_
+        * [`.enemy`](#FurQ.enemy) : <code>enum</code>
+        * ~~[`.peace()`](#FurQ.peace)~~
+    * _inner_
+        * [`~onRespect`](#FurQ..onRespect) : <code>function</code>
 
 <a name="new_FurQ_new"></a>
 ### `new FurQ()`
@@ -172,14 +172,14 @@ Passed to [respect](#FurQ+respect)
 **Kind**: global class  
 
 * [Rapper](#Rapper)
-  * _instance_
-    * [`.spit()`](#Rapper+spit)
-    * [`.battle()`](#Rapper+battle)
-  * _static_
-    * [`.train()`](#Rapper.train)
-      * [~School](#Rapper.train..School)
-        * [`new School()`](#new_Rapper.train..School_new)
-        * [`.bestStudent`](#Rapper.train..School+bestStudent)
+    * _instance_
+        * [`.spit()`](#Rapper+spit)
+        * [`.battle()`](#Rapper+battle)
+    * _static_
+        * [`.train()`](#Rapper.train)
+            * [~School](#Rapper.train..School)
+                * [`new School()`](#new_Rapper.train..School_new)
+                * [`.bestStudent`](#Rapper.train..School+bestStudent)
 
 <a name="Rapper+spit"></a>
 ### `rapper.spit()`
@@ -197,18 +197,18 @@ train new rappers
 
 **Kind**: static method of <code>[Rapper](#Rapper)</code>  
 
-  * [`.train()`](#Rapper.train)
-    * [~School](#Rapper.train..School)
-      * [`new School()`](#new_Rapper.train..School_new)
-      * [`.bestStudent`](#Rapper.train..School+bestStudent)
+    * [`.train()`](#Rapper.train)
+        * [~School](#Rapper.train..School)
+            * [`new School()`](#new_Rapper.train..School_new)
+            * [`.bestStudent`](#Rapper.train..School+bestStudent)
 
 <a name="Rapper.train..School"></a>
 #### train~School
 **Kind**: inner class of <code>[train](#Rapper.train)</code>  
 
 * [~School](#Rapper.train..School)
-  * [`new School()`](#new_Rapper.train..School_new)
-  * [`.bestStudent`](#Rapper.train..School+bestStudent)
+    * [`new School()`](#new_Rapper.train..School_new)
+    * [`.bestStudent`](#Rapper.train..School+bestStudent)
 
 <a name="new_Rapper.train..School_new"></a>
 ##### `new School()`

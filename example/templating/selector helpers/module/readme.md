@@ -34,25 +34,25 @@ var animal = require("animal")
 ```
 
 * [animal](#module_animal)
-  * [~Animal](#module_animal..Animal)
-    * [new Animal(species, parents)](#new_module_animal..Animal_new)
-    * _instance_
-      * [.age](#module_animal..Animal+age) : <code>number</code>
-      * [.species](#module_animal..Animal+species) : <code>Species</code>
-    * _static_
-      * [.eMood](#module_animal..Animal.eMood)
+    * [~Animal](#module_animal..Animal)
+        * [new Animal(species, parents)](#new_module_animal..Animal_new)
+        * _instance_
+            * [.age](#module_animal..Animal+age) : <code>number</code>
+            * [.species](#module_animal..Animal+species) : <code>Species</code>
+        * _static_
+            * [.eMood](#module_animal..Animal.eMood)
 
 <a name="module_animal..Animal"></a>
 ### animal~Animal
 **Kind**: inner class of <code>[animal](#module_animal)</code>  
 
 * [~Animal](#module_animal..Animal)
-  * [new Animal(species, parents)](#new_module_animal..Animal_new)
-  * _instance_
-    * [.age](#module_animal..Animal+age) : <code>number</code>
-    * [.species](#module_animal..Animal+species) : <code>Species</code>
-  * _static_
-    * [.eMood](#module_animal..Animal.eMood)
+    * [new Animal(species, parents)](#new_module_animal..Animal_new)
+    * _instance_
+        * [.age](#module_animal..Animal+age) : <code>number</code>
+        * [.species](#module_animal..Animal+species) : <code>Species</code>
+    * _static_
+        * [.eMood](#module_animal..Animal.eMood)
 
 <a name="new_module_animal..Animal_new"></a>
 #### new Animal(species, parents)

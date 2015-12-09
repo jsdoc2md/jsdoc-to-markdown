@@ -37,24 +37,24 @@
 ## `jsdoc2md --module-index-format grouped`
 ## Modules
 * [animal](#module_animal)
-  * [~Animal](#module_animal..Animal)
-    * [new Animal(species, parents)](#new_module_animal..Animal_new)
-    * _instance_
-      * [.age](#module_animal..Animal+age) : <code>number</code>
-      * [.species](#module_animal..Animal+species) : <code>Species</code>
-    * _static_
-      * [.eMood](#module_animal..Animal.eMood)
+    * [~Animal](#module_animal..Animal)
+        * [new Animal(species, parents)](#new_module_animal..Animal_new)
+        * _instance_
+            * [.age](#module_animal..Animal+age) : <code>number</code>
+            * [.species](#module_animal..Animal+species) : <code>Species</code>
+        * _static_
+            * [.eMood](#module_animal..Animal.eMood)
 * [builder](#module_builder)
-  * [~builder](#module_builder..builder)
-    * [.construct()](#module_builder..builder.construct)
-    * [.repair()](#module_builder..builder.repair)
+    * [~builder](#module_builder..builder)
+        * [.construct()](#module_builder..builder.construct)
+        * [.repair()](#module_builder..builder.repair)
 * [species](#module_species)
-  * [~Species](#module_species..Species)
-    * _instance_
-      * [.name](#module_species..Species+name) : <code>string</code>
-      * [.species](#module_species..Species+species) : <code>Species</code>
-    * _static_
-      * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
+    * [~Species](#module_species..Species)
+        * _instance_
+            * [.name](#module_species..Species+name) : <code>string</code>
+            * [.species](#module_species..Species+species) : <code>Species</code>
+        * _static_
+            * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
 ## `jsdoc2md --module-index-format table`
 ## Modules

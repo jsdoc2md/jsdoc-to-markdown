@@ -9,10 +9,10 @@ Pump an idiot full of volts
 **Params**
 - victim <code>object</code> | <code>array</code> - the victim(s) to fry
 - [options] <code>object</code> - electricution options
-  - [.strength] <code>number</code> <code> = 11</code> - strength
-  - [.crazyHair] <code>number</code> <code> = true</code> - optional spikey hair effect
-  - [.origin] <code>object</code> - origin details
-    - [.country] <code>string</code> - the country of origin
+    - [.strength] <code>number</code> <code> = 11</code> - strength
+    - [.crazyHair] <code>number</code> <code> = true</code> - optional spikey hair effect
+    - [.origin] <code>object</code> - origin details
+        - [.country] <code>string</code> - the country of origin
 - [done] <code>function</code> - callback on slump, which has:
 - devestating power
 - an unusual aftertaste

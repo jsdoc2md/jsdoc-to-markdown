@@ -10,23 +10,23 @@ C\*ck, b!tch, c\*ck, b!tch, m\*therf!cker. You gotta kill people, to respect peo
 **Author:** Chris Morris  
 
 * [FurQ](#FurQ) ⇐ <code>[Rapper](#Rapper)</code>
-  * [new FurQ()](#new_FurQ_new)
-  * _instance_
-    * [.wannaTryIt](#FurQ+wannaTryIt) : <code>string</code>
-    * [.LOVE](#FurQ+LOVE) : <code>string</code>
-    * [.spit()](#FurQ+spit)
-    * [.battle()](#Rapper+battle)
-    * [.punch()](#FurQ+punch)
-    * ["pop" (zoop)](#FurQ+event_pop)
-    * ["slap"](#FurQ+event_slap)
-    * _standard_
-      * [.kill()](#FurQ+kill)
-      * [.respect(done)](#FurQ+respect)
-  * _static_
-    * [.enemy](#FurQ.enemy) : <code>enum</code>
-    * ~~[.peace()](#FurQ.peace)~~
-  * _inner_
-    * [~onRespect](#FurQ..onRespect) : <code>function</code>
+    * [new FurQ()](#new_FurQ_new)
+    * _instance_
+        * [.wannaTryIt](#FurQ+wannaTryIt) : <code>string</code>
+        * [.LOVE](#FurQ+LOVE) : <code>string</code>
+        * [.spit()](#FurQ+spit)
+        * [.battle()](#Rapper+battle)
+        * [.punch()](#FurQ+punch)
+        * ["pop" (zoop)](#FurQ+event_pop)
+        * ["slap"](#FurQ+event_slap)
+        * _standard_
+            * [.kill()](#FurQ+kill)
+            * [.respect(done)](#FurQ+respect)
+    * _static_
+        * [.enemy](#FurQ.enemy) : <code>enum</code>
+        * ~~[.peace()](#FurQ.peace)~~
+    * _inner_
+        * [~onRespect](#FurQ..onRespect) : <code>function</code>
 
 <a name="new_FurQ_new"></a>
 ### new FurQ()

@@ -167,8 +167,8 @@ a synth, that also implements speech
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
-  * [.demo()](#Synth+demo)
-  * [.say(text)](#Synth+say)
+    * [.demo()](#Synth+demo)
+    * [.say(text)](#Synth+say)
 
 <a name="Synth+demo"></a>
 #### synth.demo()
@@ -216,8 +216,8 @@ a synth, that also implements speech
 **Implements:** <code>[Speech](#Speech)</code>  
 
 * [Synth](#Synth)
-  * [.demo()](#Synth+demo)
-  * [.say(text)](#Synth+say)
+    * [.demo()](#Synth+demo)
+    * [.say(text)](#Synth+say)
 
 <a name="Synth+demo"></a>
 #### synth.demo()
