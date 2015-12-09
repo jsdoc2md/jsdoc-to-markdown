@@ -30,19 +30,9 @@ Speech.prototype.say = function (text) {}
     "description": "Interface for a Currah Speech Synth\n\n![currah](http://ecx.images-amazon.com/images/I/41NReuJn%2BGL._SX300_.jpg)",
     "params": [],
     "meta": {
-      "range": [
-        130,
-        151
-      ],
-      "filename": "src.js",
       "lineno": 7,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/interface",
-      "code": {
-        "id": "astnode100000001",
-        "name": "Speech",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/interface"
     },
     "order": 0
   },
@@ -66,21 +56,9 @@ Speech.prototype.say = function (text) {}
       }
     ],
     "meta": {
-      "range": [
-        208,
-        249
-      ],
-      "filename": "src.js",
       "lineno": 13,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/interface",
-      "code": {
-        "id": "astnode100000005",
-        "name": "Speech.prototype.say",
-        "type": "FunctionExpression",
-        "paramnames": [
-          "text"
-        ]
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/interface"
     },
     "order": 1
   }

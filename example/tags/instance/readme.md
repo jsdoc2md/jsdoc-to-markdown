@@ -29,19 +29,9 @@ function yeahFactory (yeahValue) {
     "scope": "global",
     "kind": "namespace",
     "meta": {
-      "range": [
-        22,
-        144
-      ],
-      "filename": "src.js",
       "lineno": 2,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/instance",
-      "code": {
-        "id": "astnode100000002",
-        "name": "SomeObject",
-        "type": "ObjectExpression",
-        "value": "{\"yeah\":null}"
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/instance"
     },
     "order": 0
   },
@@ -54,24 +44,9 @@ function yeahFactory (yeahValue) {
     "description": "Generates SomeObject instances.",
     "params": [],
     "meta": {
-      "range": [
-        185,
-        297
-      ],
-      "filename": "src.js",
       "lineno": 11,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/instance",
-      "code": {
-        "id": "astnode100000007",
-        "name": "yeahFactory",
-        "type": "FunctionDeclaration",
-        "paramnames": [
-          "yeahValue"
-        ]
-      },
-      "vars": {
-        "props": "yeahFactory~props"
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/instance"
     },
     "order": 2
   },
@@ -84,19 +59,9 @@ function yeahFactory (yeahValue) {
     "description": "yeah is now `SomeObject#yeah` rather than `SomeObject.yeah`.",
     "memberof": "SomeObject",
     "meta": {
-      "range": [
-        132,
-        142
-      ],
-      "filename": "src.js",
       "lineno": 7,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/instance",
-      "code": {
-        "id": "astnode100000005",
-        "name": "yeah",
-        "type": "Literal",
-        "value": null
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/instance"
     },
     "order": 1
   }

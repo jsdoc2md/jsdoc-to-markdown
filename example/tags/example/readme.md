@@ -15,19 +15,9 @@
       "var result = one()"
     ],
     "meta": {
-      "range": [
-        105,
-        123
-      ],
-      "filename": "src.js",
       "lineno": 6,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000001",
-        "name": "one",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 0
   },
@@ -43,19 +33,9 @@
       "```json\n{\n    \"clive\": \"yeah?\"\n}\n```"
     ],
     "meta": {
-      "range": [
-        239,
-        257
-      ],
-      "filename": "src.js",
       "lineno": 17,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000004",
-        "name": "two",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 1
   },
@@ -71,19 +51,9 @@
       "This example is just plain text. Note that it's formatted as javascript\nas that's the default `--example-lang` value and dmd has no way of \ndistinguishing whether the example text is, or is not source code."
     ],
     "meta": {
-      "range": [
-        517,
-        537
-      ],
-      "filename": "src.js",
       "lineno": 26,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000007",
-        "name": "three",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 2
   },
@@ -99,19 +69,9 @@
       "@lang off\nThis example is plain text but it has not been formatted using the default \n`--example-lang` of javascript because the `@example @lang off` was used.."
     ],
     "meta": {
-      "range": [
-        770,
-        789
-      ],
-      "filename": "src.js",
       "lineno": 34,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000010",
-        "name": "four",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 3
   },
@@ -127,19 +87,9 @@
       "Here, i introduce the example: \n\nvar result = five()"
     ],
     "meta": {
-      "range": [
-        918,
-        937
-      ],
-      "filename": "src.js",
       "lineno": 43,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000013",
-        "name": "five",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 4
   },
@@ -155,19 +105,9 @@
       "Here, i introduce the example: \n\n```\nvar result = six()\n```"
     ],
     "meta": {
-      "range": [
-        1085,
-        1103
-      ],
-      "filename": "src.js",
       "lineno": 54,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000016",
-        "name": "six",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 5
   },
@@ -183,19 +123,9 @@
       "Here, i introduce the example: \n\n```js\nvar result = seven()\n```"
     ],
     "meta": {
-      "range": [
-        1257,
-        1277
-      ],
-      "filename": "src.js",
       "lineno": 65,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000019",
-        "name": "seven",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 6
   },
@@ -211,19 +141,9 @@
       "this function returns data like:\n\n```json\n{\n    \"yeah\": \"gets?\"\n}\n```"
     ],
     "meta": {
-      "range": [
-        1439,
-        1459
-      ],
-      "filename": "src.js",
       "lineno": 78,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example",
-      "code": {
-        "id": "astnode100000022",
-        "name": "eight",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/example"
     },
     "order": 7
   }

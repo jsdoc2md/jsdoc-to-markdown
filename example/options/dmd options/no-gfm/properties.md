@@ -49,19 +49,9 @@ var eType = {
       }
     ],
     "meta": {
-      "range": [
-        17,
-        91
-      ],
-      "filename": "enum.js",
       "lineno": 4,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/src",
-      "code": {
-        "id": "astnode100000002",
-        "name": "eType",
-        "type": "ObjectExpression",
-        "value": "{\"ONE\":1,\"TWO\":2}"
-      }
+      "filename": "enum.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/src"
     },
     "order": 0
   }

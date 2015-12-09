@@ -15,19 +15,9 @@
       "var result = one()"
     ],
     "meta": {
-      "range": [
-        133,
-        151
-      ],
-      "filename": "src.js",
       "lineno": 6,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang",
-      "code": {
-        "id": "astnode100000001",
-        "name": "one",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang"
     },
     "order": 0
   },
@@ -43,19 +33,9 @@
       "here is the example:\n```json\n{\n    \"clive\": \"yeah?\"\n}\n```"
     ],
     "meta": {
-      "range": [
-        298,
-        316
-      ],
-      "filename": "src.js",
       "lineno": 18,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang",
-      "code": {
-        "id": "astnode100000004",
-        "name": "two",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang"
     },
     "order": 1
   },
@@ -71,19 +51,9 @@
       "This example is just some plain text, no code format or syntax highlighting required here."
     ],
     "meta": {
-      "range": [
-        460,
-        480
-      ],
-      "filename": "src.js",
       "lineno": 25,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang",
-      "code": {
-        "id": "astnode100000007",
-        "name": "three",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang"
     },
     "order": 2
   },
@@ -99,19 +69,9 @@
       "@lang off\nThis example is just some plain text, no code format or syntax highlighting required here."
     ],
     "meta": {
-      "range": [
-        653,
-        672
-      ],
-      "filename": "src.js",
       "lineno": 32,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang",
-      "code": {
-        "id": "astnode100000010",
-        "name": "four",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang"
     },
     "order": 3
   },
@@ -127,19 +87,9 @@
       "@lang hbs\nhello {{name}}, welcome to {{country}}."
     ],
     "meta": {
-      "range": [
-        822,
-        841
-      ],
-      "filename": "src.js",
       "lineno": 39,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang",
-      "code": {
-        "id": "astnode100000013",
-        "name": "five",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/options/dmd options/example-lang"
     },
     "order": 4
   }

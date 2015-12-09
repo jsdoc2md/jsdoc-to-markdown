@@ -34,19 +34,9 @@ function returnsWithDesc () {}
       }
     ],
     "meta": {
-      "range": [
-        25,
-        56
-      ],
-      "filename": "src.js",
       "lineno": 4,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/return",
-      "code": {
-        "id": "astnode100000001",
-        "name": "returnsSomething",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/return"
     },
     "order": 0
   },
@@ -68,19 +58,9 @@ function returnsWithDesc () {}
       }
     ],
     "meta": {
-      "range": [
-        100,
-        130
-      ],
-      "filename": "src.js",
       "lineno": 9,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/return",
-      "code": {
-        "id": "astnode100000004",
-        "name": "returnsWithDesc",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/return"
     },
     "order": 1
   }

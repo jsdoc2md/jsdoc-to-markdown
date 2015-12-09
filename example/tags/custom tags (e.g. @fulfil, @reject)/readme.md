@@ -34,19 +34,9 @@ function Comedy () {}
     "scope": "global",
     "kind": "class",
     "meta": {
-      "range": [
-        169,
-        188
-      ],
-      "filename": "src.js",
       "lineno": 11,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)",
-      "code": {
-        "id": "astnode100000004",
-        "name": "Tree",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)"
     },
     "order": 1
   },
@@ -77,19 +67,9 @@ function Comedy () {}
       }
     ],
     "meta": {
-      "range": [
-        122,
-        153
-      ],
-      "filename": "src.js",
       "lineno": 6,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)",
-      "code": {
-        "id": "astnode100000001",
-        "name": "promiseSomething",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)"
     },
     "order": 0
   },
@@ -107,19 +87,9 @@ function Comedy () {}
       }
     ],
     "meta": {
-      "range": [
-        285,
-        306
-      ],
-      "filename": "src.js",
       "lineno": 19,
-      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)",
-      "code": {
-        "id": "astnode100000007",
-        "name": "Comedy",
-        "type": "FunctionDeclaration",
-        "paramnames": []
-      }
+      "filename": "src.js",
+      "path": "/Users/lloyd/Documents/75lb/jsdoc-to-markdown/example/tags/custom tags (e.g. @fulfil, @reject)"
     },
     "order": 2
   }
