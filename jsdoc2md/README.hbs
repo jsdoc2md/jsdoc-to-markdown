@@ -71,7 +71,7 @@ These projects insert jsdoc2md output into a readme template.
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/command-line-args">command-line-args</a></td>
-      <td>Demonstrates documentation of `@module`, ES2015 classes, `@typicalname`, `@throws` and `@alias`.</td>
+      <td>Demonstrates documentation of ES2015 classes plus the <code>@module</code>, <code>@typicalname</code>, <code>@throws</code> and <code>@alias</code> tags.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/array-tools">array-tools</a></td>
