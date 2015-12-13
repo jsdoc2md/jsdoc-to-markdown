@@ -71,15 +71,19 @@ These projects insert jsdoc2md output into a readme template.
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/command-line-args">command-line-args</a></td>
-      <td>Demonstrates documentation of ES2015 classes plus the <code>@module</code>, <code>@typicalname</code>, <code>@throws</code> and <code>@alias</code> tags.</td>
+      <td>Demonstrates documentation of ES2015 classes plus the <strong><code>@module</code></strong>, <strong><code>@typicalname</code></strong>, <strong><code>@throws</code></strong> and <strong><code>@alias</code></strong> tags.</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/75lb/array-tools">array-tools</a></td>
-      <td>Very simple module exporting a collection of static methods. Demonstrates use of <code>@typicalname</code> (set to <code>a</code>) and the <code>@category</code> tag to group identifiers in the member-list.</td>
+      <td><a href="https://github.com/75lb/array-tools#api-reference">array-tools</a></td>
+      <td>Very simple module exporting a collection of static methods. Demonstrates use of <strong><code>@category</code></strong> to group identifiers in the member-list.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/jesucarr/tokenbucket">jesucarr/tokenbucket</a></td>
+      <td>Demonstrates `--param-list-format list` and the documentation of Promises using the <strong><code>@fulfil</code></strong> and <strong><code>@reject</code></strong> tags.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/ansi-escape-sequences">ansi-escape-sequences</a></td>
-      <td>Demonstrates usage of <code>@enum {type}</code> (rendered in table format).</td>
+      <td>Demonstrates usage of <strong><code>@enum {type}</code></strong> (rendered in table format).</td>
     </tr>
   </tbody>
 </table>
@@ -218,21 +222,21 @@ All dmd options and their defaults
 **Kind**: inner class of <code>[dmd](#exp_module_dmd--dmd)</code>  
 
 * [~DmdOptions](#module_dmd--dmd..DmdOptions)
-  * [.template](#module_dmd--dmd..DmdOptions+template) : <code>string</code>
-  * [.heading-depth](#module_dmd--dmd..DmdOptions+heading-depth) : <code>number</code>
-  * [.example-lang](#module_dmd--dmd..DmdOptions+example-lang) : <code>string</code>
-  * [.plugin](#module_dmd--dmd..DmdOptions+plugin) : <code>array</code>
-  * [.helper](#module_dmd--dmd..DmdOptions+helper) : <code>array</code>
-  * [.partial](#module_dmd--dmd..DmdOptions+partial) : <code>array</code>
-  * [.name-format](#module_dmd--dmd..DmdOptions+name-format) : <code>string</code>
-  * [.no-gfm](#module_dmd--dmd..DmdOptions+no-gfm) : <code>boolean</code>
-  * [.separators](#module_dmd--dmd..DmdOptions+separators) : <code>boolean</code>
-  * [.module-index-format](#module_dmd--dmd..DmdOptions+module-index-format) : <code>string</code>
-  * [.global-index-format](#module_dmd--dmd..DmdOptions+global-index-format) : <code>string</code>
-  * [.param-list-format](#module_dmd--dmd..DmdOptions+param-list-format) : <code>string</code>
-  * [.property-list-format](#module_dmd--dmd..DmdOptions+property-list-format) : <code>string</code>
-  * [.member-index-format](#module_dmd--dmd..DmdOptions+member-index-format) : <code>string</code>
-  * [.group-by](#module_dmd--dmd..DmdOptions+group-by) : <code>array</code>
+    * [.template](#module_dmd--dmd..DmdOptions+template) : <code>string</code>
+    * [.heading-depth](#module_dmd--dmd..DmdOptions+heading-depth) : <code>number</code>
+    * [.example-lang](#module_dmd--dmd..DmdOptions+example-lang) : <code>string</code>
+    * [.plugin](#module_dmd--dmd..DmdOptions+plugin) : <code>array</code>
+    * [.helper](#module_dmd--dmd..DmdOptions+helper) : <code>array</code>
+    * [.partial](#module_dmd--dmd..DmdOptions+partial) : <code>array</code>
+    * [.name-format](#module_dmd--dmd..DmdOptions+name-format) : <code>string</code>
+    * [.no-gfm](#module_dmd--dmd..DmdOptions+no-gfm) : <code>boolean</code>
+    * [.separators](#module_dmd--dmd..DmdOptions+separators) : <code>boolean</code>
+    * [.module-index-format](#module_dmd--dmd..DmdOptions+module-index-format) : <code>string</code>
+    * [.global-index-format](#module_dmd--dmd..DmdOptions+global-index-format) : <code>string</code>
+    * [.param-list-format](#module_dmd--dmd..DmdOptions+param-list-format) : <code>string</code>
+    * [.property-list-format](#module_dmd--dmd..DmdOptions+property-list-format) : <code>string</code>
+    * [.member-index-format](#module_dmd--dmd..DmdOptions+member-index-format) : <code>string</code>
+    * [.group-by](#module_dmd--dmd..DmdOptions+group-by) : <code>array</code>
 
 <a name="module_dmd--dmd..DmdOptions+template"></a>
 #### dmdOptions.template : <code>string</code>
@@ -242,14 +246,14 @@ The template the supplied documentation will be rendered into. Use the default o
 **Default**: <code>&quot;{{&gt;main}}&quot;</code>  
 **Example**  
 ```js
-var fs = require("fs");
-var dmd = require("../");
+var fs = require("fs")
+var dmd = require("../")
 
-var template = "The description from my class: {{#class name='MyClass'}}{{description}}{{/class}}";
+var template = "The description from my class: {{#class name='MyClass'}}{{description}}{{/class}}"
 
 fs.createReadStream(__dirname + "/my-class.json")
     .pipe(dmd({ template: template }))
-    .pipe(process.stdout);
+    .pipe(process.stdout)
 ```
 outputs:
 ```
@@ -346,12 +350,12 @@ All options for jsdoc-parse, including defaults
 **Kind**: inner class of <code>[jsdocParse](#exp_module_jsdoc-parse--jsdocParse)</code>  
 
 * [~ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)
-  * [.src](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+src) : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
-  * [.private](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+private) : <code>boolean</code>
-  * [.stats](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+stats) : <code>boolean</code>
-  * [.html](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+html) : <code>boolean</code>
-  * [.conf](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+conf) : <code>boolean</code>
-  * [.sort-by](#module_jsdoc-parse--jsdocParse..ParseOptions+sort-by) : <code>array</code>
+    * [.src](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+src) : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
+    * [.private](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+private) : <code>boolean</code>
+    * [.stats](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+stats) : <code>boolean</code>
+    * [.html](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+html) : <code>boolean</code>
+    * [.conf](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+conf) : <code>boolean</code>
+    * [.sort-by](#module_jsdoc-parse--jsdocParse..ParseOptions+sort-by) : <code>array</code>
 
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+src"></a>
 #### parseOptions.src : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
