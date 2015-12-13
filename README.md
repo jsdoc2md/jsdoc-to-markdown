@@ -79,7 +79,7 @@ These projects insert jsdoc2md output into a readme template.
     </tr>
     <tr>
       <td><a href="https://github.com/jesucarr/tokenbucket">jesucarr/tokenbucket</a></td>
-      <td>Demonstrates `--param-list-format list` and the documentation of Promises using the <strong><code>@fulfil</code></strong> and <strong><code>@reject</code></strong> tags.</td>
+      <td>Demonstrates <strong><code>--param-list-format list</code></strong> and the documentation of Promises using the <strong><code>@fulfil</code></strong> and <strong><code>@reject</code></strong> tags.</td>
     </tr>
     <tr>
       <td><a href="https://github.com/75lb/ansi-escape-sequences">ansi-escape-sequences</a></td>
@@ -341,7 +341,7 @@ grouped, list
 a list of fields to group member indexes by
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
-**Default**: <code>[&quot;scope&quot;,&quot;category&quot;]</code>  
+**Default**: <code>[ &#x27;scope&#x27;, &#x27;category&#x27; ]</code>  
 
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions"></a>
 ### jsdocParse~ParseOptions
