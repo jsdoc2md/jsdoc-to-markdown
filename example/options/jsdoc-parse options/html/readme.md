@@ -36,6 +36,7 @@
 # jsdoc2md output
 ```markdown
 ## Members
+
 <dl>
 <dt><a href="#headVar">headVar</a> : <code>number</code></dt>
 <dd><p>something in the head</p>
@@ -44,12 +45,15 @@
 <dd><p>body global</p>
 </dd>
 </dl>
+
 ## Objects
+
 <dl>
 <dt><a href="#headObj">headObj</a> : <code>object</code></dt>
 <dd><p>a head obj</p>
 </dd>
 </dl>
+
 <a name="headVar"></a>
 ## headVar : <code>number</code>
 something in the head
@@ -76,6 +80,7 @@ a head obj
 
 # Rendered
 ## Members
+
 <dl>
 <dt><a href="#headVar">headVar</a> : <code>number</code></dt>
 <dd><p>something in the head</p>
@@ -84,12 +89,15 @@ a head obj
 <dd><p>body global</p>
 </dd>
 </dl>
+
 ## Objects
+
 <dl>
 <dt><a href="#headObj">headObj</a> : <code>object</code></dt>
 <dd><p>a head obj</p>
 </dd>
 </dl>
+
 <a name="headVar"></a>
 ## headVar : <code>number</code>
 something in the head

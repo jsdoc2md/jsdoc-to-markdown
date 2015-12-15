@@ -1,5 +1,6 @@
 ## `jsdoc2md --global-index-format dl`
 ## Classes
+
 <dl>
 <dt><a href="#Animal">Animal</a></dt>
 <dd><p>Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).</p>
@@ -23,8 +24,10 @@ class description</p>
 </dd>
 </dl>
 
+
 ## `jsdoc2md --global-index-format grouped`
-## 
+## Classes
+
 * [Animal](#Animal)
     * [new Animal(species, parents)](#new_Animal_new)
     * _instance_
@@ -69,8 +72,10 @@ class description</p>
     * [.numbers](#NewLines+numbers)
     * [.method(input)](#NewLines+method) ⇒ <code>number</code>
 
+
 ## `jsdoc2md --global-index-format table`
-## 
+## Classes
+
 <table>
   <thead>
     <tr>
@@ -110,5 +115,6 @@ class description</p>
     </tr>
 </tbody>
 </table>
+
 
 ## `jsdoc2md --global-index-format none`

@@ -1,4 +1,5 @@
-## 
+## Classes
+
 * [six](#six)
     * [new six()](#new_six_new)
     * _instance_
@@ -9,30 +10,47 @@
         * [.six_static_two](#six.six_static_two)
     * _instance_
         * [.six_two()](#six+six_two) ⇒ <code>number</code>
-## 
+
+## Mixins
+
 * [two](#two)
     * [.two_four](#two.two_four) : <code>number</code>
     * [.two_one()](#two.two_one) ⇒ <code>number</code>
     * [.two_three](#two.two_three) : <code>object</code>
     * [.two_two](#two.two_two) : <code>number</code>
-## 
+
+## Members
+
 * [seven](#seven) : <code>number</code>
 * [thirteen](#thirteen) : <code>number</code>
 * [three](#three)
-## 
+
+## Objects
+
 * [eight](#eight) : <code>object</code>
-## 
+
+## Constants
+
 * [five](#five) : <code>number</code>
-## 
+
+## Functions
+
 * [four()](#four) ⇒ <code>number</code>
 * [nine()](#nine) ⇒ <code>number</code>
 * [twelve()](#twelve) ⇒ <code>function</code>
-## 
+
+## Events
+
 * ["ten"](#event_ten)
-## 
+
+## Typedefs
+
 * [one](#one) : <code>number</code> &#124; <code>string</code>
-## 
+
+## External
+
 * [eleven](#external_eleven)
+
 <a name="eight"></a>
 ## eight : <code>object</code>
 eight

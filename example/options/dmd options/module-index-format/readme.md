@@ -1,5 +1,6 @@
 ## `jsdoc2md --module-index-format dl`
 ## Modules
+
 <dl>
 <dt><a href="#module_animal">animal</a></dt>
 <dd><p>Animals are multicellular, eukaryotic organisms of the kingdom Animalia (also called Metazoa). Their body plan eventually becomes fixed as they develop, although some undergo a process of metamorphosis later on in their lives. Most animals are motile, meaning they can move spontaneously and independently. All animals must ingest other organisms or their products for sustenance (see Heterotroph).</p>
@@ -34,8 +35,10 @@
 </dd>
 </dl>
 
+
 ## `jsdoc2md --module-index-format grouped`
 ## Modules
+
 * [animal](#module_animal)
     * [~Animal](#module_animal..Animal)
         * [new Animal(species, parents)](#new_module_animal..Animal_new)
@@ -56,8 +59,10 @@
         * _static_
             * [.merge(one, two)](#module_species..Species.merge) ⇒ <code>Species</code>
 
+
 ## `jsdoc2md --module-index-format table`
 ## Modules
+
 <table>
   <thead>
     <tr>
@@ -104,5 +109,6 @@
     </tr>
 </tbody>
 </table>
+
 
 ## `jsdoc2md --module-index-format none`
