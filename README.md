@@ -3,12 +3,12 @@
 [![Build Status](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown)
 [![Dependency Status](https://david-dm.org/jsdoc2md/jsdoc-to-markdown.svg)](https://david-dm.org/jsdoc2md/jsdoc-to-markdown)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
+[![Join the chat at https://gitter.im/jsdoc2md/jsdoc-to-markdown](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsdoc2md/jsdoc-to-markdown?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ***This documentation is a work-in-progress***
 
 # jsdoc-to-markdown
 
-[![Join the chat at https://gitter.im/jsdoc2md/jsdoc-to-markdown](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsdoc2md/jsdoc-to-markdown?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [jsdoc](http://usejsdoc.org) documented source code in, markdown format API documentation out.
 
 ## Synopsis
