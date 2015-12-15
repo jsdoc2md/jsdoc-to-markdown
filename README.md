@@ -7,6 +7,8 @@
 ***This documentation is a work-in-progress***
 
 # jsdoc-to-markdown
+
+[![Join the chat at https://gitter.im/jsdoc2md/jsdoc-to-markdown](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsdoc2md/jsdoc-to-markdown?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [jsdoc](http://usejsdoc.org) documented source code in, markdown format API documentation out.
 
 ## Synopsis
