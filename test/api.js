@@ -2,7 +2,7 @@
 var test = require('tape')
 var jsdoc2md = require('../')
 
-var inputFile = 'test/fixture/input/globals/ignore.js'
+var inputFile = 'test/fixture/ignore.js'
 
 test('simple, no options', function (t) {
   t.plan(1)

@@ -2,7 +2,7 @@ var test = require('tape')
 var fs = require('fs')
 var spawn = require('child_process').spawn
 
-var inputPath = 'test/fixture/input/globals/ignore.js'
+var inputPath = 'test/fixture/ignore.js'
 
 try {
   fs.mkdirSync('tmp')
