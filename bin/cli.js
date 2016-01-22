@@ -2,14 +2,11 @@
 'use strict'
 var fs = require('fs')
 var commandLineArgs = require('command-line-args')
-var dope = require('console-dope')
 var jsdoc2md = require('../')
-var domain = require('domain')
 var loadConfig = require('config-master')
-var homePath = require('home-path')
-var path = require('path')
 var o = require('object-tools')
 var cliData = require('../lib/cli-data')
+var tool = require('command-line-tool')
 
 var cli = commandLineArgs(cliData.definitions)
 var usage = cli.getUsage(cliData.usage)
@@ -17,7 +14,7 @@ var usage = cli.getUsage(cliData.usage)
 try {
   var argv = cli.parse()
 } catch (err) {
-  halt(err)
+  tool.stop(1, { message: err })
 }
 
 var dmdConfig = loadConfig('dmd')
@@ -26,43 +23,8 @@ var jsdoc2mdConfig = loadConfig('jsdoc2md')
 
 var config = o.extend(parseConfig, dmdConfig, jsdoc2mdConfig, argv._all)
 
-if (config.template) {
-  config.template = fs.readFileSync(config.template, 'utf8')
-}
+if (config.template) config.template = fs.readFileSync(config.template, 'utf8')
+if (config.help) tool.stop(0, { usage: usage })
+if (config.config) tool.stop(0, { message: JSON.stringify(o.without(config, 'config'), null, '  ') })
 
-if (config.help) {
-  dope.log(usage)
-  process.exit(0)
-}
-
-if (config.config) {
-  console.log(JSON.stringify(o.without(config, 'config'), null, '  '))
-  process.exit(0)
-}
-
-var d = domain.create()
-d.on('error', halt)
-d.run(function () {
-  if (config.src) {
-    jsdoc2md(config).pipe(process.stdout)
-  } else {
-    process.stdin.pipe(jsdoc2md(config)).pipe(process.stdout)
-  }
-})
-
-function halt (err) {
-  if (err.code === 'EPIPE') process.exit(0) /* no big deal */
-
-  if (config) {
-    if (config.verbose) {
-      dope.red.error(err.stack || err)
-    } else {
-      dope.red.error('Error: ' + err.message)
-      dope.red.error('(run jsdoc2md with --verbose for a stack trace)')
-    }
-  } else {
-    dope.red.error(err.message)
-  }
-  dope.error(usage)
-  process.exit(1)
-}
+jsdoc2md(config).pipe(process.stdout)

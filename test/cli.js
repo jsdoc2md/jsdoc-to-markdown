@@ -10,22 +10,7 @@ try {
   // dir exists
 }
 
-test('stdin check', function (t) {
-  t.plan(1)
-
-  var inputFile = fs.openSync(inputPath, 'r')
-  var outputFile = fs.openSync('tmp/ignore.md', 'w')
-
-  var handle = spawn('node', [ 'bin/cli.js' ], {
-    stdio: [ inputFile, outputFile, process.stderr ]
-  })
-  handle.on('close', function () {
-    var md = fs.readFileSync('tmp/ignore.md', 'utf8')
-    if (md) t.ok(/# visible/.test(md.toString()))
-  })
-})
-
-test('json option', function (t) {
+test('cli: json option', function (t) {
   t.plan(1)
 
   var outputFile = fs.openSync('tmp/ignore.json', 'w')

@@ -13,7 +13,7 @@ test('simple, no options', function (t) {
   })
 })
 
-test('json option', function (t) {
+test('api: json option', function (t) {
   t.plan(1)
 
   jsdoc2md({ src: inputFile, json: true }).on('readable', function () {
