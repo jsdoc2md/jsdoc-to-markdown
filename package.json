@@ -37,7 +37,6 @@
     "dmd": "file:///Users/lloyd/Documents/75lb/dmd2",
     "jsdoc-api": "^1.0.5",
     "jsdoc-parse": "next",
-    "jsdoc-parse-bowie": "file:///Users/lloyd/Documents/75lb/jsdoc-parse-bowie",
     "object-tools": "^2.0.5",
     "stream-connect": "^1.0.2"
   },
