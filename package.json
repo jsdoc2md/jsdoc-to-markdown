@@ -35,8 +35,9 @@
     "command-line-tool": "~0.1.0",
     "config-master": "^2.0.1",
     "dmd": "file:///Users/lloyd/Documents/75lb/dmd2",
+    "dterm": "file:///Users/lloyd/Documents/75lb/dterm",
     "jsdoc-api": "^1.0.5",
-    "jsdoc-parse": "next",
+    "jsdoc-parse": "file:///Users/lloyd/Documents/75lb/jsdoc-parse",
     "object-tools": "^2.0.5",
     "stream-connect": "^1.0.2"
   },
