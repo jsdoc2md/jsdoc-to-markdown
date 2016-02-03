@@ -51,5 +51,7 @@ if (argv.help) {
     config.extensions.push(require('dmd/lib/param-list-format-list'))
   }
 
+  config.extensions.push(require('dmd/lib/heading-depth').bind(null, 2))
+
   jsdoc2md(config).pipe(process.stdout)
 }
