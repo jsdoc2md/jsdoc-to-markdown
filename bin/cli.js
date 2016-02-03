@@ -3,6 +3,7 @@
 var commandLineArgs = require('command-line-args')
 var tool = require('command-line-tool')
 var cliData = require('../lib/cli-data')
+var dmd = require('dmd')
 
 var cli = commandLineArgs(cliData.definitions)
 var usage = cli.getUsage(cliData.usage)
@@ -30,6 +31,25 @@ if (argv.help) {
   if (config.template) config.template = fs.readFileSync(config.template, 'utf8')
   if (config.help) tool.stop(0, { usage: usage })
   if (config.config) tool.stop(0, { message: JSON.stringify(o.without(config, 'config'), null, '  ') })
+
+  const theme = function () {
+    return class LloydThemeDecorator {
+      static applyTo () {
+        return 'function'
+      }
+      theme () {
+        return {
+          signature: 'bold green'
+        }
+      }
+    }
+  }
+
+  config.extensions.push(theme)
+
+  if (config['param-list-format'] === 'list') {
+    config.extensions.push(require('dmd/lib/param-list-format-list'))
+  }
 
   jsdoc2md(config).pipe(process.stdout)
 }
