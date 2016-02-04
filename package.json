@@ -13,8 +13,7 @@
   ],
   "scripts": {
     "test": "tape test/*.js",
-    "docs": "node bin/cli.js -t jsdoc2md/README.hbs -p list lib/jsdoc-to-markdown.js node_modules/jsdoc-parse/lib/jsdoc-parse.js node_modules/dmd/lib/dmd.js > README.md; echo ",
-    "eg": "node example/renderDirs.js; echo"
+    "docs": "node bin/cli.js -t jsdoc2md/README.md lib/jsdoc-to-markdown.js > README.md; echo "
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"
@@ -30,7 +29,7 @@
   ],
   "dependencies": {
     "bowie": "file:///Users/lloyd/Documents/75lb/bowie",
-    "collect-json": "^1.0.5",
+    "collect-all": "^1.0.0",
     "command-line-args": "^2.1.4",
     "command-line-tool": "~0.1.0",
     "config-master": "^2.0.1",
@@ -38,8 +37,7 @@
     "dterm": "file:///Users/lloyd/Documents/75lb/dterm",
     "jsdoc-api": "^1.0.5",
     "jsdoc-parse": "file:///Users/lloyd/Documents/75lb/jsdoc-parse",
-    "object-tools": "^2.0.5",
-    "stream-connect": "^1.0.2"
+    "object-tools": "^2.0.5"
   },
   "devDependencies": {
     "tape": "^4.4"

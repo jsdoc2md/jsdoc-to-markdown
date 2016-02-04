@@ -91,43 +91,8 @@ These projects insert jsdoc2md output into a readme template.
   </tbody>
 </table>
 
-
-<a name="module_jsdoc-to-markdown"></a>
-## jsdoc-to-markdown
-**Example**
-```js
-var jsdoc2md = require("jsdoc-to-markdown")
-```
-
+${docs.render()}
 
 * * *
 
-
-<a name="exp_module_jsdoc-to-markdown--jsdoc2md"></a>
-### jsdoc2md([options]) ⇒ Duplex  
-Transforms jsdoc into markdown documentation.
-
-**Params**
-
-| name    | type | description |
-| ------- | ---- | ----------- |
-| options | TYPE | the options |
-
-**Example**
-Two ways to use `jsdoc2md`. Either pass in filepaths (`**` glob matching supported) of javascript  * source files:
-```js
-> jsdoc2md({ src: "lib/*.js" }).pipe(process.stdout)
-```
-or pipe in source code from another source:
-```js
-> fs.createReadStream("lib/main.js").pipe(jsdoc2md()).pipe(process.stdout)
-```
-
-
-* * *
-
-
-
-* * *
-
-&copy; 2015 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
