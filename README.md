@@ -78,10 +78,7 @@ Transforms jsdoc into markdown documentation.
 
 **Params**
 
-| name    | type | description |
-| ------- | ---- | ----------- |
-| options | TYPE | the options |
-
+- [options] module:dmd~DmdOptions &#124; module:jsdoc-parse~ParseOptions - the options
 **Example**
 Pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js

@@ -37,7 +37,8 @@
     "dterm": "file:///Users/lloyd/Documents/75lb/dterm",
     "jsdoc-api": "^1.0.5",
     "jsdoc-parse": "file:///Users/lloyd/Documents/75lb/jsdoc-parse",
-    "object-tools": "^2.0.5"
+    "object-tools": "^2.0.5",
+    "stream-via": "^1.0.1"
   },
   "devDependencies": {
     "tape": "^4.4"
