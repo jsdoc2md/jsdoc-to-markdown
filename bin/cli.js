@@ -10,13 +10,21 @@ if (cli.args._all.help) {
 } else {
   loadDependencies()
   var jsdoc2md = require('../')
-  var o = require('object-tools')
-
-  progressView.write('Loading stored config')
   var config = loadStoredConfig(cli.args)
 
+  if (config.json) {
+    jsdoc2md.getJson(config.src)
+      .then(function (json) {
+        console.log(JSON.stringify(json, null, '  '))
+      })
+    return
+  }
+
   if (config.template) config.template = loadOutputTemplate(config.template)
-  if (config.config) tool.stop(0, { message: JSON.stringify(o.without(config, 'config'), null, '  ') })
+  if (config.config) {
+    var o = require('object-tools')
+    tool.stop(0, { message: JSON.stringify(o.without(config, 'config'), null, '  ') })
+  }
 
   const theme = function () {
     return class {
@@ -33,17 +41,16 @@ if (cli.args._all.help) {
 
   // config.decorations.push(theme)
 
-  mapOption('param-list-format', 'dmd/lib/param-list-format-list', 'list')
-  mapOption('heading-depth', 'dmd/lib/heading-depth')
+  mapOption('param-list-format', 'dmd/lib/decoration/param-list-format-list', 'list')
+  mapOption('heading-depth', 'dmd/lib/decoration/heading-depth')
 
-  jsdoc2md.render(config.src, config)
-    .then(output => {
-      progressView.write('done')
-      console.log(output)
-    })
-    .catch(err => {
-      console.error(err.stack)
-    })
+  // jsdoc2md.render(config.src, config)
+  //   .then(output => {
+  //     progressView.write('done')
+  //     console.log(output)
+  //   })
+  jsdoc2md.createRenderStream(config.src, config)
+    .pipe(process.stdout)
 }
 
 function mapOption (optionName, decorationModule, optionValue) {
@@ -55,6 +62,7 @@ function mapOption (optionName, decorationModule, optionValue) {
 }
 
 function loadStoredConfig (argv) {
+  progressView.write('Loading stored config')
   var loadConfig = require('config-master')
   var o = require('object-tools')
 
