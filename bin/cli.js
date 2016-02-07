@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 'use strict'
 const progressView = require('../lib/progress-view')
+var tool = require('command-line-tool')
 
-loadDependencies()
-var argv = parseCommandLine()
+var cli = parseCommandLine()
 
-if (argv.help) {
-  tool.stop(0, { usage: usage })
+if (cli.args._all.help) {
+  tool.stop(0, { usage: cli.usage })
 } else {
+  loadDependencies()
   var jsdoc2md = require('../')
   var o = require('object-tools')
 
   progressView.write('Loading stored config')
-  var config = loadStoredConfig(argv)
+  var config = loadStoredConfig(cli.args)
 
   if (config.template) config.template = loadOutputTemplate(config.template)
-  if (config.help) tool.stop(0, { usage: usage })
   if (config.config) tool.stop(0, { message: JSON.stringify(o.without(config, 'config'), null, '  ') })
 
   const theme = function () {
@@ -70,13 +70,14 @@ function parseCommandLine () {
   progressView.write('Parsing command line')
   var commandLineArgs = require('command-line-args')
   var cliData = require('../lib/cli-data')
-  var tool = require('command-line-tool')
 
   var cli = commandLineArgs(cliData.definitions)
-  var usage = cli.getUsage(cliData.usage)
 
   try {
-    return cli.parse()
+    return {
+      args: cli.parse(),
+      usage: cli.getUsage(cliData.usage)
+    }
   } catch (err) {
     tool.stop(1, { message: err })
   }
