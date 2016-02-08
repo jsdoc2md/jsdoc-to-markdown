@@ -6,14 +6,16 @@ var tool = require('command-line-tool')
 var cli = parseCommandLine()
 
 if (cli.args._all.help) {
-  tool.stop(0, { usage: cli.usage })
+  tool.stop(cli.usage)
 } else {
   loadDependencies()
   var jsdoc2md = require('../')
   var config = loadStoredConfig(cli.args)
 
   if (config.json) {
-    jsdoc2md.getJson(config.src)
+    jsdoc2md
+      .on('progress', progressView.write.bind(progressView))
+      .getJson(config.src)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
@@ -23,7 +25,7 @@ if (cli.args._all.help) {
   if (config.template) config.template = loadOutputTemplate(config.template)
   if (config.config) {
     var o = require('object-tools')
-    tool.stop(0, { message: JSON.stringify(o.without(config, 'config'), null, '  ') })
+    tool.stop(JSON.stringify(o.without(config, 'config'), null, '  '))
   }
 
   const theme = function () {
@@ -44,12 +46,9 @@ if (cli.args._all.help) {
   mapOption('param-list-format', 'dmd/lib/decoration/param-list-format-list', 'list')
   mapOption('heading-depth', 'dmd/lib/decoration/heading-depth')
 
-  // jsdoc2md.render(config.src, config)
-  //   .then(output => {
-  //     progressView.write('done')
-  //     console.log(output)
-  //   })
-  jsdoc2md.createRenderStream(config.src, config)
+  jsdoc2md
+    .on('progress', progressView.write.bind(progressView))
+    .createRenderStream(config.src, config)
     .pipe(process.stdout)
 }
 
