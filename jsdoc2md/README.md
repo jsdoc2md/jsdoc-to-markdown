@@ -60,7 +60,7 @@ a quite wonderful function
 - Additional tags supported
 - How to tweak the output
 
-${docs.render()}
+${docs.renderAll()}
 
 * * *
 

@@ -1,10 +1,10 @@
 /**
-a visible global
-*/
+ * a visible global
+ */
 var visible = true
 
 /**
-an ignored global
-@ignore
-*/
+ * an ignored global
+ * @ignore
+ */
 var invisible = true
