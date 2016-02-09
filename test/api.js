@@ -8,16 +8,14 @@ test('.renderSync(src)', function (t) {
   t.plan(1)
 
   var result = jsdoc2md.renderSync(inputFile)
-  console.log(result)
   t.ok(/a visible global/.test(result))
 })
 
-test.only('.renderSync(src, { extensions })', function (t) {
+test('.renderSync(src, { heading-depth: 4 })', function (t) {
   t.plan(1)
 
-  var result = jsdoc2md.renderSync(inputFile, { 'heading-depth': 3, md: true })
-  console.log(result)
-  t.ok(/### visible/.test(result))
+  var result = jsdoc2md.renderSync(inputFile, { 'heading-depth': 4 })
+  t.ok(/#### visible/.test(result))
 })
 
 test('.getJsonSync(src)', function (t) {
@@ -25,4 +23,12 @@ test('.getJsonSync(src)', function (t) {
 
   var result = jsdoc2md.getJsonSync(inputFile)
   t.ok(result[0].id)
+})
+
+test('.renderSync(src, { param-list-format: list })', function (t) {
+  var inputFile = 'test/fixture/params.js'
+  t.plan(1)
+
+  var result = jsdoc2md.renderSync(inputFile, { 'param-list-format': 'list' })
+  t.ok(/- one/.test(result))
 })

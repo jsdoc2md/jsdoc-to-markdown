@@ -28,38 +28,10 @@ if (cli.args._all.help) {
     tool.stop(JSON.stringify(o.without(config, 'config'), null, '  '))
   }
 
-  const theme = function () {
-    return class {
-      static applyTo () {
-        return 'function'
-      }
-      theme () {
-        return {
-          signature: 'bold green'
-        }
-      }
-    }
-  }
-
-  // config.decorations.push(theme)
-
-  mapOption('param-list-format', 'dmd/lib/decoration/param-list-format-list', 'list')
-  mapOption('heading-depth', 'dmd/lib/decoration/heading-depth')
-  mapOption('skip-heading', 'dmd/lib/decoration/skip-heading', true)
-  mapOption('separators', 'dmd/lib/decoration/separators', true)
-
   jsdoc2md
     .on('progress', progressView.write.bind(progressView))
     .createRenderStream(config.src, config)
     .pipe(process.stdout)
-}
-
-function mapOption (optionName, decorationModule, optionValue) {
-  if (optionValue && config[optionName] === optionValue) {
-    config.decorations.push(require(decorationModule))
-  } else {
-    config.decorations.push(require(decorationModule).bind(null, config[optionName]))
-  }
 }
 
 function loadStoredConfig (argv) {
