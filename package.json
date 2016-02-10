@@ -29,15 +29,15 @@
   ],
   "dependencies": {
     "command-line-args": "^2.1.4",
-    "command-line-tool": "~0.1.0",
+    "command-line-tool": "file:///Users/lloyd/Documents/75lb/command-line-tool",
     "config-master": "^2.0.1",
     "dmd": "file:///Users/lloyd/Documents/75lb/dmd2",
     "dterm": "file:///Users/lloyd/Documents/75lb/dterm",
     "jsdoc-api": "^1.0.5",
     "jsdoc-parse": "file:///Users/lloyd/Documents/75lb/jsdoc-parse",
     "object-tools": "^2.0.5",
-    "template-builder": "^0.1.0",
-    "tree-builder": "^0.1.0"
+    "template-builder": "file:///Users/lloyd/Documents/75lb/template-builder",
+    "tree-builder": "file:///Users/lloyd/Documents/75lb/tree-builder"
   },
   "devDependencies": {
     "tape": "^4.4"

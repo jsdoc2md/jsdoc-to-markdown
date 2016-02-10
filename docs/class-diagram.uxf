@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>664</x>
+      <y>232</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>/Composite/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>608</x>
+      <y>448</y>
+      <w>192</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>/Template/
+--
+data : Data
+--
+render()
+renderAll()
+_create(data, decorations)_
+_getDataClass()_
+_getSubclassMap()_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>248</y>
+      <w>80</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>248</y>
+      <w>232</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>744</y>
+      <w>120</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>DocletTemplate
+--
+--
+module(name)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>856</x>
+      <y>744</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>DocletData
+--
+--
+isExternal() 
+accessSymbol()
+etc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>568</y>
+      <w>24</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>688</x>
+      <y>560</y>
+      <w>24</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>184</x>
+      <y>240</y>
+      <w>304</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>tree-builder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>304</y>
+      <w>152</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>bowie 
+&lt;&lt;director&gt;&gt;
+--
+--
+createStream()
+buildTemplateTree(array)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>448</x>
+      <y>696</y>
+      <w>544</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>jsdoc-parse-template
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>968</y>
+      <w>128</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>MarkdownTemplate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>592</x>
+      <y>800</y>
+      <w>120</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>528</y>
+      <w>88</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>704</x>
+      <y>616</y>
+      <w>144</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Decoration</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>552</x>
+      <y>1024</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Class</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>568</x>
+      <y>1040</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Function</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>584</x>
+      <y>1056</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Member</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>1072</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>984</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>768</x>
+      <y>112</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>jsdoc-api</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>768</x>
+      <y>32</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>jsdoc-parse</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>496</x>
+      <y>912</y>
+      <w>232</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>dmd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>424</x>
+      <y>240</y>
+      <w>256</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>300.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>784</x>
+      <y>968</y>
+      <w>128</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>TerminalTemplate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>1024</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Class</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>808</x>
+      <y>1040</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Function</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>824</x>
+      <y>1056</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Member</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>1072</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>984</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>744</x>
+      <y>912</y>
+      <w>224</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>dterm</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>688</x>
+      <y>800</y>
+      <w>168</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>184</x>
+      <y>0</y>
+      <w>384</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>jsdoc-to-markdown</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>32</y>
+      <w>208</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>jsdoc-to-markdown 
+&lt;&lt;EventEmitter&gt;&gt;
+--
+--
+render(src, options) 
+getTemplateData(src)
+getDocs(src, options)
+--
+"progress" (message)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>288</y>
+      <w>216</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>TreeBuilder
+--
+--
+build(array, Composite, root) : Data
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>392</y>
+      <w>256</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>TemplateBuilder
+--
+--
+build(dataComposite, Template) : Template</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>216</x>
+      <y>368</y>
+      <w>208</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+tree-builder
+--
+for building composite tree
+representations from flat array data.
+
+Array must contain objects all with 
+an id and parentId.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>576</x>
+      <y>352</y>
+      <w>592</w>
+      <h>304</h>
+    </coordinates>
+    <panel_attributes>template-builder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>488</y>
+      <w>96</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>/Data/
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>560</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>608</x>
+      <y>184</y>
+      <w>184</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>composite-class
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
