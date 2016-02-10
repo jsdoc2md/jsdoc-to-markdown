@@ -22,6 +22,16 @@ if (cli.args._all.help) {
     return
   }
 
+  if (config.stats) {
+    jsdoc2md
+      .on('progress', progressView.write.bind(progressView))
+      .getStats(config.src)
+      .then(function (json) {
+        console.log(JSON.stringify(json, null, '  '))
+      })
+    return
+  }
+
   if (config.template) config.template = loadOutputTemplate(config.template)
   if (config.config) {
     var o = require('object-tools')
@@ -60,7 +70,7 @@ function parseCommandLine () {
       usage: cli.getUsage(cliData.usage)
     }
   } catch (err) {
-    tool.stop(1, { message: err })
+    tool.error(err)
   }
 }
 
