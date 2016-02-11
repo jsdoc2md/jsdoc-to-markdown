@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "test": "tape test/*.js",
-    "docs": "node bin/cli.js -t jsdoc2md/README.md lib/jsdoc-to-markdown.js > README.md; echo "
+    "docs": "node bin/cli.js -t jsdoc2md/README.md lib/jsdoc-to-markdown.js > README.md; echo ",
+    "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
   },
   "bin": {
     "jsdoc2md": "bin/cli.js"
@@ -40,6 +41,7 @@
     "tree-builder": "file:///Users/lloyd/Documents/75lb/tree-builder"
   },
   "devDependencies": {
+    "coveralls": "^2.11.6",
     "tape": "^4.4"
   },
   "standard": {
