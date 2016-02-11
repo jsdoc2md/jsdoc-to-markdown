@@ -11,7 +11,7 @@
 # jsdoc-to-markdown
 jsdoc2md generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated source code. Useful for injecting API docs into project README files.
 
-There are two documentation templates built in: terminal and markdown. If you direct the output of jsdoc2md to a file it will use the markdown template, otherwise the more human-readable terminal template. Tweaking or building your own templates is simple.
+There are two documentation templates built in: one terminal, one markdown. 
 
 ## Synopsis
 write documented code:
@@ -70,7 +70,7 @@ const jsdoc2md = require('jsdoc-to-markdown')
 
 <a name="module_jsdoc-to-markdown..Jsdoc2md"></a>
 ### jsdoc2md~Jsdoc2md ⇐ EventEmitter  
-**Kind**: inner class of module:jsdoc-to-markdown  
+**Kind**: inner class of [`jsdoc2md`](#module_jsdoc-to-markdown)  
 
 * [~Jsdoc2md](#module_jsdoc-to-markdown..Jsdoc2md) ⇐ EventEmitter  
     * [.render(src, [options])](#module_jsdoc-to-markdown..Jsdoc2md+render) ⇒ `Promise`  
@@ -81,7 +81,7 @@ const jsdoc2md = require('jsdoc-to-markdown')
 #### jsdoc2md.render(src, [options]) ⇒ `Promise`  
 Returns markdown documentation from jsdoc-annoted source code.
 
-**Kind**: instance method of module:jsdoc-to-markdown~Jsdoc2md  
+**Kind**: instance method of [`Jsdoc2md`](#module_jsdoc-to-markdown..Jsdoc2md)  
 
 | Param   | Type                              | Description |
 | ------- | --------------------------------- | ----------- |
@@ -99,7 +99,7 @@ Pass in filepaths (`**` glob matching supported) of javascript source files:
 #### jsdoc2md.buildTemplate(array, options, [options]) ⇒ `Template`  
 Director.
 
-**Kind**: instance method of module:jsdoc-to-markdown~Jsdoc2md  
+**Kind**: instance method of [`Jsdoc2md`](#module_jsdoc-to-markdown..Jsdoc2md)  
 
 | Param   | Type              | Description                                           |
 | ------- | ----------------- | ----------------------------------------------------- |

@@ -11,7 +11,7 @@
 # jsdoc-to-markdown
 jsdoc2md generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated source code. Useful for injecting API docs into project README files.
 
-There are two documentation templates built in: terminal and markdown. If you direct the output of jsdoc2md to a file it will use the markdown template, otherwise the more human-readable terminal template. Tweaking or building your own templates is simple.
+There are two documentation templates built in: one terminal, one markdown. 
 
 ## Synopsis
 write documented code:
