@@ -32,6 +32,16 @@ if (cli.args._all.help) {
     return
   }
 
+  if (config.tree) {
+    jsdoc2md
+      .on('progress', progressView.write.bind(progressView))
+      .getDocs(config.src)
+      .then(function (docs) {
+        console.log(docs.tree())
+      })
+    return
+  }
+
   if (config.template) config.template = loadOutputTemplate(config.template)
   if (config.config) {
     var o = require('object-tools')
