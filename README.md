@@ -68,20 +68,22 @@ a quite wonderful function
 const jsdoc2md = require('jsdoc-to-markdown')
 ```
 
-<a name="module_jsdoc-to-markdown..Jsdoc2md"></a>
-### jsdoc2md~Jsdoc2md ⇐ EventEmitter  
-**Kind**: inner class of [`jsdoc2md`](#module_jsdoc-to-markdown)  
-
-* [~Jsdoc2md](#module_jsdoc-to-markdown..Jsdoc2md) ⇐ EventEmitter  
-    * [.render(src, [options])](#module_jsdoc-to-markdown..Jsdoc2md+render) ⇒ `Promise`  
-    * [.buildTemplate(array, options, [options])](#module_jsdoc-to-markdown..Jsdoc2md+buildTemplate) ⇒ `Template`  
+* jsdoc-to-markdown
+    * [Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md) ⇐ EventEmitter  
+    * [.render(src, [options])](#module_jsdoc-to-markdown+render) ⇒ `Promise`  
+    * [.renderSync(src, [options])](#module_jsdoc-to-markdown+renderSync) ⇒ `string`  
+    * [.buildTemplate(array, options, [options])](#module_jsdoc-to-markdown+buildTemplate) ⇒ `Template`  
 
 
-<a name="module_jsdoc-to-markdown..Jsdoc2md+render"></a>
-#### jsdoc2md.render(src, [options]) ⇒ `Promise`  
+<a name="exp_module_jsdoc-to-markdown--Jsdoc2md"></a>
+### Jsdoc2md ⇐ EventEmitter  
+**Kind**: Exported class  
+
+<a name="module_jsdoc-to-markdown+render"></a>
+### jsdoc-to-markdown.render(src, [options]) ⇒ `Promise`  
 Returns markdown documentation from jsdoc-annoted source code.
 
-**Kind**: instance method of [`Jsdoc2md`](#module_jsdoc-to-markdown..Jsdoc2md)  
+**Kind**: instance method of [`jsdoc-to-markdown`](#module_jsdoc-to-markdown)  
 
 | Param   | Type                              | Description |
 | ------- | --------------------------------- | ----------- |
@@ -95,11 +97,28 @@ Pass in filepaths (`**` glob matching supported) of javascript source files:
 > jsdoc2md({ src: 'lib/*.js' }).pipe(process.stdout)
 ```
 
-<a name="module_jsdoc-to-markdown..Jsdoc2md+buildTemplate"></a>
-#### jsdoc2md.buildTemplate(array, options, [options]) ⇒ `Template`  
+<a name="module_jsdoc-to-markdown+renderSync"></a>
+### jsdoc-to-markdown.renderSync(src, [options]) ⇒ `string`  
+Returns markdown documentation from jsdoc-annoted source code.
+
+**Kind**: instance method of [`jsdoc-to-markdown`](#module_jsdoc-to-markdown)  
+
+| Param   | Type                              | Description |
+| ------- | --------------------------------- | ----------- |
+| src     |  `string` &#124; `Array.<string>` | input files |
+| options |  `object`                         | the options |
+
+
+**Example**
+```js
+const docs = jsdoc2md.renderSync('lib/*.js')
+```
+
+<a name="module_jsdoc-to-markdown+buildTemplate"></a>
+### jsdoc-to-markdown.buildTemplate(array, options, [options]) ⇒ `Template`  
 Director.
 
-**Kind**: instance method of [`Jsdoc2md`](#module_jsdoc-to-markdown..Jsdoc2md)  
+**Kind**: instance method of [`jsdoc-to-markdown`](#module_jsdoc-to-markdown)  
 
 | Param   | Type              | Description                                           |
 | ------- | ----------------- | ----------------------------------------------------- |
