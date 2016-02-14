@@ -59,7 +59,6 @@ a quite wonderful function
 - Additional tags supported
 - How to tweak the output
 
-
 <a name="module_jsdoc-to-markdown"></a>
 ## jsdoc-to-markdown
   
@@ -67,28 +66,32 @@ a quite wonderful function
 ```js
 const jsdoc2md = require('jsdoc-to-markdown')
 ```
-
-* jsdoc-to-markdown
-    * [Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md) ⇐ EventEmitter  
-    * [.render(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+render) ⇒ `Promise`  
-    * [.renderSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+renderSync) ⇒ `string`  
-    * [.buildTemplate(array, options, [options])](#module_jsdoc-to-markdown--Jsdoc2md+buildTemplate) ⇒ `Template`  
-
-
 <a name="exp_module_jsdoc-to-markdown--Jsdoc2md"></a>
-### Jsdoc2md ⇐ EventEmitter  
+### Jsdoc2md ⇐ EventEmitter ⏏  
 **Kind**: Exported class  
 
+* [Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md) ⇐ EventEmitter ⏏  
+    * [.render(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+render) ⇒ `Promise`  
+    * [.renderSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+renderSync) ⇒ `string`  
+    * [.createRenderStream(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+createRenderStream) ⇒ `Duplex`  
+    * [.getStats](#module_jsdoc-to-markdown--Jsdoc2md+getStats) undefined  
+    * [.getTemplateData(src)](#module_jsdoc-to-markdown--Jsdoc2md+getTemplateData) ⇒ `Promise`  
+    * [.getTemplateDataSync(src)](#module_jsdoc-to-markdown--Jsdoc2md+getTemplateDataSync) ⇒ `Array.<object>`  
+    * [.getDocs(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getDocs) ⇒ `Promise`  
+    * [.getDocsSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getDocsSync) ⇒ `DocletTemplate`  
+    * [.buildTemplate(array, [options])](#module_jsdoc-to-markdown--Jsdoc2md+buildTemplate) ⇒ `Template`  
+    * [~buildOutput](#module_jsdoc-to-markdown--Jsdoc2md..buildOutput) ⇒ `string`  
+
 <a name="module_jsdoc-to-markdown--Jsdoc2md+render"></a>
-### jsdoc-to-markdown.render(src, [options]) ⇒ `Promise`  
+#### jsdoc2md.render(src, [options]) ⇒ `Promise`  
 Returns markdown documentation from jsdoc-annoted source code.
 
 **Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
 
-| Param   | Type                              | Description |
-| ------- | --------------------------------- | ----------- |
-| src     |  `string` &#124; `Array.<string>` | input files |
-| options |  `object`                         | the options |
+| Param   | Type                             | Description |
+| ------- | -------------------------------- | ----------- |
+| src     | `string` &#124; `Array.<string>` | input files |
+| options | `object`                         | the options |
 
 
 **Example**
@@ -96,35 +99,99 @@ Pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
 > jsdoc2md({ src: 'lib/*.js' }).pipe(process.stdout)
 ```
-
 <a name="module_jsdoc-to-markdown--Jsdoc2md+renderSync"></a>
-### jsdoc-to-markdown.renderSync(src, [options]) ⇒ `string`  
+#### jsdoc2md.renderSync(src, [options]) ⇒ `string`  
 Returns markdown documentation from jsdoc-annoted source code.
 
 **Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
 
-| Param   | Type                              | Description |
-| ------- | --------------------------------- | ----------- |
-| src     |  `string` &#124; `Array.<string>` | input files |
-| options |  `object`                         | the options |
+| Param   | Type                             | Description |
+| ------- | -------------------------------- | ----------- |
+| src     | `string` &#124; `Array.<string>` | input files |
+| options | `object`                         | the options |
 
 
 **Example**
 ```js
 const docs = jsdoc2md.renderSync('lib/*.js')
 ```
+<a name="module_jsdoc-to-markdown--Jsdoc2md+createRenderStream"></a>
+#### jsdoc2md.createRenderStream(src, [options]) ⇒ `Duplex`  
+**Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
+
+| Param   | Type                             | Description |
+| ------- | -------------------------------- | ----------- |
+| src     | `string` &#124; `Array.<string>` | input files |
+| options | `object`                         | the options |
+
+
+<a name="module_jsdoc-to-markdown--Jsdoc2md+getStats"></a>
+#### jsdoc2md.getStats undefined  
+return some stats about the template data
+
+**Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
+<a name="module_jsdoc-to-markdown--Jsdoc2md+getTemplateData"></a>
+#### jsdoc2md.getTemplateData(src) ⇒ `Promise`  
+Get the template data (jsdoc-parse output)
+
+**Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
+
+| Param | Type                             | Description |
+| ----- | -------------------------------- | ----------- |
+| src   | `string` &#124; `Array.<string>` | input files |
+
+
+<a name="module_jsdoc-to-markdown--Jsdoc2md+getTemplateDataSync"></a>
+#### jsdoc2md.getTemplateDataSync(src) ⇒ `Array.<object>`  
+Get the template data (jsdoc-parse output)
+
+**Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
+
+| Param | Type                             | Description |
+| ----- | -------------------------------- | ----------- |
+| src   | `string` &#124; `Array.<string>` | input files |
+
+
+<a name="module_jsdoc-to-markdown--Jsdoc2md+getDocs"></a>
+#### jsdoc2md.getDocs(src, [options]) ⇒ `Promise`  
+get the rendered template
+
+**Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
+
+| Param   | Type                             | Description |
+| ------- | -------------------------------- | ----------- |
+| src     | `string` &#124; `Array.<string>` | input files |
+| options | `object`                         | the options |
+
+
+<a name="module_jsdoc-to-markdown--Jsdoc2md+getDocsSync"></a>
+#### jsdoc2md.getDocsSync(src, [options]) ⇒ `DocletTemplate`  
+get the rendered template
+
+**Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
+
+| Param   | Type                             | Description |
+| ------- | -------------------------------- | ----------- |
+| src     | `string` &#124; `Array.<string>` | input files |
+| options | `object`                         | the options |
+
 
 <a name="module_jsdoc-to-markdown--Jsdoc2md+buildTemplate"></a>
-### jsdoc-to-markdown.buildTemplate(array, options, [options]) ⇒ `Template`  
+#### jsdoc2md.buildTemplate(array, [options]) ⇒ `Template`  
 Director.
 
 **Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
 
-| Param   | Type              | Description                                           |
-| ------- | ----------------- | ----------------------------------------------------- |
-| array   |  `Array.<object>` | an array of records to be built into a composite tree |
-| options |  `Template`       | a Template class to create                            |
-| options |  `object`         |                                                       |
+| Param   | Type             | Description                                                                |
+| ------- | ---------------- | -------------------------------------------------------------------------- |
+| array   | `Array.<object>` | an array of records to be built into a composite tree (jsdoc-parse output) |
+| options | `object`         | standard options                                                           |
+
+
+<a name="module_jsdoc-to-markdown--Jsdoc2md..buildOutput"></a>
+#### Jsdoc2md~buildOutput ⇒ `string`  
+**Kind**: inner method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
+
 
 
 
