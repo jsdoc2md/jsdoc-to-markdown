@@ -1,7 +1,7 @@
 {
-  "name": "jsdoc-to-markdown",
+  "name": "jsdoc-to-markdown2",
   "author": "Lloyd Brookes",
-  "version": "1.3.3",
+  "version": "2.0.0",
   "description": "jsdoc-annotated source in, markdown API docs out.",
   "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
@@ -17,7 +17,7 @@
     "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
   },
   "bin": {
-    "jsdoc2md": "bin/cli.js"
+    "jsdoc2md2": "bin/cli.js"
   },
   "keywords": [
     "jsdoc",
@@ -32,13 +32,13 @@
     "command-line-args": "^2.1.4",
     "command-line-tool": "file:///Users/lloyd/Documents/75lb/command-line-tool",
     "config-master": "^2.0.1",
-    "dmd": "file:///Users/lloyd/Documents/75lb/dmd2",
-    "dterm": "file:///Users/lloyd/Documents/75lb/dterm",
+    "dmd2": "file:///Users/lloyd/Documents/jsdoc2md2/dmd2",
+    "dterm": "file:///Users/lloyd/Documents/jsdoc2md/dterm",
     "jsdoc-api": "^1.0.5",
-    "jsdoc-parse": "file:///Users/lloyd/Documents/75lb/jsdoc-parse",
+    "jsdoc-parse2": "file:///Users/lloyd/Documents/jsdoc2md2/jsdoc-parse2",
     "object-tools": "^2.0.5",
-    "template-builder": "file:///Users/lloyd/Documents/75lb/template-builder",
-    "tree-builder": "file:///Users/lloyd/Documents/75lb/tree-builder"
+    "template-builder": "file:///Users/lloyd/Documents/jsdoc2md/template-builder",
+    "tree-builder": "file:///Users/lloyd/Documents/jsdoc2md/tree-builder"
   },
   "devDependencies": {
     "coveralls": "^2.11.6",
