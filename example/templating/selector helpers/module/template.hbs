@@ -1,14 +1,14 @@
 # Module cherry-picking
 
-Just the docs for the Animal module. The command to generate this markdown output would be (from this directory): 
+Just the docs for the Animal module. The command to generate this markdown output would be (from this directory):
 ```
 $ jsdoc2md -t template.hbs ../../src/commonJS/*.js > readme.md
 ```
-The template looks like this: 
+The template looks like this:
 ```handlebars
 \{{#module name="animal"}}\{{>docs}}\{{/module}}
 ```
-this is equivalent to: 
+this is equivalent to:
 ```handlebars
 \{{#module name="animal"~}}
 \{{>header~}}
@@ -23,7 +23,7 @@ this is equivalent to:
 ## Show only part of the module docs
 E.g. just show the `header` and `body` if you like (skipping the `member-index` and `members`)
 
-The template looks like this: 
+The template looks like this:
 ```handlebars
 \{{#module name="animal"~}}
 \{{>header~}}
@@ -49,4 +49,28 @@ Outputs:
 
 {{#modules~}}
 - {{name}}
+{{/modules}}
+
+### Filter by regular expression
+You can filter on any property by regular expression.
+
+```hbs
+\{{#modules _name="<regular expression>"~}}
+...
+\{{/modules}}
+```
+
+The `_name` attribute signifies you want to filter on the `name` property (from the input jsdoc-parse data). The underscore means *filter by regexp*. If you specified `name` instead of `_name` it would filter by exact value.
+
+for example, to print a list of names of modules beginning with "b":
+```hbs
+\{{#modules _name="^b"~}}
+\{{name}}
+\{{/modules}}
+```
+
+Outputs:
+
+{{#modules _name="^b"~}}
+{{name}}
 {{/modules}}

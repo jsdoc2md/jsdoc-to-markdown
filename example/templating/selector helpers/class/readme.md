@@ -1,14 +1,14 @@
-#Class cherry-picking
+# Class cherry-picking
 
-Just the docs for the Animal class. The command to generate this markdown output would be (from the root directory): 
+Just the docs for the Animal class. The command to generate this markdown output would be (from the root directory):
 ```
 $ jsdoc2md -t template.hbs ../../src/*.js > readme.md
 ```
-The template looks like this: 
+The template looks like this:
 ```handlebars
 {{#class name="Animal"}}{{>docs}}{{/class}}
 ```
-this is equivalent to: 
+this is equivalent to:
 ```handlebars
 {{#class name="Animal"~}}
 {{>header~}}
@@ -69,10 +69,10 @@ Animal moods
 
 
 
-##Show only part of the Class docs
+## Show only part of the Class docs
 E.g. just show the `header` and `body` if you like (skipping the `member-index` and `members`)
 
-The template looks like this: 
+The template looks like this:
 ```handlebars
 {{#class name="Animal"~}}
 {{>header~}}
