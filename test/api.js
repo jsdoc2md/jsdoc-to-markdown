@@ -18,10 +18,10 @@ test('.renderSync(src, { heading-depth: 4 })', function (t) {
   t.ok(/#### visible/.test(result))
 })
 
-test('.getJsonSync(src)', function (t) {
+test('.getTemplateDataSync(src)', function (t) {
   t.plan(1)
 
-  var result = jsdoc2md.getJsonSync(inputFile)
+  var result = jsdoc2md.getTemplateDataSync(inputFile)
   t.ok(result[0].id)
 })
 

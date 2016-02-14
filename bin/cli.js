@@ -12,10 +12,10 @@ if (cli.args._all.help) {
   var jsdoc2md = require('../')
   var config = loadStoredConfig(cli.args)
 
-  if (config.json) {
+  if (config.data) {
     jsdoc2md
       .on('progress', progressView.write.bind(progressView))
-      .getJson(config.src)
+      .getTemplateData(config.src)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
