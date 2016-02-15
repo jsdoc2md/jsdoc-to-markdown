@@ -66,22 +66,23 @@ a quite wonderful function
 ```js
 const jsdoc2md = require('jsdoc-to-markdown')
 ```
+
+* [jsdoc-to-markdown](#module_jsdoc-to-markdown)  
+    * [Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md) ⇐ EventEmitter ⏏  
+        * [.render(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+render) ⇒ `Promise`  
+        * [.renderSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+renderSync) ⇒ `string`  
+        * [.createRenderStream(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+createRenderStream) ⇒ `Duplex`  
+        * [.getStats()](#module_jsdoc-to-markdown--Jsdoc2md+getStats)  
+        * [.getTemplateData(src)](#module_jsdoc-to-markdown--Jsdoc2md+getTemplateData) ⇒ `Promise`  
+        * [.getTemplateDataSync(src)](#module_jsdoc-to-markdown--Jsdoc2md+getTemplateDataSync) ⇒ `Array.<object>`  
+        * [.getDocs(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getDocs) ⇒ `Promise`  
+        * [.getDocsSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getDocsSync) ⇒ `DocletTemplate`  
+        * [.buildTemplate(array, [options])](#module_jsdoc-to-markdown--Jsdoc2md+buildTemplate) ⇒ `Template`  
+        * [~buildOutput()](#module_jsdoc-to-markdown--Jsdoc2md..buildOutput) ⇒ `string`  
+
 <a name="exp_module_jsdoc-to-markdown--Jsdoc2md"></a>
 ### Jsdoc2md ⇐ EventEmitter ⏏  
 **Kind**: Exported class  
-
-* [Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md) ⇐ EventEmitter ⏏  
-    * [.render(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+render) ⇒ `Promise`  
-    * [.renderSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+renderSync) ⇒ `string`  
-    * [.createRenderStream(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+createRenderStream) ⇒ `Duplex`  
-    * [.getStats](#module_jsdoc-to-markdown--Jsdoc2md+getStats) undefined  
-    * [.getTemplateData(src)](#module_jsdoc-to-markdown--Jsdoc2md+getTemplateData) ⇒ `Promise`  
-    * [.getTemplateDataSync(src)](#module_jsdoc-to-markdown--Jsdoc2md+getTemplateDataSync) ⇒ `Array.<object>`  
-    * [.getDocs(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getDocs) ⇒ `Promise`  
-    * [.getDocsSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getDocsSync) ⇒ `DocletTemplate`  
-    * [.buildTemplate(array, [options])](#module_jsdoc-to-markdown--Jsdoc2md+buildTemplate) ⇒ `Template`  
-    * [~buildOutput](#module_jsdoc-to-markdown--Jsdoc2md..buildOutput) ⇒ `string`  
-
 <a name="module_jsdoc-to-markdown--Jsdoc2md+render"></a>
 #### jsdoc2md.render(src, [options]) ⇒ `Promise`  
 Returns markdown documentation from jsdoc-annoted source code.
@@ -126,7 +127,7 @@ const docs = jsdoc2md.renderSync('lib/*.js')
 
 
 <a name="module_jsdoc-to-markdown--Jsdoc2md+getStats"></a>
-#### jsdoc2md.getStats undefined  
+#### jsdoc2md.getStats()  
 return some stats about the template data
 
 **Kind**: instance method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
@@ -189,7 +190,7 @@ Director.
 
 
 <a name="module_jsdoc-to-markdown--Jsdoc2md..buildOutput"></a>
-#### Jsdoc2md~buildOutput ⇒ `string`  
+#### Jsdoc2md~buildOutput() ⇒ `string`  
 **Kind**: inner method of [`Jsdoc2md`](#exp_module_jsdoc-to-markdown--Jsdoc2md)  
 
 
