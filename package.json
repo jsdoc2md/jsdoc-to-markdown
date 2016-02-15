@@ -38,7 +38,8 @@
     "jsdoc-parse2": "file:///Users/lloyd/Documents/jsdoc2md2/jsdoc-parse2",
     "object-tools": "^2.0.5",
     "template-builder": "file:///Users/lloyd/Documents/jsdoc2md/template-builder",
-    "tree-builder": "file:///Users/lloyd/Documents/jsdoc2md/tree-builder"
+    "tree-builder": "file:///Users/lloyd/Documents/jsdoc2md/tree-builder",
+    "walk-back": "^1.1.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.6",

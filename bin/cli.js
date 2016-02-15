@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 const progressView = require('../lib/progress-view')
+const path = require('path')
+
 var tool = require('command-line-tool')
 
 var cli = parseCommandLine()
@@ -48,6 +50,8 @@ if (cli.args._all.help) {
     tool.stop(JSON.stringify(o.without(config, 'config'), null, '  '))
   }
 
+  if (config.decorations) loadDecorations(config)
+
   jsdoc2md
     .on('progress', progressView.write.bind(progressView))
     .createRenderStream(config.src, config)
@@ -94,4 +98,23 @@ function loadDependencies () {
   progressView.write('Loading dependencies')
   const pkg = require('../package')
   Object.keys(pkg.dependencies).forEach(require)
+}
+
+function loadDecorations (config) {
+  progressView.write('Loading decorations')
+  const walkBack = require('walk-back')
+  const fs = require('fs')
+
+  config.decorations = config.decorations.map(function (decorationPath) {
+    if (fs.existsSync(path.resolve(decorationPath))) {
+      return require(path.resolve(decorationPath))
+    } else {
+      const decorationModulePath = walkBack('./node_modules', decorationPath)
+      if (decorationModulePath) {
+        return require(decorationModulePath)
+      } else {
+        tool.error(`Invalid decoration module: ${decorationPath}`)
+      }
+    }
+  })
 }
