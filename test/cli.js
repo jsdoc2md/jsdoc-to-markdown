@@ -17,7 +17,7 @@ test('cli: json option', function (t) {
 
   var handle = spawn(
     'node',
-    [ 'bin/cli.js', '--json', inputPath ],
+    [ 'bin/cli.js', '--data', inputPath ],
     { stdio: [ 'ignore', outputFile, 'ignore']}
   )
   handle.on('close', function () {
