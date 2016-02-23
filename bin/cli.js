@@ -9,6 +9,8 @@ var cli = parseCommandLine()
 
 if (cli.args._all.help) {
   tool.stop(cli.usage)
+} else if (cli.args._all.version) {
+  tool.stop(require('../package').version)
 } else {
   loadDependencies()
   var jsdoc2md = require('../')
@@ -21,6 +23,7 @@ if (cli.args._all.help) {
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
+      .catch(err => console.error(err.stack))
     return
   }
 
@@ -31,6 +34,7 @@ if (cli.args._all.help) {
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
+      .catch(err => console.error(err.stack))
     return
   }
 
@@ -41,6 +45,7 @@ if (cli.args._all.help) {
       .then(function (docs) {
         console.log(docs.tree())
       })
+      .catch(err => console.error(err.stack))
     return
   }
 
@@ -118,3 +123,17 @@ function loadDecorations (config) {
     }
   })
 }
+
+function loadedModules () {
+  const DocletTemplate = require('jsdoc-parse-template/doclet-template')
+  const modules = Object.keys(require.cache)
+    .map(key => ({ id: key, parentId: require.cache[key].parent && require.cache[key].parent.id }))
+  // console.error(modules)
+  modules.push({ id: '.' })
+  const template = DocletTemplate.build(modules)
+  console.error(template.tree())
+}
+
+process.on('unhandledRejection', function (err, p) {
+  console.error('UNHANDLED', err.stack)
+})
