@@ -41,7 +41,7 @@ if (cli.args._all.help) {
   if (config.tree) {
     jsdoc2md
       .on('progress', progressView.write.bind(progressView))
-      .getDocs(config.src)
+      .getDocs(config.src, config)
       .then(function (docs) {
         console.log(docs.tree())
       })
