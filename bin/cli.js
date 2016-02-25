@@ -68,12 +68,10 @@ function loadStoredConfig (argv) {
   var loadConfig = require('config-master')
   var o = require('object-tools')
 
-  var dmdConfig = loadConfig('dmd')
-  var parseConfig = loadConfig('jsdoc-parse')
   var jsdoc2mdConfig = loadConfig('jsdoc2md')
 
   /* deep merge config objects */
-  return o.extend(parseConfig, dmdConfig, jsdoc2mdConfig, argv._all)
+  return o.extend(jsdoc2mdConfig, argv._all)
 }
 
 function parseCommandLine () {
