@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.1.1">
-  <zoom_level>8</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>664</x>
-      <y>232</y>
-      <w>80</w>
-      <h>24</h>
+      <x>790</x>
+      <y>400</y>
+      <w>100</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>/Composite/
 </panel_attributes>
@@ -16,67 +16,30 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>608</x>
-      <y>448</y>
-      <w>192</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>/Template/
---
-data : Data
---
-render()
-renderAll()
-_create(data, decorations)_
-_getDataClass()_
-_getSubclassMap()_
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>696</x>
-      <y>248</y>
-      <w>80</w>
-      <h>216</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;250.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>696</x>
-      <y>248</y>
-      <w>232</w>
-      <h>256</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;270.0;300.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>648</x>
-      <y>744</y>
-      <w>120</w>
-      <h>64</h>
+      <x>690</x>
+      <y>590</y>
+      <w>240</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes>DocletTemplate
 --
+data : DocletData
 --
 module(name)
-</panel_attributes>
+render()
+renderAll()
+_create(data, decorations)_
+_getSubclassMap()_
+_build(dataTree, options)_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>856</x>
-      <y>744</y>
-      <w>120</w>
-      <h>80</h>
+      <x>960</x>
+      <y>590</y>
+      <w>210</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes>DocletData
 --
@@ -84,65 +47,16 @@ module(name)
 isExternal() 
 accessSymbol()
 etc
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>896</x>
-      <y>568</y>
-      <w>24</w>
-      <h>192</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>688</x>
-      <y>560</y>
-      <w>24</w>
-      <h>200</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>184</x>
-      <y>240</y>
-      <w>304</w>
-      <h>320</h>
-    </coordinates>
-    <panel_attributes>tree-builder</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>0</x>
-      <y>304</y>
-      <w>152</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>bowie 
-&lt;&lt;director&gt;&gt;
---
---
-createStream()
-buildTemplateTree(array)</panel_attributes>
+_build(array, root)_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>448</x>
-      <y>696</y>
-      <w>544</w>
-      <h>160</h>
+      <x>630</x>
+      <y>520</y>
+      <w>680</w>
+      <h>480</h>
     </coordinates>
     <panel_attributes>jsdoc-parse-template
 </panel_attributes>
@@ -151,10 +65,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>544</x>
-      <y>968</y>
-      <w>128</w>
-      <h>24</h>
+      <x>550</x>
+      <y>1170</y>
+      <w>160</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>MarkdownTemplate</panel_attributes>
     <additional_attributes/>
@@ -162,43 +76,21 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
-      <y>800</y>
-      <w>120</w>
-      <h>184</h>
+      <x>610</x>
+      <y>910</y>
+      <w>160</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;210.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>792</x>
-      <y>528</y>
-      <w>88</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+    <additional_attributes>140.0;10.0;10.0;260.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>704</x>
-      <y>616</y>
-      <w>144</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Decoration</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>552</x>
-      <y>1024</y>
-      <w>96</w>
-      <h>24</h>
+      <x>560</x>
+      <y>1240</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Class</panel_attributes>
     <additional_attributes/>
@@ -206,10 +98,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>568</x>
-      <y>1040</y>
-      <w>96</w>
-      <h>24</h>
+      <x>580</x>
+      <y>1260</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Function</panel_attributes>
     <additional_attributes/>
@@ -217,10 +109,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>584</x>
-      <y>1056</y>
-      <w>96</w>
-      <h>24</h>
+      <x>600</x>
+      <y>1280</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Member</panel_attributes>
     <additional_attributes/>
@@ -228,10 +120,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>1072</y>
-      <w>96</w>
-      <h>24</h>
+      <x>620</x>
+      <y>1300</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Event</panel_attributes>
     <additional_attributes/>
@@ -239,10 +131,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>984</y>
-      <w>24</w>
-      <h>56</h>
+      <x>620</x>
+      <y>1190</y>
+      <w>30</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -250,55 +142,22 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>768</x>
-      <y>112</y>
-      <w>104</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>jsdoc-api</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>768</x>
-      <y>32</y>
-      <w>104</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>jsdoc-parse</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>496</x>
-      <y>912</y>
-      <w>232</w>
-      <h>208</h>
+      <x>490</x>
+      <y>1100</y>
+      <w>290</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>dmd
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>424</x>
-      <y>240</y>
-      <w>256</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>300.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>784</x>
-      <y>968</y>
-      <w>128</w>
-      <h>24</h>
+      <x>850</x>
+      <y>1170</y>
+      <w>160</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>TerminalTemplate</panel_attributes>
     <additional_attributes/>
@@ -306,10 +165,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>792</x>
-      <y>1024</y>
-      <w>96</w>
-      <h>24</h>
+      <x>860</x>
+      <y>1240</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Class</panel_attributes>
     <additional_attributes/>
@@ -317,10 +176,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>808</x>
-      <y>1040</y>
-      <w>96</w>
-      <h>24</h>
+      <x>880</x>
+      <y>1260</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Function</panel_attributes>
     <additional_attributes/>
@@ -328,10 +187,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>824</x>
-      <y>1056</y>
-      <w>96</w>
-      <h>24</h>
+      <x>900</x>
+      <y>1280</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Member</panel_attributes>
     <additional_attributes/>
@@ -339,10 +198,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>840</x>
-      <y>1072</y>
-      <w>96</w>
-      <h>24</h>
+      <x>920</x>
+      <y>1300</y>
+      <w>120</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Event</panel_attributes>
     <additional_attributes/>
@@ -350,10 +209,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>984</y>
-      <w>24</w>
-      <h>56</h>
+      <x>920</x>
+      <y>1190</y>
+      <w>30</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -361,10 +220,10 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>744</x>
-      <y>912</y>
-      <w>224</w>
-      <h>208</h>
+      <x>800</x>
+      <y>1100</y>
+      <w>280</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>dterm</panel_attributes>
     <additional_attributes/>
@@ -372,35 +231,24 @@ buildTemplateTree(array)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>688</x>
-      <y>800</y>
-      <w>168</w>
-      <h>184</h>
+      <x>740</x>
+      <y>910</y>
+      <w>200</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;210.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>184</x>
-      <y>0</y>
-      <w>384</w>
-      <h>208</h>
-    </coordinates>
-    <panel_attributes>jsdoc-to-markdown</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>10.0;10.0;180.0;260.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>200</x>
-      <y>32</y>
-      <w>208</w>
-      <h>160</h>
+      <x>540</x>
+      <y>60</y>
+      <w>260</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>jsdoc-to-markdown 
-&lt;&lt;EventEmitter&gt;&gt;
+&lt;&lt;module&gt;&gt;
 --
 --
 render(src, options) 
@@ -413,96 +261,67 @@ getDocs(src, options)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>288</y>
-      <w>216</w>
-      <h>56</h>
+      <x>270</x>
+      <y>60</y>
+      <w>240</w>
+      <h>180</h>
     </coordinates>
-    <panel_attributes>TreeBuilder
+    <panel_attributes>jsdoc-parse
+&lt;&lt;module&gt;&gt;
 --
---
-build(array, Composite, root) : Data
-</panel_attributes>
+parse (jsdocExplainOutput)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>888</x>
-      <y>392</y>
-      <w>256</w>
-      <h>56</h>
+      <x>0</x>
+      <y>60</y>
+      <w>240</w>
+      <h>180</h>
     </coordinates>
-    <panel_attributes>TemplateBuilder
+    <panel_attributes>jsdoc-api
+&lt;&lt;module&gt;&gt;
 --
---
-build(dataComposite, Template) : Template</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>216</x>
-      <y>368</y>
-      <w>208</w>
-      <h>136</h>
-    </coordinates>
-    <panel_attributes>bg=yellow
-tree-builder
---
-for building composite tree
-representations from flat array data.
-
-Array must contain objects all with 
-an id and parentId.
+explainSync([options])
+explain([options])
+createExplainStream([options])
+renderSync([options])
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>576</x>
-      <y>352</y>
-      <w>592</w>
-      <h>304</h>
+      <x>720</x>
+      <y>340</y>
+      <w>230</w>
+      <h>150</h>
     </coordinates>
-    <panel_attributes>template-builder</panel_attributes>
+    <panel_attributes>composite-class
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>864</x>
-      <y>488</y>
-      <w>96</w>
-      <h>88</h>
+      <x>600</x>
+      <y>0</y>
+      <w>100</w>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>/Data/
---
-</panel_attributes>
+    <panel_attributes>EventEmitter</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>560</y>
-      <w>24</w>
-      <h>72</h>
+      <x>650</x>
+      <y>20</y>
+      <w>30</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>608</x>
-      <y>184</y>
-      <w>184</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>composite-class
-</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
   </element>
 </diagram>
