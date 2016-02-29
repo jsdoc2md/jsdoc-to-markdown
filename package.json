@@ -29,11 +29,13 @@
     "documentation"
   ],
   "dependencies": {
+    "array-back": "^1.0.2",
     "command-line-args": "^2.1.6",
     "command-line-tool": "file:///Users/lloyd/Documents/75lb/command-line-tool",
     "config-master": "^2.0.1",
     "dmd2": "file:///Users/lloyd/Documents/jsdoc2md2/dmd2",
     "dterm": "file:///Users/lloyd/Documents/jsdoc2md/dterm",
+    "home-path": "^1.0.3",
     "jsdoc-api": "^1.0.5",
     "jsdoc-parse2": "file:///Users/lloyd/Documents/jsdoc2md2/jsdoc-parse2",
     "object-tools": "^2.0.5",
