@@ -2,19 +2,21 @@
 'use strict'
 const progressView = require('../lib/progress-view')
 const path = require('path')
+const tool = require('command-line-tool')
 
-var tool = require('command-line-tool')
-
-var cli = parseCommandLine()
+const cli = parseCommandLine()
 
 if (cli.args._all.help) {
   tool.stop(cli.usage)
 } else if (cli.args._all.version) {
   tool.stop(require('../package').version)
+} else if (cli.args._all.clean) {
+  const jsdoc2md = require('../')
+  jsdoc2md.clean().catch(tool.halt)
 } else {
   loadDependencies()
-  var jsdoc2md = require('../')
-  var config = loadStoredConfig(cli.args)
+  const jsdoc2md = require('../')
+  const config = loadStoredConfig(cli.args)
 
   if (config.data) {
     jsdoc2md
@@ -23,7 +25,7 @@ if (cli.args._all.help) {
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
-      .catch(err => console.error(err.stack))
+      .catch(tool.error)
     return
   }
 
@@ -34,7 +36,7 @@ if (cli.args._all.help) {
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
-      .catch(err => console.error(err.stack))
+      .catch(tool.error)
     return
   }
 
@@ -45,7 +47,7 @@ if (cli.args._all.help) {
       .then(function (docs) {
         console.log(docs.tree())
       })
-      .catch(err => console.error(err.stack))
+      .catch(tool.error)
     return
   }
 
