@@ -35,11 +35,9 @@
     "config-master": "^2.0.1",
     "dmd2": "file:///Users/lloyd/Documents/jsdoc2md2/dmd2",
     "dterm": "file:///Users/lloyd/Documents/jsdoc2md/dterm",
-    "home-path": "^1.0.3",
     "jsdoc-api": "^1.0.5",
     "jsdoc-parse2": "file:///Users/lloyd/Documents/jsdoc2md2/jsdoc-parse2",
     "object-tools": "^2.0.5",
-    "then-fs": "^2.0.0",
     "walk-back": "^1.1.0"
   },
   "devDependencies": {
