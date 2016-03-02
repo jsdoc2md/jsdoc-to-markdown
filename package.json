@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "test": "tape test/*.js",
-    "docs": "node bin/cli.js -t jsdoc2md/README.md lib/jsdoc-to-markdown.js > README.md; echo ",
+    "docs": "node bin/cli.js lib/jsdoc-to-markdown.js > docs/API.md; echo ",
     "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
   },
   "bin": {
