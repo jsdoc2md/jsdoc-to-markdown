@@ -77,8 +77,9 @@ function loadStoredConfig (argv) {
 }
 
 function parseCommandLine () {
-  progressView.write('Parsing command line')
+  progressView.write('Loading command-line-args')
   var commandLineArgs = require('command-line-args')
+  progressView.write('Loading cli-data')
   var cliData = require('../lib/cli-data')
 
   var cli = commandLineArgs(cliData.definitions)
@@ -100,9 +101,13 @@ function loadOutputTemplate (filename) {
 }
 
 function loadDependencies () {
-  progressView.write('Loading dependencies')
   const pkg = require('../package')
-  Object.keys(pkg.dependencies).forEach(require)
+  Object.keys(pkg.dependencies).forEach(dep => {
+    if ([ 'dterm', 'dmd2', 'command-line-args' ].indexOf(dep) === -1) {
+      progressView.write('Loading ' + dep)
+      require(dep)
+    }
+  })
 }
 
 function loadedModules () {
