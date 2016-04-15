@@ -198,11 +198,13 @@ Essentially, jsdoc2d connects the output of [jsdoc-parse](https://github.com/jsd
 var jsdoc2md = require("jsdoc-to-markdown")
 ```
 <a name="exp_module_jsdoc-to-markdown--jsdoc2md"></a>
+
 ### jsdoc2md([options]) ⇒ <code>[TransformStream](https://nodejs.org/api/stream.html#stream_class_stream_transform)</code> ⏏
 Transforms jsdoc into markdown documentation.
 
 **Kind**: Exported function  
 **Params**
+
 - [options] <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code> | <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code> - the options
 
 **Example**  
@@ -217,6 +219,7 @@ or pipe in source code from another source:
 
 
 <a name="module_dmd--dmd..DmdOptions"></a>
+
 ### dmd~DmdOptions
 All dmd options and their defaults
 
@@ -240,6 +243,7 @@ All dmd options and their defaults
     * [.group-by](#module_dmd--dmd..DmdOptions+group-by) : <code>array</code>
 
 <a name="module_dmd--dmd..DmdOptions+template"></a>
+
 #### dmdOptions.template : <code>string</code>
 The template the supplied documentation will be rendered into. Use the default or supply your own template for full control over the output.
 
@@ -265,79 +269,93 @@ the equivation operation using the command-line tool:
 $ dmd --template template.hbs --src my-class.json
 ```
 <a name="module_dmd--dmd..DmdOptions+heading-depth"></a>
+
 #### dmdOptions.heading-depth : <code>number</code>
 The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>2</code>  
 <a name="module_dmd--dmd..DmdOptions+example-lang"></a>
+
 #### dmdOptions.example-lang : <code>string</code>
 Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;js&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions+plugin"></a>
+
 #### dmdOptions.plugin : <code>array</code>
 Use an installed package containing helper and/or partial overrides
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 <a name="module_dmd--dmd..DmdOptions+helper"></a>
+
 #### dmdOptions.helper : <code>array</code>
 handlebars helper files to override or extend the default set
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 <a name="module_dmd--dmd..DmdOptions+partial"></a>
+
 #### dmdOptions.partial : <code>array</code>
 handlebars partial files to override or extend the default set
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 <a name="module_dmd--dmd..DmdOptions+name-format"></a>
+
 #### dmdOptions.name-format : <code>string</code>
 Format identifier names in the [code](http://daringfireball.net/projects/markdown/syntax#code) style, (i.e. format using backticks or `<code></code>`)
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 <a name="module_dmd--dmd..DmdOptions+no-gfm"></a>
+
 #### dmdOptions.no-gfm : <code>boolean</code>
 By default, dmd generates github-flavoured markdown. Not all markdown parsers render gfm correctly. If your generated docs look incorrect on sites other than Github (e.g. npmjs.org) try enabling this option to disable Github-specific syntax.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 <a name="module_dmd--dmd..DmdOptions+separators"></a>
+
 #### dmdOptions.separators : <code>boolean</code>
 Put `<hr>` breaks between identifiers. Improves readability on bulky docs.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>false</code>  
 <a name="module_dmd--dmd..DmdOptions+module-index-format"></a>
+
 #### dmdOptions.module-index-format : <code>string</code>
 none, grouped, table, dl
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;dl&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions+global-index-format"></a>
+
 #### dmdOptions.global-index-format : <code>string</code>
 none, grouped, table, dl
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;dl&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions+param-list-format"></a>
+
 #### dmdOptions.param-list-format : <code>string</code>
 Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed.
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;table&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions+property-list-format"></a>
+
 #### dmdOptions.property-list-format : <code>string</code>
 list, table
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;table&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions+member-index-format"></a>
+
 #### dmdOptions.member-index-format : <code>string</code>
 grouped, list
 
 **Kind**: instance property of <code>[DmdOptions](#module_dmd--dmd..DmdOptions)</code>  
 **Default**: <code>&quot;grouped&quot;</code>  
 <a name="module_dmd--dmd..DmdOptions+group-by"></a>
+
 #### dmdOptions.group-by : <code>array</code>
 a list of fields to group member indexes by
 
@@ -345,6 +363,7 @@ a list of fields to group member indexes by
 **Default**: <code>[&quot;scope&quot;,&quot;category&quot;]</code>  
 
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions"></a>
+
 ### jsdocParse~ParseOptions
 All options for jsdoc-parse, including defaults
 
@@ -359,6 +378,7 @@ All options for jsdoc-parse, including defaults
     * [.sort-by](#module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+sort-by) : <code>array</code>
 
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+src"></a>
+
 #### parseOptions.src : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
 A list of javascript source files (or glob expressions) to parse for documentation. If this option is not set jsdoc-parse will wait for source code on stdin (i.e. `cat *.js | jsdoc-parse <options>`).
 
@@ -375,29 +395,33 @@ parse({ src: "example.js" }).pipe(process.stdout)
 fs.createReadStream("example.js").parse().pipe(process.stdout)
 ```
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+private"></a>
+
 #### parseOptions.private : <code>boolean</code>
 Include identifier documentation marked as `@private` in the output
 
 **Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
 **Default**: <code>false</code>  
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+stats"></a>
+
 #### parseOptions.stats : <code>boolean</code>
 Print a few stats about the doclets parsed
 
 **Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+html"></a>
+
 #### parseOptions.html : <code>boolean</code>
 Enable experimental parsing of .html files.
 
 **Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
 **Default**: <code>false</code>  
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+conf"></a>
+
 #### parseOptions.conf : <code>boolean</code>
 Path to a jsdoc configuration file, passed directly to `jsdoc -c`.
 
 **Kind**: instance property of <code>[ParseOptions](#module_jsdoc-parse--jsdocParse..ParseOptions)</code>  
-**Default**: <code></code>  
 <a name="module_jsdoc-parse--jsdocParse..ParseOptions.ParseOptions+sort-by"></a>
+
 #### parseOptions.sort-by : <code>array</code>
 Sort by one of more fields, e.g. `--sort-by kind category`. Pass the special value `none` to remove the default sort order.
 
