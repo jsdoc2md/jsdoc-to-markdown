@@ -2,12 +2,12 @@
 'use strict'
 var fs = require('fs')
 var commandLineArgs = require('command-line-args')
-var dope = require('console-dope')
 var jsdoc2md = require('../')
 var domain = require('domain')
 var loadConfig = require('config-master')
 var o = require('object-tools')
 var cliData = require('../lib/cli-data')
+var ansi = require('ansi-escape-sequences')
 
 var cli = commandLineArgs(cliData.definitions)
 var usage = cli.getUsage(cliData.usage)
@@ -29,7 +29,7 @@ if (config.template) {
 }
 
 if (config.help) {
-  dope.log(usage)
+  console.log(usage)
   process.exit(0)
 }
 
@@ -53,14 +53,14 @@ function halt (err) {
 
   if (config) {
     if (config.verbose) {
-      dope.red.error(err.stack || err)
+      console.error(ansi.format(err.stack || err, 'red'))
     } else {
-      dope.red.error('Error: ' + err.message)
-      dope.red.error('(run jsdoc2md with --verbose for a stack trace)')
+      console.error(ansi.format('Error: ' + err.message, 'red'))
+      console.error(ansi.format('(run jsdoc2md with --verbose for a stack trace)', 'red'))
     }
   } else {
-    dope.red.error(err.message)
+    console.error(ansi.format(err.message, 'red'))
   }
-  dope.error(usage)
+  console.error(usage)
   process.exit(1)
 }
