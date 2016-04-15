@@ -6,8 +6,6 @@ var dope = require('console-dope')
 var jsdoc2md = require('../')
 var domain = require('domain')
 var loadConfig = require('config-master')
-var homePath = require('home-path')
-var path = require('path')
 var o = require('object-tools')
 var cliData = require('../lib/cli-data')
 
