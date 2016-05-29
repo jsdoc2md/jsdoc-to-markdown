@@ -30,9 +30,10 @@
   ],
   "dependencies": {
     "ansi-escape-sequences": "^2.2.2",
-    "command-line-args": "^2.1.6",
+    "command-line-args": "^3.0.0",
+    "command-line-usage": "^3.0.1",
     "config-master": "^2.0.2",
-    "dmd": "^1.3.11",
+    "dmd": "^1.4.1",
     "jsdoc-parse": "^1.2.7",
     "object-tools": "^2.0.6",
     "stream-connect": "^1.0.2"

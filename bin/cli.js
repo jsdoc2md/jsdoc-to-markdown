@@ -2,6 +2,7 @@
 'use strict'
 var fs = require('fs')
 var commandLineArgs = require('command-line-args')
+var commandLineUsage = require('command-line-usage')
 var jsdoc2md = require('../')
 var domain = require('domain')
 var loadConfig = require('config-master')
@@ -26,11 +27,10 @@ function halt (err) {
   process.exitCode = 1
 }
 
-var cli = commandLineArgs(cliData.definitions)
-var usage = cli.getUsage(cliData.usage)
+var usage = commandLineUsage(cliData.usage)
 
 try {
-  var argv = cli.parse()
+  var argv = commandLineArgs(cliData.definitions)
 } catch (err) {
   halt(err)
   return
