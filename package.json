@@ -1,5 +1,5 @@
 {
-  "name": "jsdoc-to-markdown2",
+  "name": "jsdoc-to-markdown",
   "author": "Lloyd Brookes",
   "version": "2.0.0",
   "description": "jsdoc-annotated source in, markdown API docs out.",
@@ -17,7 +17,7 @@
     "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
   },
   "bin": {
-    "jsdoc2md2": "bin/cli.js"
+    "jsdoc2md": "bin/cli.js"
   },
   "keywords": [
     "jsdoc",
@@ -30,19 +30,17 @@
   ],
   "dependencies": {
     "array-back": "^1.0.3",
-    "command-line-args": "^2.1.6",
-    "command-line-tool": "75lb/command-line-tool",
-    "config-master": "^2.0.2",
-    "dmd2": "jsdoc2md/dmd#next",
-    "dterm": "jsdoc2md/dterm",
-    "jsdoc-api": "^1.1.0",
-    "jsdoc-parse2": "jsdoc2md/jsdoc-parse#next",
+    "command-line-tool": "~0.5.2",
+    "config-master": "^2.0.3",
+    "dmd": "^1.4.2",
+    "jsdoc-api": "jsdoc2md/jsdoc-api",
+    "jsdoc-parse": "jsdoc2md/jsdoc-parse#next",
     "object-tools": "^2.0.6",
     "walk-back": "^2.0.1"
   },
   "devDependencies": {
-    "coveralls": "^2.11.9",
-    "tape": "^4.5.1"
+    "coveralls": "^2.11.12",
+    "tape": "^4.6.0"
   },
   "standard": {
     "ignore": [

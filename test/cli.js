@@ -1,3 +1,4 @@
+'use strict'
 var test = require('tape')
 var fs = require('fs')
 var spawn = require('child_process').spawn
@@ -17,7 +18,7 @@ test('cli: json option', function (t) {
 
   var handle = spawn(
     'node',
-    [ 'bin/cli.js', '--data', inputPath ],
+    [ 'bin/cli.js', '--json', inputPath ],
     { stdio: [ 'ignore', outputFile, 'ignore']}
   )
   handle.on('close', function () {

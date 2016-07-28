@@ -1,75 +1,52 @@
 #!/usr/bin/env node
 'use strict'
-const progressView = require('../lib/progress-view')
-const path = require('path')
-const tool = require('command-line-tool')
+const Tool = require('command-line-tool')
+const tool = new Tool()
 
 const cli = parseCommandLine()
 
-if (cli.args._all.help) {
+if (cli.options._all.help) {
   tool.stop(cli.usage)
-} else if (cli.args._all.version) {
+} else if (cli.options._all.version) {
   tool.stop(require('../package').version)
-} else if (cli.args._all.clean) {
+} else if (cli.options._all.clean) {
   const jsdoc2md = require('../')
   jsdoc2md.clean().catch(tool.halt)
 } else {
   loadDependencies()
   const jsdoc2md = require('../')
-  const config = loadStoredConfig(cli.args)
+  const config = loadStoredConfig(cli.options)
 
-  if (config.data) {
+  if (config.json) {
     jsdoc2md
-      .on('progress', progressView.write.bind(progressView))
       .getTemplateData(config.src)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
-      .catch(tool.error)
-    return
-  }
-
-  if (config.stats) {
+      .catch(tool.halt)
+  } else if (config.stats) {
     jsdoc2md
-      .on('progress', progressView.write.bind(progressView))
       .getStats(config.src)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
-      .catch(tool.error)
-    return
-  }
+      .catch(tool.halt)
+  } else {
+    if (config.template) config.template = loadOutputTemplate(config.template)
+    if (config.config) {
+      var o = require('object-tools')
+      tool.stop(JSON.stringify(o.without(config, 'config'), null, '  '))
+    }
 
-  if (config.tree) {
     jsdoc2md
-      .on('progress', progressView.write.bind(progressView))
-      .getDocs(config.src, config)
-      .then(function (docs) {
-        console.log(docs.tree())
-      })
-      .catch(tool.error)
-    return
+      .createRenderStream(config.src, config)
+      .pipe(process.stdout)
   }
-
-  if (config.template) config.template = loadOutputTemplate(config.template)
-  if (config.config) {
-    var o = require('object-tools')
-    tool.stop(JSON.stringify(o.without(config, 'config'), null, '  '))
-  }
-
-  if (config.decorations) loadDecorations(config)
-
-  jsdoc2md
-    .on('progress', progressView.write.bind(progressView))
-    .createRenderStream(config.src, config)
-    .pipe(process.stdout)
 }
 
 function loadStoredConfig (argv) {
-  progressView.write('Loading stored config')
   var loadConfig = require('config-master')
   var o = require('object-tools')
-
   var jsdoc2mdConfig = loadConfig('jsdoc2md')
 
   /* deep merge config objects */
@@ -77,25 +54,16 @@ function loadStoredConfig (argv) {
 }
 
 function parseCommandLine () {
-  progressView.write('Loading command-line-args')
-  var commandLineArgs = require('command-line-args')
-  progressView.write('Loading cli-data')
   var cliData = require('../lib/cli-data')
 
-  var cli = commandLineArgs(cliData.definitions)
-
   try {
-    return {
-      args: cli.parse(),
-      usage: cli.getUsage(cliData.usage)
-    }
+    return tool.getCli(cliData.definitions, cliData.usageSections)
   } catch (err) {
-    tool.error(err)
+    tool.halt(err, { stack: true })
   }
 }
 
 function loadOutputTemplate (filename) {
-  progressView.write('Loading output template')
   var fs = require('fs')
   return fs.readFileSync(filename, 'utf8')
 }
@@ -104,22 +72,7 @@ function loadDependencies () {
   const pkg = require('../package')
   Object.keys(pkg.dependencies).forEach(dep => {
     if ([ 'dterm', 'dmd2', 'command-line-args' ].indexOf(dep) === -1) {
-      progressView.write('Loading ' + dep)
       require(dep)
     }
   })
 }
-
-function loadedModules () {
-  const DocletTemplate = require('jsdoc-parse-template/doclet-template')
-  const modules = Object.keys(require.cache)
-    .map(key => ({ id: key, parentId: require.cache[key].parent && require.cache[key].parent.id }))
-  // console.error(modules)
-  modules.push({ id: '.' })
-  const template = DocletTemplate.build(modules)
-  console.error(template.tree())
-}
-
-process.on('unhandledRejection', function (err, p) {
-  console.error('UNHANDLED', err.stack)
-})
