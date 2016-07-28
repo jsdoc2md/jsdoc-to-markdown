@@ -32,9 +32,9 @@
     "array-back": "^1.0.3",
     "command-line-tool": "~0.5.2",
     "config-master": "^2.0.3",
-    "dmd": "^1.4.2",
-    "jsdoc-api": "jsdoc2md/jsdoc-api",
-    "jsdoc-parse": "jsdoc2md/jsdoc-parse#next",
+    "dmd": "^2.0.0",
+    "jsdoc-api": "^1.2.0",
+    "jsdoc-parse": "^2.0.1",
     "object-tools": "^2.0.6",
     "walk-back": "^2.0.1"
   },
