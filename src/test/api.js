@@ -1,8 +1,8 @@
 'use strict'
 var test = require('tape')
-var jsdoc2md = require('../')
+var jsdoc2md = require('../../')
 
-var inputFile = 'test/fixture/ignore.js'
+var inputFile = 'src/test/fixture/ignore.js'
 
 test('.renderSync(src)', function (t) {
   t.plan(1)
@@ -26,7 +26,7 @@ test('.getTemplateDataSync(src)', function (t) {
 })
 
 test('.renderSync(src, { param-list-format: list })', function (t) {
-  var inputFile = 'test/fixture/params.js'
+  var inputFile = 'src/test/fixture/params.js'
   t.plan(1)
 
   var result = jsdoc2md.renderSync(inputFile, { 'param-list-format': 'list' })

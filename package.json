@@ -4,7 +4,10 @@
   "version": "2.0.0",
   "description": "jsdoc-annotated source in, markdown API docs out.",
   "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
-  "main": "lib/jsdoc-to-markdown.js",
+  "main": "src/main.js",
+  "bin": {
+    "jsdoc2md": "src/bin.js"
+  },
   "license": "MIT",
   "files": [
     "bin",
@@ -12,12 +15,10 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "tape test/*.js",
+    "test": "tape es5/test/*.js",
     "docs": "node bin/cli.js lib/jsdoc-to-markdown.js > docs/API.md; echo ",
-    "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
-  },
-  "bin": {
-    "jsdoc2md": "bin/cli.js"
+    "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo",
+    "es5": "babel --presets babel-preset-es2015 --no-comments src --out-dir es5"
   },
   "keywords": [
     "jsdoc",
@@ -30,15 +31,18 @@
   ],
   "dependencies": {
     "array-back": "^1.0.3",
-    "command-line-tool": "~0.5.2",
+    "command-line-tool": "~0.6.0",
     "config-master": "^2.0.3",
+    "core-js": "^2.4.1",
     "dmd": "^2.0.0",
+    "feature-detect-es6": "^1.3.1",
     "jsdoc-api": "^1.2.0",
     "jsdoc-parse": "^2.0.1",
-    "object-tools": "^2.0.6",
+    "lodash.omit": "^4.4.0",
     "walk-back": "^2.0.1"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
     "coveralls": "^2.11.12",
     "tape": "^4.6.0"
   },
