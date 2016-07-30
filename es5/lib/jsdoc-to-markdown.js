@@ -64,7 +64,6 @@ function getJsdoc(src, options) {
   options = options || {};
   var jsdocOptions = { files: src, pedantic: true, cache: true };
   if (options.html) jsdocOptions.html = true;
-  console.error(options);
   return jsdocApi.explain(jsdocOptions);
 }
 
@@ -77,7 +76,6 @@ function getJsdocSync(src, options) {
 
 function getJsdocParse(options, explainOutput) {
   options = options || {};
-  console.error(explainOutput);
   return jsdocParse(explainOutput, options);
 }
 

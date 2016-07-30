@@ -1,35 +1,28 @@
 'use strict';
 
-var test = require('tape');
+var test = require('test-runner');
 var jsdoc2md = require('../../');
+var a = require('assert');
 
 var inputFile = 'src/test/fixture/ignore.js';
 
-test('.renderSync(src)', function (t) {
-  t.plan(1);
-
+test('.renderSync(src)', function () {
   var result = jsdoc2md.renderSync(inputFile);
-  t.ok(/a visible global/.test(result));
+  a.ok(/a visible global/.test(result));
 });
 
-test('.renderSync(src, { heading-depth: 4 })', function (t) {
-  t.plan(1);
-
+test('.renderSync(src, { heading-depth: 4 })', function () {
   var result = jsdoc2md.renderSync(inputFile, { 'heading-depth': 4 });
-  t.ok(/#### visible/.test(result));
+  a.ok(/#### visible/.test(result));
 });
 
-test('.getTemplateDataSync(src)', function (t) {
-  t.plan(1);
-
+test('.getTemplateDataSync(src)', function () {
   var result = jsdoc2md.getTemplateDataSync(inputFile);
-  t.ok(result[0].id);
+  a.ok(result[0].id);
 });
 
-test('.renderSync(src, { param-list-format: list })', function (t) {
+test('.renderSync(src, { param-list-format: list })', function () {
   var inputFile = 'src/test/fixture/params.js';
-  t.plan(1);
-
   var result = jsdoc2md.renderSync(inputFile, { 'param-list-format': 'list' });
-  t.ok(/- one/.test(result));
+  a.ok(/- one/.test(result));
 });

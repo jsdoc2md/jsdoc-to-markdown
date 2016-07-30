@@ -1,9 +1,10 @@
 'use strict'
-var test = require('tape')
-var fs = require('fs')
-var spawn = require('child_process').spawn
+const test = require('test-runner')
+const fs = require('fs')
+const spawn = require('child_process').spawn
+const a = require('assert')
 
-var inputPath = 'test/fixture/ignore.js'
+const inputPath = 'src/test/fixture/ignore.js'
 
 try {
   fs.mkdirSync('tmp')
@@ -11,22 +12,23 @@ try {
   // dir exists
 }
 
-test('cli: json option', function (t) {
-  t.plan(1)
-
-  var outputFile = fs.openSync('tmp/ignore.json', 'w')
-
-  var handle = spawn(
-    'node',
-    [ 'bin/cli.js', '--json', inputPath ],
-    { stdio: [ 'ignore', outputFile, 'ignore']}
-  )
-  handle.on('close', function () {
-    var json = fs.readFileSync('tmp/ignore.json', 'utf8')
-    if (json) {
-      t.ok(/"id": "visible"/.test(json.toString()))
-    } else {
-      t.fail('no json returned')
-    }
+test('cli: json option', function () {
+  const outputFile = fs.openSync('tmp/ignore.json', 'w')
+  return new Promise((resolve, reject) => {
+    const handle = spawn(
+      'node',
+      [ 'src/bin.js', '--json', inputPath ],
+      { stdio: [ 'ignore', outputFile, 'inherit']}
+    )
+    handle.on('close', function () {
+      const json = fs.readFileSync('tmp/ignore.json', 'utf8')
+      if (json) {
+        a.ok(/"id": "visible"/.test(json.toString()))
+        resolve()
+      } else {
+        reject('no json returned')
+      }
+    })
+    handle.on('error', reject)
   })
 })
