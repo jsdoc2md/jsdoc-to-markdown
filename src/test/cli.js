@@ -18,7 +18,7 @@ test('cli: json option', function () {
     const handle = spawn(
       'node',
       [ 'src/bin.js', '--json', inputPath ],
-      { stdio: [ 'ignore', outputFile, 'inherit']}
+      { stdio: [ 'ignore', outputFile, 'ignore']}
     )
     handle.on('close', function () {
       const json = fs.readFileSync('tmp/ignore.json', 'utf8')

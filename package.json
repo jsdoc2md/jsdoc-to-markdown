@@ -18,7 +18,7 @@
     "test": "test-runner es5/test/*.js",
     "docs": "node bin/cli.js lib/jsdoc-to-markdown.js > docs/API.md; echo ",
     "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo",
-    "es5": "babel --presets babel-preset-es2015 --no-comments src --out-dir es5"
+    "es5": "rm -rf es5 && babel --presets babel-preset-es2015 --no-comments src --out-dir es5"
   },
   "keywords": [
     "jsdoc",
