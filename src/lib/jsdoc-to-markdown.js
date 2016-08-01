@@ -1,5 +1,4 @@
 'use strict'
-const jsdocApi = require('jsdoc-api')
 const jsdocParse = require('jsdoc-parse')
 const dmd = require('dmd')
 
@@ -48,7 +47,7 @@ class Jsdoc2md {
    */
   renderSync (src, options) {
     options = options || {}
-    const jsdocData = getJsdocSync(src, options)
+    const jsdocData = getJsdoc(src, options, true)
     const templateData = jsdocParse(jsdocData, options)
     return dmd(templateData, options)
   }
@@ -86,23 +85,17 @@ class Jsdoc2md {
    * @returns {object[]}
    */
   getTemplateDataSync (src, options) {
-    const output = getJsdocParse.call(this, options, getJsdocSync.call(this, src))
+    const output = getJsdocParse.call(this, options, getJsdoc.call(this, src, options, true))
     return output
   }
 }
 
-function getJsdoc (src, options) {
+function getJsdoc (src, options, sync) {
+  const jsdocApi = require('jsdoc-api')
   options = options || {}
   const jsdocOptions = { files: src, pedantic: true, cache: true }
   if (options.html) jsdocOptions.html = true
-  return jsdocApi.explain(jsdocOptions)
-}
-
-function getJsdocSync (src, options) {
-  options = options || {}
-  const jsdocOptions = { files: src, pedantic: true }
-  if (options.html) jsdocOptions.html = true
-  return jsdocApi.explainSync(jsdocOptions)
+  return sync ? jsdocApi.explainSync(jsdocOptions) : jsdocApi.explain(jsdocOptions)
 }
 
 function getJsdocParse (options, explainOutput) {

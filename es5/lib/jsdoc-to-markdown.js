@@ -4,7 +4,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var jsdocApi = require('jsdoc-api');
 var jsdocParse = require('jsdoc-parse');
 var dmd = require('dmd');
 
@@ -29,7 +28,7 @@ var Jsdoc2md = function () {
     key: 'renderSync',
     value: function renderSync(src, options) {
       options = options || {};
-      var jsdocData = getJsdocSync(src, options);
+      var jsdocData = getJsdoc(src, options, true);
       var templateData = jsdocParse(jsdocData, options);
       return dmd(templateData, options);
     }
@@ -52,7 +51,7 @@ var Jsdoc2md = function () {
   }, {
     key: 'getTemplateDataSync',
     value: function getTemplateDataSync(src, options) {
-      var output = getJsdocParse.call(this, options, getJsdocSync.call(this, src));
+      var output = getJsdocParse.call(this, options, getJsdoc.call(this, src, options, true));
       return output;
     }
   }]);
@@ -60,18 +59,12 @@ var Jsdoc2md = function () {
   return Jsdoc2md;
 }();
 
-function getJsdoc(src, options) {
+function getJsdoc(src, options, sync) {
+  var jsdocApi = require('jsdoc-api');
   options = options || {};
   var jsdocOptions = { files: src, pedantic: true, cache: true };
   if (options.html) jsdocOptions.html = true;
-  return jsdocApi.explain(jsdocOptions);
-}
-
-function getJsdocSync(src, options) {
-  options = options || {};
-  var jsdocOptions = { files: src, pedantic: true };
-  if (options.html) jsdocOptions.html = true;
-  return jsdocApi.explainSync(jsdocOptions);
+  return sync ? jsdocApi.explainSync(jsdocOptions) : jsdocApi.explain(jsdocOptions);
 }
 
 function getJsdocParse(options, explainOutput) {
