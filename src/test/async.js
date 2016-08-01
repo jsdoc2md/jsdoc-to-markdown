@@ -15,8 +15,8 @@ test('.render(src, { heading-depth: 4 })', function () {
     .then(result => a.ok(/#### visible/.test(result)))
 })
 
-test('.getTemplateData(src)', function () {
-  return jsdoc2md.getTemplateData(inputFile)
+test('.getJsdocData(src)', function () {
+  return jsdoc2md.getJsdocData(inputFile)
     .then(result => a.ok(result[0].id))
 })
 

@@ -71,7 +71,7 @@ class Jsdoc2md {
    * @returns {Promise}
    * @fulfil {object[]}
    */
-  getTemplateData (src, options) {
+  getJsdocData (src, options) {
     return getJsdoc.call(this, src, options)
       .then(getJsdocParse.bind(this, options))
       .then(data => {
@@ -84,9 +84,18 @@ class Jsdoc2md {
    * @param {string|string[]} - input files
    * @returns {object[]}
    */
-  getTemplateDataSync (src, options) {
+  getJsdocDataSync (src, options) {
     const output = getJsdocParse.call(this, options, getJsdoc.call(this, src, options, true))
     return output
+  }
+
+  /**
+   * Clear the cache.
+   * @returns {Promise}
+   */
+  clear () {
+    const jsdocApi = require('jsdoc-api')
+    return jsdocApi.cache.clear()
   }
 }
 

@@ -10,9 +10,9 @@ if (options.help) {
   tool.stop(cli.usage);
 } else if (options.version) {
   tool.stop(require('../package').version);
-} else if (options.clean) {
+} else if (options.clear) {
   var jsdoc2md = require('../../');
-  jsdoc2md.clean().catch(tool.halt);
+  jsdoc2md.clear().catch(tool.halt);
 } else {
   var _jsdoc2md = require('../../');
   options = loadStoredConfig(options);
@@ -26,7 +26,7 @@ if (options.help) {
   }
 
   if (options.json) {
-    _jsdoc2md.getTemplateData(options.src).then(function (json) {
+    _jsdoc2md.getJsdocData(options.src).then(function (json) {
       console.log(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.stats) {

@@ -42,17 +42,23 @@ var Jsdoc2md = function () {
       return stream;
     }
   }, {
-    key: 'getTemplateData',
-    value: function getTemplateData(src, options) {
+    key: 'getJsdocData',
+    value: function getJsdocData(src, options) {
       return getJsdoc.call(this, src, options).then(getJsdocParse.bind(this, options)).then(function (data) {
         return data;
       });
     }
   }, {
-    key: 'getTemplateDataSync',
-    value: function getTemplateDataSync(src, options) {
+    key: 'getJsdocDataSync',
+    value: function getJsdocDataSync(src, options) {
       var output = getJsdocParse.call(this, options, getJsdoc.call(this, src, options, true));
       return output;
+    }
+  }, {
+    key: 'clear',
+    value: function clear() {
+      var jsdocApi = require('jsdoc-api');
+      return jsdocApi.cache.clear();
     }
   }]);
 

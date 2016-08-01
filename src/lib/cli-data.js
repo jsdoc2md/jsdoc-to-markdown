@@ -43,7 +43,7 @@ let definitions = [
     description: 'Include identifiers marked @private in the output'
   },
   { name: 'format', type: String },
-  { name: 'clean', type: Boolean }
+  { name: 'clear', type: Boolean }
 ]
 
 const dmdDefinitions = [
@@ -115,7 +115,7 @@ module.exports = {
     {
       header: 'Synopsis',
       content: [
-        '$ jsdoc2md [options] [bold]{--src} [underline]{file} ...',
+        '$ jsdoc2md [<options>] [bold]{--src} [underline]{file} ...',
         '$ jsdoc2md [bold]{--help}',
         '$ jsdoc2md [bold]{--config}',
         '$ jsdoc2md [bold]{--stats} [underline]{file} ...',

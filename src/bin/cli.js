@@ -13,10 +13,10 @@ if (options.help) {
 } else if (options.version) {
   tool.stop(require('../package').version)
 
-/* jsdoc2md --clean */
-} else if (options.clean) {
+/* jsdoc2md --clear */
+} else if (options.clear) {
   const jsdoc2md = require('../../')
-  jsdoc2md.clean().catch(tool.halt)
+  jsdoc2md.clear().catch(tool.halt)
 
 /* jsdoc2md <options> <files>  */
 } else {
@@ -34,7 +34,7 @@ if (options.help) {
 
   if (options.json) {
     jsdoc2md
-      .getTemplateData(options.src)
+      .getJsdocData(options.src)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
