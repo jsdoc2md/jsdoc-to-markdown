@@ -31,7 +31,7 @@ var definitions = [{
   alias: 'P',
   type: Boolean,
   description: 'Include identifiers marked @private in the output'
-}, { name: 'format', type: String }, { name: 'clear', type: Boolean }];
+}, { name: 'clear', type: Boolean }];
 
 var dmdDefinitions = [{ name: 'template', alias: 't', type: String, typeLabel: '<file>',
   description: 'A custom handlebars template file to insert documentation into. The default template is `{{>main}}`.'

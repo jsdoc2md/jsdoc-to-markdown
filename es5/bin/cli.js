@@ -16,14 +16,6 @@ if (options.help) {
 } else {
   var _jsdoc2md = require('../../');
   options = loadStoredConfig(options);
-  options.src = options.src || [];
-
-  try {
-    var assert = require('assert');
-    assert.ok(options.src.length, 'No input files supplied');
-  } catch (err) {
-    tool.halt(err);
-  }
 
   if (options.json) {
     _jsdoc2md.getJsdocData(options.src).then(function (json) {
@@ -33,14 +25,23 @@ if (options.help) {
     _jsdoc2md.getStats(options.src).then(function (json) {
       console.log(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
+  } else if (options.config) {
+    var omit = require('lodash.omit');
+    tool.stop(JSON.stringify(omit(options, 'config'), null, '  '));
   } else {
-    if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
-    if (options.config) {
-      var omit = require('lodash.omit');
-      tool.stop(JSON.stringify(omit(options, 'config'), null, '  '));
+    try {
+      var assert = require('assert');
+      options.src = options.src || [];
+      assert.ok(options.src.length, 'No input files supplied');
+    } catch (err) {
+      tool.halt(err);
     }
 
-    _jsdoc2md.createRenderStream(options.src, options).pipe(process.stdout);
+    if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
+
+    _jsdoc2md.render(options.src, options).then(function (output) {
+      return console.log(output);
+    }).catch(tool.halt);
   }
 }
 
@@ -55,6 +56,6 @@ function parseCommandLine() {
   try {
     return tool.getCli(cliData.definitions, cliData.usageSections);
   } catch (err) {
-    tool.halt(err, { stack: true });
+    tool.halt(err, { stack: false });
   }
 }

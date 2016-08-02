@@ -18,20 +18,11 @@ if (options.help) {
   const jsdoc2md = require('../../')
   jsdoc2md.clear().catch(tool.halt)
 
-/* jsdoc2md <options> <files>  */
 } else {
   const jsdoc2md = require('../../')
   options = loadStoredConfig(options)
-  options.src = options.src || []
 
-  /* input validation */
-  try {
-    const assert = require('assert')
-    assert.ok(options.src.length, 'No input files supplied')
-  } catch (err) {
-    tool.halt(err)
-  }
-
+  /* jsdoc2md --json */
   if (options.json) {
     jsdoc2md
       .getJsdocData(options.src)
@@ -39,6 +30,8 @@ if (options.help) {
         console.log(JSON.stringify(json, null, '  '))
       })
       .catch(tool.halt)
+
+  /* jsdoc2md --namepaths */
   } else if (options.stats) {
     jsdoc2md
       .getStats(options.src)
@@ -46,16 +39,29 @@ if (options.help) {
         console.log(JSON.stringify(json, null, '  '))
       })
       .catch(tool.halt)
+
+  /* jsdoc2md --config */
+  } else if (options.config) {
+    const omit = require('lodash.omit')
+    tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
+
+  /* jsdoc2md [<options>] --src <files> */
   } else {
-    if (options.template) options.template = fs.readFileSync(options.template, 'utf8')
-    if (options.config) {
-      const omit = require('lodash.omit')
-      tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
+    /* input validation */
+    try {
+      const assert = require('assert')
+      options.src = options.src || []
+      assert.ok(options.src.length, 'No input files supplied')
+    } catch (err) {
+      tool.halt(err)
     }
 
+    if (options.template) options.template = fs.readFileSync(options.template, 'utf8')
+
     jsdoc2md
-      .createRenderStream(options.src, options)
-      .pipe(process.stdout)
+      .render(options.src, options)
+      .then(output => console.log(output))
+      .catch(tool.halt)
   }
 }
 
@@ -70,6 +76,6 @@ function parseCommandLine () {
   try {
     return tool.getCli(cliData.definitions, cliData.usageSections)
   } catch (err) {
-    tool.halt(err, { stack: true })
+    tool.halt(err, { stack: false })
   }
 }

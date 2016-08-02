@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "array-back": "^1.0.3",
-    "command-line-tool": "~0.6.0",
+    "command-line-tool": "~0.6.1",
     "config-master": "^2.0.3",
     "core-js": "^2.4.1",
     "dmd": "^2.0.1",
@@ -43,8 +43,7 @@
   },
   "standard": {
     "ignore": [
-      "test",
-      "example"
+      "es5"
     ]
   }
 }

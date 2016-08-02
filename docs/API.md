@@ -10,7 +10,6 @@ const jsdoc2md = require('jsdoc-to-markdown')
     * [Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md) ⇐ <code>EventEmitter</code> ⏏
         * [.render(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+render) ⇒ <code>Promise</code>
         * [.renderSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+renderSync) ⇒ <code>string</code>
-        * [.createRenderStream(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+createRenderStream) ⇒ <code>Duplex</code>
         * [.getJsdocData(src)](#module_jsdoc-to-markdown--Jsdoc2md+getJsdocData) ⇒ <code>Promise</code>
         * [.getJsdocDataSync(src)](#module_jsdoc-to-markdown--Jsdoc2md+getJsdocDataSync) ⇒ <code>Array.&lt;object&gt;</code>
         * [.clear()](#module_jsdoc-to-markdown--Jsdoc2md+clear) ⇒ <code>Promise</code>
@@ -54,16 +53,6 @@ Returns markdown documentation from jsdoc-annoted source code.
 ```js
 const docs = jsdoc2md.renderSync('lib/*.js')
 ```
-<a name="module_jsdoc-to-markdown--Jsdoc2md+createRenderStream"></a>
-
-#### jsdoc2md.createRenderStream(src, [options]) ⇒ <code>Duplex</code>
-**Kind**: instance method of <code>[Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md)</code>  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | input files |
-| [options] | <code>object</code> | the options |
-
 <a name="module_jsdoc-to-markdown--Jsdoc2md+getJsdocData"></a>
 
 #### jsdoc2md.getJsdocData(src) ⇒ <code>Promise</code>
@@ -93,3 +82,4 @@ Get the template data (jsdoc-parse output)
 Clear the cache.
 
 **Kind**: instance method of <code>[Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md)</code>  
+

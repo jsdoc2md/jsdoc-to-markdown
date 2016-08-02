@@ -42,7 +42,6 @@ let definitions = [
     type: Boolean,
     description: 'Include identifiers marked @private in the output'
   },
-  { name: 'format', type: String },
   { name: 'clear', type: Boolean }
 ]
 

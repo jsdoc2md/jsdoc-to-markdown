@@ -31,9 +31,6 @@ class Jsdoc2md {
     return getJsdoc(src, options)
       .then(jsdocData => jsdocParse(jsdocData, options))
       .then(templateData => dmd(templateData, options))
-      .catch(err => {
-        console.error(err.stack)
-      })
   }
 
   /**
@@ -53,30 +50,14 @@ class Jsdoc2md {
   }
 
   /**
-   * @param {string|string[]} - input files
-   * @param [options] {object} - the options
-   * @returns {Duplex}
-   */
-  createRenderStream (src, options) {
-    const PassThrough = require('stream').PassThrough
-    const stream = new PassThrough()
-    options = options || {}
-    this.render(src, options).then(stream.end.bind(stream))
-    return stream
-  }
-
-  /**
    * Get the template data (jsdoc-parse output)
    * @param {string|string[]} - input files
    * @returns {Promise}
    * @fulfil {object[]}
    */
   getJsdocData (src, options) {
-    return getJsdoc.call(this, src, options)
-      .then(getJsdocParse.bind(this, options))
-      .then(data => {
-        return data
-      })
+    return getJsdoc(src, options)
+      .then(getJsdocParse.bind(null, options))
   }
 
   /**
@@ -85,7 +66,7 @@ class Jsdoc2md {
    * @returns {object[]}
    */
   getJsdocDataSync (src, options) {
-    const output = getJsdocParse.call(this, options, getJsdoc.call(this, src, options, true))
+    const output = getJsdocParse(options, getJsdoc(src, options, true))
     return output
   }
 

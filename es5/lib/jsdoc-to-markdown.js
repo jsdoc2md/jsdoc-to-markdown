@@ -20,8 +20,6 @@ var Jsdoc2md = function () {
         return jsdocParse(jsdocData, options);
       }).then(function (templateData) {
         return dmd(templateData, options);
-      }).catch(function (err) {
-        console.error(err.stack);
       });
     }
   }, {
@@ -33,25 +31,14 @@ var Jsdoc2md = function () {
       return dmd(templateData, options);
     }
   }, {
-    key: 'createRenderStream',
-    value: function createRenderStream(src, options) {
-      var PassThrough = require('stream').PassThrough;
-      var stream = new PassThrough();
-      options = options || {};
-      this.render(src, options).then(stream.end.bind(stream));
-      return stream;
-    }
-  }, {
     key: 'getJsdocData',
     value: function getJsdocData(src, options) {
-      return getJsdoc.call(this, src, options).then(getJsdocParse.bind(this, options)).then(function (data) {
-        return data;
-      });
+      return getJsdoc(src, options).then(getJsdocParse.bind(null, options));
     }
   }, {
     key: 'getJsdocDataSync',
     value: function getJsdocDataSync(src, options) {
-      var output = getJsdocParse.call(this, options, getJsdoc.call(this, src, options, true));
+      var output = getJsdocParse(options, getJsdoc(src, options, true));
       return output;
     }
   }, {
