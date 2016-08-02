@@ -34,6 +34,7 @@
     "jsdoc-api": "^1.2.1",
     "jsdoc-parse": "^2.0.3",
     "lodash.omit": "^4.4.1",
+    "lodash.pick": "^4.3.0",
     "walk-back": "^2.0.1"
   },
   "devDependencies": {

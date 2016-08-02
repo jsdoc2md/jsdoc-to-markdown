@@ -52,8 +52,11 @@ class Jsdoc2md {
   /**
    * Get the template data (jsdoc-parse output)
    * @param {string|string[]} - input files
+   * @param [options] {object}
+   * @param [options.private] {boolean} - Include identifier documentation marked as `@private` in the output
+   * @param [options.sort-by] {string|string[]} - Sort by one of more properties, e.g. `[ 'kind', 'category' ]`.
    * @returns {Promise}
-   * @fulfil {object[]}
+   * @resolve {object[]}
    */
   getJsdocData (src, options) {
     return getJsdoc(src, options)
@@ -63,6 +66,9 @@ class Jsdoc2md {
   /**
    * Get the template data (jsdoc-parse output)
    * @param {string|string[]} - input files
+   * @param [options] {object}
+   * @param [options.private] {boolean} - Include identifier documentation marked as `@private` in the output
+   * @param [options.sort-by] {string|string[]} - Sort by one of more properties, e.g. `[ 'kind', 'category' ]`.
    * @returns {object[]}
    */
   getJsdocDataSync (src, options) {

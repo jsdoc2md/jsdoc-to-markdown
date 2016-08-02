@@ -24,10 +24,11 @@ if (options.help) {
 
   /* jsdoc2md --json */
   if (options.json) {
+    const pick = require('lodash.pick')
     jsdoc2md
-      .getJsdocData(options.src)
+      .getJsdocData(options.src, pick(options, [ 'sort-by', 'private' ]))
       .then(function (json) {
-        console.log(JSON.stringify(json, null, '  '))
+        tool.printOutput(JSON.stringify(json, null, '  '))
       })
       .catch(tool.halt)
 
@@ -36,7 +37,7 @@ if (options.help) {
     jsdoc2md
       .getStats(options.src)
       .then(function (json) {
-        console.log(JSON.stringify(json, null, '  '))
+        tool.printOutput(JSON.stringify(json, null, '  '))
       })
       .catch(tool.halt)
 
@@ -60,7 +61,7 @@ if (options.help) {
 
     jsdoc2md
       .render(options.src, options)
-      .then(output => console.log(output))
+      .then(tool.printOutput)
       .catch(tool.halt)
   }
 }

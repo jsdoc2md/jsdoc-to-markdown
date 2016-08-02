@@ -18,12 +18,13 @@ if (options.help) {
   options = loadStoredConfig(options);
 
   if (options.json) {
-    _jsdoc2md.getJsdocData(options.src).then(function (json) {
-      console.log(JSON.stringify(json, null, '  '));
+    var pick = require('lodash.pick');
+    _jsdoc2md.getJsdocData(options.src, pick(options, ['sort-by', 'private'])).then(function (json) {
+      tool.printOutput(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.stats) {
     _jsdoc2md.getStats(options.src).then(function (json) {
-      console.log(JSON.stringify(json, null, '  '));
+      tool.printOutput(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.config) {
     var omit = require('lodash.omit');
@@ -39,9 +40,7 @@ if (options.help) {
 
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
 
-    _jsdoc2md.render(options.src, options).then(function (output) {
-      return console.log(output);
-    }).catch(tool.halt);
+    _jsdoc2md.render(options.src, options).then(tool.printOutput).catch(tool.halt);
   }
 }
 
