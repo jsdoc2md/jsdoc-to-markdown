@@ -32,14 +32,8 @@ if (options.help) {
 
   /* jsdoc2md --jsdoc */
   } else if (options.jsdoc) {
-    const jsdocOptions = {
-      files: options.files,
-      configure: options.conf,
-      html: options.html,
-      pedantic: true
-    }
     jsdoc2md
-      .getJsdocData(jsdocOptions)
+      .getJsdocData(options)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })

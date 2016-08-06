@@ -10,6 +10,8 @@ exports.render = render
 exports.renderSync = renderSync
 exports.getTemplateData = getTemplateData
 exports.getTemplateDataSync = getTemplateDataSync
+exports.getJsdocData = getJsdocData
+exports.getJsdocDataSync = getJsdocDataSync
 exports.clear = clear
 
 /**
@@ -53,7 +55,7 @@ function renderSync (options) {
 /**
  * Returns template data (jsdoc-parse output).
  *
- * @param [options] {object} - the options
+ * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
  * @return {Promise}
  * @fulfil {object[]} - the json data
  * @category async
@@ -61,35 +63,55 @@ function renderSync (options) {
  */
 function getTemplateData (options) {
   options = options || {}
-  const pick = require('lodash.pick')
-  const jsdocApi = require('jsdoc-api')
   const jsdocParse = require('jsdoc-parse')
-  const jsdocDefaults = {
-    pedantic: true,
-    cache: true
-  }
-  return jsdocApi.explain(Object.assign(jsdocDefaults, options))
-    .then(jsdocData => jsdocParse(jsdocData, { sortBy: options['sort-by']}))
+  return getJsdocData(options)
+    .then(jsdocParse)
 }
 
 /**
  * Returns template data (jsdoc-parse output).
  *
- * @param [options] {object} - the options
- * @return {object[]
+ * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+ * @return {object[]}
  * @category sync
  * @static
  */
 function getTemplateDataSync (options) {
   options = options || {}
   const jsdocParse = require('jsdoc-parse')
-  const jsdocApi = require('jsdoc-api')
-  const jsdocDefaults = {
-    pedantic: true,
-    cache: true
-  }
-  const jsdocData = jsdocApi.explainSync(Object.assign(jsdocDefaults, options))
+  const jsdocData = getJsdocDataSync(options)
   return jsdocParse(jsdocData, options)
+}
+
+/**
+ * Returns raw jsdoc data.
+ *
+ * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+ * @return {Promise}
+ * @fulfil {object[]}
+ * @category async
+ * @static
+ */
+function getJsdocData (options) {
+  options = options || {}
+  const jsdocApi = require('jsdoc-api')
+  const jsdocOptions = new JsdocOptions(options)
+  return jsdocApi.explain(jsdocOptions)
+}
+
+/**
+ * Returns raw jsdoc data.
+ *
+ * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+ * @return {object[]}
+ * @category sync
+ * @static
+ */
+function getJsdocDataSync (options) {
+  options = options || {}
+  const jsdocApi = require('jsdoc-api')
+  const jsdocOptions = new JsdocOptions(options)
+  return jsdocApi.explainSync(jsdocOptions)
 }
 
 /**
@@ -100,4 +122,39 @@ function getTemplateDataSync (options) {
 function clear () {
   const jsdocApi = require('jsdoc-api')
   return jsdocApi.cache.clear()
+}
+
+/**
+ * jsdoc options
+ */
+class JsdocOptions {
+  constructor (options) {
+    options = options || {}
+    this.cache = true
+    this.pedantic = true
+
+    /**
+     * One or more filenames to process. Either this or `source` must be supplied.
+     * @type {string|string[]}
+     */
+    this.files = options.files
+
+    /**
+     * A string containing source code to process. Either this or `source` must be supplied.
+     * @type {string}
+     */
+    this.source = options.source
+
+    /**
+     * The path to the configuration file. Default: path/to/jsdoc/conf.json.
+     * @type {string}
+     */
+    this.configure = options.configure
+
+    /**
+     * Enable experimental parsing of `.html` files.
+     * @type {boolean}
+     */
+    this.html = options.html
+  }
 }

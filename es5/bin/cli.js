@@ -22,13 +22,7 @@ if (options.help) {
       console.log(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.jsdoc) {
-    var jsdocOptions = {
-      files: options.files,
-      configure: options.conf,
-      html: options.html,
-      pedantic: true
-    };
-    _jsdoc2md.getJsdocData(jsdocOptions).then(function (json) {
+    _jsdoc2md.getJsdocData(options).then(function (json) {
       console.log(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.stats) {

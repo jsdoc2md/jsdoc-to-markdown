@@ -1,9 +1,13 @@
 'use strict';
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 exports.render = render;
 exports.renderSync = renderSync;
 exports.getTemplateData = getTemplateData;
 exports.getTemplateDataSync = getTemplateDataSync;
+exports.getJsdocData = getJsdocData;
+exports.getJsdocDataSync = getJsdocDataSync;
 exports.clear = clear;
 
 function render(options) {
@@ -22,31 +26,48 @@ function renderSync(options) {
 
 function getTemplateData(options) {
   options = options || {};
-  var pick = require('lodash.pick');
-  var jsdocApi = require('jsdoc-api');
   var jsdocParse = require('jsdoc-parse');
-  var jsdocDefaults = {
-    pedantic: true,
-    cache: true
-  };
-  return jsdocApi.explain(Object.assign(jsdocDefaults, options)).then(function (jsdocData) {
-    return jsdocParse(jsdocData, { sortBy: options['sort-by'] });
-  });
+  return getJsdocData(options).then(jsdocParse);
 }
 
 function getTemplateDataSync(options) {
   options = options || {};
   var jsdocParse = require('jsdoc-parse');
-  var jsdocApi = require('jsdoc-api');
-  var jsdocDefaults = {
-    pedantic: true,
-    cache: true
-  };
-  var jsdocData = jsdocApi.explainSync(Object.assign(jsdocDefaults, options));
+  var jsdocData = getJsdocDataSync(options);
   return jsdocParse(jsdocData, options);
+}
+
+function getJsdocData(options) {
+  options = options || {};
+  var jsdocApi = require('jsdoc-api');
+  var jsdocOptions = new JsdocOptions(options);
+  return jsdocApi.explain(jsdocOptions);
+}
+
+function getJsdocDataSync(options) {
+  options = options || {};
+  var jsdocApi = require('jsdoc-api');
+  var jsdocOptions = new JsdocOptions(options);
+  return jsdocApi.explainSync(jsdocOptions);
 }
 
 function clear() {
   var jsdocApi = require('jsdoc-api');
   return jsdocApi.cache.clear();
 }
+
+var JsdocOptions = function JsdocOptions(options) {
+  _classCallCheck(this, JsdocOptions);
+
+  options = options || {};
+  this.cache = true;
+  this.pedantic = true;
+
+  this.files = options.files;
+
+  this.source = options.source;
+
+  this.configure = options.configure;
+
+  this.html = options.html;
+};

@@ -8,7 +8,8 @@ var jsdocDefinitions = [{
   name: 'source', type: String,
   description: 'A string containing source code to parse for documentation.'
 }, {
-  name: 'conf',
+  name: 'configure',
+  alias: 'c',
   type: String,
   typeLabel: '[underline]{file}',
   description: 'Path to a jsdoc configuration file, passed directly to `jsdoc -c`.'
@@ -60,7 +61,7 @@ var dmdDefinitions = [{ name: 'template', alias: 't', type: String, typeLabel: '
   description: "Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed. "
 }, { name: 'property-list-format', type: String, alias: 'r',
   description: 'list, table'
-}, { name: 'member-index-format', type: String, alias: 'c',
+}, { name: 'member-index-format', type: String,
   description: 'grouped, list'
 }, { name: 'group-by', type: String, typeLabel: '<fields>', multiple: true,
   description: 'a list of fields to group member indexes by'
