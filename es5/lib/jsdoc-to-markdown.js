@@ -38,7 +38,11 @@ function getTemplateDataSync(options) {
   options = options || {};
   var jsdocParse = require('jsdoc-parse');
   var jsdocApi = require('jsdoc-api');
-  var jsdocData = jsdocApi.explainSync(options);
+  var jsdocDefaults = {
+    pedantic: true,
+    cache: true
+  };
+  var jsdocData = jsdocApi.explainSync(Object.assign(jsdocDefaults, options));
   return jsdocParse(jsdocData, options);
 }
 

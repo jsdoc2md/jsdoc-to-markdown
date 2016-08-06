@@ -84,7 +84,11 @@ function getTemplateDataSync (options) {
   options = options || {}
   const jsdocParse = require('jsdoc-parse')
   const jsdocApi = require('jsdoc-api')
-  const jsdocData = jsdocApi.explainSync(options)
+  const jsdocDefaults = {
+    pedantic: true,
+    cache: true
+  }
+  const jsdocData = jsdocApi.explainSync(Object.assign(jsdocDefaults, options))
   return jsdocParse(jsdocData, options)
 }
 
