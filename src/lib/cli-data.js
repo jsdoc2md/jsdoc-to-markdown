@@ -33,27 +33,16 @@ let jsdoc2mdDefinitions = [
   { name: 'json', type: Boolean },
   { name: 'jsdoc', type: Boolean },
   { name: 'version', type: Boolean },
-  // { name: 'group-by', type: String, multiple: true },
-  {
-    name: 'sort-by',
-    type: String,
-    multiple: true,
-    alias: 's',
-    description: 'Sort by one of more properties, e.g. `--sort-by kind category`. Defaults to `[ "scope", "category", "kind", "order" ]`. Pass the special value `none` to remove the default sort order. ',
-    typeLabel: '[underline]{property} ...'
-  },
-  {
-    name: 'private',
-    alias: 'P',
-    type: Boolean,
-    description: 'Include identifiers marked @private in the output'
-  },
   { name: 'clear', type: Boolean }
 ]
 
 const dmdDefinitions = [
   { name: 'template', alias: 't', type: String, typeLabel: '<file>',
     description: 'A custom handlebars template file to insert documentation into. The default template is `{{>main}}`.'
+  },
+  {
+    name: 'private', type: Boolean,
+    description: 'Include identifiers marked @private in the output'
   },
   { name: 'heading-depth', type: Number, alias: 'd',
     description: 'root heading depth, defaults to 2 (`##`).'
@@ -93,9 +82,6 @@ const dmdDefinitions = [
   },
   { name: 'member-index-format', type: String,
     description: 'grouped, list'
-  },
-  { name: 'group-by', type: String, typeLabel: '<fields>', multiple: true,
-    description: 'a list of fields to group member indexes by'
   }
 ]
 
