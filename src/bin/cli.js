@@ -24,9 +24,7 @@ if (options.help) {
 
   /* jsdoc2md --json */
   if (options.json) {
-    const pick = require('lodash.pick')
-    jsdoc2md
-      .getTemplateData(options.src, pick(options, [ 'sort-by', 'private' ]))
+    jsdoc2md.getTemplateData(options)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
@@ -34,8 +32,14 @@ if (options.help) {
 
   /* jsdoc2md --jsdoc */
   } else if (options.jsdoc) {
+    const jsdocOptions = {
+      files: options.files,
+      configure: options.conf,
+      html: options.html,
+      pedantic: true
+    }
     jsdoc2md
-      .getJsdocData(options.src, options)
+      .getJsdocData(jsdocOptions)
       .then(function (json) {
         console.log(JSON.stringify(json, null, '  '))
       })
@@ -44,7 +48,7 @@ if (options.help) {
   /* jsdoc2md --namepaths */
   } else if (options.stats) {
     jsdoc2md
-      .getStats(options.src)
+      .getStats(options.files)
       .then(function (json) {
         tool.printOutput(JSON.stringify(json, null, '  '))
       })
@@ -60,8 +64,8 @@ if (options.help) {
     /* input validation */
     try {
       const assert = require('assert')
-      options.src = options.src || []
-      assert.ok(options.src.length, 'No input files supplied')
+      options.files = options.files || []
+      assert.ok(options.files.length || options.source, 'Must supply either --files or --source')
     } catch (err) {
       tool.halt(err)
     }
@@ -69,9 +73,9 @@ if (options.help) {
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8')
 
     jsdoc2md
-      .render(options.src, options)
+      .render(options)
       .then(output => process.stdout.write(output))
-      .catch(tool.halt)
+      .catch(err => tool.halt(err, { stack: true }))
   }
 }
 

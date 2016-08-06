@@ -6,27 +6,27 @@ var a = require('assert');
 
 var inputFile = 'src/test/fixture/ignore.js';
 
-test('.render(src)', function () {
-  return jsdoc2md.render(inputFile).then(function (result) {
+test('.render({ files })', function () {
+  return jsdoc2md.render({ files: inputFile }).then(function (result) {
     return a.ok(/a visible global/.test(result));
   });
 });
 
-test('.render(src, { heading-depth: 4 })', function () {
-  return jsdoc2md.render(inputFile, { 'heading-depth': 4 }).then(function (result) {
+test('.render({ files, heading-depth: 4 })', function () {
+  return jsdoc2md.render({ files: inputFile, 'heading-depth': 4 }).then(function (result) {
     return a.ok(/#### visible/.test(result));
   });
 });
 
-test('.getTemplateData(src)', function () {
-  return jsdoc2md.getTemplateData(inputFile).then(function (result) {
-    return a.ok(result[0].id);
+test('.render({ files, param-list-format: list })', function () {
+  var inputFile = 'src/test/fixture/params.js';
+  return jsdoc2md.render({ files: inputFile, 'param-list-format': 'list' }).then(function (result) {
+    return a.ok(/- one/.test(result));
   });
 });
 
-test('.render(src, { param-list-format: list })', function () {
-  var inputFile = 'src/test/fixture/params.js';
-  return jsdoc2md.render(inputFile, { 'param-list-format': 'list' }).then(function (result) {
-    return a.ok(/- one/.test(result));
+test('.getTemplateData({ files })', function () {
+  return jsdoc2md.getTemplateData({ files: inputFile }).then(function (result) {
+    return a.ok(result[0].id);
   });
 });

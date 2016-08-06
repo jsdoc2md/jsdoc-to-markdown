@@ -1,16 +1,26 @@
 'use strict'
 
 /* generation options */
-let definitions = [
+let jsdocDefinitions = [
   {
-    name: 'src',
-    alias: 'f',
-    type: String,
-    multiple: true,
-    defaultOption: true,
-    description: 'A list of jsdoc explain files (or glob expressions) to parse for documentation. If this option is not set jsdoc-parse will wait for source code on stdin (i.e. `cat *.json | jsdoc-parse <options>`).',
+    name: 'files', alias: 'f', type: String, multiple: true, defaultOption: true,
+    description: 'A list of jsdoc explain files (or glob expressions) to parse for documentation.',
     typeLabel: '[underline]{file} ...'
   },
+  {
+    name: 'source', type: String,
+    description: 'A string containing source code to parse for documentation.'
+  },
+  {
+    name: 'conf',
+    type: String,
+    typeLabel: '[underline]{file}',
+    description: 'Path to a jsdoc configuration file, passed directly to `jsdoc -c`.'
+  },
+  { name: 'html', type: Boolean, description: "Enable experimental parsing of .html files. When specified, configuration supplied via --conf is ignored." },
+]
+
+let jsdoc2mdDefinitions = [
   {
     name: 'help', description: 'Print usage information',
     alias: 'h', type: Boolean
@@ -30,18 +40,6 @@ let definitions = [
     alias: 's',
     description: 'Sort by one of more properties, e.g. `--sort-by kind category`. Defaults to `[ "scope", "category", "kind", "order" ]`. Pass the special value `none` to remove the default sort order. ',
     typeLabel: '[underline]{property} ...'
-  },
-  {
-    name: 'html',
-    alias: 'H',
-    type: Boolean,
-    description: 'Enable experimental parsing of .html files'
-  },
-  {
-    name: 'conf',
-    type: String,
-    typeLabel: '[underline]{file}',
-    description: 'Path to a jsdoc configuration file, passed directly to `jsdoc -c`.'
   },
   {
     name: 'private',
@@ -101,11 +99,15 @@ const dmdDefinitions = [
 ]
 
 /* mix in the jsdoc-parse and dmd options */
-definitions = definitions
+let definitions = jsdocDefinitions
   .map(def => {
-    def.group = 'jsdoc2md'
+    def.group = 'jsdoc'
     return def
   })
+  .concat(jsdoc2mdDefinitions.map(def => {
+    def.group = 'jsdoc2md'
+    return def
+  }))
   .concat(dmdDefinitions.map(function (def) {
     def.group = 'dmd'
     return def
@@ -116,25 +118,47 @@ module.exports = {
   usageSections: [
     {
       header: 'jsdoc-to-markdown',
-      content: 'Markdown API Documentation generator.'
+      content: 'Generates markdown documentation from jsdoc-annotated source code.'
     },
     {
       header: 'Synopsis',
       content: [
-        '$ jsdoc2md [<options>] [bold]{--src} [underline]{file} ...',
-        '$ jsdoc2md [bold]{--help}',
-        '$ jsdoc2md [bold]{--config}',
-        '$ jsdoc2md [bold]{--stats} [underline]{file} ...',
-        '$ jsdoc2md [bold]{--json} [underline]{file} ...'
+        {
+          cmmd: '$ jsdoc2md [<options>] [bold]{--files} [underline]{file} ...',
+          desc: '[italic]{Generate documentation (dmd output)}'
+        },
+        {
+          cmmd: '$ jsdoc2md [<jsdoc-options>] [bold]{--jsdoc}  [underline]{file} ...',
+          desc: '[italic]{Get raw jsdoc data (jsdoc-api output)}'
+        },
+        {
+          cmmd: '$ jsdoc2md [bold]{--json} [underline]{file} ...',
+          desc: '[italic]{Get template data (jsdoc-parse output)}'
+        },
+        {
+          cmmd: '$ jsdoc2md [bold]{--help}'
+        },
+        {
+          cmmd: '$ jsdoc2md [bold]{--config}'
+        },
+        {
+          cmmd: '$ jsdoc2md [bold]{--stats}'
+        }
       ]
     },
     {
-      header: 'jsdoc2md',
-      content: 'General options.'
+      header: 'jsdoc options',
+      content: 'Options regarding the input source code, passed directly to jsdoc.'
     },
     {
-      optionList: definitions,
-      group: 'jsdoc2md'
+      optionList: jsdocDefinitions
+    },
+    {
+      header: 'jsdoc2md options',
+      content: 'Options relating specifically to this tool.'
+    },
+    {
+      optionList: jsdoc2mdDefinitions
     },
     {
       header: 'dmd',
@@ -149,10 +173,16 @@ module.exports = {
         {
           col1: 'Project repositories:',
           col2: '[underline]{https://github.com/jsdoc2md/jsdoc-to-markdown}'
-        }, {
+        },
+        {
+          col1: '',
+          col2: '[underline]{https://github.com/jsdoc2md/jsdoc-api}'
+        },
+        {
           col1: '',
           col2: '[underline]{https://github.com/jsdoc2md/jsdoc-parse}'
-        }, {
+        },
+        {
           col1: '',
           col2: '[underline]{https://github.com/jsdoc2md/dmd}'
         }

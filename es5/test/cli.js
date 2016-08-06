@@ -14,7 +14,7 @@ try {
 test('cli: json option', function () {
   var outputFile = fs.openSync('tmp/ignore.json', 'w');
   return new Promise(function (resolve, reject) {
-    var handle = spawn('node', ['src/bin.js', '--json', inputPath], { stdio: ['ignore', outputFile, 'ignore'] });
+    var handle = spawn('node', ['bin.js', '--json', inputPath], { stdio: ['ignore', outputFile, 'ignore'] });
     handle.on('close', function () {
       var json = fs.readFileSync('tmp/ignore.json', 'utf8');
       if (json) {

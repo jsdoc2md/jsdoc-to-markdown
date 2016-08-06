@@ -13,4 +13,4 @@ Generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated sou
 
 * * *
 
-&copy; 2014-16 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2014-16 Lloyd Brookes <75pound@gmail.com>.

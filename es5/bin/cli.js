@@ -18,16 +18,21 @@ if (options.help) {
   options = loadStoredConfig(options);
 
   if (options.json) {
-    var pick = require('lodash.pick');
-    _jsdoc2md.getTemplateData(options.src, pick(options, ['sort-by', 'private'])).then(function (json) {
+    _jsdoc2md.getTemplateData(options).then(function (json) {
       console.log(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.jsdoc) {
-    _jsdoc2md.getJsdocData(options.src, options).then(function (json) {
+    var jsdocOptions = {
+      files: options.files,
+      configure: options.conf,
+      html: options.html,
+      pedantic: true
+    };
+    _jsdoc2md.getJsdocData(jsdocOptions).then(function (json) {
       console.log(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.stats) {
-    _jsdoc2md.getStats(options.src).then(function (json) {
+    _jsdoc2md.getStats(options.files).then(function (json) {
       tool.printOutput(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.config) {
@@ -36,17 +41,19 @@ if (options.help) {
   } else {
     try {
       var assert = require('assert');
-      options.src = options.src || [];
-      assert.ok(options.src.length, 'No input files supplied');
+      options.files = options.files || [];
+      assert.ok(options.files.length || options.source, 'Must supply either --files or --source');
     } catch (err) {
       tool.halt(err);
     }
 
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
 
-    _jsdoc2md.render(options.src, options).then(function (output) {
+    _jsdoc2md.render(options).then(function (output) {
       return process.stdout.write(output);
-    }).catch(tool.halt);
+    }).catch(function (err) {
+      return tool.halt(err, { stack: true });
+    });
   }
 }
 
