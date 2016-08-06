@@ -19,6 +19,7 @@ module.exports = {
    * @param [options] {object} - the options
    * @return {Promise}
    * @fulfil {string} - the rendered docs
+   * @category async
    * @example
    * Pass in filepaths (`**` glob matching supported) of javascript source files:
    * ```js
@@ -41,6 +42,7 @@ module.exports = {
    * @param [options] {object} - the options
    * @return {string}
    * @engine nodejs >= 0.12
+   * @category sync
    * @example
    * const docs = jsdoc2md.renderSync('lib/*.js')
    */
@@ -57,8 +59,8 @@ module.exports = {
    * Get the template data (jsdoc-parse output)
    * @param src {string|string[]} - input files
    * @param [options] {object}
-   * @param [options.private] {boolean} - Include identifier documentation marked as `@private` in the output
    * @param [options.sort-by] {string|string[]} - Sort by one of more properties, e.g. `[ 'kind', 'category' ]`.
+   * @category async
    * @returns {Promise}
    * @fulfil {object[]}
    */
@@ -72,9 +74,9 @@ module.exports = {
    * Get the template data (jsdoc-parse output)
    * @param src {string|string[]} - input files
    * @param [options] {object}
-   * @param [options.private] {boolean} - Include identifier documentation marked as `@private` in the output
    * @param [options.sort-by] {string|string[]} - Sort by one of more properties, e.g. `[ 'kind', 'category' ]`.
    * @engine nodejs >= 0.12
+   * @category sync
    * @returns {object[]}
    */
   getTemplateDataSync (src, options) {
@@ -87,6 +89,7 @@ module.exports = {
    * @param src {string|string[]} - input files
    * @param [options] {object}
    * @returns {Promise}
+   * @category async
    * @fulfil {object[]}
    */
   getJsdocData (src, options) {
@@ -98,6 +101,7 @@ module.exports = {
    * @param src {string|string[]} - input files
    * @param [options] {object}
    * @engine nodejs >= 0.12
+   * @category sync
    * @returns {object[]}
    */
   getJsdocDataSync (src, options) {
