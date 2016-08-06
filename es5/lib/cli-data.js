@@ -14,7 +14,7 @@ var definitions = [{
 }, {
   name: 'config', description: 'Print the stored config and exit',
   type: Boolean
-}, { name: 'json', type: Boolean }, { name: 'version', type: Boolean }, {
+}, { name: 'json', type: Boolean }, { name: 'jsdoc', type: Boolean }, { name: 'version', type: Boolean }, {
   name: 'sort-by',
   type: String,
   multiple: true,
@@ -26,6 +26,11 @@ var definitions = [{
   alias: 'H',
   type: Boolean,
   description: 'Enable experimental parsing of .html files'
+}, {
+  name: 'conf',
+  type: String,
+  typeLabel: '[underline]{file}',
+  description: 'Path to a jsdoc configuration file, passed directly to `jsdoc -c`.'
 }, {
   name: 'private',
   alias: 'P',

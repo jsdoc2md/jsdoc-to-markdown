@@ -17,8 +17,8 @@ if (require('child_process').spawnSync) {
     a.ok(/#### visible/.test(result));
   });
 
-  test('.getJsdocDataSync(src)', function () {
-    var result = jsdoc2md.getJsdocDataSync(inputFile);
+  test('.getTemplateDataSync(src)', function () {
+    var result = jsdoc2md.getTemplateDataSync(inputFile);
     a.ok(result[0].id);
   });
 

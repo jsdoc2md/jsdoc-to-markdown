@@ -7,24 +7,20 @@ const jsdoc2md = require('jsdoc-to-markdown')
 ```
 
 * [jsdoc-to-markdown](#module_jsdoc-to-markdown)
-    * [Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md) ⇐ <code>EventEmitter</code> ⏏
-        * [.render(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+render) ⇒ <code>Promise</code>
-        * [.renderSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+renderSync) ⇒ <code>string</code>
-        * [.getJsdocData(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getJsdocData) ⇒ <code>Promise</code>
-        * [.getJsdocDataSync(src, [options])](#module_jsdoc-to-markdown--Jsdoc2md+getJsdocDataSync) ⇒ <code>Array.&lt;object&gt;</code>
-        * [.clear()](#module_jsdoc-to-markdown--Jsdoc2md+clear) ⇒ <code>Promise</code>
+    * [.render(src, [options])](#module_jsdoc-to-markdown.render) ⇒ <code>Promise</code>
+    * [.renderSync(src, [options])](#module_jsdoc-to-markdown.renderSync) ⇒ <code>string</code>
+    * [.getTemplateData(src, [options])](#module_jsdoc-to-markdown.getTemplateData) ⇒ <code>Promise</code>
+    * [.getTemplateDataSync(src, [options])](#module_jsdoc-to-markdown.getTemplateDataSync) ⇒ <code>Array.&lt;object&gt;</code>
+    * [.getJsdocData(src, [options])](#module_jsdoc-to-markdown.getJsdocData) ⇒ <code>Promise</code>
+    * [.getJsdocDataSync(src, [options])](#module_jsdoc-to-markdown.getJsdocDataSync) ⇒ <code>Array.&lt;object&gt;</code>
+    * [.clear()](#module_jsdoc-to-markdown.clear) ⇒ <code>Promise</code>
 
-<a name="exp_module_jsdoc-to-markdown--Jsdoc2md"></a>
+<a name="module_jsdoc-to-markdown.render"></a>
 
-### Jsdoc2md ⇐ <code>EventEmitter</code> ⏏
-**Kind**: Exported class  
-**Extends:** <code>EventEmitter</code>  
-<a name="module_jsdoc-to-markdown--Jsdoc2md+render"></a>
-
-#### jsdoc2md.render(src, [options]) ⇒ <code>Promise</code>
+### jsdoc2md.render(src, [options]) ⇒ <code>Promise</code>
 Returns markdown documentation from jsdoc-annoted source code.
 
-**Kind**: instance method of <code>[Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md)</code>  
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
 **Fulfil**: <code>string</code> - the rendered docs  
 
 | Param | Type | Description |
@@ -35,14 +31,15 @@ Returns markdown documentation from jsdoc-annoted source code.
 **Example**  
 Pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
-> jsdoc2md({ src: 'lib/*.js' }).pipe(process.stdout)
+> jsdoc2md.render('lib/*.js').then(console.log)
 ```
-<a name="module_jsdoc-to-markdown--Jsdoc2md+renderSync"></a>
+<a name="module_jsdoc-to-markdown.renderSync"></a>
 
-#### jsdoc2md.renderSync(src, [options]) ⇒ <code>string</code>
+### jsdoc2md.renderSync(src, [options]) ⇒ <code>string</code>
 Returns markdown documentation from jsdoc-annoted source code.
 
-**Kind**: instance method of <code>[Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md)</code>  
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Engine**: nodejs >= 0.12  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -53,13 +50,13 @@ Returns markdown documentation from jsdoc-annoted source code.
 ```js
 const docs = jsdoc2md.renderSync('lib/*.js')
 ```
-<a name="module_jsdoc-to-markdown--Jsdoc2md+getJsdocData"></a>
+<a name="module_jsdoc-to-markdown.getTemplateData"></a>
 
-#### jsdoc2md.getJsdocData(src, [options]) ⇒ <code>Promise</code>
+### jsdoc2md.getTemplateData(src, [options]) ⇒ <code>Promise</code>
 Get the template data (jsdoc-parse output)
 
-**Kind**: instance method of <code>[Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md)</code>  
-**Resolve**: <code>object[]</code>  
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Fulfil**: <code>object[]</code>  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -68,12 +65,13 @@ Get the template data (jsdoc-parse output)
 | [options.private] | <code>boolean</code> | Include identifier documentation marked as `@private` in the output |
 | [options.sort-by] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | Sort by one of more properties, e.g. `[ 'kind', 'category' ]`. |
 
-<a name="module_jsdoc-to-markdown--Jsdoc2md+getJsdocDataSync"></a>
+<a name="module_jsdoc-to-markdown.getTemplateDataSync"></a>
 
-#### jsdoc2md.getJsdocDataSync(src, [options]) ⇒ <code>Array.&lt;object&gt;</code>
+### jsdoc2md.getTemplateDataSync(src, [options]) ⇒ <code>Array.&lt;object&gt;</code>
 Get the template data (jsdoc-parse output)
 
-**Kind**: instance method of <code>[Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md)</code>  
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Engine**: nodejs >= 0.12  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -82,10 +80,35 @@ Get the template data (jsdoc-parse output)
 | [options.private] | <code>boolean</code> | Include identifier documentation marked as `@private` in the output |
 | [options.sort-by] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | Sort by one of more properties, e.g. `[ 'kind', 'category' ]`. |
 
-<a name="module_jsdoc-to-markdown--Jsdoc2md+clear"></a>
+<a name="module_jsdoc-to-markdown.getJsdocData"></a>
 
-#### jsdoc2md.clear() ⇒ <code>Promise</code>
+### jsdoc2md.getJsdocData(src, [options]) ⇒ <code>Promise</code>
+Get the jsdoc data (jsdoc-api explain output)
+
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Fulfil**: <code>object[]</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| src | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | input files |
+| [options] | <code>object</code> |  |
+
+<a name="module_jsdoc-to-markdown.getJsdocDataSync"></a>
+
+### jsdoc2md.getJsdocDataSync(src, [options]) ⇒ <code>Array.&lt;object&gt;</code>
+Get the jsdoc data (jsdoc-api explain output)
+
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
+**Engine**: nodejs >= 0.12  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| src | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | input files |
+| [options] | <code>object</code> |  |
+
+<a name="module_jsdoc-to-markdown.clear"></a>
+
+### jsdoc2md.clear() ⇒ <code>Promise</code>
 Clear the cache.
 
-**Kind**: instance method of <code>[Jsdoc2md](#exp_module_jsdoc-to-markdown--Jsdoc2md)</code>  
-
+**Kind**: static method of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  

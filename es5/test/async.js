@@ -18,8 +18,8 @@ test('.render(src, { heading-depth: 4 })', function () {
   });
 });
 
-test('.getJsdocData(src)', function () {
-  return jsdoc2md.getJsdocData(inputFile).then(function (result) {
+test('.getTemplateData(src)', function () {
+  return jsdoc2md.getTemplateData(inputFile).then(function (result) {
     return a.ok(result[0].id);
   });
 });

@@ -20,6 +20,7 @@ let definitions = [
     type: Boolean
   },
   { name: 'json', type: Boolean },
+  { name: 'jsdoc', type: Boolean },
   { name: 'version', type: Boolean },
   // { name: 'group-by', type: String, multiple: true },
   {
@@ -35,6 +36,12 @@ let definitions = [
     alias: 'H',
     type: Boolean,
     description: 'Enable experimental parsing of .html files'
+  },
+  {
+    name: 'conf',
+    type: String,
+    typeLabel: '[underline]{file}',
+    description: 'Path to a jsdoc configuration file, passed directly to `jsdoc -c`.'
   },
   {
     name: 'private',

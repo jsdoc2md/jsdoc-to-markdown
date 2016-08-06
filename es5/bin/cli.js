@@ -19,8 +19,12 @@ if (options.help) {
 
   if (options.json) {
     var pick = require('lodash.pick');
-    _jsdoc2md.getJsdocData(options.src, pick(options, ['sort-by', 'private'])).then(function (json) {
-      tool.printOutput(JSON.stringify(json, null, '  '));
+    _jsdoc2md.getTemplateData(options.src, pick(options, ['sort-by', 'private'])).then(function (json) {
+      console.log(JSON.stringify(json, null, '  '));
+    }).catch(tool.halt);
+  } else if (options.jsdoc) {
+    _jsdoc2md.getJsdocData(options.src, options).then(function (json) {
+      console.log(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.stats) {
     _jsdoc2md.getStats(options.src).then(function (json) {
@@ -40,7 +44,9 @@ if (options.help) {
 
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
 
-    _jsdoc2md.render(options.src, options).then(tool.printOutput).catch(tool.halt);
+    _jsdoc2md.render(options.src, options).then(function (output) {
+      return process.stdout.write(output);
+    }).catch(tool.halt);
   }
 }
 
