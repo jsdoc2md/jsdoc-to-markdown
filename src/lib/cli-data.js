@@ -4,12 +4,12 @@
 let jsdocDefinitions = [
   {
     name: 'files', alias: 'f', type: String, multiple: true, defaultOption: true,
-    description: 'A list of jsdoc explain files (or glob expressions) to parse for documentation.',
+    description: 'A list of jsdoc explain files (or glob expressions) to parse for documentation. Either this or [bold]{--source} must be supplied.',
     typeLabel: '[underline]{file} ...'
   },
   {
     name: 'source', type: String,
-    description: 'A string containing source code to parse for documentation.'
+    description: 'A string containing source code to parse for documentation. Either this or [bold]{--files} must be supplied.'
   },
   {
     name: 'configure',
@@ -18,7 +18,7 @@ let jsdocDefinitions = [
     typeLabel: '[underline]{file}',
     description: 'Path to a jsdoc configuration file, passed directly to `jsdoc -c`.'
   },
-  { name: 'html', type: Boolean, description: "Enable experimental parsing of .html files. When specified, configuration supplied via --conf is ignored." },
+  { name: 'html', type: Boolean, description: "Enable experimental parsing of .html files. When specified, any configuration supplied via [bold]{--configure} is ignored." },
 ]
 
 let jsdoc2mdDefinitions = [
@@ -27,13 +27,22 @@ let jsdoc2mdDefinitions = [
     alias: 'h', type: Boolean
   },
   {
-    name: 'config', description: 'Print the stored config and exit',
+    name: 'config', description: 'Print all options supplied (from command line, `.jsdoc2md.json` or `package.json` under the `jsdoc2md` property) and exit. Useful for checking the tool is receiving the correct config.',
     type: Boolean
   },
-  { name: 'json', type: Boolean },
-  { name: 'jsdoc', type: Boolean },
+  {
+    name: 'json', type: Boolean,
+    description: 'Prints the data (jsdoc-parse output) supplied to the template (dmd).'
+  },
+  {
+    name: 'jsdoc', type: Boolean,
+    description: 'Prints the raw jsdoc data.'
+  },
   { name: 'version', type: Boolean },
-  { name: 'clear', type: Boolean }
+  {
+    name: 'clear', type: Boolean,
+    description: "Clears the cache."
+  }
 ]
 
 const dmdDefinitions = [
@@ -42,22 +51,22 @@ const dmdDefinitions = [
   },
   {
     name: 'private', type: Boolean,
-    description: 'Include identifiers marked @private in the output'
+    description: 'Include identifiers marked [bold]{@private} in the output'
   },
   { name: 'heading-depth', type: Number, alias: 'd',
-    description: 'root heading depth, defaults to 2 (`##`).'
+    description: 'Root markdown heading depth, defaults to 2 ([bold]{##}).'
   },
-  { name: 'plugin', type: String, typeLabel: '<modules>', multiple: true,
-    description: 'Use an installed package containing helper and/or partial overrides'
+  { name: 'plugin', type: String, typeLabel: '[underline]{module} ...', multiple: true,
+    description: 'Use an installed package containing helper and/or partial overrides.'
   },
-  { name: 'helper', type: String, typeLabel: '<files>', multiple: true,
-    description: 'handlebars helper files to override or extend the default set'
+  { name: 'helper', type: String, typeLabel: '[underline]{module} ...', multiple: true,
+    description: 'Handlebars helper modules to override or extend the default set.'
   },
-  { name: 'partial', type: String, typeLabel: '<files>', multiple: true,
-    description: 'handlebars partial files to override or extend the default set'
+  { name: 'partial', type: String, typeLabel: '[underline]{file} ...', multiple: true,
+    description: 'Handlebars partial files to override or extend the default set.'
   },
   { name: 'example-lang', type: String, alias: 'l',
-    description: 'Specifies the default language used in @example blocks (for syntax-highlighting purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example.'
+    description: 'Specifies the default language used in [bold]{@example} blocks (for syntax-highlighting purposes). In the default gfm mode, each [bold]{@example} is wrapped in a fenced-code block. Example usage: [bold]{--example-lang js}. Use the special value [bold]{none} for no specific language. While using this option, you can override the supplied language for any [bold]{@example} by specifying the [bold]{@lang} subtag, e.g [bold]{@example @lang hbs}. Specifying [bold]{@example @lang off} will disable code blocks for that example.'
   },
   { name: 'name-format', type: Boolean,
     description: 'Format identifier names as code'
@@ -66,22 +75,22 @@ const dmdDefinitions = [
     description: 'By default, dmd generates github-flavoured markdown. Not all markdown parsers render gfm correctly. If your generated docs look incorrect on sites other than Github (e.g. npmjs.org) try enabling this option to disable Github-specific syntax. '
   },
   { name: 'separators', type: Boolean,
-    description: 'Put <hr> breaks between identifiers. Improves readability on bulky docs. '
+    description: 'Put [bold]{<hr>} breaks between identifiers. Improves readability on bulky docs. '
   },
   { name: 'module-index-format', type: String, alias: 'm',
-    description: 'none, grouped, table, dl'
+    description: 'When muliple modules are found in the input source code, an index is generated. It can be styled by one of the following options: [bold]{none}, [bold]{grouped}, [bold]{table} or [bold]{dl}.'
   },
   { name: 'global-index-format', type: String, alias: 'g',
-    description: 'none, grouped, table, dl'
+    description: 'When muliple global-scope identifiers are found in the input source code, an index is generated. It can be styled by one of the following options: [bold]{none}, [bold]{grouped}, [bold]{table} or [bold]{dl}.'
   },
   { name: 'param-list-format', type: String, alias: 'p',
-    description: "Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed. "
+    description: 'Two options to render [bold]{@param} lists: [bold]{list} or [bold]{table} (default). Table format works well in most cases but switch to [bold]{list} if things begin to look crowded. '
   },
   { name: 'property-list-format', type: String, alias: 'r',
-    description: 'list, table'
+    description: 'Two options to render [bold]{@property} lists: [bold]{list} or [bold]{table} (default).'
   },
   { name: 'member-index-format', type: String,
-    description: 'grouped, list'
+    description: 'Two options to render member lists: [bold]{list} or [bold]{grouped} (default). The [bold]{list} view is loosely-based on the nodejs docs.'
   }
 ]
 
@@ -111,16 +120,13 @@ module.exports = {
       header: 'Synopsis',
       content: [
         {
-          cmmd: '$ jsdoc2md [<options>] [bold]{--files} [underline]{file} ...',
-          desc: '[italic]{Generate documentation (dmd output)}'
+          cmmd: '$ jsdoc2md <jsdoc-options> [<dmd-options>]',
         },
         {
-          cmmd: '$ jsdoc2md [<jsdoc-options>] [bold]{--jsdoc}  [underline]{file} ...',
-          desc: '[italic]{Get raw jsdoc data (jsdoc-api output)}'
+          cmmd: '$ jsdoc2md <jsdoc-options> [bold]{--jsdoc}',
         },
         {
-          cmmd: '$ jsdoc2md [bold]{--json} [underline]{file} ...',
-          desc: '[italic]{Get template data (jsdoc-parse output)}'
+          cmmd: '$ jsdoc2md <jsdoc-options> [bold]{--json}',
         },
         {
           cmmd: '$ jsdoc2md [bold]{--help}'
@@ -134,18 +140,18 @@ module.exports = {
       ]
     },
     {
+      header: 'General options',
+      content: 'Main options affecting mode. If none of the following are supplied, the tool will generate markdown docs.'
+    },
+    {
+      optionList: jsdoc2mdDefinitions
+    },
+    {
       header: 'jsdoc options',
       content: 'Options regarding the input source code, passed directly to jsdoc.'
     },
     {
       optionList: jsdocDefinitions
-    },
-    {
-      header: 'jsdoc2md options',
-      content: 'Options relating specifically to this tool.'
-    },
-    {
-      optionList: jsdoc2mdDefinitions
     },
     {
       header: 'dmd',

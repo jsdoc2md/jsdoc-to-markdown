@@ -7,11 +7,11 @@ let options = cli.options._all
 
 /* jsdoc2md --help */
 if (options.help) {
-  tool.stop(cli.usage)
+  tool.printOutput(cli.usage)
 
 /* jsdoc2md --version */
 } else if (options.version) {
-  tool.stop(require('../package').version)
+  tool.stop(require('../../package').version)
 
 /* jsdoc2md --clear */
 } else if (options.clear) {
@@ -22,11 +22,28 @@ if (options.help) {
   const jsdoc2md = require('../../')
   options = loadStoredConfig(options)
 
+  /* jsdoc2md --config */
+  if (options.config) {
+    const omit = require('lodash.omit')
+    tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
+  }
+
+  /* input files (jsdoc-options) required from here */
+  /* input validation */
+  try {
+    const assert = require('assert')
+    options.files = options.files || []
+    assert.ok(options.files.length || options.source, 'Must supply either --files or --source')
+  } catch (err) {
+    tool.printOutput(cli.usage)
+    tool.halt(err)
+  }
+
   /* jsdoc2md --json */
   if (options.json) {
     jsdoc2md.getTemplateData(options)
       .then(function (json) {
-        console.log(JSON.stringify(json, null, '  '))
+        tool.printOutput(JSON.stringify(json, null, '  '))
       })
       .catch(tool.halt)
 
@@ -35,7 +52,7 @@ if (options.help) {
     jsdoc2md
       .getJsdocData(options)
       .then(function (json) {
-        console.log(JSON.stringify(json, null, '  '))
+        tool.printOutput(JSON.stringify(json, null, '  '))
       })
       .catch(tool.halt)
 
@@ -48,21 +65,8 @@ if (options.help) {
       })
       .catch(tool.halt)
 
-  /* jsdoc2md --config */
-  } else if (options.config) {
-    const omit = require('lodash.omit')
-    tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
-
   /* jsdoc2md [<options>] --src <files> */
   } else {
-    /* input validation */
-    try {
-      const assert = require('assert')
-      options.files = options.files || []
-      assert.ok(options.files.length || options.source, 'Must supply either --files or --source')
-    } catch (err) {
-      tool.halt(err)
-    }
 
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8')
 
