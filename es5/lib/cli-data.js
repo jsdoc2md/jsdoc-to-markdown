@@ -95,6 +95,8 @@ module.exports = {
       cmmd: '$ jsdoc2md [bold]{--config}'
     }, {
       cmmd: '$ jsdoc2md [bold]{--stats}'
+    }, {
+      cmmd: '$ jsdoc2md [bold]{--version}'
     }]
   }, {
     header: 'General options',
