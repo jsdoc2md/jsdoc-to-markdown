@@ -12,7 +12,7 @@
   "scripts": {
     "test": "test-runner es5/test/*.js",
     "docs": "node src/bin/cli.js --separators src/lib/jsdoc-to-markdown.js > docs/API.md; echo ",
-    "cover": "istanbul cover ./node_modules/.bin/test-runner test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo",
+    "cover": "istanbul cover ./node_modules/.bin/test-runner src/test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo",
     "es5": "rm -rf es5 && babel --presets babel-preset-es2015 --no-comments src --out-dir es5"
   },
   "keywords": [
@@ -29,10 +29,10 @@
     "command-line-tool": "~0.6.2",
     "config-master": "^2.0.3",
     "core-js": "^2.4.1",
-    "dmd": "jsdoc2md/dmd#sync",
+    "dmd": "^2.0.3-0",
     "feature-detect-es6": "^1.3.1",
-    "jsdoc-api": "^1.2.2",
-    "jsdoc-parse": "jsdoc2md/jsdoc-parse#next",
+    "jsdoc-api": "^1.2.3",
+    "jsdoc-parse": "^2.0.5-0",
     "walk-back": "^2.0.1"
   },
   "devDependencies": {
