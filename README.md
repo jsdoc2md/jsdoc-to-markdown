@@ -14,6 +14,13 @@ Generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated sou
 * [API documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/docs/API.md)
 * [Example output](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki/Exemplary-APIs)
 
+## Install
+
+```
+$ npm i -g jsdoc-to-markdown@^2.0.0-alpha
+```
+
+
 * * *
 
 &copy; 2014-16 Lloyd Brookes <75pound@gmail.com>.
