@@ -12,16 +12,18 @@ exports.clear = clear;
 
 function render(options) {
   options = options || {};
-  var dmd = require('dmd');
+  var dmd = require('dmd').async;
+  var dmdOptions = new DmdOptions(options);
   return this.getTemplateData(options).then(function (templateData) {
-    return dmd(templateData, options);
+    return dmd(templateData, dmdOptions);
   });
 }
 
 function renderSync(options) {
   options = options || {};
   var dmd = require('dmd');
-  return dmd(this.getTemplateDataSync(options), options);
+  var dmdOptions = new DmdOptions(options);
+  return dmd(this.getTemplateDataSync(options), dmdOptions);
 }
 
 function getTemplateData(options) {
@@ -53,7 +55,10 @@ function getJsdocDataSync(options) {
 
 function clear() {
   var jsdocApi = require('jsdoc-api');
-  return jsdocApi.cache.clear();
+  var dmd = require('dmd');
+  return jsdocApi.cache.clear().then(function () {
+    return dmd.cache.clear();
+  });
 }
 
 var JsdocOptions = function JsdocOptions(options) {

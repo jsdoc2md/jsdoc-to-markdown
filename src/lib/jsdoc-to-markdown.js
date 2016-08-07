@@ -30,9 +30,10 @@ exports.clear = clear
  */
 function render (options) {
   options = options || {}
-  const dmd = require('dmd')
+  const dmd = require('dmd').async
+  const dmdOptions = new DmdOptions(options)
   return this.getTemplateData(options)
-    .then(templateData => dmd(templateData, options))
+    .then(templateData => dmd(templateData, dmdOptions))
 }
 
 /**
@@ -49,7 +50,8 @@ function render (options) {
 function renderSync (options) {
   options = options || {}
   const dmd = require('dmd')
-  return dmd(this.getTemplateDataSync(options), options)
+  const dmdOptions = new DmdOptions(options)
+  return dmd(this.getTemplateDataSync(options), dmdOptions)
 }
 
 /**
@@ -121,7 +123,8 @@ function getJsdocDataSync (options) {
  */
 function clear () {
   const jsdocApi = require('jsdoc-api')
-  return jsdocApi.cache.clear()
+  const dmd = require('dmd')
+  return jsdocApi.cache.clear().then(() => dmd.cache.clear())
 }
 
 /**
