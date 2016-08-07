@@ -11,6 +11,9 @@
 # jsdoc-to-markdown
 Generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated source code. Useful for injecting API docs into project README files.
 
+* [API documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/docs/API.md)
+* [Example output](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki/Exemplary-APIs)
+
 * * *
 
 &copy; 2014-16 Lloyd Brookes <75pound@gmail.com>.
