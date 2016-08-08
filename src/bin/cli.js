@@ -8,6 +8,7 @@ const usageStats = new UsageStats({
   version: version,
   tid: 'UA-70853320-3'
 })
+usageStats.start()
 
 const cli = parseCommandLine()
 let options = cli.options._all
@@ -22,7 +23,7 @@ if (options.help) {
 
 /* jsdoc2md --clear */
 } else if (options.clear) {
-  usageStats.screenView('clear').send()
+  usageStats.screenView('clear').send().end()
   const jsdoc2md = require('../../')
   jsdoc2md.clear().catch(tool.halt)
 
@@ -37,7 +38,7 @@ if (options.help) {
 
   /* jsdoc2md --config */
   if (options.config) {
-    usageStats.screenView('config').send()
+    usageStats.screenView('config').send().end()
     const omit = require('lodash.omit')
     tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
   }
@@ -55,7 +56,7 @@ if (options.help) {
 
   /* jsdoc2md --json */
   if (options.json) {
-    usageStats.screenView('json').send()
+    usageStats.screenView('json').send().end()
     jsdoc2md.getTemplateData(options)
       .then(function (json) {
         tool.printOutput(JSON.stringify(json, null, '  '))
@@ -64,7 +65,7 @@ if (options.help) {
 
   /* jsdoc2md --jsdoc */
   } else if (options.jsdoc) {
-    usageStats.screenView('jsdoc').send()
+    usageStats.screenView('jsdoc').send().end()
     jsdoc2md
       .getJsdocData(options)
       .then(function (json) {
@@ -74,7 +75,7 @@ if (options.help) {
 
   /* jsdoc2md --namepaths */
   } else if (options.stats) {
-    usageStats.screenView('stats').send()
+    usageStats.screenView('stats').send().end()
     jsdoc2md
       .getStats(options.files)
       .then(function (json) {
@@ -84,7 +85,7 @@ if (options.help) {
 
   /* jsdoc2md [<options>] --src <files> */
   } else {
-    usageStats.screenView('gen').send()
+    usageStats.screenView('gen').send().end()
     const fs = require('fs')
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8')
 
