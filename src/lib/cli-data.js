@@ -42,6 +42,9 @@ let jsdoc2mdDefinitions = [
   {
     name: 'clear', type: Boolean,
     description: "Clears the cache."
+  },
+  {
+    name: 'no-usage-stats', type: Boolean
   }
 ]
 
@@ -147,7 +150,8 @@ module.exports = {
       content: 'Main options affecting mode. If none of the following are supplied, the tool will generate markdown docs.'
     },
     {
-      optionList: jsdoc2mdDefinitions
+      optionList: jsdoc2mdDefinitions,
+      hide: 'no-usage-stats'
     },
     {
       header: 'jsdoc options',
