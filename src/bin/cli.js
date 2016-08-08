@@ -28,7 +28,7 @@ if (options.help) {
 
 /* jsdoc2md --clear */
 } else if (options.clear) {
-  usageStats.screenView('clear').send().end()
+  usageStats.screenView('clear').end().send()
   const jsdoc2md = require('../../')
   jsdoc2md.clear().catch(tool.halt)
 
@@ -42,7 +42,7 @@ if (options.help) {
 
   /* jsdoc2md --config */
   if (options.config) {
-    usageStats.screenView('config').send().end()
+    usageStats.screenView('config').end().send()
     const omit = require('lodash.omit')
     tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
   }
@@ -60,7 +60,7 @@ if (options.help) {
 
   /* jsdoc2md --json */
   if (options.json) {
-    usageStats.screenView('json').send().end()
+    usageStats.screenView('json').end().send()
     jsdoc2md.getTemplateData(options)
       .then(function (json) {
         tool.printOutput(JSON.stringify(json, null, '  '))
@@ -69,7 +69,7 @@ if (options.help) {
 
   /* jsdoc2md --jsdoc */
   } else if (options.jsdoc) {
-    usageStats.screenView('jsdoc').send().end()
+    usageStats.screenView('jsdoc').end().send()
     jsdoc2md
       .getJsdocData(options)
       .then(function (json) {
@@ -79,7 +79,7 @@ if (options.help) {
 
   /* jsdoc2md --namepaths */
   } else if (options.stats) {
-    usageStats.screenView('stats').send().end()
+    usageStats.screenView('stats').end().send()
     jsdoc2md
       .getStats(options.files)
       .then(function (json) {
@@ -89,7 +89,7 @@ if (options.help) {
 
   /* jsdoc2md [<options>] --src <files> */
   } else {
-    usageStats.screenView('gen').send().end()
+    usageStats.screenView('gen').end().send()
     const fs = require('fs')
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8')
 
