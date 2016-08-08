@@ -8,10 +8,15 @@ const usageStats = new UsageStats({
   version: version,
   tid: 'UA-70853320-3'
 })
-usageStats.start()
 
 const cli = parseCommandLine()
 let options = cli.options._all
+options = loadStoredConfig(options)
+
+/* when disabled, all usageStats methods are no-ops */
+if (options['no-usage-stats']) usageStats.disable()
+
+usageStats.start()
 
 /* jsdoc2md --help */
 if (options.help) {
@@ -29,7 +34,6 @@ if (options.help) {
 
 } else {
   const jsdoc2md = require('../../')
-  options = loadStoredConfig(options)
 
   Object.keys(options).forEach(option => {
     const dontSend = [ 'files', 'source' ]

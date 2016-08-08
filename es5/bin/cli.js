@@ -12,18 +12,22 @@ var usageStats = new UsageStats({
 
 var cli = parseCommandLine();
 var options = cli.options._all;
+options = loadStoredConfig(options);
+
+if (options['no-usage-stats']) usageStats.disable();
+
+usageStats.start();
 
 if (options.help) {
   tool.printOutput(cli.usage);
 } else if (options.version) {
   tool.printOutput(version);
 } else if (options.clear) {
-  usageStats.screenView('clear').send();
+  usageStats.screenView('clear').send().end();
   var jsdoc2md = require('../../');
   jsdoc2md.clear().catch(tool.halt);
 } else {
   var _jsdoc2md = require('../../');
-  options = loadStoredConfig(options);
 
   Object.keys(options).forEach(function (option) {
     var dontSend = ['files', 'source'];
@@ -31,7 +35,7 @@ if (options.help) {
   });
 
   if (options.config) {
-    usageStats.screenView('config').send();
+    usageStats.screenView('config').send().end();
     var omit = require('lodash.omit');
     tool.stop(JSON.stringify(omit(options, 'config'), null, '  '));
   }
@@ -46,22 +50,22 @@ if (options.help) {
   }
 
   if (options.json) {
-    usageStats.screenView('json').send();
+    usageStats.screenView('json').send().end();
     _jsdoc2md.getTemplateData(options).then(function (json) {
       tool.printOutput(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.jsdoc) {
-    usageStats.screenView('jsdoc').send();
+    usageStats.screenView('jsdoc').send().end();
     _jsdoc2md.getJsdocData(options).then(function (json) {
       tool.printOutput(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else if (options.stats) {
-    usageStats.screenView('stats').send();
+    usageStats.screenView('stats').send().end();
     _jsdoc2md.getStats(options.files).then(function (json) {
       tool.printOutput(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
   } else {
-    usageStats.screenView('gen').send();
+    usageStats.screenView('gen').send().end();
     var fs = require('fs');
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
 
