@@ -5,7 +5,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 [![Join the chat at https://gitter.im/jsdoc2md/jsdoc2md](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsdoc2md/jsdoc2md?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-***This documentation is a work-in-progress***
+***[Try the jsdoc2md v2 pre-release](https://github.com/jsdoc2md/jsdoc-to-markdown/releases)***
 
 # jsdoc-to-markdown
 [jsdoc](http://usejsdoc.org) documented source code in, markdown format API documentation out.
