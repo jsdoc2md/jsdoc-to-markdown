@@ -6,13 +6,43 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 [![Join the chat at https://gitter.im/jsdoc2md/jsdoc2md](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsdoc2md/jsdoc2md?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-***This is the next version of the tool, a work in progress.***
-
 # jsdoc-to-markdown
 Generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated source code. Useful for injecting API docs into project README files.
 
-* [API documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/docs/API.md)
-* [Example output](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki/Exemplary-APIs)
+## Synopsis
+
+1\. Document your code using valid jsdoc comments.
+
+```js
+/**
+ * A quite wonderful function.
+ * @param {object} - privacy gown
+ * @param {object} - security
+ * @returns {survival}
+ */
+function protection (cloak, dagger) {}
+```
+
+2\. Run a command.
+
+```sh
+$ jsdoc2md example.js
+```
+
+3\. Get markdown output.
+
+```markdown
+## protection(cloak, dagger) ⇒ <code>survival</code>
+A quite wonderful function.
+
+**Kind**: global function  
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| cloak  | <code>object</code> | privacy gown |
+| dagger | <code>object</code> | security     |
+
+```
 
 ## Install
 
@@ -20,6 +50,12 @@ Generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated sou
 $ npm i -g jsdoc-to-markdown@^2.0.0-alpha
 ```
 
+## See also
+
+* [API documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/docs/API.md)
+* The [wiki](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki) for example output, FAQs, tutorials, plugins etc.
+* [Gulp plugin](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown).
+* [Grunt plugin](https://github.com/jsdoc2md/grunt-jsdoc-to-markdown)
 
 * * *
 

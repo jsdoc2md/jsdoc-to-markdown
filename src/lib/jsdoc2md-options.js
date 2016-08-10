@@ -1,4 +1,0 @@
-/**
- * @typedef jsdocOptions
- 
- */
