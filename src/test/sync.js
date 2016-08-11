@@ -2,6 +2,7 @@
 const test = require('test-runner')
 const jsdoc2md = require('../../')
 const a = require('assert')
+jsdoc2md._usageStats.disable()
 
 const inputFile = 'src/test/fixture/ignore.js'
 

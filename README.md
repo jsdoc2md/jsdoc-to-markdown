@@ -53,9 +53,7 @@ $ npm i -g jsdoc-to-markdown@^2.0.0-alpha
 ## See also
 
 * [API documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/next/docs/API.md)
-* The [wiki](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki) for example output, FAQs, tutorials, plugins etc.
-* [Gulp plugin](https://github.com/jsdoc2md/gulp-jsdoc-to-markdown).
-* [Grunt plugin](https://github.com/jsdoc2md/grunt-jsdoc-to-markdown)
+* The [wiki](https://github.com/jsdoc2md/jsdoc-to-markdown/wiki) for example output, FAQs, tutorials, plugins, use with gulp/grunt etc.
 
 * * *
 

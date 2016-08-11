@@ -2,19 +2,43 @@
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-exports.render = render;
-exports.renderSync = renderSync;
-exports.getTemplateData = getTemplateData;
-exports.getTemplateDataSync = getTemplateDataSync;
-exports.getJsdocData = getJsdocData;
-exports.getJsdocDataSync = getJsdocDataSync;
-exports.clear = clear;
+var version = require('../../package').version;
+var UsageStats = require('usage-stats');
+var usageStats = new UsageStats({
+  appName: 'jsdoc2md',
+  version: version,
+  tid: 'UA-70853320-3'
+});
+
+exports.render = function (options) {
+  return stats('render', options, render);
+};
+exports.renderSync = function (options) {
+  return stats('renderSync', options, renderSync, true);
+};
+exports.getTemplateData = function (options) {
+  return stats('getTemplateData', options, getTemplateData);
+};
+exports.getTemplateDataSync = function (options) {
+  return stats('getTemplateDataSync', options, getTemplateDataSync, true);
+};
+exports.getJsdocData = function (options) {
+  return stats('getJsdocData', options, getJsdocData);
+};
+exports.getJsdocDataSync = function (options) {
+  return stats('getJsdocDataSync', options, getJsdocDataSync, true);
+};
+exports.clear = function () {
+  return stats('clear', null, clear);
+};
+
+exports._usageStats = usageStats;
 
 function render(options) {
   options = options || {};
   var dmd = require('dmd').async;
   var dmdOptions = new DmdOptions(options);
-  return this.getTemplateData(options).then(function (templateData) {
+  return getTemplateData(options).then(function (templateData) {
     return dmd(templateData, dmdOptions);
   });
 }
@@ -23,7 +47,7 @@ function renderSync(options) {
   options = options || {};
   var dmd = require('dmd');
   var dmdOptions = new DmdOptions(options);
-  return dmd(this.getTemplateDataSync(options), dmdOptions);
+  return dmd(getTemplateDataSync(options), dmdOptions);
 }
 
 function getTemplateData(options) {
@@ -110,3 +134,38 @@ var DmdOptions = function DmdOptions(options) {
 
   this['member-index-format'] = options['member-index-format'] || 'grouped';
 };
+
+function stats(screenName, options, command, sync) {
+  if (options['no-usage-stats']) {
+    usageStats.disable();
+    return command(options);
+  } else {
+    usageStats.start();
+    usageStats.screenView(screenName);
+    if (options) {
+      Object.keys(options).forEach(function (option) {
+        var dontSend = ['files', 'source'];
+        usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option]);
+      });
+    }
+    if (sync) {
+      try {
+        var output = command(options);
+        usageStats.end().send();
+        return output;
+      } catch (err) {
+        usageStats.exception(err.message, 1);
+        throw err;
+      }
+    } else {
+      return command(options).then(function (output) {
+        usageStats.end().send();
+        return output;
+      }).catch(function (err) {
+        usageStats.exception(err.message, true);
+        usageStats.end().send();
+        throw err;
+      });
+    }
+  }
+}

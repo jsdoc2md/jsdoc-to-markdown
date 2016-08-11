@@ -1,4 +1,11 @@
 'use strict'
+const version = require('../../package').version
+const UsageStats = require('usage-stats')
+const usageStats = new UsageStats({
+  appName: 'jsdoc2md',
+  version: version,
+  tid: 'UA-70853320-3'
+})
 
 /**
  * @module jsdoc-to-markdown
@@ -6,13 +13,30 @@
  * @example
  * const jsdoc2md = require('jsdoc-to-markdown')
  */
-exports.render = render
-exports.renderSync = renderSync
-exports.getTemplateData = getTemplateData
-exports.getTemplateDataSync = getTemplateDataSync
-exports.getJsdocData = getJsdocData
-exports.getJsdocDataSync = getJsdocDataSync
-exports.clear = clear
+exports.render = function (options) {
+  return stats('render', options, render)
+}
+exports.renderSync = function (options) {
+  return stats('renderSync', options, renderSync, true)
+}
+exports.getTemplateData = function (options) {
+  return stats('getTemplateData', options, getTemplateData)
+}
+exports.getTemplateDataSync = function (options) {
+  return stats('getTemplateDataSync', options, getTemplateDataSync, true)
+}
+exports.getJsdocData = function (options) {
+  return stats('getJsdocData', options, getJsdocData)
+}
+exports.getJsdocDataSync = function (options) {
+  return stats('getJsdocDataSync', options, getJsdocDataSync, true)
+}
+exports.clear = function () {
+  return stats('clear', null, clear)
+}
+
+/* exposed so the test suite can disable it */
+exports._usageStats = usageStats
 
 /**
  * Returns markdown documentation from jsdoc-annoted source code.
@@ -32,7 +56,7 @@ function render (options) {
   options = options || {}
   const dmd = require('dmd').async
   const dmdOptions = new DmdOptions(options)
-  return this.getTemplateData(options)
+  return getTemplateData(options)
     .then(templateData => dmd(templateData, dmdOptions))
 }
 
@@ -51,7 +75,7 @@ function renderSync (options) {
   options = options || {}
   const dmd = require('dmd')
   const dmdOptions = new DmdOptions(options)
-  return dmd(this.getTemplateDataSync(options), dmdOptions)
+  return dmd(getTemplateDataSync(options), dmdOptions)
 }
 
 /**
@@ -261,5 +285,43 @@ class DmdOptions {
      * @default
      */
     this['member-index-format'] = options['member-index-format'] || 'grouped'
+  }
+}
+
+function stats (screenName, options, command, sync) {
+  /* when disabled, all usageStats methods are no-ops */
+  if (options['no-usage-stats']) {
+    usageStats.disable()
+    return command(options)
+  } else {
+    usageStats.start()
+    usageStats.screenView(screenName)
+    if (options) {
+      Object.keys(options).forEach(option => {
+        const dontSend = [ 'files', 'source' ]
+        usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option])
+      })
+    }
+    if (sync) {
+      try {
+        const output = command(options)
+        usageStats.end().send()
+        return output
+      } catch (err) {
+        usageStats.exception(err.message, 1)
+        throw err
+      }
+    } else {
+      return command(options)
+        .then(output => {
+          usageStats.end().send()
+          return output
+        })
+        .catch(err => {
+          usageStats.exception(err.message, true)
+          usageStats.end().send()
+          throw err
+        })
+    }
   }
 }
