@@ -158,7 +158,6 @@ class JsdocOptions {
   constructor (options) {
     options = options || {}
     this.cache = true
-    this.pedantic = true
 
     /**
      * One or more filenames to process. Either this or `source` must be supplied.
@@ -290,7 +289,7 @@ class DmdOptions {
 
 function stats (screenName, options, command, sync) {
   /* when disabled, all usageStats methods are no-ops */
-  if (options['no-usage-stats']) {
+  if (options && options['no-usage-stats']) {
     usageStats.disable()
     return command(options)
   } else {

@@ -90,7 +90,6 @@ var JsdocOptions = function JsdocOptions(options) {
 
   options = options || {};
   this.cache = true;
-  this.pedantic = true;
 
   this.files = options.files;
 
@@ -136,7 +135,7 @@ var DmdOptions = function DmdOptions(options) {
 };
 
 function stats(screenName, options, command, sync) {
-  if (options['no-usage-stats']) {
+  if (options && options['no-usage-stats']) {
     usageStats.disable();
     return command(options);
   } else {
