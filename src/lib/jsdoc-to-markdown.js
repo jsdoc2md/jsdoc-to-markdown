@@ -293,18 +293,20 @@ function stats (screenName, options, command, sync) {
     usageStats.disable()
     return command(options)
   } else {
+    const debug = options.debug
     usageStats.start()
     usageStats.screenView(screenName)
     if (options) {
       Object.keys(options).forEach(option => {
-        const dontSend = [ 'files', 'source' ]
+        const dontSend = [ 'files', 'source', 'template' ]
         usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option])
       })
     }
     if (sync) {
       try {
         const output = command(options)
-        usageStats.end().send()
+        const req = usageStats.end().send({ debug })
+        if (debug) req.then(console.error)
         return output
       } catch (err) {
         usageStats.exception(err.message, 1)
@@ -313,12 +315,14 @@ function stats (screenName, options, command, sync) {
     } else {
       return command(options)
         .then(output => {
-          usageStats.end().send()
+          const req = usageStats.end().send({ debug })
+          if (debug) req.then(console.error)
           return output
         })
         .catch(err => {
           usageStats.exception(err.message, true)
-          usageStats.end().send()
+          const req = usageStats.end().send({ debug })
+          if (debug) req.then(console.error)
           throw err
         })
     }

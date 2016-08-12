@@ -32,6 +32,8 @@ var jsdoc2mdDefinitions = [{
   description: "Clears the cache."
 }, {
   name: 'no-usage-stats', type: Boolean
+}, {
+  name: 'debug', type: Boolean
 }];
 
 var dmdDefinitions = [{ name: 'template', alias: 't', type: String, typeLabel: '<file>',
@@ -105,7 +107,7 @@ module.exports = {
     content: 'Main options affecting mode. If none of the following are supplied, the tool will generate markdown docs.'
   }, {
     optionList: jsdoc2mdDefinitions,
-    hide: 'no-usage-stats'
+    hide: ['no-usage-stats', 'debug']
   }, {
     header: 'jsdoc options',
     content: 'Options regarding the input source code, passed directly to jsdoc.'

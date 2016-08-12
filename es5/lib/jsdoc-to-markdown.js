@@ -1,5 +1,7 @@
 'use strict';
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var version = require('../../package').version;
@@ -139,32 +141,44 @@ function stats(screenName, options, command, sync) {
     usageStats.disable();
     return command(options);
   } else {
-    usageStats.start();
-    usageStats.screenView(screenName);
-    if (options) {
-      Object.keys(options).forEach(function (option) {
-        var dontSend = ['files', 'source'];
-        usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option]);
-      });
-    }
-    if (sync) {
-      try {
-        var output = command(options);
-        usageStats.end().send();
-        return output;
-      } catch (err) {
-        usageStats.exception(err.message, 1);
-        throw err;
+    var _ret = function () {
+      var debug = options.debug;
+      usageStats.start();
+      usageStats.screenView(screenName);
+      if (options) {
+        Object.keys(options).forEach(function (option) {
+          var dontSend = ['files', 'source', 'template'];
+          usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option]);
+        });
       }
-    } else {
-      return command(options).then(function (output) {
-        usageStats.end().send();
-        return output;
-      }).catch(function (err) {
-        usageStats.exception(err.message, true);
-        usageStats.end().send();
-        throw err;
-      });
-    }
+      if (sync) {
+        try {
+          var output = command(options);
+          var req = usageStats.end().send({ debug: debug });
+          if (debug) req.then(console.error);
+          return {
+            v: output
+          };
+        } catch (err) {
+          usageStats.exception(err.message, 1);
+          throw err;
+        }
+      } else {
+        return {
+          v: command(options).then(function (output) {
+            var req = usageStats.end().send({ debug: debug });
+            if (debug) req.then(console.error);
+            return output;
+          }).catch(function (err) {
+            usageStats.exception(err.message, true);
+            var req = usageStats.end().send({ debug: debug });
+            if (debug) req.then(console.error);
+            throw err;
+          })
+        };
+      }
+    }();
+
+    if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
   }
 }
