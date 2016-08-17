@@ -43,12 +43,9 @@ let jsdoc2mdDefinitions = [
     name: 'clear', type: Boolean,
     description: "Clears the cache."
   },
-  {
-    name: 'no-usage-stats', type: Boolean
-  },
-  {
-    name: 'debug', type: Boolean
-  }
+  { name: 'no-usage-stats', type: Boolean },
+  { name: 'debug', type: Boolean },
+  { name: 'no-cache', type: Boolean }
 ]
 
 const dmdDefinitions = [
@@ -154,7 +151,7 @@ module.exports = {
     },
     {
       optionList: jsdoc2mdDefinitions,
-      hide: [ 'no-usage-stats', 'debug' ]
+      hide: [ 'no-usage-stats', 'debug', 'no-cache' ]
     },
     {
       header: 'jsdoc options',

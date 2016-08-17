@@ -17,7 +17,7 @@ test('cli: json option', function () {
   return new Promise((resolve, reject) => {
     const handle = spawn(
       'node',
-      [ 'bin.js', '--no-usage-stats', '--json', inputPath ],
+      [ 'bin.js', '--no-usage-stats', '--no-cache', '--json', inputPath ],
       { stdio: [ 'ignore', outputFile, 'ignore' ] }
     )
     handle.on('close', function () {

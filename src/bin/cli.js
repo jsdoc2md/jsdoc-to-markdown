@@ -7,6 +7,11 @@ const cli = parseCommandLine()
 let options = cli.options._all
 options = loadStoredConfig(options)
 
+/* jsdoc2md --no-cache */
+if (options['no-cache']) {
+  options.cache = false
+}
+
 /* jsdoc2md --help */
 if (options.help) {
   tool.printOutput(cli.usage)

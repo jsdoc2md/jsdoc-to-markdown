@@ -8,14 +8,17 @@ var version = require('../../package').version;
 var UsageStats = require('usage-stats');
 var homePath = require('home-path');
 var path = require('path');
-var cacheDir = {};
-cacheDir.jsdoc2md = path.resolve(homePath(), '.jsdoc2md');
-cacheDir.jsdocApi = path.resolve(cacheDir.jsdoc2md, 'jsdoc-api');
-cacheDir.dmd = path.resolve(cacheDir.jsdoc2md, 'dmd');
+
+var cacheDir = path.resolve(homePath(), '.jsdoc2md');
+var jsdocApi = require('jsdoc-api');
+var dmd = require('dmd');
+jsdocApi.cache.dir = path.resolve(cacheDir, 'jsdoc-api');
+dmd.cache.dir = path.resolve(cacheDir, 'dmd');
+
 var usageStats = new UsageStats('UA-70853320-3', {
   name: 'jsdoc2md',
   version: version,
-  dir: cacheDir.jsdoc2md
+  dir: cacheDir
 });
 
 exports.render = function (options) {
@@ -44,8 +47,6 @@ exports._usageStats = usageStats;
 
 function render(options) {
   options = options || {};
-  var dmd = require('dmd');
-  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd;
   var dmdOptions = new DmdOptions(options);
   return getTemplateData(options).then(function (templateData) {
     return dmd.async(templateData, dmdOptions);
@@ -54,8 +55,6 @@ function render(options) {
 
 function renderSync(options) {
   options = options || {};
-  var dmd = require('dmd');
-  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd;
   var dmdOptions = new DmdOptions(options);
   return dmd(getTemplateDataSync(options), dmdOptions);
 }
@@ -75,23 +74,17 @@ function getTemplateDataSync(options) {
 
 function getJsdocData(options) {
   options = options || {};
-  var jsdocApi = require('jsdoc-api');
-  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi;
   var jsdocOptions = new JsdocOptions(options);
   return jsdocApi.explain(jsdocOptions);
 }
 
 function getJsdocDataSync(options) {
   options = options || {};
-  var jsdocApi = require('jsdoc-api');
-  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi;
   var jsdocOptions = new JsdocOptions(options);
   return jsdocApi.explainSync(jsdocOptions);
 }
 
 function clear() {
-  var jsdocApi = require('jsdoc-api');
-  var dmd = require('dmd');
   return jsdocApi.cache.clear().then(function () {
     return dmd.cache.clear();
   });
@@ -101,7 +94,8 @@ var JsdocOptions = function JsdocOptions(options) {
   _classCallCheck(this, JsdocOptions);
 
   options = options || {};
-  this.cache = true;
+
+  this.cache = options.cache === undefined ? true : options.cache;
 
   this.files = options.files;
 

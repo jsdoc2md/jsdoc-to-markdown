@@ -8,6 +8,10 @@ var cli = parseCommandLine();
 var options = cli.options._all;
 options = loadStoredConfig(options);
 
+if (options['no-cache']) {
+  options.cache = false;
+}
+
 if (options.help) {
   tool.printOutput(cli.usage);
 } else if (options.version) {

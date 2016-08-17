@@ -30,11 +30,7 @@ var jsdoc2mdDefinitions = [{
 }, { name: 'version', type: Boolean }, {
   name: 'clear', type: Boolean,
   description: "Clears the cache."
-}, {
-  name: 'no-usage-stats', type: Boolean
-}, {
-  name: 'debug', type: Boolean
-}];
+}, { name: 'no-usage-stats', type: Boolean }, { name: 'debug', type: Boolean }, { name: 'no-cache', type: Boolean }];
 
 var dmdDefinitions = [{ name: 'template', alias: 't', type: String, typeLabel: '<file>',
   description: 'A custom handlebars template file to insert documentation into. The default template is `{{>main}}`.'
@@ -107,7 +103,7 @@ module.exports = {
     content: 'Main options affecting mode. If none of the following are supplied, the tool will generate markdown docs.'
   }, {
     optionList: jsdoc2mdDefinitions,
-    hide: ['no-usage-stats', 'debug']
+    hide: ['no-usage-stats', 'debug', 'no-cache']
   }, {
     header: 'jsdoc options',
     content: 'Options regarding the input source code, passed directly to jsdoc.'

@@ -3,14 +3,17 @@ const version = require('../../package').version
 const UsageStats = require('usage-stats')
 const homePath = require('home-path')
 const path = require('path')
-const cacheDir = {}
-cacheDir.jsdoc2md = path.resolve(homePath(), '.jsdoc2md')
-cacheDir.jsdocApi = path.resolve(cacheDir.jsdoc2md, 'jsdoc-api')
-cacheDir.dmd = path.resolve(cacheDir.jsdoc2md, 'dmd')
+
+const cacheDir = path.resolve(homePath(), '.jsdoc2md')
+const jsdocApi = require('jsdoc-api')
+const dmd = require('dmd')
+jsdocApi.cache.dir = path.resolve(cacheDir, 'jsdoc-api')
+dmd.cache.dir = path.resolve(cacheDir, 'dmd')
+
 const usageStats = new UsageStats('UA-70853320-3', {
   name: 'jsdoc2md',
   version: version,
-  dir: cacheDir.jsdoc2md
+  dir: cacheDir
 })
 
 /**
@@ -60,8 +63,6 @@ exports._usageStats = usageStats
  */
 function render (options) {
   options = options || {}
-  const dmd = require('dmd')
-  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd
   const dmdOptions = new DmdOptions(options)
   return getTemplateData(options)
     .then(templateData => dmd.async(templateData, dmdOptions))
@@ -80,8 +81,6 @@ function render (options) {
  */
 function renderSync (options) {
   options = options || {}
-  const dmd = require('dmd')
-  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd
   const dmdOptions = new DmdOptions(options)
   return dmd(getTemplateDataSync(options), dmdOptions)
 }
@@ -128,8 +127,6 @@ function getTemplateDataSync (options) {
  */
 function getJsdocData (options) {
   options = options || {}
-  const jsdocApi = require('jsdoc-api')
-  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi
   const jsdocOptions = new JsdocOptions(options)
   return jsdocApi.explain(jsdocOptions)
 }
@@ -144,8 +141,6 @@ function getJsdocData (options) {
  */
 function getJsdocDataSync (options) {
   options = options || {}
-  const jsdocApi = require('jsdoc-api')
-  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi
   const jsdocOptions = new JsdocOptions(options)
   return jsdocApi.explainSync(jsdocOptions)
 }
@@ -156,8 +151,6 @@ function getJsdocDataSync (options) {
  * @static
  */
 function clear () {
-  const jsdocApi = require('jsdoc-api')
-  const dmd = require('dmd')
   return jsdocApi.cache.clear().then(() => dmd.cache.clear())
 }
 
@@ -167,7 +160,11 @@ function clear () {
 class JsdocOptions {
   constructor (options) {
     options = options || {}
-    this.cache = true
+
+    /**
+     * Set to false to disable memoisation cache. Defaults to true.
+     */
+    this.cache = options.cache === undefined ? true : options.cache
 
     /**
      * One or more filenames to process. Either this or `source` must be supplied.
