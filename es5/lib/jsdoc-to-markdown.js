@@ -6,10 +6,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var version = require('../../package').version;
 var UsageStats = require('usage-stats');
-var usageStats = new UsageStats({
-  appName: 'jsdoc2md',
+var homePath = require('home-path');
+var path = require('path');
+var cacheDir = {};
+cacheDir.jsdoc2md = path.resolve(homePath(), '.jsdoc2md');
+cacheDir.jsdocApi = path.resolve(cacheDir.jsdoc2md, 'jsdoc-api');
+cacheDir.dmd = path.resolve(cacheDir.jsdoc2md, 'dmd');
+var usageStats = new UsageStats('UA-70853320-3', {
+  name: 'jsdoc2md',
   version: version,
-  tid: 'UA-70853320-3'
+  dir: cacheDir.jsdoc2md
 });
 
 exports.render = function (options) {
@@ -38,16 +44,18 @@ exports._usageStats = usageStats;
 
 function render(options) {
   options = options || {};
-  var dmd = require('dmd').async;
+  var dmd = require('dmd');
+  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd;
   var dmdOptions = new DmdOptions(options);
   return getTemplateData(options).then(function (templateData) {
-    return dmd(templateData, dmdOptions);
+    return dmd.async(templateData, dmdOptions);
   });
 }
 
 function renderSync(options) {
   options = options || {};
   var dmd = require('dmd');
+  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd;
   var dmdOptions = new DmdOptions(options);
   return dmd(getTemplateDataSync(options), dmdOptions);
 }
@@ -68,6 +76,7 @@ function getTemplateDataSync(options) {
 function getJsdocData(options) {
   options = options || {};
   var jsdocApi = require('jsdoc-api');
+  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi;
   var jsdocOptions = new JsdocOptions(options);
   return jsdocApi.explain(jsdocOptions);
 }
@@ -75,6 +84,7 @@ function getJsdocData(options) {
 function getJsdocDataSync(options) {
   options = options || {};
   var jsdocApi = require('jsdoc-api');
+  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi;
   var jsdocOptions = new JsdocOptions(options);
   return jsdocApi.explainSync(jsdocOptions);
 }
@@ -137,7 +147,9 @@ var DmdOptions = function DmdOptions(options) {
 };
 
 function stats(screenName, options, command, sync) {
-  if (options && options['no-usage-stats']) {
+  options = options || {};
+
+  if (options['no-usage-stats']) {
     usageStats.disable();
     return command(options);
   } else {

@@ -1,10 +1,16 @@
 'use strict'
 const version = require('../../package').version
 const UsageStats = require('usage-stats')
-const usageStats = new UsageStats({
-  appName: 'jsdoc2md',
+const homePath = require('home-path')
+const path = require('path')
+const cacheDir = {}
+cacheDir.jsdoc2md = path.resolve(homePath(), '.jsdoc2md')
+cacheDir.jsdocApi = path.resolve(cacheDir.jsdoc2md, 'jsdoc-api')
+cacheDir.dmd = path.resolve(cacheDir.jsdoc2md, 'dmd')
+const usageStats = new UsageStats('UA-70853320-3', {
+  name: 'jsdoc2md',
   version: version,
-  tid: 'UA-70853320-3'
+  dir: cacheDir.jsdoc2md
 })
 
 /**
@@ -54,10 +60,11 @@ exports._usageStats = usageStats
  */
 function render (options) {
   options = options || {}
-  const dmd = require('dmd').async
+  const dmd = require('dmd')
+  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd
   const dmdOptions = new DmdOptions(options)
   return getTemplateData(options)
-    .then(templateData => dmd(templateData, dmdOptions))
+    .then(templateData => dmd.async(templateData, dmdOptions))
 }
 
 /**
@@ -74,6 +81,7 @@ function render (options) {
 function renderSync (options) {
   options = options || {}
   const dmd = require('dmd')
+  if (dmd.cache.dir !== cacheDir.dmd) dmd.cache.dir = cacheDir.dmd
   const dmdOptions = new DmdOptions(options)
   return dmd(getTemplateDataSync(options), dmdOptions)
 }
@@ -121,6 +129,7 @@ function getTemplateDataSync (options) {
 function getJsdocData (options) {
   options = options || {}
   const jsdocApi = require('jsdoc-api')
+  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi
   const jsdocOptions = new JsdocOptions(options)
   return jsdocApi.explain(jsdocOptions)
 }
@@ -136,6 +145,7 @@ function getJsdocData (options) {
 function getJsdocDataSync (options) {
   options = options || {}
   const jsdocApi = require('jsdoc-api')
+  if (jsdocApi.cache.dir !== cacheDir.jsdocApi) jsdocApi.cache.dir = cacheDir.jsdocApi
   const jsdocOptions = new JsdocOptions(options)
   return jsdocApi.explainSync(jsdocOptions)
 }
@@ -288,8 +298,9 @@ class DmdOptions {
 }
 
 function stats (screenName, options, command, sync) {
+  options = options || {}
   /* when disabled, all usageStats methods are no-ops */
-  if (options && options['no-usage-stats']) {
+  if (options['no-usage-stats']) {
     usageStats.disable()
     return command(options)
   } else {
