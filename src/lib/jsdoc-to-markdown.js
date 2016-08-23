@@ -296,8 +296,8 @@ class DmdOptions {
 
 function stats (screenName, options, command, sync) {
   options = options || {}
-  /* when disabled, all usageStats methods are no-ops */
   if (options['no-usage-stats']) {
+    /* when disabled, all usageStats methods are no-ops */
     usageStats.disable()
     return command(options)
   } else {
@@ -310,29 +310,43 @@ function stats (screenName, options, command, sync) {
         usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option])
       })
     }
+    const req = usageStats.end().send({ debug })
+    if (debug) {
+      req.then(response => {
+        // responses = responses.map(response => {
+        response.data = response.data ? response.data.toString() : response.data
+        //   return response
+        // })
+        console.error(require('util').inspect(response, { depth: 3, colors: true }))
+      })
+    }
+    req.catch(err => console.error('.send() failed', err.stack))
+
     if (sync) {
       try {
-        const output = command(options)
-        const req = usageStats.end().send({ debug })
-        if (debug) req.then(console.error)
-        return output
+        return command(options)
+        usageStats.abort()
       } catch (err) {
-        usageStats.exception(err.message, 1)
-        throw err
+        commandFailed(err, debug)
       }
     } else {
       return command(options)
         .then(output => {
-          const req = usageStats.end().send({ debug })
-          if (debug) req.then(console.error)
+          usageStats.abort()
           return output
         })
         .catch(err => {
-          usageStats.exception(err.message, true)
-          const req = usageStats.end().send({ debug })
-          if (debug) req.then(console.error)
-          throw err
+          commandFailed(err, debug)
         })
     }
   }
+}
+
+function commandFailed (err, debug) {
+  usageStats.exception(err.message, 1)
+  const req = usageStats.end().send({ debug })
+  if (debug) req.then(response => {
+    console.error(require('util').inspect(response, { depth: 3, colors: true }))
+  })
+  throw err
 }

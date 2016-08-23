@@ -142,7 +142,6 @@ var DmdOptions = function DmdOptions(options) {
 
 function stats(screenName, options, command, sync) {
   options = options || {};
-
   if (options['no-usage-stats']) {
     usageStats.disable();
     return command(options);
@@ -157,29 +156,34 @@ function stats(screenName, options, command, sync) {
           usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option]);
         });
       }
+      var req = usageStats.end().send({ debug: debug });
+      if (debug) {
+        req.then(function (response) {
+          response.data = response.data ? response.data.toString() : response.data;
+
+          console.error(require('util').inspect(response, { depth: 3, colors: true }));
+        });
+      }
+      req.catch(function (err) {
+        return console.error('.send() failed', err.stack);
+      });
+
       if (sync) {
         try {
-          var output = command(options);
-          var req = usageStats.end().send({ debug: debug });
-          if (debug) req.then(console.error);
           return {
-            v: output
+            v: command(options)
           };
+          usageStats.abort();
         } catch (err) {
-          usageStats.exception(err.message, 1);
-          throw err;
+          commandFailed(err, debug);
         }
       } else {
         return {
           v: command(options).then(function (output) {
-            var req = usageStats.end().send({ debug: debug });
-            if (debug) req.then(console.error);
+            usageStats.abort();
             return output;
           }).catch(function (err) {
-            usageStats.exception(err.message, true);
-            var req = usageStats.end().send({ debug: debug });
-            if (debug) req.then(console.error);
-            throw err;
+            commandFailed(err, debug);
           })
         };
       }
@@ -187,4 +191,13 @@ function stats(screenName, options, command, sync) {
 
     if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
   }
+}
+
+function commandFailed(err, debug) {
+  usageStats.exception(err.message, 1);
+  var req = usageStats.end().send({ debug: debug });
+  if (debug) req.then(function (response) {
+    console.error(require('util').inspect(response, { depth: 3, colors: true }));
+  });
+  throw err;
 }
