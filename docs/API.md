@@ -19,6 +19,7 @@ const jsdoc2md = require('jsdoc-to-markdown')
             * [.getJsdocDataSync([options])](#module_jsdoc-to-markdown.getJsdocDataSync) ⇒ <code>Array.&lt;object&gt;</code>
     * _inner_
         * [~JsdocOptions](#module_jsdoc-to-markdown..JsdocOptions)
+            * [.cache](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+cache)
             * [.files](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+files) : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
             * [.source](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+source) : <code>string</code>
             * [.configure](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+configure) : <code>string</code>
@@ -162,11 +163,21 @@ jsdoc options
 **Kind**: inner class of <code>[jsdoc-to-markdown](#module_jsdoc-to-markdown)</code>  
 
 * [~JsdocOptions](#module_jsdoc-to-markdown..JsdocOptions)
+    * [.cache](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+cache)
     * [.files](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+files) : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
     * [.source](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+source) : <code>string</code>
     * [.configure](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+configure) : <code>string</code>
     * [.html](#module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+html) : <code>boolean</code>
 
+
+-
+
+<a name="module_jsdoc-to-markdown..JsdocOptions.JsdocOptions+cache"></a>
+
+#### jsdocOptions.cache
+Set to false to disable memoisation cache. Defaults to true.
+
+**Kind**: instance property of <code>[JsdocOptions](#module_jsdoc-to-markdown..JsdocOptions)</code>  
 
 -
 
