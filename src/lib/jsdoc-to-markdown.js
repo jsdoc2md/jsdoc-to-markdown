@@ -1,19 +1,12 @@
 'use strict'
 const version = require('../../package').version
 const UsageStats = require('usage-stats')
-const homePath = require('home-path')
-const path = require('path')
-
-const cacheDir = path.resolve(homePath(), '.jsdoc2md')
 const jsdocApi = require('jsdoc-api')
 const dmd = require('dmd')
-jsdocApi.cache.dir = path.resolve(cacheDir, 'jsdoc-api')
-dmd.cache.dir = path.resolve(cacheDir, 'dmd')
 
 const usageStats = new UsageStats('UA-70853320-3', {
   name: 'jsdoc2md',
-  version: version,
-  dir: cacheDir
+  version: version
 })
 
 /**
@@ -313,26 +306,23 @@ function stats (screenName, options, command, sync) {
     const req = usageStats.end().send({ debug })
     if (debug) {
       req.then(response => {
-        // responses = responses.map(response => {
         response.data = response.data ? response.data.toString() : response.data
-        //   return response
-        // })
         console.error(require('util').inspect(response, { depth: 3, colors: true }))
       })
     }
-    req.catch(err => console.error('.send() failed', err.stack))
 
     if (sync) {
       try {
-        return command(options)
-        usageStats.abort()
+        const output = command(options)
+        if (!debug) usageStats.abort()
+        return output
       } catch (err) {
         commandFailed(err, debug)
       }
     } else {
       return command(options)
         .then(output => {
-          usageStats.abort()
+          if (!debug) usageStats.abort()
           return output
         })
         .catch(err => {
@@ -345,8 +335,10 @@ function stats (screenName, options, command, sync) {
 function commandFailed (err, debug) {
   usageStats.exception(err.message, 1)
   const req = usageStats.end().send({ debug })
-  if (debug) req.then(response => {
-    console.error(require('util').inspect(response, { depth: 3, colors: true }))
-  })
+  if (debug) {
+    req.then(response => {
+      console.error(require('util').inspect(response, { depth: 3, colors: true }))
+    })
+  }
   throw err
 }

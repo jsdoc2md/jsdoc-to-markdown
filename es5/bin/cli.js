@@ -1,7 +1,6 @@
 'use strict';
 
 var tool = require('command-line-tool');
-var path = require('path');
 var version = require('../../package').version;
 
 var cli = parseCommandLine();

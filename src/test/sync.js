@@ -30,7 +30,7 @@ if (require('child_process').spawnSync) {
   })
 
   runner.test('.getJsdocDataSync({ files })', function () {
-    const result =  jsdoc2md.getJsdocDataSync({ files: inputFile, cache: false })
+    const result = jsdoc2md.getJsdocDataSync({ files: inputFile, cache: false })
     a.ok(result[0].longname)
   })
 }

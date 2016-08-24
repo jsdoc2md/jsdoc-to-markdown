@@ -6,19 +6,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var version = require('../../package').version;
 var UsageStats = require('usage-stats');
-var homePath = require('home-path');
-var path = require('path');
-
-var cacheDir = path.resolve(homePath(), '.jsdoc2md');
 var jsdocApi = require('jsdoc-api');
 var dmd = require('dmd');
-jsdocApi.cache.dir = path.resolve(cacheDir, 'jsdoc-api');
-dmd.cache.dir = path.resolve(cacheDir, 'dmd');
 
 var usageStats = new UsageStats('UA-70853320-3', {
   name: 'jsdoc2md',
-  version: version,
-  dir: cacheDir
+  version: version
 });
 
 exports.render = function (options) {
@@ -160,27 +153,24 @@ function stats(screenName, options, command, sync) {
       if (debug) {
         req.then(function (response) {
           response.data = response.data ? response.data.toString() : response.data;
-
           console.error(require('util').inspect(response, { depth: 3, colors: true }));
         });
       }
-      req.catch(function (err) {
-        return console.error('.send() failed', err.stack);
-      });
 
       if (sync) {
         try {
+          var output = command(options);
+          if (!debug) usageStats.abort();
           return {
-            v: command(options)
+            v: output
           };
-          usageStats.abort();
         } catch (err) {
           commandFailed(err, debug);
         }
       } else {
         return {
           v: command(options).then(function (output) {
-            usageStats.abort();
+            if (!debug) usageStats.abort();
             return output;
           }).catch(function (err) {
             commandFailed(err, debug);
@@ -196,8 +186,10 @@ function stats(screenName, options, command, sync) {
 function commandFailed(err, debug) {
   usageStats.exception(err.message, 1);
   var req = usageStats.end().send({ debug: debug });
-  if (debug) req.then(function (response) {
-    console.error(require('util').inspect(response, { depth: 3, colors: true }));
-  });
+  if (debug) {
+    req.then(function (response) {
+      console.error(require('util').inspect(response, { depth: 3, colors: true }));
+    });
+  }
   throw err;
 }

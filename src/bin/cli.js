@@ -1,6 +1,5 @@
 'use strict'
 const tool = require('command-line-tool')
-const path = require('path')
 const version = require('../../package').version
 
 const cli = parseCommandLine()
@@ -24,7 +23,6 @@ if (options.help) {
 } else if (options.clear) {
   const jsdoc2md = require('../../')
   jsdoc2md.clear().catch(tool.halt)
-
 } else {
   const jsdoc2md = require('../../')
 
