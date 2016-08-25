@@ -131,6 +131,8 @@ var DmdOptions = function DmdOptions(options) {
   this['property-list-format'] = options['property-list-format'] || 'table';
 
   this['member-index-format'] = options['member-index-format'] || 'grouped';
+
+  this.private = options.private;
 };
 
 function stats(screenName, options, command, sync) {

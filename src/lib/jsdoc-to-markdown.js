@@ -284,6 +284,13 @@ class DmdOptions {
      * @default
      */
     this['member-index-format'] = options['member-index-format'] || 'grouped'
+
+    /**
+     * Show identifiers marked `@private` in the output.
+     * @type {boolean}
+     * @default false
+     */
+    this.private = options.private
   }
 }
 

@@ -39,6 +39,7 @@ const jsdoc2md = require('jsdoc-to-markdown')
             * [.param-list-format](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+param-list-format) : <code>string</code>
             * [.property-list-format](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+property-list-format) : <code>string</code>
             * [.member-index-format](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+member-index-format) : <code>string</code>
+            * [.private](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+private) : <code>boolean</code>
 
 
 -
@@ -239,6 +240,7 @@ dmd options
     * [.param-list-format](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+param-list-format) : <code>string</code>
     * [.property-list-format](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+property-list-format) : <code>string</code>
     * [.member-index-format](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+member-index-format) : <code>string</code>
+    * [.private](#module_jsdoc-to-markdown..DmdOptions.DmdOptions+private) : <code>boolean</code>
 
 
 -
@@ -367,6 +369,16 @@ list, table
 grouped, list
 
 **Kind**: instance property of <code>[DmdOptions](#module_jsdoc-to-markdown..DmdOptions)</code>  
+
+-
+
+<a name="module_jsdoc-to-markdown..DmdOptions.DmdOptions+private"></a>
+
+#### dmdOptions.private : <code>boolean</code>
+Show identifiers marked `@private` in the output.
+
+**Kind**: instance property of <code>[DmdOptions](#module_jsdoc-to-markdown..DmdOptions)</code>  
+**Default**: <code>false</code>  
 
 -
 
