@@ -61,14 +61,14 @@ function stats (screenName, options, command, sync) {
       })
     }
 
-    usageStats
-      .enable()
-      .start()
-      .screenView(screenName, { hitParams: metrics })
+    usageStats.enable()
 
     if (sync) {
       try {
         const output = command(options)
+        usageStats
+          .start()
+          .screenView(screenName, { hitParams: metrics })
         finished()
         return output
       } catch (err) {
@@ -77,6 +77,9 @@ function stats (screenName, options, command, sync) {
     } else {
       return command(options)
         .then(output => {
+          usageStats
+            .start()
+            .screenView(screenName, { hitParams: metrics })
           finished()
           return output
         })
@@ -107,5 +110,5 @@ function getLastSent () {
 function finished () {
   usageStats.end()
   usageStats.save()
-  if (usageStats.hitsQueued() >= 20) usageStats.send().catch(err => console.error(err.stack))
+  if (usageStats.hitsQueued() >= 19) usageStats.send().catch(err => console.error(err.stack))
 }

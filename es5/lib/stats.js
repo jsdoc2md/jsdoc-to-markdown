@@ -61,11 +61,12 @@ function stats(screenName, options, command, sync) {
         })();
       }
 
-      usageStats.enable().start().screenView(screenName, { hitParams: metrics });
+      usageStats.enable();
 
       if (sync) {
         try {
           var output = command(options);
+          usageStats.start().screenView(screenName, { hitParams: metrics });
           finished();
           return {
             v: output
@@ -76,6 +77,7 @@ function stats(screenName, options, command, sync) {
       } else {
         return {
           v: command(options).then(function (output) {
+            usageStats.start().screenView(screenName, { hitParams: metrics });
             finished();
             return output;
           }).catch(function (err) {
@@ -109,7 +111,7 @@ function getLastSent() {
 function finished() {
   usageStats.end();
   usageStats.save();
-  if (usageStats.hitsQueued() >= 20) usageStats.send().catch(function (err) {
+  if (usageStats.hitsQueued() >= 19) usageStats.send().catch(function (err) {
     return console.error(err.stack);
   });
 }
