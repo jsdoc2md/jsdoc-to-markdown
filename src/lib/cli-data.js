@@ -59,8 +59,7 @@ let jsdoc2mdDefinitions = [
     description: 'Clears the cache.'
   },
   { name: 'no-usage-stats', type: Boolean },
-  { name: 'debug', type: Boolean },
-  { name: 'no-cache', type: Boolean }
+  { name: 'no-cache', type: Boolean },
 ]
 
 const dmdDefinitions = [
@@ -193,9 +192,6 @@ module.exports = {
         },
         {
           cmmd: '$ jsdoc2md [bold]{--stats}'
-        },
-        {
-          cmmd: '$ jsdoc2md [bold]{--version}'
         }
       ]
     },

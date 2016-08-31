@@ -3,6 +3,7 @@ const TestRunner = require('test-runner')
 const jsdoc2md = require('../../')
 const a = require('assert')
 jsdoc2md._usageStats.disable()
+// 'UA-70853320-4'
 
 const runner = new TestRunner()
 const inputFile = 'src/test/fixture/ignore.js'

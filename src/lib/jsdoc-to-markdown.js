@@ -3,11 +3,8 @@ const version = require('../../package').version
 const UsageStats = require('usage-stats')
 const jsdocApi = require('jsdoc-api')
 const dmd = require('dmd')
-
-const usageStats = new UsageStats('UA-70853320-3', {
-  name: 'jsdoc2md',
-  version: version
-})
+const os = require('os')
+const stats = require('./stats').stats
 
 /**
  * @module jsdoc-to-markdown
@@ -15,6 +12,7 @@ const usageStats = new UsageStats('UA-70853320-3', {
  * @example
  * const jsdoc2md = require('jsdoc-to-markdown')
  */
+
 exports.render = function (options) {
   return stats('render', options, render)
 }
@@ -38,7 +36,7 @@ exports.clear = function () {
 }
 
 /* exposed so the test suite can disable it */
-exports._usageStats = usageStats
+exports._usageStats = require('./stats').usageStats
 
 /**
  * Returns markdown documentation from jsdoc-annoted source code.
@@ -292,60 +290,4 @@ class DmdOptions {
      */
     this.private = options.private
   }
-}
-
-function stats (screenName, options, command, sync) {
-  options = options || {}
-  if (options['no-usage-stats']) {
-    /* when disabled, all usageStats methods are no-ops */
-    usageStats.disable()
-    return command(options)
-  } else {
-    const debug = options.debug
-    usageStats.start()
-    usageStats.screenView(screenName)
-    if (options) {
-      Object.keys(options).forEach(option => {
-        const dontSend = [ 'files', 'source', 'template' ]
-        usageStats.event('option', option, dontSend.includes(option) ? undefined : options[option])
-      })
-    }
-    const req = usageStats.end().send({ debug })
-    if (debug) {
-      req.then(response => {
-        response.data = response.data ? response.data.toString() : response.data
-        console.error(require('util').inspect(response, { depth: 3, colors: true }))
-      })
-    }
-
-    if (sync) {
-      try {
-        const output = command(options)
-        if (!debug) usageStats.abort()
-        return output
-      } catch (err) {
-        commandFailed(err, debug)
-      }
-    } else {
-      return command(options)
-        .then(output => {
-          if (!debug) usageStats.abort()
-          return output
-        })
-        .catch(err => {
-          commandFailed(err, debug)
-        })
-    }
-  }
-}
-
-function commandFailed (err, debug) {
-  usageStats.exception(err.message, 1)
-  const req = usageStats.end().send({ debug })
-  if (debug) {
-    req.then(response => {
-      console.error(require('util').inspect(response, { depth: 3, colors: true }))
-    })
-  }
-  throw err
 }

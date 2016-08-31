@@ -9,6 +9,7 @@ options = loadStoredConfig(options)
 /* jsdoc2md --no-cache */
 if (options['no-cache']) {
   options.cache = false
+  delete options['no-cache']
 }
 
 /* jsdoc2md --help */
@@ -22,9 +23,11 @@ if (options.help) {
 /* jsdoc2md --clear */
 } else if (options.clear) {
   const jsdoc2md = require('../../')
+  jsdoc2md._usageStats.defaults.set('cd4', 'cli')
   jsdoc2md.clear().catch(tool.halt)
 } else {
   const jsdoc2md = require('../../')
+  jsdoc2md._usageStats.defaults.set('cd4', 'cli')
 
   /* jsdoc2md --config */
   if (options.config) {

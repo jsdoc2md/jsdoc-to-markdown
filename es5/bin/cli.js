@@ -9,6 +9,7 @@ options = loadStoredConfig(options);
 
 if (options['no-cache']) {
   options.cache = false;
+  delete options['no-cache'];
 }
 
 if (options.help) {
@@ -17,9 +18,11 @@ if (options.help) {
   tool.printOutput(version);
 } else if (options.clear) {
   var jsdoc2md = require('../../');
+  jsdoc2md._usageStats.defaults.set('cd4', 'cli');
   jsdoc2md.clear().catch(tool.halt);
 } else {
   var _jsdoc2md = require('../../');
+  _jsdoc2md._usageStats.defaults.set('cd4', 'cli');
 
   if (options.config) {
     var omit = require('lodash.omit');
