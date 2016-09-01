@@ -111,7 +111,16 @@ function getLastSent() {
 function finished() {
   usageStats.end();
   usageStats.save();
-  if (usageStats.hitsQueued() >= 19) usageStats.send().catch(function (err) {
-    return console.error(err.stack);
-  });
+  if (usageStats.hitsQueued() >= 19) {
+    (function () {
+      var timeout = setTimeout(function () {
+        usageStats.abort();
+      }, 1500);
+      usageStats.send().then(function (responses) {
+        clearTimeout(timeout);
+      }).catch(function (err) {
+        clearTimeout(timeout);
+      });
+    })();
+  }
 }

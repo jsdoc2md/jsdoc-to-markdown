@@ -110,5 +110,17 @@ function getLastSent () {
 function finished () {
   usageStats.end()
   usageStats.save()
-  if (usageStats.hitsQueued() >= 19) usageStats.send().catch(err => console.error(err.stack))
+  if (usageStats.hitsQueued() >= 19) {
+    /* if a send takes too long, bin it */
+    const timeout = setTimeout(() => {
+      usageStats.abort()
+    }, 1500)
+    usageStats.send()
+      .then(responses => {
+        clearTimeout(timeout)
+      })
+      .catch(err => {
+        clearTimeout(timeout)
+      })
+  }
 }
