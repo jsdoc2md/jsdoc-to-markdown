@@ -1,10 +1,8 @@
 'use strict'
-const version = require('../../package').version
-const UsageStats = require('usage-stats')
 const jsdocApi = require('jsdoc-api')
 const dmd = require('dmd')
 const os = require('os')
-const stats = require('./stats').stats
+const UsageStats = require('app-usage-stats')
 
 /**
  * @module jsdoc-to-markdown
@@ -13,30 +11,69 @@ const stats = require('./stats').stats
  * const jsdoc2md = require('jsdoc-to-markdown')
  */
 
+const usage = new UsageStats('UA-70853320-4', 'jsdoc2md', {
+  version: require('../../package').version,
+  sendInterval: 1000 * 60 * 60 * 24, // 24 hours
+  // sendInterval: 5000,
+  metricMap: {
+    session: 1,
+    source: 2,
+    configure: 3,
+    html: 4,
+    template: 5,
+    'heading-depth': 6,
+    'example-lang': 7,
+    plugin: 8,
+    helper: 9,
+    partial: 10,
+    'name-format': 11,
+    'no-gfm': 12,
+    separators: 13,
+    'module-index-format': 14,
+    'global-index-format': 15,
+    'param-list-format': 16,
+    'property-list-format': 17,
+    'member-index-format': 18,
+    private: 19,
+    cache: 20
+  },
+  dimensionMap: {
+    interface: 4
+  }
+})
+usage.loadSync()
+exports._interface = 'api'
+
 exports.render = function (options) {
-  return stats('render', options, render)
+  return stats(render, options)
 }
+
 exports.renderSync = function (options) {
-  return stats('renderSync', options, renderSync, true)
+  return statsSync(renderSync, options)
 }
+
 exports.getTemplateData = function (options) {
-  return stats('getTemplateData', options, getTemplateData)
+  return stats(getTemplateData, options)
 }
+
 exports.getTemplateDataSync = function (options) {
-  return stats('getTemplateDataSync', options, getTemplateDataSync, true)
+  return statsSync(getTemplateDataSync, options)
 }
+
 exports.getJsdocData = function (options) {
-  return stats('getJsdocData', options, getJsdocData)
+  return stats(getJsdocData, options)
 }
+
 exports.getJsdocDataSync = function (options) {
-  return stats('getJsdocDataSync', options, getJsdocDataSync, true)
+  return statsSync(getJsdocDataSync, options)
 }
+
 exports.clear = function () {
-  return stats('clear', null, clear)
+  return stats(clear)
 }
 
 /* exposed so the test suite can disable it */
-exports._usageStats = require('./stats').usageStats
+exports._usageStats = usage
 
 /**
  * Returns markdown documentation from jsdoc-annoted source code.
@@ -117,7 +154,6 @@ function getTemplateDataSync (options) {
  * @static
  */
 function getJsdocData (options) {
-  options = options || {}
   const jsdocOptions = new JsdocOptions(options)
   return jsdocApi.explain(jsdocOptions)
 }
@@ -131,7 +167,6 @@ function getJsdocData (options) {
  * @static
  */
 function getJsdocDataSync (options) {
-  options = options || {}
   const jsdocOptions = new JsdocOptions(options)
   return jsdocApi.explainSync(jsdocOptions)
 }
@@ -289,5 +324,53 @@ class DmdOptions {
      * @default false
      */
     this.private = options.private
+  }
+}
+
+process.on('exit', function () {
+  // console.error('EXIT', usage.unsent.stats)
+  usage.saveSync()
+})
+
+function stats (method, options) {
+  const metrics = Object.assign({ session: 1 }, options)
+  for (const key in metrics) {
+    metrics[key] = 1
+  }
+  const timeout = setTimeout(() => usage.abort(), 2000)
+  const endTimeout = () => clearTimeout(timeout)
+  return Promise.all([
+    usage.hit({ name: method.name, interface: exports._interface }, metrics)
+      .then(endTimeout)
+      .catch(endTimeout),
+    method(options)
+      .catch(err => {
+        usage.exception(err.stack, 1, {
+          hitParams: new Map([[ 'cd', method.name ]])
+        })
+        return usage.send()
+          .then(() => { throw err })
+      })
+  ]).then(results => results[1])
+}
+
+function statsSync (method, options) {
+  const metrics = Object.assign({ session: 1 }, options)
+  for (const key in metrics) {
+    metrics[key] = 1
+  }
+  const timeout = setTimeout(() => console.error('usage.abort'), 2000)
+  const endTimeout = () => clearTimeout(timeout)
+  usage.hit({ name: method.name, interface: exports._interface }, metrics)
+    .then(endTimeout)
+    .catch(endTimeout)
+
+  try {
+    return method(options)
+  } catch (err) {
+    usage.exception(err.stack, 1, {
+      hitParams: new Map([[ 'cd', method.name ]])
+    })
+    usage.send()
   }
 }
