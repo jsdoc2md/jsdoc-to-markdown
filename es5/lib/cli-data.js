@@ -41,11 +41,15 @@ var jsdoc2mdDefinitions = [{
   name: 'jsdoc',
   type: Boolean,
   description: 'Prints the raw jsdoc data.'
-}, { name: 'version', type: Boolean }, {
+}, { name: 'version', type: Boolean }, { name: 'no-usage-stats', type: Boolean }, {
+  name: 'no-cache',
+  type: Boolean,
+  description: 'By default, repeat invocations against the same input with the same options returns from cache. This option disables that. '
+}, {
   name: 'clear',
   type: Boolean,
   description: 'Clears the cache.'
-}, { name: 'no-usage-stats', type: Boolean }, { name: 'no-cache', type: Boolean }];
+}];
 
 var dmdDefinitions = [{
   name: 'template',
@@ -155,7 +159,7 @@ module.exports = {
     content: 'Main options affecting mode. If none of the following are supplied, the tool will generate markdown docs.'
   }, {
     optionList: jsdoc2mdDefinitions,
-    hide: ['no-usage-stats', 'debug', 'no-cache']
+    hide: ['no-usage-stats', 'debug']
   }, {
     header: 'jsdoc options',
     content: 'Options regarding the input source code, passed directly to jsdoc.'
