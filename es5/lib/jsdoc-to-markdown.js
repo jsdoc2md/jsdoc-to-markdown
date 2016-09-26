@@ -7,7 +7,7 @@ var dmd = require('dmd');
 var os = require('os');
 var UsageStats = require('app-usage-stats');
 
-var usage = new UsageStats('UA-70853320-4', 'jsdoc2md', {
+var usage = new UsageStats('UA-70853320-3', 'jsdoc2md', {
   version: require('../../package').version,
   sendInterval: 1000 * 60 * 60 * 24,
   metricMap: {

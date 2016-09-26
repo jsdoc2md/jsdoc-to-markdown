@@ -11,7 +11,7 @@ const UsageStats = require('app-usage-stats')
  * const jsdoc2md = require('jsdoc-to-markdown')
  */
 
-const usage = new UsageStats('UA-70853320-4', 'jsdoc2md', {
+const usage = new UsageStats('UA-70853320-3', 'jsdoc2md', {
   version: require('../../package').version,
   sendInterval: 1000 * 60 * 60 * 24, // 24 hours
   // sendInterval: 5000,
