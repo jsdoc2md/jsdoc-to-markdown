@@ -11,10 +11,10 @@ const UsageStats = require('app-usage-stats')
  * const jsdoc2md = require('jsdoc-to-markdown')
  */
 
-const usage = new UsageStats('UA-70853320-3', 'jsdoc2md', {
+const usage = new UsageStats('UA-70853320-3', {
+  name: 'jsdoc2md',
   version: require('../../package').version,
   sendInterval: 1000 * 60 * 60 * 24, // 24 hours
-  // sendInterval: 5000,
   metricMap: {
     session: 1,
     source: 2,
@@ -328,27 +328,24 @@ class DmdOptions {
 }
 
 process.on('exit', function () {
-  // console.error('EXIT', usage.unsent.stats)
   usage.saveSync()
 })
+
+var sendOptions = sendOptions
 
 function stats (method, options) {
   const metrics = Object.assign({ session: 1 }, options)
   for (const key in metrics) {
     metrics[key] = 1
   }
-  const timeout = setTimeout(() => usage.abort(), 2000)
-  const endTimeout = () => clearTimeout(timeout)
   return Promise.all([
-    usage.hit({ name: method.name, interface: exports._interface }, metrics)
-      .then(endTimeout)
-      .catch(endTimeout),
+    usage.hit({ name: method.name, interface: exports._interface }, metrics, sendOptions),
     method(options)
       .catch(err => {
         usage.exception(err.stack, 1, {
           hitParams: new Map([[ 'cd', method.name ]])
         })
-        return usage.send()
+        return usage.send(sendOptions)
           .then(() => { throw err })
       })
   ]).then(results => results[1])
@@ -359,11 +356,7 @@ function statsSync (method, options) {
   for (const key in metrics) {
     metrics[key] = 1
   }
-  const timeout = setTimeout(() => console.error('usage.abort'), 2000)
-  const endTimeout = () => clearTimeout(timeout)
-  usage.hit({ name: method.name, interface: exports._interface }, metrics)
-    .then(endTimeout)
-    .catch(endTimeout)
+  usage.hit({ name: method.name, interface: exports._interface }, metrics, sendOptions)
 
   try {
     return method(options)
@@ -371,6 +364,9 @@ function statsSync (method, options) {
     usage.exception(err.stack, 1, {
       hitParams: new Map([[ 'cd', method.name ]])
     })
-    usage.send()
+    usage.send(sendOptions)
+      .catch(err => {
+        // avoid warning
+      })
   }
 }

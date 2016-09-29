@@ -7,7 +7,8 @@ var dmd = require('dmd');
 var os = require('os');
 var UsageStats = require('app-usage-stats');
 
-var usage = new UsageStats('UA-70853320-3', 'jsdoc2md', {
+var usage = new UsageStats('UA-70853320-3', {
+  name: 'jsdoc2md',
   version: require('../../package').version,
   sendInterval: 1000 * 60 * 60 * 24,
   metricMap: {
@@ -168,22 +169,18 @@ process.on('exit', function () {
   usage.saveSync();
 });
 
+var sendOptions = sendOptions;
+
 function stats(method, options) {
   var metrics = Object.assign({ session: 1 }, options);
   for (var key in metrics) {
     metrics[key] = 1;
   }
-  var timeout = setTimeout(function () {
-    return usage.abort();
-  }, 2000);
-  var endTimeout = function endTimeout() {
-    return clearTimeout(timeout);
-  };
-  return Promise.all([usage.hit({ name: method.name, interface: exports._interface }, metrics).then(endTimeout).catch(endTimeout), method(options).catch(function (err) {
+  return Promise.all([usage.hit({ name: method.name, interface: exports._interface }, metrics, sendOptions), method(options).catch(function (err) {
     usage.exception(err.stack, 1, {
       hitParams: new Map([['cd', method.name]])
     });
-    return usage.send().then(function () {
+    return usage.send(sendOptions).then(function () {
       throw err;
     });
   })]).then(function (results) {
@@ -196,13 +193,7 @@ function statsSync(method, options) {
   for (var key in metrics) {
     metrics[key] = 1;
   }
-  var timeout = setTimeout(function () {
-    return console.error('usage.abort');
-  }, 2000);
-  var endTimeout = function endTimeout() {
-    return clearTimeout(timeout);
-  };
-  usage.hit({ name: method.name, interface: exports._interface }, metrics).then(endTimeout).catch(endTimeout);
+  usage.hit({ name: method.name, interface: exports._interface }, metrics, sendOptions);
 
   try {
     return method(options);
@@ -210,6 +201,6 @@ function statsSync(method, options) {
     usage.exception(err.stack, 1, {
       hitParams: new Map([['cd', method.name]])
     });
-    usage.send();
+    usage.send(sendOptions).catch(function (err) {});
   }
 }

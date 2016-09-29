@@ -3,7 +3,14 @@
 var TestRunner = require('test-runner');
 var jsdoc2md = require('../../');
 var a = require('assert');
-jsdoc2md._usageStats.disable();
+var path = require('path');
+var fs = require('fs');
+try {
+  fs.mkdirSync('tmp-test');
+} catch (err) {}
+jsdoc2md._usageStats.defaults.set('tid', 'UA-70853320-4');
+jsdoc2md._usageStats.queuePath = 'tmp-test/unsent.json';
+jsdoc2md._usageStats._lastSentPath = 'tmp-test/lastSent.json';
 
 var runner = new TestRunner();
 var inputFile = 'src/test/fixture/ignore.js';

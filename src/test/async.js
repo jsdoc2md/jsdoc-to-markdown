@@ -2,8 +2,15 @@
 const TestRunner = require('test-runner')
 const jsdoc2md = require('../../')
 const a = require('assert')
-jsdoc2md._usageStats.disable()
-// 'UA-70853320-4'
+const fs = require('fs')
+try {
+  fs.mkdirSync('tmp-test')
+} catch (err) {
+  // exists
+}
+jsdoc2md._usageStats.defaults.set('tid', 'UA-70853320-4')
+jsdoc2md._usageStats.queuePath = 'tmp-test/unsent.json'
+jsdoc2md._usageStats._lastSentPath = 'tmp-test/lastSent.json'
 
 const runner = new TestRunner()
 const inputFile = 'src/test/fixture/ignore.js'

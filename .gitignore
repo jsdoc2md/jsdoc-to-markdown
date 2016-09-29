@@ -2,3 +2,4 @@ out
 tmp
 node_modules
 coverage
+tmp-test
