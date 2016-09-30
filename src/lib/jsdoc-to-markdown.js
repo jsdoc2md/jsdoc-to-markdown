@@ -160,7 +160,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   /**
    * Returns markdown documentation from jsdoc-annoted source code.
    *
-   * @param [options] {module:jsdoc-to-markdown~JsdocOptions | module:jsdoc-to-markdown~DmdOptions} - the options
+   * @param [options] {JsdocOptions | DmdOptions} - the options
    * @return {Promise}
    * @fulfil {string} - the rendered docs
    * @category async
@@ -177,7 +177,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   /**
    * Returns markdown documentation from jsdoc-annoted source code.
    *
-   * @param [options] {module:jsdoc-to-markdown~JsdocOptions | module:jsdoc-to-markdown~DmdOptions} - the options
+   * @param [options] {JsdocOptions | DmdOptions} - the options
    * @return {string}
    * @engine nodejs >= 0.12
    * @category sync
@@ -191,7 +191,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   /**
    * Returns template data (jsdoc-parse output).
    *
-   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @param [options] {JsdocOptions} - the options
    * @return {Promise}
    * @fulfil {object[]} - the json data
    * @category async
@@ -203,7 +203,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   /**
    * Returns template data (jsdoc-parse output).
    *
-   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @param [options] {JsdocOptions} - the options
    * @return {object[]}
    * @category sync
    */
@@ -214,7 +214,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   /**
    * Returns raw jsdoc data.
    *
-   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @param [options] {JsdocOptions} - the options
    * @return {Promise}
    * @fulfil {object[]}
    * @category async
@@ -226,7 +226,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   /**
    * Returns raw jsdoc data.
    *
-   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @param [options] {JsdocOptions} - the options
    * @return {object[]}
    * @category sync
    */
@@ -242,6 +242,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   clear () {
     return this._stats(super.clear)
   }
+
   getNamepaths (options) {
     return this._stats(super.getNamepaths, options)
   }

@@ -40,7 +40,7 @@ Returns markdown documentation from jsdoc-annoted source code.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>module:jsdoc-to-markdown~JsdocOptions</code> &#124; <code>module:jsdoc-to-markdown~DmdOptions</code> | the options |
+| [options] | <code>[JsdocOptions](#JsdocOptions)</code> &#124; <code>[DmdOptions](#DmdOptions)</code> | the options |
 
 **Example**  
 Pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -61,7 +61,7 @@ Returns template data (jsdoc-parse output).
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>module:jsdoc-to-markdown~JsdocOptions</code> | the options |
+| [options] | <code>[JsdocOptions](#JsdocOptions)</code> | the options |
 
 
 -
@@ -77,7 +77,7 @@ Returns raw jsdoc data.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>module:jsdoc-to-markdown~JsdocOptions</code> | the options |
+| [options] | <code>[JsdocOptions](#JsdocOptions)</code> | the options |
 
 
 -
@@ -103,7 +103,7 @@ Returns markdown documentation from jsdoc-annoted source code.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>module:jsdoc-to-markdown~JsdocOptions</code> &#124; <code>module:jsdoc-to-markdown~DmdOptions</code> | the options |
+| [options] | <code>[JsdocOptions](#JsdocOptions)</code> &#124; <code>[DmdOptions](#DmdOptions)</code> | the options |
 
 **Example**  
 ```js
@@ -122,7 +122,7 @@ Returns template data (jsdoc-parse output).
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>module:jsdoc-to-markdown~JsdocOptions</code> | the options |
+| [options] | <code>[JsdocOptions](#JsdocOptions)</code> | the options |
 
 
 -
@@ -137,7 +137,7 @@ Returns raw jsdoc data.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>module:jsdoc-to-markdown~JsdocOptions</code> | the options |
+| [options] | <code>[JsdocOptions](#JsdocOptions)</code> | the options |
 
 
 -
