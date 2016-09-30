@@ -155,7 +155,7 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
     value: function _stats(method, options) {
       var _this2 = this;
 
-      return Promise.all([this._hit(method, options), method.call(this, options).catch(function (err) {
+      return Promise.all([this._hit(method, options), method.call(JsdocToMarkdownCore.prototype, options).catch(function (err) {
         _this2._usage.exception(err.stack, 1, {
           hitParams: new Map([['cd', method.name]])
         });
@@ -171,7 +171,7 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
     value: function _statsSync(method, options) {
       this._hit(method, options);
       try {
-        return method.call(this, options);
+        return method.call(JsdocToMarkdownCore.prototype, options);
       } catch (err) {
         this._usage.exception(err.stack, 1, {
           hitParams: new Map([['cd', method.name]])
