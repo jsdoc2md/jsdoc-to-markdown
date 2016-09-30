@@ -23,14 +23,10 @@ if (options.help) {
 /* jsdoc2md --clear */
 } else if (options.clear) {
   const jsdoc2md = require('../../')
-  // const Jsdoc2md = require('../../')
-  // const jsdoc2md = new Jsdoc2md()
   jsdoc2md._interface = 'cli'
   jsdoc2md.clear().catch(tool.halt)
 } else {
   const jsdoc2md = require('../../')
-  // const Jsdoc2md = require('../../')
-  // const jsdoc2md = new Jsdoc2md()
   jsdoc2md._interface = 'cli'
 
   /* jsdoc2md --config */
@@ -68,11 +64,11 @@ if (options.help) {
       .catch(tool.halt)
 
   /* jsdoc2md --namepaths */
-  } else if (options.stats) {
+  } else if (options.namepaths) {
     jsdoc2md
-      .getStats(options.files)
-      .then(function (json) {
-        tool.printOutput(JSON.stringify(json, null, '  '))
+      .getNamepaths(options)
+      .then(function (namepaths) {
+        tool.printOutput(JSON.stringify(namepaths, null, '  '))
       })
       .catch(tool.halt)
 

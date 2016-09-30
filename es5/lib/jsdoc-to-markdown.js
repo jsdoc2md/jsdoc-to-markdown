@@ -14,6 +14,8 @@ var jsdocApi = require('jsdoc-api');
 var dmd = require('dmd');
 var os = require('os');
 var UsageStats = require('app-usage-stats');
+var DmdOptions = require('./dmd-options');
+var JsdocOptions = require('./jsdoc-options');
 
 var JsdocToMarkdownCore = function () {
   function JsdocToMarkdownCore() {
@@ -68,6 +70,22 @@ var JsdocToMarkdownCore = function () {
     value: function clear() {
       return jsdocApi.cache.clear().then(function () {
         return dmd.cache.clear();
+      });
+    }
+  }, {
+    key: 'getNamepaths',
+    value: function getNamepaths(options) {
+      return this.getTemplateData(options).then(function (data) {
+        var namepaths = {};
+        var kinds = ['module', 'class', 'constructor', 'mixin', 'member', 'namespace', 'constant', 'function', 'event', 'typedef', 'external'];
+        kinds.forEach(function (kind) {
+          namepaths[kind] = data.filter(function (identifier) {
+            return identifier.kind === kind;
+          }).map(function (identifier) {
+            return identifier.longname;
+          });
+        });
+        return namepaths;
       });
     }
   }]);
@@ -196,61 +214,14 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
     value: function clear() {
       return this._stats(_get(JsdocToMarkdown.prototype.__proto__ || Object.getPrototypeOf(JsdocToMarkdown.prototype), 'clear', this));
     }
+  }, {
+    key: 'getNamepaths',
+    value: function getNamepaths(options) {
+      return this._stats(_get(JsdocToMarkdown.prototype.__proto__ || Object.getPrototypeOf(JsdocToMarkdown.prototype), 'getNamepaths', this), options);
+    }
   }]);
 
   return JsdocToMarkdown;
 }(JsdocToMarkdownCore);
-
-var JsdocOptions = function JsdocOptions(options) {
-  _classCallCheck(this, JsdocOptions);
-
-  options = options || {};
-
-  this.cache = options.cache === undefined ? true : options.cache;
-
-  this.files = options.files;
-
-  this.source = options.source;
-
-  this.configure = options.configure;
-
-  this.html = options.html;
-};
-
-var DmdOptions = function DmdOptions(options) {
-  _classCallCheck(this, DmdOptions);
-
-  var arrayify = require('array-back');
-
-  this.template = options.template || '{{>main}}';
-
-  this['heading-depth'] = options['heading-depth'] || 2;
-
-  this['example-lang'] = options['example-lang'] || 'js';
-
-  this.plugin = arrayify(options.plugin);
-
-  this.helper = arrayify(options.helper);
-
-  this.partial = arrayify(options.partial);
-
-  this['name-format'] = options['name-format'];
-
-  this['no-gfm'] = options['no-gfm'];
-
-  this.separators = options.separators;
-
-  this['module-index-format'] = options['module-index-format'] || 'dl';
-
-  this['global-index-format'] = options['global-index-format'] || 'dl';
-
-  this['param-list-format'] = options['param-list-format'] || 'table';
-
-  this['property-list-format'] = options['property-list-format'] || 'table';
-
-  this['member-index-format'] = options['member-index-format'] || 'grouped';
-
-  this.private = options.private;
-};
 
 module.exports = new JsdocToMarkdown();

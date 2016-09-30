@@ -18,12 +18,10 @@ if (options.help) {
   tool.printOutput(version);
 } else if (options.clear) {
   var jsdoc2md = require('../../');
-
   jsdoc2md._interface = 'cli';
   jsdoc2md.clear().catch(tool.halt);
 } else {
   var _jsdoc2md = require('../../');
-
   _jsdoc2md._interface = 'cli';
 
   if (options.config) {
@@ -48,9 +46,9 @@ if (options.help) {
     _jsdoc2md.getJsdocData(options).then(function (json) {
       tool.printOutput(JSON.stringify(json, null, '  '));
     }).catch(tool.halt);
-  } else if (options.stats) {
-    _jsdoc2md.getStats(options.files).then(function (json) {
-      tool.printOutput(JSON.stringify(json, null, '  '));
+  } else if (options.namepaths) {
+    _jsdoc2md.getNamepaths(options).then(function (namepaths) {
+      tool.printOutput(JSON.stringify(namepaths, null, '  '));
     }).catch(tool.halt);
   } else {
     var fs = require('fs');

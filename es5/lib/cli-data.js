@@ -22,6 +22,10 @@ var jsdocDefinitions = [{
   name: 'html',
   type: Boolean,
   description: 'Enable experimental parsing of .html files. When specified, any configuration supplied via [bold]{--configure} is ignored.'
+}, {
+  name: 'namepaths',
+  type: Boolean,
+  description: 'Print namepaths.'
 }];
 
 var jsdoc2mdDefinitions = [{
@@ -148,11 +152,11 @@ module.exports = {
     }, {
       cmmd: '$ jsdoc2md <jsdoc-options> [bold]{--json}'
     }, {
+      cmmd: '$ jsdoc2md <jsdoc-options> [bold]{--namepaths}'
+    }, {
       cmmd: '$ jsdoc2md [bold]{--help}'
     }, {
       cmmd: '$ jsdoc2md [bold]{--config}'
-    }, {
-      cmmd: '$ jsdoc2md [bold]{--stats}'
     }]
   }, {
     header: 'General options',
