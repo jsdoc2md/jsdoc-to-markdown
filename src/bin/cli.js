@@ -23,10 +23,14 @@ if (options.help) {
 /* jsdoc2md --clear */
 } else if (options.clear) {
   const jsdoc2md = require('../../')
+  // const Jsdoc2md = require('../../')
+  // const jsdoc2md = new Jsdoc2md()
   jsdoc2md._interface = 'cli'
   jsdoc2md.clear().catch(tool.halt)
 } else {
   const jsdoc2md = require('../../')
+  // const Jsdoc2md = require('../../')
+  // const jsdoc2md = new Jsdoc2md()
   jsdoc2md._interface = 'cli'
 
   /* jsdoc2md --config */

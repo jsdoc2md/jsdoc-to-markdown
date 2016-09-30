@@ -7,9 +7,9 @@ var fs = require('fs');
 try {
   fs.mkdirSync('tmp-test');
 } catch (err) {}
-jsdoc2md._usageStats.defaults.set('tid', 'UA-70853320-4');
-jsdoc2md._usageStats.queuePath = 'tmp-test/unsent.json';
-jsdoc2md._usageStats._lastSentPath = 'tmp-test/lastSent.json';
+jsdoc2md._usage.defaults.set('tid', 'UA-70853320-4');
+jsdoc2md._usage.queuePath = 'tmp-test/unsent.json';
+jsdoc2md._usage._lastSentPath = 'tmp-test/lastSent.json';
 
 var runner = new TestRunner();
 var inputFile = 'src/test/fixture/ignore.js';

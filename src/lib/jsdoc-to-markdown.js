@@ -6,178 +6,220 @@ const UsageStats = require('app-usage-stats')
 
 /**
  * @module jsdoc-to-markdown
- * @typicalname jsdoc2md
  * @example
  * const jsdoc2md = require('jsdoc-to-markdown')
  */
 
-const usage = new UsageStats('UA-70853320-3', {
-  name: 'jsdoc2md',
-  version: require('../../package').version,
-  sendInterval: 1000 * 60 * 60 * 24, // 24 hours
-  metricMap: {
-    session: 1,
-    source: 2,
-    configure: 3,
-    html: 4,
-    template: 5,
-    'heading-depth': 6,
-    'example-lang': 7,
-    plugin: 8,
-    helper: 9,
-    partial: 10,
-    'name-format': 11,
-    'no-gfm': 12,
-    separators: 13,
-    'module-index-format': 14,
-    'global-index-format': 15,
-    'param-list-format': 16,
-    'property-list-format': 17,
-    'member-index-format': 18,
-    private: 19,
-    cache: 20
-  },
-  dimensionMap: {
-    interface: 4
+class JsdocToMarkdownCore {
+  render (options) {
+    options = options || {}
+    const dmdOptions = new DmdOptions(options)
+    return this.getTemplateData(options)
+      .then(templateData => dmd.async(templateData, dmdOptions))
   }
-})
-usage.loadSync()
-exports._interface = 'api'
 
-exports.render = function (options) {
-  return stats(render, options)
-}
+  renderSync (options) {
+    options = options || {}
+    const dmdOptions = new DmdOptions(options)
+    return dmd(this.getTemplateDataSync(options), dmdOptions)
+  }
 
-exports.renderSync = function (options) {
-  return statsSync(renderSync, options)
-}
+  getTemplateData (options) {
+    options = options || {}
+    const jsdocParse = require('jsdoc-parse')
+    return this.getJsdocData(options)
+      .then(jsdocParse)
+  }
 
-exports.getTemplateData = function (options) {
-  return stats(getTemplateData, options)
-}
+  getTemplateDataSync (options) {
+    options = options || {}
+    const jsdocParse = require('jsdoc-parse')
+    const jsdocData = this.getJsdocDataSync(options)
+    return jsdocParse(jsdocData, options)
+  }
 
-exports.getTemplateDataSync = function (options) {
-  return statsSync(getTemplateDataSync, options)
-}
+  getJsdocData (options) {
+    const jsdocOptions = new JsdocOptions(options)
+    return jsdocApi.explain(jsdocOptions)
+  }
 
-exports.getJsdocData = function (options) {
-  return stats(getJsdocData, options)
-}
+  getJsdocDataSync (options) {
+    const jsdocOptions = new JsdocOptions(options)
+    return jsdocApi.explainSync(jsdocOptions)
+  }
 
-exports.getJsdocDataSync = function (options) {
-  return statsSync(getJsdocDataSync, options)
-}
-
-exports.clear = function () {
-  return stats(clear)
-}
-
-/* exposed so the test suite can disable it */
-exports._usageStats = usage
-
-/**
- * Returns markdown documentation from jsdoc-annoted source code.
- *
- * @param [options] {module:jsdoc-to-markdown~JsdocOptions | module:jsdoc-to-markdown~DmdOptions} - the options
- * @return {Promise}
- * @fulfil {string} - the rendered docs
- * @category async
- * @static
- * @example
- * Pass in filepaths (`**` glob matching supported) of javascript source files:
- * ```js
- * > jsdoc2md.render('lib/*.js').then(console.log)
- * ```
- */
-function render (options) {
-  options = options || {}
-  const dmdOptions = new DmdOptions(options)
-  return getTemplateData(options)
-    .then(templateData => dmd.async(templateData, dmdOptions))
+  clear () {
+    return jsdocApi.cache.clear().then(() => dmd.cache.clear())
+  }
 }
 
 /**
- * Returns markdown documentation from jsdoc-annoted source code.
- *
- * @param [options] {module:jsdoc-to-markdown~JsdocOptions | module:jsdoc-to-markdown~DmdOptions} - the options
- * @return {string}
- * @engine nodejs >= 0.12
- * @category sync
- * @static
- * @example
- * const docs = jsdoc2md.renderSync('lib/*.js')
- */
-function renderSync (options) {
-  options = options || {}
-  const dmdOptions = new DmdOptions(options)
-  return dmd(getTemplateDataSync(options), dmdOptions)
-}
+ * @alias module:jsdoc-to-markdown
+ * @extends JsdocToMarkdownCore
+ * @typicalname jsdoc2md
+*/
+class JsdocToMarkdown extends JsdocToMarkdownCore {
+  constructor () {
+    super()
+    this._usage = new UsageStats('UA-70853320-3', {
+      name: 'jsdoc2md',
+      version: require('../../package').version,
+      sendInterval: 1000 * 60 * 60 * 24, // 24 hours
+      metricMap: {
+        session: 1,
+        source: 2,
+        configure: 3,
+        html: 4,
+        template: 5,
+        'heading-depth': 6,
+        'example-lang': 7,
+        plugin: 8,
+        helper: 9,
+        partial: 10,
+        'name-format': 11,
+        'no-gfm': 12,
+        separators: 13,
+        'module-index-format': 14,
+        'global-index-format': 15,
+        'param-list-format': 16,
+        'property-list-format': 17,
+        'member-index-format': 18,
+        private: 19,
+        cache: 20
+      },
+      dimensionMap: {
+        interface: 4
+      }
+    })
+    this._usage.loadSync()
+    this._interface = 'api'
+    this._sendOptions = { timeout: 2000 }
 
-/**
- * Returns template data (jsdoc-parse output).
- *
- * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
- * @return {Promise}
- * @fulfil {object[]} - the json data
- * @category async
- * @static
- */
-function getTemplateData (options) {
-  options = options || {}
-  const jsdocParse = require('jsdoc-parse')
-  return getJsdocData(options)
-    .then(jsdocParse)
-}
+    process.on('exit', () => this._usage.saveSync())
+  }
 
-/**
- * Returns template data (jsdoc-parse output).
- *
- * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
- * @return {object[]}
- * @category sync
- * @static
- */
-function getTemplateDataSync (options) {
-  options = options || {}
-  const jsdocParse = require('jsdoc-parse')
-  const jsdocData = getJsdocDataSync(options)
-  return jsdocParse(jsdocData, options)
-}
+  _hit (method, options) {
+    const metrics = Object.assign({ session: 1 }, options)
+    for (const key in metrics) {
+      metrics[key] = 1
+    }
+    return this._usage.hit({ name: method.name, interface: this._interface }, metrics, this._sendOptions)
+  }
 
-/**
- * Returns raw jsdoc data.
- *
- * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
- * @return {Promise}
- * @fulfil {object[]}
- * @category async
- * @static
- */
-function getJsdocData (options) {
-  const jsdocOptions = new JsdocOptions(options)
-  return jsdocApi.explain(jsdocOptions)
-}
+  _stats (method, options) {
+    return Promise.all([
+      this._hit(method, options),
+      method.call(this, options)
+        .catch(err => {
+          this._usage.exception(err.stack, 1, {
+            hitParams: new Map([[ 'cd', method.name ]])
+          })
+          return this._usage.send(this._sendOptions)
+            .then(() => { throw err })
+        })
+    ]).then(results => results[1])
+  }
 
-/**
- * Returns raw jsdoc data.
- *
- * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
- * @return {object[]}
- * @category sync
- * @static
- */
-function getJsdocDataSync (options) {
-  const jsdocOptions = new JsdocOptions(options)
-  return jsdocApi.explainSync(jsdocOptions)
-}
+  _statsSync (method, options) {
+    this._hit(method, options)
+    try {
+      return method.call(this, options)
+    } catch (err) {
+      this._usage.exception(err.stack, 1, {
+        hitParams: new Map([[ 'cd', method.name ]])
+      })
+      this._usage.send(this._sendOptions)
+        .catch(err => {
+          // catch warning
+        })
+    }
+  }
 
-/**
- * Clear the cache.
- * @returns {Promise}
- * @static
- */
-function clear () {
-  return jsdocApi.cache.clear().then(() => dmd.cache.clear())
+  /**
+   * Returns markdown documentation from jsdoc-annoted source code.
+   *
+   * @param [options] {module:jsdoc-to-markdown~JsdocOptions | module:jsdoc-to-markdown~DmdOptions} - the options
+   * @return {Promise}
+   * @fulfil {string} - the rendered docs
+   * @category async
+   * @example
+   * Pass in filepaths (`**` glob matching supported) of javascript source files:
+   * ```js
+   * > jsdoc2md.render('lib/*.js').then(console.log)
+   * ```
+   */
+  render (options) {
+    return this._stats(super.render, options)
+  }
+
+  /**
+   * Returns markdown documentation from jsdoc-annoted source code.
+   *
+   * @param [options] {module:jsdoc-to-markdown~JsdocOptions | module:jsdoc-to-markdown~DmdOptions} - the options
+   * @return {string}
+   * @engine nodejs >= 0.12
+   * @category sync
+   * @example
+   * const docs = jsdoc2md.renderSync('lib/*.js')
+   */
+  renderSync (options) {
+    return this._statsSync(super.renderSync, options)
+  }
+
+  /**
+   * Returns template data (jsdoc-parse output).
+   *
+   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @return {Promise}
+   * @fulfil {object[]} - the json data
+   * @category async
+   */
+  getTemplateData (options) {
+    return this._stats(super.getTemplateData, options)
+  }
+
+  /**
+   * Returns template data (jsdoc-parse output).
+   *
+   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @return {object[]}
+   * @category sync
+   */
+  getTemplateDataSync (options) {
+    return this._statsSync(super.getTemplateDataSync, options)
+  }
+
+  /**
+   * Returns raw jsdoc data.
+   *
+   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @return {Promise}
+   * @fulfil {object[]}
+   * @category async
+   */
+  getJsdocData (options) {
+    return this._stats(super.getJsdocData, options)
+  }
+
+  /**
+   * Returns raw jsdoc data.
+   *
+   * @param [options] {module:jsdoc-to-markdown~JsdocOptions} - the options
+   * @return {object[]}
+   * @category sync
+   */
+  getJsdocDataSync (options) {
+    return this._statsSync(super.getJsdocDataSync, options)
+  }
+
+  /**
+   * Clear the cache.
+   * @returns {Promise}
+   * @category async
+   */
+  clear () {
+    return this._stats(super.clear)
+  }
 }
 
 /**
@@ -327,46 +369,4 @@ class DmdOptions {
   }
 }
 
-process.on('exit', function () {
-  usage.saveSync()
-})
-
-var sendOptions = sendOptions
-
-function stats (method, options) {
-  const metrics = Object.assign({ session: 1 }, options)
-  for (const key in metrics) {
-    metrics[key] = 1
-  }
-  return Promise.all([
-    usage.hit({ name: method.name, interface: exports._interface }, metrics, sendOptions),
-    method(options)
-      .catch(err => {
-        usage.exception(err.stack, 1, {
-          hitParams: new Map([[ 'cd', method.name ]])
-        })
-        return usage.send(sendOptions)
-          .then(() => { throw err })
-      })
-  ]).then(results => results[1])
-}
-
-function statsSync (method, options) {
-  const metrics = Object.assign({ session: 1 }, options)
-  for (const key in metrics) {
-    metrics[key] = 1
-  }
-  usage.hit({ name: method.name, interface: exports._interface }, metrics, sendOptions)
-
-  try {
-    return method(options)
-  } catch (err) {
-    usage.exception(err.stack, 1, {
-      hitParams: new Map([[ 'cd', method.name ]])
-    })
-    usage.send(sendOptions)
-      .catch(err => {
-        // avoid warning
-      })
-  }
-}
+module.exports = new JsdocToMarkdown()

@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "test": "node test.js",
-    "docs": "node src/bin/cli.js --separators src/lib/jsdoc-to-markdown.js > docs/API.md; echo ",
+    "docs": "node src/bin/cli.js --separators src/lib/jsdoc-to-markdown.js --heading-depth 1 > docs/API.md; echo ",
     "cover": "istanbul cover ./node_modules/.bin/test-runner src/test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo",
     "es5": "rm -rf es5 && babel --presets babel-preset-es2015 --no-comments src --out-dir es5"
   },
