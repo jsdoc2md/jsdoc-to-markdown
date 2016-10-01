@@ -129,6 +129,8 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   }
 
   _stats (method, options) {
+    options = options || {}
+    if (options['no-usage-stats']) this._usage.disable()
     return Promise.all([
       this._hit(method, options),
       method.call(JsdocToMarkdownCore.prototype, options)
@@ -143,6 +145,8 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
   }
 
   _statsSync (method, options) {
+    options = options || {}
+    if (options['no-usage-stats']) this._usage.disable()
     this._hit(method, options)
     try {
       return method.call(JsdocToMarkdownCore.prototype, options)
