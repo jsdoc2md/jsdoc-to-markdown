@@ -24,7 +24,7 @@ if (options.help) {
 } else if (options.clear) {
   const jsdoc2md = require('../../')
   jsdoc2md._interface = 'cli'
-  jsdoc2md.clear().catch(tool.halt)
+  jsdoc2md.clear().catch(handleError)
 } else {
   const jsdoc2md = require('../../')
   jsdoc2md._interface = 'cli'
@@ -43,7 +43,7 @@ if (options.help) {
     assert.ok(options.files.length || options.source, 'Must supply either --files or --source')
   } catch (err) {
     tool.printOutput(cli.usage)
-    tool.halt(err)
+    handleError(err)
   }
 
   /* jsdoc2md --json */
@@ -52,7 +52,7 @@ if (options.help) {
       .then(function (json) {
         tool.printOutput(JSON.stringify(json, null, '  '))
       })
-      .catch(tool.halt)
+      .catch(handleError)
 
   /* jsdoc2md --jsdoc */
   } else if (options.jsdoc) {
@@ -61,7 +61,7 @@ if (options.help) {
       .then(function (json) {
         tool.printOutput(JSON.stringify(json, null, '  '))
       })
-      .catch(tool.halt)
+      .catch(handleError)
 
   /* jsdoc2md --namepaths */
   } else if (options.namepaths) {
@@ -70,7 +70,7 @@ if (options.help) {
       .then(function (namepaths) {
         tool.printOutput(JSON.stringify(namepaths, null, '  '))
       })
-      .catch(tool.halt)
+      .catch(handleError)
 
   /* jsdoc2md [<options>] --src <files> */
   } else {
@@ -80,7 +80,7 @@ if (options.help) {
     jsdoc2md
       .render(options)
       .then(output => process.stdout.write(output))
-      .catch(err => tool.halt(err, { stack: true }))
+      .catch(handleError)
   }
 }
 
@@ -95,6 +95,10 @@ function parseCommandLine () {
   try {
     return tool.getCli(cliData.definitions, cliData.usageSections)
   } catch (err) {
-    tool.halt(err, { stack: false })
+    handleError(err)
   }
+}
+
+function handleError (err) {
+  tool.halt(err.toString())
 }

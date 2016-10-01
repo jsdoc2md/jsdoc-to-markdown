@@ -106,7 +106,7 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
       version: require('../../package').version,
       sendInterval: 1000 * 60 * 60 * 24,
       metricMap: {
-        session: 1,
+        invocation: 1,
         source: 2,
         configure: 3,
         html: 4,
@@ -128,7 +128,8 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
         cache: 20
       },
       dimensionMap: {
-        interface: 4
+        interface: 4,
+        exception: 5
       }
     });
     _this._usage.loadSync();
@@ -143,12 +144,14 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
 
   _createClass(JsdocToMarkdown, [{
     key: '_hit',
-    value: function _hit(method, options) {
-      var metrics = Object.assign({ session: 1 }, options);
+    value: function _hit(method, options, exception) {
+      var metrics = Object.assign({ invocation: 1 }, options);
       for (var key in metrics) {
         metrics[key] = 1;
       }
-      return this._usage.hit({ name: method.name, interface: this._interface }, metrics, this._sendOptions);
+      var dimensions = { name: method.name, interface: this._interface };
+      if (exception) dimensions.exception = exception;
+      return this._usage.hit(dimensions, metrics, this._sendOptions);
     }
   }, {
     key: '_stats',
@@ -157,15 +160,18 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
 
       options = options || {};
       if (options['no-usage-stats']) this._usage.disable();
-      return Promise.all([this._hit(method, options), method.call(JsdocToMarkdownCore.prototype, options).catch(function (err) {
-        _this2._usage.exception(err.stack, 1, {
-          hitParams: new Map([['cd', method.name]])
+      return method.call(JsdocToMarkdownCore.prototype, options).then(function (output) {
+        return _this2._hit(method, options).then(function () {
+          return output;
+        }).catch(function () {
+          return output;
         });
-        return _this2._usage.send(_this2._sendOptions).then(function () {
+      }).catch(function (err) {
+        return _this2._hit(method, options, err.toString()).then(function () {
+          throw err;
+        }).catch(function () {
           throw err;
         });
-      })]).then(function (results) {
-        return results[1];
       });
     }
   }, {
@@ -173,14 +179,13 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
     value: function _statsSync(method, options) {
       options = options || {};
       if (options['no-usage-stats']) this._usage.disable();
-      this._hit(method, options);
       try {
-        return method.call(JsdocToMarkdownCore.prototype, options);
+        var output = method.call(JsdocToMarkdownCore.prototype, options);
+        this._hit(method, options);
+        return output;
       } catch (err) {
-        this._usage.exception(err.stack, 1, {
-          hitParams: new Map([['cd', method.name]])
-        });
-        this._usage.send(this._sendOptions).catch(function (err) {});
+        this._hit(method, options, err.toString());
+        throw err;
       }
     }
   }, {

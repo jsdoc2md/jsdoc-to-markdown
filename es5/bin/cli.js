@@ -19,7 +19,7 @@ if (options.help) {
 } else if (options.clear) {
   var jsdoc2md = require('../../');
   jsdoc2md._interface = 'cli';
-  jsdoc2md.clear().catch(tool.halt);
+  jsdoc2md.clear().catch(handleError);
 } else {
   var _jsdoc2md = require('../../');
   _jsdoc2md._interface = 'cli';
@@ -35,30 +35,28 @@ if (options.help) {
     assert.ok(options.files.length || options.source, 'Must supply either --files or --source');
   } catch (err) {
     tool.printOutput(cli.usage);
-    tool.halt(err);
+    handleError(err);
   }
 
   if (options.json) {
     _jsdoc2md.getTemplateData(options).then(function (json) {
       tool.printOutput(JSON.stringify(json, null, '  '));
-    }).catch(tool.halt);
+    }).catch(handleError);
   } else if (options.jsdoc) {
     _jsdoc2md.getJsdocData(options).then(function (json) {
       tool.printOutput(JSON.stringify(json, null, '  '));
-    }).catch(tool.halt);
+    }).catch(handleError);
   } else if (options.namepaths) {
     _jsdoc2md.getNamepaths(options).then(function (namepaths) {
       tool.printOutput(JSON.stringify(namepaths, null, '  '));
-    }).catch(tool.halt);
+    }).catch(handleError);
   } else {
     var fs = require('fs');
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
 
     _jsdoc2md.render(options).then(function (output) {
       return process.stdout.write(output);
-    }).catch(function (err) {
-      return tool.halt(err, { stack: true });
-    });
+    }).catch(handleError);
   }
 }
 
@@ -73,6 +71,10 @@ function parseCommandLine() {
   try {
     return tool.getCli(cliData.definitions, cliData.usageSections);
   } catch (err) {
-    tool.halt(err, { stack: false });
+    handleError(err);
   }
+}
+
+function handleError(err) {
+  tool.halt(err.toString());
 }

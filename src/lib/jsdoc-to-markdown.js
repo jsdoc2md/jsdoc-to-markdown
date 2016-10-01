@@ -88,7 +88,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
       version: require('../../package').version,
       sendInterval: 1000 * 60 * 60 * 24, // 24 hours
       metricMap: {
-        session: 1,
+        invocation: 1,
         source: 2,
         configure: 3,
         html: 4,
@@ -110,7 +110,8 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
         cache: 20
       },
       dimensionMap: {
-        interface: 4
+        interface: 4,
+        exception: 5
       }
     })
     this._usage.loadSync()
@@ -120,44 +121,42 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
     process.on('exit', () => this._usage.saveSync())
   }
 
-  _hit (method, options) {
-    const metrics = Object.assign({ session: 1 }, options)
+  _hit (method, options, exception) {
+    const metrics = Object.assign({ invocation: 1 }, options)
     for (const key in metrics) {
       metrics[key] = 1
     }
-    return this._usage.hit({ name: method.name, interface: this._interface }, metrics, this._sendOptions)
+    const dimensions = { name: method.name, interface: this._interface }
+    if (exception) dimensions.exception = exception
+    return this._usage.hit(dimensions, metrics, this._sendOptions)
   }
 
   _stats (method, options) {
     options = options || {}
     if (options['no-usage-stats']) this._usage.disable()
-    return Promise.all([
-      this._hit(method, options),
-      method.call(JsdocToMarkdownCore.prototype, options)
-        .catch(err => {
-          this._usage.exception(err.stack, 1, {
-            hitParams: new Map([[ 'cd', method.name ]])
-          })
-          return this._usage.send(this._sendOptions)
-            .then(() => { throw err })
-        })
-    ]).then(results => results[1])
+    return method.call(JsdocToMarkdownCore.prototype, options)
+      .then(output => {
+        return this._hit(method, options)
+          .then(() => output)
+          .catch(() => output)
+      })
+      .catch(err => {
+        return this._hit(method, options, err.toString())
+          .then(() => { throw err })
+          .catch(() => { throw err })
+      })
   }
 
   _statsSync (method, options) {
     options = options || {}
     if (options['no-usage-stats']) this._usage.disable()
-    this._hit(method, options)
     try {
-      return method.call(JsdocToMarkdownCore.prototype, options)
+      const output = method.call(JsdocToMarkdownCore.prototype, options)
+      this._hit(method, options)
+      return output
     } catch (err) {
-      this._usage.exception(err.stack, 1, {
-        hitParams: new Map([[ 'cd', method.name ]])
-      })
-      this._usage.send(this._sendOptions)
-        .catch(err => {
-          // catch warning
-        })
+      this._hit(method, options, err.toString())
+      throw err
     }
   }
 
