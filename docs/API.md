@@ -7,7 +7,7 @@ const jsdoc2md = require('jsdoc-to-markdown')
 ```
 
 * [jsdoc-to-markdown](#module_jsdoc-to-markdown)
-    * [JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown) ⇐ <code>JsdocToMarkdownCore</code> ⏏
+    * [JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown) ⏏
         * _async_
             * [.render([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+render) ⇒ <code>Promise</code>
             * [.getTemplateData([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData) ⇒ <code>Promise</code>
@@ -23,9 +23,8 @@ const jsdoc2md = require('jsdoc-to-markdown')
 
 <a name="exp_module_jsdoc-to-markdown--JsdocToMarkdown"></a>
 
-## JsdocToMarkdown ⇐ <code>JsdocToMarkdownCore</code> ⏏
+## JsdocToMarkdown ⏏
 **Kind**: Exported class  
-**Extends:** <code>JsdocToMarkdownCore</code>  
 
 -
 
