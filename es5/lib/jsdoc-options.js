@@ -13,6 +13,8 @@ var JsdocOptions = function JsdocOptions(options) {
 
   this.source = options.source;
 
+  this.data = options.data;
+
   this.configure = options.configure;
 
   this.html = options.html;

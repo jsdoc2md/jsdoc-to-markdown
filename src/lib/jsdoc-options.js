@@ -13,16 +13,22 @@ class JsdocOptions {
     this.cache = options.cache === undefined ? true : options.cache
 
     /**
-     * One or more filenames to process. Either this or `source` must be supplied.
+     * One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied.
      * @type {string|string[]}
      */
     this.files = options.files
 
     /**
-     * A string containing source code to process. Either this or `source` must be supplied.
+     * A string containing source code to process. Either `files`, `source` or `data` must be supplied.
      * @type {string}
      */
     this.source = options.source
+
+    /**
+     * Raw template data to use. Useful when you already have template data, obtained from `.getTemplateData`. Either `files`, `source` or `data` must be supplied.
+     * @type {object[]}
+     */
+    this.data = options.data
 
     /**
      * The path to the configuration file. Default: path/to/jsdoc/conf.json.

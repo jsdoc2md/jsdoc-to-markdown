@@ -152,6 +152,7 @@ Returns raw jsdoc data.
     * [.cache](#JsdocOptions+cache)
     * [.files](#JsdocOptions+files) : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
     * [.source](#JsdocOptions+source) : <code>string</code>
+    * [.data](#JsdocOptions+data) : <code>Array.&lt;object&gt;</code>
     * [.configure](#JsdocOptions+configure) : <code>string</code>
     * [.html](#JsdocOptions+html) : <code>boolean</code>
 
@@ -170,7 +171,7 @@ Set to false to disable memoisation cache. Defaults to true.
 <a name="JsdocOptions+files"></a>
 
 ## options.files : <code>string</code> &#124; <code>Array.&lt;string&gt;</code>
-One or more filenames to process. Either this or `source` must be supplied.
+One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied.
 
 **Kind**: instance property of <code>[JsdocOptions](#JsdocOptions)</code>  
 
@@ -179,7 +180,16 @@ One or more filenames to process. Either this or `source` must be supplied.
 <a name="JsdocOptions+source"></a>
 
 ## options.source : <code>string</code>
-A string containing source code to process. Either this or `source` must be supplied.
+A string containing source code to process. Either `files`, `source` or `data` must be supplied.
+
+**Kind**: instance property of <code>[JsdocOptions](#JsdocOptions)</code>  
+
+-
+
+<a name="JsdocOptions+data"></a>
+
+## options.data : <code>Array.&lt;object&gt;</code>
+Raw template data to use. Useful when you already have template data, obtained from `.getTemplateData`. Either `files`, `source` or `data` must be supplied.
 
 **Kind**: instance property of <code>[JsdocOptions](#JsdocOptions)</code>  
 
