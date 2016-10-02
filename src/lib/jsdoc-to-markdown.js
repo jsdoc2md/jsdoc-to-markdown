@@ -16,14 +16,22 @@ class JsdocToMarkdownCore {
   render (options) {
     options = options || {}
     const dmdOptions = new DmdOptions(options)
-    return this.getTemplateData(options)
-      .then(templateData => dmd.async(templateData, dmdOptions))
+    if (options.data) {
+      return dmd.async(options.data, dmdOptions)
+    } else {
+      return this.getTemplateData(options)
+        .then(templateData => dmd.async(templateData, dmdOptions))
+    }
   }
 
   renderSync (options) {
     options = options || {}
     const dmdOptions = new DmdOptions(options)
-    return dmd(this.getTemplateDataSync(options), dmdOptions)
+    if (options.data) {
+      return dmd(options.data, dmdOptions)
+    } else {
+      return dmd(this.getTemplateDataSync(options), dmdOptions)
+    }
   }
 
   getTemplateData (options) {
@@ -128,6 +136,7 @@ class JsdocToMarkdown extends JsdocToMarkdownCore {
     }
     const dimensions = { name: method.name, interface: this._interface }
     if (exception) dimensions.exception = exception
+    this._sendOptions.send = options.send
     return this._usage.hit(dimensions, metrics, this._sendOptions)
   }
 

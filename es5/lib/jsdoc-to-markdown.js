@@ -27,16 +27,24 @@ var JsdocToMarkdownCore = function () {
     value: function render(options) {
       options = options || {};
       var dmdOptions = new DmdOptions(options);
-      return this.getTemplateData(options).then(function (templateData) {
-        return dmd.async(templateData, dmdOptions);
-      });
+      if (options.data) {
+        return dmd.async(options.data, dmdOptions);
+      } else {
+        return this.getTemplateData(options).then(function (templateData) {
+          return dmd.async(templateData, dmdOptions);
+        });
+      }
     }
   }, {
     key: 'renderSync',
     value: function renderSync(options) {
       options = options || {};
       var dmdOptions = new DmdOptions(options);
-      return dmd(this.getTemplateDataSync(options), dmdOptions);
+      if (options.data) {
+        return dmd(options.data, dmdOptions);
+      } else {
+        return dmd(this.getTemplateDataSync(options), dmdOptions);
+      }
     }
   }, {
     key: 'getTemplateData',
@@ -151,6 +159,7 @@ var JsdocToMarkdown = function (_JsdocToMarkdownCore) {
       }
       var dimensions = { name: method.name, interface: this._interface };
       if (exception) dimensions.exception = exception;
+      this._sendOptions.send = options.send;
       return this._usage.hit(dimensions, metrics, this._sendOptions);
     }
   }, {

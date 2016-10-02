@@ -59,6 +59,7 @@ let jsdoc2mdDefinitions = [
   },
   { name: 'version', type: Boolean },
   { name: 'no-usage-stats', type: Boolean },
+  { name: 'send', type: Boolean },
   {
     name: 'no-cache',
     type: Boolean,
@@ -210,7 +211,7 @@ module.exports = {
     },
     {
       optionList: jsdoc2mdDefinitions,
-      hide: [ 'no-usage-stats', 'debug' ]
+      hide: [ 'no-usage-stats', 'send' ]
     },
     {
       header: 'jsdoc options',
