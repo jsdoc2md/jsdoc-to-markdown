@@ -7,7 +7,7 @@
 [![Join the chat at https://gitter.im/jsdoc2md/jsdoc2md](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsdoc2md/jsdoc2md?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # jsdoc-to-markdown
-Generates markdown documentation from [jsdoc](http://usejsdoc.org) annotated source code. Useful for injecting API docs into project README files.
+Generates markdown API documentation from [jsdoc](http://usejsdoc.org) annotated source code. Useful for injecting API docs into project README files.
 
 ## Synopsis
 
