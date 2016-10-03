@@ -95,6 +95,4 @@ var JsdocToMarkdown = function () {
   return JsdocToMarkdown;
 }();
 
-module.exports = JsdocToMarkdown;
-
 module.exports = new (stats(JsdocToMarkdown, require('../../package').version))();

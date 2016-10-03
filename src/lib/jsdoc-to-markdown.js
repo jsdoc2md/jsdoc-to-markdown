@@ -144,6 +144,4 @@ class JsdocToMarkdown {
   }
 }
 
-module.exports = JsdocToMarkdown
-
 module.exports = new (stats(JsdocToMarkdown, require('../../package').version))()
