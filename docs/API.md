@@ -39,7 +39,8 @@ Returns markdown documentation from jsdoc-annoted source code.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>object</code> | the options |
+| [options] | <code>object</code> | Accepts all [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData) options plus the following: |
+| [options.data] | <code>Array.&lt;object&gt;</code> | Raw template data to use. Useful when you already have template data, obtained from `.getTemplateData`. Either `files`, `source` or `data` must be supplied. |
 | [options.template] | <code>string</code> | The template the supplied documentation will be rendered into. Use the default or supply your own template for full control over the output. |
 | [options.heading-depth] | <code>number</code> | The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`. |
 | [options.example-lang] | <code>string</code> | Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example. |
@@ -74,7 +75,7 @@ Returns template data (jsdoc-parse output).
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>object</code> | Takes identical options to `getJsdocData`. |
+| [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
 
 
 -
@@ -121,7 +122,7 @@ Sync version of `render`.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>JsdocOptions</code> &#124; <code>[DmdOptions](#DmdOptions)</code> | the options |
+| [options] | <code>object</code> | Identical options to [render](#module_jsdoc-to-markdown--JsdocToMarkdown+render). |
 
 **Example**  
 ```js
@@ -140,7 +141,7 @@ Sync version of `getTemplateData`.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>object</code> | Takes identical options to `getJsdocData`. |
+| [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
 
 
 -
@@ -148,14 +149,14 @@ Sync version of `getTemplateData`.
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocDataSync"></a>
 
 ### jsdoc2md.getJsdocDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
-Returns raw jsdoc data.
+Sync version of `getJsdocData`.
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: sync  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [options] | <code>JsdocOptions</code> | the options |
+| [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
 
 
 -

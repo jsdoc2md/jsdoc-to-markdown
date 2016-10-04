@@ -20,7 +20,8 @@ class JsdocToMarkdown {
   /**
    * Returns markdown documentation from jsdoc-annoted source code.
    *
-   * @param [options] {object} - the options
+   * @param [options] {object} - Accepts all {@link module:jsdoc-to-markdown#getJsdocData} options plus the following:
+   * @param [options.data] {object[]} - Raw template data to use. Useful when you already have template data, obtained from `.getTemplateData`. Either `files`, `source` or `data` must be supplied.
    * @param [options.template] {string} - The template the supplied documentation will be rendered into. Use the default or supply your own template for full control over the output.
    * @param [options.heading-depth] {number} - The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`.
    * @param [options.example-lang] {string} - Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example.
@@ -58,7 +59,7 @@ class JsdocToMarkdown {
   /**
    * Sync version of `render`.
    *
-   * @param [options] {JsdocOptions | DmdOptions} - the options
+   * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#render}.
    * @return {string}
    * @engine nodejs >= 0.12
    * @category sync
@@ -78,7 +79,7 @@ class JsdocToMarkdown {
   /**
    * Returns template data (jsdoc-parse output).
    *
-   * @param [options] {object} - Takes identical options to `getJsdocData`.
+   * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
    * @return {Promise}
    * @fulfil {object[]} - the json data
    * @category async
@@ -93,7 +94,7 @@ class JsdocToMarkdown {
   /**
    * Sync version of `getTemplateData`.
    *
-   * @param [options] {object} - Takes identical options to `getJsdocData`.
+   * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
    * @return {object[]}
    * @category sync
    */
@@ -123,9 +124,9 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Returns raw jsdoc data.
+   * Sync version of `getJsdocData`.
    *
-   * @param [options] {JsdocOptions} - the options
+   * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
    * @return {object[]}
    * @category sync
    */
