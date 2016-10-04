@@ -20,7 +20,21 @@ class JsdocToMarkdown {
   /**
    * Returns markdown documentation from jsdoc-annoted source code.
    *
-   * @param [options] {JsdocOptions | DmdOptions} - the options
+   * @param [options] {object} - the options
+   * @param [options.template] {string} - The template the supplied documentation will be rendered into. Use the default or supply your own template for full control over the output.
+   * @param [options.heading-depth] {number} - The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`.
+   * @param [options.example-lang] {string} - Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example.
+   * @param [options.plugin] {string|string[]} - Use an installed package containing helper and/or partial overrides.
+   * @param [options.helper] {string|string[]} - handlebars helper files to override or extend the default set.
+   * @param [options.partial] {string|string[]} - handlebars partial files to override or extend the default set.
+   * @param [options.name-format] {string} - Format identifier names in the [code](http://daringfireball.net/projects/markdown/syntax#code) style, (i.e. format using backticks or `<code></code>`).
+   * @param [options.no-gfm] {boolean} - By default, dmd generates github-flavoured markdown. Not all markdown parsers render gfm correctly. If your generated docs look incorrect on sites other than Github (e.g. npmjs.org) try enabling this option to disable Github-specific syntax.
+   * @param [options.separators] {boolean} - Put `<hr>` breaks between identifiers. Improves readability on bulky docs.
+   * @param [options.module-index-format] {string} - none, grouped, table, dl.
+   * @param [options.global-index-format] {} - none, grouped, table, dl.
+   * @param [options.param-list-format] {} - Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed.
+   * @param [options.property-list-format] {} - list, table.
+   * @param [options.member-index-format] {} - grouped, list
    * @return {Promise}
    * @fulfil {string} - the rendered docs
    * @category async
@@ -42,7 +56,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Returns markdown documentation from jsdoc-annoted source code.
+   * Sync version of `render`.
    *
    * @param [options] {JsdocOptions | DmdOptions} - the options
    * @return {string}
@@ -64,7 +78,7 @@ class JsdocToMarkdown {
   /**
    * Returns template data (jsdoc-parse output).
    *
-   * @param [options] {JsdocOptions} - the options
+   * @param [options] {object} - Takes identical options to `getJsdocData`.
    * @return {Promise}
    * @fulfil {object[]} - the json data
    * @category async
@@ -77,9 +91,9 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Returns template data (jsdoc-parse output).
+   * Sync version of `getTemplateData`.
    *
-   * @param [options] {JsdocOptions} - the options
+   * @param [options] {object} - Takes identical options to `getJsdocData`.
    * @return {object[]}
    * @category sync
    */
@@ -93,7 +107,12 @@ class JsdocToMarkdown {
   /**
    * Returns raw jsdoc data.
    *
-   * @param [options] {JsdocOptions} - the options
+   * @param [options] {object} - the options
+   * @param [options.cache] {boolean} - Set to false to disable memoisation cache. Defaults to true.
+   * @param [options.files] {string|string[]} - One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied.
+   * @param [options.source] {string} - A string containing source code to process. Either `files`, `source` or `data` must be supplied.
+   * @param [options.configure] {string} - The path to the configuration file. Default: path/to/jsdoc/conf.json.
+   * @param [options.html] {boolean} - Enable experimental documentation of `.html` files.
    * @return {Promise}
    * @fulfil {object[]}
    * @category async

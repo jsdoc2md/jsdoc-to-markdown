@@ -5,19 +5,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var JsdocOptions = function JsdocOptions(options) {
   _classCallCheck(this, JsdocOptions);
 
-  options = options || {};
-
+  Object.assign(this, options);
   this.cache = options.cache === undefined ? true : options.cache;
-
-  this.files = options.files;
-
-  this.source = options.source;
-
-  this.data = options.data;
-
-  this.configure = options.configure;
-
-  this.html = options.html;
 };
 
 module.exports = JsdocOptions;
