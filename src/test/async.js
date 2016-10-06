@@ -11,6 +11,7 @@ try {
 jsdoc2md._usage.defaults.set('tid', 'UA-70853320-4')
 jsdoc2md._usage.queuePath = 'tmp-test/unsent.json'
 jsdoc2md._usage._lastSentPath = 'tmp-test/lastSent.json'
+process.on('beforeExit', () => jsdoc2md._usage.send())
 
 const runner = new TestRunner()
 const inputFile = 'src/test/fixture/ignore.js'

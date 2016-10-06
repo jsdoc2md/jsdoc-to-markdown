@@ -57,7 +57,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Sync version of `render`.
+   * Sync version of {@link module:jsdoc-to-markdown#render}.
    *
    * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#render}.
    * @return {string}
@@ -77,7 +77,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Returns template data (jsdoc-parse output).
+   * Returns the template data (jsdoc-parse output) which is fed into the output template (dmd).
    *
    * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
    * @return {Promise}
@@ -92,7 +92,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Sync version of `getTemplateData`.
+   * Sync version of {@link module:jsdoc-to-markdown#getTemplateData}.
    *
    * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
    * @return {object[]}
@@ -106,13 +106,13 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Returns raw jsdoc data.
+   * Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/jsdoc).
    *
    * @param [options] {object} - the options
    * @param [options.cache] {boolean} - Set to false to disable memoisation cache. Defaults to true.
    * @param [options.files] {string|string[]} - One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied.
    * @param [options.source] {string} - A string containing source code to process. Either `files`, `source` or `data` must be supplied.
-   * @param [options.configure] {string} - The path to the configuration file. Default: path/to/jsdoc/conf.json.
+   * @param [options.configure] {string} - The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json.
    * @param [options.html] {boolean} - Enable experimental documentation of `.html` files.
    * @return {Promise}
    * @fulfil {object[]}
@@ -124,7 +124,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Sync version of `getJsdocData`.
+   * Sync version of {@link module:jsdoc-to-markdown#getJsdocData}.
    *
    * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
    * @return {object[]}
@@ -144,6 +144,12 @@ class JsdocToMarkdown {
     return jsdocApi.cache.clear().then(() => dmd.cache.clear())
   }
 
+  /**
+   * Returns all [jsdoc namepaths](http://usejsdoc.org/about-namepaths.html) found in the supplied source code.
+   * @param {object} - options to pass to {@link module:jsdoc-to-markdown#getTemplateData}
+   * @returns {object}
+   * @category async
+   */
   getNamepaths (options) {
     return this.getTemplateData(options)
       .then(data => {

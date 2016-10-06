@@ -10,6 +10,9 @@ try {
 jsdoc2md._usage.defaults.set('tid', 'UA-70853320-4');
 jsdoc2md._usage.queuePath = 'tmp-test/unsent.json';
 jsdoc2md._usage._lastSentPath = 'tmp-test/lastSent.json';
+process.on('beforeExit', function () {
+  return jsdoc2md._usage.send();
+});
 
 var runner = new TestRunner();
 var inputFile = 'src/test/fixture/ignore.js';

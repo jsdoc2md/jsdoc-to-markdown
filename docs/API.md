@@ -13,6 +13,7 @@ const jsdoc2md = require('jsdoc-to-markdown')
             * [.getTemplateData([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData) ⇒ <code>Promise</code>
             * [.getJsdocData([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData) ⇒ <code>Promise</code>
             * [.clear()](#module_jsdoc-to-markdown--JsdocToMarkdown+clear) ⇒ <code>Promise</code>
+            * [.getNamepaths(options)](#module_jsdoc-to-markdown--JsdocToMarkdown+getNamepaths) ⇒ <code>object</code>
         * _sync_
             * [.renderSync([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+renderSync) ⇒ <code>string</code>
             * [.getTemplateDataSync([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateDataSync) ⇒ <code>Array.&lt;object&gt;</code>
@@ -67,7 +68,7 @@ Pass in filepaths (`**` glob matching supported) of javascript source files:
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData"></a>
 
 ### jsdoc2md.getTemplateData([options]) ⇒ <code>Promise</code>
-Returns template data (jsdoc-parse output).
+Returns the template data (jsdoc-parse output) which is fed into the output template (dmd).
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: async  
@@ -83,7 +84,7 @@ Returns template data (jsdoc-parse output).
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData"></a>
 
 ### jsdoc2md.getJsdocData([options]) ⇒ <code>Promise</code>
-Returns raw jsdoc data.
+Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/jsdoc).
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: async  
@@ -95,7 +96,7 @@ Returns raw jsdoc data.
 | [options.cache] | <code>boolean</code> | Set to false to disable memoisation cache. Defaults to true. |
 | [options.files] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied. |
 | [options.source] | <code>string</code> | A string containing source code to process. Either `files`, `source` or `data` must be supplied. |
-| [options.configure] | <code>string</code> | The path to the configuration file. Default: path/to/jsdoc/conf.json. |
+| [options.configure] | <code>string</code> | The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json. |
 | [options.html] | <code>boolean</code> | Enable experimental documentation of `.html` files. |
 
 
@@ -111,10 +112,25 @@ Clear the cache.
 
 -
 
+<a name="module_jsdoc-to-markdown--JsdocToMarkdown+getNamepaths"></a>
+
+### jsdoc2md.getNamepaths(options) ⇒ <code>object</code>
+Returns all [jsdoc namepaths](http://usejsdoc.org/about-namepaths.html) found in the supplied source code.
+
+**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Category**: async  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> | options to pass to [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData) |
+
+
+-
+
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+renderSync"></a>
 
 ### jsdoc2md.renderSync([options]) ⇒ <code>string</code>
-Sync version of `render`.
+Sync version of [render](#module_jsdoc-to-markdown--JsdocToMarkdown+render).
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: sync  
@@ -134,7 +150,7 @@ const docs = jsdoc2md.renderSync('lib/*.js')
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateDataSync"></a>
 
 ### jsdoc2md.getTemplateDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
-Sync version of `getTemplateData`.
+Sync version of [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData).
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: sync  
@@ -149,7 +165,7 @@ Sync version of `getTemplateData`.
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocDataSync"></a>
 
 ### jsdoc2md.getJsdocDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
-Sync version of `getJsdocData`.
+Sync version of [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData).
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: sync  
