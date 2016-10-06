@@ -1,1 +1,0 @@
-Inside each sub-folder is a `readme.md` showing how [each jsdoc tag](http://usejsdoc.org) looks when rendered. 

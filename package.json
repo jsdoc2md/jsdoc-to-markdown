@@ -1,23 +1,19 @@
 {
   "name": "jsdoc-to-markdown",
   "author": "Lloyd Brookes",
-  "version": "1.3.7",
-  "description": "jsdoc-annotated source in, markdown API docs out.",
+  "version": "2.0.0-alpha.22",
+  "description": "Generates markdown API documentation from jsdoc annotated source code",
   "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
-  "main": "lib/jsdoc-to-markdown.js",
-  "license": "MIT",
-  "files": [
-    "bin",
-    "lib",
-    "LICENSE"
-  ],
-  "scripts": {
-    "test": "tape test/*.js",
-    "docs": "node bin/cli.js -t jsdoc2md/README.hbs -p list lib/jsdoc-to-markdown.js node_modules/jsdoc-parse/lib/jsdoc-parse.js node_modules/dmd/lib/dmd.js > README.md; echo ",
-    "eg": "node example/renderDirs.js; echo"
-  },
+  "main": "main",
   "bin": {
-    "jsdoc2md": "bin/cli.js"
+    "jsdoc2md": "bin.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js",
+    "docs": "node src/bin/cli.js --separators src/lib/*.js --heading-depth 1 --template jsdoc2md/API.hbs > docs/API.md; echo ",
+    "cover": "istanbul cover ./node_modules/.bin/test-runner src/test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo",
+    "es5": "rm -rf es5 && babel --presets babel-preset-es2015 --no-comments src --out-dir es5"
   },
   "keywords": [
     "jsdoc",
@@ -29,23 +25,26 @@
     "documentation"
   ],
   "dependencies": {
-    "ansi-escape-sequences": "^2.2.2",
-    "command-line-args": "^3.0.0",
-    "command-line-usage": "^3.0.1",
-    "config-master": "^2.0.2",
-    "dmd": "^1.4.1",
-    "jsdoc-parse": "^1.2.7",
-    "object-tools": "^2.0.6",
-    "stream-connect": "^1.0.2"
+    "array-back": "^1.0.3",
+    "command-line-tool": "^0.6.4",
+    "config-master": "^2.0.4",
+    "core-js": "^2.4.1",
+    "dmd": "^2.0.3",
+    "feature-detect-es6": "^1.3.1",
+    "jsdoc-api": "^2.0.3",
+    "jsdoc-parse": "^2.0.5",
+    "jsdoc2md-stats": "^1.0.1",
+    "walk-back": "^2.0.1"
   },
   "devDependencies": {
-    "collect-json": "^1.0.8",
-    "tape": "^4.5.1"
+    "babel-preset-es2015": "^6.16.0",
+    "coveralls": "^2.11.14",
+    "test-runner": "^0.2.4"
   },
   "standard": {
     "ignore": [
-      "test",
-      "example"
+      "es5",
+      "src/test/fixture"
     ]
   }
 }
