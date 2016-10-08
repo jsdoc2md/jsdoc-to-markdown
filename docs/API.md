@@ -93,7 +93,7 @@ Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/j
 | Param | Type | Description |
 | --- | --- | --- |
 | [options] | <code>object</code> | the options |
-| [options.cache] | <code>boolean</code> | Set to false to disable memoisation cache. Defaults to true. |
+| [options.no-cache] | <code>boolean</code> | By default results are cached to speed up repeat invocations. Set to true to disable this. |
 | [options.files] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied. |
 | [options.source] | <code>string</code> | A string containing source code to process. Either `files`, `source` or `data` must be supplied. |
 | [options.configure] | <code>string</code> | The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json. |

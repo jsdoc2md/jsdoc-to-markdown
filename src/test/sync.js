@@ -5,7 +5,6 @@ if (!require('child_process').spawnSync) process.exit(0)
 const TestRunner = require('test-runner')
 const jsdoc2md = require('../../')
 const a = require('assert')
-const path = require('path')
 const fs = require('fs')
 
 try {
@@ -24,31 +23,31 @@ runner.test('.renderSync({ files })', function () {
 runner.test('.renderSync({ data })', function () {
   const data = [
     {
-      "id": "visible",
-      "longname": "visible",
-      "name": "visible",
-      "kind": "member",
-      "scope": "global",
-      "description": "a visible global",
-      "meta": {
-        "lineno": 4,
-        "filename": "ignore.js"
+      id: 'visible',
+      longname: 'visible',
+      name: 'visible',
+      kind: 'member',
+      scope: 'global',
+      description: 'a visible global',
+      meta: {
+        lineno: 4,
+        filename: 'ignore.js'
       },
-      "order": 0
+      order: 0
     },
     {
-      "id": "invisible",
-      "longname": "invisible",
-      "name": "invisible",
-      "kind": "member",
-      "scope": "global",
-      "description": "an ignored global",
-      "ignore": true,
-      "meta": {
-        "lineno": 10,
-        "filename": "ignore.js"
+      id: 'invisible',
+      longname: 'invisible',
+      name: 'invisible',
+      kind: 'member',
+      scope: 'global',
+      description: 'an ignored global',
+      ignore: true,
+      meta: {
+        lineno: 10,
+        filename: 'ignore.js'
       },
-      "order": 1
+      order: 1
     }
   ]
   const result = jsdoc2md.renderSync({ data: data, cache: false })

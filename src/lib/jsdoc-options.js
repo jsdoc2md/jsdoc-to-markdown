@@ -3,7 +3,10 @@
 class JsdocOptions {
   constructor (options) {
     Object.assign(this, options)
-    this.cache = options.cache === undefined ? true : options.cache
+    if (options['no-cache']) {
+      this.cache = !options['no-cache']
+      delete this['no-cache']
+    }
   }
 }
 

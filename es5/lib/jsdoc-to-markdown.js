@@ -7,7 +7,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var stats = require('jsdoc2md-stats');
 var jsdocApi = require('jsdoc-api');
 var dmd = require('dmd');
-var os = require('os');
 var DmdOptions = require('./dmd-options');
 var JsdocOptions = require('./jsdoc-options');
 

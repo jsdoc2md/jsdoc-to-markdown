@@ -6,12 +6,6 @@ const cli = parseCommandLine()
 let options = cli.options._all
 options = loadStoredConfig(options)
 
-/* jsdoc2md --no-cache */
-if (options['no-cache']) {
-  options.cache = false
-  delete options['no-cache']
-}
-
 /* jsdoc2md --help */
 if (options.help) {
   tool.printOutput(cli.usage)
@@ -79,7 +73,10 @@ if (options.help) {
 
     jsdoc2md
       .render(options)
-      .then(output => process.stdout.write(output))
+      .then(output => {
+        process.stdout.write(output)
+        process.exit(0)
+      })
       .catch(handleError)
   }
 }

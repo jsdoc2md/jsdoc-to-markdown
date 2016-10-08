@@ -6,7 +6,10 @@ var JsdocOptions = function JsdocOptions(options) {
   _classCallCheck(this, JsdocOptions);
 
   Object.assign(this, options);
-  this.cache = options.cache === undefined ? true : options.cache;
+  if (options['no-cache']) {
+    this.cache = !options['no-cache'];
+    delete this['no-cache'];
+  }
 };
 
 module.exports = JsdocOptions;

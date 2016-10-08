@@ -7,11 +7,6 @@ var cli = parseCommandLine();
 var options = cli.options._all;
 options = loadStoredConfig(options);
 
-if (options['no-cache']) {
-  options.cache = false;
-  delete options['no-cache'];
-}
-
 if (options.help) {
   tool.printOutput(cli.usage);
 } else if (options.version) {
@@ -55,7 +50,8 @@ if (options.help) {
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8');
 
     _jsdoc2md.render(options).then(function (output) {
-      return process.stdout.write(output);
+      process.stdout.write(output);
+      process.exit(0);
     }).catch(handleError);
   }
 }

@@ -2,7 +2,6 @@
 const stats = require('jsdoc2md-stats')
 const jsdocApi = require('jsdoc-api')
 const dmd = require('dmd')
-const os = require('os')
 const DmdOptions = require('./dmd-options')
 const JsdocOptions = require('./jsdoc-options')
 
@@ -109,7 +108,7 @@ class JsdocToMarkdown {
    * Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/jsdoc).
    *
    * @param [options] {object} - the options
-   * @param [options.cache] {boolean} - Set to false to disable memoisation cache. Defaults to true.
+   * @param [options.no-cache] {boolean} - By default results are cached to speed up repeat invocations. Set to true to disable this.
    * @param [options.files] {string|string[]} - One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied.
    * @param [options.source] {string} - A string containing source code to process. Either `files`, `source` or `data` must be supplied.
    * @param [options.configure] {string} - The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json.
