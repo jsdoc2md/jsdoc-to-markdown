@@ -47,7 +47,7 @@ A quite wonderful function.
 ## Install
 
 ```
-$ npm i -g jsdoc-to-markdown@^2.0.0-alpha
+$ npm install -g jsdoc-to-markdown
 ```
 
 ## See also
