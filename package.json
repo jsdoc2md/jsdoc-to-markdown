@@ -39,7 +39,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.16.0",
     "coveralls": "^2.11.14",
-    "test-runner": "^0.2.4"
+    "test-runner": "^0.2.5"
   },
   "standard": {
     "ignore": [

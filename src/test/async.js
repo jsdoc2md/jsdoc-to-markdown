@@ -8,10 +8,7 @@ try {
 } catch (err) {
   // exists
 }
-jsdoc2md._usage.defaults.set('tid', 'UA-70853320-4')
-jsdoc2md._usage.queuePath = 'tmp-test/unsent.json'
-jsdoc2md._usage._lastSentPath = 'tmp-test/lastSent.json'
-process.on('beforeExit', () => jsdoc2md._usage.send())
+jsdoc2md._usage.disable()
 
 const runner = new TestRunner()
 const inputFile = 'src/test/fixture/ignore.js'
@@ -134,4 +131,18 @@ runner.test('.getTemplateData({ files, noCache })', function () {
 runner.test('.getJsdocData({ files, noCache })', function () {
   return jsdoc2md.getJsdocData({ files: inputFile, noCache: true })
     .then(result => a.ok(result[0].longname))
+})
+
+runner.test('.getNamepaths()', function () {
+  return jsdoc2md.getNamepaths({ files: 'src/test/fixture/ignore.js' })
+    .then(namepaths => {
+      a.deepStrictEqual(namepaths.member, [
+        'visible',
+        'invisible'
+      ])
+    })
+})
+
+runner.test('.clear()', function () {
+  return jsdoc2md.clear()
 })
