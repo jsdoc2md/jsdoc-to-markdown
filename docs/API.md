@@ -105,7 +105,7 @@ Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/j
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+clear"></a>
 
 ### jsdoc2md.clear() ⇒ <code>Promise</code>
-Clear the cache.
+Clear the cache. By default, the cache is stored in the [system tmpdir](https://nodejs.org/dist/latest-v6.x/docs/api/os.html#os_os_tmpdir). MacOS clears out this directory every few days (meaning your jsdoc2md cache will be cleaned automatically).
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: async  

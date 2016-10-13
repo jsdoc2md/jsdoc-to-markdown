@@ -135,7 +135,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Clear the cache.
+   * Clear the cache. By default, the cache is stored in the [system tmpdir](https://nodejs.org/dist/latest-v6.x/docs/api/os.html#os_os_tmpdir). MacOS clears out this directory every few days (meaning your jsdoc2md cache will be cleaned automatically).
    * @returns {Promise}
    * @category async
    */
