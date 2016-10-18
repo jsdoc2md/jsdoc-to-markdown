@@ -135,7 +135,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Clear the cache. By default, the cache is stored in the [system tmpdir](https://nodejs.org/dist/latest-v6.x/docs/api/os.html#os_os_tmpdir). MacOS clears out this directory every few days (meaning your jsdoc2md cache will be cleaned automatically).
+   * By default, the output of each invocation of the main generation methods (`render`, `getTemplateData` etc) is stored in the cache (your system's [temporary directory](https://nodejs.org/dist/latest-v6.x/docs/api/os.html#os_os_tmpdir)). Future jsdoc2md invocations with the same input options and source code will return the output immediately from cache, making the tool much faster/cheaper. If the input options or source code changes, fresh output will be generated. This method clears the cache, which you should never need to do unless the cache is failing for some reason. On Mac OSX, the system tmpdir clears itself every few days meaning your jsdoc2md cache will also be routinely cleared.
    * @returns {Promise}
    * @category async
    */
