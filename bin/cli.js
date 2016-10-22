@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --no-warnings
 'use strict'
 var fs = require('fs')
 var commandLineArgs = require('command-line-args')
@@ -54,10 +54,11 @@ if (config.help) {
   var d = domain.create()
   d.on('error', halt)
   d.run(function () {
+    var stream = jsdoc2md(config, 'cli')
     if (config.src) {
-      jsdoc2md(config).pipe(process.stdout)
+      stream.pipe(process.stdout)
     } else {
-      process.stdin.pipe(jsdoc2md(config)).pipe(process.stdout)
+      process.stdin.pipe(stream).pipe(process.stdout)
     }
   })
 }

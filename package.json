@@ -29,18 +29,19 @@
     "documentation"
   ],
   "dependencies": {
-    "ansi-escape-sequences": "^2.2.2",
-    "command-line-args": "^3.0.0",
-    "command-line-usage": "^3.0.1",
-    "config-master": "^2.0.2",
+    "ansi-escape-sequences": "^3.0.0",
+    "command-line-args": "^3.0.1",
+    "command-line-usage": "^3.0.5",
+    "config-master": "^2.0.4",
     "dmd": "^1.4.1",
     "jsdoc-parse": "^1.2.7",
+    "jsdoc2md-stats": "^1.0.3",
     "object-tools": "^2.0.6",
     "stream-connect": "^1.0.2"
   },
   "devDependencies": {
     "collect-json": "^1.0.8",
-    "tape": "^4.5.1"
+    "tape": "^4.6.2"
   },
   "standard": {
     "ignore": [
