@@ -60,7 +60,7 @@ Returns markdown documentation from jsdoc-annoted source code.
 **Example**  
 Pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
-> jsdoc2md.render('lib/*.js').then(console.log)
+> jsdoc2md.render({ files: 'lib/*.js' }).then(console.log)
 ```
 
 -
@@ -142,7 +142,7 @@ Sync version of [render](#module_jsdoc-to-markdown--JsdocToMarkdown+render).
 
 **Example**  
 ```js
-const docs = jsdoc2md.renderSync('lib/*.js')
+const docs = jsdoc2md.renderSync({ files: 'lib/*.js' })
 ```
 
 -

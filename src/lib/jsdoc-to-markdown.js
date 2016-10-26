@@ -41,7 +41,7 @@ class JsdocToMarkdown {
    * @example
    * Pass in filepaths (`**` glob matching supported) of javascript source files:
    * ```js
-   * > jsdoc2md.render('lib/*.js').then(console.log)
+   * > jsdoc2md.render({ files: 'lib/*.js' }).then(console.log)
    * ```
    */
   render (options) {
@@ -63,7 +63,7 @@ class JsdocToMarkdown {
    * @engine nodejs >= 0.12
    * @category sync
    * @example
-   * const docs = jsdoc2md.renderSync('lib/*.js')
+   * const docs = jsdoc2md.renderSync({ files: 'lib/*.js' })
    */
   renderSync (options) {
     options = options || {}
