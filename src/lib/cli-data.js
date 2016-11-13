@@ -231,21 +231,9 @@ module.exports = {
     {
       content: [
         {
-          col1: 'Project repositories:',
+          col1: 'Project repository:',
           col2: '[underline]{https://github.com/jsdoc2md/jsdoc-to-markdown}'
         },
-        {
-          col1: '',
-          col2: '[underline]{https://github.com/jsdoc2md/jsdoc-api}'
-        },
-        {
-          col1: '',
-          col2: '[underline]{https://github.com/jsdoc2md/jsdoc-parse}'
-        },
-        {
-          col1: '',
-          col2: '[underline]{https://github.com/jsdoc2md/dmd}'
-        }
       ]
     }
   ]
