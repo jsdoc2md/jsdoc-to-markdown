@@ -2,7 +2,7 @@
 const TestRunner = require('test-runner')
 const fs = require('fs')
 const spawn = require('child_process').spawn
-const a = require('assert')
+const a = require('core-assert')
 
 const runner = new TestRunner()
 const inputPath = 'src/test/fixture/ignore.js'

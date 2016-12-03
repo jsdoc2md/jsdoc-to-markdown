@@ -4,7 +4,7 @@ if (!require('child_process').spawnSync) process.exit(0);
 
 var TestRunner = require('test-runner');
 var jsdoc2md = require('../../');
-var a = require('assert');
+var a = require('core-assert');
 var fs = require('fs');
 
 try {

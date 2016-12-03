@@ -3,7 +3,7 @@
 var TestRunner = require('test-runner');
 var fs = require('fs');
 var spawn = require('child_process').spawn;
-var a = require('assert');
+var a = require('core-assert');
 
 var runner = new TestRunner();
 var inputPath = 'src/test/fixture/ignore.js';

@@ -1,7 +1,7 @@
 'use strict'
 const TestRunner = require('test-runner')
 const jsdoc2md = require('../../')
-const a = require('assert')
+const a = require('core-assert')
 const fs = require('fs')
 try {
   fs.mkdirSync('tmp-test')
