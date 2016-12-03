@@ -147,3 +147,9 @@ runner.test('.getNamepaths()', function () {
 runner.test('.clear()', function () {
   return jsdoc2md.clear();
 });
+
+runner.test('.render({ files, send })', function () {
+  return jsdoc2md.render({ files: inputFile, send: true }).then(function (result) {
+    return a.ok(/a visible global/.test(result));
+  });
+});

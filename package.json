@@ -33,13 +33,13 @@
     "feature-detect-es6": "^1.3.1",
     "jsdoc-api": "^2.0.6",
     "jsdoc-parse": "^2.0.5",
-    "jsdoc2md-stats": "^1.0.5",
+    "jsdoc2md-stats": "^1.0.6",
     "walk-back": "^2.0.1"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",
     "coveralls": "^2.11.15",
-    "test-runner": "^0.2.5"
+    "test-runner": "^0.3.0"
   },
   "standard": {
     "ignore": [
