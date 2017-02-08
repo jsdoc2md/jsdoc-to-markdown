@@ -1,10 +1,7 @@
 'use strict'
-/* only proceed if node 0.12 or above */
-if (!require('child_process').spawnSync) process.exit(0)
-
 const TestRunner = require('test-runner')
-const jsdoc2md = require('../../')
-const a = require('core-assert')
+const jsdoc2md = require('../')
+const a = require('assert')
 const fs = require('fs')
 
 try {
@@ -13,7 +10,7 @@ try {
   // exists
 }
 const runner = new TestRunner()
-const inputFile = 'src/test/fixture/ignore.js'
+const inputFile = 'test/fixture/ignore.js'
 
 runner.test('.renderSync({ files })', function () {
   const result = jsdoc2md.renderSync({ files: inputFile, cache: false })
@@ -60,7 +57,7 @@ runner.test('.renderSync({ files, heading-depth: 4 })', function () {
 })
 
 runner.test('.renderSync({ files }, { param-list-format: list })', function () {
-  const inputFile = 'src/test/fixture/params.js'
+  const inputFile = 'test/fixture/params.js'
   const result = jsdoc2md.renderSync({ files: inputFile, cache: false, 'param-list-format': 'list' })
   a.ok(/- one/.test(result))
 })

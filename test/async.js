@@ -1,7 +1,7 @@
 'use strict'
 const TestRunner = require('test-runner')
-const jsdoc2md = require('../../')
-const a = require('core-assert')
+const jsdoc2md = require('../')
+const a = require('assert')
 const fs = require('fs')
 try {
   fs.mkdirSync('tmp-test')
@@ -11,7 +11,7 @@ try {
 jsdoc2md._usage.disable()
 
 const runner = new TestRunner()
-const inputFile = 'src/test/fixture/ignore.js'
+const inputFile = 'test/fixture/ignore.js'
 
 runner.test('.render({ files })', function () {
   return jsdoc2md.render({ files: inputFile })
@@ -58,7 +58,7 @@ runner.test('.render({ files, heading-depth: 4 })', function () {
 })
 
 runner.test('.render({ files, param-list-format: list })', function () {
-  const inputFile = 'src/test/fixture/params.js'
+  const inputFile = 'test/fixture/params.js'
   return jsdoc2md.render({ files: inputFile, 'param-list-format': 'list' })
     .then(result => a.ok(/- one/.test(result)))
 })
@@ -118,7 +118,7 @@ runner.test('.render({ files, heading-depth: 4, noCache })', function () {
 })
 
 runner.test('.render({ files, param-list-format: list, noCache })', function () {
-  const inputFile = 'src/test/fixture/params.js'
+  const inputFile = 'test/fixture/params.js'
   return jsdoc2md.render({ files: inputFile, 'param-list-format': 'list', noCache: true })
     .then(result => a.ok(/- one/.test(result)))
 })
@@ -134,7 +134,7 @@ runner.test('.getJsdocData({ files, noCache })', function () {
 })
 
 runner.test('.getNamepaths()', function () {
-  return jsdoc2md.getNamepaths({ files: 'src/test/fixture/ignore.js' })
+  return jsdoc2md.getNamepaths({ files: 'test/fixture/ignore.js' })
     .then(namepaths => {
       a.deepStrictEqual(namepaths.member, [
         'visible',

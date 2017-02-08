@@ -2,10 +2,10 @@
 const TestRunner = require('test-runner')
 const fs = require('fs')
 const spawn = require('child_process').spawn
-const a = require('core-assert')
+const a = require('assert')
 
 const runner = new TestRunner()
-const inputPath = 'src/test/fixture/ignore.js'
+const inputPath = 'test/fixture/ignore.js'
 
 try {
   fs.mkdirSync('tmp')

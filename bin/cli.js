@@ -1,6 +1,6 @@
 'use strict'
 const tool = require('command-line-tool')
-const version = require('../../package').version
+const version = require('../package').version
 
 const cli = parseCommandLine()
 let options = cli.options._all
@@ -16,11 +16,11 @@ if (options.help) {
 
 /* jsdoc2md --clear */
 } else if (options.clear) {
-  const jsdoc2md = require('../../')
+  const jsdoc2md = require('../')
   jsdoc2md._interface = 'cli'
   jsdoc2md.clear().catch(handleError)
 } else {
-  const jsdoc2md = require('../../')
+  const jsdoc2md = require('../')
   jsdoc2md._interface = 'cli'
 
   /* jsdoc2md --config */
