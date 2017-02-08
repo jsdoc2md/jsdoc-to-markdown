@@ -8,21 +8,21 @@ const runner = new TestRunner()
 const inputPath = 'test/fixture/ignore.js'
 
 try {
-  fs.mkdirSync('tmp')
+  fs.mkdirSync('tmp-test')
 } catch (err) {
   // dir exists
 }
 
 runner.test('cli: json option', function () {
-  const outputFile = fs.openSync('tmp/ignore.json', 'w')
+  const outputFile = fs.openSync('tmp-test/ignore.json', 'w')
   return new Promise((resolve, reject) => {
     const handle = spawn(
       'node',
-      [ 'bin.js', '--no-usage-stats', '--no-cache', '--json', inputPath ],
+      [ 'bin/cli.js', '--no-usage-stats', '--no-cache', '--json', inputPath ],
       { stdio: [ 'ignore', outputFile, 'ignore' ] }
     )
     handle.on('close', function () {
-      const json = fs.readFileSync('tmp/ignore.json', 'utf8')
+      const json = fs.readFileSync('tmp-test/ignore.json', 'utf8')
       if (json) {
         a.ok(/"id": "visible"/.test(json.toString()))
         resolve()

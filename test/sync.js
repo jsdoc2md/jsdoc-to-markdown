@@ -4,11 +4,6 @@ const jsdoc2md = require('../')
 const a = require('assert')
 const fs = require('fs')
 
-try {
-  fs.mkdirSync('tmp-test')
-} catch (err) {
-  // exists
-}
 const runner = new TestRunner()
 const inputFile = 'test/fixture/ignore.js'
 
