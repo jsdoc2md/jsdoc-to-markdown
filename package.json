@@ -8,6 +8,7 @@
   "bin": {
     "jsdoc2md": "bin/cli.js"
   },
+  "engines" : { "node" : ">=4.0.0" },
   "license": "MIT",
   "scripts": {
     "test": "test-runner test/*.js",
@@ -26,11 +27,11 @@
   "dependencies": {
     "array-back": "^1.0.4",
     "command-line-tool": "^0.7.0",
-    "config-master": "^3.0.0-0",
-    "dmd": "^3.0.0-0",
+    "config-master": "^3.0.0",
+    "dmd": "^3.0.0",
     "jsdoc-api": "^3.0.0",
-    "jsdoc-parse": "^2.0.5",
-    "jsdoc2md-stats": "^1.0.6",
+    "jsdoc-parse": "^3.0.0",
+    "jsdoc2md-stats": "^2.0.0",
     "walk-back": "^2.0.1"
   },
   "devDependencies": {
