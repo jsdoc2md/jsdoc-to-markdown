@@ -1,14 +1,16 @@
 {
   "name": "jsdoc-to-markdown",
   "author": "Lloyd Brookes",
-  "version": "2.0.1",
+  "version": "3.0.0-0",
   "description": "Generates markdown API documentation from jsdoc annotated source code",
   "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
   "bin": {
     "jsdoc2md": "bin/cli.js"
   },
-  "engines" : { "node" : ">=4.0.0" },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "license": "MIT",
   "scripts": {
     "test": "test-runner test/*.js",
