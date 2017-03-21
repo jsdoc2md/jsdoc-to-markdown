@@ -19,16 +19,10 @@ const jsdoc2md = require('jsdoc-to-markdown')
             * [.getTemplateDataSync([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateDataSync) ⇒ <code>Array.&lt;object&gt;</code>
             * [.getJsdocDataSync([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocDataSync) ⇒ <code>Array.&lt;object&gt;</code>
 
-
--
-
 <a name="exp_module_jsdoc-to-markdown--JsdocToMarkdown"></a>
 
 ## JsdocToMarkdown ⏏
 **Kind**: Exported class  
-
--
-
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+render"></a>
 
 ### jsdoc2md.render([options]) ⇒ <code>Promise</code>
@@ -62,9 +56,6 @@ Pass in filepaths (`**` glob matching supported) of javascript source files:
 ```js
 > jsdoc2md.render({ files: 'lib/*.js' }).then(console.log)
 ```
-
--
-
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData"></a>
 
 ### jsdoc2md.getTemplateData([options]) ⇒ <code>Promise</code>
@@ -77,9 +68,6 @@ Returns the template data (jsdoc-parse output) which is fed into the output temp
 | Param | Type | Description |
 | --- | --- | --- |
 | [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
-
-
--
 
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData"></a>
 
@@ -99,9 +87,6 @@ Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/j
 | [options.configure] | <code>string</code> | The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json. |
 | [options.html] | <code>boolean</code> | Enable experimental documentation of `.html` files. |
 
-
--
-
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+clear"></a>
 
 ### jsdoc2md.clear() ⇒ <code>Promise</code>
@@ -109,9 +94,6 @@ By default, the output of each invocation of the main generation methods (`rende
 
 **Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
 **Category**: async  
-
--
-
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getNamepaths"></a>
 
 ### jsdoc2md.getNamepaths(options) ⇒ <code>object</code>
@@ -123,9 +105,6 @@ Returns all [jsdoc namepaths](http://usejsdoc.org/about-namepaths.html) found in
 | Param | Type | Description |
 | --- | --- | --- |
 | options | <code>object</code> | options to pass to [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData) |
-
-
--
 
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+renderSync"></a>
 
@@ -144,9 +123,6 @@ Sync version of [render](#module_jsdoc-to-markdown--JsdocToMarkdown+render).
 ```js
 const docs = jsdoc2md.renderSync({ files: 'lib/*.js' })
 ```
-
--
-
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateDataSync"></a>
 
 ### jsdoc2md.getTemplateDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
@@ -159,9 +135,6 @@ Sync version of [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+get
 | --- | --- | --- |
 | [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
 
-
--
-
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocDataSync"></a>
 
 ### jsdoc2md.getJsdocDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
@@ -173,8 +146,5 @@ Sync version of [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsd
 | Param | Type | Description |
 | --- | --- | --- |
 | [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
-
-
--
 
 

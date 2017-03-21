@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {
     "test": "test-runner test/*.js",
-    "docs": "node bin/cli.js --separators lib/*.js --heading-depth 1 --template jsdoc2md/API.hbs > docs/API.md; echo ",
+    "docs": "node bin/cli.js lib/*.js --heading-depth 1 --template jsdoc2md/API.hbs > docs/API.md; echo ",
     "cover": "istanbul cover ./node_modules/.bin/test-runner test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
   },
   "keywords": [
