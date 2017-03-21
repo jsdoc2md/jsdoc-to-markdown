@@ -45,9 +45,9 @@ Returns markdown documentation from jsdoc-annoted source code.
 | [options.template] | <code>string</code> | The template the supplied documentation will be rendered into. Use the default or supply your own template for full control over the output. |
 | [options.heading-depth] | <code>number</code> | The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`. |
 | [options.example-lang] | <code>string</code> | Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example. |
-| [options.plugin] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides. |
-| [options.helper] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set. |
-| [options.partial] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set. |
+| [options.plugin] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides. |
+| [options.helper] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set. |
+| [options.partial] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set. |
 | [options.name-format] | <code>string</code> | Format identifier names in the [code](http://daringfireball.net/projects/markdown/syntax#code) style, (i.e. format using backticks or `<code></code>`). |
 | [options.no-gfm] | <code>boolean</code> | By default, dmd generates github-flavoured markdown. Not all markdown parsers render gfm correctly. If your generated docs look incorrect on sites other than Github (e.g. npmjs.org) try enabling this option to disable Github-specific syntax. |
 | [options.separators] | <code>boolean</code> | Put `<hr>` breaks between identifiers. Improves readability on bulky docs. |
@@ -94,7 +94,7 @@ Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/j
 | --- | --- | --- |
 | [options] | <code>object</code> | the options |
 | [options.no-cache] | <code>boolean</code> | By default results are cached to speed up repeat invocations. Set to true to disable this. |
-| [options.files] | <code>string</code> &#124; <code>Array.&lt;string&gt;</code> | One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied. |
+| [options.files] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied. |
 | [options.source] | <code>string</code> | A string containing source code to process. Either `files`, `source` or `data` must be supplied. |
 | [options.configure] | <code>string</code> | The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json. |
 | [options.html] | <code>boolean</code> | Enable experimental documentation of `.html` files. |
