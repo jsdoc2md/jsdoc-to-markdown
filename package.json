@@ -37,8 +37,8 @@
     "walk-back": "^3.0.0"
   },
   "devDependencies": {
-    "coveralls": "^2.13.1",
-    "test-runner": "^0.4.0"
+    "coveralls": "^3.0.0",
+    "test-runner": "^0.4.1"
   },
   "standard": {
     "ignore": [
