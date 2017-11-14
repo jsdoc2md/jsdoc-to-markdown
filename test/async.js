@@ -3,7 +3,6 @@ const TestRunner = require('test-runner')
 const jsdoc2md = require('../')
 const a = require('assert')
 const fs = require('fs')
-jsdoc2md._usage.disable()
 
 const runner = new TestRunner()
 const inputFile = 'test/fixture/ignore.js'
