@@ -30,7 +30,7 @@
     "array-back": "^2.0.0",
     "command-line-tool": "^0.7.0",
     "config-master": "^3.1.0",
-    "dmd": "^3.0.6",
+    "dmd": "^3.0.7",
     "jsdoc-api": "^3.0.0",
     "jsdoc-parse": "^3.0.0",
     "walk-back": "^3.0.0"
