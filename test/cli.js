@@ -27,7 +27,7 @@ runner.test('cli: json option', function () {
         a.ok(/"id": "visible"/.test(json.toString()))
         resolve()
       } else {
-        reject('no json returned')
+        reject(new Error('no json returned'))
       }
     })
     handle.on('error', reject)

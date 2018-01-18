@@ -57,4 +57,4 @@ $ npm install -g jsdoc-to-markdown
 
 * * *
 
-&copy; 2014-17 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2014-18 Lloyd Brookes <75pound@gmail.com>.
