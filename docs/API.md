@@ -85,7 +85,6 @@ Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/j
 | [options.files] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied. |
 | [options.source] | <code>string</code> | A string containing source code to process. Either `files`, `source` or `data` must be supplied. |
 | [options.configure] | <code>string</code> | The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json. |
-| [options.html] | <code>boolean</code> | Enable experimental documentation of `.html` files. |
 
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+clear"></a>
 
