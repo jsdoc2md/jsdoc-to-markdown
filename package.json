@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "array-back": "^2.0.0",
-    "command-line-tool": "^0.7.0",
+    "command-line-tool": "^0.8.0",
     "config-master": "^3.1.0",
     "dmd": "^3.0.9",
     "jsdoc-api": "^3.0.0",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "test-runner": "^0.4.1"
+    "test-runner": "^0.5.0"
   },
   "standard": {
     "ignore": [
