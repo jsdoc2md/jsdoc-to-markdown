@@ -2,7 +2,6 @@
 const TestRunner = require('test-runner')
 const jsdoc2md = require('../')
 const a = require('assert')
-const fs = require('fs')
 
 const runner = new TestRunner()
 const inputFile = 'test/fixture/ignore.js'

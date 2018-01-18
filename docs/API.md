@@ -28,7 +28,7 @@ const jsdoc2md = require('jsdoc-to-markdown')
 ### jsdoc2md.render([options]) ⇒ <code>Promise</code>
 Returns markdown documentation from jsdoc-annoted source code.
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: async  
 **Fulfil**: <code>string</code> - the rendered docs  
 
@@ -61,7 +61,7 @@ Pass in filepaths (`**` glob matching supported) of javascript source files:
 ### jsdoc2md.getTemplateData([options]) ⇒ <code>Promise</code>
 Returns the template data (jsdoc-parse output) which is fed into the output template (dmd).
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: async  
 **Fulfil**: <code>object[]</code> - the json data  
 
@@ -74,7 +74,7 @@ Returns the template data (jsdoc-parse output) which is fed into the output temp
 ### jsdoc2md.getJsdocData([options]) ⇒ <code>Promise</code>
 Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/jsdoc).
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: async  
 **Fulfil**: <code>object[]</code>  
 
@@ -85,21 +85,20 @@ Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/j
 | [options.files] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied. |
 | [options.source] | <code>string</code> | A string containing source code to process. Either `files`, `source` or `data` must be supplied. |
 | [options.configure] | <code>string</code> | The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json. |
-| [options.html] | <code>boolean</code> | Enable experimental documentation of `.html` files. |
 
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+clear"></a>
 
 ### jsdoc2md.clear() ⇒ <code>Promise</code>
 By default, the output of each invocation of the main generation methods (`render`, `getTemplateData` etc) is stored in the cache (your system's [temporary directory](https://nodejs.org/dist/latest-v6.x/docs/api/os.html#os_os_tmpdir)). Future jsdoc2md invocations with the same input options and source code will return the output immediately from cache, making the tool much faster/cheaper. If the input options or source code changes, fresh output will be generated. This method clears the cache, which you should never need to do unless the cache is failing for some reason. On Mac OSX, the system tmpdir clears itself every few days meaning your jsdoc2md cache will also be routinely cleared.
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: async  
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getNamepaths"></a>
 
 ### jsdoc2md.getNamepaths(options) ⇒ <code>object</code>
 Returns all [jsdoc namepaths](http://usejsdoc.org/about-namepaths.html) found in the supplied source code.
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: async  
 
 | Param | Type | Description |
@@ -111,7 +110,7 @@ Returns all [jsdoc namepaths](http://usejsdoc.org/about-namepaths.html) found in
 ### jsdoc2md.renderSync([options]) ⇒ <code>string</code>
 Sync version of [render](#module_jsdoc-to-markdown--JsdocToMarkdown+render).
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: sync  
 **Engine**: nodejs >= 0.12  
 
@@ -128,7 +127,7 @@ const docs = jsdoc2md.renderSync({ files: 'lib/*.js' })
 ### jsdoc2md.getTemplateDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
 Sync version of [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData).
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: sync  
 
 | Param | Type | Description |
@@ -140,7 +139,7 @@ Sync version of [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+get
 ### jsdoc2md.getJsdocDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
 Sync version of [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData).
 
-**Kind**: instance method of <code>[JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)</code>  
+**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: sync  
 
 | Param | Type | Description |
