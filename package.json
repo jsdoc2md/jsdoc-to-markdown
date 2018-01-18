@@ -1,7 +1,7 @@
 {
   "name": "jsdoc-to-markdown",
   "author": "Lloyd Brookes",
-  "version": "3.1.0-0",
+  "version": "3.1.0-1",
   "description": "Generates markdown API documentation from jsdoc annotated source code",
   "repository": "https://github.com/jsdoc2md/jsdoc-to-markdown",
   "main": "lib/jsdoc-to-markdown.js",
