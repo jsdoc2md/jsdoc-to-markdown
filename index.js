@@ -1,8 +1,7 @@
-'use strict'
 const jsdocApi = require('jsdoc-api')
 const dmd = require('dmd')
-const DmdOptions = require('./dmd-options')
-const JsdocOptions = require('./jsdoc-options')
+const DmdOptions = require('./lib/dmd-options')
+const JsdocOptions = require('./lib/jsdoc-options')
 
 /**
  * @module jsdoc-to-markdown

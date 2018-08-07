@@ -146,4 +146,3 @@ Sync version of [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsd
 | --- | --- | --- |
 | [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
 
-

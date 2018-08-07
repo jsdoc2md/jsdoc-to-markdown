@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict'
 const tool = require('command-line-tool')
 const version = require('../package').version
 
