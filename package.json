@@ -42,5 +42,10 @@
     "ignore": [
       "test/fixture"
     ]
-  }
+  },
+  "files": [
+    "index.js",
+    "bin/cli.js",
+    "lib/*.js"
+  ]
 }
