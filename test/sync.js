@@ -1,17 +1,16 @@
-'use strict'
-const TestRunner = require('test-runner')
+const Tom = require('test-runner').Tom
 const jsdoc2md = require('../')
 const a = require('assert')
 
-const runner = new TestRunner()
+const tom = module.exports = new Tom('sync')
 const inputFile = 'test/fixture/ignore.js'
 
-runner.test('.renderSync({ files })', function () {
+tom.test('.renderSync({ files })', function () {
   const result = jsdoc2md.renderSync({ files: inputFile, cache: false })
   a.ok(/a visible global/.test(result))
 })
 
-runner.test('.renderSync({ data })', function () {
+tom.test('.renderSync({ data })', function () {
   const data = [
     {
       id: 'visible',
@@ -45,23 +44,23 @@ runner.test('.renderSync({ data })', function () {
   a.ok(/a visible global/.test(result))
 })
 
-runner.test('.renderSync({ files, heading-depth: 4 })', function () {
+tom.test('.renderSync({ files, heading-depth: 4 })', function () {
   const result = jsdoc2md.renderSync({ files: inputFile, cache: false, 'heading-depth': 4 })
   a.ok(/#### visible/.test(result))
 })
 
-runner.test('.renderSync({ files }, { param-list-format: list })', function () {
+tom.test('.renderSync({ files }, { param-list-format: list })', function () {
   const inputFile = 'test/fixture/params.js'
   const result = jsdoc2md.renderSync({ files: inputFile, cache: false, 'param-list-format': 'list' })
   a.ok(/- one/.test(result))
 })
 
-runner.test('.getTemplateDataSync({ files })', function () {
+tom.test('.getTemplateDataSync({ files })', function () {
   const result = jsdoc2md.getTemplateDataSync({ files: inputFile, cache: false })
   a.ok(result[0].id)
 })
 
-runner.test('.getJsdocDataSync({ files })', function () {
+tom.test('.getJsdocDataSync({ files })', function () {
   const result = jsdoc2md.getJsdocDataSync({ files: inputFile, cache: false })
   a.ok(result[0].longname)
 })

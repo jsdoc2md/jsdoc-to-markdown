@@ -1,10 +1,9 @@
-'use strict'
-const TestRunner = require('test-runner')
+const Tom = require('test-runner').Tom
 const fs = require('fs')
 const spawn = require('child_process').spawn
 const a = require('assert')
 
-const runner = new TestRunner()
+const tom = module.exports = new Tom('cli')
 const inputPath = 'test/fixture/ignore.js'
 
 try {
@@ -13,7 +12,7 @@ try {
   // dir exists
 }
 
-runner.test('cli: json option', function () {
+tom.test('cli: json option', function () {
   const outputFile = fs.openSync('tmp-test/ignore.json', 'w')
   return new Promise((resolve, reject) => {
     const handle = spawn(
