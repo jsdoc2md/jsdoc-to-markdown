@@ -49,7 +49,7 @@ A quite wonderful function.
 ## Install
 
 ```
-$ npm install -g jsdoc-to-markdown
+$ npm install --save-dev jsdoc-to-markdown
 ```
 
 ## See also
@@ -59,4 +59,4 @@ $ npm install -g jsdoc-to-markdown
 
 * * *
 
-&copy; 2014-19 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2014-19 Lloyd Brookes \<75pound@gmail.com\>.
