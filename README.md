@@ -52,6 +52,13 @@ A quite wonderful function.
 $ npm install --save-dev jsdoc-to-markdown
 ```
 
+## Docker
+
+```
+$ docker build -t jsdoc2md:latest .
+$ docker run --rm -v ${PWD}:/src jsdoc2md:latest *.js > ./out/docs.md 
+```
+
 ## See also
 
 * [API documentation](https://github.com/jsdoc2md/jsdoc-to-markdown/blob/master/docs/API.md)
