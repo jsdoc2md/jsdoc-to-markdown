@@ -42,7 +42,7 @@ Returns markdown documentation from jsdoc-annoted source code.
 | [options.plugin] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | Use an installed package containing helper and/or partial overrides. |
 | [options.helper] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars helper files to override or extend the default set. |
 | [options.partial] | <code>string</code> \| <code>Array.&lt;string&gt;</code> | handlebars partial files to override or extend the default set. |
-| [options.name-format] | <code>string</code> | Format identifier names in the [code](http://daringfireball.net/projects/markdown/syntax#code) style, (i.e. format using backticks or `<code></code>`). |
+| [options.name-format] | <code>string</code> | Format identifier names as code (i.e. wrap function/property/class etc names in backticks). |
 | [options.no-gfm] | <code>boolean</code> | By default, dmd generates github-flavoured markdown. Not all markdown parsers render gfm correctly. If your generated docs look incorrect on sites other than Github (e.g. npmjs.org) try enabling this option to disable Github-specific syntax. |
 | [options.separators] | <code>boolean</code> | Put `<hr>` breaks between identifiers. Improves readability on bulky docs. |
 | [options.module-index-format] | <code>string</code> | none, grouped, table, dl. |
