@@ -26,17 +26,17 @@
     "documentation"
   ],
   "dependencies": {
-    "array-back": "^4.0.0",
+    "array-back": "^4.0.1",
     "command-line-tool": "^0.8.0",
     "config-master": "^3.1.0",
-    "dmd": "^4.0.4",
-    "jsdoc-api": "^5.0.3",
+    "dmd": "^4.0.5",
+    "jsdoc-api": "^5.0.4",
     "jsdoc-parse": "^4.0.1",
-    "walk-back": "^3.0.1"
+    "walk-back": "^4.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.7",
-    "test-runner": "^0.6.0"
+    "test-runner": "^0.7.6"
   },
   "standard": {
     "ignore": [
