@@ -2,7 +2,7 @@
 [![npm module downloads](http://img.shields.io/npm/dt/jsdoc-to-markdown.svg)](https://www.npmjs.org/package/jsdoc-to-markdown)
 [![Build Status](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown.svg?branch=master)](https://travis-ci.org/jsdoc2md/jsdoc-to-markdown)
 [![Coverage Status](https://coveralls.io/repos/github/jsdoc2md/jsdoc-to-markdown/badge.svg?branch=master)](https://coveralls.io/github/jsdoc2md/jsdoc-to-markdown?branch=master)
-[![Dependency Status](https://david-dm.org/jsdoc2md/jsdoc-to-markdown.svg)](https://david-dm.org/jsdoc2md/jsdoc-to-markdown)
+[![Dependency Status](https://badgen.net/david/dep/jsdoc2md/jsdoc-to-markdown)](https://david-dm.org/jsdoc2md/jsdoc-to-markdown)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 [![Join the chat at https://gitter.im/jsdoc2md/jsdoc2md](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jsdoc2md/jsdoc2md?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -18,8 +18,8 @@ Generates markdown API documentation from [jsdoc](http://usejsdoc.org) annotated
 ```js
 /**
  * A quite wonderful function.
- * @param {object} - privacy gown
- * @param {object} - security
+ * @param {object} - Privacy gown
+ * @param {object} - Security
  * @returns {survival}
  */
 function protection (cloak, dagger) {}
@@ -41,8 +41,8 @@ A quite wonderful function.
 
 | Param  | Type                | Description  |
 | ------ | ------------------- | ------------ |
-| cloak  | <code>object</code> | privacy gown |
-| dagger | <code>object</code> | security     |
+| cloak  | <code>object</code> | Privacy gown |
+| dagger | <code>object</code> | Security     |
 
 ```
 
@@ -59,4 +59,4 @@ $ npm install --save-dev jsdoc-to-markdown
 
 * * *
 
-&copy; 2014-19 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2014-20 Lloyd Brookes \<75pound@gmail.com\>.
