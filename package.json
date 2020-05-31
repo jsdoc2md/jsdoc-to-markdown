@@ -29,14 +29,14 @@
     "array-back": "^4.0.1",
     "command-line-tool": "^0.8.0",
     "config-master": "^3.1.0",
-    "dmd": "^5.0.0",
-    "jsdoc-api": "^5.0.4",
-    "jsdoc-parse": "^4.0.1",
+    "dmd": "^5.0.1",
+    "jsdoc-api": "^6.0.0",
+    "jsdoc-parse": "^5.0.0",
     "walk-back": "^4.0.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.9",
-    "test-runner": "^0.8.9"
+    "coveralls": "^3.1.0",
+    "test-runner": "^0.8.13"
   },
   "standard": {
     "ignore": [
