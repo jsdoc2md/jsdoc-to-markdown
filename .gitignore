@@ -3,3 +3,4 @@ tmp
 node_modules
 coverage
 tmp-test
+.coveralls.yml
