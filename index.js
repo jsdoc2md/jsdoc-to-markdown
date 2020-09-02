@@ -25,7 +25,7 @@ class JsdocToMarkdown {
    * @param [options.plugin] {string|string[]} - Use an installed package containing helper and/or partial overrides.
    * @param [options.helper] {string|string[]} - handlebars helper files to override or extend the default set.
    * @param [options.partial] {string|string[]} - handlebars partial files to override or extend the default set.
-   * @param [options.name-format] {string} - Format identifier names as code (i.e. wrap function/property/class etc names in backticks).
+   * @param [options.name-format] {boolean} - Format identifier names as code (i.e. wrap function/property/class etc names in backticks).
    * @param [options.no-gfm] {boolean} - By default, dmd generates github-flavoured markdown. Not all markdown parsers render gfm correctly. If your generated docs look incorrect on sites other than Github (e.g. npmjs.org) try enabling this option to disable Github-specific syntax.
    * @param [options.separators] {boolean} - Put `<hr>` breaks between identifiers. Improves readability on bulky docs.
    * @param [options.module-index-format] {string} - none, grouped, table, dl.
