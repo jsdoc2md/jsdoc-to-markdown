@@ -13,7 +13,15 @@ _Upgraders, please read the [release notes](https://github.com/jsdoc2md/jsdoc-to
 
 Generates markdown API documentation from [jsdoc](http://usejsdoc.org) annotated source code. Useful for injecting API docs into project README files.
 
-## Synopsis
+## Install
+
+```
+$ npm install --save-dev jsdoc-to-markdown
+```
+
+## Usage
+
+Follow the instructions below to use jsdoc2md until you get the markdown result.
 
 1\. Document your code using valid jsdoc comments.
 
@@ -46,12 +54,6 @@ A quite wonderful function.
 | cloak  | <code>object</code> | Privacy gown |
 | dagger | <code>object</code> | Security     |
 
-```
-
-## Install
-
-```
-$ npm install --save-dev jsdoc-to-markdown
 ```
 
 ## See also
