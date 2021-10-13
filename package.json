@@ -8,13 +8,13 @@
     "jsdoc2md": "bin/cli.js"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=12.17"
   },
   "license": "MIT",
   "scripts": {
     "test": "test-runner test/*.js",
-    "docs": "node bin/cli.js --heading-depth 1 index.js > docs/API.md",
-    "cover": "istanbul cover ./node_modules/.bin/test-runner test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
+    "test:ci": "npm test",
+    "docs": "node bin/cli.js --heading-depth 1 index.js > docs/API.md"
   },
   "keywords": [
     "jsdoc",
@@ -26,17 +26,16 @@
     "documentation"
   ],
   "dependencies": {
-    "array-back": "^5.0.0",
+    "array-back": "^6.2.0",
     "command-line-tool": "^0.8.0",
     "config-master": "^3.1.0",
     "dmd": "^6.0.0",
     "jsdoc-api": "^7.1.0",
-    "jsdoc-parse": "^6.0.0",
-    "walk-back": "^5.0.0"
+    "jsdoc-parse": "^6.0.1",
+    "walk-back": "^5.1.0"
   },
   "devDependencies": {
-    "coveralls": "^3.1.0",
-    "test-runner": "^0.8.14"
+    "test-runner": "^0.10.0"
   },
   "standard": {
     "ignore": [
