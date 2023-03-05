@@ -96,7 +96,7 @@ By default, the output of each invocation of the main generation methods (`rende
 <a name="module_jsdoc-to-markdown--JsdocToMarkdown+getNamepaths"></a>
 
 ### jsdoc2md.getNamepaths(options) ⇒ <code>object</code>
-Returns all [jsdoc namepaths](http://usejsdoc.org/about-namepaths.html) found in the supplied source code.
+Returns all [jsdoc namepaths](https://jsdoc.app/about-namepaths.html) found in the supplied source code.
 
 **Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
 **Category**: async  
@@ -145,4 +145,3 @@ Sync version of [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsd
 | Param | Type | Description |
 | --- | --- | --- |
 | [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
-
