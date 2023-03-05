@@ -109,7 +109,7 @@ class JsdocToMarkdown {
    * @param [options.no-cache] {boolean} - By default results are cached to speed up repeat invocations. Set to true to disable this.
    * @param [options.files] {string|string[]} - One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied.
    * @param [options.source] {string} - A string containing source code to process. Either `files`, `source` or `data` must be supplied.
-   * @param [options.configure] {string} - The path to the [jsdoc configuration file](http://usejsdoc.org/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json.
+   * @param [options.configure] {string} - The path to the [jsdoc configuration file](https://jsdoc.app/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json.
    * @return {Promise}
    * @fulfil {object[]}
    * @category async
@@ -141,7 +141,7 @@ class JsdocToMarkdown {
   }
 
   /**
-   * Returns all [jsdoc namepaths](http://usejsdoc.org/about-namepaths.html) found in the supplied source code.
+   * Returns all [jsdoc namepaths](https://jsdoc.app/about-namepaths.html) found in the supplied source code.
    * @param {object} - options to pass to {@link module:jsdoc-to-markdown#getTemplateData}
    * @returns {object}
    * @category async
