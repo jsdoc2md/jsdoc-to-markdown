@@ -62,6 +62,6 @@ $ npm install --save-dev jsdoc-to-markdown
 
 * * *
 
-&copy; 2014-23 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2014-24 Lloyd Brookes \<75pound@gmail.com\>.
 
 Tested by [test-runner](https://github.com/test-runner-js/test-runner).
