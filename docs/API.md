@@ -50,6 +50,8 @@ Returns markdown documentation from jsdoc-annoted source code.
 | [options.param-list-format] |  | Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed. |
 | [options.property-list-format] |  | list, table. |
 | [options.member-index-format] |  | grouped, list |
+| [options.clever-links] | <code>boolean</code> | If true, then implements jsdoc 'cleverLinks' algorithm; `{@link}` tags captions with a URL link are rendered in plain text and captions with non-URL links are rendered in monospace. |
+| [options.monospace-links] | <code>boolean</code> | If true, then `{@link}` tags are rendered in monospace. This option is ignored if `clever-links` is true. |
 
 **Example**  
 Pass in filepaths (`**` glob matching supported) of javascript source files:
@@ -145,3 +147,4 @@ Sync version of [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsd
 | Param | Type | Description |
 | --- | --- | --- |
 | [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
+
