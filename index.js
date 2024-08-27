@@ -42,34 +42,13 @@ class JsdocToMarkdown {
    * > jsdoc2md.render({ files: 'lib/*.js' }).then(console.log)
    * ```
    */
-  render (options) {
-    options = options || {}
-    const dmdOptions = new DmdOptions(options)
-    if (options.data) {
-      return dmd.async(options.data, dmdOptions)
-    } else {
-      return this.getTemplateData(options)
-        .then(templateData => dmd.async(templateData, dmdOptions))
-    }
-  }
-
-  /**
-   * Sync version of {@link module:jsdoc-to-markdown#render}.
-   *
-   * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#render}.
-   * @return {string}
-   * @engine nodejs >= 0.12
-   * @category sync
-   * @example
-   * const docs = jsdoc2md.renderSync({ files: 'lib/*.js' })
-   */
-  renderSync (options) {
-    options = options || {}
+  async render (options = {}) {
     const dmdOptions = new DmdOptions(options)
     if (options.data) {
       return dmd(options.data, dmdOptions)
     } else {
-      return dmd(this.getTemplateDataSync(options), dmdOptions)
+      const templateData = await this.getTemplateData(options)
+      return dmd(templateData, dmdOptions)
     }
   }
 
@@ -81,25 +60,10 @@ class JsdocToMarkdown {
    * @fulfil {object[]} - the json data
    * @category async
    */
-  getTemplateData (options) {
-    options = options || {}
+  async getTemplateData (options = {}) {
     const jsdocParse = require('jsdoc-parse')
-    return this.getJsdocData(options)
-      .then(jsdocParse)
-  }
-
-  /**
-   * Sync version of {@link module:jsdoc-to-markdown#getTemplateData}.
-   *
-   * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
-   * @return {object[]}
-   * @category sync
-   */
-  getTemplateDataSync (options) {
-    options = options || {}
-    const jsdocParse = require('jsdoc-parse')
-    const jsdocData = this.getJsdocDataSync(options)
-    return jsdocParse(jsdocData, options)
+    const jsdocData = await this.getJsdocData(options)
+    return jsdocParse(jsdocData)
   }
 
   /**
@@ -114,21 +78,9 @@ class JsdocToMarkdown {
    * @fulfil {object[]}
    * @category async
    */
-  getJsdocData (options) {
+  async getJsdocData (options) {
     const jsdocOptions = new JsdocOptions(options)
     return jsdocApi.explain(jsdocOptions)
-  }
-
-  /**
-   * Sync version of {@link module:jsdoc-to-markdown#getJsdocData}.
-   *
-   * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
-   * @return {object[]}
-   * @category sync
-   */
-  getJsdocDataSync (options) {
-    const jsdocOptions = new JsdocOptions(options)
-    return jsdocApi.explainSync(jsdocOptions)
   }
 
   /**

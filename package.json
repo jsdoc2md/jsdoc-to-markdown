@@ -11,7 +11,7 @@
     "jsdoc2md": "bin/cli.js"
   },
   "engines": {
-    "node": ">=12.17"
+    "node": ">=20"
   },
   "license": "MIT",
   "scripts": {
@@ -32,9 +32,9 @@
     "command-line-tool": "^0.8.0",
     "config-master": "^3.1.0",
     "dmd": "^6.2.3",
-    "jsdoc-api": "^8.1.1",
+    "jsdoc-api": "^9.2.0",
     "jsdoc-parse": "^6.2.1",
-    "walk-back": "^5.1.0"
+    "walk-back": "^5.1.1"
   },
   "devDependencies": {
     "test-runner": "^0.10.1"

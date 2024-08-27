@@ -97,5 +97,5 @@ function parseCommandLine () {
 }
 
 function handleError (err) {
-  tool.halt(err.toString())
+  tool.halt(err.stack)
 }
