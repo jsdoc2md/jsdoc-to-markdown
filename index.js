@@ -1,7 +1,8 @@
-const jsdocApi = require('jsdoc-api')
-const dmd = require('dmd')
-const DmdOptions = require('./lib/dmd-options')
-const JsdocOptions = require('./lib/jsdoc-options')
+import jsdocApi from 'jsdoc-api'
+import dmd from 'dmd'
+import DmdOptions from './lib/dmd-options.js'
+import JsdocOptions from './lib/jsdoc-options.js'
+import jsdocParse from 'jsdoc-parse'
 
 /**
  * @module jsdoc-to-markdown
@@ -63,7 +64,6 @@ class JsdocToMarkdown {
    * @category async
    */
   async getTemplateData (options = {}) {
-    const jsdocParse = require('jsdoc-parse')
     const jsdocData = await this.getJsdocData(options)
     return jsdocParse(jsdocData)
   }
@@ -120,4 +120,4 @@ class JsdocToMarkdown {
   }
 }
 
-module.exports = new JsdocToMarkdown()
+export default new JsdocToMarkdown()

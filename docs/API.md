@@ -8,16 +8,11 @@ const jsdoc2md = require('jsdoc-to-markdown')
 
 * [jsdoc-to-markdown](#module_jsdoc-to-markdown)
     * [JsdocToMarkdown](#exp_module_jsdoc-to-markdown--JsdocToMarkdown) ⏏
-        * _async_
-            * [.render([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+render) ⇒ <code>Promise</code>
-            * [.getTemplateData([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData) ⇒ <code>Promise</code>
-            * [.getJsdocData([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData) ⇒ <code>Promise</code>
-            * [.clear()](#module_jsdoc-to-markdown--JsdocToMarkdown+clear) ⇒ <code>Promise</code>
-            * [.getNamepaths(options)](#module_jsdoc-to-markdown--JsdocToMarkdown+getNamepaths) ⇒ <code>object</code>
-        * _sync_
-            * [.renderSync([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+renderSync) ⇒ <code>string</code>
-            * [.getTemplateDataSync([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateDataSync) ⇒ <code>Array.&lt;object&gt;</code>
-            * [.getJsdocDataSync([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocDataSync) ⇒ <code>Array.&lt;object&gt;</code>
+        * [.render([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+render) ⇒ <code>Promise</code>
+        * [.getTemplateData([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData) ⇒ <code>Promise</code>
+        * [.getJsdocData([options])](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData) ⇒ <code>Promise</code>
+        * [.clear()](#module_jsdoc-to-markdown--JsdocToMarkdown+clear) ⇒ <code>Promise</code>
+        * [.getNamepaths(options)](#module_jsdoc-to-markdown--JsdocToMarkdown+getNamepaths) ⇒ <code>object</code>
 
 <a name="exp_module_jsdoc-to-markdown--JsdocToMarkdown"></a>
 
@@ -106,45 +101,4 @@ Returns all [jsdoc namepaths](https://jsdoc.app/about-namepaths.html) found in t
 | Param | Type | Description |
 | --- | --- | --- |
 | options | <code>object</code> | options to pass to [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData) |
-
-<a name="module_jsdoc-to-markdown--JsdocToMarkdown+renderSync"></a>
-
-### jsdoc2md.renderSync([options]) ⇒ <code>string</code>
-Sync version of [render](#module_jsdoc-to-markdown--JsdocToMarkdown+render).
-
-**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
-**Category**: sync  
-**Engine**: nodejs >= 0.12  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| [options] | <code>object</code> | Identical options to [render](#module_jsdoc-to-markdown--JsdocToMarkdown+render). |
-
-**Example**  
-```js
-const docs = jsdoc2md.renderSync({ files: 'lib/*.js' })
-```
-<a name="module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateDataSync"></a>
-
-### jsdoc2md.getTemplateDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
-Sync version of [getTemplateData](#module_jsdoc-to-markdown--JsdocToMarkdown+getTemplateData).
-
-**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
-**Category**: sync  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
-
-<a name="module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocDataSync"></a>
-
-### jsdoc2md.getJsdocDataSync([options]) ⇒ <code>Array.&lt;object&gt;</code>
-Sync version of [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData).
-
-**Kind**: instance method of [<code>JsdocToMarkdown</code>](#exp_module_jsdoc-to-markdown--JsdocToMarkdown)  
-**Category**: sync  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| [options] | <code>object</code> | Identical options to [getJsdocData](#module_jsdoc-to-markdown--JsdocToMarkdown+getJsdocData). |
 

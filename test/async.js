@@ -1,16 +1,15 @@
-const Tom = require('test-runner').Tom
-const jsdoc2md = require('../')
-const a = require('assert')
+import { strict as a } from 'assert'
+import jsdoc2md from 'jsdoc-to-markdown'
 
+const [test, only, skip] = [new Map(), new Map(), new Map()]
 const inputFile = 'test/fixture/ignore.js'
-const tom = module.exports = new Tom('async')
 
-tom.test('.render({ files })', function () {
+test.set('.render({ files })', function () {
   return jsdoc2md.render({ files: inputFile })
     .then(result => a.ok(/a visible global/.test(result)))
 })
 
-tom.test('.render({ data })', function () {
+test.set('.render({ data })', function () {
   const data = [
     {
       id: 'visible',
@@ -44,33 +43,33 @@ tom.test('.render({ data })', function () {
     .then(result => a.ok(/a visible global/.test(result)))
 })
 
-tom.test('.render({ files, heading-depth: 4 })', function () {
+test.set('.render({ files, heading-depth: 4 })', function () {
   return jsdoc2md.render({ files: inputFile, 'heading-depth': 4 })
     .then(result => a.ok(/#### visible/.test(result)))
 })
 
-tom.test('.render({ files, param-list-format: list })', function () {
+test.set('.render({ files, param-list-format: list })', function () {
   const inputFile = 'test/fixture/params.js'
   return jsdoc2md.render({ files: inputFile, 'param-list-format': 'list' })
     .then(result => a.ok(/- one/.test(result)))
 })
 
-tom.test('.getTemplateData({ files })', function () {
+test.set('.getTemplateData({ files })', function () {
   return jsdoc2md.getTemplateData({ files: inputFile })
     .then(result => a.ok(result[0].id))
 })
 
-tom.test('.getJsdocData({ files })', function () {
+test.set('.getJsdocData({ files })', function () {
   return jsdoc2md.getJsdocData({ files: inputFile })
     .then(result => a.ok(result[0].longname))
 })
 
-tom.test('.render({ files, noCache })', function () {
+test.set('.render({ files, noCache })', function () {
   return jsdoc2md.render({ files: inputFile, noCache: true })
     .then(result => a.ok(/a visible global/.test(result)))
 })
 
-tom.test('.render({ data, noCache })', function () {
+test.set('.render({ data, noCache })', function () {
   const data = [
     {
       id: 'visible',
@@ -104,28 +103,28 @@ tom.test('.render({ data, noCache })', function () {
     .then(result => a.ok(/a visible global/.test(result)))
 })
 
-tom.test('.render({ files, heading-depth: 4, noCache })', function () {
+test.set('.render({ files, heading-depth: 4, noCache })', function () {
   return jsdoc2md.render({ files: inputFile, 'heading-depth': 4, noCache: true })
     .then(result => a.ok(/#### visible/.test(result)))
 })
 
-tom.test('.render({ files, param-list-format: list, noCache })', function () {
+test.set('.render({ files, param-list-format: list, noCache })', function () {
   const inputFile = 'test/fixture/params.js'
   return jsdoc2md.render({ files: inputFile, 'param-list-format': 'list', noCache: true })
     .then(result => a.ok(/- one/.test(result)))
 })
 
-tom.test('.getTemplateData({ files, noCache })', function () {
+test.set('.getTemplateData({ files, noCache })', function () {
   return jsdoc2md.getTemplateData({ files: inputFile, noCache: true })
     .then(result => a.ok(result[0].id))
 })
 
-tom.test('.getJsdocData({ files, noCache })', function () {
+test.set('.getJsdocData({ files, noCache })', function () {
   return jsdoc2md.getJsdocData({ files: inputFile, noCache: true })
     .then(result => a.ok(result[0].longname))
 })
 
-tom.test('.getNamepaths()', function () {
+test.set('.getNamepaths()', function () {
   return jsdoc2md.getNamepaths({ files: 'test/fixture/ignore.js' })
     .then(namepaths => {
       a.deepStrictEqual(namepaths.member, [
@@ -135,11 +134,14 @@ tom.test('.getNamepaths()', function () {
     })
 })
 
-tom.test('.clear()', function () {
+test.set('.clear()', function () {
   return jsdoc2md.clear()
 })
 
-tom.test('.render({ files, send })', function () {
+test.set('.render({ files, send })', function () {
   return jsdoc2md.render({ files: inputFile, send: true })
     .then(result => a.ok(/a visible global/.test(result)))
 })
+
+export { test, only, skip }
+

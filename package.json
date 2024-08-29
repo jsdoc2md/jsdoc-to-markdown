@@ -13,9 +13,11 @@
   "engines": {
     "node": ">=20"
   },
+  "type": "module",
+  "exports": "./index.js",
   "license": "MIT",
   "scripts": {
-    "test": "test-runner test/*.js",
+    "test": "75lb-nature test-runner test/async.js test/cli.js",
     "docs": "node bin/cli.js --heading-depth 1 index.js > docs/API.md"
   },
   "keywords": [
@@ -35,9 +37,6 @@
     "jsdoc-api": "^9.2.0",
     "jsdoc-parse": "^6.2.1",
     "walk-back": "^5.1.1"
-  },
-  "devDependencies": {
-    "test-runner": "^0.10.1"
   },
   "standard": {
     "ignore": [

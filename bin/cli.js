@@ -1,6 +1,14 @@
 #!/usr/bin/env node
-const tool = require('command-line-tool')
-const version = require('../package').version
+import tool from 'command-line-tool'
+import jsdoc2md from 'jsdoc-to-markdown'
+import omit from 'lodash.omit'
+import assert from 'assert'
+import fs from 'fs'
+import loadConfig from 'config-master'
+import cliData from '../lib/cli-data.js'
+import path from 'node:path'
+import url from 'node:url'
+const __dirname = url.fileURLToPath(path.dirname(import.meta.url))
 
 const cli = parseCommandLine()
 let options = cli.options._all
@@ -12,27 +20,24 @@ if (options.help) {
 
 /* jsdoc2md --version */
 } else if (options.version) {
-  tool.printOutput(version)
+  const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf8'))
+  tool.printOutput(pkg.version)
 
 /* jsdoc2md --clear */
 } else if (options.clear) {
-  const jsdoc2md = require('../')
   jsdoc2md._interface = 'cli'
   jsdoc2md.clear().catch(handleError)
 } else {
-  const jsdoc2md = require('../')
   jsdoc2md._interface = 'cli'
 
   /* jsdoc2md --config */
   if (options.config) {
-    const omit = require('lodash.omit')
     tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
   }
 
   /* input files (jsdoc-options) required from here */
   /* input validation */
   try {
-    const assert = require('assert')
     options.files = options.files || []
     assert.ok(options.files.length || options.source, 'Must supply either --files or --source')
   } catch (err) {
@@ -68,7 +73,6 @@ if (options.help) {
 
   /* jsdoc2md [<options>] --src <files> */
   } else {
-    const fs = require('fs')
     if (options.template) options.template = fs.readFileSync(options.template, 'utf8')
 
     jsdoc2md
@@ -82,13 +86,11 @@ if (options.help) {
 }
 
 function loadStoredConfig (options) {
-  const loadConfig = require('config-master')
   const jsdoc2mdConfig = loadConfig('jsdoc2md')
   return Object.assign(jsdoc2mdConfig, options)
 }
 
 function parseCommandLine () {
-  const cliData = require('../lib/cli-data')
   try {
     return tool.getCli(cliData.definitions, cliData.usageSections)
   } catch (err) {
@@ -97,5 +99,5 @@ function parseCommandLine () {
 }
 
 function handleError (err) {
-  tool.halt(err.stack)
+  console.error(err)
 }
