@@ -33,6 +33,8 @@ class JsdocToMarkdown {
    * @param [options.param-list-format] {} - Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed.
    * @param [options.property-list-format] {} - list, table.
    * @param [options.member-index-format] {} - grouped, list
+   * @param [options.clever-links] {boolean} - If true, then implements jsdoc 'cleverLinks' algorithm; `{@link}` tags captions with a URL link are rendered in plain text and captions with non-URL links are rendered in monospace.
+   * @param [options.monospace-links] {boolean} - If true, then `{@link}` tags are rendered in monospace. This option is ignored if `clever-links` is true.
    * @return {Promise}
    * @fulfil {string} - the rendered docs
    * @category async
