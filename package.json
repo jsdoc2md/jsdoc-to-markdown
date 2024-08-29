@@ -14,11 +14,16 @@
     "node": ">=20"
   },
   "type": "module",
-  "exports": "./index.js",
+  "exports": {
+    "import": "./index.js",
+    "require": "./dist/index.cjs"
+  },
   "license": "MIT",
   "scripts": {
-    "test": "75lb-nature test-runner test/async.js test/cli.js",
-    "docs": "node bin/cli.js --heading-depth 1 index.js > docs/API.md"
+    "test": "npm run dist && npm run test:ci",
+    "test:ci": "75lb-nature test-runner test/async.js test/cli.js",
+    "docs": "node bin/cli.js --heading-depth 1 index.js > docs/API.md",
+    "dist": "75lb-nature cjs-build index.js"
   },
   "keywords": [
     "jsdoc",
@@ -38,6 +43,14 @@
     "jsdoc-parse": "^6.2.1",
     "walk-back": "^5.1.1"
   },
+  "peerDependencies": {
+    "@75lb/nature": "latest"
+  },
+  "peerDependenciesMeta": {
+    "@75lb/nature": {
+      "optional": true
+    }
+  },
   "standard": {
     "ignore": [
       "test/fixture"
@@ -46,6 +59,7 @@
   "files": [
     "index.js",
     "bin",
-    "lib"
+    "lib",
+    "dist"
   ]
 }
