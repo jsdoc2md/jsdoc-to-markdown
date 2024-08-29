@@ -36,7 +36,8 @@
   ],
   "dependencies": {
     "array-back": "^6.2.2",
-    "command-line-tool": "^0.8.0",
+    "command-line-args": "^6.0.0",
+    "command-line-usage": "^7.0.3",
     "config-master": "^3.1.0",
     "dmd": "next",
     "jsdoc-api": "^9.2.0",

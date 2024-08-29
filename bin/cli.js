@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import tool from 'command-line-tool'
+import commandLineArgs from 'command-line-args'
+import commandLineUsage from 'command-line-usage'
 import jsdoc2md from 'jsdoc-to-markdown'
 import omit from 'lodash.omit'
 import assert from 'assert'
@@ -16,12 +17,12 @@ options = loadStoredConfig(options)
 
 /* jsdoc2md --help */
 if (options.help) {
-  tool.printOutput(cli.usage)
+  console.log(cli.usage)
 
 /* jsdoc2md --version */
 } else if (options.version) {
   const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf8'))
-  tool.printOutput(pkg.version)
+  console.log(pkg.version)
 
 /* jsdoc2md --clear */
 } else if (options.clear) {
@@ -32,7 +33,8 @@ if (options.help) {
 
   /* jsdoc2md --config */
   if (options.config) {
-    tool.stop(JSON.stringify(omit(options, 'config'), null, '  '))
+    console.log(JSON.stringify(omit(options, 'config'), null, '  '))
+    process.exit(0)
   }
 
   /* input files (jsdoc-options) required from here */
@@ -41,7 +43,7 @@ if (options.help) {
     options.files = options.files || []
     assert.ok(options.files.length || options.source, 'Must supply either --files or --source')
   } catch (err) {
-    tool.printOutput(cli.usage)
+    console.log(cli.usage)
     handleError(err)
   }
 
@@ -49,7 +51,7 @@ if (options.help) {
   if (options.json) {
     jsdoc2md.getTemplateData(options)
       .then(function (json) {
-        tool.printOutput(JSON.stringify(json, null, '  '))
+        console.log(JSON.stringify(json, null, '  '))
       })
       .catch(handleError)
 
@@ -58,7 +60,7 @@ if (options.help) {
     jsdoc2md
       .getJsdocData(options)
       .then(function (json) {
-        tool.printOutput(JSON.stringify(json, null, '  '))
+        console.log(JSON.stringify(json, null, '  '))
       })
       .catch(handleError)
 
@@ -67,7 +69,7 @@ if (options.help) {
     jsdoc2md
       .getNamepaths(options)
       .then(function (namepaths) {
-        tool.printOutput(JSON.stringify(namepaths, null, '  '))
+        console.log(JSON.stringify(namepaths, null, '  '))
       })
       .catch(handleError)
 
@@ -92,7 +94,9 @@ function loadStoredConfig (options) {
 
 function parseCommandLine () {
   try {
-    return tool.getCli(cliData.definitions, cliData.usageSections)
+    const usage = cliData.usageSections ? commandLineUsage(cliData.usageSections) : ''
+    const options = commandLineArgs(cliData.definitions)
+    return { options, usage }
   } catch (err) {
     handleError(err)
   }
