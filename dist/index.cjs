@@ -111,8 +111,9 @@ class JsdocToMarkdown {
    * @returns {Promise}
    * @category async
    */
-  clear () {
-    return jsdocApi.cache.clear().then(() => dmd.cache.clear())
+  async clear () {
+    await jsdocApi.cache.clear();
+    await dmd.cache.clear();
   }
 
   /**
@@ -121,23 +122,19 @@ class JsdocToMarkdown {
    * @returns {object}
    * @category async
    */
-  getNamepaths (options) {
-    return this.getTemplateData(options)
-      .then(data => {
-        const namepaths = {};
-        const kinds = [
-          'module', 'class', 'constructor', 'mixin', 'member',
-          'namespace', 'constant', 'function', 'event', 'typedef', 'external'
-        ];
-        kinds.forEach(kind => {
-          namepaths[kind] = data
-            .filter(identifier => {
-              return identifier.kind === kind
-            })
-            .map(identifier => identifier.longname);
-        });
-        return namepaths
-      })
+  async getNamepaths (options) {
+    const data = await this.getTemplateData(options);
+    const namepaths = {};
+    const kinds = [
+      'module', 'class', 'constructor', 'mixin', 'member',
+      'namespace', 'constant', 'function', 'event', 'typedef', 'external'
+    ];
+    for (const kind of kinds) {
+      namepaths[kind] = data
+        .filter(identifier => identifier.kind === kind)
+        .map(identifier => identifier.longname);
+    }
+    return namepaths
   }
 }
 

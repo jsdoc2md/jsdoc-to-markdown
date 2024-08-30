@@ -2,7 +2,6 @@
 import commandLineArgs from 'command-line-args'
 import commandLineUsage from 'command-line-usage'
 import jsdoc2md from 'jsdoc-to-markdown'
-import omit from 'lodash.omit'
 import assert from 'assert'
 import fs from 'fs'
 import loadConfig from 'config-master'
@@ -33,7 +32,8 @@ if (options.help) {
 
   /* jsdoc2md --config */
   if (options.config) {
-    console.log(JSON.stringify(omit(options, 'config'), null, '  '))
+    delete options.config
+    console.log(JSON.stringify(options, null, '  '))
     process.exit(0)
   }
 
