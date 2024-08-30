@@ -93,13 +93,9 @@ function loadStoredConfig (options) {
 }
 
 function parseCommandLine () {
-  try {
-    const usage = cliData.usageSections ? commandLineUsage(cliData.usageSections) : ''
-    const options = commandLineArgs(cliData.definitions)
-    return { options, usage }
-  } catch (err) {
-    handleError(err)
-  }
+  const usage = cliData.usageSections ? commandLineUsage(cliData.usageSections) : ''
+  const options = commandLineArgs(cliData.definitions)
+  return { options, usage }
 }
 
 function handleError (err) {

@@ -11,7 +11,7 @@
     "jsdoc2md": "bin/cli.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=12.17"
   },
   "type": "module",
   "exports": {
@@ -40,8 +40,8 @@
     "command-line-usage": "^7.0.3",
     "config-master": "^3.1.0",
     "dmd": "next",
-    "jsdoc-api": "^9.2.0",
-    "jsdoc-parse": "^6.2.1",
+    "jsdoc-api": "^9.3.0",
+    "jsdoc-parse": "^6.2.3",
     "walk-back": "^5.1.1"
   },
   "peerDependencies": {
