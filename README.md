@@ -5,8 +5,6 @@
 [![Node.js CI](https://github.com/jsdoc2md/jsdoc-to-markdown/actions/workflows/node.js.yml/badge.svg)](https://github.com/jsdoc2md/jsdoc-to-markdown/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
-# jsdoc-to-markdown
-
 _Upgraders, please read the [release notes](https://github.com/jsdoc2md/jsdoc-to-markdown/releases)_
 
 # jsdoc-to-markdown

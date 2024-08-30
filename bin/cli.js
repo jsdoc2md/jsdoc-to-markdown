@@ -39,12 +39,11 @@ if (options.help) {
 
   /* input files (jsdoc-options) required from here */
   /* input validation */
-  try {
-    options.files = options.files || []
-    assert.ok(options.files.length || options.source, 'Must supply either --files or --source')
-  } catch (err) {
+  options.files = options.files || []
+  if (!(options.files.length || options.source || options.configure)) {
+    console.error('Must supply either --files, --source or --configure')
     console.log(cli.usage)
-    handleError(err)
+    process.exit(1)
   }
 
   /* jsdoc2md --json */
@@ -100,4 +99,5 @@ function parseCommandLine () {
 
 function handleError (err) {
   console.error(err)
+  process.exit(1)
 }
