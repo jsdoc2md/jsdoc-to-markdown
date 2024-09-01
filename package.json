@@ -39,9 +39,9 @@
     "command-line-args": "^6.0.0",
     "command-line-usage": "^7.0.3",
     "config-master": "^3.1.0",
-    "dmd": "^7.0.1",
+    "dmd": "^7.0.5",
     "jsdoc-api": "^9.3.1",
-    "jsdoc-parse": "^6.2.3",
+    "jsdoc-parse": "^6.2.4",
     "walk-back": "^5.1.1"
   },
   "peerDependencies": {
