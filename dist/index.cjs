@@ -28,7 +28,7 @@ class JsdocOptions {
 /**
  * @module jsdoc-to-markdown
  * @example
- * const jsdoc2md = require('jsdoc-to-markdown')
+ * import jsdoc2md from 'jsdoc-to-markdown'
  */
 
 /**
@@ -40,8 +40,8 @@ class JsdocToMarkdown {
    * Returns markdown documentation from jsdoc-annoted source code.
    *
    * @param [options] {object} - Accepts all {@link module:jsdoc-to-markdown#getJsdocData} options plus the following:
-   * @param [options.data] {object[]} - Raw template data to use. Useful when you already have template data, obtained from `.getTemplateData`. Either `files`, `source` or `data` must be supplied.
-   * @param [options.template] {string} - The template the supplied documentation will be rendered into. Use the default or supply your own template for full control over the output.
+   * @param [options.data] {object[]} - Raw template data to use. Useful when you already have template data, obtained from `.getTemplateData()`. In the options, one of `files`, `source`, , `configure` or `data` must be supplied.
+   * @param [options.template] {string} - The handlebars template the supplied documentation will be rendered into. Enables full control over the output.
    * @param [options.heading-depth] {number} - The initial heading depth. For example, with a value of `2` the top-level markdown headings look like `"## The heading"`.
    * @param [options.example-lang] {string} - Specifies the default language used in @example blocks (for [syntax-highlighting](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) purposes). In gfm mode, each @example is wrapped in a fenced-code block. Example usage: `--example-lang js`. Use the special value `none` for no specific language. While using this option, you can override the supplied language for any @example by specifying the `@lang` subtag, e.g `@example @lang hbs`. Specifying `@example @lang off` will disable code blocks for that example.
    * @param [options.plugin] {string|string[]} - Use an installed package containing helper and/or partial overrides.
@@ -55,15 +55,16 @@ class JsdocToMarkdown {
    * @param [options.param-list-format] {} - Two options to render parameter lists: 'list' or 'table' (default). Table format works well in most cases but switch to list if things begin to look crowded / squashed.
    * @param [options.property-list-format] {} - list, table.
    * @param [options.member-index-format] {} - grouped, list
-   * @param [options.clever-links] {boolean} - If true, then implements jsdoc 'cleverLinks' algorithm; `{@link}` tags captions with a URL link are rendered in plain text and captions with non-URL links are rendered in monospace.
-   * @param [options.monospace-links] {boolean} - If true, then `{@link}` tags are rendered in monospace. This option is ignored if `clever-links` is true.
-   * @return {Promise}
+   * @param [options.clever-links] {boolean} - By default, all {@link} tags are rendered in plain text. If `--clever-links` is set, URL {@link} tags are rendered in plain text, otherwise monospace.
+   * @param [options.monospace-links] {boolean} - By default, all {@link} tags are rendered in plain text. If `--monospace-links` is set, all links are rendered in monospace format. This setting is ignored if `--clever-links` is set.
+   * @param [options.EOL] {string} - Specify ether `posix` or `win32`. Forces all line endings in the dmd output to use the specified EOL character - can help to avoid scenarios where files contain mixed line-endings.
+   * @return {Promise<string>}
    * @fulfil {string} - the rendered docs
    * @category async
    * @example
    * Pass in filepaths (`**` glob matching supported) of javascript source files:
    * ```js
-   * > jsdoc2md.render({ files: 'lib/*.js' }).then(console.log)
+   * > const apiDocs = await jsdoc2md.render({ files: 'lib/*.js' })
    * ```
    */
   async render (options = {}) {
@@ -80,7 +81,7 @@ class JsdocToMarkdown {
    * Returns the template data (jsdoc-parse output) which is fed into the output template (dmd).
    *
    * @param [options] {object} - Identical options to {@link module:jsdoc-to-markdown#getJsdocData}.
-   * @return {Promise}
+   * @return {Promise<object[]>}
    * @fulfil {object[]} - the json data
    * @category async
    */
@@ -93,11 +94,11 @@ class JsdocToMarkdown {
    * Returns raw data direct from the underlying [jsdoc3](https://github.com/jsdoc3/jsdoc).
    *
    * @param [options] {object} - the options
-   * @param [options.no-cache] {boolean} - By default results are cached to speed up repeat invocations. Set to true to disable this.
-   * @param [options.files] {string|string[]} - One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `data` must be supplied.
-   * @param [options.source] {string} - A string containing source code to process. Either `files`, `source` or `data` must be supplied.
-   * @param [options.configure] {string} - The path to the [jsdoc configuration file](https://jsdoc.app/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json.
-   * @return {Promise}
+   * @param [options.no-cache] {boolean} - By default results are cached to speed up repeat invocations with the same input. Set to true to disable this.
+   * @param [options.files] {string|string[]} - One or more filenames to process. Accepts globs (e.g. `*.js`). Either `files`, `source` or `configure` must be supplied.
+   * @param [options.source] {string} - A string containing source code to process. One of `files`, `source` or `configure` must be supplied.
+   * @param [options.configure] {string} - The path to the [jsdoc configuration file](https://jsdoc.app/about-configuring-jsdoc.html). Default: path/to/jsdoc/conf.json. One of `files`, `source` or `configure` must be supplied.
+   * @return {Promise<object[]>}
    * @fulfil {object[]}
    * @category async
    */
