@@ -36,11 +36,11 @@
   ],
   "dependencies": {
     "array-back": "^6.2.2",
-    "command-line-args": "^6.0.0",
+    "command-line-args": "^6.0.1",
     "command-line-usage": "^7.0.3",
     "config-master": "^3.1.0",
     "dmd": "^7.0.7",
-    "jsdoc-api": "^9.3.3",
+    "jsdoc-api": "^9.3.4",
     "jsdoc-parse": "^6.2.4",
     "walk-back": "^5.1.1"
   },
