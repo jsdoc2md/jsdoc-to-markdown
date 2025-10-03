@@ -41,7 +41,7 @@
     "config-master": "^3.1.0",
     "dmd": "^7.1.1",
     "jsdoc-api": "^9.3.5",
-    "jsdoc-parse": "^6.2.4",
+    "jsdoc-parse": "^6.2.5",
     "walk-back": "^5.1.1"
   },
   "peerDependencies": {
